@@ -3,5 +3,32 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<!--    spring IOC
     <bean id="helloSpring" class="com.lhb.spring.ioc.HelloSpring"></bean>
+-->
+
+<!--   spring DI
+    <bean id="DISpring" class="com.lhb.spring.di.DISpring">
+        <property name="helloSpring"  ref="diSpring"></property>
+    </bean>
+    <bean id="diSpring" class="com.lhb.spring.di.DISpring"></bean>
+
+-->
+
+
+<!--    构造方法注入
+    <bean id="person" class="com.lhb.spring.bean_test.Person">
+        <constructor-arg name="name" value="lhb"/>
+        <constructor-arg name="age" value="23"/>
+        <constructor-arg name="address" value="湖北仙桃"/>
+    </bean>
+-->
+
+    <bean id="person" class="com.lhb.spring.bean_test.Person">
+        <property name="name" value="lhb"/>
+        <property name="age" value="23"/>
+        <property name="address" value="湖北仙桃"/>
+    </bean>
+
+
 </beans>

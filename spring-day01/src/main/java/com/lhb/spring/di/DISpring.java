@@ -4,13 +4,17 @@ package com.lhb.spring.di;
  * Created By LHB on 2019/7/16;
  */
 public class DISpring {
-    private  String DISpring;
+    private  String DiSpring;
 
-    public String getDISpring() {
-        return DISpring;
+    public String getDiSpring() {
+        return DiSpring;
     }
 
-    public void setDISpring(String DISpring) {
-        this.DISpring = DISpring;
+    public void setDiSpring(String diSpring) {
+        DiSpring = diSpring;
+    }
+
+    public void setHelloSpring(DISpring helloSpring) {
+        System.out.println("hello Spring-DI");
     }
 }

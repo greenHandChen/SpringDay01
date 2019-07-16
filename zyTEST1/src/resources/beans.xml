@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="helloSpring" class="com.hand.HelloSpring">
+
+        <property name="diSpring" ref="diSpirng"/>
+    </bean>
+
+    <bean name="diSpirng" class="com.hand.DISpring"/>
+    <bean name="helloSpring2" class="com.hand.HelloSpring2" init-method="initBean" destroy-method="destroyBean"/>
+    <bean name="myBeanPostProcessor" class="com.hand.MyBeanPostProcessor"/>
+    <bean id="person" class="com.hand.Person">
+        <constructor-arg name="name" value="yanzhen"/>
+        <constructor-arg name="age" value="22"/>
+        <constructor-arg name="address" value="安徽芜湖"/>
+    </bean>
+    <bean id="person2" class="com.hand.Person2">
+        <property name="name" value="yanzhen"/>
+        <property name="age" value="22"/>
+        <property name="address" value="安徽芜湖"/>
+    </bean>
+    <bean name="collectionBean" class="com.hand.CollectionBean">
+        <property name="array">
+            <list>
+                <value>张三</value>
+                <value>李四</value>
+                <value>王五</value>
+            </list>
+        </property>
+        <property name="list">
+            <list>
+                <value>第一排</value>
+                <value>第二排</value>
+                <value>第三排</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="1" value="我是1"></entry>
+                <entry key="2" value="我是2"></entry>
+                <entry key="3" value="我是3"></entry>
+            </map>
+        </property>
+    </bean>
+</beans>

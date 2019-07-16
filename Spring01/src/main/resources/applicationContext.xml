@@ -6,7 +6,7 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean name="myStudent" class="com.hand.bean.Student" autowire="byType" />
-    <bean name="myTeacher" class="com.hand.bean.Teacher"/>
+    <bean name="myStudent" class="com.Student" autowire="byType"/>
+    <bean name="myTeacher" class="com.Teacher"/>
 
 </beans>

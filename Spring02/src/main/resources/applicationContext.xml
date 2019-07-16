@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- set方法注入 -->
+    <bean name="myStudent" class="com.hand.bean.Student" init-method="init" destroy-method="destroy" autowire="byType">
+        <property name="stu_id" value="01"/>
+        <property name="stu_name" value="小李"/>
+        <property name="myTeacher" ref="myTeacher"/>
+        <property name="mobile" value="1,3,8,3,2,3,4,5,4,3"/>
+    </bean>
+
+    <bean name="myTeacher" class="com.hand.bean.Teacher">
+        <property name="t_id" value="01"/>
+        <property name="t_name" value="李老师"/>
+    </bean>
+
+    <!--<bean name="myStudent" class="com.hand.bean.Student" init-method="init" destroy-method="destroy" autowire="byType">
+        <constructor-arg name="stu_id" value="01"/>
+        <constructor-arg name="stu_name" value="小李"/>
+        <constructor-arg name="myTeacher" ref="myTeacher"/>
+    </bean>
+    <bean name="myTeacher" class="com.hand.bean.Teacher">
+        <constructor-arg name="t_id" value="01"/>
+        <constructor-arg name="t_name" value="李老师"/>
+    </bean>-->
+
+
+
+</beans>

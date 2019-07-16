@@ -4,7 +4,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                         http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-<!--    <context:component-scan base-package="com.hand.po"/>-->
+
         <bean id="helloSpring" class="com.hand.po.HelloSpring" init-method="initBean" destroy-method="destoryBean">
                <property name="diSpring" ref="diSpring"/>
         </bean>
@@ -17,4 +17,28 @@
                 <property name="address" value="newyork"/>
                 <property name="age" value="18"/>
         </bean>
+        <bean id="collectionBean" class="com.hand.po.CollectionBean">
+            <property name="array">
+                <list>
+                    <value>aaa</value>
+                    <value>bbb</value>
+                    <value>ccc</value>
+                </list>
+            </property>
+            <property name="list">
+                <list>
+                    <value>aaa</value>
+                    <value>bbb</value>
+                    <value>ccc</value>
+                </list>
+            </property>
+            <property name="map">
+                <map>
+                    <entry key="篮球" value="姚明"/>
+                    <entry key="足球" value="出线"/>
+                </map>
+
+            </property>
+        </bean>
+       <context:component-scan base-package="com.hand.po"/>
 </beans>

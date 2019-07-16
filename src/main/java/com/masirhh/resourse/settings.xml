@@ -9,4 +9,9 @@
 
     <context:component-scan base-package="com.masirhh" />
 
+    <bean  name="studentBean1" class="com.masirhh.beans.studentBean">
+        <property name="age" value="12" />
+        <property name="name" value="xiaoming" />
+    </bean>
+
 </beans>

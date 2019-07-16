@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c050e4d-0547-4ae9-9be7-d4b5a075701f" name="Default Changelist" comment="" />
+    <list default="true" id="9c050e4d-0547-4ae9-9be7-d4b5a075701f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/masirhh/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/masirhh/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/masirhh/beans/studentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/masirhh/beans/studentBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/masirhh/resourse/settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/masirhh/resourse/settings.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="39" />
+            <state relative-caret-position="242">
+              <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -37,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            <state relative-caret-position="70">
+              <caret line="15" column="105" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="105" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,25 +52,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/App1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3058">
-              <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            <state relative-caret-position="196">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/resourse/settings.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/beans/studentBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="225">
+              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
               <folding>
+                <element signature="e#196#197#0" expanded="true" />
+                <element signature="e#222#223#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
                 <element signature="e#145#146#0" expanded="true" />
                 <element signature="e#191#192#0" expanded="true" />
               </folding>
@@ -76,12 +96,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/beans/addressBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="141">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
+                <element signature="e#716#717#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,9 +132,11 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/masirhh/resourse/beans.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masirhh/beans/addressBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masirhh/resourse/settings.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/masirhh/beans/studentBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/masirhh/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/masirhh/beans/addressBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masirhh/App1.java" />
       </list>
     </option>
   </component>
@@ -165,11 +190,6 @@
             <path>
               <item name="maven" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -192,24 +212,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="masirhh" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="masirhh" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="masirhh" type="462c0819:PsiDirectoryNode" />
-              <item name="resourse" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -241,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.App1">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.masirhh.App" />
       <module name="SpringDay01" />
@@ -255,8 +257,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="App1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.masirhh.App1" />
+      <module name="SpringDay01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.masirhh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App1" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -275,7 +291,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563257703561</updated>
-      <workItem from="1563257705370" duration="5492000" />
+      <workItem from="1563257705370" duration="7198000" />
     </task>
     <task id="LOCAL-00001" summary="测试基于注解的自动装配">
       <created>1563264486088</created>
@@ -284,14 +300,22 @@
       <option name="project" value="LOCAL" />
       <updated>1563264486088</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="测试自动装配">
+      <created>1563265463753</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563265463753</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5492000" />
+    <option name="totallyTimeSpent" value="7198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -309,7 +333,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32885906" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36241612" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -330,9 +354,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="测试基于注解的自动装配" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试基于注解的自动装配" />
+    <MESSAGE value="测试自动装配" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试自动装配" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-726">
+          <caret line="177" column="35" lean-forward="true" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SpringDay01.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -342,51 +374,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="39" />
+        <state relative-caret-position="242">
+          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/beans/addressBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/resourse/settings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/beans/studentBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="225">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
             <element signature="e#145#146#0" expanded="true" />
             <element signature="e#191#192#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/beans/addressBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        <state relative-caret-position="70">
+          <caret line="15" column="105" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="105" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/App1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3058">
-          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="196">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

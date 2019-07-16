@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+        id 属性为：这个bean作容器里的唯一标识
+        class 属性: 类的全限定名
+      -->
+    <bean class="com.ll.spring.ioc.HelloSpring" id="spring" scope="prototype" init-method="initMethod" destroy-method="destoryMethod">
+        <property name="diSpring" ref="diSpring"/>
+    </bean>
+
+    <bean class="com.ll.spring.ioc.DISpring" id="diSpring"/>
+
+    <bean class="com.ll.spring.d_lifeCycle.MyBeanPostProcessor" id="beanPostProcessor"/>
+
+    <bean class="com.ll.spring.entity.Person" id="person">
+        <constructor-arg name="name" value="Alice"/>
+        <constructor-arg name="address" value="安徽信息工程学院"/>
+        <constructor-arg name="age" value="17"/>
+    </bean>
+
+    <bean class="com.ll.spring.entity.Person" id="person2">
+        <property name="name" value="张三"/>
+        <property name="address" value="成都理工大学"/>
+        <property name="age" value="18"/>
+    </bean>
+
+    <bean class="com.ll.spring.entity.CollectionBean" id="collectionBean">
+        <property name="array">
+            <list>
+                <value>Alice</value>
+                <value>Bob</value>
+                <value>Candy</value>
+                <value>David</value>
+            </list>
+        </property>
+
+        <property name="list">
+            <list>
+                <value>一排</value>
+                <value>二排</value>
+                <value>三排</value>
+                <value>四排</value>
+            </list>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>hello</value>
+                <value>scala</value>
+                <value>linus</value>
+                <value>java</value>
+                <value>java</value>
+            </set>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="1" value="apple"/>
+                <entry key="2" value="banana"/>
+                <entry key="3" value="pear"/>
+                <entry key="4" value="watermelon"/>
+            </map>
+        </property>
+    </bean>
+</beans>

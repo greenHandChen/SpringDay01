@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+        id 属性为：这个bean作容器里的唯一标识
+        class 属性: 类的全限定名
+      -->
+    <bean class="com.ll.spring.ioc.HelloSpring" id="spring"></bean>
+
+</beans>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--  bean加载对象
+    <bean id="helloSpring" class="spring_01.HelloSpring"/>
+ -->
+
+<!-- bena加载对象并依赖注入    -->
+    <bean id="helloSpring" class="spring_01.HelloSpring">
+        <property name="diSpring" ref="diSpring"/>
+    </bean>
+    <bean id="diSpring" class="spring_01.DISpring"/>
+</beans>

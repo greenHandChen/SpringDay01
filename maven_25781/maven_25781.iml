@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="ApplicationContext" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/com/zt/spring/e_inject/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/zt/spring/a_ioc/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/zt/spring/b_di/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/zt/spring/f_annotation/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/zt/spring/f_annotation/web/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/zt/spring/d_di2/by_constructor/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/zt/spring/d_di2/by_setter/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/zt/spring/c_circle/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/zt/spring/g_javaConfiguration/applicationContext.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+</module>

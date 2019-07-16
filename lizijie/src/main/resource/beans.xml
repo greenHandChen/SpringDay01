@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="helloSpring" class="com.spring.cn.HelloSpring" init-method="initBean" destroy-method="destroyBean">
+        <property name="DI" ref="dI"></property>
+    </bean>
+    <bean id="myBeanPostProcessor" class="com.spring.cn.MyBeanPostProcessor"></bean>
+    <bean id="dI" class="com.spring.cn.DiSpring"/>
+    <bean id="person" class="com.spring.cn.Person">
+        <constructor-arg name="name" value="李子杰"/>
+        <constructor-arg name="age" value="23"/>
+        <constructor-arg name="address" value="武汉纺织大学"/>
+    </bean>
+    <bean id="person02" class="com.spring.cn.Person02">
+        <property name="name" value="李子杰-2"/>
+        <property name="age" value="23"/>
+        <property name="address" value="武汉纺织大学-2"/>
+     </bean>
+    <bean id="collectionBean" class="com.spring.cn.CollectionBean">
+        <property name="array">
+            <array >
+                <value>张三</value>
+                <value>李四</value>
+                <value>王五</value>
+            </array>
+        </property>
+        <property name="list">
+            <list>
+                <value>赵六</value>
+                <value>宋七</value>
+                <value>胡八</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="篮球" value="科比"/>
+                <entry key="足球" value="C罗"/>
+            </map>
+        </property>
+        <property name="set">
+            <set>
+                <value>北京</value>
+                <value>上海</value>
+                <value>广州</value>
+                <value>深圳</value>
+            </set>
+        </property>
+    </bean>
+</beans>

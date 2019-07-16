@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="SpringHello" class="com.hand.zhang.bean.SpringHello"
+    init-method="initBean" destroy-method="destroyBean"/>
+
+    <bean id="myBeanPostProcessor" class="com.hand.zhang.bean.MyBeanPostProcessor"></bean>
+
+    <bean id="user" class="com.hand.zhang.bean.User">
+        <!--构造器注入-->
+        <constructor-arg name="name" value="zhang"></constructor-arg>
+        <constructor-arg name="gender" value="男"></constructor-arg>
+        <constructor-arg name="age" value="22"></constructor-arg>
+    </bean>
+
+</beans>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="collectionBean" class="e_inject.collection.CollectionBean">
+        <property name="list">
+            <list>
+                <value>洋子</value>
+                <value>贺洋群</value>
+                <value>dragon</value>
+            </list>
+        </property>
+        <property name="array">
+            <list>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>北京</value>
+                <value>上海</value>
+                <value>广州</value>
+                <value>深圳</value>
+                <value>邵阳</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="1" value="北京"/>
+                <entry key="2" value="上海"/>
+                <entry key="3" value="广州"/>
+                <entry key="4" value="深圳"/>
+            </map>
+        </property>
+    </bean>
+</beans>

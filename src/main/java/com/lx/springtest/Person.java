@@ -19,4 +19,12 @@ public class Person {
                 ", address='" + address + '\'' +
                 '}';
     }
+
+    private void initBean(){
+        System.out.println("Person初始化");
+    }
+
+    private void destory(){
+        System.out.println("Person销毁");
+    }
 }

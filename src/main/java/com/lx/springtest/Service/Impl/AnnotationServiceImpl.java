@@ -18,7 +18,7 @@ public class AnnotationServiceImpl implements IAnnotationService {
     @Qualifier("annotationRepository")
     private IAnnotationRepository annotationRepository;
 
-    
+
     public void addUser() {
         System.out.println("hello,everyone");
         annotationRepository.addUser();

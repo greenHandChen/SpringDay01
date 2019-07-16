@@ -1,9 +1,11 @@
 package com.lx.springtest;
 
+import com.lx.springtest.Config.SpringConfig;
 import com.lx.springtest.Controller.AnnotationController;
 import com.lx.springtest.Entity.Person_two;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestSpring {
@@ -49,5 +51,11 @@ public class TestSpring {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans_three.xml");
         Person person = (Person) applicationContext.getBean("person");
         System.out.println(person);
+    }
+
+    @Test
+    public void four(){
+        AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(SpringConfig.class);
+        annotationConfigApplicationContext.close();
     }
 }

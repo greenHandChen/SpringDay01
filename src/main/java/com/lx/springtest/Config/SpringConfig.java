@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class SpringConfig {
 
-    @Bean
+    @Bean(initMethod = "initBean",destroyMethod = "destory")
     public Person person(){
         return new Person("王五",35,"汉得");
     }

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="helloSpring" class="com.spring01.demo1.HelloSpring"
+        init-method="initBean" destroy-method="destoryBean">
+        <property name="diSpring" ref="diSpring"/>
+    </bean>
+
+    <bean id="diSpring" class="com.spring01.demo1.DISpring"/>
+
+    <bean id="myBeanPostProcessor" class="com.spring01.beanLife.MyBeanPostProcessor" />
+
+    <!--        依赖属性注入      -->
+    <!--
+        1、构造方法注入
+                需要构造方法，不需要get、set方法
+                通过constructor-arg标签
+                可以使用name、index属性注入
+    -->
+    <bean id="person" class="com.spring01.pojo.Person">
+        <constructor-arg name="name" value="王杰"/>
+        <constructor-arg name="age" value="18"/>
+        <constructor-arg name="address" value="合肥学院"/>
+    </bean>
+
+    <!--
+        2、setter方法注入
+                需要setter方法
+                使用property标签
+                该类需要有无参构造方法
+    -->
+    <bean id="person2" class="com.spring01.pojo.Person">
+        <property name="name" value="王杰2"/>
+        <property name="age" value="18"/>
+        <property name="address" value="合肥学院"/>
+    </bean>
+
+    <!--集合类型属性注入-->
+    <!--
+        1、数组、List类型属性注入
+
+    -->
+    <bean id="collectionBean" class="com.spring01.pojo.CollectionBean">
+        <property name="array">
+            <list>
+                <value>老王1</value>
+                <value>老王2</value>
+                <value>老王3</value>
+                <value>老王4</value>
+                <value>老王5</value>
+            </list>
+        </property>
+
+        <property name="list">
+            <list>
+                <value>LIST1</value>
+                <value>LIST2</value>
+                <value>LIST3</value>
+                <value>LIST4</value>
+                <value>LIST5</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--
+        2、Set集合类型属性注入
+    -->
+    <bean id="collectionBean2" class="com.spring01.pojo.CollectionBean2">
+        <property name="set">
+            <set>
+                <value>SET集合1</value>
+                <value>SET集合2</value>
+                <value>SET集合3</value>
+                <value>SET集合4</value>
+                <value>SET集合5</value>
+            </set>
+        </property>
+    </bean>
+
+    <!--
+        3、Map集合类型属性注入
+     -->
+    <bean id="collectionBean3" class="com.spring01.pojo.CollectionBean3">
+        <property name="map">
+            <map>
+                <entry key="Mapkey01" value="MapValue01"/>
+                <entry key="Mapkey02" value="MapValue00"/>
+                <entry key="Mapkey03" value="MapValue03"/>
+            </map>
+        </property>
+    </bean>
+
+
+
+
+
+
+
+
+
+
+
+</beans>

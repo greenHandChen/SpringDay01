@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
+           http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-4.2.xsd"
+       default-autowire="byName" default-lazy-init="false">
+    <context:annotation-config/>
+    <context:component-scan base-package="com.yonye.a_component"/>
+    <context:component-scan base-package="com.yonye.controller"/>
+    <context:component-scan base-package="com.yonye.serviceImpl"/>
+
+<!--<bean id="helloSpring" class="com.yonye.spring.HelloSpring"></bean>
+-->
+    <bean id="helloSpring" class="com.yonye.spring.HelloSpring"  init-method="initBean" destroy-method="destoryBean"/>
+
+    <bean id="myBeanPostProcessor" class="com.yonye.spring.MyBeanPostProcessor"/>
+
+   <!-- <bean id="person"class="com.yonye.spring.Person">
+        <property name="name" value="jun"/>
+        <property name="address" value="中山大学"/>
+        <property name="age" value="18"/>
+    </bean>
+    -->
+
+    <bean id="person" class="com.yonye.spring.Person">
+        <constructor-arg name="name" value="ceh"/>
+        <constructor-arg name="address" value="广州大学"/>
+        <constructor-arg name="age" value="28"/>
+    </bean>
+
+    <bean id="collectionBean" class="com.yonye.spring.CollectionBean">
+        <property name="array">
+            <list>
+                <value>tom</value>
+                <value>jun</value>
+                <value>yonye</value>
+            </list>
+        </property>
+        <property name="list">
+            <list>
+                <value>第一排</value>
+                <value>第二排</value>
+                <value>第三排</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>北京</value>
+                <value>上海</value>
+                <value>天津</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+             <entry key="足球" value="jj"/>
+                <entry key="唱歌" value="jj"/>
+            </map>
+        </property>
+    </bean>
+
+
+
+</beans>

@@ -19,6 +19,9 @@ public class PersonTest {
         System.out.println(singlePerson2);
     }
 
+    /**
+     * 多例模式
+     */
     @Test
     public void prototypePerson() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("club/osai/spring02/beans.xml");
@@ -30,6 +33,9 @@ public class PersonTest {
 //        System.out.println(singlePerson2);
     }
 
+    /**
+     * 通过构造方法注入
+     */
     @Test
     public void constructorPerson() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("club/osai/spring02/beans.xml");
@@ -37,6 +43,9 @@ public class PersonTest {
         System.out.println(constructorPerson.toPrint());
     }
 
+    /**
+     * 通过SET方法注入
+     */
     @Test
     public void setPerson() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("club/osai/spring02/beans.xml");

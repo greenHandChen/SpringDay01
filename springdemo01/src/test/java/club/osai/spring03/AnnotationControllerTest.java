@@ -6,6 +6,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AnnotationControllerTest {
 
+
+    /**
+     * 注解方式注入
+     */
     @Test
     public void add() {
 

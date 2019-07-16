@@ -6,6 +6,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class PersonTest {
 
+    /**
+     * 测试基于注解的单例的依赖注入
+     */
     @Test
     public void sayHello() {
 

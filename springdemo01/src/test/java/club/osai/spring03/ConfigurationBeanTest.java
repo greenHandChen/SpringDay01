@@ -6,6 +6,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class ConfigurationBeanTest {
 
+    /**
+     * 基于Java注解的配置
+     */
     @Test
     public void person() {
         ApplicationContext context = new AnnotationConfigApplicationContext(ConfigurationBean.class);

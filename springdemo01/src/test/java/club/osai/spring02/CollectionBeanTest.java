@@ -6,6 +6,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class CollectionBeanTest {
 
+    /**
+     * xml手动注入
+     */
     @Test
     public void test() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("club/osai/spring02/beans.xml");

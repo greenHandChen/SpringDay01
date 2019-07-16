@@ -3,6 +3,7 @@ package com.ll.spring.ioc;
 import com.ll.spring.entity.CollectionBean;
 import com.ll.spring.entity.Person;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -62,6 +63,12 @@ public class testIoc {
         System.out.println("arr of collection class type is：" + collectionBean.getArray().getClass());
         System.out.println("list of collection class type is：" + collectionBean.getList().getClass());
         System.out.println("map of collection class type is：" + collectionBean.getMap().getClass());
+
+    }
+
+    @Test
+    public void IocAnnotationBean(){
+
 
     }
 

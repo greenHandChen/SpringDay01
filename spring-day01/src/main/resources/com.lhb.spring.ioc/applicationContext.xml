@@ -24,11 +24,31 @@
     </bean>
 -->
 
+<!--   Setter 方法注入
     <bean id="person" class="com.lhb.spring.bean_test.Person">
         <property name="name" value="lhb"/>
         <property name="age" value="23"/>
         <property name="address" value="湖北仙桃"/>
     </bean>
+-->
+
+    <bean id="collection" class="com.lhb.spring.collection.CollectionBean">
+        <property name="list" >
+            <list>
+                <value>老王</value>
+                <value>老李</value>
+                <value>老陈</value>
+            </list>
+        </property>
+        <property name="arrary" >
+            <list>
+                <value>老王</value>
+                <value>老李</value>
+                <value>老陈</value>
+            </list>
+        </property>
+    </bean>
+
 
 
 </beans>

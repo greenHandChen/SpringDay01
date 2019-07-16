@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc36b89e-eb59-4ff9-98e4-2b3a97315cf6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CollectionBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AnnotationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/AnnotationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/AnnotationRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/IAnnotationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/impl/IAnnotationServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="cc36b89e-eb59-4ff9-98e4-2b3a97315cf6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -222,7 +214,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-9" />
     <option name="y" value="60" />
     <option name="width" value="1346" />
@@ -402,7 +394,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563261040265</updated>
-      <workItem from="1563261044938" duration="10898000" />
+      <workItem from="1563261044938" duration="11304000" />
     </task>
     <servers />
   </component>
@@ -424,7 +416,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10898000" />
+    <option name="totallyTimeSpent" value="11304000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />

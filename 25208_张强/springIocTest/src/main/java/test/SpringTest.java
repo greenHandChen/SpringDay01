@@ -23,6 +23,8 @@ public class SpringTest {
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext("beans.xml");
         HelloSpring helloSpring = (HelloSpring) applicationContext.getBean("helloSpring");
         helloSpring.setInfo("Spring:ZQ拉拉");
-        System.out.println(helloSpring.getInfo());
+         System.out.println(helloSpring.getInfo());
+        //System.out.println(helloSpring.helloDI());
+
     }
 }

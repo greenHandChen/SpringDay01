@@ -3,5 +3,46 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="helloSpring" class="pojo.HelloSpring"></bean>
+    <bean id="helloSpring" class="pojo.HelloSpring"
+     init-method="initBean" destroy-method="destoryBean" scope="singleton">
+        <property name="diSpring" ref="diSpring"></property>
+    </bean>
+    <bean id="diSpring" class="pojo.DISpring"></bean>
+    <bean id="myBeanPostProcessor" class="processor.MyBeanPostProcessor"></bean>
+    <bean id="person" class="pojo.Person">
+        <property name="name" value="老王"></property>
+        <property name="age" value="18"></property>
+        <property name="address" value="隔壁"></property>
+    </bean>
+    <bean id="collectionBean" class="pojo.CollectionBean">
+        <property name="array" >
+            <list>
+                <value>老王</value>
+                <value>老李</value>
+                <value>老陈</value>
+            </list>
+        </property>
+        <property name="list" >
+            <list>
+                <value>第一排</value>
+                <value>第二排</value>
+                <value>第三排</value>
+            </list>
+        </property>
+        <property name="set" >
+            <set>
+                <value>北京</value>
+                <value>上海</value>
+                <value>天津</value>
+                <value>河南</value>
+                <value>浙江</value>
+            </set>
+        </property>
+        <property name="map" >
+            <map>
+               <entry key="篮球" value="蔡徐坤"></entry>
+                <entry key="rap" value="蔡徐坤"></entry>
+            </map>
+        </property>
+    </bean>
 </beans>

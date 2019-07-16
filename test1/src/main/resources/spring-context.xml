@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="com.ceh.spring"/>
+
+    <bean id="helloSpring" class="com.ceh.spring.b_di.HelloSpring" init-method="ininMethod" destroy-method="destoryMethod">
+        <property name="diSpring" ref="diString"/>
+    </bean>
+    <bean id="diString" class="com.ceh.spring.b_di.DISpring">
+        <property name="id" value="21"/>
+        <property name="name" value="handhand"/>
+    </bean>
+    <bean id="person" class="com.ceh.spring.entity.Person">
+       <constructor-arg name="name" value="安徽信息"/>
+        <constructor-arg name="age" value="23"/>
+        <constructor-arg name="address" value="哔哩哔哩"/>
+    </bean>
+    <bean id="string" class="com.ceh.spring.entity.CollectionBean">
+       <property name="str">
+           <list>
+               <value>AAAA</value>
+               <value>BVBB</value>
+               <value>CCCC</value>
+           </list>
+       </property>
+        <property name="list">
+            <list>
+                <value>list1</value>
+                <value>list2</value>
+                <value>list3</value>
+                <value>list4</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>逗比1号</value>
+                <value>逗比2号</value>
+                <value>逗比3号</value>
+                <value>逗比4号</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="basketball" value="篮球"></entry>
+                <entry key="pingpong" value="乒乓球"></entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>

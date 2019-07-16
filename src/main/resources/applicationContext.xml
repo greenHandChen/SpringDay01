@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="helloSpring" class="hand_china.beans.HelloSpring" scope="prototype">
+        <constructor-arg name="info" value="hello Spring ioc"></constructor-arg>
+    </bean>
+    <bean id="helloSpring1" class="hand_china.beans.HelloSpring1">
+        <property name="info" value="李四"/>
+    </bean>
+    <bean id="studentService" class="hand_china.service.StudentService"/>
+    <bean id="studentController" class="hand_china.controller.StudentController"/>
+
+    <context:annotation-config></context:annotation-config>
+
+
+</beans>

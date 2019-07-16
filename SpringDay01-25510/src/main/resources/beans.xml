@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <bean id="diSpring" class="DISpring" />
+
+
+       <bean id="mySpring" class="MySpring" init-method="initBean" destroy-method="destoryBean">
+              <property name="diSpirng" ref="diSpring" />
+       </bean>
+
+       <bean id="myBeanPostProcessor" class="MyBeanPostProcessor" />
+
+              <bean id="person" class="Person">
+                     <property name="name" value="李华" />
+                     <property name="age" value="28" />
+                     <property name="address" value="不知道" />
+              </bean>
+
+       <bean id="collectionBean" class="CollectionBean" >
+              <property name="array">
+                     <list>
+                            <value>1</value>
+                            <value>2</value>
+                            <value>3</value>
+                     </list>
+              </property>
+
+              <property name="list">
+                     <list>
+                            <value>111</value>
+                            <value>222</value>
+                            <value>333</value>
+                     </list>
+              </property>
+       </bean>
+
+</beans>

@@ -1,27 +1,29 @@
 package com.hand.bean;
 
+import org.junit.After;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
 import java.util.Arrays;
 import java.util.Map;
 
+@Scope("prototype")
+@Component("myStudent")
 public class Student {
     //学生ID
+    @Value("1")
     private Integer stu_id;
     //学生姓名
+    @Value("小黄")
     private String stu_name;
     //老师
+    @Autowired
+    @Qualifier("myTeacher")
     private Teacher myTeacher;
-
-    private int[] mobile;
-
-    private Map<String,String> tMap;
-
-    public void settMap(Map<String, String> tMap) {
-        this.tMap = tMap;
-    }
-
-    public void setMobile(int[] mobile) {
-        this.mobile = mobile;
-    }
 
     public Student() {
         System.out.println("---------------------------------------");
@@ -64,8 +66,6 @@ public class Student {
                 "stu_id=" + stu_id +
                 ", stu_name='" + stu_name + '\'' +
                 ", myTeacher=" + myTeacher +
-                ", mobile=" + Arrays.toString(mobile) +
-                ", tMap=" + tMap +
                 '}';
     }
 
@@ -80,6 +80,7 @@ public class Student {
     }
 
     //scope为singleton时，context.close()才会执行
+    @After
     public void destroy() {
         System.out.println("--------------------------------");
         System.out.println("Student对象销毁..");

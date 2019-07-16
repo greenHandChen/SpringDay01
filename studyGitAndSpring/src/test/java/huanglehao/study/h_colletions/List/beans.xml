@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="collectionBean" class="huanglehao.study.h_colletions.List.CollectionBean">
+       <property name="array">
+           <list>
+               <value>老王</value>
+               <value>老李</value>
+               <value>老陈</value>
+           </list>
+       </property>
+       <property name="list">
+           <list>
+               <value>第一棒</value>
+               <value>第二棒</value>
+               <value>第三棒</value>
+           </list>
+       </property>
+   </bean>
+</beans>

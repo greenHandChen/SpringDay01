@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="helloSpring" class="huanglehao.study.b_bean_property.HelloSpring">
+        <property name="diSpring" ref="diSrping"></property>
+    </bean>
+    <bean id="diSrping" class="huanglehao.study.b_bean_property.DISpring"></bean>
+</beans>

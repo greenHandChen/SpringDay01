@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="helloSpring" class="huanglehao.study.c_cover_bean_by_SameName.HelloSpring">
+        <property name="info" value="1"></property>
+    </bean>
+
+    <bean name="helloSpring" class="huanglehao.study.c_cover_bean_by_SameName.HelloSpring">
+        <property name="info" value="2"></property>
+    </bean>
+</beans>

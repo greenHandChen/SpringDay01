@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--
+    <bean class="com.sise.ioc.Bean1" name="bean1_1,bean1_2" id="bean1"   />
+    <alias name="bean1" alias="bean1_3" />
+
+    <bean class="com.sise.ioc.Bean2Factory"
+         factory-method="getBean2" id="bean2"/>
+
+    <bean class="com.sise.ioc.Bean3Factory" id="bean3Factory"   />
+    <bean class="com.sise.ioc.Bean3" factory-bean="bean3Factory"
+          factory-method="getBean3" id="bean3" />
+
+-->
+    <!--使用set方法进行配置（复杂写法） -->
+    <!--<bean class="com.sise.ioc.AnotherBean" id="anotherBean" />-->
+
+    <!--<bean class="com.sise.ioc.Bean" id="bean">-->
+        <!--<constructor-arg index="0" name="anotherBean"-->
+                         <!--type="com.sise.ioc.AnotherBean"-->
+                         <!--ref="anotherBean"  />-->
+        <!--<constructor-arg index="1" name="string"-->
+                         <!--type="java.lang.String"-->
+                         <!--value="aaaa" />-->
+
+        <!--<property name="anotherBean1" >-->
+            <!--<bean class="com.sise.ioc.AnotherBean" />-->
+        <!--</property>-->
+        <!--<property name="string1" value="bbbbb"  />-->
+        <!--<property name="stringList">-->
+            <!--<list>-->
+                <!--<value>aaaaa</value>-->
+                <!--<value>bbbbb</value>-->
+            <!--</list>-->
+        <!--</property>-->
+        <!--<property name="anotherBeanList">-->
+            <!--<list>-->
+                <!--<ref bean="anotherBean"/>-->
+                <!--<ref bean="anotherBean"/>-->
+            <!--</list>-->
+        <!--</property>-->
+        <!--<property name="stringSet">-->
+            <!--<set>-->
+                <!--<value>aaaaa</value>-->
+                <!--<value>bbbbb</value>-->
+            <!--</set>-->
+        <!--</property>-->
+        <!--<property name="anotherBeanSet">-->
+            <!--<set>-->
+                <!--<ref bean="anotherBean"/>-->
+                <!--<ref bean="anotherBean"/>-->
+            <!--</set>-->
+        <!--</property>-->
+        <!--<property name="stringMap">-->
+            <!--<map>-->
+                <!--<entry key="ccccc" value="ddddd"  />-->
+                <!--<entry key="eeeee" value="fffff"  />-->
+            <!--</map>-->
+        <!--</property>-->
+        <!--<property name="anotherBeanMap">-->
+            <!--<map>-->
+                <!--<entry key-ref="anotherBean" value-ref="anotherBean" />-->
+            <!--</map>-->
+        <!--</property>-->
+
+        <!--<property name="properties" >-->
+            <!--<props>-->
+                <!--<prop key="aaaaa" >bbbbbb</prop>-->
+            <!--</props>-->
+        <!--</property>-->
+        <!--<property name="anotherBean2">-->
+            <!--<null />-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--使用set 的方法进行配置(简单写法) -->
+    <!--<bean class="com.sise.ioc.AnotherBean" id="anotherBean" />-->
+    <!--<bean class="com.sise.ioc.Bean" id="bean"-->
+        <!--c:anotherBean-ref="anotherBean" c:string="ccccc"-->
+        <!--p:anotherBean1-ref="anotherBean" p:string1="ddddd"-->
+    <!--/>-->
+
+    <!-- 单例模式和多例模式测试  -->
+   <!--<bean class="com.sise.ioc.class007.Bean2" id="bean2" scope="prototype"/>-->
+    <!--<bean class="com.sise.ioc.class007.Bean1" id="bean1" scope="prototype">-->
+        <!--<lookup-method name="createBean2" bean="bean2"/>-->
+    <!--</bean>-->
+
+    <!-- 懒加载-->
+    <!--<bean class="com.sise.ioc.class010.Bean" id="bean" lazy-init="true"/>-->
+
+    <!---->
+    <!--<bean class="com.sise.demo.HelloSpring" id="helloSpring" />-->
+    <!--<bean class="com.sise.demo.HelloSpring" id="helloSpring" >-->
+        <!--<property name="diSpring" ref="diSpring" />-->
+    <!--</bean>-->
+
+    <!--<bean class="com.sise.demo.DISpring" id="diSpring" />-->
+
+    <!--<bean class="com.sise.demo.HelloSpring" id="helloSpring"-->
+    <!--init-method="initBean" destroy-method="destoryBean"/>-->
+
+    <!--<bean class="com.sise.demo.MyBeanPostProcessor" id="beanPostProcessor" />-->
+
+    <!--<bean class="com.sise.demo.Person" id="person">-->
+        <!--<property name="name" value="sky" />-->
+        <!--<property name="address" value="广东" />-->
+        <!--<property name="age"  value="18"  />-->
+
+    <!--</bean>-->
+
+</beans>

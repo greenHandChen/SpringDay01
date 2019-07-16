@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="collection" class="MavenTest.spring.f_collection.list.CollectionBean">
+        <property name="array">
+            <list>
+                <value>老外</value>
+                <value>老从</value>
+                <value>老是</value>
+            </list>
+        </property>
+        <property name="list">
+            <list>
+                <value>第一</value>
+                <value>第二</value>
+                <value>第三</value>
+            </list>
+        </property>
+    </bean>
+    </beans>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="helloSpring" class="com.hgh.spring.ioc.HelloSpring"></bean>
+    <bean id = "red" class="com.hgh.spring.ioc.bean.color.Red" scope="singleton">
+        <constructor-arg index="0" value="张三"/>
+        <constructor-arg index="1" value="1"/>
+    </bean>
+
+    <bean id="helloSpring2" class="com.hgh.spring.ioc.HelloSpring"
+          init-method="init" destroy-method="destroy"></bean>
+
+    <bean id="myBeanPostProcessor" class="com.hgh.spring.ioc.bean.postprocessor.MyBeanPostProcessor"></bean>
+
+
+    <bean id="collection_bean" class="com.hgh.spring.ioc.bean.collection_bean.CollectionBean">
+        <property name="array">
+            <list>
+                <value>张三</value>
+                <value>李四</value>
+                <value>王五</value>
+            </list>
+        </property>
+        <property name="list">
+            <list>
+                <value>赵云</value>
+                <value>马超</value>
+                <value>关羽</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <bean id="set_bean" class="com.hgh.spring.ioc.bean.collection_bean.SetBean">
+        <property name="set">
+            <set>
+                <value>张家界</value>
+                <value>武陵源</value>
+                <value>长白山</value>
+            </set>
+        </property>
+    </bean>
+
+    <bean id="map_bean" class="com.hgh.spring.ioc.bean.collection_bean.MapBean">
+        <property name="map">
+            <map>
+                <entry key="车干" value="室友" />
+                <entry key="骚猪" value="室友" />
+            </map>
+        </property>
+    </bean>
+
+    <context:component-scan base-package="com.hgh.spring.ioc.bean.test_Annotation"></context:component-scan>
+</beans>

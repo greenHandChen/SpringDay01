@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="helloString" class="com.xyh.spring_studay.HelloString" init-method="init" destroy-method="destroy">
+        <property name="diString" ref="diString" />
+    </bean>
+
+    <bean id="diString" class="com.xyh.spring_studay.DIString" />
+
+    <bean id="diString1" class="com.xyh.spring_studay.DIString" scope="singleton"/>
+    <bean id="diString2" class="com.xyh.spring_studay.DIString" scope="prototype"/>
+
+    <bean id="myBeanPostProcessor" class="com.xyh.spring_studay.MyBeanPostProcessor" />
+
+    <bean id="person1" class="com.xyh.spring_studay.Person" >
+        <constructor-arg name="name" value="xyh" />
+        <constructor-arg name="age" value="18" />
+        <constructor-arg name="address" value="安徽" />
+    </bean>
+
+    <bean id="person2" class="com.xyh.spring_studay.Person">
+        <property name="name" value="ziye" />
+        <property name="age" value="20" />
+        <property name="address" value="芜湖" />
+    </bean>
+
+    <bean id="collectionBean" class="com.xyh.spring_studay.CollectionBean">
+        <property name="array">
+            <list>
+                <value>老王</value>
+                <value>老李</value>
+                <value>老张</value>
+            </list>
+        </property>
+
+        <property name="list">
+            <list>
+                <value>第一</value>
+                <value>第二</value>
+                <value>第三</value>
+            </list>
+        </property>
+        <property name="set">
+            <list>
+                <value>北京</value>
+                <value>上海</value>
+                <value>重庆</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="篮球" value="姚明" />
+                <entry key="足球" value="出现" />
+            </map>
+        </property>
+    </bean>
+</beans>

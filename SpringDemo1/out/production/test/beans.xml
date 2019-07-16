@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+       >
+
+    <context:component-scan base-package="SpringTest"></context:component-scan>
+    <context:component-scan base-package="ServiceImpl"></context:component-scan>
+    <context:component-scan base-package="RepositoryImpl"></context:component-scan>
+
+    <bean id="helloSpring" class="SpringTest.HelloSpring"></bean>
+    <bean id="myBeanPostProcessor" class="SpringTest.MyBeanPostProcessor"></bean>
+
+    <bean id="person" class="SpringTest.Person">
+        <constructor-arg name="name" value="杨鸿坤"/>
+        <constructor-arg name="address" value="上海汉得"/>
+        <constructor-arg name="age" value="21"/>
+    </bean>
+
+    <bean id="collectionBean" class="SpringTest.CollectionBean">
+        <property name="array">
+        <list>
+            <value>老王</value>
+            <value>老张</value>
+            <value>老李</value>
+        </list>
+    </property>
+        <property name="list">
+            <list>
+                <value>第一排</value>
+                <value>第二排</value>
+                <value>第三排</value>
+            </list>
+        </property>
+    </bean>
+</beans>

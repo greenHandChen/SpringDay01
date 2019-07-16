@@ -8,7 +8,7 @@
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <context:component-scan base-package="SpringStudy.Annotion"/>
+    <context:component-scan base-package="SpringStudy"/>
     <!--<bean id="helloSpring" class="HelloSpring"></bean>-->
 
     <!--<bean id="beanLife" class="HelloSpring"-->
@@ -17,7 +17,7 @@
     <!--&gt;</bean>-->
 
     <!--Bean生命全局监控-->
-    <!--<bean id="myBeanPostProcessor" class="MyBeanPostProcessor"></bean>-->
+    <!--<bean id="myBeanPostProcessor" class="SpringStudy.Scope.MyBeanPostProcessor"></bean>-->
 
     <!--构造注入-->
     <!--<bean id="pserson" class="Pserson">-->

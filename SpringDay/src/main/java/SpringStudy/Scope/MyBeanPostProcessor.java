@@ -2,6 +2,7 @@ package SpringStudy.Scope;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.stereotype.Component;
 
 /**
  * @Description: 全局Bean生命周期配置
@@ -9,6 +10,7 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
  * @Date: 2019/7/16 14:40
  * @Version: V1.0
  **/
+@Component
 public class MyBeanPostProcessor implements BeanPostProcessor {
 
     public Object postProcessBeforeInitialization(Object o, String s) throws BeansException {

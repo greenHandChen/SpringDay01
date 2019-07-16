@@ -6,16 +6,18 @@ import SpringStudy.SpringDi.Pserson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
+import javax.annotation.Resource;
+
 /**
  * @Description: 用户模块控制器
  * @Author: TanLinQuan
  * @Date: 2019/7/16 16:11
  * @Version: V1.0
  **/
-@Controller
+@Controller("personController")
 public class PersonController {
 
-    @Autowired
+    @Resource(name = "userService")
     private UserService userService;
 
     public void add() {

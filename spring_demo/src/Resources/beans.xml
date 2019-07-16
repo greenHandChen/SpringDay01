@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="helloSpring" class="com.hph.Ioc.HelloSpring" init-method="initBean" destroy-method="destroyBean">
+        <property name="diSpring" ref="dI"></property>
+    </bean>
+    <bean id="myBeanPostProcessor" class="com.hph.Ioc.MyBeanPostProcessor"></bean>
+    <bean id="dI" class="com.hph.Ioc.DISpring">
+        <property name="str" value="this is DIspringStr"></property>
+    </bean>
+    <bean id="person" class="com.hph.Ioc.Person">
+        <constructor-arg name="name" value="胡鹏浩"/>
+        <constructor-arg name="age" value="23"/>
+        <constructor-arg name="address" value="湖南工商大学"/>
+    </bean>
+    <bean id="person2" class="com.hph.Ioc.Person">
+        <property name="name" value="胡鹏浩setter"/>
+        <property name="age" value="23"/>
+        <property name="address" value="湖南工商大学setter"/>
+    </bean>
+        <bean id="collectionBean" class="com.hph.Ioc.CollectionBean">
+            <property name="array">
+                <array >
+                    <value>张三</value>
+                    <value>李四</value>
+                    <value>王五</value>
+                </array>
+            </property>
+            <property name="list">
+                <list>
+                    <value>赵六</value>
+                    <value>宋七</value>
+                    <value>胡八</value>
+                </list>
+            </property>
+            <property name="map">
+                <map>
+                    <entry key="篮球" value="科比"/>
+                    <entry key="足球" value="C罗"/>
+                </map>
+            </property>
+            <property name="set">
+                <set>
+                    <value>北京</value>
+                    <value>上海</value>
+                    <value>广州</value>
+                    <value>深圳</value>
+                </set>
+            </property>
+        </bean>
+</beans>

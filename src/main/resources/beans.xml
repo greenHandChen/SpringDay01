@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="helloSpring" class="com.lx.springtest.HelloSpring"
+          init-method="initBean" destroy-method="destory"/>
+
+    <bean id="myBeanPostProcessor" class="com.lx.springtest.MyBeanPostProcessor"/>
+
+    <!--根据构造注入-->
+    <bean id="person" class="com.lx.springtest.Person">
+        <constructor-arg name="name" value="张三"/>
+        <constructor-arg name="age" value="18"/>
+        <constructor-arg name="address" value="汉得"/>
+    </bean>
+
+    <!--根据setter方法注入-->
+    <bean id="person_new" class="com.lx.springtest.Person_new">
+        <property name="name" value="李四"/>
+        <property name="address" value="汉得"/>
+        <property name="age" value="20"/>
+    </bean>
+
+    <bean id="collectionBean" class="com.lx.springtest.CollectionBean">
+        <property name="array">
+            <list>
+                <value>老王</value>
+                <value>老李</value>
+                <value>老陈</value>
+            </list>
+        </property>
+
+        <property name="list">
+            <list>
+                <value>第一排</value>
+                <value>第二排</value>
+                <value>第三排</value>
+            </list>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>上海</value>
+                <value>北京</value>
+                <value>天津</value>
+            </set>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="篮球" value="姚明"/>
+                <entry key="足球" value="高洪波"/>
+            </map>
+        </property>
+    </bean>
+</beans>

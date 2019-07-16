@@ -9,6 +9,7 @@ public class test {
     private int id;
     private String name;
 
+
     public String getName() {
         return name;
     }
@@ -25,11 +26,5 @@ public class test {
         this.id = id;
     }
 
-    @Override
-    public String toString() {
-        return "test{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
-    }
+
 }

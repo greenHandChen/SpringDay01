@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--
+        配置 service
+        <bean> 配置需要创建的对象
+            id: 用于之后从 spring容器获得是实例时使用的
+            class: 需要创建实例的全限定类名
+     -->
+    <!--<bean id="helloSpring" class="com.ceh.spring.a_ioc.HelloSpring" />-->
+    <bean id="helloSpring" class="com.ceh.spring.a_ioc.HelloSpring" >
+        <property name="diSpring" ref="diSpring" />
+    </bean>
+
+    <bean id="diSpring" class="com.ceh.spring.a_ioc.DISpring" />
+</beans>

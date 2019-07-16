@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="person2" class="com.ceh.spring.e_inject.a_constructor.Person2">
+        <property name="name" value="hehe" />
+        <property name="age" value="18" />
+        <property name="address" value="USA"/>
+    </bean>
+
+
+    <bean id="collectionBean" class="com.ceh.spring.e_inject.a_constructor.CollectionBean">
+        <property name="array">
+            <list>
+                <value>array1</value>
+                <value>array2</value>
+                <value>array3</value>
+            </list>
+        </property>
+        <property name="list">
+            <list>
+                <value>list1</value>
+                <value>list2</value>
+                <value>list3</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="k1" value="v1"></entry>
+                <entry key="k2" value="v2"></entry>
+                <entry key="k3" value="v3"></entry>
+            </map>
+        </property>
+        <property name="set">
+            <set>
+                <value>set1</value>
+                <value>set2</value>
+                <value>set3</value>
+            </set>
+        </property>
+    </bean>
+</beans>

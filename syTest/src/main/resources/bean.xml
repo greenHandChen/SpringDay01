@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd ">
+        <context:component-scan base-package="com.hand"/>
+        <!--
+        <bean id="helloSpring" class="HelloSpring"
+              init-method="initInfo" destroy-method="destoryInfo"  />
+        <bean id="myBeanPostProcessor"  class="MyBeanPostProcessor"/>
+        <bean id="person" class="Person" init-method="speak">
+                <constructor-arg name="name" value="sy"/>
+                <constructor-arg name="age"  value="21"/>
+                <constructor-arg name="address" value="湖南农大"/>
+        </bean>
+                <bean id="women" class="Women" init-method="getInfo">
+                        <property name="info">
+                                <list>
+                                        <value>和俊峰</value>
+                                        <value>有</value>
+                                        <value>好多女朋友</value>
+                                </list>
+                        </property>
+                        <property name="list">
+                                <list>
+                                        <value>唐</value>
+                                        <value>宋</value>
+                                        <value>元</value>
+                                </list>
+                        </property>
+                        </bean>
+                        <bean id="maptest" class="MapTest" init-methon="getMap">
+                                <property name="map">
+                                <map>
+                                        <entry key="篮球" value="CXK"/>
+                                        <entry key="唱跳" value="RAP"/>
+                                        </map>
+                        -->
+</beans>

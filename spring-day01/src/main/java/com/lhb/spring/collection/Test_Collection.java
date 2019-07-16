@@ -38,4 +38,8 @@ public class Test_Collection {
         CollectionBean collection = (CollectionBean) applicationContext.getBean("collection");
         System.out.println(collection.getMap());
     }
+
+
+
+
 }

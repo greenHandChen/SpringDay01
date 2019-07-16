@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
 
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+
+    <context:component-scan base-package="com.lhb.spring"></context:component-scan>
+<!--    <context:component-scan base-package="com.lhb.spring.annotation_web"></context:component-scan>-->
 <!--    spring IOC
     <bean id="helloSpring" class="com.lhb.spring.ioc.HelloSpring"></bean>
 -->
@@ -32,6 +41,7 @@
     </bean>
 -->
 
+<!-- 数组集合练习
     <bean id="collection" class="com.lhb.spring.collection.CollectionBean">
         <property name="list" >
             <list>
@@ -57,7 +67,6 @@
                 <value>杭州</value>
             </set>
         </property>
-
         <property name="map" >
             <map>
                 <entry key="湖北" value="武汉"></entry>
@@ -67,6 +76,6 @@
 
     </bean>
 
-
+-->
 
 </beans>

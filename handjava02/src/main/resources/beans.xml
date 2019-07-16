@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <context:component-scan base-package="com.*"/>
+    <bean id="helloSpring" class="com.hand.spring.hello.HelloSpring"
+            init-method="initBean" destroy-method="destoryBean">
+        <property name="diSpring" ref="DiSpring"/>
+    </bean>
+
+    <bean id="DiSpring" class="com.hand.spring.hello.DISpring"/>
+
+    <bean id="person" class="com.hand.spring.hello.PersonConstruction">
+        <constructor-arg name="name" value="ceh"/>
+        <constructor-arg name="address" value="安徽信息工程学院"/>
+        <constructor-arg name="age" value="18"/>
+    </bean>
+
+    <bean id="personSet" class="com.hand.spring.hello.PersonSet">
+        <property name="name" value="ceh"/>
+        <property name="address" value="安徽大学"/>
+        <property name="age" value="18"/>
+        <property name="array">
+            <list>
+                <value>laowang</value>
+                <value>laoli</value>
+            </list>
+        </property>
+
+        <property name="list">
+            <list>
+                <value>hello</value>
+            </list>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>1</value>
+                <value>2</value>
+            </set>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="1" value="laowang"/>
+            </map>
+        </property>
+    </bean>
+</beans>
+

@@ -9,7 +9,9 @@ public class ConfigurationBeanTest {
     @Test
     public void person() {
         ApplicationContext context = new AnnotationConfigApplicationContext(ConfigurationBean.class);
-        Person person = context.getBean("person", Person.class);
-        person.sayHello();
+        Person person1 = context.getBean("person1", Person.class);
+        Person person2 = context.getBean("person2", Person.class);
+        person1.sayHello();
+        person2.sayHello();
     }
 }

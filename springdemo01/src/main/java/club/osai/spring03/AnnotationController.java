@@ -15,13 +15,14 @@ import org.springframework.stereotype.Controller;
  */
 @Controller("annotationController")
 public class AnnotationController {
-    @Qualifier("annotationService")
+
     private final AnnotationService annotationService;
 
     @Autowired
-    public AnnotationController(AnnotationService annotationService) {
+    public AnnotationController(@Qualifier("annotationService") AnnotationService annotationService) {
         this.annotationService = annotationService;
     }
+
 
     public void add() {
         annotationService.addUser();

@@ -1,5 +1,6 @@
 package club.osai.spring03;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,9 +16,15 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ConfigurationBean {
-    @Bean
+
+    @Bean("person1")
     public Person person() {
         return new Person();
+    }
+
+    @Bean("person2")
+    public Person person(@Autowired Person person) {
+        return person;
     }
 
 }

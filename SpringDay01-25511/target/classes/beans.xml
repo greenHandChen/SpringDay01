@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <bean id="diSpring" class="com.jqh.DISpring" />
+
+
+       <bean id="firstSpring" class="com.jqh.FirstSpring" init-method="initBean" destroy-method="destoryBean">
+              <property name="diSpirng" ref="diSpring" />
+       </bean>
+
+       <bean id="myBeanPostProcessor" class="com.jqh.MyBeanPostProcessor" />
+
+<!--       <bean id="person" class="com.jqh.Person">-->
+<!--              <constructor-arg name="name" value="ceh" />-->
+<!--              <constructor-arg name="address" value="安信工" />-->
+<!--              <constructor-arg name="age" value="18" />-->
+<!--       </bean>-->
+              <bean id="person" class="com.jqh.Person">
+                     <property name="name" value="jqh" />
+                     <property name="age" value="20" />
+                     <property name="address" value="hand" />
+              </bean>
+
+       <bean id="collectionBean" class="com.jqh.CollectionBean" >
+              <property name="array">
+                     <list>
+                            <value>第一个</value>
+                            <value>第二个</value>
+                            <value>第三个</value>
+                     </list>
+              </property>
+
+              <property name="list">
+                     <list>
+                            <value>第一个</value>
+                            <value>第一个</value>
+                            <value>第一个</value>
+                     </list>
+              </property>
+       </bean>
+
+</beans>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="com.jmx.test" />
+    <bean id="zoo" class="com.jmx.test.Zoo"/>
+    <bean id="monkey" class="com.jmx.test.Monkey"/>
+    <bean id="trigger" class="com.jmx.test.Trigger"/>
+
+    <bean id="carFactory" class="com.jmx.test.CarFactory" />
+    <bean id="bmwCar" class="com.jmx.test.BMWcar" />
+    <bean id="benz" class="com.jmx.test.BenzCar" />
+</beans>

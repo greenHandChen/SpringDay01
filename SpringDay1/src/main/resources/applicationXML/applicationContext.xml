@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--组件扫描，扫描含有注解的类-->
+    <context:component-scan base-package="com.webapp"/>
+
+
+    <bean id="helloSpring" class="ApplicationContextExample.HelloSpring"
+          init-method="initBean" destroy-method="desoryBean"
+    />
+
+    <bean id="person" class="ConstructorArgExample.Person">
+        <constructor-arg name="name" value="张三"/>
+        <constructor-arg name="age" value="18"/>
+        <constructor-arg name="address" value="安徽芜湖"/>
+    </bean>
+
+
+    <bean id="collectionBean" class="CollectionTestIOC.CollectionBean">
+        <property name="list">
+            <list>
+                <value>张三</value>
+                <value>李四</value>
+                <value>王五</value>
+            </list>
+        </property>
+
+        <property name="array">
+            <list>
+                <value>一线</value>
+                <value>二线</value>
+                <value>三线</value>
+            </list>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>天上</value>
+                <value>地下</value>
+                <value>水里</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="北京" value="天安门"></entry>
+                <entry key="天津" value="狗不理"></entry>
+                <entry key="西安" value="肉夹馍"></entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>

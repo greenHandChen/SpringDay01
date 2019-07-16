@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+
+
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsdhttp://www.springframew
+		ork.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:component-scan base-package="com.hsl.spring"/>
+
+
+	<!-- Spring的入门的配置==================== -->
+ 	<bean name="userDAO" class="com.hsl.spring.demo01.UserDAOImpl" >
+ 		<property name="name" value="hsl"/>
+ 	</bean>
+	
+	<!-- Spring的sBean的生命周期的配置=========== -->
+<!-- 	<bean id="customerDAO" class="com.itheima.spring.demo2.CustomerDAOImpl" scope="prototype" init-method="setup" destroy-method="destroy"/> -->
+	
+	<!-- Spring的Bean的实例化的方式============= -->
+	<!-- 无参数构造方法 -->
+<!-- 	<bean id="bean1" class="com.itheima.spring.demo3.Bean1"></bean> -->
+	
+	<!-- 静态工厂实例化 -->
+<!-- 	<bean id="bean2" class="com.itheima.spring.demo3.Bean2Factory" factory-method="createBean2"/> -->
+	
+	<!-- 实例工厂实例化 -->
+<!-- 	<bean id="bean3Factory" class="com.itheima.spring.demo3.Bean3Factory"></bean> -->
+<!-- 	<bean id="bean3" factory-bean="bean3Factory" factory-method="createBean3"></bean> -->
+
+	<!-- Spring的属性注入的方式================== -->
+	<!-- 构造方法的方式 -->
+<!--	<bean id="car" class="com.itheima.spring.">-->
+<!--		<constructor-arg name="name" value="宝马"/>-->
+<!--		<constructor-arg name="price" value="800000"/>-->
+<!--	</bean>-->
+	
+	<!-- set方法的方式 -->
+<!-- 	<bean id="car2" class="com.itheima.spring.demo4.Car2">
+		<property name="name" value="奔驰"/>
+		<property name="price" value="1000000"/>
+	</bean> -->
+	
+	<!-- set方法注入对象类型的属性 -->
+	<!-- <bean id="employee" class="com.itheima.spring.demo4.Employee">
+		value:设置普通类型的值，ref:设置其他的类的id或name
+		<property name="name" value="涛哥"/>
+		<property name="car2" ref="car2"/>
+	</bean> -->
+	
+	<!-- 改为p名称空间的方式 -->
+	<!-- <bean id="car2" class="com.itheima.spring.demo4.Car2" p:name="奇瑞QQ" p:price="30000"></bean>
+	
+	<bean id="employee" class="com.itheima.spring.demo4.Employee" p:name="王东" p:car2-ref="car2"></bean> -->
+	
+	<!-- SpEL的属性注入 -->
+<!--	<bean id="carInfo" class="com.itheima.spring.demo4.CarInfo">-->
+<!--	</bean>-->
+<!--	-->
+<!--	<bean id="car2" class="com.itheima.spring.demo4.Car2">-->
+<!--		<property name="name" value="#{carInfo.name}"></property>-->
+<!--		<property name="price" value="#{carInfo.calculatorPrice()}"></property>-->
+<!--	</bean>-->
+	
+<!--	<bean id="employee" lass="com.itheima.spring.demo4.Employee"c>-->
+<!--		<property name="name" value="#{'赵洪'}"></property>-->
+<!--		<property name="car2" value="#{car2}"></property>-->
+<!--	</bean>-->
+	
+<!--	<import resource="applicationContext2.xml"/>	-->
+	
+</beans>

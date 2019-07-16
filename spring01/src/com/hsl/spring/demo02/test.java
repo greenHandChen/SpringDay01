@@ -15,7 +15,7 @@ public class test {
 
 
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext( "applicationContext.xml");
-        UserService userService = (UserService) applicationContext.getBean("userService");
+        UserService userService = (UserService) applicationContext.getBean("UserService");
         userService.find();
 
     }

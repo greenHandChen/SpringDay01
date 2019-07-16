@@ -1,5 +1,7 @@
 package com.hand.spring.hello;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author lwy
  * @version V1.0
@@ -7,6 +9,7 @@ package com.hand.spring.hello;
  * @Description: TODO
  * @date 2019/7/16 16:22
  */
+@Component
 public class DISpring {
     private String DIString;
 

@@ -47,6 +47,24 @@
                 <value>老陈</value>
             </list>
         </property>
+
+        <property name="set" >
+            <set>
+                <value>北京</value>
+                <value>上海</value>
+                <value>广州</value>
+                <value>深圳</value>
+                <value>杭州</value>
+            </set>
+        </property>
+
+        <property name="map" >
+            <map>
+                <entry key="湖北" value="武汉"></entry>
+                <entry key="湖南" value="长沙"></entry>
+            </map>
+        </property>
+
     </bean>
 
 

@@ -2,6 +2,8 @@ package com.lhb.spring.collection;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Created By LHB on 2019/7/16;
@@ -9,6 +11,26 @@ import java.util.List;
 public class CollectionBean {
     private String[] arrary;
     private List<String> list;
+
+    private Set<String> set;
+
+    private Map<String,String> map;
+
+    public Set<String> getSet() {
+        return set;
+    }
+
+    public void setSet(Set<String> set) {
+        this.set = set;
+    }
+
+    public Map<String, String> getMap() {
+        return map;
+    }
+
+    public void setMap(Map<String, String> map) {
+        this.map = map;
+    }
 
     public String[] getArrary() {
         return arrary;

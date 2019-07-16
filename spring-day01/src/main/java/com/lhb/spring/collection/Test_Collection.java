@@ -24,4 +24,18 @@ public class Test_Collection {
         System.out.println(collection.toString());
 
     }
+
+    @Test
+    public void testSet(){
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("com.lhb.spring.ioc/applicationContext.xml");
+        CollectionBean collection = (CollectionBean) applicationContext.getBean("collection");
+        System.out.println(collection.getSet());
+    }
+
+    @Test
+    public void testMap(){
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("com.lhb.spring.ioc/applicationContext.xml");
+        CollectionBean collection = (CollectionBean) applicationContext.getBean("collection");
+        System.out.println(collection.getMap());
+    }
 }

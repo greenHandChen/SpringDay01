@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans ">
+
+
+    <!--属性注入之List-->
+    <bean id="collection" class="com.ceh.spring.e_inject_collection.CollectionBean">
+        <property name="array">
+            <list>
+                <value>张三</value>
+                <value>李四</value>
+                <value>王五</value>
+            </list>
+        </property>
+
+        <property name="list">
+            <list>
+                <value>第一排</value>
+                <value>第二排</value>
+                <value>第三排</value>
+            </list>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>北京</value>
+                <value>上海</value>
+            </set>
+        </property>
+
+        <!--写在属性上-->
+        <property name="map">
+            <map>
+                <entry key="篮球" value="姚明"/>
+                <entry key="足球" value="cxk"/>
+            </map>
+        </property>
+    </bean>
+</beans>

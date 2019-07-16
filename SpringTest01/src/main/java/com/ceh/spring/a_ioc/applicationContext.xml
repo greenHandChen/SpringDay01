@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans ">
+
+    <!-- 配置service
+         <bean> 配置需要创建的对象
+         id：用于spring容器获取实例时使用 getBean(String arg)
+         class：全限定类名
+    -->
+    <bean id="helloSpring" class="com.ceh.spring.a_ioc.HelloSpring"/>
+
+</beans>

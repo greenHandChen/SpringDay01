@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <context:component-scan base-package="java"></context:component-scan>
+
+    <bean id="helloSpring" class="HelloSpring"></bean>
+
+    <!--<bean id="beanLife" class="HelloSpring"-->
+    <!--init-method="initBean"-->
+    <!--destroy-method="destoryBean"-->
+    <!--&gt;</bean>-->
+
+    <!--Bean生命全局监控-->
+    <!--<bean id="myBeanPostProcessor" class="MyBeanPostProcessor"></bean>-->
+
+    <!--构造注入-->
+    <!--<bean id="pserson" class="Pserson">-->
+    <!--<constructor-arg name="name" value="张三"></constructor-arg>-->
+    <!--<constructor-arg name="age" value="26"></constructor-arg>-->
+    <!--<constructor-arg name="address" value="安徽芜湖"></constructor-arg>-->
+    <!--</bean>-->
+
+    <!--设值注入-->
+<!--    <bean id="pserson" class="SpringStudy.SpringDi.Pserson">-->
+<!--        <property name="name" value="张三"></property>-->
+<!--        <property name="age" value="16"></property>-->
+<!--        <property name="address" value="安徽省芜湖"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="collectionBean" class="SpringStudy.SpringDi.CollectionBean">-->
+<!--        <property name="args">-->
+<!--            <list>-->
+<!--                <value>老雄</value>-->
+<!--                <value>老男人</value>-->
+<!--                <value>老伟</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="list">-->
+<!--            <list>-->
+<!--                <value>第一老</value>-->
+<!--                <value>第二老</value>-->
+<!--                <value>第三老</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="map">-->
+<!--            <map>-->
+<!--                <entry key="老雄" value="老司机"></entry>-->
+<!--                <entry key="老男人" value="老司机"></entry>-->
+<!--                <entry key="老伟" value="老司机"></entry>-->
+<!--            </map>-->
+<!--        </property>-->
+<!--        <property name="set">-->
+<!--            <set>-->
+<!--                <value>第一老</value>-->
+<!--                <value>第二老</value>-->
+<!--                <value>第三老</value>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--    </bean>-->
+</beans>

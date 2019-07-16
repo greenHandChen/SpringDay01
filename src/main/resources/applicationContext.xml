@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <bean id="helloSpring" class="com.hand.pojo.HelloSpring">
+        <property name="diSpring" ref="diSpring"/>
+    </bean>
+    <bean id="user" class="com.hand.pojo.User">
+        <property name="id" value="1"/>
+        <property name="name" value="王俊"/>
+        <property name="password" value="123"/>
+        <property name="list">
+            <list>
+                <value>list001</value>
+                <value>list002</value>
+                <value>list003</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="key01" value="value01"/>
+                <entry key="key02" value="value02"/>
+                <entry key="key03" value="value03"/>
+            </map>
+        </property>
+        <property name="set">
+            <set>
+                <value>set01</value>
+                <value>set02</value>
+                <value>set03</value>
+                <value>set04</value>
+            </set>
+        </property>
+    </bean>
+    <bean id="diSpring" class="com.hand.pojo.DISpring"/>
+    <context:component-scan base-package="com.hand.controller"/>
+    <context:component-scan base-package="com.hand.dao"/>
+    <context:component-scan base-package="com.hand.service"/>
+
+</beans>

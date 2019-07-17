@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.jqh"></context:component-scan>
+    <!-- HikariCP 高性能数据库连接池 -->
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="jdbcUrl"
+                  value="jdbc:mysql://localhost:3306/spring_transaction?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC&amp;rewriteBatchedStatements=true"/>
+        <property name="username" value="root"/>
+        <property name="password" value="password"/>
+<!--        &lt;!&ndash; Default settings &ndash;&gt;-->
+<!--        &lt;!&ndash; 控制自动提交行为 default：true &ndash;&gt;-->
+<!--        <property name="autoCommit" value="true"/>-->
+<!--        &lt;!&ndash;连接池获取的连接是否只读 default:false&ndash;&gt;-->
+<!--        <property name="readOnly" value="false"/>-->
+<!--        &lt;!&ndash;控制连接的事务隔离等级 default:none&ndash;&gt;-->
+<!--        <property name="transactionIsolation" value="none"/>-->
+<!--        &lt;!&ndash;设置catalog以便于支持查看catalogs ， 若不指定的话将直接使用 JDBC driver使用的 default:none&ndash;&gt;-->
+<!--        <property name="catalog" value="none"/>-->
+<!--        &lt;!&ndash;最大连接超时时间 default：30秒&ndash;&gt;-->
+<!--        <property name="connectionTimeout" value="30000"/>-->
+<!--        &lt;!&ndash;最大空闲超时时间 default：10分钟   &ndash;&gt;-->
+<!--        <property name="idleTimeout" value="600000"/>-->
+<!--        &lt;!&ndash;连接池中一个连接的最大生命周期 default：30分钟&ndash;&gt;-->
+<!--        <property name="maxLifetime" value="1800000 "/>-->
+    </bean>
+
+    <!-- 将连接池注入 jdbcTemplate -->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!-- 配置数据源事务管理器 -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+</beans>

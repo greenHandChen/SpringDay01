@@ -1,6 +1,7 @@
 package com.masirhh.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -21,7 +22,9 @@ public class addressBean {
     }
 
     @Autowired
+    @Qualifier("studentBean1")
     private studentBean stu;
+
 
     @PostConstruct
     public void Oncreate() {
@@ -41,7 +44,7 @@ public class addressBean {
     public String toString() {
         return "addressBean{" +
                 "id=" + id +
-                ", stu=" + stu +
+                ", stu=" + stu.getName() +
                 '}';
     }
 }

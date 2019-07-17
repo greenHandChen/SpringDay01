@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SpringDay01.iml" filepath="$PROJECT_DIR$/SpringDay01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/controller/controller.iml" filepath="$PROJECT_DIR$/parent/controller/controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/dao/dao.iml" filepath="$PROJECT_DIR$/parent/dao/dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/entity/entity.iml" filepath="$PROJECT_DIR$/parent/entity/entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/service/service.iml" filepath="$PROJECT_DIR$/parent/service/service.iml" />
     </modules>
   </component>
 </project>

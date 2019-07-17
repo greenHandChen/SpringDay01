@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd
+       					   http://www.springframework.org/schema/context
+       					   http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--配置扫描器，扫描拥有注解的类，进行自动装配-->
+    <context:component-scan base-package="Transation"/>
+
+    <!--配置外部properties文件，导入数据库设置-->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+
+    <!--配置JdbcTemplate-->
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <property name="driverClassName" value="${db.driver}"/>
+        <property name="jdbcUrl" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>
+   <!-- &lt;!&ndash;proxy-target-class(默认使用jdk动态代理): true使用cglib进行动态代理,
+    cglib不需要 目标类实现接口，它会采用继承的方式生成目标类的子类
+    <tx:annotation-driven transaction-manager= "txManager"/> &ndash;&gt;
+    <tx:annotation-driven proxy-target-class="true" transaction-manager="txManager"/>-->
+    <!--配置自动注入的DAO-->
+
+    <!-- 事务管理器 -->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="accountDAO" class="Transation.TransationDAO.AccountDAOImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="accountService" class="Transation.TransationService.AccountServiceImpl">
+        <property name="accountDAO" ref="accountDAO"/>
+    </bean>
+    <!--2、配置事务代理工厂-->
+    <bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+    <!--事务管理器-->
+        <property name="transactionManager" ref="txManager"/>
+        <!--配置目标类-->
+        <property name="target" ref="accountService"/>
+        <!--配置目标类接口-->
+        <property name="proxyInterfaces" value="Transation.TransationService.IAccountService"/>
+
+        <property name="transactionAttributes">
+                <props>
+                        <prop key="transfer">PROPAGATION_REQUIRED,ISOLATION_DEFAULT</prop>
+                </props>
+        </property>
+    </bean>
+</beans>

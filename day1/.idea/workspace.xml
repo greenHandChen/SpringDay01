@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26462014-0de2-4a90-8460-646f60e07225" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/target/classes/HelloSpring.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/HelloSpring2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/HelloSpring3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/day1.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -139,7 +145,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,6 +189,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -282,6 +288,7 @@
       <workItem from="1563276033870" duration="2517000" />
       <workItem from="1563323301658" duration="598000" />
       <workItem from="1563325292067" duration="408000" />
+      <workItem from="1563325938590" duration="57000" />
     </task>
     <task id="LOCAL-00001" summary="day01">
       <created>1563276912098</created>
@@ -290,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563276912098</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day01">
+      <created>1563325966128</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563325966128</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -326,12 +340,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12119000" />
+    <option name="totallyTimeSpent" value="12176000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1383" height="745" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1670446" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16931216" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />

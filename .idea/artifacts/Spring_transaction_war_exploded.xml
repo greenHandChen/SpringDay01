@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="Spring_transaction:war exploded">
-    <output-path>$PROJECT_DIR$/../SpringDay02/Spring_transaction/target/Spring_transaction</output-path>
+    <output-path>$PROJECT_DIR$/SpringDay02/Spring_transaction/target/Spring_transaction</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>

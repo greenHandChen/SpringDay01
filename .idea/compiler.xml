@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring_jdbc" />
-        <module name="spring_jdbcTemplate_demo" />
         <module name="Spring_transaction" />
         <module name="spring_demo" />
       </profile>

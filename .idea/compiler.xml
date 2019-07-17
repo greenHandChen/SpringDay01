@@ -7,10 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="committest" />
+        <module name="Springday02" />
+        <module name="SpringTransaction" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="committest" target="1.5" />
+      <module name="Springday02" target="1.5" />
+      <module name="SpringTransaction" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

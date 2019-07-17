@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context.xsd
+                        http://www.springframework.org/schema/tx
+                        http://www.springframework.org/schema/tx/spring-tx-2.5.xsd"
+ >
+
+
+    <context:component-scan base-package="com.sise.transaction" />
+    <context:property-placeholder location="dataSources.properties"/>
+
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"  destroy-method="close" >
+    <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+    <property name="url" value="jdbc:mysql://localhost:3306/db_mysise?useUnicode=true" />
+    <property name="username" value="root" />
+    <property name="password" value="hgt123456"  />
+    </bean>
+
+    <bean class="com.sise.transaction.AccountDaoImpl" id="accountDao">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <bean  class="com.sise.transaction.AccountServiceImpl"  id="accountService">
+        <property name="accountDao" ref="accountDao" />
+    </bean>
+
+    <!-- 配置事务管理器 -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" >
+        <property name="dataSource" ref="dataSource"   />
+    </bean>
+
+    <bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"  >
+       <property name="transactionManager" ref="transactionManager"  />
+       <property name="target" ref="accountService"   />
+        <property name="transactionAttributes" >
+             <props>
+                 <!--
+                     prop的格式：
+                     * PROPAGATION     事务的传播行为
+                     * ISOLATION       事务的隔离级别
+                     * readonly        只读
+                     * -Exception      发生哪些异常回滚
+                     * +Exception      发生哪些异常不回滚
+                -->
+                 <prop key="transfer">PROPAGATION_REQUIRED,ISOLATION_DEFAULT</prop>
+             </props>
+        </property>
+    </bean>
+
+    <!--<tx:annotation-driven proxy-target-class="true" transaction-manager="transactionManager" />-->
+
+
+</beans>

@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1252a35a-68e8-460b-b443-69e32fbfbb1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child1/src/main/java/com/hand/wqw/dao/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child1/src/main/java/com/hand/wqw/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child1/src/main/java/com/hand/wqw/service/IAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child1/src/main/java/com/hand/wqw/serviceimpl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child1/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child1/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child1/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child1/src/test/java/AccountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day02_parent.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../day01/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day01/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../day01/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day01/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../day01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day01/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../day01/src/main/java/hand_china/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day01/src/main/java/hand_china/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../day02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,7 +23,29 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/child1/src/test/java/AccountTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-52">
+              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,11 +65,11 @@
         <option value="$PROJECT_DIR$/child1/src/main/java/com/hand/wqw/domain/Account.java" />
         <option value="$PROJECT_DIR$/child1/src/main/java/com/hand/wqw/dao/AccountDao.java" />
         <option value="$PROJECT_DIR$/child1/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/child1/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/child1/src/main/java/com/hand/wqw/service/IAccountService.java" />
         <option value="$PROJECT_DIR$/child1/src/test/java/AccountTest.java" />
         <option value="$PROJECT_DIR$/child1/src/main/java/com/hand/wqw/serviceimpl/AccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -91,6 +98,32 @@
             <path>
               <item name="day02_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="day02_parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day02_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day02_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="child1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day02_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day02_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="child1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day02_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day02_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="child1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day02_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day02_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="child1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -177,8 +210,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563346276788</updated>
-      <workItem from="1563346279284" duration="6763000" />
+      <workItem from="1563346279284" duration="7236000" />
     </task>
+    <task id="LOCAL-00001" summary="增加聚合工程三种spring事务管理（编程式事务、声明式原始方式、声明式AOP方式）">
+      <created>1563353253330</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563353253330</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -214,24 +255,25 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6763000" />
+    <option name="totallyTimeSpent" value="7236000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.20610687" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20610687" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.32993197" />
       <window_info anchor="bottom" id="Database Changes" order="4" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="5" visible="true" weight="0.73129255" />
+      <window_info anchor="bottom" id="Version Control" order="5" visible="true" weight="0.44387755" />
       <window_info anchor="bottom" id="Spring" order="6" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
@@ -314,6 +356,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加聚合工程三种spring事务管理（编程式事务、声明式原始方式、声明式AOP方式）" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加聚合工程三种spring事务管理（编程式事务、声明式原始方式、声明式AOP方式）" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/day02_parent.iml">
       <provider selected="true" editor-type-id="text-editor">
@@ -386,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/child1/src/main/java/com/hand/wqw/service/IAccountService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -423,9 +462,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/child1/src/test/java/AccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="-52">
           <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />

@@ -1,33 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6f6a3e3-43f3-4467-92fd-9453289111cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceh/spring/d_lifecycle/HelloSpring2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceh/spring/dao/IAnnotationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceh/spring/dao/imp/AnnotationRepositoryImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceh/spring/dao/imp/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceh/spring/dao/imp/Model2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceh/spring/e_inject/a_constructor/CollectionBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceh/spring/e_inject/a_constructor/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceh/spring/e_inject/a_constructor/Person2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceh/spring/service/IAnnotationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceh/spring/service/imp/AnnotationServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceh/spring/util/MyBeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/beans2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/beans3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/beans4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/beans5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mySpring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ceh/spring/d_lifecycle/HelloSpring2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ceh/spring/dao/imp/Model2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ceh/spring/dao/imp/ModelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ceh/spring/e_inject/a_constructor/CollectionBeanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ceh/spring/e_inject/a_constructor/Person2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ceh/spring/e_inject/a_constructor/PersonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ceh/spring/service/imp/AnnotationServiceImpTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="4605c166-c4b8-4416-8588-21e892f26d4f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/spring02/target/" />
+    <ignored path="$PROJECT_DIR$/myTransaction/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,15 +13,52 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myTransaction/src/main/resources/mySpring.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#824#838#0" expanded="true" />
+                <element signature="e#876#887#0" expanded="true" />
+                <element signature="e#930#946#0" expanded="true" />
+                <element signature="e#989#1005#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myTransaction/src/test/java/com/lzn/spring/transaction/service/imp/AccountServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myTransaction/src/main/java/com/lzn/spring/transaction/service/imp/AccountService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="41">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Arquillian JUnit Test Class" />
         <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
@@ -51,58 +66,35 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/spring02/src/main/resources/dataSourceBeans.xml" />
+        <option value="$PROJECT_DIR$/spring02/src/main/resources/dataSource.properties" />
+        <option value="$PROJECT_DIR$/spring02/src/main/java/com/lzn/spring/jdbc/UserDao.java" />
+        <option value="$PROJECT_DIR$/spring02/src/main/resources/mySpring.xml" />
+        <option value="$PROJECT_DIR$/spring02/src/main/resources/supportJdbc.xml" />
+        <option value="$PROJECT_DIR$/spring02/src/main/java/com/lzn/spring/jdbc/SysUser.java" />
+        <option value="$PROJECT_DIR$/spring02/src/main/java/com/lzn/spring/jdbcDaoSupport/UserDaoSup.java" />
+        <option value="$PROJECT_DIR$/spring02/src/test/java/jdbc/TestJDBC.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/HelloSpringTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HelloSpring.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/a_ioc/DISpring.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/a_ioc/HelloSpring.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/beans.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/d_lifecycle/HelloSpring.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ceh/spring/a_ioc/HelloSpringTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/beans2.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/d_lifecycle/HelloSpring2.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ceh/spring/d_lifecycle/HelloSpring2Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/util/MyBeanPostProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/beans3.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/e_inject/a_constructor/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/beans4.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ceh/spring/e_inject/a_constructor/PersonTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/e_inject/a_constructor/Person2.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ceh/spring/e_inject/a_constructor/Person2Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ceh/spring/e_inject/a_constructor/CollectionBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/e_inject/a_constructor/CollectionBean.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/beans5.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ceh/spring/e_inject/a_constructor/CollectionBeanTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/service/IAnnotationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/service/imp/AnnotationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/dao/IAnnotationRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/dao/imp/AnnotationRepositoryImp.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mySpring.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/service/imp/AnnotationServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ceh/spring/service/imp/AnnotationServiceImpTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/dao/imp/Model.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ceh/spring/dao/imp/Model2.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ceh/spring/dao/imp/Model2Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ceh/spring/dao/imp/ModelTest.java" />
+        <option value="$PROJECT_DIR$/spring02/pom.xml" />
+        <option value="$PROJECT_DIR$/myTransaction/src/main/java/com/lzn/spring/transaction/dao/AccountDaoImpl.java" />
+        <option value="$PROJECT_DIR$/myTransaction/src/main/java/com/lzn/spring/transaction/dao/IAccountDao.java" />
+        <option value="$PROJECT_DIR$/myTransaction/src/main/java/com/lzn/spring/transaction/dao/imp/AccountDao.java" />
+        <option value="$PROJECT_DIR$/myTransaction/src/main/java/com/lzn/spring/transaction/service/IAccountService.java" />
+        <option value="$PROJECT_DIR$/myTransaction/src/test/java/com/lzn/spring/transaction/dao/imp/AccountDaoTest.java" />
+        <option value="$PROJECT_DIR$/myTransaction/src/main/resources/dataSource.properties" />
+        <option value="$PROJECT_DIR$/myTransaction/src/main/resources/mySpring.xml" />
+        <option value="$PROJECT_DIR$/myTransaction/src/main/java/com/lzn/spring/transaction/service/imp/AccountService.java" />
+        <option value="$PROJECT_DIR$/myTransaction/src/test/java/com/lzn/spring/transaction/service/imp/AccountServiceTest.java" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.6.1" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../maven/apache-maven-3.6.1" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -116,28 +108,22 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Spring" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spring" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="700" />
-    <option name="y" value="24" />
-    <option name="width" value="1044" />
-    <option name="height" value="641" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+    <option name="x" value="758" />
+    <option name="y" value="90" />
+    <option name="width" value="871" />
+    <option name="height" value="644" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -148,90 +134,122 @@
         <subPane>
           <expand>
             <path>
-              <item name="Spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="myTransaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="myTransaction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="myTransaction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="myTransaction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="myTransaction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="myTransaction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="myTransaction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="imp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="myTransaction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="myTransaction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="imp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="myTransaction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="myTransaction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="myTransaction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="a_constructor" type="462c0819:PsiDirectoryNode" />
+              <item name="myTransaction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="imp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring02" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -245,26 +263,25 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/myTransaction/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.ceh.spring.dao.imp" />
-      <recent name="com.ceh.spring.service.imp" />
-      <recent name="com.ceh.spring.e_inject.a_constructor" />
-      <recent name="com.ceh.spring.d_lifecycle" />
-      <recent name="com.ceh.spring.a_ioc" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.ceh.spring.e_inject.a_constructor" />
+      <recent name="com.lzn.spring.transaction.service.imp" />
+      <recent name="com.lzn.spring.transaction.dao.imp" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\software\IntelliJ IDEA 2019.1.3\project\spring\myTransaction\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -279,82 +296,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ModelTest.catSay">
-    <configuration name="AnnotationServiceImpTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring" />
+  <component name="RunManager" selected="JUnit.AccountServiceTest.transferTest">
+    <configuration name="AccountServiceTest.transfer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myTransaction" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceh.spring.service.imp.*" />
+          <option name="PATTERN" value="com.lzn.spring.transaction.service.imp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ceh.spring.service.imp" />
-      <option name="MAIN_CLASS_NAME" value="com.ceh.spring.service.imp.AnnotationServiceImpTest" />
-      <option name="METHOD_NAME" value="addUser" />
+      <option name="PACKAGE_NAME" value="com.lzn.spring.transaction.service.imp" />
+      <option name="MAIN_CLASS_NAME" value="com.lzn.spring.transaction.service.imp.AccountServiceTest" />
+      <option name="METHOD_NAME" value="transfer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionBeanTest.toString1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring" />
+    <configuration name="AccountServiceTest.transferTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myTransaction" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceh.spring.e_inject.a_constructor.*" />
+          <option name="PATTERN" value="com.lzn.spring.transaction.service.imp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ceh.spring.e_inject.a_constructor" />
-      <option name="MAIN_CLASS_NAME" value="com.ceh.spring.e_inject.a_constructor.CollectionBeanTest" />
-      <option name="METHOD_NAME" value="toString1" />
+      <option name="PACKAGE_NAME" value="com.lzn.spring.transaction.service.imp" />
+      <option name="MAIN_CLASS_NAME" value="com.lzn.spring.transaction.service.imp.AccountServiceTest" />
+      <option name="METHOD_NAME" value="transferTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Model2Test.dogSay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring" />
+    <configuration name="TestJDBC.demo01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceh.spring.dao.imp.*" />
+          <option name="PATTERN" value="jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ceh.spring.dao.imp" />
-      <option name="MAIN_CLASS_NAME" value="com.ceh.spring.dao.imp.Model2Test" />
-      <option name="METHOD_NAME" value="dogSay" />
+      <option name="PACKAGE_NAME" value="jdbc" />
+      <option name="MAIN_CLASS_NAME" value="jdbc.TestJDBC" />
+      <option name="METHOD_NAME" value="demo01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModelTest.catSay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring" />
+    <configuration name="TestJDBC.demo03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceh.spring.dao.imp.*" />
+          <option name="PATTERN" value="jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ceh.spring.dao.imp" />
-      <option name="MAIN_CLASS_NAME" value="com.ceh.spring.dao.imp.ModelTest" />
-      <option name="METHOD_NAME" value="catSay" />
+      <option name="PACKAGE_NAME" value="jdbc" />
+      <option name="MAIN_CLASS_NAME" value="jdbc.TestJDBC" />
+      <option name="METHOD_NAME" value="demo03" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Person2Test.toString1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring" />
+    <configuration name="TestJDBC.demo04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceh.spring.e_inject.a_constructor.*" />
+          <option name="PATTERN" value="jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ceh.spring.e_inject.a_constructor" />
-      <option name="MAIN_CLASS_NAME" value="com.ceh.spring.e_inject.a_constructor.Person2Test" />
-      <option name="METHOD_NAME" value="toString1" />
+      <option name="PACKAGE_NAME" value="jdbc" />
+      <option name="MAIN_CLASS_NAME" value="jdbc.TestJDBC" />
+      <option name="METHOD_NAME" value="demo04" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -362,445 +379,402 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ModelTest.catSay" />
-        <item itemvalue="JUnit.Model2Test.dogSay" />
-        <item itemvalue="JUnit.AnnotationServiceImpTest.addUser" />
-        <item itemvalue="JUnit.CollectionBeanTest.toString1" />
-        <item itemvalue="JUnit.Person2Test.toString1" />
+        <item itemvalue="JUnit.AccountServiceTest.transferTest" />
+        <item itemvalue="JUnit.AccountServiceTest.transfer" />
+        <item itemvalue="JUnit.TestJDBC.demo04" />
+        <item itemvalue="JUnit.TestJDBC.demo03" />
+        <item itemvalue="JUnit.TestJDBC.demo01" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f6f6a3e3-43f3-4467-92fd-9453289111cd" name="Default Changelist" comment="" />
-      <created>1563264423127</created>
+      <changelist id="4605c166-c4b8-4416-8588-21e892f26d4f" name="Default Changelist" comment="" />
+      <created>1563352189588</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1563264423127</updated>
-      <workItem from="1563264427008" duration="4173000" />
-      <workItem from="1563275584072" duration="8123000" />
+      <updated>1563352189588</updated>
+      <workItem from="1563352192079" duration="12427000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CollectionBeanTest_toString1 - 2019.07.16 at 21h 29m 06s.xml">
-      <configuration name="CollectionBeanTest.toString1" configurationId="JUnit" />
+    <history-entry file="TestJDBC_demo01 - 2019.07.17 at 18h 55m 22s.xml">
+      <configuration name="TestJDBC.demo01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionBeanTest_toString1 - 2019.07.16 at 21h 29m 43s.xml">
-      <configuration name="CollectionBeanTest.toString1" configurationId="JUnit" />
+    <history-entry file="TestJDBC_demo03 - 2019.07.17 at 19h 52m 11s.xml">
+      <configuration name="TestJDBC.demo03" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionBeanTest_toString1 - 2019.07.16 at 21h 30m 03s.xml">
-      <configuration name="CollectionBeanTest.toString1" configurationId="JUnit" />
+    <history-entry file="TestJDBC_demo04 - 2019.07.17 at 20h 20m 18s.xml">
+      <configuration name="TestJDBC.demo04" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnnotationServiceImpTest_addUser - 2019.07.16 at 21h 52m 09s.xml">
-      <configuration name="AnnotationServiceImpTest.addUser" configurationId="JUnit" />
+    <history-entry file="TestJDBC_demo04 - 2019.07.17 at 20h 25m 29s.xml">
+      <configuration name="TestJDBC.demo04" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnnotationServiceImpTest_addUser - 2019.07.16 at 21h 55m 29s.xml">
-      <configuration name="AnnotationServiceImpTest.addUser" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_transfer - 2019.07.17 at 21h 16m 50s.xml">
+      <configuration name="AccountServiceTest.transfer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnnotationServiceImpTest_addUser - 2019.07.16 at 21h 56m 36s.xml">
-      <configuration name="AnnotationServiceImpTest.addUser" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_transfer - 2019.07.17 at 21h 18m 09s.xml">
+      <configuration name="AccountServiceTest.transfer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnnotationServiceImpTest_addUser - 2019.07.16 at 21h 56m 52s.xml">
-      <configuration name="AnnotationServiceImpTest.addUser" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_transfer - 2019.07.17 at 21h 19m 08s.xml">
+      <configuration name="AccountServiceTest.transfer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnnotationServiceImpTest_addUser - 2019.07.16 at 21h 57m 22s.xml">
-      <configuration name="AnnotationServiceImpTest.addUser" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_transfer - 2019.07.17 at 21h 20m 06s.xml">
+      <configuration name="AccountServiceTest.transfer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Model2Test_dogSay - 2019.07.16 at 22h 07m 47s.xml">
-      <configuration name="Model2Test.dogSay" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_transfer - 2019.07.17 at 21h 20m 40s.xml">
+      <configuration name="AccountServiceTest.transfer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ModelTest_catSay - 2019.07.16 at 22h 10m 38s.xml">
-      <configuration name="ModelTest.catSay" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_transferTest - 2019.07.17 at 21h 32m 58s.xml">
+      <configuration name="AccountServiceTest.transferTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12296000" />
+    <option name="totallyTimeSpent" value="12427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22768533" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3922414" visible="true" weight="0.30332828" />
+      <window_info id="Structure" order="1" sideWeight="0.60775864" side_tool="true" weight="0.5248619" />
+      <window_info anchor="bottom" id="Thumbnails" weight="0.3297414" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Messages" weight="0.32405892" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32845187" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41841003" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3704918" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42857143" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.400982" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.35573772" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Maven" weight="0.32980332" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Maven" order="8" weight="0.32980332" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="JUnit">
-        <watch expression="helloSpring" language="JAVA" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>helloSpring</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelloSpringTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/HelloSpring.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/1.3.8/HikariCP-1.3.8.jar!/com/zaxxer/hikari/HikariConfig.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        <state relative-caret-position="147">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/d_lifecycle/HelloSpring.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/1.3.8/HikariCP-1.3.8.jar!/com/zaxxer/hikari/HikariDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring02/src/main/java/com/lzn/spring/jdbc/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/d_lifecycle/HelloSpring2.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/javax/swing/tree/RowMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-14">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/4.3.8.RELEASE/spring-context-4.3.8.RELEASE.jar!/org/springframework/context/ApplicationContext.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.8.RELEASE/spring-jdbc-4.3.8.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="150">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.8.RELEASE/spring-tx-4.3.8.RELEASE.jar!/org/springframework/dao/support/DaoSupport.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+        <state>
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/a_ioc/DISpring.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.8.RELEASE/spring-beans-4.3.8.RELEASE.jar!/org/springframework/beans/factory/InitializingBean.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.8.RELEASE/spring-jdbc-4.3.8.RELEASE.jar!/org/springframework/jdbc/core/support/JdbcDaoSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3679">
+          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring02/src/main/java/com/lzn/spring/jdbc/SysUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
-            <element signature="e#81#82#0" expanded="true" />
-            <element signature="e#120#121#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ceh/spring/a_ioc/HelloSpringTest.java">
+    <entry file="file://$PROJECT_DIR$/spring02/src/main/java/com/lzn/spring/jdbc/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/a_ioc/HelloSpring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="146" selection-start-line="7" selection-start-column="99" selection-end-line="7" selection-end-column="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans3.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="85" selection-start-line="5" selection-start-column="85" selection-end-line="5" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/util/MyBeanPostProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="32" />
+        <state relative-caret-position="25">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/e_inject/a_constructor/Person.java">
+    <entry file="file://$PROJECT_DIR$/spring02/src/main/java/com/lzn/spring/jdbcDaoSupport/UserDaoSup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans4.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ceh/spring/d_lifecycle/HelloSpring2Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="214">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ceh/spring/e_inject/a_constructor/PersonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="69" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="69" />
-          <folding>
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/e_inject/a_constructor/Person2.java">
+    <entry file="file://$PROJECT_DIR$/spring02/src/test/java/jdbc/TestJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="20" />
-          <folding>
-            <element signature="e#180#181#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/e_inject/a_constructor/CollectionBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="27" />
+          <caret line="110" column="7" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ceh/spring/e_inject/a_constructor/Person2Test.java">
+    <entry file="file://$PROJECT_DIR$/myTransaction/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring02/src/main/resources/dataSourceBeans.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="18" selection-start-line="16" selection-start-column="8" selection-end-line="18" />
+        <state relative-caret-position="475">
+          <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans5.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="12" column="89" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/dao/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/dao/IAnnotationRepository.java">
+    <entry file="file://$PROJECT_DIR$/spring02/src/main/resources/dataSource.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/service/IAnnotationService.java">
+    <entry file="file://$PROJECT_DIR$/spring02/src/main/resources/supportJdbc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring02/src/main/resources/mySpring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="13" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring02/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myTransaction/src/main/java/com/lzn/spring/transaction/dao/AccountDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myTransaction/src/main/java/com/lzn/spring/transaction/service/IAccountService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mySpring.xml">
+    <entry file="file://$PROJECT_DIR$/myTransaction/src/main/java/com/lzn/spring/transaction/dao/IAccountDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="97" selection-start-line="7" selection-start-column="97" selection-end-line="7" selection-end-column="97" />
+        <state relative-caret-position="100">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/service/imp/AnnotationServiceImp.java">
+    <entry file="file://$PROJECT_DIR$/myTransaction/src/test/java/com/lzn/spring/transaction/dao/imp/AccountDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="161">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myTransaction/src/main/java/com/lzn/spring/transaction/dao/imp/AccountDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ceh/spring/service/imp/AnnotationServiceImpTest.java">
+    <entry file="file://$PROJECT_DIR$/myTransaction/src/main/resources/dataSource.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="18" column="98" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="98" />
+        <state relative-caret-position="25">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myTransaction/src/main/resources/mySpring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#824#838#0" expanded="true" />
+            <element signature="e#876#887#0" expanded="true" />
+            <element signature="e#930#946#0" expanded="true" />
+            <element signature="e#989#1005#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ceh/spring/dao/imp/Model2Test.java">
+    <entry file="file://$PROJECT_DIR$/myTransaction/src/main/java/com/lzn/spring/transaction/service/imp/AccountService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#913#914#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/dao/imp/AnnotationRepositoryImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        <state relative-caret-position="41">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/dao/imp/Model.java">
+    <entry file="file://$PROJECT_DIR$/myTransaction/src/test/java/com/lzn/spring/transaction/service/imp/AccountServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="411">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ceh/spring/dao/imp/Model2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ceh/spring/e_inject/a_constructor/CollectionBeanTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="17" selection-end-column="74" />
-          <folding>
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#855#856#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ceh/spring/dao/imp/ModelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|myTransaction</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

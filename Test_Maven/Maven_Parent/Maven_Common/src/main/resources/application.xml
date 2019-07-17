@@ -5,9 +5,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        					   http://www.springframework.org/schema/beans/spring-beans.xsd
        					   http://www.springframework.org/schema/context
-       					   http://www.springframework.org/schema/context/spring-context.xsd">
+       					   http://www.springframework.org/schema/context/spring-context.xsd
 
-    <context:component-scan base-package=""/>
+">
+
+    <context:component-scan base-package="com.yhk.transcation"/>
 
     <!--使用配置文件-->
     <context:property-placeholder location="db.properties"/>
@@ -34,10 +36,34 @@
 <!--        <property name="dataSource" ref="dataSource"></property>-->
 <!--    </bean>-->
 
-    <!--    使用jdbcDaoSupport-->
-    <context:component-scan base-package="com.yhk.Spring.f_jdbcSupport"/>
+    <bean id="accountDao" class="com.yhk.transcation.DaoImpl.AccountDaoImpl">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
 
-    <bean id="userDao" class="com.yhk.Spring.f_jdbcSupport.UserDao">
-            <property name="dataSource" ref="dataSource"/>
+    <!--    1.事务管理器-->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+<!--    2.配置事务模板，声明事务管理器-->
+    <bean id="txTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+        <property name="transactionManager" ref="txManager"/>
+    </bean>
+
+    <bean id="accountService" class="com.yhk.transcation.ServiceImpl.AccountServiceImpl">
+        <property name="accountDao" ref="accountDao"></property>
+    </bean>
+
+    <bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+<!--        事务管理器-->
+        <property name="transactionManager" ref="txManager"/>
+<!--        配置目标类-->
+        <property name="target" ref="accountService"/>
+        <property name="proxyInterfaces" value="com.yhk.transcation.Service.IAccountService"/>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="transfer">PROPAGATION_REQUIRED,ISOLATION_DEFAULT</prop>
+            </props>
+        </property>
+
     </bean>
 </beans>

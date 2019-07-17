@@ -1,4 +1,4 @@
-package Dao;
+package com.yhk.transcation.Dao;
 
 public interface AccountDao {
     void in(String inner,double money);

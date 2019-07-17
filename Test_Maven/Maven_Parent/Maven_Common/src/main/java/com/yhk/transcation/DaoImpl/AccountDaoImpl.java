@@ -1,6 +1,6 @@
-package DaoImpl;
+package com.yhk.transcation.DaoImpl;
 
-import Dao.AccountDao;
+import com.yhk.transcation.Dao.AccountDao;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
 public class AccountDaoImpl extends JdbcDaoSupport implements AccountDao {

@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="helloSpring" class="HelloSpring" init-method="initBean" destroy-method="destoryBean"/>
-    <property name="diSpring" ref="diSpring"/>
-        </bean>
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd"
+        >
+    <bean id="helloSpring" class="HelloSpring" init-method="initBean" destroy-method="destoryBean">
+        <property name="diSpring" ref="diSpring"/>
+    </bean>
+
+    <bean id="myBeanPostProcessor" class="MyBeanPostProcessor"/>
     <bean id="diSpring" class="DISpring"/>
+    <bean id="person" class="Person">
+        <constructor-arg name="name" value="ceh"/>
+        <constructor-arg name="address" value="安徽工信大"/>
+        <constructor-arg name="age" value="18"/>
+        <property name="name" value="老王"/>
+        <property name="age" value="18"/>
+        <property name="address" value="隔壁"/>
+    </bean>
+
+    <bean id="collectionBean" class="CollectionBean">
+        <property name="array">
+            <list>
+                <value>老王</value>
+                <value>老李</value>
+                <value>老陈</value>
+            </list>
+        </property>
+        <property name="list">
+            <list>
+                <value>第一排</value>
+                <value>第二排</value>
+                <value>第三排</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>北京</value>
+                <value>上海</value>
+                <value>天津</value>
+                <value>河南</value>
+                <value>浙江</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="篮球" value="姚明"/>
+                <entry key="足球" value="出线"/>
+            </map>
+        </property>
+    </bean>
+
+
 </beans>

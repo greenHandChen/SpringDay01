@@ -27,4 +27,20 @@
     </bean>
 
     <tx:annotation-driven proxy-target-class="true" transaction-manager="txManager"/>
+
+    <bean id="txTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+        <property name="transactionManager" ref="txManager"/>
+    </bean>
+
+    <!--<bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager" ref="txManager"/>
+        <property name="target" ref="accountService"/>
+        <property name="proxyInterfaces" value="com.ct.service.IAccountService"/>
+
+        <property name="transactionAttributes">
+            <props>
+                <prop key="transfer">PROPAGATION_REQUIRED,ISOLATION_DEFAULT</prop>
+            </props>
+        </property>
+    </bean>-->
 </beans>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="collection" class="collection.CollectionBean">
+        <property name="array">
+            <array>
+                <value>老王</value>
+                <value>老李</value>
+                <value>老陈</value>
+            </array>
+        </property>
+        <property name="list">
+            <list>
+                <value>第一排</value>
+                <value>第二排</value>
+                <value>第三排</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>北京</value>
+                <value>上海</value>
+                <value>天津</value>
+                <value>河南</value>
+                <value>浙江</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="篮球" value="姚明"></entry>
+                <entry key="足球" value="出线"></entry>
+            </map>
+        </property>
+    </bean>
+</beans>

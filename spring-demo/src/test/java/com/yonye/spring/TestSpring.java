@@ -2,6 +2,7 @@ package com.yonye.spring;
 
 import com.yonye.controller.AnnotationController;
 import com.yonye.serviceImpl.AnnotationRepositoryImpl;
+import com.yonye.serviceImpl.AnnotationServiceImpl;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -21,13 +22,19 @@ public class TestSpring {
     public void now(){
         //第一步：根据xml配置文件生成，spring上下文
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext("classpath:spring-context.xml");
-        //第二部：根据bean的id获取bean
-        HelloSpring helloSpring=(HelloSpring)applicationContext.getBean("helloSpring");
-        //第三步：使用
+        //第二部：根据bean的id获取beanclass
+      HelloSpring helloSpring=(HelloSpring)applicationContext.getBean("helloSpring");
+//        //第三步：使用
         helloSpring.setInfo("spring:芜湖班的同学们好！！！");
         System.out.print(helloSpring.getInfo());
+    }
 
-        AnnotationController annotationRepository=(AnnotationController)applicationContext.getBean("annotationController");
+    @Test
+    public void now2(){
+        //第一步：根据xml配置文件生成，spring上下文
+        ApplicationContext applicationContext=new ClassPathXmlApplicationContext("classpath:spring-context.xml");
+
+          AnnotationRepositoryImpl annotationRepository=(AnnotationRepositoryImpl)applicationContext.getBean("annotationRepository");
         annotationRepository.addUser();
     }
 }

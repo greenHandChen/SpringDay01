@@ -6,11 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-demo" />
+        <module name="jdbc-demo" />
+        <module name="transaction-template" />
+        <module name="transcation-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="jdbc-demo" target="1.7" />
       <module name="spring-demo" target="1.7" />
+      <module name="transaction-template" target="8" />
+      <module name="transcation-server" target="8" />
+      <module name="transcationtest" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

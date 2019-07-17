@@ -11,8 +11,7 @@ public class AnnotationServiceImpl implements IAnnotationService {
 
 
 
-    @Autowired
-    @Qualifier("annotationRepository")
+
     private AnnotationRepository annotationRepository;
 
 

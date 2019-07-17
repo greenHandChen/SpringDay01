@@ -19,18 +19,18 @@
     <context:component-scan base-package="com.yonye.controller"/>
     <context:component-scan base-package="com.yonye.serviceImpl"/>
 
-<!--<bean id="helloSpring" class="com.yonye.spring.HelloSpring"></bean>
--->
+    <!--<bean id="helloSpring" class="com.yonye.spring.HelloSpring"></bean>
+    -->
     <bean id="helloSpring" class="com.yonye.spring.HelloSpring"  init-method="initBean" destroy-method="destoryBean"/>
 
-    <bean id="myBeanPostProcessor" class="com.yonye.spring.MyBeanPostProcessor"/>
 
-   <!-- <bean id="person"class="com.yonye.spring.Person">
-        <property name="name" value="jun"/>
-        <property name="address" value="中山大学"/>
-        <property name="age" value="18"/>
-    </bean>
-    -->
+
+    <!-- <bean id="person"class="com.yonye.spring.Person">
+         <property name="name" value="jun"/>
+         <property name="address" value="中山大学"/>
+         <property name="age" value="18"/>
+     </bean>
+     -->
 
     <bean id="person" class="com.yonye.spring.Person">
         <constructor-arg name="name" value="ceh"/>
@@ -62,7 +62,7 @@
         </property>
         <property name="map">
             <map>
-             <entry key="足球" value="jj"/>
+                <entry key="足球" value="jj"/>
                 <entry key="唱歌" value="jj"/>
             </map>
         </property>

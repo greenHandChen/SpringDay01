@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringDay01" />
-        <module name="maven" />
+        <module name="transaction" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="transaction.dl" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

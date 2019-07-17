@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1874c971-095a-48b1-bc22-dd8d03306fff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../day02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day02/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day2child/src/main/resources/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day2child/src/main/resources/application.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day2child/src/main/java/TrTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="277">
+              <caret line="23" column="43" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -309,7 +307,7 @@
       <workItem from="1563359213660" duration="1553000" />
       <workItem from="1563361922741" duration="145000" />
       <workItem from="1563364634598" duration="47000" />
-      <workItem from="1563364725721" duration="422000" />
+      <workItem from="1563364725721" duration="580000" />
     </task>
     <task id="LOCAL-00001" summary="day02">
       <created>1563361241044</created>
@@ -318,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563361241044</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day02">
+      <created>1563365248018</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563365248019</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -346,14 +351,17 @@
     <history-entry file="TrTest_tt - 2019.07.17 at 19h 13m 55s.xml">
       <configuration name="TrTest.tt" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TrTest_tt - 2019.07.17 at 20h 06m 25s.xml">
+      <configuration name="TrTest.tt" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6313000" />
+    <option name="totallyTimeSpent" value="6471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1383" height="745" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26455027" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26455027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -461,8 +469,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day2child/src/main/java/TrTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="277">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

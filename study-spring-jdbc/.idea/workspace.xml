@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4170b36c-c674-4a7d-8770-b7cddd1d0181" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../study-spring/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-spring/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../study-spring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../study-spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/spring/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study-spring/src/main/java/spring/Entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/spring/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/spring/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study-spring/src/main/java/spring/Application/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/springMvc/com/hand/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study-spring/src/main/java/springMVC/Entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/springMvc/com/hand/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/springMvc/com/hand/repository/UserRepositoryIm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/springMvc/com/hand/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/springMvc/com/hand/service/UserServiceIm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/springMvc/com/hand/spring-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/spring/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/spring/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/springMvc/com/hand/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/springMvc/com/hand/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/springMvc/com/hand/repository/UserRepositoryIm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/springMvc/com/hand/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/springMvc/com/hand/service/UserServiceIm.class" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-705">
+              <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven\repository" />
+        <option name="mavenHome" value="D:/software/apache-maven-3.6.1/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\software\apache-maven-3.6.1\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="394" />
+    <option name="y" value="12" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="study-spring-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study-spring-jdbc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study-spring-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study-spring-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4170b36c-c674-4a7d-8770-b7cddd1d0181" name="Default Changelist" comment="" />
+      <created>1563327773260</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563327773260</updated>
+      <workItem from="1563327785433" duration="1389000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1389000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24281392" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" weight="0.3295082" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29836065" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-705">
+          <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

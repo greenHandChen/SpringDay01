@@ -11,6 +11,8 @@
     <properties>
         <spring.version>4.3.8.RELEASE</spring.version>
         <springmvc.version>4.3.8.RELEASE</springmvc.version>
+        <mysql.version>8.0.16</mysql.version>
+        <hikariCP.version>2.5.1</hikariCP.version>
     </properties>
     <!--jar包的依赖-->
     <dependencies>
@@ -53,6 +55,26 @@
             <version>${spring.version}</version>
             <scope>test</scope>
         </dependency>
-    </dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>${hikariCP.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+</dependencies>
 
 </project>

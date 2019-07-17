@@ -6,5 +6,8 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:component-scan base-package="com.jmx.test" />
+    <context:component-scan base-package="com.jmx" />
+    <bean id="datasource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+
+    </bean>
 </beans>

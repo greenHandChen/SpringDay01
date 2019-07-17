@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <context:component-scan base-package="com.spring"/>
+    <context:property-placeholder location="dataSource.properties"/>
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+    </bean>
+
+    <bean id="accountDao" class="com.spring.dao.AccountDaoImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- xml配置的类property需要添加setter方法后才能注入 -->
+    <bean id="accountService" class="com.spring.service.AccountServiceImpl2">
+        <property name="accountDao" ref="accountDao"/>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--使用事务管理驱动,使用时，只需要给方法加上@Transaction注解即可
+        proxy-target-class：false使用jdk动态代理（需要目标类有实现接口，相当于从在实现接口中clone了一个他的实现类）
+                            true使用cglib进行动态代理（不需要目标类有实现接口，继承目标类，来生成子类）
+    -->
+    <tx:annotation-driven proxy-target-class="false" transaction-manager="transactionManager"/>
+
+</beans>

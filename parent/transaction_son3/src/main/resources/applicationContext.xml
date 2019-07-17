@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="com.spring"/>
+    <context:property-placeholder location="dataSource.properties"/>
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+    </bean>
+
+    <bean id="accountDao" class="com.spring.dao.AccountDaoImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- xml配置的类property需要添加setter方法后才能注入 -->
+    <bean id="accountService" class="com.spring.service.AccountServiceImpl">
+        <property name="accountDao" ref="accountDao"/>
+    </bean>
+
+    <!--编程式事务管理-->
+    <!--1.配置事务管理器：DataSourceTransactionManager-->
+    <bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--2.配置事务模板TransactionTemplate,注入事务管理器-->
+    <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+        <property name="transactionManager" ref="dataSourceTransactionManager"/>
+    </bean>
+
+    <!-- 配置事务代理工厂TransactionProxyFactoryBean -->
+    <bean id="proxyFactoryBean" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <!--配置事务管理器-->
+        <property name="transactionManager" ref="dataSourceTransactionManager"/>
+        <!--配置目标类 -->
+        <property name="target" ref="accountService"/>
+        <!--配置目标类的接口-->
+        <property name="proxyInterfaces" value="com.spring.service.IAccountService"/>
+        <!--配置哪些方法需要事务控制以及如何控制
+            prpo配置格式：PROPAGATION,ISOLATION,readOnly,-Exception,+Exception
+            1.PROPAGATION:事务传播行为
+            2.ISOLATION：隔离级别
+            3.readonly：是否只读
+            4.-Exception：指定异常回滚
+            5.+Exception：指定异常提交
+        -->
+        <property name="transactionAttributes">
+            <props>
+                <prop key="transfer">PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

@@ -9,15 +9,15 @@
         <module name="transaction-test03" />
         <module name="transaction-test02" />
         <module name="transaction-base" />
-        <module name="transcation-test01" />
+        <module name="transaction-test01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="transaction-base" target="1.8" />
+      <module name="transaction-test01" target="1.8" />
       <module name="transaction-test02" target="1.8" />
       <module name="transaction-test03" target="1.8" />
       <module name="transaction2" target="1.8" />
-      <module name="transcation-test01" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

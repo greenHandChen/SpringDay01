@@ -3,12 +3,16 @@ package com.hand.service.impl;
 import com.hand.dao.impl.AccountDaoImpl;
 import com.hand.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 
 public class AccountServiceImpl implements AccountService {
 
-    @Autowired
+    public void setAccountDaoImpl(AccountDaoImpl accountDaoImpl) {
+        this.accountDaoImpl = accountDaoImpl;
+    }
+
     private AccountDaoImpl accountDaoImpl;
 
     @Override

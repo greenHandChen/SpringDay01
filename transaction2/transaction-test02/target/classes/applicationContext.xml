@@ -6,10 +6,6 @@
 
     <context:property-placeholder location="classpath:db.properties"/>
 
-    <context:component-scan base-package="com.hand">
-        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-    </context:component-scan>
-
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
         <property name="username" value="${jdbc.user}"></property>
         <property name="password" value="${jdbc.password}"></property>
@@ -17,12 +13,16 @@
         <property name="driverClassName" value="${jdbc.driverClass}"></property>
     </bean>
 
-    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <bean id="accountDao" class="com.hand.dao.impl.AccountDaoImpl">
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
     <bean id="accountServiceImpl" class="com.hand.service.impl.AccountServiceImpl">
+        <property name="accountDaoImpl" ref="accountDao"></property>
+    </bean>
 
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
     </bean>
 
     <bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">

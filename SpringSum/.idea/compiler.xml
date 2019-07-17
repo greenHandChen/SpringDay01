@@ -6,9 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="transaction03" />
         <module name="transaction02" />
         <module name="transaction01" />
+        <module name="transaction-03" />
+        <module name="transaction-02" />
+        <module name="transaction-01" />
+        <module name="transaction03" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

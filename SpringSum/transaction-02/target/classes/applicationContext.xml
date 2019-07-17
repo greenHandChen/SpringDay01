@@ -33,6 +33,10 @@
         <property name="accountDao" ref="accountDao"/>
     </bean>
 
+    <!--原始方式
+    工厂Bean生成代理，即半自动动态代理
+    -->
+
     <!--配置代理工厂-->
     <bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
         <!--事务管理器-->

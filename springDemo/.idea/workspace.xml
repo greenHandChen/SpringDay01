@@ -2,90 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e0052fb-22a3-4c3a-8110-82f0ece3c19e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/SpringDay01.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springDemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a_ioc/HelloSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a_ioc/TestSpringIOC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/b_di/DISpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/b_di/HelloSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/b_di/TestSpringDI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c_scpoe/DISpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c_scpoe/HelloSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c_scpoe/TestScope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c_scpoe/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_lifecycle/HelloSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_lifecycle/TestLifeCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_lifecycle/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/e_inject/collection/CollectionBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/e_inject/collection/TestCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/e_inject/collection/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/e_inject/constructor/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/e_inject/constructor/TestConstructot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/e_inject/constructor/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/e_inject/setter/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/e_inject/setter/TestSetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/e_inject/setter/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/lifecycle/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/lifecycle/TestLifeCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/lifecycle/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web/TestAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web/controller/AnnotationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web/repository/AnnotationRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web/repository/AnnotationRepositoryImpl2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web/repository/IAnnotationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web/service/AnnotationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web/service/IAnnotationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web2/TestAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web2/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web2/controller/AnnotationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web2/repository/AnnotationRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web2/repository/AnnotationRepositoryImpl2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web2/repository/IAnnotationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web2/service/AnnotationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/f_annotation/web2/service/IAnnotationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestLifeCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestScope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestSpringDI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestSpringIOC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/a_ioc/HelloSpring.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/a_ioc/TestSpringIOC.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/b_di/DISpring.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/b_di/HelloSpring.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/b_di/TestSpringDI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/c_scpoe/DISpring.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/c_scpoe/HelloSpring.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/c_scpoe/TestScope.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/d_lifecycle/HelloSpring.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/d_lifecycle/TestLifeCycle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/e_inject/collection/CollectionBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/e_inject/collection/TestCollection.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/e_inject/constructor/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/e_inject/constructor/TestConstructot.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/e_inject/setter/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/e_inject/setter/TestSetter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSpring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TestSpring.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/TestLifeCycle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/TestScope.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/TestSpringDI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/TestSpringIOC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/b_di/DISpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/b_di/DISpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/f_annotation/lifecycle/TestLifeCycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/f_annotation/lifecycle/TestLifeCycle.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -101,34 +22,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/web2/TestAnnotation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/web/controller/AnnotationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/d_lifecycle/TestLifeCycle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="300">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -136,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/web/TestAnnotation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="250">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,29 +54,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/lifecycle/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="225">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#81#82#0" expanded="true" />
-                <element signature="e#117#118#0" expanded="true" />
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#194#195#0" expanded="true" />
-                <element signature="e#236#237#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/lifecycle/TestLifeCycle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="400">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/a_ioc/TestSpringIOC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/b_di/DISpring.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding>
+                <element signature="e#130#131#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/b_di/TestSpringDI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -194,18 +124,6 @@
                 <element signature="e#204#205#0" expanded="true" />
                 <element signature="e#231#232#0" expanded="true" />
                 <element signature="e#281#282#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/web/service/AnnotationServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -227,12 +145,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/HelloSpring.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/test/java/TestSpring.java" />
         <option value="$PROJECT_DIR$/src/main/java/di/DISpring.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/test/java/TestSpringDI.java" />
         <option value="$PROJECT_DIR$/src/main/java/di/HelloSpring.java" />
         <option value="$PROJECT_DIR$/src/main/java/b_di/HelloSpring.java" />
@@ -278,6 +194,8 @@
         <option value="$PROJECT_DIR$/src/main/java/f_annotation/lifecycle/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/f_annotation/lifecycle/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/f_annotation/lifecycle/TestLifeCycle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/b_di/DISpring.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
       </list>
     </option>
   </component>
@@ -305,10 +223,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="24" />
-    <option name="y" value="16" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="100" />
+    <option name="width" value="878" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -316,6 +233,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -348,6 +267,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="a_ioc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="b_di" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springDemo" type="b2602c69:ProjectViewProjectNode" />
@@ -391,15 +318,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/f_annotation/web2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../springStudy" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -446,7 +371,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestLifeCycle.test">
+  <component name="RunManager" selected="JUnit.TestSpringIOC.test">
     <configuration name="TestAnnotation.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-demo-01" />
       <extension name="coverage">
@@ -479,22 +404,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAnnotation.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-demo-01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="f_annotation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="f_annotation" />
-      <option name="MAIN_CLASS_NAME" value="f_annotation.TestAnnotation" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestLifeCycle.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-demo-01" />
       <extension name="coverage">
@@ -511,7 +420,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSpringIOC.now" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSpringDI.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-demo-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="b_di.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="b_di" />
+      <option name="MAIN_CLASS_NAME" value="b_di.TestSpringDI" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpringIOC.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-demo-01" />
       <extension name="coverage">
         <pattern>
@@ -521,7 +446,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="a_ioc" />
       <option name="MAIN_CLASS_NAME" value="a_ioc.TestSpringIOC" />
-      <option name="METHOD_NAME" value="now" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -529,11 +454,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSpringIOC.test" />
+        <item itemvalue="JUnit.TestSpringDI.test" />
         <item itemvalue="JUnit.TestLifeCycle.test" />
         <item itemvalue="JUnit.TestAnnotation.test (2)" />
         <item itemvalue="JUnit.TestAnnotation.test (1)" />
-        <item itemvalue="JUnit.TestAnnotation.test" />
-        <item itemvalue="JUnit.TestSpringIOC.now" />
       </list>
     </recent_temporary>
   </component>
@@ -548,20 +473,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563238927347</updated>
       <workItem from="1563238931507" duration="8968000" />
-      <workItem from="1563261312953" duration="8127000" />
+      <workItem from="1563261312953" duration="11983000" />
+      <workItem from="1563284049518" duration="1553000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAnnotation_test - 2019.07.16 at 16h 15m 56s.xml">
-      <configuration name="TestAnnotation.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestAnnotation_test_(1) - 2019.07.16 at 16h 56m 15s.xml">
-      <configuration name="TestAnnotation.test (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestAnnotation_test_(1) - 2019.07.16 at 16h 57m 03s.xml">
-      <configuration name="TestAnnotation.test (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestAnnotation_test_(1) - 2019.07.16 at 16h 58m 25s.xml">
       <configuration name="TestAnnotation.test (1)" configurationId="JUnit" />
     </history-entry>
@@ -583,9 +500,18 @@
     <history-entry file="TestLifeCycle_test - 2019.07.16 at 17h 24m 42s.xml">
       <configuration name="TestLifeCycle.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestSpringDI_test - 2019.07.16 at 19h 02m 03s.xml">
+      <configuration name="TestSpringDI.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringDI_test - 2019.07.16 at 19h 05m 19s.xml">
+      <configuration name="TestSpringDI.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringIOC_test - 2019.07.16 at 21h 35m 25s.xml">
+      <configuration name="TestSpringIOC.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17095000" />
+    <option name="totallyTimeSpent" value="22504000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -598,9 +524,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25642964" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.37065053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -609,13 +534,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.23278688" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26065573" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25737706" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3295082" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.26393443" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.44590163" />
@@ -636,23 +561,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/c_scpoe/DISpring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestSpringIOC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/c_scpoe/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -679,16 +587,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/b_di/TestSpringDI.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/c_scpoe/TestScope.java">
       <provider selected="true" editor-type-id="text-editor" />
@@ -783,13 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/a_ioc/TestSpringIOC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/web/service/IAnnotationService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -878,23 +769,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/web2/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/web/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/web2/controller.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/web2/Person.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/web/Person.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/web2/controller.java" />
     <entry file="jar://$PROJECT_DIR$/../../../../jdk-1.8/src.zip!/javax/annotation/Resource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -988,10 +865,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.8.RELEASE/spring-context-4.3.8.RELEASE.jar!/org/springframework/context/annotation/Scope.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/b_di/HelloSpring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/d_lifecycle/TestLifeCycle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/web/TestAnnotation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="250">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1005,10 +903,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/d_lifecycle/TestLifeCycle.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/lifecycle/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/lifecycle/TestLifeCycle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/b_di/DISpring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="e#130#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/b_di/TestSpringDI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -1025,36 +953,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.8.RELEASE/spring-context-4.3.8.RELEASE.jar!/org/springframework/context/annotation/Scope.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        <state relative-caret-position="297">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/lifecycle/Person.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/a_ioc/TestSpringIOC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#81#82#0" expanded="true" />
-            <element signature="e#117#118#0" expanded="true" />
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/f_annotation/lifecycle/TestLifeCycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
         </state>
       </provider>
     </entry>

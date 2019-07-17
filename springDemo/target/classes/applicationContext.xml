@@ -6,4 +6,12 @@
     <bean id="helloSpring" class="a_ioc.HelloSpring" scope="prototype">
         <!--<property name="info" value="applicationSpring_helloSpring"/>-->
     </bean>
+
+    <bean id="helloSpringDI" class="b_di.HelloSpring">
+        <property name="diSpring">
+            <bean class="b_di.DISpring">
+                <constructor-arg value="aa"/>
+            </bean>
+        </property>
+    </bean>
 </beans>

@@ -1,4 +1,4 @@
-package com.hand.service.impl;
+package com.hand.service;
 
 import com.hand.bean.User;
 import com.hand.dao.IUSerDao;

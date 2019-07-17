@@ -2,7 +2,7 @@ package com.hand.test;
 
 import com.hand.bean.User;
 import com.hand.service.IUserService;
-import com.hand.service.impl.UserServiceImpl;
+import com.hand.service.UserServiceImpl;
 import com.zaxxer.hikari.HikariDataSource;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -15,11 +15,6 @@ public class MyTest {
     public MyTest() {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         userService = context.getBean("userService", UserServiceImpl.class);
-    }
-
-    public static void main(String[] args) {
-        MyTest myTest = new MyTest();
-        myTest.test01();
     }
 
     @Test

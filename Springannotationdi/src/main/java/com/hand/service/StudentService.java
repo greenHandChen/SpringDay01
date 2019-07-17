@@ -1,4 +1,4 @@
-package com.hand.service.impl;
+package com.hand.service;
 
 import com.hand.dao.IStudentDao;
 import com.hand.service.IStudentService;

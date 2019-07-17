@@ -36,5 +36,11 @@ public class Client {
 
         CollectionBean cb=ac.getBean("collectionBean",CollectionBean.class);
         System.out.println(cb.toString());
+        System.out.println("--------------");
+
+        Demo demo=ac.getBean("demo",Demo.class);
+        demo.demo1();
+        demo.demo2();
+        demo.demo3();
     }
 }

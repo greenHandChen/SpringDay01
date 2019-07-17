@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e96e192c-6401-455b-9338-9a7da557ae36" name="Default Changelist" comment="25580_杨鸿坤">
-      <change beforePath="$PROJECT_DIR$/../.idea/SpringDay01.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo2/SpringDemo2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/Client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/SpringTest/CollectionBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/SpringTest/CollectionBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/beans.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,10 +28,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SpringTest/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Client/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="972">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SpringTest/Demo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SpringTest/MyBeforeAdvice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,27 +78,55 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/beans.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="243">
+              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SpringTest/MyAfterAdvice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SpringTest/CollectionBean.java">
+        <entry file="file://$PROJECT_DIR$/src/ServiceImpl/AnnotationServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="136">
+              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#191#192#0" expanded="true" />
-                <element signature="e#219#220#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#334#335#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SpringTest/CollectionBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RepositoryImpl/AnnotationRepositoryImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,9 +173,12 @@
         <option value="$PROJECT_DIR$/src/SpringTest/MyBeanPostProcessor.java" />
         <option value="$PROJECT_DIR$/src/SpringTest/Person.java" />
         <option value="$PROJECT_DIR$/src/SpringTest/test.java" />
-        <option value="$PROJECT_DIR$/src/beans.xml" />
-        <option value="$PROJECT_DIR$/src/Client/Client.java" />
         <option value="$PROJECT_DIR$/src/SpringTest/CollectionBean.java" />
+        <option value="$PROJECT_DIR$/src/SpringTest/MyBeforeAdvice.java" />
+        <option value="$PROJECT_DIR$/src/SpringTest/MyAfterAdvice.java" />
+        <option value="$PROJECT_DIR$/src/beans.xml" />
+        <option value="$PROJECT_DIR$/src/SpringTest/Demo.java" />
+        <option value="$PROJECT_DIR$/src/Client/Client.java" />
       </list>
     </option>
   </component>
@@ -116,7 +188,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="20" />
     <option name="y" value="10" />
     <option name="width" value="1346" />
@@ -129,7 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,16 +217,17 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringDemo2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -176,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Client.Client" />
       <module name="test" />
@@ -190,9 +262,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SpringTest.Demo" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SpringTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +296,10 @@
       <workItem from="1563268481701" duration="1292000" />
       <workItem from="1563272006080" duration="1577000" />
       <workItem from="1563273729012" duration="471000" />
-      <workItem from="1563274521373" duration="6555000" />
+      <workItem from="1563274521373" duration="12324000" />
+      <workItem from="1563334365724" duration="536000" />
+      <workItem from="1563334925701" duration="802000" />
+      <workItem from="1563343695734" duration="1534000" />
     </task>
     <task id="LOCAL-00001" summary="25580_杨鸿坤">
       <created>1563274585623</created>
@@ -244,7 +333,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25482000" />
+    <option name="totallyTimeSpent" value="34123000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -256,25 +345,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="20" y="10" width="1346" height="698" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" weight="0.32980332" />
-      <window_info id="Structure" order="5" sideWeight="0.25853658" side_tool="true" visible="true" weight="0.26172465" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.7414634" visible="true" weight="0.26172465" />
+      <window_info id="Structure" order="5" sideWeight="0.27304965" side_tool="true" visible="true" weight="0.21384136" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.72695035" visible="true" weight="0.21384136" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.18387097" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32903227" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32903227" />
       <window_info anchor="bottom" id="Database Changes" order="4" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="5" sideWeight="0.5015129" side_tool="true" visible="true" weight="0.33870968" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5015129" side_tool="true" weight="0.22258064" />
       <window_info anchor="bottom" id="Messages" order="6" weight="0.32419354" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49848714" visible="true" weight="0.33870968" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49848714" weight="0.17096774" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -379,65 +469,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scours/applicationContext.xml" />
     <entry file="file://$PROJECT_DIR$/src/Repository/AnnotationRepository .java" />
-    <entry file="file://$PROJECT_DIR$/src/Service/IAnnotationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/AnnotationRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SpringTest/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SpringTest/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RepositoryImpl/AnnotationRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServiceImpl/AnnotationServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -482,10 +520,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/AnnotationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/IAnnotationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SpringTest/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="972">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SpringTest/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SpringTest/MyBeforeAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -494,25 +576,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/beans.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="243">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SpringTest/MyAfterAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SpringTest/CollectionBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="162">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#191#192#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RepositoryImpl/AnnotationRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServiceImpl/AnnotationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

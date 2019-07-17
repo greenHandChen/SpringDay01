@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f378c635-daf5-436c-bc7c-a86ce5e590ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child01/src/main/java/AccountServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child01/src/main/java/club/osai/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child01/src/main/java/club/osai/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child01/src/main/java/club/osai/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child01/src/main/java/club/osai/dao/AccountDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child01/src/main/java/club/osai/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child01/src/main/java/club/osai/service/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child01/src/main/resources/jdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child01/src/test/java/club/osai/service/AccountServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child02/src/main/java/resources/jdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/day2child/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/parent.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo1/src/main/resources/dataSource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1/src/main/resources/dataSource.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo1/target/classes/dataSource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1/target/classes/dataSource.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springDay01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springDay01/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/parent/target/" />
+    <ignored path="$PROJECT_DIR$/child01/target/" />
+    <ignored path="$PROJECT_DIR$/child02/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="demo02" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/dao/AccountDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/child01/src/test/java/club/osai/service/AccountServiceImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="12" column="92" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/child01/src/main/java/AccountServiceImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="106" selection-start-line="11" selection-start-column="106" selection-end-line="11" selection-end-column="106" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/child01/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="104" column="24" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/child01/src/test/java/club/osai/AppTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="9" selection-start-line="9" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/Account.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/child01/src/main/resources/jdbc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parent/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/service/AccountServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/parent/src/main/java/club/osai/App.java" />
+        <option value="$PROJECT_DIR$/child02/pom.xml" />
+        <option value="$PROJECT_DIR$/child01/src/main/java/club/osai/osai/dao/AccountDao.java" />
+        <option value="$PROJECT_DIR$/child01/src/test/java/service/AccountServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/parent/pom.xml" />
+        <option value="$PROJECT_DIR$/child01/src/main/resources/jdbc.xml" />
+        <option value="$PROJECT_DIR$/child01/src/main/java/club/osai/service/AccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/child01/src/test/java/club/osai/service/AccountServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/child01/src/main/java/AppTest.java" />
+        <option value="$PROJECT_DIR$/child01/src/main/java/AccountServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/child01/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/parent/parent.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+        <option value="$PROJECT_DIR$/child01/child01.iml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_8_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_8_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_8_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_8_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_8_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_8_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_8_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/child02/child02.iml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="473" />
+    <option name="y" value="65" />
+    <option name="width" value="1346" />
+    <option name="height" value="745" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="demo02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="child02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/child02/src/main/java" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ChenQuan\Hand\培训\2019芜湖培训\Java\Spring\SpringDay02\demo02\child01\src\test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="club.osai" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ChenQuan\Hand\培训\2019芜湖培训\Java\Spring\SpringDay02\demo02\child02\src\main\java" />
+      <recent name="D:\ChenQuan\Hand\培训\2019芜湖培训\Java\Spring\SpringDay02\demo02\child01\src\main" />
+      <recent name="D:\ChenQuan\Hand\培训\2019芜湖培训\Java\Spring\SpringDay02\demo02\child01\src\main\java\club\osai" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.AccountServiceImplTest">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="club.osai.App" />
+      <module name="child01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.osai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="child01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.osai.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="club.osai.service" />
+      <option name="MAIN_CLASS_NAME" value="club.osai.service.AccountServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceImplTest.transfer (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="child01" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AccountServiceImplTest" />
+      <option name="METHOD_NAME" value="transfer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceImplTest.transfer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="child01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.osai.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="club.osai.service" />
+      <option name="MAIN_CLASS_NAME" value="club.osai.service.AccountServiceImplTest" />
+      <option name="METHOD_NAME" value="transfer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AccountServiceImplTest" />
+        <item itemvalue="JUnit.AccountServiceImplTest.transfer (1)" />
+        <item itemvalue="JUnit.AccountServiceImplTest.transfer" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f378c635-daf5-436c-bc7c-a86ce5e590ba" name="Default Changelist" comment="" />
+      <created>1563354389814</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563354389814</updated>
+      <workItem from="1563354390961" duration="2115000" />
+      <workItem from="1563358666049" duration="1350000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="AccountServiceImplTest_transfer - 2019.07.17 at 18h 05m 20s.xml">
+      <configuration name="AccountServiceImplTest.transfer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest_transfer - 2019.07.17 at 18h 05m 45s.xml">
+      <configuration name="AccountServiceImplTest.transfer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest_transfer - 2019.07.17 at 18h 05m 58s.xml">
+      <configuration name="AccountServiceImplTest.transfer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest_transfer - 2019.07.17 at 18h 07m 25s.xml">
+      <configuration name="AccountServiceImplTest.transfer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest_transfer - 2019.07.17 at 18h 07m 41s.xml">
+      <configuration name="AccountServiceImplTest.transfer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest_transfer - 2019.07.17 at 18h 11m 44s.xml">
+      <configuration name="AccountServiceImplTest.transfer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest_transfer - 2019.07.17 at 18h 12m 52s.xml">
+      <configuration name="AccountServiceImplTest.transfer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest_transfer_(1) - 2019.07.17 at 18h 15m 19s.xml">
+      <configuration name="AccountServiceImplTest.transfer (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest_transfer_(1) - 2019.07.17 at 18h 18m 47s.xml">
+      <configuration name="AccountServiceImplTest.transfer (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest - 2019.07.17 at 18h 22m 00s.xml">
+      <configuration name="AccountServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3465000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8808725" visible="true" weight="0.24886535" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.11912752" side_tool="true" weight="0.24962178" />
+      <window_info id="Designer" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.077181205" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32885906" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.09531014" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven-2 Build" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.04462935" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/parent/src/main/java/club/osai/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding>
+            <element signature="e#168#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child02/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/osai/Account.java" />
+    <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/osai/service/AccountService.java" />
+    <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/osai/service/AccountServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/osai/dao/AccountDao.java" />
+    <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/osai/dao/AccountDaoImpl.java" />
+    <entry file="file://$PROJECT_DIR$/child01/child01.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child02/src/main/java/resources/jdbc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/dao/AccountDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child01/src/main/java/AppTest.java" />
+    <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/dao/AccountDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child01/src/test/java/club/osai/service/AccountServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="92" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child01/src/test/java/club/osai/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child01/src/main/java/club/osai/service/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child01/src/main/java/AccountServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="106" selection-start-line="11" selection-start-column="106" selection-end-line="11" selection-end-column="106" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child01/src/main/resources/jdbc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child01/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="104" column="24" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>child01</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

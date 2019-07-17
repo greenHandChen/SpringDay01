@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="accountDao" class="club.osai.dao.AccountDaoImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+
+        <property name="jdbcUrl"
+                  value="jdbc:mysql://127.0.0.1:3306/spring_transaction?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;useSSL=false"/>
+        <property name="username" value="root"/>
+        <property name="password" value="13882"/>
+    </bean>
+
+    <!--    扫描包   -->
+    <context:component-scan base-package="club.osai.dao"/>
+    <context:component-scan base-package="club.osai.service"/>
+</beans>

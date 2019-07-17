@@ -2,6 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51bfea28-4008-4649-a7be-2ab2857665a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/.idea/dataSources/db82b050-a73b-4629-9def-bd9422c28c51.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/src/main/java/club/osai/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/src/main/java/club/osai/JdbcDaoSupport/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/src/main/java/club/osai/JdbcDaoSupport/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/src/main/java/club/osai/jdbc/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/src/main/java/club/osai/jdbc/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/src/main/resources/dataSource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/src/main/resources/jdbc-druid.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/src/main/resources/jdbc-support.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/src/main/resources/jdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/src/test/java/club/osai/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/src/test/java/club/osai/JdbcDaoSupport/UserDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/src/test/java/club/osai/jdbc/APITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/src/test/java/club/osai/jdbc/UserDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/target/classes/club/osai/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/target/classes/club/osai/JdbcDaoSupport/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/target/classes/club/osai/JdbcDaoSupport/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/target/classes/club/osai/jdbc/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/target/classes/club/osai/jdbc/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/target/classes/dataSource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/target/classes/jdbc-druid.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/target/classes/jdbc-support.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/target/classes/jdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/target/test-classes/club/osai/AppTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/target/test-classes/club/osai/JdbcDaoSupport/UserDaoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/target/test-classes/club/osai/jdbc/APITest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/demo1/target/test-classes/club/osai/jdbc/UserDaoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springdemo01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring01/DISpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring01/HelloSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring02/CollectionBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring02/HelloSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring02/MyBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring02/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring03/AnnotationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring03/AnnotationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring03/AnnotationRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring03/AnnotationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring03/AnnotationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring03/ConfigurationBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring03/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/club/osai/spring03/PrototypePerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/club/osai/spring01/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/club/osai/spring02/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/club/osai/spring03/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/club/osai/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/club/osai/spring01/HelloSpringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/club/osai/spring02/CollectionBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/club/osai/spring02/HelloSpringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/club/osai/spring02/PersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/club/osai/spring03/AnnotationControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/club/osai/spring03/ConfigurationBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/club/osai/spring03/PersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/club/osai/spring03/PrototypePersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring01/DISpring.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring01/HelloSpring.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring01/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring02/CollectionBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring02/HelloSpring.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring02/MyBeanPostProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring02/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring02/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring03/AnnotationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring03/AnnotationRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring03/AnnotationRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring03/AnnotationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring03/AnnotationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring03/ConfigurationBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring03/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring03/PrototypePerson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/club/osai/spring03/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/club/osai/AppTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/club/osai/spring01/HelloSpringTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/club/osai/spring02/CollectionBeanTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/club/osai/spring02/HelloSpringTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/club/osai/spring02/PersonTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/club/osai/spring03/AnnotationControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/club/osai/spring03/ConfigurationBeanTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/club/osai/spring03/PersonTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/club/osai/spring03/PrototypePersonTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/demo1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay02/demo1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springdemo01/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../springdemo01/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../springdemo01/.idea/misc.xml" beforeDir="false" />
@@ -60,26 +158,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/club/osai/spring03/ConfigurationBean.java">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#520#521#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="77">
+              <caret line="434" column="33" selection-start-line="434" selection-start-column="33" selection-end-line="434" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -115,11 +208,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/club/osai/spring02/CollectionBeanTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            <state relative-caret-position="228">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,6 +263,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>spring</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -208,6 +306,7 @@
         <option value="$PROJECT_DIR$/src/test/java/club/osai/spring02/PersonTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/club/osai/spring01/HelloSpringTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -237,22 +336,6 @@
             <path>
               <item name="springDay01" type="b2602c69:ProjectViewProjectNode" />
               <item name="springDay01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -428,7 +511,7 @@
       <workItem from="1563256846641" duration="2392000" />
       <workItem from="1563261922355" duration="10731000" />
       <workItem from="1563329742079" duration="157000" />
-      <workItem from="1563334388695" duration="40000" />
+      <workItem from="1563334388695" duration="750000" />
     </task>
     <task id="LOCAL-00001" summary="完成PPT上的作业">
       <created>1563267854734</created>
@@ -455,9 +538,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CollectionBeanTest_test - 2019.07.16 at 16h 20m 41s.xml">
-      <configuration name="CollectionBeanTest.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PersonTest_sayHello - 2019.07.16 at 16h 26m 36s.xml">
       <configuration name="PersonTest.sayHello" configurationId="JUnit" />
     </history-entry>
@@ -485,9 +565,12 @@
     <history-entry file="ConfigurationBeanTest_person - 2019.07.16 at 19h 16m 37s.xml">
       <configuration name="ConfigurationBeanTest.person" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CollectionBeanTest_test_(1) - 2019.07.17 at 11h 35m 09s.xml">
+      <configuration name="CollectionBeanTest.test (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13565000" />
+    <option name="totallyTimeSpent" value="14275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -502,16 +585,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4977307" weight="0.32885906" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.82223904" weight="0.51342285" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8214826" weight="0.12080537" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7579425" weight="0.07214765" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.8789713" visible="true" weight="0.44127518" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.8789713" weight="0.44127518" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.12102874" side_tool="true" visible="true" weight="0.44127518" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.1785174" side_tool="true" visible="true" weight="0.12080537" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.43494704" weight="0.3942953" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -839,16 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/club/osai/spring02/CollectionBeanTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/club/osai/spring02/HelloSpringTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -887,7 +960,24 @@
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="434" column="33" selection-start-line="434" selection-start-column="33" selection-end-line="434" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/club/osai/spring02/CollectionBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

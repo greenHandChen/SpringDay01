@@ -30,11 +30,36 @@ public class UserDaoSupport extends JdbcDaoSupport {
         String deleteSql = "DELETE FROM sys_uer  WHERE id=?;";
         return getJdbcTemplate().update(deleteSql, id);
     }
+    /**
+    * @Description: 普通方法
+    * @Author: TanLinQuan
+    * @Date: 2019/7/17 19:20
+    * @params: [user]
+    * @return: SpringDay2.JDBC.Enity.User
+    **/
+//    public User getUserById(User user) {
+//        String queryUserSql = "select * from sys_uer where id=?;";
+//        Object[] objects = {user.getId()};
+//        return getJdbcTemplate().queryForObject(queryUserSql,new User(),objects);
+//    }
 
+    /**
+    * @Description: 使用lambda表达式进行改造
+    * @Author: TanLinQuan
+    * @Date: 2019/7/17 19:20
+    * @params: [user]
+    * @return: SpringDay2.JDBC.Enity.User
+    **/
     public User getUserById(User user) {
         String queryUserSql = "select * from sys_uer where id=?;";
         Object[] objects = {user.getId()};
-        return getJdbcTemplate().queryForObject(queryUserSql,new User(),objects);
+        return getJdbcTemplate().queryForObject(queryUserSql,(rs,i) -> {
+            User user1 = new User();
+            user.setId(rs.getLong("id"));
+            user.setUsername(rs.getString("username"));
+            user.setPassword(rs.getString("password"));
+            return user1;
+        },objects);
     }
 
     public List<User> getUser() {

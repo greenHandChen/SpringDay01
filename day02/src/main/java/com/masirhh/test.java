@@ -63,7 +63,6 @@ public class test {
         for (UserBean ss : s) {
             System.out.println(ss.toString());
         }
-
     }
 
 

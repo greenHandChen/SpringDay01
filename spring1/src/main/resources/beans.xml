@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="hand"></context:component-scan>
+    <!--    <bean id="helloSpring" class="hjf.controller.HelloSpring"/>-->
+    <bean id="myBeanPostProcessor" class="hjf.dao.MyBeanPostProcessor"></bean>
+
+    <bean id="helloSpring" class="hjf.dao.HelloSpring"
+    init-method="initBean" destroy-method="destoryBean"/>
+
+    <bean id="person" class="hjf.test.Person">
+        <constructor-arg name="name" value="ceh"/>
+        <constructor-arg name="address" value="ssss"/>
+        <constructor-arg name="age" value="24"/>
+    </bean>
+
+    <bean id="collectionBean" class="hjf.test.CollectionBean">
+        <property name="array">
+            <list>
+                <value>老王</value>
+                <value>老我</value>
+                <value>老人</value>
+            </list>
+        </property>
+
+        <property name="list">
+            <list>
+                <value>老王</value>
+                <value>老我</value>
+                <value>老人</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="collectionBean1" class="hjf.test2.CollectionBean1">
+        <property name="map" >
+            <map>
+            <entry key="篮球" value="姚明"></entry>
+            <entry key="足球" value="试试"></entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>

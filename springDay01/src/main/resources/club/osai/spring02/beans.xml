@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="singlePerson" class="club.osai.spring02.Person"/>
+    <bean id="prototypePerson" class="club.osai.spring02.Person" scope="prototype"/>
+
+    <bean id="constructorPerson" class="club.osai.spring02.Person">
+        <constructor-arg name="name" value="xiaoyi"/>
+        <constructor-arg name="age" value="12"/>
+        <constructor-arg name="addre" value="成都"/>
+    </bean>
+    <bean id="setPerson" class="club.osai.spring02.Person">
+        <property name="name" value="xiaoyi"/>
+        <property name="age" value="12"/>
+        <property name="addre" value="成都"/>
+    </bean>
+
+    <bean id="helloSpring1" class="club.osai.spring02.HelloSpring" init-method="init" destroy-method="destroy"/>
+    <bean id="myBeanPostProcessor" class="club.osai.spring02.MyBeanPostProcessor"/>
+
+    <bean id="collectionBean" class="club.osai.spring02.CollectionBean">
+
+        <property name="list">
+            <list>
+                <value>A</value>
+                <value>B</value>
+                <value>C</value>
+                <value>D</value>
+            </list>
+        </property>
+        <property name="strings">
+            <array>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+                <value>4</value>
+            </array>
+        </property>
+        <property name="set">
+            <set>
+                <value>A</value>
+                <value>B</value>
+                <value>C</value>
+                <value>D</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="A" value="a"/>
+                <entry key="B" value="b"/>
+            </map>
+        </property>
+    </bean>
+</beans>

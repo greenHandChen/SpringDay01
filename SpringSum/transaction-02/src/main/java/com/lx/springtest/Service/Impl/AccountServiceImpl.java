@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionTemplate;
 
-@Service
 public class AccountServiceImpl implements IAccountService {
 
     private IAccountDao accountDao;
@@ -18,7 +17,7 @@ public class AccountServiceImpl implements IAccountService {
 
     public void transfer(String outer, String inner, Double money) {
         accountDao.out(outer,money);
-//        int number = 1/0;
+        int number = 1/0;
         accountDao.in(inner,money);
     }
 }

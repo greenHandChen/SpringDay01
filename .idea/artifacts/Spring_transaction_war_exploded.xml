@@ -33,7 +33,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/../SpringDay02/Spring_transaction/target/Spring_transaction/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/SpringDay02/Spring_transaction/target/Spring_transaction/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="Spring_transaction/web/Web" />
     </root>

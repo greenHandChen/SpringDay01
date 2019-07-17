@@ -10,9 +10,6 @@
         <module name="SpringJdbcTemplet" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="springtrans" target="1.5" />
-      <module name="SpringTrans" target="1.7" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>

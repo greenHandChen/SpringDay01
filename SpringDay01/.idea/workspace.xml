@@ -7,8 +7,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27364556-d31f-46bb-a18e-7ebcb5bd8c4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/src/main/java/com/hand/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/src/main/java/com/hand/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/src/main/java/com/hand/test/TestJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/src/main/java/com/hand/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/src/main/java/com/hand/dao/impl/AccountDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/src/main/java/com/hand/pojo/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/src/main/java/com/hand/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/src/main/java/com/hand/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/src/main/java/com/hand/test/TestTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/target/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/target/classes/com/hand/dao/AccountDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/target/classes/com/hand/dao/impl/AccountDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/target/classes/com/hand/pojo/Account.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/target/classes/com/hand/service/AccountService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/target/classes/com/hand/service/impl/AccountServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_01/target/classes/com/hand/test/TestTransaction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/src/main/java/com/hand/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/src/main/java/com/hand/dao/impl/AccountDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/src/main/java/com/hand/pojo/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/src/main/java/com/hand/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/src/main/java/com/hand/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/src/main/java/com/hand/test/TestTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/target/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/target/classes/com/hand/dao/AccountDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/target/classes/com/hand/dao/impl/AccountDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/target/classes/com/hand/pojo/Account.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/target/classes/com/hand/service/AccountService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/target/classes/com/hand/service/impl/AccountServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_transaction_02/target/classes/com/hand/test/TestTransaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay02/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay02/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay02/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/src/main/java/com/hand/test/TestJDBC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,13 +81,25 @@
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="n#bean#1;n#beans#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hand/test/TestSpring.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -161,14 +215,49 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hand" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hand" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -203,7 +292,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestSpring.testAutowired">
+  <component name="RunManager" selected="JUnit.TestSpring.testDI">
     <configuration name="TestSpring.testAutowired" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringDay01" />
       <extension name="coverage">
@@ -462,9 +551,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestSpring.testAutowired" />
         <item itemvalue="JUnit.TestSpring.testDI" />
         <item itemvalue="JUnit.TestSpring.testSetter" />
+        <item itemvalue="JUnit.TestSpring.testAutowired" />
       </list>
     </recent_temporary>
   </component>
@@ -484,19 +573,11 @@
       <workItem from="1563273529990" duration="337000" />
       <workItem from="1563322934461" duration="2439000" />
       <workItem from="1563325932805" duration="39000" />
+      <workItem from="1563351770541" duration="55000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSpring_testAutowired - 2019.07.16 at 14h 37m 08s.xml">
-      <configuration name="TestSpring.testAutowired" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSpring_testAutowired - 2019.07.16 at 14h 38m 02s.xml">
-      <configuration name="TestSpring.testAutowired" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSpring_testAutowired - 2019.07.16 at 14h 39m 19s.xml">
-      <configuration name="TestSpring.testAutowired" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestSpring_testSetter - 2019.07.16 at 14h 50m 03s.xml">
       <configuration name="TestSpring.testSetter" configurationId="JUnit" />
     </history-entry>
@@ -518,14 +599,24 @@
     <history-entry file="TestSpring_testAutowired - 2019.07.16 at 18h 39m 14s.xml">
       <configuration name="TestSpring.testAutowired" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestSpring_testAutowired - 2019.07.17 at 16h 23m 19s.xml">
+      <configuration name="TestSpring.testAutowired" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpring_testSetter - 2019.07.17 at 16h 23m 29s.xml">
+      <configuration name="TestSpring.testSetter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpring_testDI - 2019.07.17 at 16h 23m 38s.xml">
+      <configuration name="TestSpring.testDI" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8992000" />
+    <option name="totallyTimeSpent" value="9047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988345" visible="true" weight="0.2685325" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988345" visible="true" weight="0.27231467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" sideWeight="0.5011655" side_tool="true" weight="0.24962178" />
@@ -616,16 +707,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/JDBC.propertise" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hand/test/TestSpring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hand/pojo/HelloSpring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -714,9 +795,19 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="n#bean#1;n#beans#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hand/test/TestSpring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -773,12 +864,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>SpringDay01</last-edited>
+          <last-edited>Spring|SpringDay01</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

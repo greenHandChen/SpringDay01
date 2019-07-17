@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="transaction4" />
+        <module name="springDemo" />
+        <module name="transaction2" />
+        <module name="springday021" />
+        <module name="transaction3" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springday02-2" target="1.7" />
+      <module name="springday021" target="1.7" />
+      <module name="springDemo" target="1.7" />
+      <module name="transaction1" target="1.7" />
+      <module name="transaction2" target="1.7" />
+      <module name="transaction3" target="1.7" />
+      <module name="transaction4" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

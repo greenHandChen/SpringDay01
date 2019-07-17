@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="handjava03" />
         <module name="handjava02" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="handjava02" target="1.5" />
+      <module name="handjava03" target="6" />
+      <module name="handjavatx03" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

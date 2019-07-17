@@ -31,7 +31,8 @@
         <property name="password" value="${jdbc.password}"/>
     </bean>
 
-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+<!--    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+    <bean id="userDao" class="com.lhb.spring.jdbcDaoSupport.UserDao">
         <property name="dataSource" ref="dataSource"/>
     </bean>
 

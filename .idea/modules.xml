@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/comspring01.iml" filepath="$PROJECT_DIR$/comspring01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringDay/Day01/Day01.iml" filepath="$PROJECT_DIR$/SpringDay/Day01/Day01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringDay/Day02-JdbcTemplate/Day02-JdbcTemplate.iml" filepath="$PROJECT_DIR$/SpringDay/Day02-JdbcTemplate/Day02-JdbcTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringDay/Day02Transaction/Day02Transaction.iml" filepath="$PROJECT_DIR$/SpringDay/Day02Transaction/Day02Transaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringDay/SpringDay.iml" filepath="$PROJECT_DIR$/SpringDay/SpringDay.iml" />
     </modules>
   </component>
 </project>

@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="comspring01" />
+        <module name="Day02-JdbcTemplate" />
+        <module name="Day02Transaction" />
+        <module name="SpringDay02-Transaction" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.9">
-      <module name="comspring01" target="1.7" />
+      <module name="Day02-JdbcTemplate" target="1.8" />
+      <module name="Day02Transaction" target="1.8" />
+      <module name="SpringDay" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd
+       					   http://www.springframework.org/schema/context
+       					   http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="springDay02.demo2"/>
+
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/java_web?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+
+    <bean id="accountService" class="springDay02.demo2.service.impl.AccountServiceImpl">
+        <property name="accountDao" ref="accountDaoImpl"/>
+    </bean>
+
+    <bean id="accountDaoImpl" class="springDay02.demo2.dao.impl.AccountDaoImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+
+    <!--1、事务管理器-->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--2、配置事务代理工厂-->
+    <bean id="accuntServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <!--事务管理器-->
+        <property name="transactionManager" ref="txManager"/>
+        <!--配置目标类-->
+        <property name="target" ref="accountService"/>
+        <!--配置目标类的接口-->
+        <property name="proxyInterfaces" value="springDay02.demo2.service.IAccountService"/>
+
+        <!--配置哪些方法需要事务配置以及如何配置-->
+        <property name="transactionAttributes">
+            <props>
+                <prop key="transfer">ISOLATION_DEFAULT</prop>
+            </props>
+        </property>
+        
+    </bean>
+
+
+</beans>

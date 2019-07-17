@@ -3,11 +3,12 @@ package com.hand;
 public class DISpring {
     private String str;
 
-    public void setDISpring(String str) {
-        this.str=str;
-    }
-    public String getDISpring(){
+    public String getStr() {
         return str;
+    }
+
+    public void setStr(String str) {
+        this.str = str;
     }
 
     @Override

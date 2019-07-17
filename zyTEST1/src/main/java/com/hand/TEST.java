@@ -24,7 +24,7 @@ public class TEST {
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext("beans.xml");
         HelloSpring helloSpring=(HelloSpring)applicationContext.getBean("helloSpring");
         DISpring diSpring=new DISpring();
-        diSpring.setDISpring("333333");
+        diSpring.setStr("333333");
         helloSpring.setDiSpring(diSpring);
         System.out.println(helloSpring.getDiSpring());
     }

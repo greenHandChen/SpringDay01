@@ -4,11 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean name="helloSpring" class="com.hand.HelloSpring">
-
         <property name="diSpring" ref="diSpirng"/>
     </bean>
 
     <bean name="diSpirng" class="com.hand.DISpring"/>
+
     <bean name="helloSpring2" class="com.hand.HelloSpring2" init-method="initBean" destroy-method="destroyBean"/>
     <bean name="myBeanPostProcessor" class="com.hand.MyBeanPostProcessor"/>
     <bean id="person" class="com.hand.Person">

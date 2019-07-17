@@ -4,8 +4,8 @@ public class HelloSpring {
     private String info;
     private DISpring diSpring;
 
-    public void setDiSpring(DISpring diSpring) {
-        this.diSpring = diSpring;
+    public String getInfo() {
+        return info;
     }
 
     public DISpring getDiSpring() {
@@ -16,14 +16,15 @@ public class HelloSpring {
         this.info = info;
     }
 
-    public String getInfo() {
-        return info;
+    public void setDiSpring(DISpring diSpring) {
+        this.diSpring = diSpring;
     }
 
     @Override
     public String toString() {
         return "HelloSpring{" +
                 "info='" + info + '\'' +
+                ", diSpring=" + diSpring +
                 '}';
     }
 }

@@ -17,7 +17,7 @@ public class Test_druid {
         User user = new User();
         user.setId(4);
         user.setUsername("lihaibo");
-        user.setPassword("lhb");
+        user.setPassword("lhb123");
         userDao.update(user);
     }
 

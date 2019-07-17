@@ -13,6 +13,7 @@
         <springmvc.version>4.3.8.RELEASE</springmvc.version>
         <mysql.version>8.0.16</mysql.version>
         <hikariCP.version>2.5.1</hikariCP.version>
+        <druid.version>1.0.13</druid.version>
     </properties>
     <!--jar包的依赖-->
     <dependencies>
@@ -74,6 +75,11 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
         </dependency>
 </dependencies>
 

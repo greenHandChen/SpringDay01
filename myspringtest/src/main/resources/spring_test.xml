@@ -6,8 +6,20 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:component-scan base-package="com.jmx" />
-    <bean id="datasource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
-
+    <context:component-scan base-package="com.jmx.dao"/>
+    <context:property-placeholder location="classpath:db.properties"/>
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
+          <property name="driverClassName" value="${db.driver}"/>
+          <property name="url" value="${db.url}"/>
+         <property name="username" value="${db.username}"/>
+         <property name="password" value="${db.password}"/>
     </bean>
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <bean id="userDao" class="com.jmx.dao.UserDao">
+      <property name="dataSource" ref="dataSource"/>
+  </bean>
+    <bean id="testJDBC" class="com.jmx.dao.TestJDBC"/>
+
 </beans>

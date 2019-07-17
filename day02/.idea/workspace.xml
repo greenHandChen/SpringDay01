@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="708147f4-31c5-4012-a022-491dda809b3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day02.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hand/lq/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hand/lq/dao/UserDao2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hand/lq/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hand/lq/pojo/User2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testHikariCP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,7 +50,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/testHikariCP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="387">
               <caret line="59" column="44" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -289,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.testHikariCP.AA3">
+  <component name="RunManager" selected="JUnit.testHikariCP.AA2">
     <configuration name="testHikariCP.AA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day02" />
       <option name="PACKAGE_NAME" value="" />
@@ -332,9 +314,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.testHikariCP.AA2" />
         <item itemvalue="JUnit.testHikariCP.AA3" />
         <item itemvalue="JUnit.testHikariCP.AA" />
-        <item itemvalue="JUnit.testHikariCP.AA2" />
         <item itemvalue="JUnit.testHikariCP.testApi" />
       </list>
     </recent_temporary>
@@ -349,8 +331,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563325860762</updated>
-      <workItem from="1563325863452" duration="10119000" />
+      <workItem from="1563325863452" duration="10180000" />
     </task>
+    <task id="LOCAL-00001" summary="day02上午">
+      <created>1563343588925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563343588926</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -386,10 +376,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10119000" />
+    <option name="totallyTimeSpent" value="10180000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1383" height="745" extended-state="1" />
+    <frame x="-9" y="-9" width="1383" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" />
@@ -429,6 +419,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="day02上午" />
+    <option name="LAST_COMMIT_MESSAGE" value="day02上午" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
@@ -568,7 +562,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/testHikariCP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="387">
           <caret line="59" column="44" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />

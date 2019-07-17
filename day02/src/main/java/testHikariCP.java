@@ -44,7 +44,7 @@ public class testHikariCP {
         UserDao2 userDao2 = applicationContext.getBean("userDao2", UserDao2.class);
         User user = new User();
         user.setId(1L);
-        user.setUsername("阿萨法发");
+        user.setUsername("csdfsdf");
         user.setPassword("asdsfd");
         userDao2.update(user);
     }

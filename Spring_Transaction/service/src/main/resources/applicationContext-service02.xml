@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd
+       					   http://www.springframework.org/schema/tx
+       					   http://www.springframework.org/schema/tx/spring-tx.xsd
+       					   http://www.springframework.org/schema/context
+       					   http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.ljx"/>
+
+    <!--    配置事务管理器-->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <!-- &lt;!&ndash;proxy-target-class(默认使用jdk动态代理): true使用cglib进行动态代理,
+     cglib不需要 目标类实现接口，它会采用继承的方式生成目标类的子类
+     <tx:annotation-driven transaction-manager= "txManager"/>-->
+     <tx:annotation-driven transaction-manager="txManager" />
+
+</beans>

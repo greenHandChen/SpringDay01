@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd
+       					   http://www.springframework.org/schema/context
+       					   http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.ljx"/>
+
+    <!--    配置事务管理器-->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <bean id="accountService" class="com.ljx.service.impl.AccountServiceImpl01">
+    </bean>
+
+    <!--2、配置事务代理工厂-->
+    <bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <!--事务管理器-->
+        <property name="transactionManager" ref="txManager"/>
+        <!--配置目标类-->
+        <property name="target" ref="accountService"/>
+        <!--配置目标类接口-->
+        <property name="proxyInterfaces" value="com.ljx.service.IAccountService"/>
+
+        <property name="transactionAttributes">
+            <props>
+                <prop key="transfer">PROPAGATION_REQUIRED,ISOLATION_DEFAULT</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

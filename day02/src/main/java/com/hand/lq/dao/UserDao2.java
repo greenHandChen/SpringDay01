@@ -22,6 +22,6 @@ public class UserDao2 extends JdbcDaoSupport {
     public User2 getById(User2 user) {
         String quert = "select * from sys_user u where  u.id=?";
         Object[] o = {user.getId()};
-        return getJdbcTemplate().queryForObject(quert, new User2(),o);
+        return getJdbcTemplate().queryForObject(quert, new User2(), o);
     }
 }

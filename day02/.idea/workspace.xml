@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="708147f4-31c5-4012-a022-491dda809b3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/day2child/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/day2child/src/main/java/TrTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/day2child/src/main/java/com/hand/lq/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/day2child/src/main/java/com/hand/lq/dao/AccountDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/day2child/src/main/java/com/hand/lq/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/day2child/src/main/java/com/hand/lq/service/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/day2child/src/main/resources/application.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/day2child/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/day2child/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/day2child/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/parent.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hand/lq/dao/UserDao2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hand/lq/dao/UserDao2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -11,6 +30,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
@@ -33,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hand/lq/dao/UserDao2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+            <state relative-caret-position="295">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,11 +80,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/testHikariCP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="59" column="44" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="44" />
+            <state relative-caret-position="-137">
+              <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3195">
-              <caret line="342" column="17" selection-start-line="342" selection-start-column="17" selection-end-line="342" selection-end-column="17" />
+            <state relative-caret-position="208">
+              <caret line="279" column="17" lean-forward="true" selection-start-line="275" selection-start-column="4" selection-end-line="279" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -117,13 +150,18 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>slf</find>
+      <find>log4j</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hand/lq/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
@@ -131,8 +169,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hand/lq/dao/JdbcDaoSupport.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hand/lq/pojo/User2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hand/lq/dao/UserDao2.java" />
         <option value="$PROJECT_DIR$/src/main/java/testHikariCP.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hand/lq/dao/UserDao2.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -144,6 +183,17 @@
         <option name="userSettingsFile" value="D:\Users\lq\.m2\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="day02 Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
@@ -243,7 +293,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../newthreeboard" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -271,7 +321,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.testHikariCP.AA2">
+  <component name="RunManager" selected="JUnit.testHikariCP.AA3">
     <configuration name="testHikariCP.AA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day02" />
       <option name="PACKAGE_NAME" value="" />
@@ -314,8 +364,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testHikariCP.AA2" />
         <item itemvalue="JUnit.testHikariCP.AA3" />
+        <item itemvalue="JUnit.testHikariCP.AA2" />
         <item itemvalue="JUnit.testHikariCP.AA" />
         <item itemvalue="JUnit.testHikariCP.testApi" />
       </list>
@@ -331,7 +381,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563325860762</updated>
-      <workItem from="1563325863452" duration="10180000" />
+      <workItem from="1563325863452" duration="18875000" />
     </task>
     <task id="LOCAL-00001" summary="day02上午">
       <created>1563343588925</created>
@@ -340,22 +390,17 @@
       <option name="project" value="LOCAL" />
       <updated>1563343588926</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day02上午">
+      <created>1563343627480</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563343627480</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testHikariCP_AA - 2019.07.17 at 11h 01m 58s.xml">
-      <configuration name="testHikariCP.AA" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testHikariCP_AA2 - 2019.07.17 at 11h 40m 20s.xml">
-      <configuration name="testHikariCP.AA2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testHikariCP_AA - 2019.07.17 at 11h 40m 30s.xml">
-      <configuration name="testHikariCP.AA" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testHikariCP_AA3 - 2019.07.17 at 11h 44m 11s.xml">
-      <configuration name="testHikariCP.AA3" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="testHikariCP_AA3 - 2019.07.17 at 11h 45m 17s.xml">
       <configuration name="testHikariCP.AA3" configurationId="JUnit" />
     </history-entry>
@@ -374,9 +419,21 @@
     <history-entry file="testHikariCP_AA3 - 2019.07.17 at 11h 52m 17s.xml">
       <configuration name="testHikariCP.AA3" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="testHikariCP_AA3 - 2019.07.17 at 14h 06m 41s.xml">
+      <configuration name="testHikariCP.AA3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testHikariCP_AA2 - 2019.07.17 at 14h 06m 57s.xml">
+      <configuration name="testHikariCP.AA2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testHikariCP_AA3 - 2019.07.17 at 15h 21m 11s.xml">
+      <configuration name="testHikariCP.AA3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testHikariCP_AA3 - 2019.07.17 at 16h 06m 18s.xml">
+      <configuration name="testHikariCP.AA3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10180000" />
+    <option name="totallyTimeSpent" value="18875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1383" height="745" extended-state="0" />
@@ -387,33 +444,33 @@
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info id="Learn" />
+      <window_info id="Learn" weight="0.32955405" />
       <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494331" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6873977" visible="true" weight="0.2494331" />
+      <window_info id="Structure" order="1" sideWeight="0.31260228" side_tool="true" visible="true" weight="0.2494331" />
+      <window_info anchor="bottom" id="Spring" weight="0.18821605" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.3289689" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43862522" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22585924" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Maven" weight="0.32955405" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Database" weight="0.32955405" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.2494331" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
@@ -423,6 +480,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="day02上午" />
     <option name="LAST_COMMIT_MESSAGE" value="day02上午" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
@@ -502,13 +563,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3195">
-          <caret line="342" column="17" selection-start-line="342" selection-start-column="17" selection-end-line="342" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -550,10 +604,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/Users/lq/.m2/repository/com/zaxxer/HikariCP/3.3.1/HikariCP-3.3.1.jar!/com/zaxxer/hikari/HikariDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1380">
+          <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Users/lq/.m2/repository/org/springframework/spring-context/4.3.8.RELEASE/spring-context-4.3.8.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1029">
+          <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hand/lq/dao/UserDao2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+        <state relative-caret-position="295">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -562,11 +630,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/testHikariCP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="59" column="44" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="44" />
+        <state relative-caret-position="-137">
+          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="279" column="17" lean-forward="true" selection-start-line="275" selection-start-column="4" selection-end-line="279" selection-end-column="17" />
         </state>
       </provider>
     </entry>

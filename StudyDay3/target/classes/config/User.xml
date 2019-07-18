@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="test">
+    <!--根据用户ID精确查询用户-->
+    <select id="findUserByID" parameterType="java.lang.Integer" resultType="com.hand.mybatis.po.User">
+     select  * from User where id =#{id}
+    </select>
+
+    <!--根据用户名称模糊查询用户-->
+    <select id="findUserByName" parameterType="java.lang.String" resultType="com.hand.mybatis.po.User">
+      select  * from User where username like '%${value}%'
+    </select>
+
+    <!--添加用户-->
+    <insert id="insertUser" parameterType="com.hand.mybatis.po.User">
+        <!--查询主键-->
+        <selectKey keyProperty="id" resultType="int" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into user(username,birthday,sex,address)
+        values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--主键返回值序列-oracle///无法运行 -->
+    <insert id="insertUser3" parameterType="com.hand.mybatis.po.User">
+        <!--查询主键-->
+        <selectKey keyProperty="id" resultType="int" order="BEFORE">
+            select seq.nextval() from dual
+        </selectKey>
+        insert into user(id,username,birthday,sex,address)
+        values (${id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--删除用户-->
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id =#{id}
+    </delete>
+
+    <!--修改用户-->
+    <update id="updateUser" parameterType="int">
+        update user set username=#{username} ,sex=#{sex} where id =#{id}
+    </update>
+</mapper>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="transaction_demo:war">
+    <output-path>$PROJECT_DIR$/SpringDay02/transaction_demo/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>transaction_demo</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="transaction_demo.war">
+      <element id="artifact" artifact-name="transaction_demo:war exploded" />
+    </root>
+  </artifact>
+</component>

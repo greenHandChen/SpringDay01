@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jqh.mapper.UserMapper">
+<select id="findUserById" parameterType="java.lang.Integer" resultType="com.jqh.pojo.User">
+SELECT * from user where id=#{id}
+</select>
+    <insert id="addUser" parameterType="com.jqh.pojo.User" >
+insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+</insert>
+    <insert id="addUserGetId" parameterType="com.jqh.pojo.User" >
+<selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+select last_insert_id()
+</selectKey>
+insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+</insert>
+</mapper>

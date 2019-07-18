@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <!-- 加载类路径下的属性文件 -->
+
+    <!-- 设置一个默认的连接环境信息 -->
+    <environments default="mysql_developer">
+        <!-- 连接环境信息，取一个任意唯一的名字 -->
+        <environment id="mysql_developer">
+            <!-- mybatis使用jdbc事务管理方式 -->
+            <transactionManager type="jdbc"/>
+            <!-- mybatis使用连接池方式来获取连接 -->
+            <dataSource type="pooled">
+                <!-- 配置与数据库交互的4个必要属性 -->
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis_practice?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC&amp;rewriteBatchedStatements=true"/>
+                <property name="username" value="root"/>
+                <property name="password" value="password"/>
+            </dataSource>
+        </environment>
+    </environments>
+<mappers>
+    <mapper resource="mapper/UserMapper.xml"/>
+</mappers>
+</configuration>

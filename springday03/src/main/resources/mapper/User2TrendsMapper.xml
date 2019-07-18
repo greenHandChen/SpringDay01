@@ -12,7 +12,7 @@
         <result property="address" column="address"/>
     </resultMap>
 
-    <select id="testIfAndWhereLabel" parameterType="UserVO" resultType="userList">
+    <select id="testIfAndWhereLabel" parameterType="UserVO" resultMap="userList">
         select * from user
         <where>
             <if test="id != null">

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace：命名空间，用于隔离sql，还有一个很重要的作用，后面会讲 -->
+<mapper namespace="com.hand.mybatis.mapper.OrderMapper">
+
+    <resultMap id="orders" type="Order">
+<!--        手动映射 column数据库的字段   property  为pojo 的属性  相同的字段不需要写可以自动映射-->
+        <result column="user_id" property="userId"></result>
+    </resultMap>
+
+<select id="slectOrderList" resultMap="orders" >
+    select *  from orders
+</select>
+    <resultMap id="orders1" type="Order">
+        <result column="id" property="id"></result>
+        <result column="user_id" property="userId"></result>
+        <result column="number" property="number"></result>
+        <result column="createtime" property="createtime"></result>
+        <association property="user" javaType="User">
+<!--            <id column="user_id" property="id"></id>-->
+            <result column="property" property="username" ></result>
+        </association>
+
+    </resultMap>
+
+    <select id="selectOrderByUserId" resultMap="orders1">
+        SELECT
+	 	o.id,
+	    o.user_id,
+	    o.number,
+	 	o.createtime,
+	 	u.username
+	 	FROM orders o
+	 	left join user u
+	 	on o.user_id = u.id
+--
+--         SELECT
+-- 	    o.user_id,
+-- 	    o.number,
+-- 	 	o.createtime,
+-- 	 	u.username
+-- 	 	FROM orders o
+-- 	 	left join user u
+-- 	 	on o.user_id = u.id
+    </select>
+
+</mapper>

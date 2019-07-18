@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mapper.UserMapper">
+    <select id="findUserId" parameterType="java.lang.Integer" resultType="user">
+        select * from user where id = #{id}
+    </select>
+    
+    <select id="findUserByUsername" parameterType="string" resultType="Entity.User">
+        select * from user where username like '%${name}%'
+    </select>
+    
+    <insert id="addUser" parameterType="Entity.User">
+        <selectKey keyProperty="id" resultType="int" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username, birthday, sex, address) values (#{username}, #{birthday}, #{sex}, #{address})
+    </insert>
+    
+    <select id="findUserList" parameterType="userQueryVO" resultType="user">
+        select * from user where address like '%${user.address}%' and sex = #{user.sex}
+    </select>
+
+    <select id="findUserByMap" parameterType="map" resultType="user">
+        select * from user where username like concat(concat('%',#{username}),'%')
+    </select>
+
+    <select id="countUser" resultType="int">
+        select count(*) from user
+    </select>
+
+    <select id="findUsernameAndAddressById" parameterType="int" resultType="user">
+        select username, address from user where id = #{id}
+    </select>
+    
+    <select id="findUserRstMap" parameterType="int" resultMap="RstMap">
+        select id num, username name, address from user where id = #{id}
+    </select>
+    <resultMap id="RstMap" type="user">
+        <id column="num" property="id"></id>
+        <result column="name" property="username"></result>
+    </resultMap>
+    
+    <select id="testIfAndWhereLabel" parameterType="User" resultType="User">
+        select * from user
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="username != null and username != ''">
+                and username like concat(concat('%',#{username}),'%')
+            </if>
+        </where>
+    </select>
+</mapper>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hand.mapper.UserMapper">
+
+    <select id="findUserById" resultType="com.hand.entity.User">
+    select * from user where id = #{id}
+    </select>
+
+    <insert id="addUser" parameterType="com.hand.entity.User">
+       <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+           SELECT LAST_INSERT_ID()
+       </selectKey>
+        insert into user(username,birthday,sex,address) values (#{username},#{date},#{sex},#{address})
+    </insert>
+
+    <delete id="deleteUserById" parameterType="java.lang.Integer">
+        delete from user where id=#{id}
+    </delete>
+
+    <update id="updateUserAddress" parameterType="com.hand.entity.User">
+        update user set username=#{username},address=#{address} where id=#{id}
+    </update>
+
+    <select id="findUserByUser" parameterType="com.hand.POJO.UserQueryVO" resultType="com.hand.entity.User">
+        select * from user u where u.address like '%${user.address}%' and u.sex=#{user.sex}
+    </select>
+    
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="com.hand.entity.User">
+        select * from user where username like '%${username}%'
+    </select>
+</mapper>

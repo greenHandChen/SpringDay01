@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+<mapper namespace="test">
+-->
+<mapper namespace="mapper.UserMapper">
+
+
+<select id="findUserById" parameterType="java.lang.Integer" resultType="damain.User">
+    select  * from User where id=#{id}
+</select>
+
+    <select id="findUserByUsername" parameterType="java.lang.String" resultType="damain.User">
+        select * from user where username like ${value}
+    </select>
+
+    <insert id="addUser" parameterType="damain.User">
+        insert  into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetId" parameterType="damain.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert  into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetUUID" parameterType="damain.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+            SELECT UUID()
+        </selectKey>
+        insert  into user(id,username,birthday,sex,address) values(#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <select id="findUserByUser" parameterType="UserQueryVO" resultType="User">
+        select * from user where address like'%${user.address}%' and sex=#{user.sex}
+    </select>
+
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="User">
+        select  * from user where username like concat(concat('%',#{username}),'%')
+    </select>
+
+    <select id="countUser" resultType="java.lang.Integer">
+        select count(*) from user
+    </select>
+
+    <select id="findUserNameAndAddressById" parameterType="java.lang.Integer" resultType="User">
+        SELECT username,address from user where id=#{id}
+    </select>
+
+    <select id="testResultMap" parameterType="java.lang.Integer" resultMap="userResultMap">
+        select  id as num,username name,address from user where id=#{id}
+    </select>
+
+    <resultMap id="userResultMap" type="User">
+        <id column="num" property="id"/>
+        <result column="name" property="username"/>
+        <result column="address" property="address"/>
+    </resultMap>
+
+    <select id="testIfAndWhereLabel" parameterType="User" resultType="User">
+        select * from user
+        <where>
+        <if test="id !=null">
+        and id=#{id}
+        </if>
+        <if test="username !=null and username!=''" >
+        and username like concat(concat('%',#{username}),'%')
+        </if>
+    </where>
+    </select>
+</mapper>

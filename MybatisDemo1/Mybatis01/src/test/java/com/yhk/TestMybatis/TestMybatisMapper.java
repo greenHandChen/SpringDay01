@@ -12,7 +12,9 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class TestMybatisMapper {
@@ -85,6 +87,32 @@ public class TestMybatisMapper {
         User user=new User();
         user.setUsername("小");
         System.out.println(mapper.testIfAndWhere(user));
+        sqlSession.close();
+    }
+
+    /**
+     * 综合查询 动态sql
+     */
+    @Test
+    public void testUserList(){
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        UserQueryVO userQueryVO=new UserQueryVO();
+
+        List<Integer> idList=new ArrayList<Integer>();
+        idList.add(27);
+        idList.add(234);
+        idList.add(30);
+
+        userQueryVO.setIdList(idList);
+
+
+        User user=new User();
+//        user.setUsername("杨");
+//        user.setSex(1);
+        userQueryVO.setUser(user);
+
+        System.out.println(mapper.findUserList(userQueryVO));
         sqlSession.close();
     }
 }

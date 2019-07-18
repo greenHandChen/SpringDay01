@@ -39,4 +39,13 @@ public interface UserMapper {
      * 测试动态sql
      */
     List<User> testIfAndWhere(User user);
+
+    /**
+     * 综合查询2
+     */
+    List<User> findUserList(UserQueryVO userQueryVO);
+
+    /**
+     * 测试动态sql2
+     */
 }

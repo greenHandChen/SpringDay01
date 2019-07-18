@@ -28,7 +28,7 @@ mybatis会依据这个接口动态创建一个实现类去实现这个接口，
         select * from user u where u.address like '%${user.address}%' and u.sex = #{user.sex}
     </select>
     
-<!--    mapper查询-->
+<!--    map查询-->
     <select id="findUserByMap" parameterType="java.util.Map" resultType="User">
         select * from user u where u.username like concat(concat('%',#{username}),'%')
     </select>
@@ -67,6 +67,39 @@ mybatis会依据这个接口动态创建一个实现类去实现这个接口，
     </select>
 
 
+<!--    定义sql片段-->
+        <sql id="WhereClauser" >
+            <if test="user !=null">
+                <if test="user.username !=null and user.username !=''">
+                    and username like '%${user.username}%'
+                </if>
+                <if test="user.sex !=null and user.sex !=''">
+                    and sex = #{user.sex}
+                </if>
+            </if>
+
+            <if test="idList != null">
+                <foreach collection="idList" item="id" open="And id in(" close=")" separator=",">
+                    #{id}
+                </foreach>
+            </if>
+
+        </sql>
+
+
+<!--    综合查询-->
+        <select id="findUserList" parameterType="UserQueryVO" resultType="User">
+            select * from user
+            <where>
+                <include refid="WhereClauser"/>
+                <!--                <if test="user.username !=null and user.username !=''">-->
+<!--                    and username like '%${user.username}%'-->
+<!--                </if>-->
+<!--                <if test="user.sex !=null and user.sex !=''">-->
+<!--                    and sex = #{user.sex}-->
+<!--                </if>-->
+            </where>
+        </select>
         <!--
      selectKey:用于查询主键,标签体里写查询主键的SQL,主键查询SQL根据数据库的不同,写法也是不同
     keyProperty:指的是我们需要映射的字段名称

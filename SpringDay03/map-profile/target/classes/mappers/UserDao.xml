@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hand.dao.UserDao">
+    <select id="findUserByVO" parameterType="com.hand.vo.UserVO" resultType="com.hand.pojo.User">
+        select *
+        from user u
+        where u.address like concat('%', #{user.address}, '%')
+          and u.sex = 1
+    </select>
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="com.hand.pojo.User">
+        select *
+        from user
+        where username like concat('%', #{username}, '%')
+    </select>
+    <select id="countUser" resultType="java.lang.Integer">
+        select count(*)
+        from user
+    </select>
+    <select id="findByConditions" parameterType="com.hand.pojo.User" resultType="com.hand.pojo.User">
+        select *
+        from user
+        <where>
+            <if test="id!=null">
+               and id=#{id}
+            </if>
+            <if test="username!=null">
+               and username like concat('%',#{username},'%')
+            </if>
+            <if test="sex!=null">
+               and sex=#{sex}
+            </if>
+            <if test="address!=null">
+               and address=#{address}
+            </if>
+            <if test="birthday!=null">
+               and birthday=#{birthday}
+            </if>
+        </where>
+    </select>
+
+</mapper>

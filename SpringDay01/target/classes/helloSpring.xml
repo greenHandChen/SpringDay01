@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+<!--    <bean id="helloSpring" class="entity.HelloSpring"-->
+<!--        init-method="initBean" destroy-method="destroyBean">-->
+<!--        <property name="info" value="hello 芜湖!hello Spring"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="person" class="entity.Person">-->
+<!--        <constructor-arg name="name" value="lys"></constructor-arg>-->
+<!--        <constructor-arg name="age" value="18"></constructor-arg>-->
+<!--        <constructor-arg name="address" value="安徽信工大"></constructor-arg>-->
+<!--    </bean>-->
+
+    <bean id="person" class="entity.Person">
+        <property name="name" value="lys"></property>
+        <property name="age" value="18"></property>
+        <property name="address" value="安徽信工大"></property>
+    </bean>
+
+    <bean id="collectionBean" class="entity.CollectionBean">
+        <property name="array">
+            <list>
+                <value>老王</value>
+                <value>老李</value>
+                <value>老陈</value>
+            </list>
+        </property>
+        <property name="list">
+            <list>
+                <value>第一排</value>
+                <value>第二排</value>
+                <value>第三排</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>北京</value>
+                <value>上海</value>
+                <value>天津</value>
+                <value>河南</value>
+                <value>河北</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="篮球" value="姚明"></entry>
+                <entry key="足球" value="皇马的姆巴佩"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>

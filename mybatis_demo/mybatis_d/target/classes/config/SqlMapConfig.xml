@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    
+    <!--引入外部数据库配置文件-->
+    <properties resource="config/db.properties"/>
+
+    <!--类型别名-->
+    <typeAliases>
+        <!--单个别名定义-->
+        <typeAlias type="com.hand.domain.User" alias="User"/>
+        <typeAlias type="com.hand.VO.UserQueryVO" alias="UserQueryVO"/>
+        <typeAlias type="java.util.Map" alias="map"/>
+    </typeAliases>
+    
+    <!--  配置mybatis的环境信息，比如数据源以及事务控制，整合Spring后就交给Spring控制  -->
+    <environments default="development">
+        <environment id="development">
+            <!--配置JDBC事务控制-->
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driverClassName}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--加载映射文件-->
+    <mappers>
+<!--        <mapper resource="mapper/UserMapper.xml"/>-->
+        <package name="com.hand.mapper"/>
+    </mappers>
+
+</configuration>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace:命名空间,主要是对statement进行分类管理的唯一标识符
+-->
+<mapper namespace="test">
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.hand.domain.User">
+        SELECT * FROM mybatis WHERE id=#{id}
+    </select>
+
+    <select id="findUserByUsername" parameterType="java.lang.String" resultType="com.hand.domain.User">
+        select * from mybatis where username like ${value}
+    </select>
+
+    <insert id="addUser" parameterType="com.hand.domain.User">
+        insert into mybatis(username,birth,sex,address) values(#{username},#{birth},#{sex},#{address})
+    </insert>
+
+    <!--
+        selectKey:用于查询主键，标签体里写查询主键SQL，主键查询SQL根据数据库的不同，写法也不同
+        keyProperty:指的是需要映射的字段名称
+        resultType：输出参数类型
+        LAST_INSERT_ID：必须配合Insert语句进行搭配使用
+       -->
+    <insert id="addUserGetId" parameterType="com.hand.domain.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO mybatis(username,birth,sex,address) values(#{username},#{birth},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetUUID" parameterType="com.hand.domain.User">
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select uuid()
+        </selectKey>
+        INSERT INTO mybatis(id,username,birth,sex,address) values(#{id},#{username},#{birth},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetID2" parameterType="com.hand.domain.User">
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select user_s.nextval from dual
+        </selectKey>
+        INSERT INTO mybatis(id,username,birth,sex,address) values(#{id},#{username},#{birth},#{sex},#{address})
+    </insert>
+</mapper>

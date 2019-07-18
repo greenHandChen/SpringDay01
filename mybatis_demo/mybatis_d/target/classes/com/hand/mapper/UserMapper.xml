@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace:命名空间,主要是对statement进行分类管理的唯一标识符
+-->
+<mapper namespace="com.hand.mapper.UserMapper">
+
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="User">
+        SELECT * FROM mybatis WHERE id=#{id}
+    </select>
+
+    <select id="findUserByUsername" parameterType="string" resultType="User">
+        select * from mybatis where username like ${value}
+    </select>
+
+    <insert id="addUser" parameterType="User">
+        insert into mybatis(username,birth,sex,address) values(#{username},#{birth},#{sex},#{address})
+    </insert>
+
+    <!--综合查询，地址模糊查询,性别精确查询-->
+    <select id="findUserByUser" parameterType="UserQueryVO" resultType="User">
+        select * from mybatis u where u.address like '%${user.address}%' and u.sex = #{user.sex}
+    </select>
+
+    <!--map查询-->
+    <select id="findUserByMap" parameterType="map" resultType="User">
+        select * from mybatis u where u.username like concat(concat('%',#{username}),'%')
+    </select>
+
+    <!--查询用户总数-->
+    <select id="countUser" resultType="integer">
+        select count(*) from mybatis
+    </select>
+
+    <!--通过ID获取用户名以及地址-->
+    <select id="findUserNameAndAddressById" parameterType="integer" resultType="User">
+        select username,address from mybatis u where u.id = #{id}
+    </select>
+
+    <!--通过ID获取用户名以及地址-->
+    <select id="testResultMap" parameterType="integer" resultMap="userResultMap">
+        select id as num,username name,address from mybatis u where u.id = #{id}
+    </select>
+    <!--
+        1.resultMap的id属性，标识resultMap的唯一性
+        2，id标签：标识主键列
+        3.result: 标识普通列
+        4.column属性: 查询出来的列名（可以是别名
+        5.property属性: User类的属性名
+        -->
+    <resultMap id="userResultMap" type="User">
+        <id column="num" property="id"/>
+        <result column="name" property="username"/>
+        <result column="address" property="address"/>
+    </resultMap>
+
+    <!--(SQL动态查询)通过ID获取用户名以及地址-->
+    <select id="testIfAndWhereLabel" parameterType="User" resultType="User">
+        select * from mybatis
+        <!--where标签：默认去掉第一个and，如果没有查询条件则会把where标签去除，相当于where 1 = 1-->
+        <where>
+            <!--if标签：判断test语句是否成立*/-->
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="username != null and username != ''">
+                and username like concat(concat('%',#{username}),'%')
+            </if>
+        </where>
+    </select>
+
+</mapper>

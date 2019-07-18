@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace:命名空间,主要是对statement进行分类管理的唯一标识符
+-->
+<mapper namespace="com.hand.mapper.UserMapper">
+
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="User">
+        SELECT * FROM mybatis WHERE id=#{id}
+    </select>
+
+    <select id="findUserByUsername" parameterType="string" resultType="User">
+        select * from mybatis where username like ${value}
+    </select>
+
+    <insert id="addUser" parameterType="User">
+        insert into mybatis(username,birth,sex,address) values(#{username},#{birth},#{sex},#{address})
+    </insert>
+
+</mapper>

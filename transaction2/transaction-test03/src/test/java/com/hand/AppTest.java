@@ -26,4 +26,10 @@ public class AppTest
     public void testTransaction(){
         as.transfer("62345687","24573457",new BigDecimal(500));
     }
+
+    @Test
+    public void testPropagation(){
+        as.makeMoney("62345687",new BigDecimal(500));
+    }
+
 }

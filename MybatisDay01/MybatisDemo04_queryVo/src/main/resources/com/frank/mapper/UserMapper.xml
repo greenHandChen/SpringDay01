@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!-- namespace: 命名空间,用于隔离sql,后期有重要作用 -->
+<mapper namespace="com.frank.mapper.UserMapper">
+
+    <!--根据用户的姓模糊查询用户信息
+        ${}:是sql的连接符,如果是基本数据类型那么必须是${value}的形式
+        拼接sql存在sql注入的风险
+        -->
+    <select id="findUserByUser" parameterType="userQueryVo" resultType="user">
+        select * from user where address like '%${user.address}%' and sex = #{user.sex};
+    </select>
+
+    <!--mapper查询-->
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="user">
+        select * from user u where u.username like concat(concat('%',#{username}),'%')
+    </select>
+
+    <!--查询用户总数-->
+    <select id="countUser" resultType="int">
+        select count(*) from user
+    </select>
+
+    <!--通过id获取用户名和地址-->
+    <select id="findUsernameAndAddressById" parameterType="int" resultType="user">
+        select username,address from user where id=#{id};
+    </select>
+
+
+    <!--
+        配置映射
+    -->
+    <resultMap id="userResultMap" type="User">
+        <id column="num" property="id"/>
+        <result column="name" property="username"/>
+        <result column="address" property="address"/>
+    </resultMap>
+
+    <select id="testResultMap" parameterType="int" resultMap="userResultMap">
+        select id as num,username as name,address as address from user where id = #{id};
+    </select>
+
+    <!--动态sql-->
+    <!--通过id获取用户名以及地址-->
+    <select id="testIfAndWhereLabel" parameterType="User" resultType="User">
+        select * from user
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="username != null and username != ''">
+                and username like concat(concat('%',#{username}),'%');
+            </if>
+        </where>
+    </select>
+</mapper>

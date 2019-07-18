@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--引入properties配置文件-->
+    <properties resource="db.properties"/>
+    <!--别名包扫描-->
+    <typeAliases>
+        <package name="com.frank.pojo"/>
+    </typeAliases>
+    <!--配置环境信息,如事务的管理以及数据源,和Spring整合之后可以不用填写这个环境信息-->
+    <environments default="development">
+        <environment id="development">
+            <!--JDBC事务管理-->
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+
+        <mapper class="com.frank.mapper.UserMapper"/>
+    </mappers>
+</configuration>

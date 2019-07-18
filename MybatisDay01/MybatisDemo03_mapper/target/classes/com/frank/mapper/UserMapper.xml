@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace: 命名空间,用于隔离sql,后期有重要作用 -->
+<mapper namespace="com.frank.mapper.UserMapper">
+    <!--根据用户id查询用户信息
+        1.查询使用的是select标签,每一个标签代表着MappedStatement
+        2.id是MappedStatement的标识符
+        3.parameterType就是输入参数的类型
+        4.resultType返回数据类型
+        5.#{}相当于占位符
+    -->
+    <select id="findUserById" parameterType="Integer" resultType="com.frank.pojo.User">
+        select * from user where id=#{id};
+    </select>
+
+    <!--根据用户的姓模糊查询用户信息
+        ${}:是sql的连接符,如果是基本数据类型那么必须是${value}的形式
+        拼接sql存在sql注入的风险
+        -->
+    <select id="findUserByUsername" parameterType="String" resultType="com.frank.pojo.User">
+        select * from user where username like '%${value}%';
+    </select>
+
+    <!--添加用户,入参是user-->
+    <insert id="addUser" parameterType="com.frank.pojo.User">
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address});
+    </insert>
+</mapper>

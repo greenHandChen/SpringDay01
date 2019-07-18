@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.0.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <context:component-scan base-package="core.service"/>
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <!-- dbcp数据源 -->
+    <!-- 配置数据源 -->
+    <bean id="myContextStartListener" class="listener.MyContextStartListener"></bean>
+    <bean id="myContextEndListener" class="listener.MyContextEndListener"></bean>
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          destroy-method="close"
+          p:driverClassName="${db.driver}"
+          p:url="${db.url}"
+          p:username="${db.username}"
+          p:password="${db.password}"
+          p:maxActive="20"
+          p:initialSize="1"
+          p:maxWait="60000"
+          p:maxOpenPreparedStatements="20"
+          p:minIdle="3"
+          p:removeAbandoned="true"
+          p:removeAbandonedTimeout="180"
+          p:connectionProperties="clientEncoding=UTF-8"/>
+    <!-- mybatis的配置文件 -->
+    <bean id="sqlSessionFactory"
+          class="org.mybatis.spring.SqlSessionFactoryBean"
+          p:dataSource-ref="dataSource"
+          p:configLocation="classpath:mybatis-config.xml"
+          p:mapperLocations="classpath*:mapper/*Mapper.xml"/>
+    <!-- spring与mybatis整合配置，扫描所有dao 和所有mapper文件 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"
+          p:basePackage="core.dao"
+          p:sqlSessionFactoryBeanName="sqlSessionFactory"/>
+    <!-- 配置事务管理器 -->
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+          p:dataSource-ref="dataSource" />
+    <!--只有带有注解的方法才会产生事务-->
+    <tx:annotation-driven proxy-target-class="true" transaction-manager="transactionManager"></tx:annotation-driven>
+    <!--使用AOP代理表达式指定包下的所有方法-->
+    <!--<tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            &lt;!&ndash; all methods starting with 'get' are read-only &ndash;&gt;
+            <tx:method name="get*" read-only="true"/>
+            &lt;!&ndash; other methods use the default transaction settings &ndash;&gt;
+            <tx:method name="*"/>
+        </tx:attributes>
+    </tx:advice>
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="serviceMethod"
+                      expression="(execution(* core.service..*(..))) and (@annotation(org.springframework.transaction.annotation.Transactional))" />
+        <aop:advisor pointcut-ref="serviceMethod" advice-ref="txAdvice" />
+    </aop:config>-->
+
+
+</beans>

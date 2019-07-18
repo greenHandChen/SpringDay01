@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace：命名空间,对statement的信息进行 分类处理-->
+<!-- 在mapper代理时，它具有特殊及重要的作用 -->
+<mapper namespace="test">
+     <!-- 根据用户id查询用户信息 -->
+    <!-- select: 表示一个mapperStatement的对象 -->
+    <!-- id:statement的唯一标识 -->
+    <!-- #{}表示一个占位符？ -->
+    <!-- #{id}里面的参数id表示输入参数的变量名称，
+       如果该参数是简单类型，那么#{}里面的参数名称可以任意 -->
+    <!-- parameterType:输入参数的java类型 -->
+   <!-- resultType输出结果的Java类型(单条记录对应的Java类型)-->
+    <select id="findUserById" parameterType="int" resultType="com.itheima.mybatis.po.User">
+        select * from `user` where id=#{id}
+    </select>
+
+    <!-- 根据用户名称模糊查询用户列表 -->
+    <!-- ${}表示一个sql的连接符 -->
+    <!-- ${}里面的参数id表示输入参数的变量名称，
+       如果该参数是简单类型，那么${}里面的参数名称必须是value -->
+    <!-- ${}这种方法存在sql注入的风险，所以要慎用
+      使用场景：动态排序时，传入的列名-->
+    <!-- ${}会原样输出，不加解释 -->
+    <select id="findUsersByName" parameterType="java.lang.String" resultType="com.itheima.mybatis.po.User">
+        select * from `user` where username like  '%${value}%'
+    </select>
+
+    <!-- 添加用户 -->
+    <!-- selectkey：查询主键，在标签内需要输入查询主键的sql -->
+    <!-- order:指定查询主键的sql和insert语句的执行顺序，相对于insert语句来说 -->
+    <insert id="insertUser" parameterType="com.itheima.mybatis.po.User">
+        <selectKey keyProperty="id" resultType="int" order="AFTER">
+             select LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username,birthday,sex,address)
+        values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!-- 自增主键之uuid -->
+    <insert id="insertUser2" parameterType="com.itheima.mybatis.po.User">
+        <selectKey keyProperty="id" resultType="string" order="BEFORE">
+            select UUID()
+        </selectKey>
+        insert into user(id,username,birthday,sex,address)
+        values(#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+</mapper>

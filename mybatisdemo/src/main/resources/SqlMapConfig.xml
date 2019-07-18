@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 加载java的配置文件或者声明属性信息 -->
+    <properties resource="db.properties" >
+        <!--<property name="db.username" value="123" />-->
+    </properties>
+
+    <!-- 自定义标签 -->
+    <typeAliases>
+        <!--  单个别名设置 -->
+        <typeAlias type="com.itheima.mybatis.po.User" alias="user"  />
+        <!-- 批量别名定义 -->
+        <!-- package：指定包的名称来位改包下的po类声明别名
+            默认的别名就是类的首字母大小写都可-->
+        <package name="com.itheima.mybatis.po" />
+    </typeAliases>
+
+    <!-- 配置mybatis的环境变量,与spring整合之后，有spring整合 -->
+    <environments default="development">
+        <environment id="development">
+            <!-- 配置jdbc事务控制，有mybatis进行管理 -->
+            <transactionManager type="JDBC"></transactionManager>
+            <!-- 配置数据源，采用mybatis连接池 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"   />
+                <property name="url" value="${db.url}" />
+                <property name="username" value="${db.username}"  />
+                <property name="password" value="${db.password}"  />
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 加载映射文件 -->
+    <mappers>
+        <mapper resource="User.xml"  />
+        <!-- 1 -->
+        <mapper resource="mapper/UserMapper.xml"  />
+        <!-- 2 -->
+        <!--<package name="com.itheima.mybatis.mapper"  />-->
+    </mappers>
+
+
+
+</configuration>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace:命名空间，对statement的信息进行分类管理 -->
+<!-- 注意：在mapper代理时，它具有重要的作用 -->
+<mapper namespace="UserMapper">
+    <!--  根据用户ID查询用户信息  -->
+    <!--  select:表示一个MappedStatement对象  -->
+    <!--  id:一个statement对象的唯一标识  -->
+    <!--  #{}:表示一个占位符  -->
+    <!--  #{id}:里面的id表示输入参数的参数名称，如果该参数是简单类型，那么里面#{}中的名称可以任意  -->
+    <!--  parameterType输入参数的java类型  -->
+    <!--  resultType输入结果的java类型（单条结果所对应的类型）  -->
+    <select id="findUserById" parameterType="int" resultType="com.ll.mybatis.po.User">
+        select * from user where id = #{id}
+    </select>
+
+    <!--  根据用户名称模糊查询用户列表  -->
+    <!--   ${}:表示一个sql的连接符 这种写法存在注入风险，所以要慎用，可是在一些场景下也必须使用比如排序时，动态传入排序列名，${}会原样输出，不加解释  -->
+    <!--   ${value}:里面的value表示输入参数的参数名称，如果该参数是简单类型，那么${}里面的参数名称必须是value-->
+    <select id="findUserByName" parameterType="java.lang.String" resultType="com.ll.mybatis.po.User">
+        select * from user where username like '%${value}%'
+    </select>
+
+    <!--  添加用户  -->
+    <!--  selectKey：查询逐渐，在标签内需要输入查询主键的sql  -->
+    <!--  order:指定查询逐渐的sql和insert 语句的执行顺序，相对于insert语句来说 -->
+    <!--  LAST_INSERGT_ID:该函数是mysql的函数，获取自增主键的id，他必须配合insert语句一起使用  -->
+    <insert id="insertUser" parameterType="com.ll.mybatis.po.User">
+        <selectKey keyProperty="id" resultType="int" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--  自增组件之UUID 自动会把selectKey中的值重新赋值，如果不是自增主键，都设置为before -->
+    <insert id="insertUser2" parameterType="com.ll.mybatis.po.User">
+        <selectKey keyProperty="id" resultType="string" order="BEFORE">
+            SELECT UUID()
+        </selectKey>
+
+        insert into user(id,username,birthday,sex,address) values (#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+    <!--  sql语句中需要显式的给id赋值  -->
+
+    <!--  oracle中 -->
+    <insert id="insertUser3" parameterType="com.ll.mybatis.po.User">
+        <selectKey keyProperty="id" resultType="int" order="BEFORE">
+            SELECT sequence.nextval from dual()
+        </selectKey>
+
+        insert into user(id,username,birthday,sex,address) values (#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+    <!--  sql语句中需要显式的给id赋值  -->
+</mapper>

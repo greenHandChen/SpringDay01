@@ -7,9 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zyTEST1" />
+        <module name="transtationdemo" />
+        <module name="SpringDay02" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SpringDay02" target="1.7" />
+      <module name="transtation" target="6" />
+      <module name="transtationdemo" target="6" />
       <module name="zyTEST1" target="1.7" />
     </bytecodeTargetLevel>
   </component>

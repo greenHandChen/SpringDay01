@@ -2,10 +2,7 @@ package com.hand.UserTest;
 
 import com.hand.UserDaoImpl.AccountDaoImpl;
 import com.hand.UserService.IAccountService;
-import com.hand.UserServiceImpl.AccountServiceImpl;
-import javafx.application.Application;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

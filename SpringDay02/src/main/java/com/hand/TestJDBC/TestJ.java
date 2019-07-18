@@ -6,8 +6,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import java.util.List;
-
 public class TestJ {
     @Test
     public void testApi() {

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+    <context:component-scan base-package="com.demo"></context:component-scan>
+
+
+<bean id="hellospring" class="com.demo.spring.HelloClass">
+   <property name="student" ref="student"/>
+</bean>
+    <bean id="student" class="com.demo.spring.Student"></bean>
+    <bean id="inintClass" class="com.demo.spring.InintClass" init-method="initBean" destroy-method="destoryBean">
+    </bean>
+    <bean id="myBeanPostProcessor" class="com.demo.spring.MyBeanPostProcessor">
+    </bean>
+    <bean id="gril" class="com.demo.spring.Gril">
+        <constructor-arg name="boyfriendName" value="null"/>
+        <constructor-arg name="weight" value="105"/>
+        <constructor-arg name="age" value="23"/>
+    </bean>
+    <bean id="mygril" class="com.demo.spring.MyGril">
+        <property name="age" value="22"/>
+        <property name="boyfriendName" value="taohonglaing"/>
+        <property name="weight" value="95"/>
+    </bean>
+    <bean id="collection" class="com.demo.spring.Collection">
+        <property name="array">
+            <list>
+                <value>丽丽</value>
+                <value>娟娟</value>
+                <value>小红</value>
+            </list>
+        </property>
+        <property name="list">
+            <list>
+                <value>醉赤壁</value>
+                <value>一万次悲伤</value>
+                <value>光年之外</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>武汉</value>
+                <value>广州</value>
+                <value>上海</value>
+                <value>杭州</value>
+                <value>成都</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="hulijuan" value="sleep"/>
+                <entry key="taohongliang" value="sing"/>
+            </map>
+
+        </property>
+    </bean>
+
+</beans>

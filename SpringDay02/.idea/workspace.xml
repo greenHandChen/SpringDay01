@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d963dca2-beb2-4e9b-a172-7d5a35fbcff1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/src/test/java/com/frank/spring/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/META-INF/SpringDay01.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo01/HelloSpring.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo01/MyBeanPostProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo01/TestSpring.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo02/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo02/TestSpring.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo03/CollectionBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo03/TestCollection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo04/AnnotationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo04/AnnotationRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo04/AnnotationRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo04/AnnotationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo04/IAnnotationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo04/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/classes/com/frank/spring/demo04/TestComponent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay01/target/test-classes/com/frank/spring/AppTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringDay02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/TemplateDemo/target/" />
+    <ignored path="$PROJECT_DIR$/Demo02/target/" />
+    <ignored path="$PROJECT_DIR$/Demo03/target/" />
+    <ignored path="$PROJECT_DIR$/Demo04/target/" />
+    <ignored path="$PROJECT_DIR$/Demo05/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SpringDay02" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demo05/src/main/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-152">
+              <caret line="7" column="79" lean-forward="true" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
+              <folding>
+                <element signature="e#886#911#0" expanded="true" />
+                <element signature="e#949#962#0" expanded="true" />
+                <element signature="e#1005#1023#0" expanded="true" />
+                <element signature="e#1066#1084#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Demo05/src/main/java/transaction/test/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demo05/src/main/java/transaction/service/IAccountServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demo05/src/main/java/transaction/service/IAccountService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="xml File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/demo1/TestJDBC.java" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/demo2/User.java" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/demo2/UserDao.java" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/demo2/Test.java" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/c_druid/UserDao.java" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/resources/dataSource.properties" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/c_hikari/UserDao.java" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/c_hikari/Test.java" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/resources/applicationContext_hikari.xml" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/c_druid/Test.java" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/jdbcSupport/JdbcDaoSupport.java" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/resources/applicationContext_druid.xml" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/resources/applicationContext_jdbcSupport.xml" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/rowMapper/User.java" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/jdbcSupport/User.java" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/jdbcSupport/UserDao.java" />
+        <option value="$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/jdbcSupport/Test.java" />
+        <option value="$PROJECT_DIR$/Demo02/src/main/java/com/frank/transaction/dao/IAccountDao.java" />
+        <option value="$PROJECT_DIR$/Demo02/src/main/java/com/frank/transaction/dao/IAccountDaoImpl.java" />
+        <option value="$PROJECT_DIR$/Demo02/src/main/java/com/frank/transaction/service/IAccountService.java" />
+        <option value="$PROJECT_DIR$/Demo02/src/main/java/com/frank/transaction/test/Test.java" />
+        <option value="$PROJECT_DIR$/Demo02/src/main/resources/dataSource.properties" />
+        <option value="$PROJECT_DIR$/Demo02/src/main/java/com/frank/transaction/service/IAccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Demo03/src/main/java/transaction/dao/IAccountDao.java" />
+        <option value="$PROJECT_DIR$/Demo03/src/main/java/transaction/test/Test.java" />
+        <option value="$PROJECT_DIR$/Demo03/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/Demo03/src/main/java/transaction/service/IAccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Demo04/src/main/java/transaction/service/IAccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Demo04/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/Demo04/src/main/java/transaction/test/Test.java" />
+        <option value="$PROJECT_DIR$/Demo02/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/Demo05/src/main/java/transaction/test/Test.java" />
+        <option value="$PROJECT_DIR$/Demo05/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/Demo05/src/main/java/transaction/service/IAccountServiceImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:/Program Files/apache-maven-3.6.1" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="9" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo03" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo05" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay02" type="462c0819:PsiDirectoryNode" />
+              <item name="TemplateDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Demo05/src/main/resources" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.frank.rowMapper" />
+      <recent name="com.frank.jdbcSupport" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SpringDay01\SpringDay02\Demo05\src\main\resources" />
+      <recent name="E:\SpringDay01\SpringDay02\Demo05\src\main\java" />
+      <recent name="E:\SpringDay01\SpringDay02\Demo04\src\main\resources" />
+      <recent name="E:\SpringDay01\SpringDay02\Demo04\src\main\java" />
+      <recent name="E:\SpringDay01\SpringDay02\Demo03\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.Test.test (3)">
+    <configuration name="Test.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Demo03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="transaction.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="transaction.test" />
+      <option name="MAIN_CLASS_NAME" value="transaction.test.Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Demo04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="transaction.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="transaction.test" />
+      <option name="MAIN_CLASS_NAME" value="transaction.test.Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.test (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Demo05" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="transaction.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="transaction.test" />
+      <option name="MAIN_CLASS_NAME" value="transaction.test.Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Demo02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frank.transaction.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frank.transaction.test" />
+      <option name="MAIN_CLASS_NAME" value="com.frank.transaction.test.Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TemplateDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frank.jdbcSupport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frank.jdbcSupport" />
+      <option name="MAIN_CLASS_NAME" value="com.frank.jdbcSupport.Test" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Test.test (3)" />
+        <item itemvalue="JUnit.Test.test" />
+        <item itemvalue="JUnit.Test.test (2)" />
+        <item itemvalue="JUnit.Test.test (1)" />
+        <item itemvalue="JUnit.Test.test4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d963dca2-beb2-4e9b-a172-7d5a35fbcff1" name="Default Changelist" comment="" />
+      <created>1563351292024</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563351292024</updated>
+      <workItem from="1563351294985" duration="21370000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Test_test_(1) - 2019.07.17 at 21h 30m 42s.xml">
+      <configuration name="Test.test (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_test_(2) - 2019.07.17 at 23h 49m 12s.xml">
+      <configuration name="Test.test (2)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_test_(3) - 2019.07.18 at 00h 17m 03s.xml">
+      <configuration name="Test.test (3)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_test_(3) - 2019.07.18 at 08h 25m 18s.xml">
+      <configuration name="Test.test (3)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_test_(3) - 2019.07.18 at 08h 26m 20s.xml">
+      <configuration name="Test.test (3)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_test - 2019.07.18 at 08h 26m 53s.xml">
+      <configuration name="Test.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_test_(3) - 2019.07.18 at 08h 28m 36s.xml">
+      <configuration name="Test.test (3)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_test_(3) - 2019.07.18 at 08h 36m 58s.xml">
+      <configuration name="Test.test (3)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_test_(3) - 2019.07.18 at 08h 37m 27s.xml">
+      <configuration name="Test.test (3)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_test_(3) - 2019.07.18 at 08h 38m 12s.xml">
+      <configuration name="Test.test (3)" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21370000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" sideWeight="0.2575" side_tool="true" weight="0.38932496" />
+      <window_info id="Designer" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.7425" visible="true" weight="0.24886535" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="3" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.3295082" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
+      <window_info anchor="bottom" id="Spring" order="6" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.46557376" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" sideWeight="0.2575" side_tool="true" weight="0.38932496" />
+      <window_info id="Designer" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.7425" visible="true" weight="0.54765505" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="3" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.3295082" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
+      <window_info anchor="bottom" id="Spring" order="6" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Run" order="9" visible="true" weight="0.46557376" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/demo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/demo1/com/frank/demo02/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/demo1/TestJDBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="120" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="120" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/c_druid/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-290" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/resources/dataSource.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/c_hikari/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/c_hikari/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/c_hikari/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/jdbcSupport/JdbcDaoSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/maven/repository/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/c_druid/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/c_druid/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/resources/applicationContext_rowMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/rowMapper/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/jdbcSupport/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/jdbcSupport/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/java/com/frank/jdbcSupport/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo02/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo02/src/main/java/com/frank/transaction/dao/IAccountDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo02/src/main/java/com/frank/transaction/service/IAccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo02/src/main/java/com/frank/transaction/dao/IAccountDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo02/src/main/resources/dataSource.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo02/src/main/java/com/frank/transaction/service/IAccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo03/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo03/src/main/java/transaction/dao/IAccountDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo03/src/main/java/transaction/dao/IAccountDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo03/src/main/java/transaction/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo04/src/main/java/transaction/dao/IAccountDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo04/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo03/src/main/java/transaction/service/IAccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo04/src/main/resources/dataSource.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo03/src/main/resources/dataSource.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo04/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo04/src/main/java/transaction/service/IAccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+          <folding>
+            <element signature="e#270#271#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo04/src/main/java/transaction/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo05/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo05/src/main/java/transaction/dao/IAccountDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo05/src/main/resources/dataSource.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/resources/applicationContext_jdbcSupport.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/resources/applicationContext_druid.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding>
+            <element signature="e#939#964#0" expanded="true" />
+            <element signature="e#1002#1015#0" expanded="true" />
+            <element signature="e#1058#1076#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateDemo/src/main/resources/applicationContext_hikari.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="22" selection-start-line="22" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/maven/repository/org/springframework/spring-context/4.3.8.RELEASE/spring-context-4.3.8.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7408">
+          <caret line="456" column="97" selection-start-line="456" selection-start-column="97" selection-end-line="456" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo02/src/main/java/com/frank/transaction/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo02/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="1" selection-start-line="1" selection-end-line="7" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo05/src/main/java/transaction/service/IAccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo03/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-325">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo05/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="7" column="79" lean-forward="true" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
+          <folding>
+            <element signature="e#886#911#0" expanded="true" />
+            <element signature="e#949#962#0" expanded="true" />
+            <element signature="e#1005#1023#0" expanded="true" />
+            <element signature="e#1066#1084#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo05/src/main/java/transaction/service/IAccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo05/src/main/java/transaction/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Demo02</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

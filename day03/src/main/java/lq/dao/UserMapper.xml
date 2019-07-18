@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="lq.dao.UserMapper">
+    <resultMap id="BaseResultMap" type="User2" >
+        <id column="id" property="num"  />
+        <result column="sex" property="sex"/>
+        <result column="birthday" property="birthday"/>
+        <result column="username" property="nam" jdbcType="VARCHAR" />
+        <result column="address" property="ad" jdbcType="VARCHAR" />
+    </resultMap>
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="User">
+        select * from user where id=#{id}
+    </select>
+    <select id="findUserByUsername" parameterType="java.lang.String" resultType="lq.pojo.User">
+        select * from user where username like ${value}
+    </select>
+    <insert id="insertUser" parameterType="lq.pojo.User">
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+    <insert id="insertUserGetId" parameterType="lq.pojo.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+    <select id="testWhere" parameterType="user2" resultMap="BaseResultMap">
+        select * from user
+        <where>
+        <if test="sex!=null">
+            and sex=#{sex}
+        </if>
+        <if test="ad!=null">
+            and address like concat(concat('%',#{ad}),'%')
+        </if>
+        </where>
+    </select>
+</mapper>

@@ -28,7 +28,7 @@ public class UserDaoImpl extends BaseDaoImpl implements IUserDao {
      */
     public int insertUser(User user) {
         sqlSession = sqlSessionFactory.openSession();
-        int result = sqlSession.insert("com.hand.mapper.UserMapper.insertUser", user);
+        int result = sqlSession.insert("com.com.hand.mapper.UserMapper.insertUser", user);
         sqlSession.commit();
         sqlSession.close();
         return result;

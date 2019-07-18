@@ -3,34 +3,29 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- 使用mybatis代理时，namespace填入接口的全名-->
-<mapper namespace="com.com.hand.mapper.UserMapper">
+<mapper namespace="com.hand.mapper.UserMapper">
     <sql id="selectAll">
         select id,username,birthday,sex,address from user
     </sql>
 
-    <insert id="insertUser" parameterType="user">
-        <!--<selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+    <!--<insert id="insertUser" parameterType="user">
+        &lt;!&ndash;<selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
             select uuid()
-        </selectKey>-->
+        </selectKey>&ndash;&gt;
         insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
         <selectKey resultType="_int" keyProperty="id" order="AFTER">
             select @@identity
         </selectKey>
-    </insert>
-
-    <select id="selectUserById" parameterType="_int" resultType="user">
-        <include refid="selectAll"/>
-        where id=#{id}
-    </select>
+    </insert>-->
 
     <!--返回值类型属性使用别名-->
-    <select id="selectAllUsesr" resultType="user">
+    <!--<select id="selectAllUsesr" resultType="user">
         <include refid="selectAll"/>
-    </select>
+    </select>-->
 
-    <delete id="deleteUserById" parameterType="_int">
+    <!--<delete id="deleteUserById" parameterType="_int">
         delete from user where id=#{id}
-    </delete>
+    </delete>-->
     <select id="selectUserToMapById" resultMap="testUserMap" parameterType="_int">
         <include refid="selectAll"/>
         where id=#{id};

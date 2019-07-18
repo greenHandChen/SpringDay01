@@ -4,26 +4,23 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.com.hand</groupId>
-    <artifactId>SpringJDBC</artifactId>
-    <version>1.0</version>
+    <groupId>com.hand</groupId>
+    <artifactId>Spring_MyBatis</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <spring.version>4.3.23.RELEASE</spring.version>
+        <mybatis.version>3.4.6</mybatis.version>
+        <mysql.driver.version>8.0.15</mysql.driver.version>
+        <junit.version>4.11</junit.version>
         <hikaricp.version>3.2.0</hikaricp.version>
-        <mysql.version>8.0.15</mysql.version>
     </properties>
 
-    <!-- ============================Spring 核心依赖=============================== -->
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
             <version>${spring.version}</version>
         </dependency>
         <dependency>
@@ -41,17 +38,15 @@
             <artifactId>spring-expression</artifactId>
             <version>${spring.version}</version>
         </dependency>
-        <!-- ============================Spring AOP依赖=============================== -->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-aop</artifactId>
+            <artifactId>spring-beans</artifactId>
             <version>${spring.version}</version>
         </dependency>
-        <!-- ============================mysql连接驱动+jdbc+连接池+事务管理依赖=============================== -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql.version}</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
         </dependency>
 
         <dependency>
@@ -67,17 +62,54 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId>
-            <version>${spring.version}</version>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
         </dependency>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>${junit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.driver.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.25</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-dbcp</groupId>
+                    <artifactId>commons-dbcp</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>1.3.2</version>
+        </dependency>
     </dependencies>
 
 </project>

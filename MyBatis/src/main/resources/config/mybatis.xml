@@ -8,9 +8,9 @@
     <!--定义别名-->
     <typeAliases>
         <!-- 定义单个别名 -->
-        <!--<typeAlias type="com.hand.entity.User" alias="user"/>-->
+        <!--<typeAlias type="com.com.hand.entity.User" alias="user"/>-->
         <!-- 批量定义别名，类名就是别名-->
-        <package name="com.hand.entity"/>
+        <package name="com.com.hand.entity"/>
     </typeAliases>
     <!--配置环境-->
     <environments default="mysqlEm">
@@ -26,8 +26,8 @@
     </environments>
     <!-- 引入mapper文件-->
     <mappers>
-        <!--<mapper resource="com/hand/mapper/UserMapper.xml" />-->
-        <!--<mapper class="com.hand.mapper.UserMapper" />-->
-        <package name="com.hand.mapper"/>
+        <!--<mapper resource="com/com.hand/mapper/UserMapper.xml" />-->
+        <!--<mapper class="com.com.hand.mapper.UserMapper" />-->
+        <package name="com.com.hand.mapper"/>
     </mappers>
 </configuration>

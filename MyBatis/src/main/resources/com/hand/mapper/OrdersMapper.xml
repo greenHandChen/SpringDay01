@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- 使用mybatis代理时，namespace填入接口的全名-->
-<mapper namespace="com.hand.mapper.OrdersMapper">
+<mapper namespace="com.com.hand.mapper.OrdersMapper">
     <resultMap id="orderUserMap" type="ordersusers">
         <id column="oid" property="id"/>
         <result column="user_id" property="user_id"/>

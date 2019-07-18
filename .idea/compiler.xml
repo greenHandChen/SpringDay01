@@ -7,22 +7,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring01" />
+        <module name="Spring_MyBatis" />
+        <module name="Springannotationdi" />
         <module name="SpringJDBC" />
         <module name="SpringTransaction" />
+        <module name="SpringAOPAspectJ" />
         <module name="MyBatis" />
         <module name="Spring02" />
-        <module name="SpringAOPAspectJ" />
-        <module name="Springannotationdi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="MyBatis" target="8" />
-      <module name="Spring01" target="8" />
-      <module name="Spring02" target="8" />
+      <module name="MyBatis" target="1.5" />
+      <module name="Spring01" target="1.5" />
+      <module name="Spring02" target="1.5" />
+      <module name="Spring_MyBatis" target="1.5" />
       <module name="Springannotationdi" target="1.5" />
-      <module name="SpringAOPAspectJ" target="8" />
-      <module name="SpringJDBC" target="8" />
-      <module name="SpringTransaction" target="8" />
+      <module name="SpringAOPAspectJ" target="1.5" />
+      <module name="SpringJDBC" target="1.5" />
+      <module name="SpringTransaction" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

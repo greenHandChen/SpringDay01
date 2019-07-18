@@ -34,7 +34,7 @@ public class MyTest {
             SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
             sqlSession = sqlSessionFactory.openSession();
             System.out.println(user);
-            int result = sqlSession.insert("com.hand.mapper.UserMapper.insertUser", user);
+            int result = sqlSession.insert("com.com.hand.mapper.UserMapper.insertUser", user);
             System.out.println(user);
             sqlSession.commit();
             sqlSession.close();

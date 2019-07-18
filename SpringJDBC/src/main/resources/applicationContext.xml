@@ -26,12 +26,12 @@
         <property name="dataSource" ref="hikaricpDataSource"/>
     </bean>-->
 
-    <bean id="userDao" class="com.hand.dao.IUserDao.UserDaoImpl">
+    <bean id="userDao" class="com.com.hand.dao.IUserDao.UserDaoImpl">
         <!--<property name="jdbcTemplate" ref="jdbcTemplate"/>-->
         <property name="dataSource" ref="hikaricpDataSource"/>
     </bean>
 
-    <bean id="userService" class="com.hand.service.UserServiceImpl">
+    <bean id="userService" class="com.com.hand.service.UserServiceImpl">
         <property name="uDao" ref="userDao"/>
     </bean>
 

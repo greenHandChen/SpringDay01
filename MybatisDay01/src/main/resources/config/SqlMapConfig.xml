@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC
+        "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 引入外部数据库配置文件 -->
+    <properties resource="config/db.properties"/>
+    <!-- 配置类型别名 -->
+    <typeAliases>
+        <package name="com.hand.domain"/>
+    </typeAliases>
+    <!-- 配置mybatis的环境信息，比如数据源以及事务控制，整合spring后就交给spring控制 -->
+    <environments default="development">
+        <environment id="development">
+            <!-- 配置JDBC事务控制，由mybatis进行管理 -->
+            <transactionManager type="JDBC"></transactionManager>
+            <!-- 配置数据源，采用mybatis连接池 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 加载映射配置文件 -->
+    <mappers>
+        <!--mappers:映射器,定义映射配置文件
+            Classpath方式配置:<mapper resource="config/User.xml"/>
+            Mapper接口的全限定名:<mapper class=“”/>
+            注册指定包下的所有映射文件:<package name=“”/>(推荐使用)
+            注意: 后两种配置方式要求mapper接口和mapper的xml文件名一致,且需要放到同一目录下(实质上是打包后在同一路径即可)
+         -->
+        <mapper resource="mapper/UserMapper.xml"/>
+        <!--<package name="mapper.UserMapper.xml"/>-->
+    </mappers>
+</configuration>

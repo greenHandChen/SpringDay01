@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace:命名空间 -->
+<mapper namespace="com.hand.Mapper.UserMapper">
+
+    <!--1.查询使用的是select标签，每一个标签代表着MappedStatement-->
+    <!--2.id是MappedStatement的标识符-->
+    <!--3.parameterType就是输入参数的类型-->
+    <!--4.resultType就是返回结果集也就是输出参数的类型-->
+    <!--5.#{}占位符相当于我们得？占位符-->
+    <select id="findUserById" parameterType="Integer" resultType="User">
+        select * from user where id=#{id};
+    </select>
+
+    <!--${value}:其中的value是参数的名称,如果参数是简单类型,那么参数名就必须是value这种形式-->
+    <select id="findUserByUsername" parameterType="String" resultType="User">
+        select * from user where username like ${value};
+    </select>
+    
+    <insert id="addUser" parameterType="User">
+        insert into user(username,birthday,sex,address) values (#{username},now(),#{sex},#{address});
+    </insert>
+
+    <!--selectKey:用于查询主键,标签体里写查询主键的SQL,主键查询SQL根据数据库的不同,写法也是不同
+        keyProperty:指的是我们需要映射的字段名称
+        resultType:输出参数类型
+        order:ORDER是用来指定查询主键的SQL以及插入的SQL的相对顺序,这里相对顺序指的是针对INSERT语句的先后
+        LAST_INSERT_ID:必须配合Insert语句进行搭配使用
+     -->
+    <insert id="addUserGetId" parameterType="User">
+        <selectKey keyProperty="id" resultType="Integer" order="AFTER">
+            select last_insert_id();
+        </selectKey>
+        insert into user(username,birthday,sex,address) values (#{username},now(),#{sex},#{address});
+    </insert>
+
+    <insert id="addUserGetUUID" parameterType="User">
+        <selectKey keyProperty="id" resultType="Integer" order="BEFORE">
+            select UUID();
+        </selectKey>
+        insert into user(id,username,birthday,sex,address) values (#{id},#{username},now(),#{sex},#{address});
+    </insert>
+
+    <select id="findUserByUser" parameterType="UserQueryVO" resultType="User">
+        select * from user u where u.address like '%${user.address}%' and u.sex=#{user.sex};
+    </select>
+
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="User">
+        select * from user u where u.username like concat(concat('%',#{username}),'%');
+    </select>
+
+    <select id="countUser" resultType="java.lang.Integer">
+        select count(*) from user;
+    </select>
+
+    <select id="testResultMap" parameterType="java.lang.Integer" resultMap="userResultMap">
+        select id as num,username name,address from user u where u.id=#{id};
+    </select>
+    <resultMap id="userResultMap" type="User">
+        <id column="num" property="id"/>
+        <result column="name" property="username"/>
+        <result column="address" property="address"/>
+    </resultMap>
+
+    <select id="testIfAndWhereLabel" parameterType="User" resultType="User">
+        select * from user
+        <where>
+            <if test="id !=null">
+                and id =#{id}
+            </if>
+            <if test="username !=null and username !=''">
+                and username like concat(concat('%',#{username}),'%')
+            </if>
+        </where>
+    </select>
+</mapper>

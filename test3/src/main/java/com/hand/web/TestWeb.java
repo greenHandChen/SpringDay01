@@ -18,6 +18,11 @@ public class TestWeb {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-context.xml");
         AccountServiceImpl accountServiceImpl
                 = ctx.getBean("accountServiceImpl", AccountServiceImpl.class);
-        accountServiceImpl.transfer("mybatis","hibernate",300);
+       try {
+           accountServiceImpl.transfer("mybatis","hibernate",300);
+           System.out.println("SUCCESS");
+       }catch (Exception e){
+           System.out.println("FAIl--->"+e.getMessage());
+       }
     }
 }

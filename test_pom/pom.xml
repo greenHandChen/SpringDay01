@@ -13,6 +13,7 @@
     <properties>
         <spring.version>4.3.8.RELEASE</spring.version>
         <mysql.version>6.0.6</mysql.version>
+        <mybatis.version>3.4.6</mybatis.version>
         <HikariCP.version>3.2.0</HikariCP.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -107,6 +108,18 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+        <!-- 内置dbcp连接池 -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-dbcp</groupId>
+                    <artifactId>commons-dbcp</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 </project>

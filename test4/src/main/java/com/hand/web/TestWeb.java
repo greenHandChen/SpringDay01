@@ -20,6 +20,11 @@ public class TestWeb {
     public void testDemo(){
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-context.xml");
         IAccountService accountServiceImpl = ctx.getBean("accountServiceProxy", IAccountService.class);
-        accountServiceImpl.transfer("hibernate","mybatis",111);
+        try {
+            accountServiceImpl.transfer("hibernate","mybatis",111);
+            System.out.println("SUCCESS");
+        }catch (Exception e){
+            System.out.println("FAIl--->"+e.getMessage());
+        }
     }
 }

@@ -1,0 +1,105 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xmlns:context="http://www.springframework.org/schema/context"-->
+<!--       xmlns:tx="http://www.springframework.org/schema/tx"-->
+<!--       xmlns:mvc="http://www.springframework.org/schema/mvc"-->
+<!--       xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+<!--        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd-->
+<!--        http://www.springframework.org/schema/context-->
+<!--        http://www.springframework.org/schema/context/spring-context-4.3.xsd-->
+<!--        http://www.springframework.org/schema/mvc-->
+<!--        http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd-->
+<!--        http://www.springframework.org/schema/tx-->
+<!--        http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">-->
+<!--    &lt;!&ndash;读取db.properties&ndash;&gt;-->
+<!--    <context:property-placeholder location="classpath:jdbc.properties"/>-->
+<!--    &lt;!&ndash;    &lt;!&ndash; 注解驱动：配置处理器映射器和适配器 &ndash;&gt;&ndash;&gt;-->
+<!--    <mvc:annotation-driven/>-->
+<!--    <context:component-scan base-package="org.hgh.demo"/>-->
+<!--    &lt;!&ndash;配置数据源&ndash;&gt;-->
+<!--    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">-->
+<!--        &lt;!&ndash;数据库驱动&ndash;&gt;-->
+<!--        <property name="driverClassName" value="${jdbc.driver}"/>-->
+<!--        &lt;!&ndash;连接数据库的url&ndash;&gt;-->
+<!--        <property name="jdbcUrl" value="${jdbc.url}"/>-->
+<!--        &lt;!&ndash;连接数据库的用户名&ndash;&gt;-->
+<!--        <property name="username" value="${jdbc.username}"/>-->
+<!--        &lt;!&ndash;连接数据库的密码&ndash;&gt;-->
+<!--        <property name="password" value="${jdbc.password}"/>-->
+<!--    </bean>-->
+<!--    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--    </bean>-->
+
+<!--&lt;!&ndash;    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;数据库驱动&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="driverClassName" value="${jdbc.driver}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;连接数据库的url&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="url" value="${jdbc.url}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;连接数据库的用户名&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="username" value="${jdbc.username}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;连接数据库的密码&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="password" value="${jdbc.password}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+<!--&lt;!&ndash;    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="dataSource" ref="dataSource"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+
+<!--    &lt;!&ndash; 事务管理器，依赖于数据源&ndash;&gt;-->
+<!--    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--    </bean>-->
+<!--    <bean id="txTemplate" class="org.springframework.transaction.support.TransactionTemplate">-->
+<!--        <property name="transactionManager" ref="transactionManager"/>-->
+<!--    </bean>-->
+<!--    &lt;!&ndash; 注解创建事务驱动 &ndash;&gt;-->
+<!--    <tx:annotation-driven proxy-target-class="true" transaction-manager="transactionManager"/>-->
+
+<!--    &lt;!&ndash; 配置事务管理器工厂 &ndash;&gt;-->
+<!--    <bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">-->
+<!--        <property name="transactionManager" ref="transactionManager"/>-->
+<!--        <property name="target" ref="accountServiceForAnnotationImpl"/>-->
+<!--        &lt;!&ndash; 注意这里是value。。。 &ndash;&gt;-->
+<!--        <property name="proxyInterfaces" value="org.hgh.demo.service.IAccountService"/>-->
+<!--        <property name="transactionAttributes">-->
+<!--            <props>-->
+<!--                <prop key="transfer">PROPAGATION_REQUIRED,ISOLATION_DEFAULT</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;通知&ndash;&gt;-->
+<!--    <tx:advice id="txAdvice" transaction-manager="transactionManager">-->
+<!--        <tx:attributes>-->
+<!--            &lt;!&ndash;传播行为&ndash;&gt;-->
+<!--            <tx:method name="save*" propagation="REQUIRED"/>-->
+<!--            <tx:method name="insert*" propagation="REQUIRED"/>-->
+<!--            <tx:method name="add*" propagation="REQUIRED"/>-->
+<!--            <tx:method name="create*" propagation="REQUIRED"/>-->
+<!--            <tx:method name="delete*" propagation="REQUIRED"/>-->
+<!--            <tx:method name="update*" propagation="REQUIRED"/>-->
+<!--            <tx:method name="find*" propagation="SUPPORTS" read-only="true"/>-->
+<!--            <tx:method name="select*" propagation="SUPPORTS" read-only="true"/>-->
+<!--            <tx:method name="get*" propagation="SUPPORTS" read-only="true"/>-->
+<!--        </tx:attributes>-->
+<!--    </tx:advice>-->
+
+<!--    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">-->
+<!--        &lt;!&ndash;注入数据源&ndash;&gt;-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--        <property name="configLocation" value="classpath:mybatis-config.xml"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="userDao" class="org.hgh.demo.dao.impl.UserDao2">-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="accountDao" class="org.hgh.demo.dao.impl.AccountDaoImpl">-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--    </bean>-->
+
+
+
+
+<!--</beans>-->

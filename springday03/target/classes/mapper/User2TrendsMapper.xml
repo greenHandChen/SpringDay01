@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.hgh.dao.mapper.UserTrendMapper">
+
+    <resultMap id="userList" type="org.hgh.pojo.User">
+        <result property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="birthday" column="birthday"/>
+        <result property="sex" column="sex"/>
+        <result property="address" column="address"/>
+    </resultMap>
+
+    <select id="testIfAndWhereLabel" parameterType="UserVO" resultType="userList">
+        select * from user
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="username != null and username != ''">
+                and username like concat(concat('%',username,'%'))
+            </if>
+        </where>
+    </select>
+</mapper>
+

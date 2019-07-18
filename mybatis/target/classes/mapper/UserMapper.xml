@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace 命名空间  参见test.test1里面的的引用-->
+<mapper namespace="test">
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.masirhh.mybatis.beans.User">
+        select * from user where id=#{id}
+    </select>
+
+    <select id="findUserByUsername" parameterType="java.lang.String" resultType="com.masirhh.mybatis.beans.User">
+        select * from user where username like ${value}
+    </select>
+</mapper>

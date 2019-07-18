@@ -13,6 +13,7 @@ public class jdbc {
         hikariDataSource.setUsername("root");
         hikariDataSource.setPassword("123456");
 
+        //调用spring-jdbc
         JdbcTemplate jdbcTemplate = new JdbcTemplate(hikariDataSource);
         String insertSql="insert into sys_user(username,password) values(?,?);";
         jdbcTemplate.update(insertSql,"dingwensheng","123456");

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd
+       					   http://www.springframework.org/schema/context
+       					   http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <context:component-scan base-package="com.hand.trans"/>
+
+    <context:property-placeholder location="classpath:db.properties"/>
+
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <property name="driverClassName" value="${db.driver}"/>
+        <property name="jdbcUrl" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>
+<bean id="accountDao" class="com.hand.trans.AccountDaoImpl">
+<property name="dataSource" ref="dataSource"/>
+</bean>
+    <!--1.事务管理器-->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <!--配置事务模板，注入事务管理器-->
+    <bean id="txTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+       <property name="transactionManager" ref="txManager"></property>
+    </bean>
+   <!--2.配置事务代理工厂-->
+    <bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+       <!-- 配置哪些方法需要事务控制以及如何控制
+        prop配置格式:PROPAGATION,ISOLATION,readOnly,-Exception,+Exception
+ 传播行为
+        隔离级别
+        是否只读
+        指定异常回滚
+        指定异常提交-->
+        <property name="transactionAttributes">
+            <props>
+                <prop key="transferProxy">PROPAGATION_REQUIRED,ISOLATION_DEFAULT</prop>
+            </props>
+        </property>
+    </bean>
+    <!--注册事务管理器驱动-->
+    <!--proxy-target-class默认使用jdk代理，当为true时，为cglib代理，不需要目标类实现接口，
+    只需要加上@Transaction注解-->
+    <tx:annotation-driven  proxy-target-class="true"></tx:annotation-driven>
+</beans>

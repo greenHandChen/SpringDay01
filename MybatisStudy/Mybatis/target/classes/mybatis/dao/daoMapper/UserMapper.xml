@@ -70,10 +70,10 @@
     <select id="testActiveSql" parameterType="User" resultType="User">
         select * from user
         <where>
-            <if test="id != null">
+            <if test='id != null'>
                 and id = #{id}
             </if>
-            <if test="username != null">
+            <if test='username != null and username != ""'>
                 and username like concat('%',#{username},'%')
             </if>
         </where>

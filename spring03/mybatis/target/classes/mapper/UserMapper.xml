@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lzn.mybatis.dao.UserMapper">
+    <!--
+        根据用户 ID查询用户信息
+        1.查询使用的是 select标签，每一个标签代表着 MappedStatement
+        2.id是 MappedStatement的标识符
+        3.parameterType就是输入参数的类型（输入类型为基本类型，参数名可随意）
+        4.resultType就是返回结果集也就是输出参数的类型
+        5.#{}占位符相当于之前我们的 ? 占位符
+        -->
+    <select id="findUserById" parameterType="Integer" resultType="com.lzn.mybatis.entity.UserEntity">
+        SELECT * FROM USER WHERE id = #{id}
+    </select>
+
+    <!--
+        根据用户名模糊查询
+        ${}:表示 sql的连接符
+        ${value}:其中的 value是参数的名称，如果参数是简单类型，那么参数名就必须是 value这种形式
+        注意：他与#{}占位符不同，${}这种 sql连接分局拼接的是 sql片段，而${}占位符拼接的是字符串，所以${}有sql注入的风险
+        -->
+    <select id="findUserByUsername" parameterType="java.lang.String" resultType="com.lzn.mybatis.entity.UserEntity">
+--         select * from user u where u.username like ${value}
+        select * from user u where u.username like #{username}
+    </select>
+
+    <!--添加用户（通过 OGNL的 JAR包来遍历 USER类的属性类完成对应的赋值-->
+    <insert id="addUser" parameterType="com.lzn.mybatis.entity.UserEntity">
+        insert into user(username, birthday, sex, address) values(#{username}, #{birthday}, #{sex}, #{address})
+    </insert>
+
+    <!--
+        添加用户返回主键 mysql版本
+            selectKey:用于查询主键，标签体里写查询主键的 sql，主键查询 sql根据数据库的不同，写法也不同
+            keyProperty:指的是我们需要映射的字段名称
+            resultType:输出参数类型
+            order:ORDER是用来指定查询主键的 sql以及插入的 sql的相对顺序，这里相对顺序指的是针对 insert的先后
+            LAST_INSERT_ID:必须配合 insert语句进行搭配使用
+        -->
+    <insert id="addUserGetId" parameterType="com.lzn.mybatis.entity.UserEntity">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username, birthday, sex, address) values(#{username}, #{birthday}, #{sex}, #{address})
+    </insert>
+
+
+    <insert id="addUserGetUUID" parameterType="com.lzn.mybatis.entity.TestUserEntity">
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select UUID()
+        </selectKey>
+        insert into test_user(id, username, birthday, sex, address) values(#{id}, #{username}, #{birthday}, #{sex},
+        #{address})
+    </insert>
+
+
+    <!--mapper 查询-->
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="UserEntity">
+        select * from user u where u.username like concat(concat('%', #{username}), '%')
+    </select>
+
+    <!--对简单类型的结果映射也是有要求的，查询的列必须是一列，才能映射为简单类型-->
+    <select id="countUser" resultType="Integer">
+        Select count(*) from user
+    </select>
+
+    <!--只获取username, address列-->
+    <select id="findUserNameAndAddressById" parameterType="Integer" resultType="UserEntity">
+        select username, address from user u where u.id = #{id}
+    </select>
+
+
+    <select id="testResultMap" parameterType="Integer" resultMap="userResultMap">
+        select  id as num, username name, address from user u where u.id = #{id}
+    </select>
+    <!--
+    映射配置
+        resultMap的id属性：标志 resultMap的唯一
+        id标签:标志主键列
+        result标志普通列
+        column属性：查询出来的列名（可以是别名）
+        property属性：User类的属性名
+    -->
+    <resultMap id="userResultMap" type="UserEntity">
+        <id column="num" property="id" />
+        <result column="name" property="username"/>
+        <result column="address" property="address" />
+    </resultMap>
+
+    <!--动态sql-->
+
+    <select id="testIfAndWhereLabel" parameterType="com.lzn.mybatis.entity.UserEntity" resultMap="userResultMap">
+        select * from user
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="username != null and username != ''">
+                and username like concat(concat('%', #{username}), '%')
+            </if>
+        </where>
+    </select>
+</mapper>

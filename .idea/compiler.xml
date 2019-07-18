@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lizijie" />
+        <module name="transaction" />
+        <module name="mybatisday03" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lizijie" target="1.7" />
+      <module name="mybatisday03" target="1.5" />
+      <module name="springday01" target="1.5" />
+      <module name="springday02" target="1.5" />
+      <module name="transaction" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lizijie:war">
+    <output-path>$PROJECT_DIR$/springday02/lizijie/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>lizijie</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="lizijie.war">
+      <element id="artifact" artifact-name="lizijie:war exploded" />
+    </root>
+  </artifact>
+</component>

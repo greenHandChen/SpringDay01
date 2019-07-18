@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <beans>
-        <bean id="helloSpring" name="helloSpring2" class="com.yonye.spring.HelloSpring"  init-method="initBean" destroy-method="destoryBean"/>
-    </beans>
+<beans>
+    <bean id="helloSpring" name="helloSpring2" class="com.yonye.spring.HelloSpring"  init-method="initBean" destroy-method="destoryBean"/>
+</beans>
 </beans>

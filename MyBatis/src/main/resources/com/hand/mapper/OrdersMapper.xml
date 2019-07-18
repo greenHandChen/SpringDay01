@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 使用mybatis代理时，namespace填入接口的全名-->
+<mapper namespace="com.hand.mapper.OrdersMapper">
+    <resultMap id="orderUserMap" type="ordersusers">
+        <id column="oid" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result column="note" property="note"/>
+
+        <association property="user" javaType="user">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="birthday" property="birthday"/>
+            <result column="sex" property="sex"/>
+            <result column="address" property="address"/>
+        </association>
+
+    </resultMap>
+    <select id="selectOrdersUsers" resultMap="orderUserMap">
+        select usr.id as user_id,usr.username,usr.birthday,usr.sex,usr.address,ord.id as oid,ord.number,ord.createtime,ord.note from user usr,orders ord
+        where usr.id=#{xxx} and usr.id=ord.user_id
+    </select>
+</mapper>

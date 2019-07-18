@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 public class StudentDao implements IStudentDao {
     public int insertStudent() {
         System.out.println("-----------------------------------");
-        System.out.println("dao：添加学生成功！");
+        System.out.println("mapper：添加学生成功！");
         return 1;
     }
 }

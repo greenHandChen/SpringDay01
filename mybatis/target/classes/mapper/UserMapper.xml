@@ -10,4 +10,15 @@
     <select id="findUserByUsername" parameterType="java.lang.String" resultType="com.masirhh.mybatis.beans.User">
         select * from user where username like ${value}
     </select>
+
+    <insert id="insertUser" parameterType="com.masirhh.mybatis.beans.User">
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetId" parameterType="com.masirhh.mybatis.beans.User">
+        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
 </mapper>

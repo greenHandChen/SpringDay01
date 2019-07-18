@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间，主要是用于对statement进行分类管理的唯一标识符
+注意：当使用mapper代理开发模式时，有其它特殊作用。
+-->
+<mapper namespace="test">
+    <!--查询使用select标签，标签代表着MappedStatement
+    id：MappedStatement的标识符
+    parameterType：输入参数的类型（输入类型为基本类型时，参数名可以任意）
+    resultType：输出参数的类型
+    #{}：占位符，相当于？占位符
+    -->
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.lx.mybatis.Entity.User">
+        select * from USER  where id=#{id}
+    </select>
+
+    <!--${}:表示sql的连接符
+    ${value}:其中的value是参数的名称，如果参数是简单（基本）类型，那么参数名就必须是value这种形式
+    注意：与#{}占位符不同，${}这种SQL拼接的是sql片段，而#{}拼接的是字符串，所以${}有SQL注入的风险
+    -->
+    <select id="findUserByUsername" parameterType="java.lang.String" resultType="com.lx.mybatis.Entity.User">
+        select * from USER where username like ${value}
+    </select>
+
+    <!--User类的字段映射是通过OGNL的JAR包来遍历User类的属性来完成对应的赋值
+    -->
+    <insert id="addUser" parameterType="com.lx.mybatis.Entity.User">
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--添加用户返回自增主键id
+    selectKey:用于查询主键，标签体里写查询主键的SQL，主键查询SQL根据数据库的不同，写法也不同
+    keyProperty:需要映射的字段名称
+    resultType:输出参数类型
+    order:用来指定查询主键的SQL以及插入的SQL的相对顺序，这里相对顺序指的是针对insert语句的先后
+    LAST_INSERT_ID:必须配合Insert语句进行搭配使用
+    -->
+    <insert id="addUserGetId" parameterType="com.lx.mybatis.Entity.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO USER(username,birthday,sex,address)values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--添加用户返回UUID主键-->
+    <insert id="addUserGetUUID" parameterType="com.lx.mybatis.Entity.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+            select UUID()
+        </selectKey>
+        insert into user(id,username,birthday,sex,address)values (#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--Oracle是通过序列生成主键，所以需要将order设置为before-->
+    <insert id="addUserGetID_2" parameterType="com.lx.mybatis.Entity.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+            select USER_S.nextval from dual
+        </selectKey>
+        insert into user(id,username,birthday,sex,address)values (#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+</mapper>

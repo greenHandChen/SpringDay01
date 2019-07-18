@@ -17,7 +17,7 @@ public class AccountServiceImpl implements IAccountService {
 
     public void transfer(String outer, String inner, Double money) {
         accountDao.out(outer,money);
-        int number = 1/0;
+//        int number = 1/0;
         accountDao.in(inner,money);
     }
 }

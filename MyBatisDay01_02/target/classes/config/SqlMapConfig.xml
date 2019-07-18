@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org/DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--配置顺序
+    1、Properties:属性，如数据库配置文件
+    2、Settings:全局参数设置，可配置一级、二级缓存
+    3、typeAliases:类型别名，如输入输出参数的简写
+    4、objectFactory:对象工厂，与spring整合后失效
+    5、plugins:插件，实质是拦截器，增强方法
+    6、environment:环境信息集合
+        environment——单个环境信息
+            transactionManager——事务
+            dataSource——数据源
+    7、mappers:映射器，加载映射配置文件
+    -->
+
+    <!--引入外部数据库配置文件-->
+    <properties resource="config/db.properties"/>
+    
+    <!--类型别名-->
+    <typeAliases>
+        <!--单个别名定义-->
+        <!--<typeAlias type="com.lx.mybatis.Entity.User" alias="user"/>-->
+        
+        <!--批量别名定义，别名取的是类名,不区分大小写-->
+        <package name="com.lx.mybatis.Entity"/>
+    </typeAliases>
+
+    <!--配置mybatis的环境信息，如数据源、事务控制，
+    整合spring后就交给spring控制
+    -->
+    <environments default="development">
+        <environment id="development">
+            <!--配置JDBC事务控制，由mybatis进行管理-->
+            <transactionManager type="JDBC"/>
+            <!--配置数据源，采用mybatis连接池-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--加载映射配置文件-->
+    <mappers>
+        <!--通过resource方法一次加载一个映射文件-->
+        <!--<mapper resource="mapper/UserMapper.xml"/>-->
+
+        <!--通过mapper接口加载映射文件
+        遵循一些规范：需要将mapper接口类名和mapper.xml映射文件名称保持一致，且在一个目录中
+        -->
+        <!--<mapper class="com.lx.mybatis.Mapper.UserMapper"/>-->
+
+        <!--注册指定包下的所有映射文件,也需要遵循上面规范-->
+        <package name="com.lx.mybatis.Mapper"/>
+    </mappers>
+</configuration>

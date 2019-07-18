@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <properties resource="db.properties" />
+
+<!--    <settings>-->
+<!--        <setting name="" value=""/>-->
+<!--    </settings>-->
+
+    <typeAliases>
+<!--        <typeAlias type="" alias="" />  单个别名-->
+<!--        批量别名，该包下的别名为类目（首字母大小写均可）-->
+        <package name="com.xyh.mybaits.Entity"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <!-- 事务-->
+            <transactionManager type="JDBC"/>
+            <!-- 数据库连接池-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"/>
+        
+<!--        <package name="com.xyh.mybaits.Mapper"/>-->
+    </mappers>
+</configuration>

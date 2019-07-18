@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+
+    <select id="findUserById" parameterType="int" resultType="com.xyh.mybaits.Entity.User">
+        select * from user where id=#{id};
+    </select>
+
+    <!-- ${}内必须写value -->
+    <select id="findUserByName"  parameterType="java.lang.String" resultType="com.xyh.mybaits.Entity.User">
+        select * from user where username like '%${value}%';
+    </select>
+
+    <!-- 只要主键不是自增，selectKey中order设置为BEFORE,需要给显示赋值
+        Oracle的Seq是要order设为BEFORE来获取的
+    -->
+    <insert id="addUser" parameterType="com.xyh.mybaits.Entity.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address});
+    </insert>
+
+    <update id="updateById" parameterType="com.xyh.mybaits.Entity.User">
+        update user set username=#{username},birthday=#{birthday},sex=#{sex},address=#{address}
+            where id=#{id}
+    </update>
+
+    <delete id="deleteById" parameterType="integer">
+        delete from user where id=#{id};
+    </delete>
+</mapper>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xyh.mybaits.Mapper.UserMapper">
+
+    <select id="findUserById" parameterType="int" resultType="User">
+        select * from user where id=#{id};
+    </select>
+
+    <!-- ${}内必须写value -->
+    <select id="findUserByName"  parameterType="java.lang.String" resultType="com.xyh.mybaits.Entity.User">
+        select * from user where username like '%${value}%';
+    </select>
+
+    <!-- 只要主键不是自增，selectKey中order设置为BEFORE,需要给显示赋值
+        Oracle的Seq是要order设为BEFORE来获取的
+    -->
+    <insert id="addUser" parameterType="com.xyh.mybaits.Entity.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address});
+    </insert>
+
+<!--    综合查询,映射输入-->
+    <select id="findUserByUserQuery" parameterType="com.xyh.mybaits.Entity.UserQuery" resultType="user">
+        select * from user where username like '%${user.username}%' and sex=#{user.sex};
+    </select>
+
+<!--    综合查询，映射输出-->
+    <resultMap id="UserRst" type="user">
+        <id column="id_" property="id" />
+        <result column="username_" property="username" />
+        <result column="sex_" property="sex" />
+    </resultMap>
+    <select id="findUserRstById" parameterType="integer" resultMap="UserRst">
+        select id id_,username username_,sex sex_,birthday birthday_,address from user where id=#{id}
+    </select>
+
+<!--    综合查询，动态sql+sql片段-->
+    <sql id="con">
+            <if test="username !=null and username != ''">
+                and username like '%${username}%'
+            </if>
+            <if test="sex !=null and sex !=''">
+                and sex=#{sex}
+            </if>
+    </sql>
+    <select id="findUserByCondition" parameterType="user" resultType="user">
+        select * from user
+            <where>
+                <include refid="con"></include>
+            </where>
+    </select>
+
+<!--    综合查询,根据集合查询-->
+    <select id="findUserByIds" parameterType="java.util.List" resultType="user">
+        select * from user
+            <where>
+                <if test="list != null and list.size > 0">
+                    <foreach collection="list" item="id" open="and id in (" close=")" separator=",">
+                        #{id}
+                    </foreach>
+                </if>
+            </where>
+    </select>
+
+    <update id="updateById" parameterType="com.xyh.mybaits.Entity.User">
+        update user set username=#{username},birthday=#{birthday},sex=#{sex},address=#{address}
+            where id=#{id}
+    </update>
+
+    <delete id="deleteById" parameterType="integer">
+        delete from user where id=#{id};
+    </delete>
+</mapper>

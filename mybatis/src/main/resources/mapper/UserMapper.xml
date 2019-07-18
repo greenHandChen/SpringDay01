@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+    <!--namespace：命名空间，主要是用于对statement进行分类管理的唯一标识符
+    注意：当我们去使用mapper代理开发模式时，它有另外十分特殊的作用-->
+<mapper namespace="com.zd.UserMapper">
+
+    <cache/>
+
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.zd.dto.User">
+        select  * from user where id = #{id}
+    </select>
+
+    <!--根据用户名模糊查询-->
+    <select id="findUserByUsername" parameterType="java.lang.String" resultType="com.zd.dto.User">
+        select * from user where username like ${value}
+    </select>
+
+    <!--添加用户-->
+    <insert id="addUser" parameterType="com.zd.dto.User">
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--添加用户后返回主键-->
+    <insert id="addUserGetId" parameterType="com.zd.dto.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            SELECT LAST_INSERT_ID();
+        </selectKey>
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+</mapper>

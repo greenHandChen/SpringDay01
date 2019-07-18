@@ -14,51 +14,63 @@ import java.util.List;
 
 public class demo2 {
     private SqlSessionFactory sqlSessionFactory;
+
     @Before
-    public void init()throws IOException{
-        InputStream is= Resources.getResourceAsStream("SqlMapConfig.xml");
-         sqlSessionFactory=new SqlSessionFactoryBuilder().build(is);
+    public void init() throws IOException {
+        InputStream is = Resources.getResourceAsStream("SqlMapConfig.xml");
+        sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
     }
+
+    /**
+     * 接口实现插入
+     *
+     * @throws IOException
+     */
     @Test
     public void test5() throws IOException {
 
-        SqlSession sqlSession=sqlSessionFactory.openSession();
-        UserMapper userMapper=sqlSession.getMapper(UserMapper.class);
-        User user=new User();
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        User user = new User();
         user.setAddress("shai");
         user.setUsername("汉qddD");
-        int i=userMapper.insertUserGetId(user);
-        System.out.println(i+"sad"+user.getId());
+        int i = userMapper.insertUserGetId(user);
+        System.out.println(i + "sad" + user.getId());
         sqlSession.commit();
         sqlSession.close();
     }
+
+    /**
+     * 接口实现查询
+     */
     @Test
-    public void test6(){
+    public void test6() {
 
-        SqlSession sqlSession=sqlSessionFactory.openSession();
-        UserMapper userMapper=sqlSession.getMapper(UserMapper.class);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
 
-       User user=userMapper.findUserById(1);
+        User user = userMapper.findUserById(1);
         System.out.println(user.toString());
         sqlSession.commit();
         sqlSession.close();
     }
+
+    /**
+     * 接口实现动态语句查询
+     */
     @Test
-    public void test7(){
+    public void test7() {
 
-        SqlSession sqlSession=sqlSessionFactory.openSession();
-        UserMapper userMapper=sqlSession.getMapper(UserMapper.class);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
 
-        User2 user=new User2();
+        User2 user = new User2();
         user.setSex(1);
         user.setAd("河南");
-        List<User2> u=userMapper.testWhere(user);
-        if(u==null)
-        {
+        List<User2> u = userMapper.testWhere(user);
+        if (u == null) {
             System.out.println("没有结果");
-        }
-        else
-        {
+        } else {
             System.out.println(u);
         }
 

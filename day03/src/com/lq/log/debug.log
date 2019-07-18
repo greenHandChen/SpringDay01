@@ -5422,3 +5422,831 @@ DEBUG:Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Conne
 DEBUG:Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@51b279c9]
 2019-07-18 14:09:28 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363) ]
 DEBUG:Returned connection 1370651081 to pool.
+2019-07-18 17:08:31 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:111) ]
+DEBUG:Class not found: org.jboss.vfs.VFS
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.JBoss6VFS >> Method: org.apache.ibatis.io.JBoss6VFS.setInvalid(JBoss6VFS.java:142) ]
+DEBUG:JBoss 6 VFS API is not available in this environment.
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:111) ]
+DEBUG:Class not found: org.jboss.vfs.VirtualFile
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:63) ]
+DEBUG:VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:77) ]
+DEBUG:Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User2.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User matches criteria [is assignable to Object]
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User2 matches criteria [is assignable to Object]
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: dao
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: mapper
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: pojo
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.xml
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4    findUserById #(Ljava/lang/Integer;)Llq/pojo/User; findUserByUsername $(Ljava/lang/String;)Ljava/util/List; 	Signature 4(Ljava/lang/String;)Ljava/util/List<Llq/pojo/User;>; 
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.xml
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.xml
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.xml
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/mapper/UserMapper.xml
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/mapper/UserMapper.xml
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User2.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.dao.UserMapper matches criteria [is assignable to Object]
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User matches criteria [is assignable to Object]
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User2 matches criteria [is assignable to Object]
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137) ]
+DEBUG:Opening JDBC Connection
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406) ]
+DEBUG:Created connection 1370651081.
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101) ]
+DEBUG:Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@51b279c9]
+2019-07-18 17:08:32 下午 [Thread: main][ Class:lq.dao.UserMapper.testWhere >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:==>  Preparing: select * from user WHERE sex=? and address like concat(concat('%',?),'%') 
+2019-07-18 17:08:32 下午 [Thread: main][ Class:lq.dao.UserMapper.testWhere >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:==> Parameters: 1(Integer), 河南(String)
+2019-07-18 17:08:32 下午 [Thread: main][ Class:lq.dao.UserMapper.testWhere >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:<==      Total: 4
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123) ]
+DEBUG:Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@51b279c9]
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91) ]
+DEBUG:Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@51b279c9]
+2019-07-18 17:08:32 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363) ]
+DEBUG:Returned connection 1370651081 to pool.
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:111) ]
+DEBUG:Class not found: org.jboss.vfs.VFS
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.JBoss6VFS >> Method: org.apache.ibatis.io.JBoss6VFS.setInvalid(JBoss6VFS.java:142) ]
+DEBUG:JBoss 6 VFS API is not available in this environment.
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:111) ]
+DEBUG:Class not found: org.jboss.vfs.VirtualFile
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:63) ]
+DEBUG:VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:77) ]
+DEBUG:Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User2.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User matches criteria [is assignable to Object]
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User2 matches criteria [is assignable to Object]
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: dao
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: mapper
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: pojo
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.xml
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4    findUserById #(Ljava/lang/Integer;)Llq/pojo/User; findUserByUsername $(Ljava/lang/String;)Ljava/util/List; 	Signature 4(Ljava/lang/String;)Ljava/util/List<Llq/pojo/User;>; 
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.xml
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.xml
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.xml
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/mapper/UserMapper.xml
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/mapper/UserMapper.xml
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User2.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.dao.UserMapper matches criteria [is assignable to Object]
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User matches criteria [is assignable to Object]
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User2 matches criteria [is assignable to Object]
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137) ]
+DEBUG:Opening JDBC Connection
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406) ]
+DEBUG:Created connection 1418385211.
+2019-07-18 17:10:34 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101) ]
+DEBUG:Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@548ad73b]
+2019-07-18 17:10:34 下午 [Thread: main][ Class:test.findUserById >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:==>  Preparing: select * from user where id=? 
+2019-07-18 17:10:35 下午 [Thread: main][ Class:test.findUserById >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:==> Parameters: 1(Integer)
+2019-07-18 17:10:35 下午 [Thread: main][ Class:test.findUserById >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:<==      Total: 1
+2019-07-18 17:10:35 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123) ]
+DEBUG:Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@548ad73b]
+2019-07-18 17:10:35 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91) ]
+DEBUG:Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@548ad73b]
+2019-07-18 17:10:35 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363) ]
+DEBUG:Returned connection 1418385211 to pool.
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:111) ]
+DEBUG:Class not found: org.jboss.vfs.VFS
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.JBoss6VFS >> Method: org.apache.ibatis.io.JBoss6VFS.setInvalid(JBoss6VFS.java:142) ]
+DEBUG:JBoss 6 VFS API is not available in this environment.
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:111) ]
+DEBUG:Class not found: org.jboss.vfs.VirtualFile
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:63) ]
+DEBUG:VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:77) ]
+DEBUG:Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User2.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User matches criteria [is assignable to Object]
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User2 matches criteria [is assignable to Object]
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: dao
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: mapper
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: pojo
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.xml
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4    findUserById #(Ljava/lang/Integer;)Llq/pojo/User; findUserByUsername $(Ljava/lang/String;)Ljava/util/List; 	Signature 4(Ljava/lang/String;)Ljava/util/List<Llq/pojo/User;>; 
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.xml
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.xml
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.xml
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/mapper/UserMapper.xml
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/mapper/UserMapper.xml
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User2.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.dao.UserMapper matches criteria [is assignable to Object]
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User matches criteria [is assignable to Object]
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User2 matches criteria [is assignable to Object]
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137) ]
+DEBUG:Opening JDBC Connection
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406) ]
+DEBUG:Created connection 1411892748.
+2019-07-18 17:10:50 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101) ]
+DEBUG:Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5427c60c]
+2019-07-18 17:10:50 下午 [Thread: main][ Class:test.findUserByUsername >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:==>  Preparing: select * from user where username like '%明%'or 1=1 
+2019-07-18 17:10:50 下午 [Thread: main][ Class:test.findUserByUsername >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:==> Parameters: 
+2019-07-18 17:10:50 下午 [Thread: main][ Class:test.findUserByUsername >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:<==      Total: 12
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:111) ]
+DEBUG:Class not found: org.jboss.vfs.VFS
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.JBoss6VFS >> Method: org.apache.ibatis.io.JBoss6VFS.setInvalid(JBoss6VFS.java:142) ]
+DEBUG:JBoss 6 VFS API is not available in this environment.
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:111) ]
+DEBUG:Class not found: org.jboss.vfs.VirtualFile
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:63) ]
+DEBUG:VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:77) ]
+DEBUG:Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User2.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User matches criteria [is assignable to Object]
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User2 matches criteria [is assignable to Object]
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: dao
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: mapper
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: pojo
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.xml
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4    findUserById #(Ljava/lang/Integer;)Llq/pojo/User; findUserByUsername $(Ljava/lang/String;)Ljava/util/List; 	Signature 4(Ljava/lang/String;)Ljava/util/List<Llq/pojo/User;>; 
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.xml
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.xml
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.xml
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/mapper/UserMapper.xml
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/mapper/UserMapper.xml
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User2.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.dao.UserMapper matches criteria [is assignable to Object]
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User matches criteria [is assignable to Object]
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User2 matches criteria [is assignable to Object]
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137) ]
+DEBUG:Opening JDBC Connection
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406) ]
+DEBUG:Created connection 1411892748.
+2019-07-18 17:11:16 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101) ]
+DEBUG:Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5427c60c]
+2019-07-18 17:11:16 下午 [Thread: main][ Class:test.findUserByUsername >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:==>  Preparing: select * from user where username like '%明%' 
+2019-07-18 17:11:17 下午 [Thread: main][ Class:test.findUserByUsername >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:==> Parameters: 
+2019-07-18 17:11:17 下午 [Thread: main][ Class:test.findUserByUsername >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:<==      Total: 3
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:111) ]
+DEBUG:Class not found: org.jboss.vfs.VFS
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.JBoss6VFS >> Method: org.apache.ibatis.io.JBoss6VFS.setInvalid(JBoss6VFS.java:142) ]
+DEBUG:JBoss 6 VFS API is not available in this environment.
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:111) ]
+DEBUG:Class not found: org.jboss.vfs.VirtualFile
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:63) ]
+DEBUG:VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:77) ]
+DEBUG:Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User2.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User matches criteria [is assignable to Object]
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User2 matches criteria [is assignable to Object]
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: dao
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: mapper
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: pojo
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.xml
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4    findUserById #(Ljava/lang/Integer;)Llq/pojo/User; findUserByUsername $(Ljava/lang/String;)Ljava/util/List; 	Signature 4(Ljava/lang/String;)Ljava/util/List<Llq/pojo/User;>; 
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.xml
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.xml
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.xml
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/mapper/UserMapper.xml
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/mapper/UserMapper.xml
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User2.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.dao.UserMapper matches criteria [is assignable to Object]
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User matches criteria [is assignable to Object]
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User2 matches criteria [is assignable to Object]
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137) ]
+DEBUG:Opening JDBC Connection
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406) ]
+DEBUG:Created connection 1411892748.
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101) ]
+DEBUG:Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5427c60c]
+2019-07-18 17:13:18 下午 [Thread: main][ Class:test.findUserByUsername >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:==>  Preparing: select * from user where username like '%明%'or 1=1 
+2019-07-18 17:13:18 下午 [Thread: main][ Class:test.findUserByUsername >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:==> Parameters: 
+2019-07-18 17:13:18 下午 [Thread: main][ Class:test.findUserByUsername >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:<==      Total: 12
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123) ]
+DEBUG:Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5427c60c]
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91) ]
+DEBUG:Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5427c60c]
+2019-07-18 17:13:18 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363) ]
+DEBUG:Returned connection 1411892748 to pool.
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:111) ]
+DEBUG:Class not found: org.jboss.vfs.VFS
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.JBoss6VFS >> Method: org.apache.ibatis.io.JBoss6VFS.setInvalid(JBoss6VFS.java:142) ]
+DEBUG:JBoss 6 VFS API is not available in this environment.
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:111) ]
+DEBUG:Class not found: org.jboss.vfs.VirtualFile
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:63) ]
+DEBUG:VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.VFS >> Method: org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:77) ]
+DEBUG:Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User2.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User matches criteria [is assignable to Object]
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User2 matches criteria [is assignable to Object]
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335) ]
+DEBUG:PooledDataSource forcefully closed/removed all connections.
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: dao
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: mapper
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: pojo
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.xml
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/dao
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4    findUserById #(Ljava/lang/Integer;)Llq/pojo/User; findUserByUsername $(Ljava/lang/String;)Ljava/util/List; 	Signature 4(Ljava/lang/String;)Ljava/util/List<Llq/pojo/User;>; 
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.xml
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/dao/UserMapper.xml
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: UserMapper.xml
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/mapper
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/mapper/UserMapper.xml
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/mapper/UserMapper.xml
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: User2.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113) ]
+DEBUG:Listing file:/D:/SpringDay01/day03/target/classes/lq/pojo
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222) ]
+DEBUG:Find JAR URL: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248) ]
+DEBUG:Not a JAR: file:/D:/SpringDay01/day03/target/classes/lq/pojo/User2.class
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.DefaultVFS >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102) ]
+DEBUG:Reader entry: ����   4 L
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.dao.UserMapper matches criteria [is assignable to Object]
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User matches criteria [is assignable to Object]
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256) ]
+DEBUG:Checking to see if class lq.pojo.User2 matches criteria [is assignable to Object]
+2019-07-18 17:17:30 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137) ]
+DEBUG:Opening JDBC Connection
+2019-07-18 17:17:31 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406) ]
+DEBUG:Created connection 1370651081.
+2019-07-18 17:17:31 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101) ]
+DEBUG:Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@51b279c9]
+2019-07-18 17:17:31 下午 [Thread: main][ Class:lq.dao.UserMapper.testWhere >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:==>  Preparing: select * from user WHERE sex=? and address like concat(concat('%',?),'%') 
+2019-07-18 17:17:31 下午 [Thread: main][ Class:lq.dao.UserMapper.testWhere >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:==> Parameters: 1(Integer), 河南(String)
+2019-07-18 17:17:31 下午 [Thread: main][ Class:lq.dao.UserMapper.testWhere >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159) ]
+DEBUG:<==      Total: 4
+2019-07-18 17:17:31 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123) ]
+DEBUG:Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@51b279c9]
+2019-07-18 17:17:31 下午 [Thread: main][ Class:org.apache.ibatis.transaction.jdbc.JdbcTransaction >> Method: org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91) ]
+DEBUG:Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@51b279c9]
+2019-07-18 17:17:31 下午 [Thread: main][ Class:org.apache.ibatis.datasource.pooled.PooledDataSource >> Method: org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363) ]
+DEBUG:Returned connection 1370651081 to pool.

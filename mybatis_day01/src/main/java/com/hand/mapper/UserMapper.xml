@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace：命名空间，主要用于statement经行分类管理的唯一标识符-->
+<mapper namespace="com.hand.mapper.UserMapper">
+  <select id="findUserByUser" parameterType="com.hand.pojo.UserQueryVO" resultType="com.hand.pojo.User">
+      select  * from user where sex=#{value}
+  </select>
+
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="com.hand.pojo.User">
+      select  * from user where username=#{bbb}
+  </select>
+
+  <select id="finUserNameAndAddressById" parameterType="java.lang.Integer" resultType="com.hand.pojo.User">
+    select username,address from user where id = #{id}
+  </select>
+
+  <select id="testResultMap" parameterType="java.lang.Integer" resultMap="userResultMap">
+      select id as num,username as name,address from user where id=#{id}
+  </select>
+  <resultMap id="userResultMap" type="com.hand.pojo.User">
+    <id column="num" property="id"/>
+    <result column="name" property="username"/>
+    <result column="address" property="address"/>
+  </resultMap>
+
+  <select id="testIfAndWhereLabel" parameterType="com.hand.pojo.User" resultType="com.hand.pojo.User">
+    select * from user
+    <where>
+      <if test="id != null">
+         and id =#{id}
+      </if>
+      <if test="username !=null and username !=''">
+        and username like concat(concat('%',#{username}),'%')
+      </if>
+    </where>
+  </select>
+
+</mapper>
+   
+

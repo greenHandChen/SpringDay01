@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "- //mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hjf.mapper.UserMapper">
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.hjf.pojo.User">
+        select * from user where id=#{id}
+    </select>
+
+   <select id="findUserByUsername" parameterType="java.lang.String" resultType="com.hjf.pojo.User">
+       select  *  from user where username like ${value}
+   </select>
+
+    <insert id="addUser" parameterType="com.hjf.pojo.User" >
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetId" parameterType="com.hjf.pojo.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+                   SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetUUID" parameterType="com.hjf.pojo.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetID2" parameterType="com.hjf.pojo.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+            SELECT user.nextval from dual
+        </selectKey>
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <select id="findUserByUser" parameterType="com.hjf.pojo.UserQueryVO" resultType="com.hjf.pojo.User">
+        select * from user u where u.address like '%${user.address}%' and u.sex=#{user.sex}
+    </select>
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="com.hjf.pojo.User">
+        select * from user u where u.username like concat(concat('%',#{username}),'%')
+    </select>
+    <select id="countUser" resultType="java.lang.Integer">
+        select  count(*) from user
+    </select>
+
+    <select id="findUserNameAndAddressById" parameterType="java.lang.Integer" resultType="com.hjf.pojo.User">
+        select username,address from user u where u.id=#{id}
+    </select>
+
+        <select id="testResultMap" parameterType="java.lang.Integer" resultMap="userResultMap">
+        select id as num,username as name,address from user u where u.id=#{id}
+    </select>
+
+    <resultMap id="userResultMap" type="com.hjf.pojo.User">
+        <id column="num" property="id"/>
+        <id column="name" property="username"/>
+        <id column="address" property="address"/>
+    </resultMap>
+</mapper>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--在classpath下， resources的mapper目录创建UserMapper.xml映射文件。
+本次演示根据ID查询用户信息根据用户ID查询用户信息
+查询使用的是select标签,每一个标签代表着MappedStatement
+id是MappedStatment的标识符
+parameterType就是输入参数的类型(输入类型为基本类型时,参数名可以任意)
+resultType返回结果集也就是输出参数的类型
+#{}占位符相当于之前我们的?占位符
+-->
+
+<mapper namespace="com.softeem.dao.UserDao">
+    <select id="findUserById" parameterType="Integer" resultType="com.softeem.dto.User">
+        select * from user where id=#{id}
+    </select>
+
+    <select id="findUserByUsername" parameterType="String" resultType="com.softeem.dto.User">
+        select * from user where username=${value}
+
+    </select>
+
+    <insert id="addUser" parameterType="com.softeem.dto.User"  >
+        insert into user (username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <insert id="addUser1" parameterType="com.softeem.dto.User"  >
+    <selectKey keyProperty="id" resultType="Integer" order="AFTER">
+        select LAST_INSERT_ID()
+    </selectKey>
+
+    insert into user (username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+</insert>
+
+    <insert id="addUser2" parameterType="com.softeem.dto.User"  >
+        <selectKey keyProperty="id" resultType="Integer" order="BEFORE">
+            select UUID()
+        </selectKey>
+
+        insert into user (id,username,birthday,sex,address) values (#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <select id="countUser" resultType="int">
+        select count(*) from user
+    </select>
+
+</mapper>

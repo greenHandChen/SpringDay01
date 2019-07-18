@@ -1,0 +1,32 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--在classpath下， resources的mapper目录创建UserMapper.xml映射文件。
+本次演示根据ID查询用户信息根据用户ID查询用户信息
+查询使用的是select标签,每一个标签代表着MappedStatement
+id是MappedStatment的标识符
+parameterType就是输入参数的类型(输入类型为基本类型时,参数名可以任意)
+resultType返回结果集也就是输出参数的类型
+#{}占位符相当于之前我们的?占位符
+-->
+
+
+<mapper namespace="com.softeem.dao.PersonMapper">
+   <resultMap id="personResult" type="com.softeem.dto.Person" >
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+    </resultMap>
+
+    <resultMap id="cardResult" type="com.softeem.dto.Card">
+         <id column="id" property="id"/>
+         <result column="code" property="code"/>
+         <association property="person" javaType="com.softeem.dto.Person" column="person_id" select="getPerson"></association>
+     </resultMap>
+
+     <select id="get" resultMap="cardResult" parameterType="Integer">
+         select  * from card where id=#{id}
+     </select>
+<!--resultMap="personResult"-->
+    <select id="getPerson"  parameterType="Integer" resultMap="personResult">
+        select * from person where id=#{id}
+    </select>
+</mapper>

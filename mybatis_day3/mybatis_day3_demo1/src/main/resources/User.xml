@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace:命名空间，对statement的信息进行分类管理-->
+<!-- 注意：在mapper代理时，他具有特殊及重要的作用-->
+<mapper namespace="test">
+    <!--根据用户id查询用户信息-->
+    <!-- select表示一个MappedStatement -->
+    <!-- #{}表示一个占位符 -->
+    <!-- #{id}:里面的id表示输入参数的参数名称,如果该参数是简单类型，那么#{}里面的参数类型可以任意 -->
+    <!-- parameterType：表示输入参数的java类型 -->
+    <!-- resultType:表示输出结果所映射的java类型 -->
+    <select id="selectUserById" parameterType="Integer" resultType="com.domain.User">
+        select * from user where id=#{id}
+    </select>
+
+    <select id="selectUsersByName" parameterType="String" resultType="com.domain.User">
+        select * from user where username like #{name}
+    </select>
+
+    <insert id="addUser" parameterType="User">
+        insert int user(username,birthday,sex,address,manage_id) values(#{username},#{birthday},#{sex},#{address},#{manage_id})
+    </insert>
+
+    <sql id="userFileds">username,birthday,sex,address,manage_id</sql>
+    <sql id="userValues">#{username},#{birthday},#{sex},#{address},#{manage_id}</sql>
+    <insert id="addUser2" parameterType="User">
+        <!-- selectKey配合insert标签一起使用，可以获取自动增长的id的值，order表示在insert执行前后顺序
+                1.在mysql中：使用select last_insert_id()配合order=AFTER一起获取id。
+                2.在Oracle中：id自动增长是通过序列实现的。使用 select USER_S.nextval from dual配合order=Before一起获取id
+                3.获取id的UUID():通过select UUID()配合order=Before一起获取id
+         -->
+        <selectKey keyProperty="id" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into user(<include refid="userFields"></include>) values(<include refid="userValues"></include>)
+    </insert>
+</mapper>

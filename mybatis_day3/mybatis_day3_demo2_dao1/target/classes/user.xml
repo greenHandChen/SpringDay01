@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 使用mapper代理时，namespace的值，必须要和代理的mapper接口全限定名一致 -->
+<mapper namespace="test">
+    <!--根据用户id查询用户信息-->
+    <!-- select表示一个MappedStatement -->
+    <!-- #{}表示一个占位符 -->
+    <!-- #{id}:里面的id表示输入参数的参数名称,如果该参数是简单类型，那么#{}里面的参数类型可以任意 -->
+    <!-- parameterType：表示输入参数的java类型 -->
+    <!-- resultType:表示输出结果所映射的java类型 -->
+    <select id="selectUserById" parameterType="Integer" resultType="com.domain.User">
+        select * from user where id=#{id}
+    </select>
+
+    <select id="selectUsersByName" parameterType="String" resultType="com.domain.User">
+        select * from user where username like #{name}
+    </select>
+
+    <insert id="addUser" parameterType="User">
+        <selectKey keyProperty="id" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into user(username,birthday,sex,address,manage_id) values(#{username},#{birthday},#{sex},#{address},#{manage_id})
+    </insert>
+</mapper>

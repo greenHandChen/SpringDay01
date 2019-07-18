@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao">
+
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="mybatis.enity.User">
+        select * from user where id = #{id}
+    </select>
+
+    <select id="findByUserUserName" parameterType="java.lang.String" resultType="mybatis.enity.User">
+        select  * from user where username like '${value}%'
+    </select>
+
+    <insert id="addUser" parameterType="mybatis.enity.User">
+        insert into user
+          (username,birthday,sex,address)
+          values (#{username},#{birthday},#{address},#{sex})
+    </insert>
+    <!--
+        selectKey:用于查询主键,标签体里写查询主键的SQL,主键查询SQL根据数据库的不同,写法也是不同
+        keyProperty:指的是我们需要映射的字段名称
+        resultType:输出参数类型
+        order:ORDER是用来指定查询主键的SQL以及插入的SQL的相对顺序,这里相对顺序指的是针对INSERT语句的先后
+        LAST_INSERT_ID:必须配合Insert语句进行搭配使用
+    -->
+    <insert id="addUserGetId" parameterType="mybatis.enity.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user
+        (username,sex,birthday,address)
+        values (#{username},#{sex},#{birthday},#{address})
+    </insert>
+
+    <insert id="addUserGetUUID" parameterType="mybatis.enity.User">
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select UUID()
+        </selectKey>
+        insert into user
+        (id,username,sex,birthday,address)
+        values (#{id},#{username},#{sex},#{birthday},#{address})
+    </insert>
+</mapper>

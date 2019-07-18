@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--引入外部数据库配置文件-->
+    <properties resource="config/db.properties"/>
+
+    <!--配置mybatis环境-->
+            <!--数据源、事务控制-->
+    <environments default="developement">
+        <environment id="developement">
+            <!--配置JDBC事务控制，由mybatis进行管理-->
+            <transactionManager type="JDBC"></transactionManager>
+            <!--配置数据源，采用mybatis连接池-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--映射配置文件-->
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"/>
+    </mappers>
+
+
+
+
+
+
+
+
+
+
+
+
+</configuration>

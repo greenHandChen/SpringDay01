@@ -6,14 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Day01" />
         <module name="Day02-JdbcTemplate" />
         <module name="Day02Transaction" />
+        <module name="Day03-Dao2" />
+        <module name="Day03-Mybatis" />
+        <module name="Day03Dao1" />
         <module name="SpringDay02-Transaction" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.9">
-      <module name="Day02-JdbcTemplate" target="1.8" />
-      <module name="Day02Transaction" target="1.8" />
+      <module name="Day01" target="1.7" />
+      <module name="Day02-JdbcTemplate" target="1.7" />
+      <module name="Day02Transaction" target="1.7" />
+      <module name="Day03-Dao2" target="1.7" />
+      <module name="Day03-Mybatis" target="1.7" />
+      <module name="Day03Dao1" target="1.7" />
       <module name="SpringDay" target="1.7" />
     </bytecodeTargetLevel>
   </component>

@@ -1,0 +1,58 @@
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1946403944.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main test.findUserById - ==>  Preparing: SELECT * from USER where id=? 
+DEBUG main test.findUserById - ==> Parameters: 1(Integer)
+DEBUG main test.findUserById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1946403944 to pool.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1946403944 from pool.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main test.findUserByUsername - ==>  Preparing: select * from user where username like '%汉%' 
+DEBUG main test.findUserByUsername - ==> Parameters: 
+DEBUG main test.findUserByUsername - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1946403944 to pool.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1946403944 from pool.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main test.addUser - ==>  Preparing: INSERT into user(username,birthday,sex,address) values(?,?,?,?) 
+DEBUG main test.addUser - ==> Parameters: 测试一下(String), 2019-07-18 16:35:15.265(Timestamp), 5(Integer), 测试一下(String)
+DEBUG main test.addUser - <==    Updates: 1
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1946403944.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main test.findUserById - ==>  Preparing: SELECT * from USER where id=? 
+DEBUG main test.findUserById - ==> Parameters: 1(Integer)
+DEBUG main test.findUserById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1946403944 to pool.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1946403944 from pool.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main test.findUserByUsername - ==>  Preparing: select * from user where username like '%汉%' 
+DEBUG main test.findUserByUsername - ==> Parameters: 
+DEBUG main test.findUserByUsername - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1946403944 to pool.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1946403944 from pool.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+DEBUG main test.addUser - ==>  Preparing: INSERT into user(username,birthday,sex,address) values(?,?,?,?) 
+DEBUG main test.addUser - ==> Parameters: 测试一下(String), 2019-07-18 16:37:56.837(Timestamp), 5(Integer), 测试一下(String)
+DEBUG main test.addUser - <==    Updates: 1

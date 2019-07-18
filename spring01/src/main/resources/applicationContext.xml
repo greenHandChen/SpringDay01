@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- bean definitions here -->
+
+    <context:property-placeholder location="jdbc.properties"/>
+
+    <!--<bean id="hikaricpDataSource" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/java_web?useUnicode=true&amp;characterEncoding=utf-8&amp;useJDBCCompliantTimezoneShift=true&amp;serverTimezone=UTC"/>
+        <property name="username" value="root" />
+        <property name="password" value="root"/>
+     </bean>-->
+
+    <bean id="hikaricpDataSource" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.user}" />
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!--<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="hikaricpDataSource"/>
+    </bean>-->
+
+    <bean id="userDao" class="com.me.dao.UserDaoImpl">
+        <!--<property name="jdbcTemplate" ref="jdbcTemplate"/>-->
+        <property name="dataSource" ref="hikaricpDataSource"/>
+    </bean>
+
+    <bean id="userService" class="com.me.service.UserServiceImpl">
+        <property name="uDao" ref="userDao"/>
+    </bean>
+
+
+</beans>

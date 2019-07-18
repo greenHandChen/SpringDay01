@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间主要是对statement进行分类管理的唯一标识符
+在使用mapper代理开发模式时候它有十分重要的作用-->
+<mapper namespace="test">
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.zhang.pojo.User">
+        select * from user2 where id=#{id}
+    </select>
+    <select id="findUserByName" parameterType="java.lang.String" resultType="com.zhang.pojo.User">
+        select * from user2 where username like #{value }
+    </select>
+    <insert id="addUser" parameterType="com.zhang.pojo.User">
+        insert into user2 values (#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+    <!--添加用户返回自增主键
+    selectKey:用于主键查询-->
+    <insert id="addUserAndGetId" parameterType="com.zhang.pojo.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer"  order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user2(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+    <!--生成UUID作为主键-->
+    <insert id="addUserAndGetUUID" parameterType="com.zhang.pojo.User1">
+        <selectKey keyProperty="id" resultType="java.lang.String"  order="BEFORE">
+            select UUID()
+        </selectKey>
+        insert into user3(id,username,birthday,sex,address) values (#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <select id="findAllUsers" resultType="com.zhang.pojo.User">
+        SELECT * from user2;
+    </select>
+
+</mapper>
+
+
+

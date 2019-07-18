@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间主要是对statement进行分类管理的唯一标识符
+在使用mapper代理开发模式时候它有十分重要的作用-->
+<mapper namespace="com.zhang.mapper.UserMapper">
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.zhang.pojo.User">
+        select * from user2 where id=#{id}
+    </select>
+    <select id="findUserByName" parameterType="java.lang.String" resultType="com.zhang.pojo.User">
+        select * from user2 where username like #{value }
+    </select>
+    <insert id="addUser" parameterType="com.zhang.pojo.User">
+        insert into user2 values (#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+    <!--添加用户返回自增主键
+    selectKey:用于主键查询-->
+    <insert id="addUserAndGetId" parameterType="com.zhang.pojo.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user2(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+    <!--生成UUID作为主键-->
+    <insert id="addUserAndGetUUID" parameterType="com.zhang.pojo.User1">
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select UUID()
+        </selectKey>
+        insert into user3(id,username,birthday,sex,address) values (#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <select id="findUsers" resultType="com.zhang.pojo.User">
+        SELECT * from user2;
+    </select>
+
+    <!--通过包装User类 综合查询 -->
+    <select id="findUserByUser" parameterType="com.zhang.pojo.UserQueryVo" resultType="com.zhang.pojo.User">
+        select * from user2 u where u.address like '%${user.address}' and u.sex =#{user.sex}
+    </select>
+    <!--通过Map类型作为参数查找-->
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="com.zhang.pojo.User">
+        select * from user2 u where u.username like concat(concat('%',#{username}),'%')
+    </select>
+    <!--通过ID查找名字 地址-->
+    <!--1-->
+    <select id="findNameAndAddressById" parameterType="java.lang.Integer" resultType="com.zhang.pojo.User">
+        SELECT username,address from user2 where id=#{id}
+    </select>
+    <!--2-->
+    <!--输出映射方式
+    (1).使用resultMap进行结果映射时，
+    不需要查询的列名和映射的属性名必须一致。但是需要声明一个resultMap，来对列名和属性名进行映射-->
+    <select id="userResultMapTest" parameterType="java.lang.Integer" resultMap="userResultMap">
+        select id as num,username name,address from user2 u where u.id=#{u.id}
+    </select>
+    <!--映射配置-->
+    <resultMap id="userResultMap" type="com.zhang.pojo.User">
+        <id column="num" property="id"></id>
+        <result column="name" property="username"></result>
+        <result column="address" property="address"></result>
+    </resultMap>
+    <!--(2).输出映射  动态SQL if标签 where标签-->
+    <select id="whereAndIfLabelTest" parameterType="com.zhang.pojo.User" resultType="com.zhang.pojo.User">
+        select * from user2
+        /*where标签*/
+        <where>
+            <if test="id!=null">
+                and id=#{id}
+            </if>
+            <if test="username!=null and username!=' '">
+                and username like concat(concat('%',#{username}),'%')
+            </if>
+        </where>
+    </select>
+    <!--输出映射 END-->
+
+    <select id="countUser" resultType="java.lang.Integer">
+        select count(*) from user2
+    </select>
+
+</mapper>
+
+
+

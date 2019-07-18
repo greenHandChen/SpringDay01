@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace 命名空间  参见test.test1里面的的引用-->
-<mapper namespace="test">
+<mapper namespace="com.masirhh.mybatis.mapper.UserMapper">
     <select id="findUserById" parameterType="java.lang.Integer" resultType="com.masirhh.mybatis.beans.User">
         select * from user where id=#{id}
     </select>
@@ -21,4 +21,8 @@
         </selectKey>
         insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
     </insert>
+
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="com.masirhh.mybatis.beans.User">
+        select * from user u where u.username like concat('%',concat(#{username},'%'))
+    </select>
 </mapper>

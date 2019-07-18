@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yts.mapper.UserMapper">
+
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.yts.beans.User">
+        select * from USER where id=#{id}
+    </select>
+
+    <select id="findUserByUsername" parameterType="java.lang.String" resultType="com.yts.beans.User">
+        select * from USER where username like concat('%',#{value},'%')
+    </select>
+
+    <insert id="addUser" parameterType="com.yts.beans.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into user (username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+</mapper>

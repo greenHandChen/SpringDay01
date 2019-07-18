@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+mapper为映射的根节点，namespace指定Dao接口的完整类名
+mybatis会依据这个接口动态创建一个实现类去实现这个接口，
+而这个实现类是一个Mapper对象
+        -->
+<!--        namespace=usermapper接口的全限定名-->
+<mapper namespace="com.yhk.Mapper.UserMapper">
+    <!--id ="接口中的方法名"
+　　parameterType="传入的参数类型"
+　　resultType = "返回实体类对象，使用包.类名"-->
+        <select id="findUserById" parameterType="java.lang.Integer" resultType="User">
+                    select * from user where id = #{id}
+        </select>
+
+    <select id="findUserByUsername" parameterType="String" resultType="com.yhk.Pojo.User">
+    select * from user where username like ${value}
+    </select>
+
+    <insert id="addUser" parameterType="com.yhk.Pojo.User">
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+    
+    <select id="findUserByUser" parameterType="UserQueryVO" resultType="User">
+        select * from user u where u.address like '%${user.address}%' and u.sex = #{user.sex}
+    </select>
+    
+<!--    mapper查询-->
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="User">
+        select * from user u where u.username like concat(concat('%',#{username}),'%')
+    </select>
+    
+<!--    查询用户总数-->
+    <select id="countUser" resultType="java.lang.Integer">
+        select count(*) from user
+    </select>
+
+<!--    通过ID获取用户名和地址-->
+    <select id="findUsernameAndAddressById" parameterType="java.lang.Integer" resultType="User">
+        select username,address from user where id=#{id}
+    </select>
+
+<!--    map映射-->
+    <resultMap id="userResultMap" type="User">
+        <id column="num" property="id"/>
+        <result column="name" property="username"/>
+        <result column="address" property="address"/>
+    </resultMap>
+    <select id="testResultMap" parameterType="java.lang.Integer" resultMap="userResultMap">
+        select id as num , username as name ,address from user where id=#{id}
+    </select>
+
+<!--    动态sql-->
+    <select id="testIfAndWhere" parameterType="User" resultType="User">
+        select * from user
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="username != null and username != ''">
+                and username like concat(concat('%',#{username}),'%')
+            </if>
+        </where>
+    </select>
+
+
+        <!--
+     selectKey:用于查询主键,标签体里写查询主键的SQL,主键查询SQL根据数据库的不同,写法也是不同
+    keyProperty:指的是我们需要映射的字段名称
+    resultType:输出参数类型
+    order:ORDER是用来指定查询主键的SQL以及插入的SQL的相对顺序,这里相对顺序指的是针对INSERT语句的先后
+    LAST_INSERT_ID:必须配合Insert语句进行搭配使用
+    -->
+<!--    <insert id="addUserGetId" parameterType="com.yhk.Pojo.User">-->
+<!--    <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">-->
+<!--        select LAST_INSERT_ID()-->
+<!--    </selectKey>-->
+<!--    insert into user(username,birthday,sex,address)-->
+<!--    values (#{username},#{birthday},#{sex},#{address})-->
+<!--    </insert>-->
+
+<!--    返回UUID 字符串
+通过UUID生成主键返回时,需要将order改成BEFORE
+由于主键不是自动生成,所以基于UUID的策略,我们需要先生成UUID赋值给USER类的id
+-->
+<!--    <insert id="addUserGetUUID" parameterType="com.yhk.Pojo.User">-->
+<!--        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">-->
+<!--            select UUID()-->
+<!--        </selectKey>-->
+<!--        insert into user(username,birthday,sex,address)-->
+<!--        values (#{username},#{birthday},#{sex},#{address})-->
+<!--    </insert>-->
+
+<!--    添加用户返回主键(Oracle)
+Oracle由于是通过序列生成主键,所以需要将order设置成BEFORE
+-->
+<!--    <insert id="addUserGetUUID" parameterType="com.yhk.Pojo.User">-->
+<!--        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">-->
+<!--            select USER_S.nextval from dual-->
+<!--        </selectKey>-->
+<!--        insert into user(username,birthday,sex,address)-->
+<!--        values (#{username},#{birthday},#{sex},#{address})-->
+<!--    </insert>-->
+</mapper>
+
+

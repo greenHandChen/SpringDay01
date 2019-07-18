@@ -4,9 +4,17 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/springDemo/pom.xml" />
-        <option value="$PROJECT_DIR$/../springday021/pom.xml" />
         <option value="$PROJECT_DIR$/../springday022/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../springday022/pom.xml" />
+        <option value="$PROJECT_DIR$/../springday022/transaction1/pom.xml" />
+        <option value="$PROJECT_DIR$/../springday022/transaction2/pom.xml" />
+        <option value="$PROJECT_DIR$/../springday022/transaction3/pom.xml" />
+        <option value="$PROJECT_DIR$/../springday022/transaction4/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK">

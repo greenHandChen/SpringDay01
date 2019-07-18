@@ -6,11 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="transaction4" />
         <module name="springDemo" />
-        <module name="transaction2" />
-        <module name="springday021" />
-        <module name="transaction3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hand.mapper.UserMapper">
+
+    <select id="findUserById" parameterType="Integer" resultType="User">
+            select * from User where id=#{id}
+    </select>
+    <select id="findUserByUsername" parameterType="String" resultType="User">
+        select * from user where username=${value}
+    </select>
+    <insert id="insertInfo" parameterType="User">
+        insert into user(id,username,sex,address) values (#{id},#{username},#{sex},#{address})
+    </insert>
+
+    <insert id="insertInfoGetKey" parameterType="User">
+<selectKey keyProperty="id" resultType="integer" order="AFTER">
+    select last_insert_id()
+</selectKey>
+        insert into user(username,sex,address) values (#{username},#{sex},#{address})
+    </insert>
+
+    <insert id="insertInfoGetUUID" parameterType="com.hand.bean.User">
+        <selectKey keyProperty="id" resultType="integer" order="BEFORE">
+            select UUID()
+        </selectKey>
+        insert into user(id,username,sex,address) values (#{id},#{username},#{sex},#{address})
+    </insert>
+
+    <select id="findUserByUser" parameterType="com.hand.bean.UserQueryVO" resultType="User">
+        select * from user u where u.address like concat('%',#{user.address},'%') and u.sex=#{user.sex}
+    </select>
+
+    <select id="findUserMap" parameterType="Integer" resultMap="UserResultMap">
+        select id as num,username as name,address from user where id=#{id}
+    </select>
+    <resultMap id="UserResultMap" type="User">
+        <id column="num" property="id"/>
+        <id column="name" property="username"/>
+        <id column="address" property="address"/>
+    </resultMap>
+</mapper>

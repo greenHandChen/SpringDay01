@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--<mapper namespace="test">-->
+<mapper namespace="com.st.Mapper.UserMapper">
+    <!--根据id查询-->
+    <select id="selectUserById" parameterType="java.lang.Integer" resultType="com.st.domain.User">
+        select * from user where id = #{id}
+    </select>
+    <!--模糊查询-->
+    <select id="selectUserByUserName" parameterType="java.lang.String" resultType="com.st.domain.User">
+        select * from user where username like ${value}
+    </select>
+
+    <!--插入用户-->
+    <insert id="addUser" parameterType="com.st.domain.User" >
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--添加用户返回主键-->
+    <insert id="addUserGetId" parameterType="com.st.domain.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER" >
+            select last_insert_id()
+        </selectKey>
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--添加用户返回UUID主键-->
+    <insert id="addUserGetUUID" parameterType="com.st.domain.User">
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE" >
+            select UUID()
+        </selectKey>
+        insert into user(id,username,birthday,sex,address) values (#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--输入映射：包装pojo类型-->
+    <select id="findUserByUser" parameterType="com.st.domain.UserQueryVO" resultType="com.st.domain.User">
+        select * from user where address like '%${user.address}%' and sex=#{user.sex}
+    </select>
+
+    <!--输入映射：map类型-->
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="com.st.domain.User">
+        select * from user where username like concat(concat('%',#{username}),'%')
+    </select>
+
+    <!--输出映射：简单类型-->
+    <select id="countUser" resultType="java.lang.Integer">
+        select count(*) from user
+    </select>
+
+    <!--输出映射：pojo类型-->
+    <select id="findUsernameAndAddressByID" parameterType="java.lang.Integer" resultType="com.st.domain.User">
+        select username,address from user where id = #{id}
+    </select>
+
+    <!--输出映射：resultMap类型-->
+    <select id="resultMap" parameterType="java.lang.Integer" resultMap="userResultMap">
+        select id num,username name,address from user where id = #{id}
+    </select>
+    <resultMap id="userResultMap" type="com.st.domain.User">
+        <id column="num" property="id"/>
+        <result column="name" property="username"/>
+        <result column="address" property="address"/>
+    </resultMap>
+
+    <!--if、where标签-->
+    <select id="testLabel" parameterType="com.st.domain.User" resultType="com.st.domain.User">
+        select * from user
+        <where>
+            <if test="id != null and id != ''">
+                id = #{id}
+            </if>
+            <if test="username != null and username != ''">
+                username like concat(concat('%',#{username}),'%')
+            </if>
+        </where>
+    </select>
+
+
+</mapper>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.sysmanager.dao.IUserDao">
+
+    <!--配置查询所有-->
+    <select id="findUserById" parameterType="long" resultType="com.hand.sysmanager.entity.User">
+        select * from User where id = #{userId}
+    </select>
+
+    <select id="findUserByUsername" parameterType="string" resultType="com.hand.sysmanager.entity.User">
+        select * from user where username like ${value}
+    </select>
+
+    <insert id="addUser" parameterType="com.hand.sysmanager.entity.User">
+        insert into user(username,sex,address) values(#{username},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetId" parameterType="com.hand.sysmanager.entity.User">
+        <selectKey keyProperty="userId" resultType="java.lang.Long" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into user(username,sex,address) values(#{username},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetUUID" parameterType="com.hand.sysmanager.entity.User">
+        <selectKey keyProperty="userId" resultType="java.lang.Long" order="BEFORE">
+            select UUID()
+        </selectKey>
+        insert into user(username,sex,address) values(#{username},#{sex},#{address})
+    </insert>
+
+    <select id="findUserByUser" parameterType="userQueryVO" resultType="user">
+            select * from USER u where u.address like '%${user.address}%' and u.sex = #{user.sex}
+    </select>
+
+    <select id="findUserByMap" parameterType="map" resultType="user">
+        select * from USER u where u.username like concat(concat('%',#{username}),'%')
+    </select>
+
+    <select id="countUser" resultType="integer">
+        select  count(*) from USER ;
+    </select>
+
+    <select id="findusernameAndAddressById" resultType="user" parameterType="long">
+        select  * from USER u where u.id= #{id}
+    </select>
+
+    <resultMap id="userMap" type="User">
+        <id column="num" property="userId"/>
+        <result column="name" property="username"/>
+        <result column="address" property="address"/>
+    </resultMap>
+
+    <select id="findUserByIdMap" resultMap="userMap" parameterType="long">
+        select id as num ,username as name ,address from user  u where u.id = #{id}
+    </select>
+
+    <select id="testIfAndWhereLabel" resultType="user" parameterType="user">
+        select  * from USER u
+        <where>
+            <if test="userId != null">
+            and u.id = #{userId}
+            </if>
+            <if test="username != null and  username !=''">
+                and u.username like concat(concat('%',#{username}),'%')
+            </if>
+
+        </where>
+    </select>
+</mapper>

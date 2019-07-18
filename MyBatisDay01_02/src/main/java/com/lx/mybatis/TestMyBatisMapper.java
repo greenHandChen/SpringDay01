@@ -29,7 +29,7 @@ public class TestMyBatisMapper {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         System.out.println(mapper.findUserById(1));
-//        sqlSession.close();
+        sqlSession.close();
     }
 
     @Test
@@ -42,6 +42,7 @@ public class TestMyBatisMapper {
         user.setSex(2);
         userQueryVO.setUser(user);
         System.out.println(mapper.findUserByUser(userQueryVO));
+        sqlSession.close();
     }
 
     @Test
@@ -51,6 +52,7 @@ public class TestMyBatisMapper {
         Map<String,String> map = new HashMap<String, String>();
         map.put("username","小");
         System.out.println(userMapper.findUserByMap(map));
+        sqlSession.close();
     }
 
     @Test
@@ -58,6 +60,7 @@ public class TestMyBatisMapper {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
         System.out.println(userMapper.countUser());
+        sqlSession.close();
     }
 
     @Test
@@ -65,6 +68,7 @@ public class TestMyBatisMapper {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         System.out.println(mapper.findUsernameAndAddressById(10));
+        sqlSession.close();
     }
 
     @Test
@@ -72,6 +76,7 @@ public class TestMyBatisMapper {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
         System.out.println(userMapper.testResultMap(10));
+        sqlSession.close();
     }
 
     @Test
@@ -81,6 +86,7 @@ public class TestMyBatisMapper {
         User user = new User();
         user.setUsername("小");
         System.out.println(userMapper.testLabel(user));
+        sqlSession.close();
     }
 
 }

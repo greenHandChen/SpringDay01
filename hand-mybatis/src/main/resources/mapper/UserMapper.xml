@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace:命名空间，主要是用于对statement进行分类管理的唯一标识符
+    注意：当我们去使用mapper代理开发模式时，它有另外十分明显的作用
+-->
+<mapper namespace="test">
+    <!--
+        根据用户ID查询用户信息
+        1.查询使用的是select标签，每一个标签代表着MappedStatement
+        2.ID是MapperStatement的标识符
+        3.parameterType就是输入参数的类型（输入类型为基本数据类型是，参数名可以任意）
+        4.resultType就是返回结果集，也是输出参数的类型
+        5.#{}占位符相当于之前的？占位符
+    -->
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.lhb.domain.User">
+        select * from user where id = #{id}
+    </select>
+
+    <select id="findUserByUsername" parameterType="java.lang.String" resultType="com.lhb.domain.User">
+        select * from user where username like ${value}
+    </select>
+
+    <insert id="addUser" parameterType="com.lhb.domain.User">
+        insert into user (username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetId" parameterType="com.lhb.domain.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into user (username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetUUID" parameterType="com.lhb.domain.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+            select UUID()
+        </selectKey>
+        insert into user (id,username,birthday,sex,address) values(#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+</mapper>

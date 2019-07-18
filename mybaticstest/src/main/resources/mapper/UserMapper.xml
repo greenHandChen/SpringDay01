@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatics.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--test类似包，每条statement id类似包下面的类，resultType 为返回参数，parameterType为输入参数类型-->
+<mapper namespace="com.jmx.dao.UserMapper">
+    <!--查询用户信息通过ID，#{id}为传入的Acccount类的ID-->
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.jmx.domain.Account">
+       SELECT * FROM ACCOUNT WHERE ID=#{id}
+ </select>
+    <!--模糊查询，需用$ 连接符 并且输入参数为简单类型是必须用value,同时注意有sql注入的危险-->
+    <select id="findUserByName" parameterType="java.lang.String" resultType="com.jmx.domain.Account">
+       SELECT * FROM ACCOUNT WHERE USERNAME LIKE ${value}
+ </select>
+    <!--添加用户，insert无需返回类型，username为输入参数account类的的属性，名字必须一致，严格区分大小写-->
+    <insert id="addUser" parameterType="com.jmx.domain.Account">
+       INSERT INTO ACCOUNT(USERNAME,MONEY) VALUES(#{username},#{money})
+    </insert>
+    <!--添加用户，同时返回参数，keyProperty 为需要返回的参数，order为先后顺序，若数据库设置自动增长为after,先加后查-->
+    <insert id="addUserGetId" parameterType="com.jmx.domain.Account">
+    <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+        select LAST_INSERT_ID()
+    </selectKey>
+    INSERT INTO ACCOUNT(USERNAME,MONEY) VALUES(#{username},#{money})
+</insert>
+    <!--基于主键不是自动生成的表结构-->
+    <insert id="addUserGetUUID" parameterType="com.jmx.domain.Account">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+            select UUID()
+        </selectKey>
+        INSERT INTO ACCOUNT(USERNAME,MONEY) VALUES(#{username},#{money})
+    </insert>
+
+
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ct.mapper.OrdersVoMapper">
+    <select id="findUserById" parameterType="int" resultType="user">
+        select * from user where id = #{id}
+    </select>
+    <resultMap id="ordersVoMap" type="ordersVo">
+        <id property="id" column="id"/>
+        <association property="user" column="user_id" select="findUserById"/>
+    </resultMap>
+    <select id="findOrdersVoById" parameterType="int" resultMap="ordersVoMap">
+        select * from orders where id = #{id}
+    </select>
+
+    <select id="findOrdersVoByIdEx" parameterType="int" resultMap="ordersVoMapEx">
+        select * from orders o inner join user u on o.user_id = u.id where o.id = #{id}
+    </select>
+    <resultMap id="ordersVoMapEx" type="ordersVo">
+        <id property="id" column="id"/>
+        <association property="user" resultMap="userMap"/>
+    </resultMap>
+    <resultMap id="userMap" type="user">
+        <id property="id" column="user_id"/>
+        <result property="username" column="username"/>
+        <result property="birthday" column="birthday"/>
+        <result property="sex" column="sex"/>
+        <result property="address" column="address"/>
+    </resultMap>
+</mapper>

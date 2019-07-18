@@ -1,6 +1,8 @@
 package com.ct.test;
 
+import com.ct.domain.OrdersVo;
 import com.ct.domain.User;
+import com.ct.mapper.OrdersVoMapper;
 import com.ct.mapper.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -66,7 +68,7 @@ public class TestMybatis {
     }
 
     @Test
-    public void testFindUserByIdList() throws IOException, ParseException {
+    public void testFindUserByIdList() throws IOException {
         InputStream inputStream = Resources.getResourceAsStream("config/SqlMapConfig.xml");
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
@@ -76,6 +78,28 @@ public class TestMybatis {
         for(User user : users) {
             System.out.println(user.getUsername());
         }
+        sqlSession.close();
+    }
+
+    @Test
+    public void testFindOrdersVoById() throws IOException {
+        InputStream inputStream = Resources.getResourceAsStream("config/SqlMapConfig.xml");
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        OrdersVoMapper ordersVoMapper = sqlSession.getMapper(OrdersVoMapper.class);
+        OrdersVo ordersVo = ordersVoMapper.findOrdersVoById(3);
+        System.out.println(ordersVo);
+        sqlSession.close();
+    }
+
+    @Test
+    public void testFindOrdersVoByIdEx() throws IOException {
+        InputStream inputStream = Resources.getResourceAsStream("config/SqlMapConfig.xml");
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        OrdersVoMapper ordersVoMapper = sqlSession.getMapper(OrdersVoMapper.class);
+        OrdersVo ordersVo = ordersVoMapper.findOrdersVoByIdEx(3);
+        System.out.println(ordersVo);
         sqlSession.close();
     }
 }

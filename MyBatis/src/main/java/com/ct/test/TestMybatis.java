@@ -14,6 +14,7 @@ import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.List;
 
 public class TestMybatis {
@@ -58,6 +59,20 @@ public class TestMybatis {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         //List<User> users = sqlSession.selectList("com.ct.mapper.UserMapper.findUserByUsername", "张%");
         List<User> users = sqlSession.getMapper(UserMapper.class).findUserByUsername("张%");
+        for(User user : users) {
+            System.out.println(user.getUsername());
+        }
+        sqlSession.close();
+    }
+
+    @Test
+    public void testFindUserByIdList() throws IOException, ParseException {
+        InputStream inputStream = Resources.getResourceAsStream("config/SqlMapConfig.xml");
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        List<Integer> ids = Arrays.asList(24, 25, 26, 27);
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        List<User> users = userMapper.findUserByIdList(ids);
         for(User user : users) {
             System.out.println(user.getUsername());
         }

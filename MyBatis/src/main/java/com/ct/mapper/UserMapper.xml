@@ -20,4 +20,11 @@
     <select id="findUserByUsername" parameterType="string" resultType="user">
         select * from user where username like concat(concat('%', #{username}), '%')
     </select>
+
+    <select id="findUserByIdList" parameterType="list" resultType="user">
+        select * from user where id in
+        <foreach collection="list" index="i" item="it" open="(" separator="," close=")">
+        #{it}
+        </foreach>
+    </select>
 </mapper>

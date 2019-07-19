@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd
+       					   http://www.springframework.org/schema/context
+       					   http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--使用配置文件,创建数据源-->
+    <context:property-placeholder location="config/db.properties"/>
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <property name="driverClassName" value="${db.driver}"/>
+        <property name="jdbcUrl" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>
+
+    <!--    sqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--        指定mybatis的全局配置文件路径-->
+        <property name="configLocation" value="config/mybatis/SqlMapConfig.xml"/>
+        <property name="dataSource" ref="dataSource"/>  <!--可进行原始DAO开发-->
+    </bean>
+
+    <!--UserDao-->
+    <bean id="userDao" class="com.yhk.ms.Dao.DaoImpl.UserDaoImpl">
+<!--        依赖注入SqlSessionFactory-->
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
+<!--    &lt;!&ndash;配置UserMapper代理类&ndash;&gt;-->
+<!--    <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">-->
+<!--&lt;!&ndash;        设置代理类接口&ndash;&gt;-->
+<!--        <property name="mapperInterface" value="com.yhk.ms.Mapper.UserMapper"/>-->
+<!--&lt;!&ndash;        依赖注入SqlSessionFactory  &ndash;&gt;-->
+<!--        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>-->
+<!--    </bean>-->
+
+<!--    批量配置mapper代理类，id 默认为类名，首字母小写-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+<!--        配置扫描的包-->
+<!--        sqlsessionfactory 自动找xml配好的bean默认注入-->
+        <property name="basePackage" value="com.yhk.ms.Mapper"/>
+<!--        单独配置 name和vaule 固定不变-->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+</beans>

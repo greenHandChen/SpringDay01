@@ -24,6 +24,7 @@ public class TestMybatisMapper {
         InputStream is = Resources.getResourceAsStream("config/SqlMapConfig.xml");
         sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
     }
+
     @Test
     public void testMybatisMapper(){
         SqlSession sqlSession = sqlSessionFactory.openSession();

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--外部文件-->
+    <properties resource="config/db.properties"/>
+<!--    延迟加载-->
+    <settings>
+<!--        lazyLoadingEnabled:是否开启懒加载,Mybatis默认为false,表示不开启-->
+        <setting name="lazyLoadingEnabled" value="ture"/>
+        <!--aggressiveLazyLoading:是否开启积极懒加载,Mybatis默认为true,表示
+懒对象可能被任意属性进行懒加载;false表示只有使用懒属性才会进行加载-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+    <!--类型别名-->
+    <typeAliases>
+        <package name="com.yhk.Pojo"/>
+    </typeAliases>
+    <!-- 环境配置 -->
+    <environments default="development">
+        <environment id="development">
+            <!--            JDBC事务控制-->
+            <transactionManager type="JDBC"/>
+
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}" />
+                <property name="url" value="${db.url}" />
+                <property name="username" value="${db.username}" />
+                <property name="password" value="${db.password}" />
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- mapping文件路径配置 -->
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mapper/OrdersMapper.xml"/>
+    </mappers>
+
+</configuration>

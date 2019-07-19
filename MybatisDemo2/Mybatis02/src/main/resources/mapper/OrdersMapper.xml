@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yhk.Mapper.OrdersMapper">
+    
+<!--    一 . 根据订单Id查询订单以及用户信息-->
+    <select id="findOrdersExt" parameterType="OrdersExt" resultType="OrdersExt">
+        select o.id, o.user_id,o.number,o.createtime,o.note,u.username,u.address
+        from orders o ,user u
+        where o.user_id = u.id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+
+
+
+<!--    一对一 map结果集-->
+    <resultMap id="OrdersAndUserRstMap" type="OrdersExt">
+<!--        订单信息-->
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="number" property="number"/>
+<!--        用户信息 一对一   -->
+        <association property="user" javaType="com.yhk.Pojo.User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+        </association>
+    </resultMap>
+    
+        <!--    map映射  一对一  -->
+        <select id="findOrdersAndUserRstMap" resultMap="OrdersAndUserRstMap">
+            select o.id, o.user_id,o.number,o.createtime,o.note,u.username,u.address
+            from orders o ,user u
+            where o.user_id = u.id
+            <if test="id != null">
+                and o.id = #{id}
+            </if>
+        </select>
+
+<!--    map 一对多map结果集-->
+    <resultMap id="OrdersAndOrderDetailRstMap" type="OrdersExt" extends="OrdersAndUserRstMap">
+
+<!--        订单明细信息 ： 一对多  -->
+        <collection property="detaileList"  ofType="com.yhk.Pojo.Orderdetail">
+            <id column="detailId" property="id"/>
+            <result column="items_id" property="items_id"/>
+            <result column="items_num" property="items_num"/>
+         </collection>
+    </resultMap>
+    
+    
+<!--    一对多map映射-->
+    <select id="findOrdersAndDetailRetMap" resultMap="OrdersAndOrderDetailRstMap">
+        select o.id, o.user_id,o.number,o.createtime,o.note,u.username,u.address,od.id detailId, od.items_id, od.items_num
+        from orders o ,user u ,orderdetail od
+        where o.user_id = u.id and o.id=od.orders_id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+
+<!--    UserAndItemsRstMap-->
+    <resultMap id="UserAndItemsRstMap" type="User">
+<!--        用户信息-->
+        <id column="user_id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="address" property="address"/>
+        <!--        订单信息 一对多-->
+        <collection property="orders" ofType="com.yhk.Pojo.Orders">
+            <id column="id" property="id"/>
+            <result column="user_id" property="user_id"/>
+            <result column="number" property="number"/>
+
+            <!--        订单明细信息 ： 一对多  -->
+            <collection property="detailList"  ofType="com.yhk.Pojo.Orderdetail">
+                <id column="detailId" property="id"/>
+                <result column="items_id" property="items_id"/>
+                <result column="items_num" property="items_num"/>
+                <!--商品信息-->
+                <association property="items" javaType="items">
+                    <id column="items_id" property="id"/>
+                    <result column="name" property="name"/>
+                    <result column="price" property="price"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+    
+<!--    多对多 map映射-->
+    <select id="findUserAndItemsRstMap" resultMap="UserAndItemsRstMap">
+         select o.id, o.user_id,o.number,o.createtime,o.note,u.username,u.address,od.id detailId, od.items_id,
+                od.items_num, i.name,i.price
+        from orders o ,user u ,orderdetail od, items i
+        where o.user_id = u.id and o.id=od.orders_id and od.items_id=i.id
+    </select>
+
+
+
+<!--    延迟加载-->
+    <select id="findOrderInfoByLazyLoad" parameterType="java.lang.Integer" resultMap="lazyLoadRstMap">
+        select * from orders where id=#{id}
+    </select>
+<!--    延迟加载map映射-->
+    <resultMap id="lazyLoadRstMap" type="OrdersExt">
+        <!--        订单信息-->
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="number" property="number"/>
+        <!--        用户信息 一对一   -->
+        <association property="user" javaType="com.yhk.Pojo.User" select="com.yhk.Mapper.UserMapper.findUserById" column="user_id"/>
+    </resultMap>
+
+</mapper>
+
+
+

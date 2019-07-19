@@ -7,8 +7,10 @@ mapper为映射的根节点，namespace指定Dao接口的完整类名
 mybatis会依据这个接口动态创建一个实现类去实现这个接口，
 而这个实现类是一个Mapper对象
         -->
+<!--<mapper namespace="test">-->
 <!--        namespace=usermapper接口的全限定名-->
 <mapper namespace="com.yhk.Mapper.UserMapper">
+
     <!--id ="接口中的方法名"
 　　parameterType="传入的参数类型"
 　　resultType = "返回实体类对象，使用包.类名"-->

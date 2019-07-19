@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.mybatis.mapper.OrderMapper">
+
+    <select id="getOrderAndUser" resultMap="getOderUserMap">
+        select o.user_id,u.username,o.id,o.number,o.createtime from user u,orders o where u.id = o.user_id;
+    </select>
+
+    <select id="getOderUserDetail" resultMap="getOderUserDetilRstMap">
+            select o.user_id,u.username,o.id,o.number,o.createtime,od.items_id,od.items_num
+            from user u,orders o,orderdetail od
+            where u.id = o.user_id AND od.orders_id = o.id
+
+        </select>
+    <select id="getUserByAll" resultMap="MoretoMoreRstMap">
+        SELECT o.user_id, u.username,o.id,o.number,o.createtime,od.items_id,
+	            od.items_num,it. NAME,it.price
+        FROM USER u,orders o,orderdetail od,items it
+        WHERE u.id = o.user_id AND od.orders_id = o.id AND it.id = od.items_id;
+    </select>
+
+
+    <!--多对多-->
+    <resultMap id="MoretoMoreRstMap" type="com.mybatis.pojo.User">
+        <!--用户信息-->
+        <id column="user_id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="sex" property="sex"/>
+
+        <!--订单信息  一对多-->
+        <collection property="orders" ofType="com.mybatis.pojo.Order">
+            <id column="id" property="id"/>
+            <result column="user_id" property="user_id"/>
+            <result column="number" property="number"/>
+            <!--订单明细在信息 一对多-->
+            <collection property="orderdetailList" ofType="com.mybatis.pojo.Orderdetail">
+                <id column="id" property="id"/>
+                <result column="items_id" property="items_id"/>
+                <result column="items_num" property="items_num"/>
+                <!--商品信息-->
+                <association property="items" javaType="com.mybatis.pojo.Items">
+                    <id column="items_id" property="id"/>
+                    <result column="name" property="name"/>
+                    <result column="price" property="price"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+    
+    <!--一对一-->
+    <resultMap id="getOderUserMap" type="com.mybatis.pojo.OrderEx">
+
+        <!--订单信息-->
+<!--        <id column="id" property="order_id"/>-->
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+
+        <!--关联用户信息  association 映射一对一关系-->
+        <association property="user" javaType="com.mybatis.pojo.User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="sex" property="sex"/>
+        </association>
+
+    </resultMap>
+
+    <!--一对多-->
+    <resultMap id="getOderUserDetilRstMap" type="com.mybatis.pojo.OrderEx"
+               extends="getOderUserMap">
+
+        <!--映射一对多的关系-->
+        <collection property="orderdetails" ofType="com.mybatis.pojo.Orderdetail">
+            <id column="id" property="id"/>
+            <result column="items_id" property="items_id"/>
+            <result column="items_num" property="items_num"/>
+        </collection>
+    </resultMap>
+
+    <!--延迟加载-->
+    <resultMap id="lazyLoadingMap" type="com.mybatis.pojo.OrderEx">
+        <!--订单信息-->
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="number" property="number"/>
+
+        <!--用户信息   一对一   select 指定关联查询的statement 然后将查询结果
+        封装到 property属性指定的变量中,即放在user中
+        -->
+        <!--如果colum中的值存在多参数的现象时，需要在column中{col1=属性1,col2=属性2}-->
+        <association property="user" select="com.mybatis.mapper.UserMapper.findUserById" column="user_id">
+
+        </association>
+
+    </resultMap>
+</mapper>

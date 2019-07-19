@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!--配置-->
+<configuration>
+
+    <!--属性-->
+    <properties resource="datasource.properties"/>
+    <settings>
+<!--        <setting name="logImpl" value="LOG4J"/>-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+    <!--配置环境-->
+    <environments default="development">
+        <!--环境变量-->
+        <environment id="development">
+            <!--事务管理器-->
+            <transactionManager type="jdbc"/>
+            <!--数据源-->
+            <dataSource type="pooled">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--数据库厂商标识-->
+    <!--<databaseIdProvider type=""/>-->
+    <!--映射器-->
+    <mappers>
+        <mapper resource="mapper/userMapper.xml"/>
+        <mapper resource="mapper/OrdersMapper.xml"/>
+    </mappers>
+</configuration>

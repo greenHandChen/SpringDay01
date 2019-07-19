@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <setting name="cacheEnabled" value="true" />
+        <!-- 开启数据库last_name与lastName的驼峰式名称映射 -->
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+        <setting name="defaultExecutorType" value="SIMPLE" />
+        <!-- 懒加载启用 : 根据需要配置局部懒加载 fetchType="lazy" -->
+        <setting name="lazyLoadingEnabled" value="false" />
+        <!-- 侵入懒加载 : false按需加载 true[立即加载] -->
+        <setting name="aggressiveLazyLoading" value="false" />
+    </settings>
+    <typeAliases>
+        <package name="com.hand.pojo"/>
+        <package name="com.hand.VO"/>
+        <package name="com.hand.ext"/>
+    </typeAliases>
+
+
+    <!-- 数据库厂商别名设置 -->
+    <databaseIdProvider type="DB_VENDOR">
+        <property name="SQL Server" value="sqlserver" />
+        <property name="DB2" value="db2" />
+        <property name="Oracle" value="oracle" />
+        <property name="MySQL" value="mysql" />
+    </databaseIdProvider>
+</configuration>
+
+
+
+
+
+
+

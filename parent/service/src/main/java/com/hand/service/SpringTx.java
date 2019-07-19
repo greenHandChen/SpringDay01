@@ -4,8 +4,10 @@ import com.hand.dao.AccountDao;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+@Service
 public class SpringTx {
     private static ApplicationContext applicationContext=null;
     static {
@@ -16,7 +18,7 @@ public class SpringTx {
         test();
     }
 
-    @Transactional(rollbackFor = Exception.class)
+    @Transactional
     public void test(){
         AccountDao accountDao=(AccountDao) applicationContext.getBean("accountDao");
         accountDao.in("mybatis",100);

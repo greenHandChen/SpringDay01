@@ -7,6 +7,7 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -19,10 +20,18 @@ public class testMapper {
 
     private SqlSessionFactory sqlSessionFactory;
 
+    private SqlSession sqlSession;
+
     @Before
     public void init() throws IOException {
         InputStream is = Resources.getResourceAsStream("SqlMapConfig.xml");
         sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
+        sqlSession = sqlSessionFactory.openSession();
+    }
+
+    @After
+    public void closeSqlSession() {
+        sqlSession.close();
     }
 
     @Test
@@ -39,7 +48,6 @@ public class testMapper {
 
     @Test
     public void demo2() {
-        SqlSession sqlSession = sqlSessionFactory.openSession();
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
         Map<String, String> map = new HashMap<String, String>();
         map.put("username", "小");

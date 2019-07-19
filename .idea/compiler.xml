@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="lazyloaddemo" />
         <module name="first_demo" />
         <module name="transaction_demo" />
         <module name="mapperdev" />
+        <module name="Spring_Mybatisdemo" />
         <module name="jdbc_demo" />
         <module name="spring_demo" />
         <module name="daodev" />
@@ -18,11 +20,14 @@
       <module name="daodev" target="1.5" />
       <module name="first_demo" target="1.5" />
       <module name="jdbc_demo" target="1.5" />
+      <module name="lazyloaddemo" target="1.5" />
       <module name="mapperdev" target="1.5" />
       <module name="MybatisDay01" target="1.5" />
+      <module name="MybatisDay02" target="1.5" />
       <module name="spring_demo" target="1.7" />
       <module name="Spring_jdbc" target="1.5" />
       <module name="spring_jdbcTemplate_demo" target="1.7" />
+      <module name="Spring_Mybatisdemo" target="1.5" />
       <module name="Spring_transaction" target="1.7" />
       <module name="SpringDay02" target="1.5" />
       <module name="transaction_demo" target="1.7" />

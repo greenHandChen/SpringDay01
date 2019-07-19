@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 public class HelloSpring2 {
     private String info;
 
+
     @Override
     public String toString() {
         return "HelloSpring2{" +

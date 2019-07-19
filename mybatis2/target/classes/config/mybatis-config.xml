@@ -23,6 +23,5 @@
     <mappers>
         <!-- 批量加载mapper -->
         <package name="com.masirhh.mybatis2.mapper"/>
-
     </mappers>
 </configuration>

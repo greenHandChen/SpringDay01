@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
 
-@Service
+
 public class userService {
     private ApplicationContext applicationContext;
 
@@ -26,6 +26,6 @@ public class userService {
         // 调用 UserDAO 的方法
         userBean user = userDAO.findUserById(1);
         // 输出用户信息
-        System.out.println(user.getId() + ":" + user.getUsername());
+        System.out.println(user.toString());
     }
 }

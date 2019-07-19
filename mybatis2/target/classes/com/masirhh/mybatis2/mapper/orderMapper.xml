@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.masirhh.mybatis1.mappers.orderMapper">
+<mapper namespace="com.masirhh.mybatis2.mapper.orderMapper">
 
 
-	<resultMap id="OrdersExtByMap" type="com.masirhh.mybatis1.beans.orderExtByMap">
+	<resultMap id="OrdersExtByMap" type="com.masirhh.mybatis2.beans.orderExtByMap">
 		<id column="id" property="id"/>
 		<result column="user_id" property="user_id"/>
 		<result column="number" property="number"/>
 		<result column="note" property="note"/>
-		<association property="userBean" javaType="com.masirhh.mybatis1.beans.userBean">
+		<association property="userBean" javaType="com.masirhh.mybatis2.beans.userBean">
 			<id column="user_id" property="id"/>
 			<result column="username" property="username"/>
 			<result column="address" property="address"/>
@@ -17,20 +17,20 @@
 	</resultMap>
 
 
-	<resultMap id="OrdersExtByMap1" type="com.masirhh.mybatis1.beans.orderExtDdd">
+	<resultMap id="OrdersExtByMap1" type="com.masirhh.mybatis2.beans.orderExtDdd">
 		<id column="id" property="id"/>
 		<result column="user_id" property="user_id"/>
 		<result column="number" property="number"/>
 		<result column="note" property="note"/>
-		<association property="userBean" javaType="com.masirhh.mybatis1.beans.userBean">
+		<association property="userBean" javaType="com.masirhh.mybatis2.beans.userBean">
 			<id column="user_id" property="id"/>
 			<result column="username" property="username"/>
 			<result column="address" property="address"/>
 		</association>
 	</resultMap>
-	<resultMap id="DetailsDDD" type="com.masirhh.mybatis1.beans.orderExtDdd" extends="OrdersExtByMap1">
+	<resultMap id="DetailsDDD" type="com.masirhh.mybatis2.beans.orderExtDdd" extends="OrdersExtByMap1">
 
-		<collection property="orderdetail" ofType="com.masirhh.mybatis1.beans.orderdetailsBean">
+		<collection property="orderdetail" ofType="com.masirhh.mybatis2.beans.orderdetailsBean">
 			<id column="detailId" property="id"/>
 			<result column="items_id" property="items_id"/>
 			<result column="items_num" property="items_num"/>
@@ -38,7 +38,7 @@
 	</resultMap>
 
 
-    <select id="findOrdersExtByType" resultType="com.masirhh.mybatis1.beans.orderExtByType">
+    <select id="findOrdersExtByType" resultType="com.masirhh.mybatis2.beans.orderExtByType">
     SELECT
 	    o.id,
 	    o.user_id,

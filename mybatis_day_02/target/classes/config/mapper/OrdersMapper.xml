@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="huanglehao.study.mapper.OrdersMapper">
+  
+    <!--一对一映射智resultType-->
+    <select id="findOrderAndUser" resultType="huanglehao.study.po.OrdersExt">
+        select
+        orders.id,
+        orders.user_id,
+        orders.number,
+        user.username,
+        user.sex
+        from
+        orders,
+        user
+        where orders.user_id=user.id
+    </select>
+    
+    <resultMap id="OrderAndUserRstMap" type="huanglehao.study.po.OrdersExt">
+        <!--订单信息-->
+        <id column="id" property="id"></id>
+        <result column="user_id" property="user_id"></result>
+        <result column="number" property="number"></result>
+
+        <!--用户信息-->
+       <association property="user" javaType="huanglehao.study.po.User">
+            <id column="user_id" property="id"></id>
+            <result column="username" property="username"></result>
+            <result column="sex" property="sex"></result>
+        </association>
+    </resultMap>
+    
+    <!--一对一映射智resultMap-->
+    <select id="findOrderAndUserRstMap" resultMap="OrderAndUserRstMap">
+        select
+        orders.id,
+        orders.user_id,
+        orders.number,
+        user.username,
+        user.sex
+        from
+        orders orders,
+        user user
+        where orders.user_id=user.id
+    </select>
+
+    <resultMap id="OrderAndDetailesRstMap" type="huanglehao.study.po.OrdersExt" extends="OrderAndUserRstMap">
+            <!--订单详情映射-->
+            <collection property="orderdetail"  ofType="huanglehao.study.po.Orderdetail">
+                <id column="detailId" property="id"></id>
+                <result column="items_id" property="itemsId"></result>
+                <result column="items_num" property="itemsNum"></result>
+            </collection>
+    </resultMap>
+    
+    <select id="findOrderAndDetailesRstMap" resultMap="OrderAndDetailesRstMap">
+          SELECT
+        orders.id,
+        orders.user_id,
+        orders.number,
+        user.username,
+        user.sex,
+        orderdetail.id detailId,
+        orderdetail.items_id,
+        orderdetail.items_num
+        FROM
+        orders,
+        USER ,
+        orderdetail
+        WHERE orders.user_id=user.id
+        AND orders.id=orderdetail.orders_id
+    </select>
+
+    <resultMap id="UserAndItemsRstMap" type="huanglehao.study.po.User">
+        <!--用户信息-->
+        <id column="user_id" property="id"></id>
+        <result column="username" property="username"></result>
+        <result column="sex" property="sex"></result>
+        <!--订单信息-->
+
+
+        <collection property="orders" ofType="huanglehao.study.po.Orders">
+            <id column="id" property="id"></id>
+            <result column="user_id" property="user_id"></result>
+            <result column="number" property="number"></result>
+            <!--订单明细信息-->
+            <collection property="detailList"  ofType="huanglehao.study.po.Orderdetail">
+                <id column="detailId" property="id"></id>
+                <result column="items_id" property="itemsId"></result>
+                <result column="items_num" property="itemsNum"></result>
+                <!--商品信息-->
+                <association property="items" javaType="huanglehao.study.po.Items">
+                    <id column="items_id" property="id"></id>
+                    <result column="name" property="name"></result>
+                    <result column="price" property="price"></result>
+                </association>
+            </collection>
+        </collection>
+
+
+
+    </resultMap>
+    
+    <!--多对多-->
+    <select id="findUserAndItemsRstMap" resultMap="UserAndItemsRstMap">
+        SELECT
+        orders.id,
+        orders.user_id,
+        orders.number,
+        user.username,
+        user.sex,
+        orderdetail.id detailId,
+        orderdetail.items_id,
+        orderdetail.items_num,
+        items.name,
+        items.price
+        FROM
+        orders,
+        USER ,
+        orderdetail,
+        items
+        WHERE orders.user_id=user.id
+        AND orders.id=orderdetail.orders_id
+        AND orderdetail.items_id=items.id
+    </select>
+
+    <resultMap id="LazyLoadingRstMap" type="huanglehao.study.po.OrdersExt">
+        <!--订单信息-->
+        <id column="id" property="id"></id>
+        <result column="user_id" property="user_id"></result>
+        <result column="number" property="number"></result>
+        <!--用户信息-->
+        <!--select:指定关联查询的statemengt然后将查询结果封装到指定的属性中-->
+        <!--column：指定列作为参数传递-->
+        <!--若需要传递多列，{col1=prop1,coll=pro2}-->
+        <association property="user" select="huanglehao.study.mapper.UserMapper.findUserById" column="user_id">
+        </association>
+    </resultMap>
+    
+    <!--延迟加载-->
+
+    <select id="findOrderAndUserLazyLoading" resultMap="LazyLoadingRstMap">
+        select * from
+        orders
+    </select>
+</mapper>

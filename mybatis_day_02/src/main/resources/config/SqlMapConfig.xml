@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--加载java的配置文件或者申明属性信息-->
+    <properties resource="dataSource.properties">
+        <property name="" value=""/>
+    </properties>
+    <!--setting-->
+    <settings>
+        <!--开启延迟加载，默认值为true-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--设置积极的懒加载-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        
+        <!--开启二级缓存总开关-->
+     <!--   <setting name="cacheEnable" value="true"/>-->
+    </settings>
+    <!--后期跟spring整合的时候是会废除的  -->
+    <environments default="test">
+        <environment id="test">
+            <!--使用的是jdbc的事务控制，由mybatis进行管理，整合后该信息由spring管理 -->
+            <transactionManager type="JDBC"/>
+            <!-- 配置连接池,采用mybatis连接池 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driverClassName}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 加载映射文件 -->
+    <mappers>
+       <!-- <mapper resource="config/User.xml"/>-->
+        <mapper resource="config/mapper/UserMapper.xml"/>
+        <mapper resource="config/mapper/OrdersMapper.xml"/>
+    </mappers>
+</configuration>

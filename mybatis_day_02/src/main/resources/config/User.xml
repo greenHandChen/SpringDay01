@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace，对statement的信息进行分类管理-->
+<!--注意：在mapper代理时，有特殊和重要的作用-->
+<mapper namespace="user">
+    <!--根据用户Id查询用户信息-->
+    <select id="findUserById" parameterType="int" resultType="huanglehao.huanglehao.study.po.User">
+        SELECT * FROM USER WHERE id = #{id}
+    </select>
+
+    <!--根据用户名称模糊查询用户列表-->
+    <select id="findUserByUserName" parameterType="String" resultType="huanglehao.huanglehao.study.po.User" >
+		select * from user
+	    where username like #{username}
+
+	</select>
+    
+    <!--添加用户-->
+    <insert id="insertUser" parameterType="huanglehao.huanglehao.study.po.User">
+        <selectKey keyProperty="id" resultType="int" order="AFTER">
+            select LAST_INSERT_ID();
+        </selectKey>
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address});
+    </insert>
+
+    <!--自增主键之uuid-->
+ <!--   <insert id="insertUser" parameterType="huanglehao.User">
+        <selectKey keyProperty="id" resultType="String" order="BEFORE">
+            select UUID()
+        </selectKey>
+        insert into user(id,username,birthday,sex,address) values (#{id},#{username},#{birthday},#{sex},#{address});
+    </insert>-->
+
+    <!--自增主键之sqeuence-->
+   <!-- <insert id="insertUser" parameterType="huanglehao.User">
+        <selectKey keyProperty="id" resultType="int" order="BEFORE">
+            select sqy.nextval FROM  dual
+        </selectKey>
+        insert into user(id,username,birthday,sex,address) values (#{id},#{username},#{birthday},#{sex},#{address});
+    </insert>-->
+</mapper>

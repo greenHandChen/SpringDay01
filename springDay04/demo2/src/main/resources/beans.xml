@@ -1,0 +1,40 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+
+    <!--    <bean id="accountService" class="club.osai.service.AccountServiceImpl">-->
+    <!--        <property name="accountDao" ref="accountDao"/>-->
+    <!--    </bean>-->
+
+    <context:property-placeholder location="classpath:log4j.properties"/>
+
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+
+        <property name="jdbcUrl"
+                  value="jdbc:mysql://127.0.0.1:3306/mybatis?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;useSSL=false"/>
+        <property name="username" value="root"/>
+        <property name="password" value="13882"/>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="mybatis.xml"/>
+    </bean>
+
+    <bean id="userDao" class="club.osai.dao.UserDaoImpl">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="club.osai.mapper"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+    <!--    &lt;!&ndash;        扫描包   &ndash;&gt;-->
+    <!--    <context:component-scan base-package="club.osai.dao"/>-->
+    <!--    <context:component-scan base-package="club.osai.service"/>-->
+</beans>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="club.osai.dao.UserDao">
+
+    <cache/>
+    <resultMap id="userResultMap" type="User">
+        <id column="num" property="id"/>
+        <result column="username" property="username"/>
+        <result column="address" property="address"/>
+
+    </resultMap>
+
+
+    <select id="findUserById" parameterType="long" resultType="User">
+
+            select  * from user where id=#{id};
+
+    </select>
+    <select id="findUserByUser" parameterType="UserQueryVO" resultType="User">
+
+            select  * from user u where u.username like '%${user.username}%'and u.address like '%${user.address}%' and  u.sex= #{user.sex} ;
+
+    </select>
+
+    <select id="findUserByMap" parameterType="Map" resultType="User">
+
+            select  * from user u where u.username like concat(concat('%',#{username}),'%') ;
+
+    </select>
+    <select id="countUser" resultType="long">
+
+            select  count(*) from user ;
+
+    </select>
+
+
+    <select id="findUserByUsername" parameterType="string" resultType="club.osai.po.User">
+
+            select  * from user where username like ${value};
+
+    </select>
+
+    <select id="findUsernameAndAddressById" parameterType="long" resultType="User">
+
+            select  username, address from user where id=#{id};
+
+
+    </select>
+
+    <select id="findUsernameAndAddressByIdWithMap" parameterType="long" resultMap="userResultMap">
+
+            select id num,  username, address from user where id=#{id};
+
+
+    </select>
+
+
+    <insert id="addUser" parameterType="club.osai.po.User">
+        insert into  user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address});
+
+    </insert>
+
+    <insert id="addUserGetId" parameterType="club.osai.po.User">
+
+        <selectKey keyProperty="id" resultType="long" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address});
+
+    </insert>
+    <!--    UUID生成  -->
+    <insert id="addUserGetUUID" parameterType="club.osai.po.User">
+
+        <selectKey keyProperty="id" resultType="string" order="BEFORE">
+            select UUID()
+        </selectKey>
+
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address});
+
+    </insert>
+
+
+    <!--    标签-->
+
+    <select id="testIfAndWhereLabel" parameterType="User" resultType="User">
+        select * from user
+        <where>
+            <if test="id !=null">
+                and id=#{id}
+            </if>
+            <if test="username !=null">
+                and username like concat(concat('%',#{username}),'%')
+            </if>
+            <if test="address !=null">
+                and address like concat(concat('%',#{address}),'%')
+            </if>
+            <if test="sex !=null">
+                and sex = #{sex}
+            </if>
+            <if test="birthday !=null">
+                and birthday = #{birthday}
+            </if>
+        </where>
+    </select>
+
+</mapper>

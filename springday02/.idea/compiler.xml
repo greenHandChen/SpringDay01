@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springday02 (1) (com.lhb)" />
+        <module name="module1" />
         <module name="module3" />
         <module name="module2" />
-        <module name="module1" />
+        <module name="springday02 (1) (com.lhb)" />
       </profile>
     </annotationProcessing>
   </component>

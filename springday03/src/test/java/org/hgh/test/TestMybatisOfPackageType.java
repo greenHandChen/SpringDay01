@@ -5,14 +5,12 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.hgh.dao.mapper.UserMapper;
-import org.hgh.pojo.User;
 import org.hgh.vo.UserVO;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class TestMybatisOfPackageType {

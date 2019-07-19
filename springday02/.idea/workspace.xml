@@ -2,11 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f037ce6c-ccf7-4f1d-bbdc-63848af9be2f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../springday03/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springday03/src/main/java/org/hgh/dao/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springday03/src/main/java/org/hgh/pojo/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springday03/src/main/java/org/hgh/pojo/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springday03/src/main/java/org/hgh/pojo/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springday03/src/main/java/org/hgh/vo/OrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springday03/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springday03/src/test/java/org/hgh/test/day2/TestMybatisCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springday03/src/test/java/org/hgh/test/day2/TestMybatisLazyLoad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springday03/src/test/java/org/hgh/test/day2/TestMybatisOfOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springday03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springday03/src/main/resources/mapper/User2TrendsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/src/main/resources/mapper/User2TrendsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springday03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springday03/src/main/java/org/hgh/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/src/main/java/org/hgh/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springday03/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springday03/src/main/resources/mapper/User2Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/src/main/resources/mapper/User2Mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springday03/src/main/resources/sqlmapconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/src/main/resources/sqlmapconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springday03/src/test/java/org/hgh/test/TestMybatisOfPackageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/src/test/java/org/hgh/test/TestMybatisOfPackageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springday03/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springday03/target/classes/mapper/User2Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/target/classes/mapper/User2Mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springday03/target/classes/mapper/User2TrendsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/target/classes/mapper/User2TrendsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springday03/target/classes/org/hgh/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/target/classes/org/hgh/pojo/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springday03/target/classes/sqlmapconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/target/classes/sqlmapconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springday03/target/test-classes/org/hgh/test/TestMybatisOfPackageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/target/test-classes/org/hgh/test/TestMybatisOfPackageType.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,25 +75,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-day02/src/test/java/org/hgh/test/TestJDBC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="150">
+              <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-day02/src/test/java/org/hgh/test/TestJdbc2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-day02/src/main/java/org/hgh/demo/pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="492">
@@ -81,6 +92,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -120,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-day02/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+            <state relative-caret-position="186">
+              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="44" />
               <folding>
                 <element signature="n#dependencies#0;n#project#0;n#!!top" />
               </folding>
@@ -185,7 +205,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="251" />
     <option name="y" value="172" />
     <option name="width" value="697" />
@@ -198,6 +218,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,7 +297,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,7 +305,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="D:/项目文件/IdeaProjects/demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springday03" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -356,7 +376,8 @@
       <workItem from="1563411900080" duration="3519000" />
       <workItem from="1563422408387" duration="72000" />
       <workItem from="1563423563441" duration="2285000" />
-      <workItem from="1563434583800" duration="466000" />
+      <workItem from="1563434583800" duration="599000" />
+      <workItem from="1563508180054" duration="1552000" />
     </task>
     <task id="LOCAL-00001" summary="Homework Of July 17">
       <created>1563363923864</created>
@@ -377,13 +398,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9662000" />
+    <option name="totallyTimeSpent" value="11347000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="251" y="172" width="697" height="735" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27315542" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19591528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -459,13 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2293baf5-1dd2-4b00-b50d-6bb1f07ce6e1/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -525,13 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-day02/src/test/java/org/hgh/test/TestJDBC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-day02/src/test/java/org/hgh/test/TestJdbc2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -563,16 +570,6 @@
     <entry file="file://$PROJECT_DIR$/spring-day02/src/main/resources/spring-config.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-day02/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <element signature="n#dependencies#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-day02/src/main/java/org/hgh/demo/dao/impl/AccountDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -594,6 +591,30 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-day02/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="44" />
+          <folding>
+            <element signature="n#dependencies#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-day02/src/test/java/org/hgh/test/TestJDBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="57" />
         </state>
       </provider>
     </entry>

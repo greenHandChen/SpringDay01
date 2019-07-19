@@ -39,7 +39,14 @@ public interface IUserDao {
      * @Date: 2019/7/18 16:01
      */
     Long addUser(User user);
-
+    
+    /**
+     * @Description: 
+     * @Param: [user]
+     * @return: java.lang.Long
+     * @Author: LWY
+     * @Date: 2019/7/19 15:39 
+     */
     Long addUserGetId(User user);
 
     Long addUserGetUUID(User user);

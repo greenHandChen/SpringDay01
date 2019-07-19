@@ -2,64 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9303c66c-5e49-4f1f-9b88-9d19c04f1fe3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_miemiedev_mybatis_paginator_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_servlet_api_7_0_64.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_6_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_7_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hashids_hashids_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handjava05/handjava05.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handjava05/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/OrdersExt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handjava05/src/main/resources/SqlMapConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handjava05/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handjava05/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handjava05/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handjava04/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/handjava04/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handjava04/target/classes/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/handjava04/target/classes/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/IUserDao.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/handjava02/target/" />
@@ -128,11 +72,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/IUserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="130">
+              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+              <folding>
+                <element signature="docComment;method#findUserById#0;class#IUserDao#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -183,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handjava05/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4791">
-              <caret line="247" selection-start-line="247" selection-end-line="247" />
+            <state relative-caret-position="-2853">
+              <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -262,7 +209,6 @@
         <option value="$PROJECT_DIR$/handjava04/target/classes/SqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/entity/UserQueryVO.java" />
         <option value="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/impl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/IUserDao.java" />
         <option value="$PROJECT_DIR$/handjava04/src/test/java/com/hand/test/UserTest.java" />
         <option value="$PROJECT_DIR$/handjava04/src/main/resources/mappers/UserMapper.xml" />
         <option value="$PROJECT_DIR$/handjava05/pom.xml" />
@@ -276,6 +222,7 @@
         <option value="$PROJECT_DIR$/handjava05/src/test/java/com/hand/test/UserTest.java" />
         <option value="$PROJECT_DIR$/handjava05/src/main/resources/SqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/handjava05/src/main/resources/mappers/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/IUserDao.java" />
       </list>
     </option>
   </component>
@@ -357,47 +304,12 @@
               <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
               <item name="handjava04" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava04" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava04" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava05" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava05" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava05" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava05" type="462c0819:PsiDirectoryNode" />
+              <item name="handjava04" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -405,7 +317,7 @@
             <path>
               <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava05" type="462c0819:PsiDirectoryNode" />
+              <item name="handjava04" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -414,63 +326,12 @@
             <path>
               <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava05" type="462c0819:PsiDirectoryNode" />
+              <item name="handjava04" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sysmanager" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava05" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sysmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava05" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava05" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mappers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava05" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava05" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava05" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -643,7 +504,7 @@
       <workItem from="1563500943380" duration="373000" />
       <workItem from="1563501490197" duration="6487000" />
       <workItem from="1563516548372" duration="1539000" />
-      <workItem from="1563518183973" duration="3252000" />
+      <workItem from="1563518183973" duration="3756000" />
     </task>
     <task id="LOCAL-00001" summary="25593_练伟渊">
       <created>1563276122127</created>
@@ -673,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563450295265</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="mybatis_day02">
+      <created>1563521515304</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563521515304</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -709,7 +577,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61568000" />
+    <option name="totallyTimeSpent" value="62072000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -766,12 +634,11 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="25593_练伟渊" />
     <MESSAGE value="spring 事务学习" />
     <MESSAGE value="mybatis_day01" />
-    <option name="LAST_COMMIT_MESSAGE" value="mybatis_day01" />
+    <MESSAGE value="mybatis_day02" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis_day02" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1030,13 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/IUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/handjava04/src/test/java/com/hand/test/UserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -1101,8 +961,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/handjava05/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4791">
-          <caret line="247" selection-start-line="247" selection-end-line="247" />
+        <state relative-caret-position="-2853">
+          <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding>
+            <element signature="docComment;method#findUserById#0;class#IUserDao#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

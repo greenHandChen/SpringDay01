@@ -1,6 +1,8 @@
 import com.yonye.mybatis.dao.UserDaoImpl;
+import com.yonye.mybatis.mapper.LazyLoadRstMappper;
 import com.yonye.mybatis.mapper.UsersMapper;
 import com.yonye.mybatis.pojo.User;
+import com.yonye.mybatis.vo.OrdersExt;
 import com.yonye.mybatis.vo.UserQueryVo;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -13,6 +15,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.SQLOutput;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -105,6 +108,20 @@ public class MybatisDaoTest {
         User user=new User();
         user.setUsername("j");
         System.out.println(usersMapper.testIfAndWhereLabel(user));
+        sqlSession.close();
+    }
+
+    @Test
+    public void testLoading(){
+        SqlSession sqlSession=sqlSessionFactory.openSession();
+        LazyLoadRstMappper lazyLoadRstMappper=sqlSession.getMapper(LazyLoadRstMappper.class);
+        lazyLoadRstMappper.findOrderInfoByLazyLoad(1);
+        lazyLoadRstMappper.findOrderInfoByLazyLoad(1);
+        List<OrdersExt> ordersExts= lazyLoadRstMappper.findOrderInfoByLazyLoad(1);
+        for (OrdersExt o:ordersExts){
+            System.out.println(o);
+        }
+
         sqlSession.close();
     }
 

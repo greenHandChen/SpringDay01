@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
+        注意：使用mapper代理方法开发，namespace有特殊重要的作用
+        -->
+<mapper namespace="test">
+
+   <select id="findUserById" parameterType="java.lang.Integer" resultType="com.yonye.mybatis.pojo.User">
+       SELECT* FROM USER WHERE id = #{id}
+   </select>
+
+    <select id="findUserByUserName" parameterType="java.lang.String" resultType="com.yonye.mybatis.pojo.User">
+        SELECT* FROM USER WHERE username like ${value}
+    </select>
+
+
+    <insert id="addUser" parameterType="com.yonye.mybatis.pojo.User">
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetId" parameterType="com.yonye.mybatis.pojo.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--
+    <insert id="addUserGetUUID" parameterType="com.yonye.mybatis.pojo.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+            SELECT UUID()
+        </selectKey>
+        INSERT INTO USER (id,username,birthday,sex,address) values(#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+    -->
+
+</mapper>

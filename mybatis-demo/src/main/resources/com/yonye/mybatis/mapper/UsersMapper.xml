@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
+注意：使用mapper代理方法开发，namespace有特殊重要的作用
+-->
+<mapper namespace="com.yonye.mybatis.mapper.UsersMapper">
+    <cache/>
+    <resultMap id="userResultMap" type="com.yonye.mybatis.pojo.User">
+        <id column="num" property="id"/>
+        <result column="name" property="username"/>
+        <result column="address" property="address"/>
+    </resultMap>
+    
+    <sql id="Condition_Where_Clause">
+        <where>
+            <if test="id!=null">
+                and id=#{id}
+            </if>
+            <if test="username!=null and username !=''">
+                and username like concat(concat('%',#{username}),'%')
+            </if>
+        </where>
+
+    </sql>
+
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.yonye.mybatis.pojo.User">
+        SELECT* FROM USER WHERE id = #{id}
+    </select>
+
+    <select id="findUserByUser" parameterType="com.yonye.mybatis.vo.UserQueryVo" resultType="com.yonye.mybatis.pojo.User">
+        SELECT * FROM USER u WHERE  u.address like '%${user.address}%' and u.sex=#{user.sex}
+    </select>
+
+
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="com.yonye.mybatis.pojo.User">
+        SELECT * FROM USER u WHERE u.username like concat(concat('%',#{username}),'%')
+    </select>
+
+    <select id="countUser" resultType="java.lang.Integer">
+        SELECT count(*) FROM USER
+    </select>
+
+    <select id="resultMapTest" parameterType="java.lang.Integer" resultMap="userResultMap">
+        SELECT id as num,username name,address from user u where  u.id=#{is}
+    </select>
+
+    <select id="testIfAndWhereLabel" parameterType="com.yonye.mybatis.pojo.User" resultType="com.yonye.mybatis.pojo.User">
+        select * from user
+        <if test="_parameter != null">
+        <include refid="Condition_Where_Clause"/>
+        </if>
+    </select>
+
+
+</mapper>

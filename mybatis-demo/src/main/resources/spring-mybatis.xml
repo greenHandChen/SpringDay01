@@ -21,28 +21,15 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!-- 实例化sqlSessionFactory时需要使用上述配置好的数据源以及SQL映射文件 -->
         <property name="dataSource" ref="dataSource" />
+        <!-- -->
+        <property name="configLocation" value="SqlMapConfig.xml"/>
+
         <!-- 自动扫描mapping/目录下的所有SQL映射的xml文件-->
-        <property name="mapperLocations">
-            <array>
-                <value>classpath:mapper/*.xml</value>
-            </array>
-        </property>
-        <property name="plugins">
-            <array>
-                <bean class="com.github.pagehelper.PageInterceptor">
-                    <!-- 这里的几个配置主要演示如何使用，如果不理解，一定要去掉下面的配置 -->
-                    <property name="properties">
-                        <value>
-                            helperDialect=mysql
-                            reasonable=true
-                            supportMethodsArguments=true
-                            params=count=countSql
-                            autoRuntimeDialect=true
-                        </value>
-                    </property>
-                </bean>
-            </array>
-        </property>
+        <!--<property name="mapperLocations">-->
+        <!--<array>-->
+        <!--<value>classpath:mapper/*.xml</value>-->
+        <!--</array>-->
+        <!--</property>-->
     </bean>
 
     <!-- 配置扫描器 -->

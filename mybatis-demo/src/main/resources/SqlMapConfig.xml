@@ -3,10 +3,18 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
     <properties resource="db.properties">
         <!-- properties中还可以配置一些属性名和属性值 -->
         <!-- <property name="" value=""/> -->
     </properties>
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+
     <!-- 和spring整合后 environments配置将废除-->
     <environments default="development">
         <environment id="development">
@@ -27,10 +35,12 @@
     </environments>
     <!-- 加载映射文件 -->
     <mappers>
-        <mapper resource="mapper/UserMapper.xml"/>
-        <mapper resource="mapper/UsersMapper.xml"/>
+        <!--<mapper resource="mapper/UserMapper.xml"/>-->
+        <!--<mapper resource="mapper/UsersMapper.xml"/>-->
+        <!--<mapper resource="mapper/LazyLoadRstMappper.xml"/>-->
 
-        <!--<package name="com.yonye.mybatis.mapper"/>-->
+        <package name="com.yonye.mybatis.mapper"/>
+
 
     </mappers >
 

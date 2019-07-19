@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
+注意：使用mapper代理方法开发，namespace有特殊重要的作用
+-->
+<mapper namespace="com.yonye.mybatis.mapper.LazyLoadRstMappper">
+
+    <select id="findOrderInfoByLazyLoad" parameterType="java.lang.Integer" resultMap="lazyLoadRstMap">
+
+        select* from orders where id = #{id}
+    </select>
+
+    <!-- extends属性：通过extends属性来继承其他的resultMap，要注意的是这两个resultMap的type类型需要一致-->
+    <resultMap id="lazyLoadRstMap" type="com.yonye.mybatis.vo.OrdersExt" >
+      <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="note" property="note"/>
+        <association property="orderDetails" select="com.yonye.mybatis.mapper.UsersMapper.findUserById" column="user_id">
+        </association>
+    </resultMap>
+
+
+
+
+
+
+
+</mapper>

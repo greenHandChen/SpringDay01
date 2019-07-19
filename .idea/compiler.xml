@@ -12,6 +12,10 @@
         <module name="Day03-Dao2" />
         <module name="Day03-Mybatis" />
         <module name="Day03Dao1" />
+        <module name="Day04_cache" />
+        <module name="Day04_lazyLoad" />
+        <module name="Day04_Mybatis" />
+        <module name="Day04_SM" />
         <module name="SpringDay02-Transaction" />
       </profile>
     </annotationProcessing>
@@ -22,6 +26,10 @@
       <module name="Day03-Dao2" target="1.7" />
       <module name="Day03-Mybatis" target="1.7" />
       <module name="Day03Dao1" target="1.7" />
+      <module name="Day04_cache" target="1.7" />
+      <module name="Day04_lazyLoad" target="1.7" />
+      <module name="Day04_Mybatis" target="1.8" />
+      <module name="Day04_SM" target="1.7" />
       <module name="SpringDay" target="1.7" />
     </bytecodeTargetLevel>
   </component>

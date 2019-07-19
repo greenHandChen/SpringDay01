@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="day04_cache.mapper.UserMapper">
+    <cache/>
+
+    <select id="findUserById" parameterType="day04_cache.domain.User" resultType="day04_cache.domain.User">
+        SELECT
+        *
+        from user where id = #{id}
+    </select>
+
+    <insert id="addUser" parameterType="day04_cache.domain.User">
+        insert into user(username,birthday,sex,address) value(#{username},#{birthday},#{sex},#{address})
+    </insert>
+</mapper>

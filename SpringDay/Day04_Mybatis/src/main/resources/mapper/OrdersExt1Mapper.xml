@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="day04_mybatis.mapper.OrderMapper">
+    
+    <select id="findOrdersExt" parameterType="day04_mybatis.domain.ext.OrdersExt" resultType="day04_mybatis.domain.ext.OrdersExt">
+        SELECT o.id,
+                o.user_id,
+                o.number,
+                o.createtime,
+                o.note,
+                u.username, u.address
+                from orders o,user u
+                where o.user_id = u.id
+                <if test="id != null">
+                    and o.id = #{id}
+                </if>
+    </select>
+    
+</mapper>

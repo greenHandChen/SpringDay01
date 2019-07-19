@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="day04_cache.mapper.OrdersExt3Mapper">
+
+    <!--一对一的-->
+    <resultMap id="ordersAndUserRstMap" type="day04_cache.domain.ext.OrdersExt3">
+        <id column="order_id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result column="note" property="note"/>
+
+        <association property="user" javaType="day04_cache.domain.User">
+            <id column="uid" property="id"/>
+            <result column="username" property="username"/>
+            <result column="birthday" property="birthday"/>
+            <result column="sex" property="sex"/>
+            <result column="address" property="address"/>
+        </association>
+    </resultMap>
+
+    <!--一对多的-->
+    <resultMap id="ordersAndOrderDeatilRsMap" type="day04_cache.domain.ext.OrdersExt3" extends="ordersAndUserRstMap">
+
+        <collection property="orderdetails" ofType="day04_cache.domain.Orderdetail" javaType="ArrayList">
+            <id column="orderdetail_id" property="id"/>
+            <result column="orders_id" property="ordersId"/>
+            <result column="items_id" property="itemsId"/>
+            <result column="items_num" property="itemsNum"/>
+        </collection>
+    </resultMap>
+
+
+
+    <select id="findOrdersExt" parameterType="day04_cache.domain.ext.OrdersExt3" resultMap="ordersAndOrderDeatilRsMap">
+        SELECT
+        o.id AS order_id,
+        o.user_id,
+        o.number,
+        o.createtime,
+        o.note,
+        u.id AS uid,
+        u.username,
+        u.address,
+        u.birthday,
+        u.sex,
+        od.id AS orderdetail_id,
+        od.orders_id,
+        od.items_id,
+        od.items_num
+        from orders o,user u,orderdetail od
+        where o.user_id = u.id
+        and od.orders_id = o.id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+</mapper>

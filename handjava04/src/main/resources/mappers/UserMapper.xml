@@ -63,7 +63,7 @@
             <if test="userId != null">
             and u.id = #{userId}
             </if>
-            <if test="username != null and  username !=''">
+            <if test='username != null and  username !=" " '>
                 and u.username like concat(concat('%',#{username}),'%')
             </if>
 

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.sysmanager.dao.IUserDao">
+    <cache/>
+    <select id="findUserById" parameterType="long" resultType="User">
+        select * from User where id = #{userId}
+    </select>
+
+    <select id="findOrdersExt" parameterType="com.hand.sysmanager.entity.OrdersExt" resultType="com.hand.sysmanager.entity.OrdersExt">
+        select
+               o.id ,
+               o.user_id as userId,
+               o.number,
+               o.createtime as createTime,
+               o.note,
+               u.username,
+               u.address
+        from orders o,
+             user u
+        where o.user_id = u.id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+
+    <resultMap id="ordersExtMap" type="OrdersExt">
+        <id column="id" property="id"/>
+
+        <association property="user" javaType="com.hand.sysmanager.entity.User">
+            <id column="user_id" property="userId"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+        </association>
+    </resultMap>
+
+    <select id="findOrdersByResultMap" parameterType="OrdersExt" resultMap="ordersExtMap">
+        select
+        o.id ,
+        o.user_id,
+        u.username,
+        u.address
+        from orders o,
+             user u
+        where o.user_id = u.id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+
+    <!-- -->
+    <resultMap id="ordersAndOrderDetailMap" type="OrdersExt" extends="ordersExtMap">
+        
+        <collection property="orderDetailList" ofType="com.hand.sysmanager.entity.OrderDetail">
+            <id column="detailId" property="orderDetailId"/>
+            <result column="items_id" property="itemId"/>
+        </collection>
+    </resultMap>
+
+    <select id="findOrdersAndOrderDetail" parameterType="OrdersExt" resultMap="ordersAndOrderDetailMap">
+        select
+        o.id ,
+        o.user_id,
+        u.username,
+        u.address,
+        od.id detailId,
+        od.items_id
+        from orders o,
+        user u,
+        orderdetail od
+        where o.user_id = u.id
+        and   o.id = od.orders_id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+
+    <resultMap id="lazyLoadRestMap" type="OrdersExt">
+        <id column="id" property="userId"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+
+        <association property="user" select="com.hand.sysmanager.dao.IUserDao.findUserById" column="userId"/>
+    </resultMap>
+
+    <select id="findOrderInfoByLazyLoad" resultMap="lazyLoadRestMap" parameterType="long">
+        select  * from orders where id = #{id}
+    </select>
+
+</mapper>

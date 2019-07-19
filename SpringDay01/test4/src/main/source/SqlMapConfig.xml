@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <!--全局参数设置-->
+
+    <settings>
+
+        <!--延迟加载总开关-->
+
+        <setting name="lazyLoadingEnabled" value="true"/>
+
+        <!--侵入式延迟加载开关-->
+
+        <!--3.4.1版本之前默认是true，之后默认是false-->
+
+        <setting name="aggressiveLazyLoading" value="true"/>
+
+    </settings>
+    <!-- 类型别名 -->
+    <typeAliases>
+        <package name="domain"/>
+        <package name="common"/>
+    </typeAliases>
+    <!--环境配置，连接的数据库，这里使用的是MySQL-->
+    <environments default="development">
+        <environment id="development">
+            <!--指定事务管理的类型，这里简单使用Java的JDBC的提交和回滚设置-->
+            <transactionManager type="JDBC"></transactionManager>
+            <!--dataSource 指连接源配置，POOLED是JDBC连接对象的数据源连接池的实现-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/practice?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false"/>
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <!--这是告诉Mybatis区哪找持久化类的映射文件，对于在src下的文件直接写文件名，
+            如果在某包下，则要写明路径,如：com/mybatistest/config/User.xml-->
+        <package name="mapper"/>
+    </mappers>
+
+
+    <!--<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <property name="driverClassName" value="${db.driver}"/>
+        <property name="jdbcUrl" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>-->
+
+</configuration>

@@ -6,18 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springDay01" />
+        <module name="test4" />
         <module name="test3" />
         <module name="test2" />
         <module name="test1" />
+        <module name="SM" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="SpringDay01" target="8" />
-      <module name="springDay01" target="8" />
+      <module name="SM" target="1.7" />
+      <module name="SpringDay01" target="1.5" />
       <module name="test1" target="8" />
-      <module name="test2" target="8" />
-      <module name="test3" target="8" />
+      <module name="test2" target="1.7" />
+      <module name="test3" target="1.5" />
+      <module name="test4" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

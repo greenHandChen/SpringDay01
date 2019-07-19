@@ -2,10 +2,12 @@ package com.hand;
 
 import com.hand.bean.OrdersExt;
 import com.hand.bean.OrdersInfo;
+import com.hand.bean.User;
 import com.hand.dao.OrdersExtDao;
 import com.hand.dao.impl.OrdersExtDaoImpl;
 import com.hand.dao.impl.OrdersInfoDaoImpl;
 import com.hand.dao.impl.UserDaoImpl;
+import com.hand.dao.impl.UserDaoImplTwo;
 import com.hand.mapper.UserMapper;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -75,6 +77,16 @@ public class AppTest
         userDaoImpl.getUserById(10);
         userDaoImpl.getUserById(10);
         userDaoImpl.getUserById(10);
+    }
+
+    /**
+     * spring+mybatis:Dao开发方式
+     */
+    @Test
+    public void testDaoReflect(){
+        UserDaoImplTwo userDaoImplTwo = ctx.getBean("userDaoImplTwo", UserDaoImplTwo.class);
+        User userById = userDaoImplTwo.getUserById(1);
+        System.out.println(userById);
     }
 
 }

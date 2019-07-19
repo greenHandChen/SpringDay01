@@ -18,5 +18,6 @@
         <mapper resource="mapper/OrdersExtMapper.xml"/>
         <mapper resource="mapper/OrdersInfoMapper.xml"/>
         <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mapper/UserTwoMapper.xml"/>
     </mappers>
 </configuration>

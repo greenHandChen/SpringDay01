@@ -25,4 +25,8 @@
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 
+    <bean id="userDaoImplTwo" class="com.hand.dao.impl.UserDaoImplTwo">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
 </beans>

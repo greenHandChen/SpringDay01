@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ljx.mybatisdemo.mapper.OrdersMapper">
+    <!-- lazyLoadingRstMap -->
+    <resultMap type="ordersExt" id="lazyLoadingRstMap">
+        <!-- 订单信息 -->
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="number" property="number" />
+        <!-- 用户信息（一对一） -->
+        <!-- select：指定关联查询的查询statement（即查询用户的statement的id），然后将查询结果，封装到property属性指定的变量中 -->
+        <!-- column：通过column指定的列所查询出的结果，作为select指的statement的入参 -->
+        <!-- 注意：如果select指定的statement，入参需要多个值，需要在column中{col1=prop1,col2=prop2} -->
+        <association property="user"
+                     select="com.ljx.mybatisdemo.mapper.UserMapper.findUserById" column="user_id"></association>
+    </resultMap>
+
+    <!-- 延迟加载 -->
+    <select id="findOrderAndUserLazyLoading" resultMap="lazyLoadingRstMap">
+		SELECT * FROM
+		orders
+	</select>
+</mapper>
+

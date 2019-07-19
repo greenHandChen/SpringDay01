@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ljx.mybatisdemo.mapper.OrdersMapper">
+
+    <!-- 一对一映射之resultType -->
+    <select id="findOrdersAndUser" resultType="com.ljx.mybatisdemo.po.OrdersExt">
+		SELECT
+		orders.`id`,
+		orders.`user_id`,
+		orders.`number`,
+		user.`username`,
+		user.`sex`
+		FROM
+		orders,
+		USER
+		WHERE orders.`user_id` = user.`id`
+	</select>
+
+    <!-- OrdersAndUserRstMap -->
+    <resultMap type="com.ljx.mybatisdemo.po.OrdersExt" id="OrdersAndUserRstMap">
+        <!-- 订单信息 -->
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="number" property="number" />
+
+        <!-- 用户信息（一对一） -->
+        <!-- association：一对一关联映射 -->
+        <!-- property：关联信息查询的结果将要映射的扩展类中的对象属性名称 -->
+        <!-- id标签：建议在关联查询时必须写上，不写不会报错，但是会影响性能 -->
+        <association property="user" javaType="com.ljx.mybatisdemo.po.User">
+            <id column="user_id" property="id" />
+            <result column="username" property="username" />
+            <result column="sex" property="sex" />
+        </association>
+    </resultMap>
+
+    <!-- 一对一映射之resultMap -->
+    <select id="findOrdersAndUserRstMap" resultMap="OrdersAndUserRstMap">
+		SELECT
+		orders.`id`,
+		orders.`user_id`,
+		orders.`number`,
+		user.`username`,
+		user.`sex`
+		FROM
+		orders,
+		USER
+		WHERE orders.`user_id` = user.`id`
+	</select>
+
+</mapper>
+

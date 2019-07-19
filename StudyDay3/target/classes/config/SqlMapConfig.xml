@@ -35,7 +35,8 @@
     <!-- 配置映射文件的位置 -->
     <mappers>
         <mapper resource="config/User.xml"></mapper>
-        <mapper resource="config/userMapper.xml"></mapper>
+        <package name="com.hand.mybatis.mapper"></package>
+
     </mappers>
 
 </configuration>

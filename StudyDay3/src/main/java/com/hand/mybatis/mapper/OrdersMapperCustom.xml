@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.hand.mybatis.mapper.OrdersMapperCustom">
+    <!--查询订单关联查询用户-->
+    <select id="findOrdersUser" resultType="com.hand.mybatis.po.OrdersCustom">//zhelicuole
+        select
+        orders.*
+        user.username,
+        user.sex
+        user.address
+        from orders,user
+        where orders.userid=user.id
+    </select>
+</mapper>

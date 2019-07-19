@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tlq.dao.UserMapper">
+
+    <cache/>
+
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="User" useCache="false">
+        select * from user where id = #{id}
+    </select>
+
+    <select id="findByUserUserName" parameterType="java.lang.String" resultType="User">
+        select  * from user where username like '${value}%'
+    </select>
+
+    <insert id="addUser" parameterType="User">
+        insert into user
+          (username,birthday,sex,address)
+          values (#{username},#{birthday},#{address},#{sex})
+    </insert>
+    <!--
+        selectKey:用于查询主键,标签体里写查询主键的SQL,主键查询SQL根据数据库的不同,写法也是不同
+        keyProperty:指的是我们需要映射的字段名称
+        resultType:输出参数类型
+        order:ORDER是用来指定查询主键的SQL以及插入的SQL的相对顺序,这里相对顺序指的是针对INSERT语句的先后
+        LAST_INSERT_ID:必须配合Insert语句进行搭配使用
+    -->
+    <insert id="addUserGetId" parameterType="User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user
+        (username,sex,birthday,address)
+        values (#{username},#{sex},#{birthday},#{address})
+    </insert>
+
+    <insert id="addUserGetUUID" parameterType="User">
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select UUID()
+        </selectKey>
+        insert into user
+        (id,username,sex,birthday,address)
+        values (#{id},#{username},#{sex},#{birthday},#{address})
+    </insert>
+
+    <select id="findUserByUser" parameterType="UserQueryVO" resultType="User">
+        select * from user u where u.address like '${user.address}%'and u.username like  '${user.username}%'
+    </select>
+
+    <select id="findUserByMap" parameterType="map" resultType="User">
+        select * from user u where u.username like  concat('%',#{username},'%')
+    </select>
+
+    <select id="countUser" parameterType="int" resultType="int">
+        select count(*) from user u where u.sex = #{sex}
+    </select>
+
+    <select id="findUserNameAndAddressById" parameterType="int" resultType="User">
+        select u.username , u.address from user u where u.id = #{id}
+    </select>
+
+    <resultMap id="userReasultMap" type="User">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"></result>
+        <result property="address" column="address"></result>
+    </resultMap>
+
+    <select id="testResultMap" parameterType="int" resultMap="userReasultMap">
+        select id , username , address from user where id = #{id}
+    </select>
+
+    <select id="testActiveSql" parameterType="User" resultType="User">
+        select * from user
+        <where>
+            <if test='id != null'>
+                and id = #{id}
+            </if>
+            <if test='username != null and username != "  "'>
+                and username like concat('%',#{username,jdbcType=VARCHAR},'%')
+            </if>
+        </where>
+    </select>
+
+    <update id="updateSex" parameterType="User">
+        UPDATE user SET sex = #{sex} where id = #{id}
+    </update>
+
+
+    <resultMap id="userAndItemResultMap" type="user">
+        <id column="id" property="id"></id>
+        <result column="sex" property="sex"></result>
+        <result column="address" property="address"></result>
+        <collection property="orderList" ofType="order">
+            <id column="id" property="id"></id>
+            <result column="number" property="number"></result>
+            <result column="createtime" property="createtime"></result>
+            <result column="note" property="note"></result>
+            <collection property="orderDetailList" ofType="orderDetail">
+                <collection property="itemList" ofType="item">
+                    <id column="id" property="id"></id>
+                    <result column="name" property="name"></result>
+                    <result column="price" property="price"></result>
+                    <result column="detail" property="detail"></result>
+                    <result column="createtime" property="createTime"></result>
+                </collection>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <select id="collection" resultMap="userAndItemResultMap">
+        SELECT
+            u.id,
+            u.username,
+            u.address,
+            o.id,
+            o.number,
+            o.createtime,
+            o.note,
+            od.id,
+            od.items_id,
+            od.items_num,
+            it.name,
+            it.price,
+            it.detail
+        FROM
+            user u,
+            orders o,
+            orderdetail od,
+            items it
+        WHERE
+            o.user_id = u.id
+        AND
+            o.id = od.orders_id
+        AND
+            od.items_id = it.id;
+    </select>
+</mapper>

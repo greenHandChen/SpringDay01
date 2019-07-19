@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tlq.dao.OrderMapper">
+    <sql id="select_ordes">
+        o.id,
+        o.number,
+        o.createTime,
+        o.note,
+    </sql>
+    <sql id="select_users">
+        u.username,
+        u.address
+    </sql>
+    <select id="findOrderByid" parameterType="java.lang.Integer" resultType="OrdersExt">
+        select
+        <include refid="select_ordes"></include>
+        <include refid="select_users"></include>
+        from orders o , user u
+        where
+        o.user_id = u.id
+        and
+        o.id = #{id}
+    </select>
+
+
+    <resultMap id="OrderMap" type="order">
+        <id column="id" property="id"></id>
+        <result column="user_id" property="userId"></result>
+        <result column="number" property="number"></result>
+        <result column="note" property="note"></result>
+        <association property="user" javaType="User">
+            <id column="user_id" property="id"></id>
+            <result column="username" property="username"></result>
+            <result column="address" property="address"></result>
+        </association>
+    </resultMap>
+    
+    <resultMap id="resultByCollection" type="order" extends="OrderMap">
+        <collection property="orderDetails" ofType="orderDetail">
+            <id column="id" property="id"></id>
+            <result column="orders_id" property="ordersId"></result>
+            <result column="items_id" property="itemsId"></result>
+            <result column="items_num" property="itemsNum"></result>
+        </collection>
+    </resultMap>
+
+    <select id="findOrderByMap" parameterType="java.lang.Integer" resultMap="OrderMap">
+        select
+        <include refid="select_ordes"></include>
+        <include refid="select_users"></include>
+        from orders o , user u
+        where
+        o.user_id = u.id
+        and
+        o.id = #{id}
+    </select>
+
+
+    <select id="findOrderByCollection" parameterType="java.lang.Integer" resultMap="resultByCollection">
+        select
+        <include refid="select_ordes"></include>
+        <include refid="select_users"></include>
+        from orders o , user u
+        where
+        o.user_id = u.id
+        and
+        o.id = #{id}
+    </select>
+</mapper>

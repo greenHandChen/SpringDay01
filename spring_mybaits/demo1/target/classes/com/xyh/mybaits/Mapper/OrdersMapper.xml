@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xyh.mybaits.Mapper.OrdersMapper">
+
+    <!--    一对一映射，resultType-->
+    <select id="findOrdersAndUser" resultType="com.xyh.mybaits.Entity.OrdersExt">
+        select orders.id,orders.user_id,number,user.username,user.sex
+            from orders,user
+                where orders.user_id=user.id
+    </select>
+
+    <!--    一对一映射，resultMap-->
+    <resultMap id="OrdersAndUserRstMap" type="com.xyh.mybaits.Entity.OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="number" property="number"/>
+
+        <association property="user" javaType="com.xyh.mybaits.Entity.User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="sex" property="sex"/>
+        </association>
+    </resultMap>
+    <select id="findOrdersAndUserRstMap" resultMap="OrdersAndUserRstMap">
+        select orders.id,orders.user_id,number,user.username,user.sex
+            from orders,user
+                where orders.user_id=user.id
+    </select>
+
+    <!--    一对多映射-->
+    <!--    resultMap extends可以继承一个结果集，只能继承type类型一样的-->
+    <resultMap id="OrdersAndDetailRstMap" type="com.xyh.mybaits.Entity.OrdersExt" extends="OrdersAndUserRstMap">
+        <collection property="orderDetails" ofType="com.xyh.mybaits.Entity.OrderDetail">
+            <id column="detail_id" property="id"/>
+            <result column="items_id" property="items_id"/>
+            <result column="items_num" property="items_num"/>
+        </collection>
+    </resultMap>
+    <select id="findOrdersAndDetailRstMap" resultMap="OrdersAndDetailRstMap">
+    SELECT orders.id,orders.user_id,number,`user`.username,`user`.sex,
+        orderdetail.id 'detail_id',orderdetail.items_id,orderdetail.items_num
+            FROM orders,`user`,orderdetail
+                WHERE orders.user_id = `user`.id and orders.id=orderdetail.orders_id
+    </select>
+
+    <!--    多对多映射-->
+    <resultMap id="UserAndItemsRstMap" type="user">
+        <id column="user_id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="sex" property="sex"/>
+
+        <collection property="orders" ofType="com.xyh.mybaits.Entity.Orders">
+            <id column="id" property="id"/>
+            <result column="user_id" property="user_id"/>
+            <result column="number" property="number"/>
+
+            <collection property="orderDetails" ofType="com.xyh.mybaits.Entity.OrderDetail">
+                <id column="detail_id" property="id"/>
+                <result column="items_id" property="items_id"/>
+                <result column="items_num" property="items_num"/>
+                <association property="items" javaType="com.xyh.mybaits.Entity.Items">
+                    <id column="items_id" property="id"/>
+                    <result column="price" property="price"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+    <select id="findUserAndItemsRstMap" resultMap="UserAndItemsRstMap">
+     SELECT orders.id,orders.user_id,number,`user`.username,`user`.sex,
+        orderdetail.id 'detail_id',orderdetail.items_id,orderdetail.items_num,
+				orderdetail.items_id,items.price
+            FROM orders,`user`,orderdetail,items
+                WHERE orders.user_id = `user`.id and orders.id=orderdetail.orders_id
+											and orderdetail.items_id=items.id
+    </select>
+
+    <!--    延迟加载-->
+    <resultMap id="lazyLoadingRstMap" type="com.xyh.mybaits.Entity.OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="number" property="number"/>
+
+        <!--  select需要多个参数,则column写成{col1=prop1,col2=prop2}-->
+        <association property="user" select="com.xyh.mybaits.Mapper.UserMapper.findUserById"
+                     column="user_id">
+
+        </association>
+    </resultMap>
+    <select id="findOrderAndUserLazyLoading" resultMap="lazyLoadingRstMap">
+        select * from orders
+    </select>
+</mapper>
+

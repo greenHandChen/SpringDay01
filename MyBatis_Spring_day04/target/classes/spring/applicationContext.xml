@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--  加载java配置文件  -->
+    <context:property-placeholder location="classpath:db.properties"/>
+
+    <!--  创建数据源  -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${db.driver}"/>
+        <property name="url" value="${db.url}" />
+        <property name="username" value="${db.username}" />
+        <property name="password" value="${db.password}" />
+        <property name="maxActive" value="10" />
+        <property name="maxIdle"    value="5" />
+    </bean>
+
+    <!--  sqlSessionFactory  -->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactory">
+        <!--    指定mybatis的全局配置文件    -->
+        <property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml" />
+        <!--    数据源    -->
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <!--  依赖注入sqlSession  -->
+<!--    <bean class="com.ll.ms.dao.impl.UserDaoImpl" id="userDao">-->
+<!--        <property name="sqlSessionFactory" ref="sqlSessionFactory" />-->
+<!--    </bean>-->
+
+    <!--  配置UserMapper代理类  -->
+<!--    <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">-->
+<!--        &lt;!&ndash;   MapperInterface 设置代理类的接口    &ndash;&gt;-->
+<!--        <property name="mapperInterface" value="com.ll.ms.mapper.UserMapper" />-->
+<!--        &lt;!&ndash;   以来注入SqlSessionFactoryBean     &ndash;&gt;-->
+<!--        <property name="sqlSessionFactory" ref="sqlSessionFactory" />-->
+<!--     </bean>-->
+
+    <!--  批量配置mapper代理类,默认bean的Id为类名,首字母小写 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--    配置要扫描的包    -->
+        <property name="basePackage" value="com.ll.ms.mapper"/>
+        <!--    默认不再配置SqlSessionFactory(只有一个SqlSessionFactory时),  单独配置也可以  -->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+
+
+
+</beans>

@@ -8,20 +8,20 @@ import java.sql.SQLException;
 public class User implements RowMapper<User> {
     private Integer id;//编号
     private String name;//姓名
-    private String password;//密码
+    private int age;//密码
 
     public User() {
     }
 
-    public User(String name, String password) {
+    public User(String name, int age) {
         this.name = name;
-        this.password = password;
+        this.age = age;
     }
 
-    public User(Integer id, String name, String password) {
+    public User(Integer id, String name, int age) {
         this.id = id;
         this.name = name;
-        this.password = password;
+        this.age = age;
     }
 
     public Integer getId() {
@@ -40,12 +40,12 @@ public class User implements RowMapper<User> {
         this.name = name;
     }
 
-    public String getPassword() {
-        return password;
+    public int getAge() {
+        return age;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassword(int age) {
+        this.age = age;
     }
 
     @Override
@@ -53,7 +53,7 @@ public class User implements RowMapper<User> {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
+                ", age='" + age + '\'' +
                 '}';
     }
 
@@ -62,7 +62,7 @@ public class User implements RowMapper<User> {
         User user = new User();
         user.setId(resultSet.getInt("id"));
         user.setName(resultSet.getString("username"));
-        user.setPassword(resultSet.getString("password"));
+        user.setPassword(resultSet.getInt("age"));
         return user;
     }
 

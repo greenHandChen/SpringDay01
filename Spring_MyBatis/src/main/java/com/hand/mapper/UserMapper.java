@@ -2,7 +2,8 @@ package com.hand.mapper;
 
 import com.hand.entity.QueryUser;
 import com.hand.entity.User;
-import com.hand.entity.UsersOrders;
+import com.hand.entity.UserExit;
+import com.hand.entity.UserOrders;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
@@ -10,6 +11,7 @@ import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 @Repository("userMapper")
 public interface UserMapper {
@@ -22,6 +24,11 @@ public interface UserMapper {
     @Select("select id,username,birthday,sex,address from user where id=#{id}")
     public User selectUserById(int id);
 
+    /**
+     * 更新用户
+     * @param user
+     * @return
+     */
     @Update("update user set username=#{username},birthday=#{birthday},sex=#{sex},address=#{address} where id=#{id}")
     public int updateUser(User user);
 
@@ -81,6 +88,14 @@ public interface UserMapper {
      * @param id
      * @return
      */
-    public List<UsersOrders> selectUserAndOrders(int id);
+    public List<UserExit> selectUserAndOrders(int id);
+
+    /**
+     * 查询所有用户信息，并将信息放入map中--失败
+     * @return
+     */
+    @Select("select id,username,birthday,sex,address from user")
+    public List<Map<Integer,User>> getAllUserMap();
+
 
 }

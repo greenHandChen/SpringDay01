@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 引入数据库配置文件-->
+    <properties resource="config/db.properties" />
+    <!--定义别名-->
+    <typeAliases>
+        <!-- 定义单个别名 -->
+        <!--<typeAlias type="com.hand.entity.User" alias="user"/>-->
+        <!-- 批量定义别名，类名就是别名-->
+        <package name="com.hand.entity"/>
+    </typeAliases>
+    <!--配置环境-->
+    <environments default="mysqlEm">
+        <environment id="mysqlEm">
+            <transactionManager type="JDBC" />
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.user}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 引入mapper文件-->
+    <mappers>
+        <!--<mapper resource="com/hand/mapper/UserMapper.xml" />-->
+        <!--<mapper class="com.hand.mapper.UserMapper" />-->
+        <package name="com.hand.mapper"/>
+    </mappers>
+</configuration>

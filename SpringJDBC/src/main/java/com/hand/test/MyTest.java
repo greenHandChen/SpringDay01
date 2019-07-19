@@ -2,7 +2,7 @@ package com.hand.test;
 
 import com.hand.bean.User;
 import com.hand.service.IUserService;
-import com.hand.service.UserServiceImpl;
+import com.hand.service.impl.UserServiceImpl;
 import com.zaxxer.hikari.HikariDataSource;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -14,7 +14,7 @@ public class MyTest {
 
     public MyTest() {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        userService = context.getBean("userService", UserServiceImpl.class);
+        userService = context.getBean(UserServiceImpl.class);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class MyTest {
 
     @Test
     public void test02() {
-        User user = new User("fandelu", "1234");
+        User user = new User("fandelu", 120);
         userService.addUser(user);
     }
 

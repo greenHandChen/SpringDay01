@@ -67,7 +67,7 @@
             and username like '%${username}%'
         </if>
     </select>
-    <resultMap id="usersOrders" type="usersorders">
+    <resultMap id="userOrders" type="usersorders">
 
         <id column="user_id" property="user_id"/>
         <result column="username" property="username"/>
@@ -75,7 +75,7 @@
         <result column="sex" property="sex"/>
         <result column="address" property="address"/>
 
-        <collection property="ordersList" ofType="orders">
+        <collection property="ordersset" ofType="orders">
             <id column="oid" property="id"/>
             <result column="user_id" property="user_id"/>
             <result column="number" property="number"/>
@@ -83,7 +83,7 @@
             <result column="note" property="note"/>
         </collection>
     </resultMap>
-    <select id="selectUserAndOrders" parameterType="_int" resultMap="usersOrders">
+    <select id="selectUserAndOrders" parameterType="_int" resultMap="userOrders">
         select usr.id as user_id,usr.username,usr.birthday,usr.sex,usr.address,ord.id as oid,ord.number,ord.createtime,ord.note from user usr,orders ord
         where usr.id=#{xxx} and usr.id=ord.user_id
     </select>

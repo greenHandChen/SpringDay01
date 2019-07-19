@@ -6,7 +6,7 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- set方法注入 -->
-    <bean name="myStudent" class="com.Student" init-method="init" destroy-method="destroy" autowire="byType">
+    <bean name="myStudent" class="com.hand.bean.Student" init-method="init" destroy-method="destroy" autowire="byType">
         <property name="stu_id" value="01"/>
         <property name="stu_name" value="小李"/>
         <property name="myTeacher" ref="myTeacher"/>
@@ -21,10 +21,17 @@
         </property>
     </bean>
 
-    <bean name="myTeacher" class="com.Teacher">
+    <bean name="myTeacher" class="com.hand.bean.Teacher">
         <property name="t_id" value="01"/>
         <property name="t_name" value="李老师"/>
     </bean>
+
+    <!--动态工厂bean-->
+    <bean name="factory" class="com.hand.bean.BeanFactory"/>
+    <bean id="student1" factory-bean="factory" factory-method="getStudent"/>
+
+    <!-- 静态工厂bean -->
+    <bean id="student2" class="com.hand.bean.BeanFactory" factory-method="getStudent2"/>
 
     <!--<bean name="myStudent" class="com.Student" init-method="init" destroy-method="destroy" autowire="byType">
         <constructor-arg name="stu_id" value="01"/>

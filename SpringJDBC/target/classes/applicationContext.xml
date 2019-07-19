@@ -6,7 +6,11 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <!-- bean definitions here -->
 
+    <!-- 引入数据库配置文件 -->
     <context:property-placeholder location="jdbc.properties"/>
+
+    <!-- 引入注解驱动 -->
+    <context:component-scan base-package="com.hand" />
 
     <!--<bean id="hikaricpDataSource" class="com.zaxxer.hikari.HikariDataSource">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
@@ -31,9 +35,9 @@
         <property name="dataSource" ref="hikaricpDataSource"/>
     </bean>
 
-    <bean id="userService" class="com.hand.service.impl.UserServiceImpl">
+    <!--<bean id="userService" class="com.hand.service.impl.UserServiceImpl">
         <property name="uDao" ref="userDao"/>
-    </bean>
+    </bean>-->
 
 
 </beans>

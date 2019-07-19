@@ -1,4 +1,4 @@
-package com.hand.dao;
+package com.hand.dao.impl;
 
 import com.hand.bean.User;
 import com.hand.dao.IUSerDao;
@@ -13,7 +13,7 @@ import java.util.List;
 public class UserDaoImpl extends JdbcDaoSupport implements IUSerDao {
     public int insertUser(User user) {
         String sql ="insert into sys_user(username,password) values(?,?)";
-        return this.getJdbcTemplate().update(sql,user.getName(),user.getPassword());
+        return this.getJdbcTemplate().update(sql,user.getName(),user.getAge());
     }
 
     public int deleteUser(Integer id) {

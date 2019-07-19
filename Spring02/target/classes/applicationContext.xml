@@ -26,12 +26,19 @@
         <property name="t_name" value="李老师"/>
     </bean>
 
-    <!--<bean name="myStudent" class="com.hand.bean.Student" init-method="init" destroy-method="destroy" autowire="byType">
+    <!--动态工厂bean-->
+    <bean name="factory" class="com.hand.bean.BeanFactory"/>
+    <bean id="student1" factory-bean="factory" factory-method="getStudent"/>
+
+    <!-- 静态工厂bean -->
+    <bean id="student2" class="com.hand.bean.BeanFactory" factory-method="getStudent2"/>
+
+    <!--<bean name="myStudent" class="com.Student" init-method="init" destroy-method="destroy" autowire="byType">
         <constructor-arg name="stu_id" value="01"/>
         <constructor-arg name="stu_name" value="小李"/>
         <constructor-arg name="myTeacher" ref="myTeacher"/>
     </bean>
-    <bean name="myTeacher" class="com.hand.bean.Teacher">
+    <bean name="myTeacher" class="com.Teacher">
         <constructor-arg name="t_id" value="01"/>
         <constructor-arg name="t_name" value="李老师"/>
     </bean>-->

@@ -2,7 +2,7 @@ package com.hand.entity;
 
 import java.util.Date;
 
-public class OrdersUsers {
+public class OrdersUser {
     private Integer id;
     private Integer user_id;
     private int number;
@@ -10,10 +10,10 @@ public class OrdersUsers {
     private String note;
     private User user;
 
-    public OrdersUsers() {
+    public OrdersUser() {
     }
 
-    public OrdersUsers(Integer id, Integer user_id, int number, Date createtime, String note, User user) {
+    public OrdersUser(Integer id, Integer user_id, int number, Date createtime, String note, User user) {
         this.id = id;
         this.user_id = user_id;
         this.number = number;
@@ -72,7 +72,7 @@ public class OrdersUsers {
 
     @Override
     public String toString() {
-        return "OrdersUsers{" +
+        return "OrdersUser{" +
                 "id=" + id +
                 ", user_id=" + user_id +
                 ", number=" + number +

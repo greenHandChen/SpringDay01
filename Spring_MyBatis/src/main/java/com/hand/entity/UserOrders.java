@@ -3,24 +3,24 @@ package com.hand.entity;
 import java.util.Date;
 import java.util.Set;
 
-public class UsersOrders {
+public class UserOrders {
     private Integer user_id;
     private String username;
     private Date birthday;
     private Character sex;
     private String address;
-    private Set<Orders> ordersList;
+    private Set<Orders> ordersset;
 
-    public UsersOrders() {
+    public UserOrders() {
     }
 
-    public UsersOrders(Integer user_id, String username, Date birthday, Character sex, String address, Set<Orders> ordersList) {
+    public UserOrders(Integer user_id, String username, Date birthday, Character sex, String address, Set<Orders> ordersset) {
         this.user_id = user_id;
         this.username = username;
         this.birthday = birthday;
         this.sex = sex;
         this.address = address;
-        this.ordersList = ordersList;
+        this.ordersset = ordersset;
     }
 
     public Integer getUser_id() {
@@ -63,23 +63,23 @@ public class UsersOrders {
         this.address = address;
     }
 
-    public Set<Orders> getOrdersList() {
-        return ordersList;
+    public Set<Orders> getOrdersset() {
+        return ordersset;
     }
 
-    public void setOrdersList(Set<Orders> ordersList) {
-        this.ordersList = ordersList;
+    public void setOrdersset(Set<Orders> ordersset) {
+        this.ordersset = ordersset;
     }
 
     @Override
     public String toString() {
-        return "UsersOrders{" +
+        return "UserOrders{" +
                 "user_id=" + user_id +
                 ", username='" + username + '\'' +
                 ", birthday=" + birthday +
                 ", sex=" + sex +
                 ", address='" + address + '\'' +
-                ", ordersList=" + ordersList +
+                ", ordersset=" + ordersset +
                 '}';
     }
 }

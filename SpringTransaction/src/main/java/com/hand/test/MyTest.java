@@ -19,11 +19,13 @@ public class MyTest {
         System.out.println("IAccountService");
     }
 
+    //未添加事务管理
     @Test
     public void test01(){
         accountService.transfer("mybatis","hibernate",100d);
     }
 
+    //添加基础事务管理
     @Test
     public void test02(){
         accountService.transfer2("mybatis","hibernate",100d);

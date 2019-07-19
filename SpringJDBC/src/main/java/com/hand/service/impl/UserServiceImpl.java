@@ -1,14 +1,19 @@
-package com.hand.service;
+package com.hand.service.impl;
 
 import com.hand.bean.User;
 import com.hand.dao.IUSerDao;
 import com.hand.service.IUserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service("userService")
 public class UserServiceImpl implements IUserService {
-    
+
+    @Autowired
     private IUSerDao userDao;
+
     public void setuDao(IUSerDao userDao) {
         this.userDao = userDao;
     }

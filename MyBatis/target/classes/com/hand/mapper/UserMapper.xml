@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 使用mybatis代理时，namespace填入接口的全名-->
+<mapper namespace="com.hand.mapper.UserMapper">
+    <sql id="selectAll">
+        select id,username,birthday,sex,address from user
+    </sql>
+
+    <insert id="insertUser" parameterType="user">
+        <!--<selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+            select uuid()
+        </selectKey>-->
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+        <selectKey resultType="_int" keyProperty="id" order="AFTER">
+            select @@identity
+        </selectKey>
+    </insert>
+
+    <select id="selectUserById" parameterType="_int" resultType="user">
+        <include refid="selectAll"/>
+        where id=#{id}
+    </select>
+
+    <!--返回值类型属性使用别名-->
+    <select id="selectAllUsesr" resultType="user">
+        <include refid="selectAll"/>
+    </select>
+
+    <delete id="deleteUserById" parameterType="_int">
+        delete from user where id=#{id}
+    </delete>
+    <select id="selectUserToMapById" resultMap="testUserMap" parameterType="_int">
+        <include refid="selectAll"/>
+        where id=#{id};
+    </select>
+    <resultMap id="testUserMap" type="User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="birthday" property="birthday"/>
+        <result column="sex" property="sex"/>
+        <result column="address" property="address"/>
+    </resultMap>
+
+    <select id="selectUserByUserSex" parameterType="queryuser" resultType="user">
+        <include refid="selectAll"/>
+        where sex=#{user.sex}
+    </select>
+
+    <select id="selectUserUncheck" parameterType="User" resultType="User">
+        <include refid="selectAll"/>
+        where 1=1
+        <!--<where>
+            <if test="id!=null">
+                and id=#{id}
+            </if>
+            <if test="username!=null and username!=''">
+                and username like concat(concat('%',#{username}),'%')
+            </if>
+        </where>-->
+        <if test="id!=null">
+            and id=#{id}
+        </if>
+        <if test="username!=null and username!=''">
+            <!--and username like concat(concat('%',#{username}),'%')-->
+            and username like '%${username}%'
+        </if>
+    </select>
+    <resultMap id="usersOrders" type="usersorders">
+
+        <id column="user_id" property="user_id"/>
+        <result column="username" property="username"/>
+        <result column="birthday" property="birthday"/>
+        <result column="sex" property="sex"/>
+        <result column="address" property="address"/>
+
+        <collection property="ordersList" ofType="orders">
+            <id column="oid" property="id"/>
+            <result column="user_id" property="user_id"/>
+            <result column="number" property="number"/>
+            <result column="createtime" property="createtime"/>
+            <result column="note" property="note"/>
+        </collection>
+    </resultMap>
+    <select id="selectUserAndOrders" parameterType="_int" resultMap="usersOrders">
+        select usr.id as user_id,usr.username,usr.birthday,usr.sex,usr.address,ord.id as oid,ord.number,ord.createtime,ord.note from user usr,orders ord
+        where usr.id=#{xxx} and usr.id=ord.user_id
+    </select>
+</mapper>

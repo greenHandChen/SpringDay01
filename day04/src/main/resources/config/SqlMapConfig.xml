@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+    <typeAliases>
+        <!--批量别名定义，别名为类名，不区分大小写-->
+        <package name="com.hand.wqw.domain"/>
+    </typeAliases>
+
+<mappers>
+    <mapper resource="mapper/OrderMapper.xml"/>
+    <mapper resource="mapper/OrderMapper1.xml"/>
+    <mapper resource="mapper/UserMapper.xml"/>
+    <mapper resource="mapper/UserMapper1.xml"/>
+</mappers>
+
+</configuration>

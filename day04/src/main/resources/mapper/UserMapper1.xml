@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="test">
+
+    <resultMap id="testResultMap" type="com.hand.wqw.domain.User">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="address" column="address" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <resultMap id="userOrderResultMap" type="com.hand.wqw.vo.UserOrderVo">
+        <id column="id" javaType="integer"/>
+        <result property="username" column="username" javaType="string"/>
+        <result property="birthday" column="birthday" javaType="java.sql.Timestamp"/>
+        <result property="sex" column="sex" javaType="integer"/>
+        <result property="address" column="address" javaType="string"/>
+        <collection property="orders" ofType="com.hand.wqw.domain.Orders">
+            <id property="id" column="oid" javaType="integer"/>
+            <result property="userId" column="userId" javaType="integer"/>
+            <result property="number" column="number" javaType="string"/>
+            <result property="createtime" column="createtime" javaType="java.sql.Timestamp"/>
+            <result property="note" column="note" javaType="string"/>
+        </collection>
+    </resultMap>
+
+
+    <select id="findUserOrders" parameterType="integer" resultMap="userOrderResultMap">
+        SELECT
+        `user`.id,
+        `user`.username,
+        `user`.birthday,
+        `user`.sex,
+        `user`.address,
+        orders.id AS oid,
+        orders.user_id,
+        orders.number,
+        orders.createtime,
+        orders.note
+        FROM
+        `user`
+        INNER JOIN orders ON orders.user_id = `user`.id
+        where `user`.id = #{id}
+    </select>
+
+   <select id="selectUserById" parameterType="int" resultType="com.hand.wqw.domain.User">
+       select * from user where id = #{id}
+   </select>
+
+    <select id="selectUsersLikeUserName" parameterType="string" resultType="com.hand.wqw.domain.User">
+       select * from user where username like ${value}
+   </select>
+
+    <select id="findByQueryVo" parameterType="com.hand.wqw.vo.UserQueryVo" resultType="com.hand.wqw.domain.User">
+       select * from user where address like #{user.address} and sex = #{user.sex}
+   </select>
+
+    <select id="findUsernameAddressById" parameterType="int" resultMap="testResultMap">
+       select username,address from user where id = #{id}
+   </select>
+
+    <select id="findByMap" parameterType="map" resultType="com.hand.wqw.domain.User">
+       select * from user where username like concat(concat('%',#{username}),'%')
+   </select>
+
+    <insert id="insertUser" parameterType="com.hand.wqw.domain.User">
+        <selectKey keyColumn="id" keyProperty="id" resultType="int" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+</mapper>

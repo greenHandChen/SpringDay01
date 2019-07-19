@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.wqw.dao.OrdersDao">
+
+    <resultMap id="orderExtsResultMap" type="com.hand.wqw.vo.OrderExt">
+        <id property="id" column="oid" javaType="integer"/>
+        <result property="userId" column="user_id" javaType="integer"/>
+        <result property="number" column="number" javaType="string"/>
+        <result property="createtime" column="createtime" javaType="java.sql.Timestamp"/>
+        <result property="note" column="note" javaType="string"/>
+        <result property="username" column="username" javaType="string"/>
+        <result property="address" column="address" javaType="string"/>
+        <association property="user" javaType="com.hand.wqw.domain.User">
+            <id property="id" column="userId" javaType="integer"/>
+            <result property="address" column="address" javaType="string"/>
+            <result property="username" column="username" javaType="string"/>
+            <result property="birthday" column="birthday" javaType="java.sql.Timestamp"/>
+            <result property="sex" column="sex" javaType="integer"/>
+        </association>
+    </resultMap>
+
+    <resultMap id="lazyLoadResultMap" type="com.hand.wqw.vo.OrderExt">
+        <id property="id" column="id" javaType="integer"/>
+        <result property="userId" column="user_id" javaType="integer"/>
+        <result property="number" column="number" javaType="string"/>
+        <result property="createtime" column="createtime" javaType="java.sql.Timestamp"/>
+        <result property="note" column="note" javaType="string"/>
+        <association property="user" select="com.hand.wqw.dao.UserDao.selectUserById" column="user_id"/>
+    </resultMap>
+
+    <select id="findOrderExtsLazyLoad" parameterType="int" resultMap="lazyLoadResultMap">
+        select * from orders where id = #{id}
+    </select>
+    
+   <select id="findOrderExts" parameterType="com.hand.wqw.vo.OrderExt" resultMap="orderExtsResultMap">
+       SELECT
+        orders.id oid,
+        orders.user_id,
+        orders.number,
+        orders.createtime,
+        orders.note,
+        `user`.username,
+        `user`.address
+        FROM
+        orders,`user` where orders.user_id = `user`.id
+        <if test="id != null">
+            and orders.id = #{id}
+        </if>
+       <if test="userId != null">
+           and user_id = #{userId}
+       </if>
+       <if test="number != null">
+           and `number` = #{number}
+       </if>
+       <if test="createtime != null">
+           and createtime = #{createtime}
+       </if>
+       <if test="note != null">
+           and note = #{note}
+       </if>
+       <if test="username != null">
+           and username = #{username}
+       </if>
+       <if test="address != null">
+           and address = #{address}
+       </if>
+   </select>
+
+
+
+
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzn.spring.dao.UserMapper">
+    <cache/>
+    <select id="findUserById" parameterType="Integer" resultType="UserEntity">
+        select * from user where id = #{id}
+    </select>
+
+    <insert id="addUser" parameterType="UserEntity" >
+        insert into user(username, birthday, sex, address) values(#{username}, #{birthday}, #{sex}, #{address})
+    </insert>
+
+    <!--userCache为 false禁用二级缓存，默认为 true-->
+    <select id="findUserByIdNoSecondCache" parameterType="Integer" resultType="UserEntity" useCache="false">
+        select * from user where id = #{id}
+    </select>
+</mapper>

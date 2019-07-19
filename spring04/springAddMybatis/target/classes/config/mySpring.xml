@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd
+       					   http://www.springframework.org/schema/context
+       					   http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    <context:component-scan base-package="com.lzn.spring.dao"/>-->
+    <context:property-placeholder location="config/db.properties"/>
+
+
+    <!-- 配置数据源 -->
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="driverClassName" value="${db.driver}"/>
+        <property name="jdbcUrl" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>
+
+     <!--配置 sqlSessionFactory -->
+     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+         <!--注入数据源-->
+         <property name="dataSource" ref="dataSource"/>
+         <!--设置全局配置文件 -->
+         <property name="configLocation" value="config/SqlMapConfig.xml"/>
+     </bean>
+
+
+    <bean id="userDao" class="com.lzn.spring.dao.imp.UserDaoImp">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
+
+    <!--单个配置-->
+    <!--<bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        &lt;!&ndash;配置代理类接口&ndash;&gt;
+        <property name="mapperInterface" value="com.lzn.spring.dao.UserMapper" />
+        &lt;!&ndash;注入 sqlSessionFactory&ndash;&gt;
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>-->
+
+    <!--批量配置 Mapper代理类，生成的代理类的 bean的 id默认时接口首字母小写-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--需要配置 mapper接口的扫描路径-->
+        <property name="basePackage" value="com.lzn.spring.dao"/>
+        <!--注入 sqlSessionFactory（如果我们只配置了一个 sqlSessionFactory时，可以不用指定sqlSessionFactory）-->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+    </bean>
+</beans>

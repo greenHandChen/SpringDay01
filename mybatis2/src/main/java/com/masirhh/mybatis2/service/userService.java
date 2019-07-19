@@ -3,19 +3,32 @@ package com.masirhh.mybatis2.service;
 import com.masirhh.mybatis2.beans.userBean;
 import com.masirhh.mybatis2.dao.userDao;
 import com.masirhh.mybatis2.mapper.userMapper;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
 @Service
 public class userService {
+    private ApplicationContext applicationContext;
 
-    @Resource
-    userDao userDao;
+    @Before
+    public void setup() throws Exception {
+         applicationContext = new
+                ClassPathXmlApplicationContext("config/applicationContext.xml");
+    }
 
-    public userBean getUserById(Integer id){
-        return userDao.findUserById(id);
+    @Test
+    public void testFindUserById() throws Exception {
+        // 通过配置资源对象获取 userDAO 对象
+        userDao userDAO = (userDao) applicationContext.getBean("userDao");
+        // 调用 UserDAO 的方法
+        userBean user = userDAO.findUserById(1);
+        // 输出用户信息
+        System.out.println(user.getId() + ":" + user.getUsername());
     }
 }

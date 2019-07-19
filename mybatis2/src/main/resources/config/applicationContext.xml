@@ -4,6 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <context:property-placeholder location="config/db.properties"/>
     <context:property-placeholder location="config/log4j.properties"/>
+
     <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
         <property name="driverClassName" value="${db.driver}"/>
         <property name="jdbcUrl" value="${db.url}"/>
@@ -21,6 +22,9 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.masirhh.mybatis2.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+    <bean id="userDao" class="com.masirhh.mybatis2.dao.userDaoImpl">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
     <context:component-scan base-package="com.masirhh.mybatis2.*"/>
 </beans>

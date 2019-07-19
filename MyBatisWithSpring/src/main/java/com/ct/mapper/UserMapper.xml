@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ct.mapper.UserMapper">
+    <select id="findUserById" parameterType="int" resultType="user">
+        select * from user
+        <where>
+            <if test="value != null">
+                or id = #{id}
+            </if>
+        </where>
+    </select>
+    <insert id="addUserGetId" parameterType="user">
+        <selectKey keyProperty="id" order="AFTER" resultType="int">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username, birthday, sex, address) values(#{username}, #{birthday}, #{sex}, #{address})
+    </insert>
+    <select id="findUserByUsername" parameterType="string" resultType="user">
+        select * from user where username like concat(concat('%', #{username}), '%')
+    </select>
+
+    <select id="findUserByIdList" parameterType="list" resultType="user">
+        select * from user where id in
+        <foreach collection="list" index="i" item="it" open="(" separator="," close=")">
+        #{it}
+        </foreach>
+    </select>
+</mapper>

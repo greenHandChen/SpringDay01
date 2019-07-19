@@ -17,7 +17,7 @@ public class IAccountServiceImpl implements IAccountService {
     TransactionTemplate transactionTemplate;
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     public void transfer(String outer, String inner, Double money) {
         accountDao.in(inner, money);
         int i = 10 / 0;

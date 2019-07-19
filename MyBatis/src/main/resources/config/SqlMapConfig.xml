@@ -5,9 +5,14 @@
 <configuration>
     <properties resource="config/db.properties"/>
 
+    <settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+    </settings>
+
     <typeAliases>
         <package name="com.ct.domain"/>
     </typeAliases>
+
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
@@ -19,6 +24,7 @@
             </dataSource>
         </environment>
     </environments>
+
     <mappers>
         <package name="com.ct.mapper"/>
     </mappers>

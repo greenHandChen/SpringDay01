@@ -15,11 +15,10 @@ import java.io.InputStream;
 import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
-public class TestMybatis {
+public class MybatisTest {
 
     @Test
     public void testFindUserById() throws IOException {
@@ -27,6 +26,8 @@ public class TestMybatis {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
         User user = sqlSession.selectOne("com.ct.mapper.UserMapper.findUserById", 1);
+        //测试一级缓存
+        sqlSession.selectOne("com.ct.mapper.UserMapper.findUserById", 1);
 //        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
 //        User user = userMapper.findUserById(1);
         System.out.println(user.getUsername());
@@ -55,7 +56,7 @@ public class TestMybatis {
     }
 
     @Test
-    public void testFindUserByUsername() throws IOException, ParseException {
+    public void testFindUserByUsername() throws IOException {
         InputStream inputStream = Resources.getResourceAsStream("config/SqlMapConfig.xml");
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
@@ -88,7 +89,9 @@ public class TestMybatis {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         OrdersVoMapper ordersVoMapper = sqlSession.getMapper(OrdersVoMapper.class);
         OrdersVo ordersVo = ordersVoMapper.findOrdersVoById(3);
-        System.out.println(ordersVo);
+        //测试懒加载
+        System.out.println(ordersVo.getId());
+        System.out.println(ordersVo.getUser());
         sqlSession.close();
     }
 

@@ -95,4 +95,22 @@ public interface UserMapper {
     **/
     List<User> testActiveSql(User user);
 
+    /**
+    * @Description: 性别字段更新测试
+    * @Author: TanLinQuan
+    * @Date: 2019/7/19 8:35
+    * @params: [user]
+    * @return: int
+    **/
+    int updateSex(User user);
+
+    /**
+    * @Description: 多对多查询
+    * @Author: TanLinQuan
+    * @Date: 2019/7/19 11:25
+    * @params: []
+    * @return: java.util.List<mybatis.enity.User>
+    **/
+    List<User> collection();
+
 }

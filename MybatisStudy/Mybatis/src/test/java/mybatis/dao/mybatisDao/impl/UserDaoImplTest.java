@@ -43,7 +43,6 @@ public class UserDaoImplTest {
         User user = new User();
         user.setUsername("hand");
         user.setAddress("芜湖");
-
         System.out.println(userDao.addUser(user));
     }
 

@@ -1,5 +1,6 @@
 package mybatis.dao.daoMapper;
 
+import mybatis.enity.OrderDetail;
 import mybatis.enity.User;
 import mybatis.vo.UserQueryVO;
 import org.apache.ibatis.io.Resources;
@@ -20,28 +21,29 @@ import static org.junit.Assert.*;
 
 public class UserMapperTest {
 
-    private static SqlSession sqlSession = null;
+//    private static SqlSession sqlSession = null;
+    private static SqlSessionFactory sqlSessionFactory;
 
     @Before
     public void setUp() throws IOException {
         String resouce = "Mybatis_Config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resouce);
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-        sqlSession = sqlSessionFactory.openSession();
+        sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+//        sqlSession = sqlSessionFactory.openSession();
     }
 
-    @After
-    public void destory() {
-        sqlSession.close();
-    }
-    
+//    @After
+//    public void destory() {
+//        sqlSession.close();
+//    }
+
     /**
-    * @Description: typeAliases类型名修改测试以及MAPPER开发
-    * @Author: TanLinQuan
-    * @Date: 2019/7/18 16:47
-    * @params: []
-    * @return: void
-    **/
+     * @Description: typeAliases类型名修改测试以及MAPPER开发
+     * @Author: TanLinQuan
+     * @Date: 2019/7/18 16:47
+     * @params: []
+     * @return: void
+     **/
     @Test
     public void MapperTest() {
 //        根据ID查询用户
@@ -72,12 +74,69 @@ public class UserMapperTest {
 //        System.out.println(userMapper.testResultMap(10).getAddress());
 
 //        动态Sql查询
+//        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+//        User user = new User();
+//        user.setUsername("张");
+//        List<User> users = userMapper.testActiveSql(user);
+//        for (User user1 : users){
+//            System.out.println(user1.getUsername());
+//        }
+
+
+
+//        一级缓存测试
+       /* UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        System.out.println(userMapper.findUserById(10));*/
+
+//        User user = new User();
+//        user.setSex('3');
+//        user.setId(10);
+//        System.out.println(userMapper.updateSex(user));
+//        sqlSession.commit();
+
+
+//        System.out.println(userMapper.findUserById(10));
+
+//        多对多查询
+//        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+//        List<User> userList = userMapper.collection();
+//        for (User user : userList) {
+//            System.out.println("用户名："+user.getUsername());
+//            System.out.println("用户地址："+user.getAddress());
+//
+//        }
+
+
+    }
+
+    /**
+    * @Description: 二级缓存测试
+    * @Author: TanLinQuan
+    * @Date: 2019/7/19 14:46
+    * @params: []
+    * @return: void
+    **/
+    @Test
+    public void cacheTest() {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        SqlSession sqlSession1 = sqlSessionFactory.openSession();
+        SqlSession sqlSession2 = sqlSessionFactory.openSession();
+
+        UserMapper userMapper1 = sqlSession1.getMapper(UserMapper.class);
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        UserMapper userMapper2 = sqlSession2.getMapper(UserMapper.class);
+
+        userMapper.findUserById(10);
+        userMapper1.findUserById(10);
+
         User user = new User();
-        user.setUsername("张");
-        List<User> users = userMapper.testActiveSql(user);
-        for (User user1 : users){
-            System.out.println(user1.getUsername());
-        }
+        user.setSex('3');
+        user.setId(10);
+        System.out.println(userMapper2.updateSex(user));
+        sqlSession2.commit();
+
+        sqlSession.close();
+        sqlSession1.close();
+
     }
 }

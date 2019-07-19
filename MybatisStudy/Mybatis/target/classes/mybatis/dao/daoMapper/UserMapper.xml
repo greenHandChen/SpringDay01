@@ -3,6 +3,9 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mybatis.dao.daoMapper.UserMapper">
+
+    <cache/>
+
     <select id="findUserById" parameterType="java.lang.Integer" resultType="User">
         select * from user where id = #{id}
     </select>
@@ -49,7 +52,7 @@
         select * from user u where u.username like  concat('%',#{username},'%')
     </select>
 
-    <select id="countUser" parameterType="int" resultType="int" >
+    <select id="countUser" parameterType="int" resultType="int">
         select count(*) from user u where u.sex = #{sex}
     </select>
 
@@ -62,20 +65,74 @@
         <result property="username" column="username"></result>
         <result property="address" column="address"></result>
     </resultMap>
-    
+
     <select id="testResultMap" parameterType="int" resultMap="userReasultMap">
         select id , username , address from user where id = #{id}
     </select>
-    
+
     <select id="testActiveSql" parameterType="User" resultType="User">
         select * from user
         <where>
             <if test='id != null'>
                 and id = #{id}
             </if>
-            <if test='username != null and username != ""'>
-                and username like concat('%',#{username},'%')
+            <if test='username != null and username != "  "'>
+                and username like concat('%',#{username,jdbcType=VARCHAR},'%')
             </if>
         </where>
+    </select>
+
+    <update id="updateSex" parameterType="User">
+        UPDATE user SET sex = #{sex} where id = #{id}
+    </update>
+
+
+    <resultMap id="userAndItemResultMap" type="user">
+        <id column="id" property="id"></id>
+        <result column="sex" property="sex"></result>
+        <result column="address" property="address"></result>
+        <collection property="orderList" ofType="order">
+            <id column="id" property="id"></id>
+            <result column="number" property="number"></result>
+            <result column="createtime" property="createtime"></result>
+            <result column="note" property="note"></result>
+            <collection property="orderDetailList" ofType="orderDetail">
+                <collection property="itemList" ofType="item">
+                    <id column="id" property="id"></id>
+                    <result column="name" property="name"></result>
+                    <result column="price" property="price"></result>
+                    <result column="detail" property="detail"></result>
+                    <result column="createtime" property="createTime"></result>
+                </collection>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <select id="collection" resultMap="userAndItemResultMap">
+        SELECT
+            u.id,
+            u.username,
+            u.address,
+            o.id,
+            o.number,
+            o.createtime,
+            o.note,
+            od.id,
+            od.items_id,
+            od.items_num,
+            it.name,
+            it.price,
+            it.detail
+        FROM
+            user u,
+            orders o,
+            orderdetail od,
+            items it
+        WHERE
+            o.user_id = u.id
+        AND
+            o.id = od.orders_id
+        AND
+            od.items_id = it.id;
     </select>
 </mapper>

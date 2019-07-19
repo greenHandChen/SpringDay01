@@ -5,9 +5,14 @@
 <configuration>
     <properties resource="jdbc.properties">
     </properties>
+    <!--开启缓存配置，默认全局开启所有映射器的缓存配置-->
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
     <typeAliases>
         <package name="mybatis.enity"/>
         <package name="mybatis.vo"/>
+        <package name="mybatis.dao.daoMapper"/>
     </typeAliases>
     <environments default="development">
         <environment id="development">

@@ -17,17 +17,30 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
-
+/**
+*@Description 测试类
+*@Author yunfeng.ye
+*@Date 2019/7/19
+*@Time 19:58
+*/
 public class MybatisSpringTest {
+    /**
+    *@Description spring容器加载
+    *@Author yunfeng.ye
+    *@Date 2019/7/19
+    *@Time 19:58
+    */
     private static ApplicationContext applicationContext;
-
-
-    static {
+      static {
         applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
     }
 
-
+    /**
+    *@Description UserMapper测试方法
+    *@Author yunfeng.ye
+    *@Date 2019/7/19
+    *@Time 19:59
+    */
     @Test
     public void test() {
         UserMapper mapper = (UserMapper) applicationContext.getBean("userMapper");
@@ -39,6 +52,12 @@ public class MybatisSpringTest {
         List<User> users = mapper.showUsers();
         System.out.println(users);
     }
+    /**
+    *@Description 复杂查询测试方法
+    *@Author yunfeng.ye
+    *@Date 2019/7/19
+    *@Time 19:59
+    */
     @Test
     public void testMapper(){
         OrdersMapper mapper = (OrdersMapper) applicationContext.getBean("ordersMapper");

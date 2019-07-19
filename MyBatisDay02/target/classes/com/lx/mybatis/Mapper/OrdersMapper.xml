@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lx.mybatis.Mapper.OrdersMapper">
+
+    <!--查询订单关联查询用户信息，使用resultMap-->
+
+    <select id="findOrdersByResultMap" resultMap="ordersAndUserRstMap">
+        select o.id,o.user_id,o.number,o.createtime,o.note,u.username,u.address
+        from orders o,user u
+        where o.user_id = u.id
+    </select>
+
+    <resultMap id="ordersAndUserRstMap" type="OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="note" property="note"/>
+
+        <!--association:一对一映射关系标签
+        1、property：关联的属性名
+        2、javaType：属性对应的类型
+        3、id标签在关联查询时建议写上，可以提升查询性能
+        -->
+        <association property="user" javaType="com.lx.mybatis.Entity.User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+        </association>
+    </resultMap>
+
+    <!--查询订单关联查询用户信息、订单详情-->
+
+    <select id="findOrdersAndOrderDetail" resultMap="ordersAndOrderDetailRstMap">
+        SELECT
+	o.*,
+	u.username,
+	u.address,
+	od.id AS detailId,
+	od.items_id,
+	od.items_num
+FROM
+	orders o,
+	USER u,
+	orderdetail od
+WHERE
+	o.user_id = u.id
+	AND o.id = od.orders_id
+    </select>
+
+    <!--extends属性：通过extends属性来继承其他的resultMap，要注意的是这两个resultMap的type需要一致-->
+    <resultMap id="ordersAndOrderDetailRstMap" type="OrdersExt2" extends="ordersAndUserRstMap">
+        <!--订单明细信息，一对多-->
+        <!--collection：映射一对多关系
+        property：一对多关联时的属性名
+        ofType：关联的类型
+        -->
+        <collection property="orderDetails" ofType="com.lx.mybatis.Entity.OrderDetail">
+            <id column="detailId" property="id"/>
+            <result column="items_id" property="itemsId"/>
+            <result column="items_num" property="itemsNum"/>
+        </collection>
+    </resultMap>
+
+    <!--多对多查询-->
+    <!--查询用户及购买的商品信息，使用resultMap-->
+    <select id="findUserAndItemsResultMap" resultMap="UserAndItemsResultMap">
+        SELECT
+	o.*,
+	u.username,
+	u.sex,
+	u.address,
+	od.id AS orderdetail_id,
+	od.items_id,
+	od.items_num,
+	od.orders_id,
+	i.NAME AS items_name,
+	i.detail AS items_detail,
+	i.price AS items_price
+FROM
+	orders o,
+	USER u,
+	orderdetail od,
+	items i
+WHERE
+	o.user_id = u.id
+	AND od.orders_id = o.id
+	AND od.items_id = i.id
+    </select>
+
+    <resultMap id="UserAndItemsResultMap" type="com.lx.mybatis.Entity.UserMany">
+        <!--用户信息-->
+        <id column="user_id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="sex" property="sex"/>
+        <result column="address" property="address"/>
+
+        <!--订单信息
+        一个用户对应多个订单，使用collection映射
+        -->
+        <collection property="ordersList" ofType="com.lx.mybatis.Entity.OrdersMany">
+            <id column="id" property="id"/>
+            <result column="user_id" property="userId"/>
+            <result column="number" property="number"/>
+            <result column="createtime" property="createtime"/>
+            <result column="note" property="note"/>
+
+            <!--订单明细
+            一个订单包括多个明细
+            -->
+            <collection property="orderDetails" ofType="com.lx.mybatis.Entity.OrderDetilMany">
+                <id column="orderdetail_id" property="id"/>
+                <result column="items_id" property="itemsId"/>
+                <result column="items_num" property="itemsNum"/>
+                <result column="orders_id" property="ordersId"/>
+
+                <!--商品信息
+                一个订单明细对应一个商品
+                -->
+                <association property="items" javaType="com.lx.mybatis.Entity.Items">
+                    <id column="items_id" property="id"/>
+                    <result column="items_name" property="name"/>
+                    <result column="items_detail" property="detail"/>
+                    <result column="items_price" property="price"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <!--延迟加载-->
+    <select id="findOrderInfoByLazyLoad" parameterType="java.lang.Integer" resultMap="LazyLoadRstMap">
+        select * from orders where id = #{id}
+    </select>
+
+    <resultMap id="LazyLoadRstMap" type="OrdersExt">
+        <!--订单配置信息映射-->
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="note" property="note"/>
+
+        <!--一对一用户信息映射
+        association标签：具有懒加载的功能
+        select：通过select指定用户查询的statement，其值是statement的id
+        property：关联查询的属性映射
+        column：指定查询结果的列，并且把该列的值作为参数，传入对应的statement中
+        -->
+        <association property="user" select="com.lx.mybatis.Mapper.UserMapper.findUserById" column="user_id"/>
+    </resultMap>
+
+</mapper>

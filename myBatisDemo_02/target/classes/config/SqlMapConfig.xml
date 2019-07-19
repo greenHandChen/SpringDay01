@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--引入外部数据库配置文件 -->
+    <properties resource="config/db.properties"/>
+
+    <settings>
+        <!--开启二级缓存,默认是关闭的 -->
+        <setting name="cacheEnabled" value="true"/>
+        <!--是否开启懒加载，mybatis默认false,true表示立即加载 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--是否开启积极懒加载，默认true,表示懒对象可能被任意属性进行懒加载;
+           false表示只有使用懒属性才会进行加载 -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+    <!--类型别名 -->
+    <typeAliases>
+        <!--单个定义 -->
+<!--        <typeAlias type="com.txz.mybatis.mapper.UserMapper" alias="UserMapper"/>-->
+        <!--批量定义 -->
+        <package name="com.txz.domain"/>
+    </typeAliases>
+
+    <!--配置mybatis的环境信息，比如数据源以及事务控制，整合spring后交给Spring控制 -->
+    <environments default="development">
+        <environment id="development">
+            <!--配置JDBC事务控制，由mybatis进行管理 -->
+            <transactionManager type="JDBC"/>
+            <!--配置数据源，采用mybatis连接池 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--加载映射配置文件 -->
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"/>
+    </mappers>
+
+</configuration>

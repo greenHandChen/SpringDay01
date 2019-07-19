@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hand.mapper.OrdersMapper">
+    
+    <!--    一对一映射  resultType-->
+    <select id="findOrdersAndUser" resultType="com.hand.entity.OrdersExt">
+        select
+            orders.id,orders.number,orders.user_id,user.username,user.sex
+        from orders,user
+        where orders.user_id = user.id;
+    </select>
+    <!--    一对一映射  resultMap-->
+    <resultMap id="OrdersAndUserResultMap" type="com.hand.entity.OrdersExt">
+        <id column="id" property="id"/>
+        <result column="number" property="number"/>
+        <association property="user" javaType="com.hand.entity.User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="sex" property="sex"/>
+        </association>
+    </resultMap>
+    <select id="findOrdersAndUserResultMap" resultMap="OrdersAndUserResultMap">
+        select
+            orders.id,orders.number,orders.user_id,user.username,user.sex
+        from orders,user
+        where orders.user_id = user.id;
+    </select>
+</mapper>

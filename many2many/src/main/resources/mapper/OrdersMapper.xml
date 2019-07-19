@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hand.mapper.OrdersMapper">
+    
+    <!--    一对一映射  resultType-->
+    <select id="findOrdersAndUser" resultType="com.hand.entity.OrdersExt">
+        select
+            orders.id,orders.number,orders.user_id,user.username,user.sex
+        from orders,user
+        where orders.user_id = user.id;
+    </select>
+    <!--    一对一映射  resultMap-->
+    <resultMap id="OrdersAndUserResultMap" type="com.hand.entity.OrdersExt">
+        <!--订单信息-->
+        <id column="id" property="id"/>
+        <result column="number" property="number"/>
+        <!--用户信息-->
+        <association property="user" javaType="com.hand.entity.User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="sex" property="sex"/>
+        </association>
+    </resultMap>
+    <select id="findOrdersAndUserResultMap" resultMap="OrdersAndUserResultMap">
+        select
+            orders.id,orders.number,orders.user_id,user.username,user.sex
+        from orders,user
+        where orders.user_id = user.id;
+    </select>
+
+    <!--    一对多映射  resultMap-->
+    <resultMap id="OrderAndDetailResultMap" type="com.hand.entity.OrdersExt" extends="OrdersAndUserResultMap">
+        <!-- 订单明细信息-->
+        <collection property="detailList" ofType="com.hand.entity.OrderDetail">
+            <id column="orderId" property="id"/>
+            <result column="items_num" property="itemsNum"/>
+            <result column="orders_id" property="ordersId"/>
+        </collection>
+    </resultMap>
+    <select id="findOrderAndDetailResultMap" resultMap="OrderAndDetailResultMap">
+        SELECT
+            orders.id,
+            orders.number,
+            orders.user_id,
+            user.username,
+            user.sex,
+            orderdetail.id orderId,
+            orderdetail.items_num,
+            orderdetail.orders_id
+        FROM
+            orders,user,orderdetail
+        WHERE
+            orders.user_id = user.id
+        AND orders.id=orderdetail.orders_id;
+    </select>
+
+    <!--    多对多映射  resultMap-->
+    <resultMap id="userAndItemsMap" type="com.hand.entity.User">
+        <id column="user_id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="sex" property="sex"/>
+        <collection property="orders" ofType="com.hand.entity.Orders">
+            <id column="id" property="id"/>
+            <result column="user_id" property="userId"/>
+            <result column="number" property="number"/>
+            <!-- 订单明细信息-->
+            <collection property="detailList" ofType="com.hand.entity.OrderDetail">
+                <id column="detailId" property="id"/>
+                <result column="items_id" property="itemsId"/>
+                <result column="items_num" property="itemsNum"/>
+                <!-- 商品信息-->
+                <association property="items" javaType="com.hand.entity.Items">
+                    <id column="items_id" property="id"/>
+                    <result column="name" property="name"/>
+                    <result column="price" property="price"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+    <select id="findOrderAndItemslResultMap" resultMap="userAndItemsMap">
+        SELECT
+            orders.id,
+            orders.user_id,
+            orders.number,
+            user.username,
+            user.sex,
+            orderdetail.id detailId,
+            orderdetail.items_id,
+            orderdetail.items_num,
+            items.name,
+            items.price
+        FROM
+            orders,
+            user,
+            orderdetail,
+            items
+        WHERE
+            orders.user_id = user.id
+        AND orders.id = orderdetail.orders_id
+        AND orderdetail.items_id = items.id
+    </select>
+</mapper>

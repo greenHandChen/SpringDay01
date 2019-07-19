@@ -5,6 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TrTest {
 
+
     @Test
     public void tt() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("application.xml");

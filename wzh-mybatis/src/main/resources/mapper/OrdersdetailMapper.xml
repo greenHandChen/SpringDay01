@@ -1,0 +1,15 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzh.mapper.OrdersdetailMapper">
+
+    <resultMap id="baseMap" type="com.wzh.domain.Ordersdetail">
+        <id column="id" property="id"/>
+        <result column="items_num" property="itemsNum"/>
+        <association property="items" javaType="com.wzh.domain.Items">
+            <id column="item_id" property="id"/>
+        </association>
+    </resultMap>
+
+
+
+</mapper>

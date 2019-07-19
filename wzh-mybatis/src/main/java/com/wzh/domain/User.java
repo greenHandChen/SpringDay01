@@ -20,6 +20,14 @@ public class User {
         this.address = address;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public int getId() {
         return id;
     }
@@ -32,28 +40,20 @@ public class User {
         return sex;
     }
 
-    public Date getBirthday() {
-        return birthday;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     public void setSex(char sex) {
         this.sex = sex;
     }
 
+    public Date getBirthday() {
+        return birthday;
+    }
+
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
+    }
+
+    public String getAddress() {
+        return address;
     }
 
     public void setAddress(String address) {

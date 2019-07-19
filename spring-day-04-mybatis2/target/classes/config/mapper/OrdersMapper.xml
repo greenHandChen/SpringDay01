@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ll.mybatis.mapper.OrdersMapper">
+
+    <!--  一对一映射之resulutType  -->
+    <select id="findOrdersAndUser" resultType="com.ll.mybatis.po.OrderExt">
+        select orders.id
+                ,orders.user_id
+                ,orders.number
+                ,user.username
+                ,user.sex
+        from
+	        orders,user
+        where
+            orders.user_id = user.id
+    </select>
+
+    <resultMap id="OrdersAndUserRstMap" type="com.ll.mybatis.po.OrderExt">
+        <!--    订单信息    -->
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="number" property="number" />
+
+        <!--    用户信息（一对一）    -->
+        <!--    association 一对一关联映射  -->
+        <!--    property: 关联信息查询的结果要映射的扩展类中的对象属性名称 -->
+        <!--    id:标签，建议在关联查询上必须写上，不写不会报错，但是会影响性能 -->
+        <association property="user" javaType="com.ll.mybatis.po.User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="sex" property="sex"/>
+        </association>
+
+    </resultMap>
+
+    <!--  一对一映射之resulutMap -->
+    <select id="findOrdersAndUserRstMap" resultMap="OrdersAndUserRstMap">
+        select orders.id
+                ,orders.user_id
+                ,orders.number
+                ,user.username
+                ,user.sex
+        from
+	        orders,user
+        where
+            orders.user_id = user.id
+    </select>
+
+    <!--  OrderAndDetailRstMap  -->
+    <!--  extends:可以继承一个已有的resultMap，指定resultMap的唯一标识即可  -->
+    <!--  注意：继承时只能继承type是一样的  -->
+    <resultMap id="OrdersAndUserAndDetailRstMap" type="com.ll.mybatis.po.OrderExt"
+               extends="OrdersAndUserRstMap">
+        <!--    订单明细信息（一对多）    -->
+        <!--    collection: 映射一对多关系    -->
+        <collection property="ordersdetails" ofType="com.ll.mybatis.po.Ordersdetail">
+            <id column="detail_id" property="id"/>
+            <result column="items_id" property="itemsId"/>
+            <result column="items_num" property="itemsNum"/>
+        </collection>
+    </resultMap>
+    
+    <!--  一对多映射  -->
+    <select id="findOrdersAndUserAndDetailsRstMap" resultMap="OrdersAndUserAndDetailRstMap">
+        select orders.id
+	,orders.user_id
+	,orders.number
+        ,user.username
+	,user.sex
+	,orderdetail.id detail_id
+        ,orderdetail.items_id
+	,orderdetail.items_num
+    from
+        orders,user,orderdetail
+    where orders.user_id = user.id
+    and orders.id = orderdetail.orders_id
+    </select>
+
+    <resultMap id="findUserAndItemsRstMap" type="com.ll.mybatis.po.User">
+        <!--   用户信息     -->
+        <id column="user_id" property="id"/>
+        <result column="username" property="username" />
+        <result column="sex" property="sex"/>
+        <!--   订单信息     -->
+        <collection property="ordersList" ofType="com.ll.mybatis.po.Orders">
+            <id property="id" column="id"/>
+            <result property="user_id" column="userId"/>
+            <result property="number" column="number"/>
+            <!--   订单明细信息     -->
+            <collection property="detailsList" ofType="com.ll.mybatis.po.Ordersdetail">
+                <id column="id" property="id"/>
+                <result column="items_id" property="itemsId"/>
+                <result column="items_num" property="itemsNum"/>
+                <!--   商品信息(一对一)    -->
+                <association property="items" javaType="com.ll.mybatis.po.Items">
+                    <id column="items_id" property="id" />
+                    <result column="items_price" property="price" />
+                    <result column="items_name" property="name" />
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+
+
+    <select id="findUserAndItemsRst" resultMap="findUserAndItemsRstMap">
+        select orders.id
+	,orders.user_id
+	,orders.number
+        ,user.username
+	,user.sex
+	,orderdetail.id detail_id
+        ,orderdetail.items_id
+	,orderdetail.items_num
+	,items_id
+	,items.price
+	,items.name
+    from
+        orders,user,orderdetail,items
+    where orders.user_id = user.id
+    and orders.id = orderdetail.orders_id
+    and orderdetail.items_id = items.id
+    </select>
+
+    <!--
+     延迟加载：
+        延迟加载又叫做懒加载，也叫按需加载；也就是说先加载主信息，在需要的时候，加载
+        需要要的其他信息；
+        在mybatis中，resultMap中的association标签和collection标签具有延迟加载的功能
+      -->
+    <!--  lazyLoadingRstMap  -->
+    <resultMap id="lazyLoadingRstMap" type="com.ll.mybatis.po.OrderExt">
+        <!--    订单信息    -->
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <!--    用户信息(一对一)    -->
+        <!--    select:指定关联查询的查询statement（查询用户的statement的id）
+                然后将查询结果封装到property指定的变量   -->
+        <!--   column:通过column指定的列所查询出来的结果，作为statement的入参     -->
+        <!--   注意，如果select指定的statment，入参需要多个值，需要将column中{col = prop1, col = prop2}     -->
+        <association property="user"
+                     select="com.ll.mybatis.mapper.UserMapper.findUserById" column="user_id">
+
+        </association>
+    </resultMap>
+
+    <!--  延迟加载  -->
+    <select id="findOrderAndUserLazyLoading" resultMap="lazyLoadingRstMap">
+        select * from orders
+    </select>
+
+
+    <!--
+        Mybatis的缓存理解，Mybatis包括一级缓存（sqlSession）,
+        在sqlSession中有一个数据区域，是map类型的数据结构，这
+        个区域就是一级缓存区域，一级缓存中的key是由sql语句，条件，
+        statment等信息组成的唯一值；一级缓存中的value就是查询
+        出的结果对象。
+        二级缓存（一个namespace下的mapper共享同一个二级缓存），
+        二级缓存中，也有一个map结构，这个区域就是一级缓存区域。
+
+        一级缓存是默认使用的，二级缓存需要手动开启。
+
+        一级缓存：
+      -->
+
+
+
+</mapper>

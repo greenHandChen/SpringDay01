@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ll.mybatis.mapper.UserMapper">
+
+    <cache />
+
+    <select id="findUserById" parameterType="int"
+            resultType="User">
+        select * from user where id = #{id}
+    </select>
+
+    <insert id="insertUser" parameterType="User">
+        <selectKey keyProperty="id" resultType="int" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--  定义sql片段  -->
+    <!--  sql片段内，可以定义sql语句中的任何部分  -->
+    <!--  sql片段内，最好不要将where和select关键字声明在内，容易降低代码的可重用性  -->
+    <sql id="whereClause">
+        <!--  if标签，可以对输入的参数进行判断  -->
+        <!--  test:指定判断表达式  -->
+        <if test="user != null">
+            <if test="user.username != null and user.username != ''">
+                username like '%${user.username}%'
+            </if>
+            <if test="user.sex != null and user.sex != ''">
+                and sex=#{user.sex}
+            </if>
+        </if>
+
+        <if test="idlist != null ">
+            <!--  and id in(1,2,10)  -->
+            <!--  collection:表示pojo中集合属性的属性名称  -->
+            <!--  item:为遍历出的结果声明一个变量名称  -->
+            <!--  open:遍历开始时需要拼接的字符串  -->
+            <!--  close:遍历结束时需要拼接的字符串  -->
+            <!--  separator:遍历时需要循环处理的字符分隔符  -->
+            and id in
+            <foreach collection="idlist" item="id" open="(" close=")" separator=" , ">
+                #{id}
+            </foreach>
+        </if>
+    </sql>
+
+    <!--  综合查询，查询用户列表  -->
+    <!--  #{}中的参数名称要和包装POJO中的对象层级一致，并且属性名称要一致  -->
+    <select id="findUserList" parameterType="com.ll.mybatis.po.UserQueryVO" resultType="com.ll.mybatis.po.User">
+        select * from user
+        <!--  where标签：默认去掉后面第一个AND,如果没有参数，则把自己干掉  -->
+        <where>
+            <!--  引入sql片段  -->
+            <include refid="whereClause"></include>
+        </where>
+    </select>
+
+    <select id="findUserByMap" parameterType="hashmap" resultType="User">
+        select * from user where username like '%${name}%' and sex=#{gender}
+    </select>
+
+    <!--  综合查询用户总数  -->
+    <select id="findUserCount" parameterType="com.ll.mybatis.po.UserQueryVO" resultType="int">
+        select count(*) from user where username like '%${user.username}%' and sex=#{user.sex};
+    </select>
+
+    <!--  resultMap入门  -->
+    <resultMap id="userRstMap" type="User">
+    <!--   id标签专门为查询结构中的唯一列映射     -->
+    <!--   result标签映射查询结果中的普通列     -->
+        <id column="id_" property="id" />
+        <result column="username_" property="username"/>
+        <result column="sex_" property="sex"/>
+
+    </resultMap>
+
+    <select id="findUserRstMap" parameterType="int" resultMap="userRstMap">
+        select id id_, username username_, sex sex_ from user where id = #{id};
+    </select>
+
+
+
+
+</mapper>

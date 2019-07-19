@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--  加载java的配置文件或者声明属性信息  -->
+    <!--  parameterType的值会和properties声明的值发生冲突  -->
+    <properties resource="config/db.properties">   <!--加载顺序resource属性比property标签声明的属性更晚，覆盖掉标签中property声明的属性-->
+        <property name="db.username" value="123"/>
+    </properties>
+    
+    <settings>
+        <!--    开启延迟加载，默认值为true    -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--    设置积极的懒加载  默认是true -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <!--     开启二级缓存   -->
+        <setting name="cacheEnabled" value="true"/>
+
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!--  自定义别名  -->
+    <typeAliases>
+        <!--    单个别名定义    -->
+<!--        <typeAlias type="com.ll.mybatis.po.User" alias="User" />-->
+
+        <!--   批量别名定义,默认的别名就是对应类的类型（首字母大小写都可以,推荐使用）     -->
+        <package name="com.ll.mybatis.po"/>
+    </typeAliases>
+
+    <!--环境配置，与Spring整合之后，该信息由Spring来管理-->
+    <environments default="development">
+        <environment id="development">
+            <!--指定事务管理的类型，这里简单使用Java的JDBC的提交和回滚设置-->
+            <transactionManager type="JDBC"/>
+            <!--dataSource 指连接源配置，POOLED是JDBC连接对象的Mybatis数据源连接池的实现-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    
+    <mappers>
+        <mapper resource="config/User.xml"/>
+        <mapper resource="config/mapper/UserMapper.xml"/>
+        <mapper resource="config/mapper/OrdersMapper.xml"/>
+
+        <!--    批量加载映射文件    -->
+<!--        <package name="com.ll.mybatis.mapper"/>-->
+    </mappers>
+
+
+
+
+        <!--
+          Mybatis本身是一个持久层框架而不是专门的缓存框架，所以他对缓存的实现不够好，
+          不能支持分布式缓存。
+          ehcache是一个分布式缓存框架
+
+          -->
+</configuration>

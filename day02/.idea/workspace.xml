@@ -2,8 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="708147f4-31c5-4012-a022-491dda809b3d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../day4/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/mybatis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/mybatis/src/main/java/com/hand/lq/dao/Test1Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/mybatis/src/main/java/com/hand/lq/dao/Test1Mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/mybatis/src/main/java/com/hand/lq/pojo/OrderDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/mybatis/src/main/java/com/hand/lq/pojo/OrderExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/mybatis/src/main/java/com/hand/lq/pojo/OrderExt2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/mybatis/src/main/java/com/hand/lq/pojo/OrderExt3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/mybatis/src/main/java/com/hand/lq/pojo/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/mybatis/src/main/java/com/hand/lq/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/mybatis/src/main/resources/SqlMapConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/mybatis/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/mybatis/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/mybatis/src/test/java/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/java/com/hand/lq/dao/Test1Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/java/com/hand/lq/dao/Test1Mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/java/com/hand/lq/pojo/OrderDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/java/com/hand/lq/pojo/OrderExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/java/com/hand/lq/pojo/OrderExt2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/java/com/hand/lq/pojo/OrderExt3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/java/com/hand/lq/pojo/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/java/com/hand/lq/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/java/com/hand/lq/service/Test1Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/java/com/hand/lq/service/Test1ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day4/springmybatis/src/test/java/Test02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day03/src/com/lq/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../day03/src/com/lq/log/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day03/src/main/resources/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day03/src/main/resources/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day03/target/classes/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day03/target/classes/SqlMapConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../parent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parent/day2child/src/main/java/TrTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/day2child/src/main/java/TrTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,8 +103,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/testHikariCP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+            <state relative-caret-position="-749">
+              <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1493">
-              <caret line="279" column="17" selection-start-line="275" selection-start-column="4" selection-end-line="279" selection-end-column="17" />
+            <state relative-caret-position="223">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -97,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="17" column="11" selection-start-line="15" selection-end-line="17" selection-end-column="11" />
+            <state relative-caret-position="378">
+              <caret line="14" column="11" selection-start-line="8" selection-start-column="3" selection-end-line="14" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -170,6 +209,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,12 +283,37 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="day02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day02" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day02" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day02" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day02" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="hand" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,7 +321,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../day4" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -346,6 +411,10 @@
       <updated>1563325860762</updated>
       <workItem from="1563325863452" duration="18875000" />
       <workItem from="1563361839928" duration="229000" />
+      <workItem from="1563516685679" duration="3097000" />
+      <workItem from="1563527080566" duration="534000" />
+      <workItem from="1563527831591" duration="175000" />
+      <workItem from="1563530330805" duration="1452000" />
     </task>
     <task id="LOCAL-00001" summary="day02上午">
       <created>1563343588925</created>
@@ -397,14 +466,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19104000" />
+    <option name="totallyTimeSpent" value="24362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1383" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68576103" visible="true" weight="0.2532124" />
-      <window_info id="Structure" order="1" sideWeight="0.31423897" side_tool="true" visible="true" weight="0.2532124" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6792144" visible="true" weight="0.26832956" />
+      <window_info id="Structure" order="1" sideWeight="0.3207856" side_tool="true" visible="true" weight="0.26832956" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -422,7 +491,7 @@
       <window_info anchor="bottom" id="Spring" order="7" weight="0.18821605" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -539,22 +608,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="11" selection-start-line="15" selection-end-line="17" selection-end-column="11" />
+        <state relative-caret-position="378">
+          <caret line="14" column="11" selection-start-line="8" selection-start-column="3" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1493">
-          <caret line="279" column="17" selection-start-line="275" selection-start-column="4" selection-end-line="279" selection-end-column="17" />
+        <state relative-caret-position="223">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/testHikariCP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+        <state relative-caret-position="-749">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

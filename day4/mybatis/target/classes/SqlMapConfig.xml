@@ -2,10 +2,17 @@
         <!DOCTYPE configuration  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
+
 <properties resource="jdbc.properties"/>
-<typeAliases>
-    <package name="lq.pojo"/>
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="lazyLoadingEnabled" value="true" />
+        <setting name="aggressiveLazyLoading" value="false" />
+    </settings>
+    <typeAliases>
+    <package name="com.hand.lq.pojo"/>
 </typeAliases>
+
 <environments default="development">
     <environment id="development">
         <transactionManager type="jdbc"></transactionManager>
@@ -16,10 +23,11 @@
             <property name="password" value="${Password}"/>
         </dataSource>
     </environment>
+
 </environments>
+
 <mappers>
-    <mapper resource="lq/mapper/UserMapper.xml"/>
-    <package name="lq"/>
+    <package name="com.hand.lq"/>
 </mappers>
 
 </configuration>

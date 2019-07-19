@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.hand.lq.dao.Test1Mapper">
+    <cache/>
+    <resultMap id="BaseResultMap" type="OrderExt2">
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="createtime" property="createTime"/>
+        <result column="number" property="number"/>
+        <result column="note" property="note"/>
+        <result column="username" property="username"/>
+        <result column="address" property="address"/>
+        <association property="user" javaType="com.hand.lq.pojo.User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+        </association>
+    </resultMap>
+    <resultMap id="Base2" type="OrderExt3" extends="BaseResultMap">
+        <collection property="od" ofType="OrderDetails">
+            <id column="oid" property="id"/>
+            <result column="items_id" property="items_id"/>
+            <result column="items_num" property="items_num"/>
+        </collection>
+    </resultMap>
+    <select id="findOrderExt" parameterType="OrderExt" resultType="OrderExt">
+        SELECT
+        orders.id,
+        orders.user_id,
+        orders.number,
+        orders.createtime,
+        orders.note,
+        user.username,
+        user.address
+        FROM
+        orders,user
+        WHERE
+        orders.user_id = user.id
+        <if test="id!=null">
+            and orders.id=#{id}
+        </if>
+
+    </select>
+    <select id="findOrderExt2" parameterType="OrderExt" resultMap="BaseResultMap">
+        SELECT
+        orders.id,
+        orders.user_id,
+        orders.number,
+        orders.createtime,
+        orders.note,
+        user.username,
+        user.address
+        FROM
+        orders,user
+        WHERE
+        orders.user_id = user.id
+        <if test="id!=null">
+            and orders.id=#{id}
+        </if>
+
+    </select>
+    <select id="find3" parameterType="OrderExt" resultMap="Base2">
+        SELECT
+        orders.id,
+        orders.user_id,
+        orders.number,
+        orders.createtime,
+        orders.note,
+        user.username,
+        user.address,
+        orderdetail.id as oid,
+        orderdetail.items_id,
+        orderdetail.items_num
+        FROM
+        orders
+        ,user
+        ,orderdetail
+        WHERE
+        orders.user_id =user.id AND
+        orders.id = orderdetail.orders_id
+        <if test="id!=null">
+            and orders.id=#{id}
+        </if>
+
+    </select>
+
+    <select id="findOrderByLazyLoad" parameterType="java.lang.Integer" resultMap="LazyMap1">
+        SELECT
+        orders.id,
+        orders.user_id,
+        orders.number,
+        orders.createtime,
+        orders.note
+        FROM
+        orders
+        <where>
+            <if test="id!=null">
+                and orders.id=#{id}
+            </if>
+        </where>
+    </select>
+    <select id="selectUser" parameterType="java.lang.Integer" resultType="User">
+        select * from user where id=#{id}
+    </select>
+    <resultMap id="LazyMap1" type="OrderExt2">
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="createtime" property="createTime"/>
+        <result column="number" property="number"/>
+        <result column="note" property="note"/>
+        <association property="user" select="com.hand.lq.dao.Test1Mapper.selectUser" column="user_id"/>
+    </resultMap>
+</mapper>

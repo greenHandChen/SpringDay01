@@ -9,6 +9,8 @@
         <setting name="mapUnderscoreToCamelCase" value="true" />
         <setting name="autoMappingBehavior" value="FULL" />
         <setting name="useColumnLabel" value="true" />
+        <setting name="lazyLoadingEnabled" value="true" />
+        <setting name="aggressiveLazyLoading" value="false" />
     </settings>
     <!-- 加载类路径下的属性文件 -->
 
@@ -29,7 +31,7 @@
         </environment>
     </environments>
 <mappers>
-    <mapper resource="mapper/UserMapper.xml"/>
+    <mapper resource="mapper/OrdersExtMapper.xml"/>
+    <mapper resource="mapper/OrdersExt2Mapper.xml"/>
 </mappers>
-
 </configuration>

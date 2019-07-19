@@ -9,11 +9,13 @@
         <module name="lizijie" />
         <module name="transaction" />
         <module name="mybatisday03" />
+        <module name="mybatisday04" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lizijie" target="1.7" />
       <module name="mybatisday03" target="1.5" />
+      <module name="mybatisday04" target="1.5" />
       <module name="springday01" target="1.5" />
       <module name="springday02" target="1.5" />
       <module name="transaction" target="8" />

@@ -15,6 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TestMybatisMapper {
+
     private SqlSessionFactory sqlSessionFactory;
     @Before
     public void init() throws IOException {

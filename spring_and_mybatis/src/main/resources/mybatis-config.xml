@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+<!--        <setting name="cacheEnabled" value="true"/>-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--<setting name="logImpl" value="STDOUT_LOGGING"/>-->
+        <!-- 是否开启懒加载，默认为false，false表示立即加载 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!-- 是否开启积极懒加载，默认为ture，true表示来加载对象可以被任何属性加载，false表示按需加载 -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+    <typeAliases>
+        <package name="com.hand.bean"/>
+    </typeAliases>
+    <mappers>
+        <mapper resource="mapper/OrdersExtMapper.xml"/>
+        <mapper resource="mapper/OrdersInfoMapper.xml"/>
+        <mapper resource="mapper/UserMapper.xml"/>
+    </mappers>
+</configuration>

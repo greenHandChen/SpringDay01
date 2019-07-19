@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.mapper.OrdersExtMapper">
+    <select id="getOrdersExt" parameterType="java.lang.Integer" resultMap="ordersExtMap">
+        select o.id oid,o.*,od.id odid,od.*,u.id uid,u.*
+        from orders o,order_detail od,user u
+        where o.id = od.orders_id
+        and o.user_id = u.id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+    <resultMap id="ordersExtMap" type="OrdersExt" autoMapping="true">
+        <id property="id" column="oid"/>
+        <association property="user" javaType="User" autoMapping="true">
+            <id property="id" column="uid" />
+        </association>
+        <collection property="detailList" ofType="OrderDetail" autoMapping="true"/>
+    </resultMap>
+</mapper>

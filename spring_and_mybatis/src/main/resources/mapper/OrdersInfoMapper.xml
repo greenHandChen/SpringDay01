@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.mapper.OrdersInfoMapper">
+    <!--<select id="getOrdersInfoById" parameterType="java.lang.Integer" resultMap="ordersInfoMap">
+        select o.id,o.*,u.id,u.* from orders o,user u
+        where o.id = #{id}
+        and u.id = o.user_id
+    </select>
+    <resultMap id="ordersInfoMap" type="OrdersInfo" autoMapping="true">
+        <id property="id" column="o.id"/>
+        <association property="user" javaType="User" autoMapping="true">
+            <id property="id" column="u.id"/>
+        </association>
+    </resultMap>-->
+    <select id="getOrdersInfoById" parameterType="java.lang.Integer" resultMap="ordersInfoMap">
+        select * from orders
+        where id = #{id}
+    </select>
+    <resultMap id="ordersInfoMap" type="OrdersInfo" autoMapping="true">
+        <id property="id" column="id"/>
+        <association property="user" select="com.hand.mapper.UserMapper.getUserById" column="user_id"/>
+    </resultMap>
+</mapper>

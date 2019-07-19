@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sy.mapper.orderMapper">
+    <cache/>
+    <select id="findUserById" parameterType="Integer" resultType="com.sy.bean.User">
+            select * from User where id=#{id}
+    </select>
+    <select id="findOrdersExt" parameterType="OrdersExt" resultType="OrdersExt">
+    select o.id,o.user_id,o.number,o.createtime,o.note,u.username,u.address,u.sex from orders o,user u where o.user_id=u.id and o.id=#{id}
+    </select>
+    
+    <select id="findOrdersExtRstmap" parameterType="OrdersExt" resultMap="OrdersExtAndUserRstmap">
+        select o.id,o.user_id,o.number,o.createtime,o.note,u.username,u.address,u.sex from orders o,user u where o.user_id=u.id and o.id=#{id}
+    </select>
+            <resultMap id="OrdersExtAndUserRstmap" type="OrdersExt">
+                <id column="id"  property="id"/>
+                <result column="user_id" property="userId"/>
+                <result column="number" property="number"/>
+                <association property="user" javaType="com.sy.bean.User">
+                <id column="user_id" property="id"/>
+                <result column="username" property="username"/>
+                <result column="address" property="address"/>
+                </association>
+
+            </resultMap>
+    <select id="findOrdersAndOrderDetail" parameterType="OrdersExt" resultMap="ordersAndOrderDetailRstMap">
+        select o.id,
+        o.user_id,
+        o.number,
+        o.createtime ,
+        o.note ,
+        u. username ,
+        u. address,
+        od.id detailid,
+        od. items_id,
+        od. items_num
+        from orders o,user u, orderdetail od
+        where o.user_id = u.id
+        and o.id=od.orders_id
+        <if test="id!= null">
+        and o.id = #{id}
+        </if>
+</select>
+    <resultMap id="ordersAndOrderDetailRstMap" type="OrdersExt" extends="OrdersExtAndUserRstmap">
+        <!--订单明细信息一对多-->
+        <!-- collection:映射一对多的关系
+             property属性:一对多关联时的属性名
+             ofType属性:关联的类型
+        -->
+        <collection property="orderDetails"  ofType="com.sy.bean.OrderDetail">
+                <id column="detailid" property="id"/>
+                <result column="items_id" property="itemsId"/>
+                <result column="items_num" property="itemsNum"/>
+        </collection>
+    </resultMap>
+    
+    <select id="findByOrderInfoBylazyLoad" parameterType="Integer" resultMap="LazyLoadRetMap">
+        select * from orders where id=#{id}
+    </select>
+    <resultMap id="LazyLoadRetMap" type="OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="note" property="note"/>
+
+        <!--一对一用户信息映射
+            association标签:具有懒加载的功能
+            select属性:通过select指定用户查向的statement,其值是statement的id
+            property属性:关联查询的属性映射
+            column属性:指定查询结果的列,并且把该列的值作为传入梦数,传入对应的statement中
+        -->
+        <association property="user" select="com.sy.mapper.UserMapper.findUserById" column="user_id"/>
+
+    </resultMap>
+</mapper>

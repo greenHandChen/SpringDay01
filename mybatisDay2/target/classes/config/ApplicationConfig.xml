@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <properties resource="config/db.properties"></properties>
+    <settings>
+        <!-- 默认false -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--积极懒加载 默认true false按需加载-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+    <typeAliases>
+    <typeAlias type="com.sy.bean.OrdersExt"  alias="OrdersExt"/>
+        <package name=""/>
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="mappers/orders.xml"></mapper>
+        <mapper resource="mappers/UserMapper.xml"></mapper>
+    </mappers>
+
+</configuration>

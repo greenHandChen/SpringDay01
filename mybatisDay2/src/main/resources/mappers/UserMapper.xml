@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sy.mapper.UserMapper">
+
+
+    <select id="findUserById" parameterType="Integer" resultType="com.sy.bean.User">
+            select * from User where id=#{id}
+    </select>
+    <select id="findUserByUsername" parameterType="String" resultType="com.sy.bean.User">
+        select * from user where username=${value}
+    </select>
+    <insert id="insertInfo" parameterType="com.sy.bean.User">
+        insert into user(id,username,sex,address) values (#{id},#{username},#{sex},#{address})
+    </insert>
+
+    <insert id="insertInfoGetKey" parameterType="com.sy.bean.User">
+<selectKey keyProperty="id" resultType="integer" order="AFTER">
+    select last_insert_id()
+</selectKey>
+        insert into user(username,sex,address) values (#{username},#{sex},#{address})
+    </insert>
+
+    <insert id="insertInfoGetUUID" parameterType="com.sy.bean.User">
+        <selectKey keyProperty="id" resultType="integer" order="BEFORE">
+            select UUID()
+        </selectKey>
+        insert into user(id,username,sex,address) values (#{id},#{username},#{sex},#{address})
+    </insert>
+
+
+
+    <select id="findUserMap" parameterType="Integer" resultMap="UserResultMap">
+        select id as num,username as name,address from user where id=#{id}
+    </select>
+    <resultMap id="UserResultMap" type="com.sy.bean.User">
+        <id column="num" property="id"/>
+        <id column="name" property="username"/>
+        <id column="address" property="address"/>
+    </resultMap>
+</mapper>

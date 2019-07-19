@@ -12,7 +12,9 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class mapperTest {
@@ -93,5 +95,21 @@ public class mapperTest {
         user.setUsername("小");
         System.out.println(mapper.testIfAndWhereLabel(user));
         sqlSession.close();
+    }
+
+    @Test
+    public void demo8(){
+        SqlSession sqlSession = sqlSessionFactory.openSession(true);
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        List list = new ArrayList();
+        list.add(1);
+        list.add(10);
+        System.out.println(mapper.testForEach(list));
+        sqlSession.close();
+    }
+
+    @Test
+    public void demo9(){
+
     }
 }

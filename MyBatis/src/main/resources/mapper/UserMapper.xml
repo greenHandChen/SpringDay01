@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Mapper.UserMapper">
+
     <select id="findUserId" parameterType="java.lang.Integer" resultType="user">
         select * from user where id = #{id}
     </select>
@@ -34,7 +35,7 @@
         select username, address from user where id = #{id}
     </select>
     
-    <select id="findUserRstMap" parameterType="int" resultMap="RstMap">
+    <select id="findUserRstMap" parameterType="int" resultType="RstMap">
         select id num, username name, address from user where id = #{id}
     </select>
     <resultMap id="RstMap" type="user">
@@ -51,6 +52,16 @@
             <if test="username != null and username != ''">
                 and username like concat(concat('%',#{username}),'%')
             </if>
+        </where>
+    </select>
+    
+    <select id="testForEach" parameterType="list" resultType="user">
+        select * from user
+        <where>
+        and id in
+            <foreach collection="list" item="id" open="(" close=")" separator=",">
+                #{id}
+            </foreach>
         </where>
     </select>
 </mapper>

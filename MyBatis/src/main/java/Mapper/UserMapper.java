@@ -16,4 +16,5 @@ public interface UserMapper {
     User findUsernameAndAddressById(int id);
     User findUserRstMap(int id);
     List<User> testIfAndWhereLabel(User user);
+    List<User> testForEach(List list);
 }

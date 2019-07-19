@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "- //mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  <configuration>
+
+<!--    <properties resource="config/db.properties"/>-->
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis?serverTimezone=UTC"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="com/hand/mapper/OrderMapper.xml"></mapper>
+        <mapper resource="com/hand/mapper/UserMapper.xml"></mapper>
+    </mappers>
+  </configuration>

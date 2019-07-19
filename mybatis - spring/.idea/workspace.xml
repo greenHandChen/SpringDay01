@@ -2,88 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bfabee-04bc-4513-8c3c-99e389675a7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/hand/VO/UserQueryVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/hand/ext/OrdersExt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/hand/pojo/Items.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/hand/pojo/Orderdetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/hand/pojo/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/hand/pojo/User.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/entity/target/classes/com/hand/VO/UserQueryVO.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/entity/target/classes/com/hand/ext/OrdersExt.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/entity/target/classes/com/hand/pojo/Items.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/entity/target/classes/com/hand/pojo/Orderdetail.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/entity/target/classes/com/hand/pojo/Orders.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/entity/target/classes/com/hand/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper/src/main/java/com/hand/mapper/OrdersMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper/src/main/java/com/hand/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper/src/main/resources/com/hand/mapper/OrdersMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper/src/main/resources/com/hand/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mapper/target/classes/META-INF/mapper.kotlin_module" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mapper/target/classes/com/hand/mapper/UserMapper.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mapper/target/classes/com/hand/mapper/UserMapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mapper/target/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/hand/service/MybatisSpringTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/resources/db.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/service/target/classes/applicationContext.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/service/target/classes/com/hand/service/MybatisSpringTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/service/target/classes/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/entity/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/entity/src/main/java/com/hand/VO/UserQueryVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/entity/src/main/java/com/hand/pojo/Items.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/entity/src/main/java/com/hand/pojo/Orderdetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/entity/src/main/java/com/hand/pojo/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/entity/src/main/java/com/hand/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/mapper/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/mapper/src/main/java/com/hand/mapper/MapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/mapper/src/main/java/com/hand/mapper/SqlSessionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/mapper/src/main/java/com/hand/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/mapper/src/main/resources/com/hand/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/mapper/src/main/resources/config/SqlMapConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/mapper/src/main/resources/config/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/mapper/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/mybatis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/service/src/main/java/com/hand/service/MybatisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/service/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/service/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/utils/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/controller_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/artifacts/controller_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__error_error_unknown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__mysql_mysql_connector_java_8_0_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__mysql_mysql_connector_java.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parent/controller/controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/controller/controller.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parent/dao/dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/dao/dao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parent/entity/entity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/entity/entity.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parent/parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/parent.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parent/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/service/service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parent/service/src/main/java/com/hand/service/SpringTx.java" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/service/src/main/java/com/hand/service/SpringTx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parent/service/src/main/resources/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/service/src/main/resources/application.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/entity/target/" />
@@ -131,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service/src/main/java/com/hand/service/MybatisSpringTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+            <state relative-caret-position="-389">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -168,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mapper/src/main/resources/com/hand/mapper/OrdersMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+            <state relative-caret-position="200">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -228,8 +160,8 @@
         <option value="$PROJECT_DIR$/mapper/src/main/resources/com/hand/mapper/OdersMapper.xml" />
         <option value="$PROJECT_DIR$/mapper/src/main/java/com/hand/mapper/OrdersMapper.java" />
         <option value="$PROJECT_DIR$/service/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/mapper/src/main/resources/com/hand/mapper/OrdersMapper.xml" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/hand/service/MybatisSpringTest.java" />
+        <option value="$PROJECT_DIR$/mapper/src/main/resources/com/hand/mapper/OrdersMapper.xml" />
       </list>
     </option>
   </component>
@@ -518,20 +450,19 @@
       <updated>1563506402171</updated>
       <workItem from="1563506403528" duration="88000" />
       <workItem from="1563506508507" duration="926000" />
-      <workItem from="1563517508538" duration="8559000" />
+      <workItem from="1563517508538" duration="8802000" />
     </task>
+    <task id="LOCAL-00001" summary="mybatis-String exercise">
+      <created>1563527696739</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563527696739</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MybatisSpringTest_test - 2019.07.19 at 16h 27m 59s.xml">
-      <configuration name="MybatisSpringTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisSpringTest_test - 2019.07.19 at 16h 29m 56s.xml">
-      <configuration name="MybatisSpringTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisSpringTest_test - 2019.07.19 at 16h 30m 39s.xml">
-      <configuration name="MybatisSpringTest.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MybatisSpringTest_test - 2019.07.19 at 16h 38m 45s.xml">
       <configuration name="MybatisSpringTest.test" configurationId="JUnit" />
     </history-entry>
@@ -553,9 +484,18 @@
     <history-entry file="MybatisSpringTest_testMapper - 2019.07.19 at 17h 08m 11s.xml">
       <configuration name="MybatisSpringTest.testMapper" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MybatisSpringTest_testMapper - 2019.07.19 at 17h 11m 35s.xml">
+      <configuration name="MybatisSpringTest.testMapper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisSpringTest_testMapper - 2019.07.19 at 17h 12m 57s.xml">
+      <configuration name="MybatisSpringTest.testMapper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisSpringTest_testMapper - 2019.07.19 at 17h 13m 24s.xml">
+      <configuration name="MybatisSpringTest.testMapper" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9573000" />
+    <option name="totallyTimeSpent" value="9816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -572,7 +512,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.05409836" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33934426" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18032786" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -599,7 +539,8 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="mybatis-String exercise" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis-String exercise" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -734,17 +675,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/hand/service/MybatisSpringTest.java">
+    <entry file="file://$PROJECT_DIR$/mapper/src/main/resources/com/hand/mapper/OrdersMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        <state relative-caret-position="200">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mapper/src/main/resources/com/hand/mapper/OrdersMapper.xml">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/hand/service/MybatisSpringTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+        <state relative-caret-position="-389">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>

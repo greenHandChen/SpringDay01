@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="db.properties"/>
+    <settings>
+        <!--驼峰映射-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--延迟加载s-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!-- 设置全部加载还是按需加载 -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <!--开启二级缓存，默认关闭-->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+    <typeAliases>
+        <!--别名包-->
+        <package name="com.mybatis.pojo"/>
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driverClassName}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+<mappers>
+    <mapper resource="mapper/OrdersMapper.xml"/>
+    <mapper resource="mapper/UserMapper.xml"/>
+    <!--<package name="com.mybatis"/>-->
+</mappers>
+
+</configuration>

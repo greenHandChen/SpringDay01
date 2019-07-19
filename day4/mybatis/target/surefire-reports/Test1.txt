@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Test1
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.94 sec <<< FAILURE!
-test1(Test1)  Time elapsed: 0.54 sec  <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 1.09 sec <<< FAILURE!
+test1(Test1)  Time elapsed: 0.621 sec  <<< ERROR!
 org.apache.ibatis.cache.CacheException: Error serializing object.  Cause: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt
 	at org.apache.ibatis.cache.decorators.SerializedCache.serialize(SerializedCache.java:102)
 	at org.apache.ibatis.cache.decorators.SerializedCache.putObject(SerializedCache.java:56)
@@ -60,7 +60,7 @@ Caused by: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt
 	at org.apache.ibatis.cache.decorators.SerializedCache.serialize(SerializedCache.java:97)
 	... 39 more
 
-test2(Test1)  Time elapsed: 0.07 sec  <<< ERROR!
+test2(Test1)  Time elapsed: 0.079 sec  <<< ERROR!
 org.apache.ibatis.cache.CacheException: Error serializing object.  Cause: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt2
 	at org.apache.ibatis.cache.decorators.SerializedCache.serialize(SerializedCache.java:102)
 	at org.apache.ibatis.cache.decorators.SerializedCache.putObject(SerializedCache.java:56)
@@ -118,7 +118,7 @@ Caused by: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt2
 	at org.apache.ibatis.cache.decorators.SerializedCache.serialize(SerializedCache.java:97)
 	... 39 more
 
-test4(Test1)  Time elapsed: 0.09 sec  <<< ERROR!
+test4(Test1)  Time elapsed: 0.13 sec  <<< ERROR!
 org.apache.ibatis.cache.CacheException: Error serializing object.  Cause: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt2_$$_jvst55_0
 	at org.apache.ibatis.cache.decorators.SerializedCache.serialize(SerializedCache.java:102)
 	at org.apache.ibatis.cache.decorators.SerializedCache.putObject(SerializedCache.java:56)

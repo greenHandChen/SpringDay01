@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hand.mapper.OrderMapper">
+
+    <select id="findOrderExt" parameterType="com.hand.entity.OrdersExt" resultType="com.hand.entity.OrdersExt">
+        select o.id,o.user_id,o.number,o.createtime,o.note,u.username,u.address
+        from orders o,user u
+        where o.user_id = u.id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+
+
+    <resultMap id="orderAndUserRstMap" type="com.hand.entity.OrdersExt">
+        <id property="id" column="id"/>
+        <result property="user_id" column="user_id"/>
+        <result property="number" column="number"/>
+        <result property="createtime" column="createtime"/>
+        <result property="note" column="note"/>
+        <association property="user" javaType="com.hand.entity.User">
+            <id property="id" column="user_id"/>
+            <result property="username" column="username"/>
+            <result property="address" column="address"/>
+        </association>
+    </resultMap>
+    <select id="findOrderExtByRstMap" resultMap="orderAndUserRstMap">
+        select o.id,o.user_id,o.number,o.createtime,o.note,u.username,u.address
+        from orders o,user u
+        where o.user_id = u.id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+    
+    
+    <resultMap id="orderAndOrderDetailRstMap" type="com.hand.entity.OrdersExt" extends="orderAndUserRstMap">
+        <collection property="orderDetails" ofType="com.hand.entity.OrderDetail">
+            <id column="detailId" property="id"/>
+            <result column="orders_id" property="orders_id"/>
+            <result column="items_id" property="items_id"/>
+            <result column="items_num" property="items_num"/>
+        </collection>
+    </resultMap>
+    <select id="findOrdersAndOrderDetail" resultMap="orderAndOrderDetailRstMap">
+        select o.id,o.user_id,o.number,o.note,u.username,u.address,od.id detailId,od.items_id,od.items_num
+        from orders o,user u,orderdetail od
+        where o.user_id = u.id
+        and o.id = od.orders_id
+        <if test="id != null">
+            and  o.id = #{id}
+        </if>
+    </select>
+
+</mapper>

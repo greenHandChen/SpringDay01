@@ -2,6 +2,7 @@ package com.masirhh.mybatis2.service;
 
 import com.masirhh.mybatis2.beans.userBean;
 import com.masirhh.mybatis2.dao.userDao;
+import com.masirhh.mybatis2.mapper.userMapper;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -27,5 +28,11 @@ public class userService {
         userBean user = userDAO.findUserById(1);
         // 输出用户信息
         System.out.println(user.toString());
+    }
+    @Test
+    public void test2(){
+        userMapper userMapper=(userMapper) applicationContext.getBean("userMapper");
+        userBean userBean=userMapper.findUserById(10);
+        System.out.println(userBean.toString());
     }
 }

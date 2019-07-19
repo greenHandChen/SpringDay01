@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4bb5eb0-ee0c-4cd4-bec7-41e6de176c9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/dao/userDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/dao/userDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/dao/userDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/dao/userDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/mapper/orderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/mapper/orderMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/service/userService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/service/userService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/masirhh/mybatis2/service/userService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/masirhh/mybatis2/service/userService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/orderMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/userMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/applicationContext.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/service/userService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-224">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="165">
+              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,17 +73,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/mapper/userMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="88">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/dao/userDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="110">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            <state relative-caret-position="203">
+              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -166,15 +157,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/beans/orderExtDdd.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/beans/orderExtByMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/test.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/mapper/userMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/mapper/orderMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/dao/userDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/service/userService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/dao/userDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/service/userService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/applicationContext.xml" />
       </list>
     </option>
   </component>
@@ -202,7 +193,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="198" />
     <option name="y" value="-20" />
     <option name="width" value="1346" />
@@ -339,7 +330,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.userService.testFindUserById">
+  <component name="RunManager" selected="JUnit.userService.test2">
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test" />
       <module name="mybatis2" />
@@ -352,6 +343,22 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="test" />
       <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="userService.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.masirhh.mybatis2.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.masirhh.mybatis2.service" />
+      <option name="MAIN_CLASS_NAME" value="com.masirhh.mybatis2.service.userService" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -375,6 +382,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.userService.test2" />
         <item itemvalue="JUnit.userService.testFindUserById" />
         <item itemvalue="JUnit.test.test1" />
         <item itemvalue="Application.test" />
@@ -395,14 +403,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563521001517</updated>
-      <workItem from="1563521002859" duration="8522000" />
+      <workItem from="1563521002859" duration="9363000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="userService_testFindUserById - 2019.07.19 at 17h 19m 42s.xml">
-      <configuration name="userService.testFindUserById" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="userService_testFindUserById - 2019.07.19 at 18h 01m 38s.xml">
       <configuration name="userService.testFindUserById" configurationId="JUnit" />
     </history-entry>
@@ -430,9 +435,12 @@
     <history-entry file="userService_testFindUserById - 2019.07.19 at 18h 21m 54s.xml">
       <configuration name="userService.testFindUserById" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="userService_test2 - 2019.07.19 at 18h 57m 07s.xml">
+      <configuration name="userService.test2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8522000" />
+    <option name="totallyTimeSpent" value="9363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -454,7 +462,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.5889262" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2885906" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29026845" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26510066" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -575,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/mapper/userMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/mapper/userMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -627,23 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/service/userService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/dao/userDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -656,11 +640,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/dao/userDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="110">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/mapper/userMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masirhh/mybatis2/service/userService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
         </state>
       </provider>
     </entry>

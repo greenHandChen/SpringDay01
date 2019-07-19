@@ -15,16 +15,20 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
     <tx:annotation-driven transaction-manager="transactionManager"/>
+
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="configLocation" value="config/mybatis-config.xml"/>
     </bean>
+<!--    批量代理Mapper-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.masirhh.mybatis2.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
+
     <bean id="userDao" class="com.masirhh.mybatis2.dao.userDaoImpl">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
+
     <context:component-scan base-package="com.masirhh.mybatis2.*"/>
 </beans>

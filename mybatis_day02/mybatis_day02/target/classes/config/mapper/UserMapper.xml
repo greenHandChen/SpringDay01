@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace：命名空间，主要用于statement经行分类管理的唯一标识符-->
+<mapper namespace="test">
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.hand.pojo.User">
+        select  *  from  user where id = #{id}
+    </select>
+
+    <select id="findUserByUsername"  parameterType="java.lang.String" resultType="com.hand.pojo.User">
+        select  *  from  user where username  like ${value}
+    </select>
+
+    <insert id="adduser" parameterType="com.hand.pojo.User">
+        insert  into user (username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--添加用户返回主键Mysql版本-->
+    <!--
+       selectKey:用于查询主键，数据库不同，写法也不同
+       keyProperty:指的是我们需要映射的字段名称
+       resultType:输出参数类型
+       order:用来指定查询主键的SQL以及插入的SQL的相对顺序
+       LAST_INSERT_ID:必须配合insert语句进行搭配使用
+    -->
+    <insert id="addUserGetId" parameterType="com.hand.pojo.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            select  LAST_INSERT_ID()
+        </selectKey>
+         insert  into user (username,birthday,sex,address) values(#{username}, #{birthday},#{sex}, #{address})
+    </insert>
+
+    <!--添加用户返回UUID-->
+    <insert id="addUserGetUUID" parameterType="com.hand.pojo.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+            select  UUID()
+        </selectKey>
+        insert  into user (id,username,birthday,sex,address) values(#{id},#{username}, #{birthday},#{sex}, #{address})
+    </insert>
+    <!--添加用户返回自增主键Oracle版本-->
+    <insert id="addUserGetId2" parameterType="com.hand.pojo.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+            select  USER_S.nextval from dual
+        </selectKey>
+        insert  into user (username,birthday,sex,address) values(#{username}, #{birthday},#{sex}, #{address})
+    </insert>
+</mapper>
+   
+

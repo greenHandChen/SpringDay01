@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--引入外部数据库文件-->
+    <properties resource="config/jdbc.properties" />
+
+    <!--配置Mybaits的环境信息-->
+    <environments default="development">
+        <environment id="development">
+            <!--配置Jdbc的事务控制，由mybaits进行管理-->
+            <transactionManager type="JDBC"/>
+            <!--配置数据源,采用mybatis连接池-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driverClassName}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 映射文件的位置 -->
+    <!--sql形式xml-->
+<!--    <mappers>-->
+<!--        <package name="com.hand.mapper"/>-->
+<!--    </mappers>-->
+
+    <mappers>
+        <mapper class="com.hand.mapper.UserMapper"/>
+    </mappers>
+</configuration>
+

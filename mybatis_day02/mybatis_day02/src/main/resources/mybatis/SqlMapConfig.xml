@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--引入外部数据库文件-->
+    <properties resource="config/jdbc.properties" />
+    <!-- 开启懒加载配置 -->
+    <settings>
+        <!-- 全局性设置懒加载。如果设为‘false'，则所有相关联的都会被初始化加载。 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!-- 当设置为‘true'的时候，懒加载的对象可能被任何懒属性全部加载。否则，每个属性都按需加载。 -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <!--开启二级缓存-->
+        <setting name="cacheEnabled" value="true"/>
+
+    </settings>
+    <!--配置Mybaits的环境信息-->
+    <environments default="development">
+        <environment id="development">
+            <!--配置Jdbc的事务控制，由mybaits进行管理-->
+            <transactionManager type="JDBC"/>
+            <!--配置数据源,采用mybatis连接池-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driverClassName}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 映射文件的位置 -->
+    <!--sql形式xml-->
+    <mappers>
+        <package name="com.hand.mapper"/>
+    </mappers>
+    <!--sql基于注解形式-->
+<!--    <mappers>-->
+<!--        <mapper class="com.hand.mapper.UserMapper"/>-->
+<!--    </mappers>-->
+</configuration>
+

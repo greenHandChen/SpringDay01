@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace：命名空间，用于隔离sql，还有一个很重要的作用，后面会讲 -->
+<mapper namespace="com.hand.smybatis.mapper.UserMapper">
+
+    <select id="findUserById" parameterType="Integer" resultType="com.hand.smybatis.pojo.User">
+
+        select * from user where id = #{v}
+
+    </select>
+
+    <!--    SELECT * FROM user u  RIGHT JOIN orders o on u.id = o.user_id where  u.id = 10-->
+
+    <select id="selectUserAndOrderById" parameterType="Integer" resultMap="userByOrder">
+
+           SELECT * FROM user u  RIGHT JOIN orders o on u.id = o.user_id
+        
+    </select>
+
+    <resultMap id="userByOrder" type="User">
+        <result property="id" column="id"></result>
+        <result property="username" column="username"></result>
+        <result property="sex" column="sex"></result>
+        <result property="address" column="address"></result>
+        <association property="order" javaType="Order">
+            <id column="id" property="id"></id>
+            <result property="number" column="number"></result>
+            <result property="createtime" column="createtime"></result>
+        </association>
+    </resultMap>
+
+
+    <!--    多对多-->
+    <resultMap id="moreByMore" type="User">
+        <result property="username" column="username"></result>
+        <result property="sex" column="sex"></result>
+        <result property="address" column="address"></result>
+        <collection property="orderList" ofType="Order">
+            <id column="user_id" property="userId"></id>
+            <result property="number" column="number"></result>
+            <result property="createtime" column="createtime"></result>
+            <collection property="orderDetails" ofType="OrderDetail">
+                <result column="items_num" property="items_num"></result>
+            </collection>
+            
+        </collection>
+
+    </resultMap>
+
+    <select id="selectMoreByMore" resultMap="moreByMore">
+        SELECT
+		u.username,
+	    o.user_id,
+	    o.number,
+	 	o.createtime
+		,od.items_num
+	 	FROM user u , orderdetail od
+	 ,orders o  where u.id = o.user_id and od.orders_id= o.id
+    </select>
+
+
+</mapper>

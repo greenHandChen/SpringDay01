@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!--	<properties resource="classpath:jdbc.properties"/>-->
+	<!-- 别名 包以其子包下所有类   头字母大小都行-->
+	<typeAliases>
+<!-- 		<typeAlias type="com.hand.mybatis.pojo.User" alias="User"/>-->
+		<package name="com.hand.smybatis.pojo"/>
+	</typeAliases>
+	
+	<!-- Mapper的位置  Mapper.xml 写Sql语句的文件的位置 -->
+	<mappers>
+<!-- 		<mapper resource="sqlmap/User.xml" />-->
+
+<!--		此种放法要求Mapp接口和Mapp映射文件同名并且放在同一目录下-->
+<!--		<mapper class="com.hand.mybatis.mapper.UserMapper" />-->
+<!-- 		<mapper resource="sqlmap/User.xml" class="" url=""/> -->
+<!-- 		<mapper class="com.itheima.mybatis.mapper.UserMapper" />-->
+<!-- 		<mapper url="" /> -->
+		<!--		此种放法要求Mapp接口和Mapp映射文件同名并且放在同一目录下-->
+		<package name="com.hand.smybatis.mapper"/>
+	</mappers>
+</configuration>

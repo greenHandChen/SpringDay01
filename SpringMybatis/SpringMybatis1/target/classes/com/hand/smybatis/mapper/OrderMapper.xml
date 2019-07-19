@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace：命名空间，用于隔离sql，还有一个很重要的作用，后面会讲 -->
+<mapper namespace="com.hand.smybatis.mapper.OrderMapper">
+
+    <resultMap id="orders" type="Order">
+<!--        手动映射 column数据库的字段   property  为pojo 的属性  相同的字段不需要写可以自动映射-->
+        <result column="user_id" property="userId"></result>
+    </resultMap>
+
+<select id="selectOrderList" resultMap="orders" >
+    select *  from orders
+</select>
+    <!-- resultMap最终还是要将结果映射到pojo上，type就是指定映射到哪一个pojo -->
+    <!-- id：设置ResultMap的id -->
+    <resultMap id="orders1" type="Order">
+        <result column="id" property="id"></result>
+        <result column="user_id" property="userId"></result>
+        <result column="number" property="number"></result>
+        <result column="createtime" property="createtime"></result>
+        <association property="user" javaType="User">
+            <!-- 定义主键 ,非常重要。如果是多个字段,则定义多个id -->
+            <!-- property：主键在pojo中的属性名 -->
+            <!-- column：主键在数据库中的列名 -->
+            <id column="id" property="id"></id>
+            <!-- 定义普通属性 -->
+            <result column="username" property="username" ></result>
+        </association>
+
+    </resultMap>
+
+    <select id="selectOrderByUserId" resultMap="orders1">
+        SELECT
+	 	o.id,
+	    o.user_id,
+	    o.number,
+	 	o.createtime,
+	 	u.username
+	 	FROM orders o
+	 	left join user u
+	 	on o.user_id = u.id
+--
+--         SELECT
+-- 	    o.user_id,
+-- 	    o.number,
+-- 	 	o.createtime,
+-- 	 	u.username
+-- 	 	FROM orders o
+-- 	 	left join user u
+-- 	 	on o.user_id = u.id
+    </select>
+
+</mapper>

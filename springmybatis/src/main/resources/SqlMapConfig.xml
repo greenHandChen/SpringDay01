@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- mybatis的主配置文件 -->
+<configuration>
+
+
+    <settings>
+        <setting name="cacheEnabled" value="true" />
+        <!-- 开启数据库last_name与lastName的驼峰式名称映射 -->
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+        <setting name="defaultExecutorType" value="SIMPLE" />
+        <!-- 懒加载启用 : 根据需要配置局部懒加载 fetchType="lazy" -->
+        <setting name="lazyLoadingEnabled" value="false" />
+        <!-- 侵入懒加载 : false按需加载 true[立即加载] -->
+        <setting name="aggressiveLazyLoading" value="false" />
+    </settings>
+
+    <typeAliases>
+        <package name="com.hand.sysmanager.entity"/>
+    </typeAliases>
+
+
+  
+
+    <!-- 指定映射配置文件的位置，映射配置文件指的是每个dao独立的配置文件
+        如果是用注解来配置的话，此处应该使用class属性指定被注解的dao全限定类名
+    -->
+<!--    <mappers>-->
+<!--        <mapper resource="mappers/UserMapper.xml"/>-->
+<!--&lt;!&ndash;        <package name="maapers/*.xml"/>&ndash;&gt;-->
+<!--    </mappers>-->
+</configuration>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--引入外部数据库配置文件-->
+    <properties resource="config/db.properties"/>
+
+    <settings>
+        <!-- 打开延迟加载的开关 -->
+        <setting name="lazyLoadingEnabled" value="true" />
+        <!--mybatis打印日志-->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <!-- 将积极加载改为消息加载即按需加载 -->
+        <setting name="aggressiveLazyLoading" value="false" />
+        <!--开启二级缓存-->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
+    <!--类型别名-->
+    <typeAliases>
+        <typeAlias type="a_1.domain.OrdersExt" alias="OrdersExt"/>
+        <typeAlias type="a_1.domain.User" alias="User"/>
+        <typeAlias type="a_1.domain.OrderDetail" alias="OrderDetail"/>
+    </typeAliases>
+    
+    <!--配置mybatis环境信息-->
+    <environments default="dev">
+        <environment id="dev">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driverClassName}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--加载映射文件-->
+    <mappers>
+        <package name="a_1.mapper"/>
+    </mappers>
+
+</configuration>

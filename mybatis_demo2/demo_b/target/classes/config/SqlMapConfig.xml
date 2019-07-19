@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <!--类型别名-->
+    <typeAliases>
+        <!--批量别名定义，别名取的时类名,不区分大小写-->
+        <package name="com.hand.domain"/>
+    </typeAliases>
+
+    <!--加载映射文件-->
+<!--    <mappers>-->
+<!--&lt;!&ndash;        <mapper resource="com/hand/mapper/UserMapper.xml"/>&ndash;&gt;-->
+<!--        <package name="com.hand.mapper"/>-->
+<!--    </mappers>-->
+</configuration>

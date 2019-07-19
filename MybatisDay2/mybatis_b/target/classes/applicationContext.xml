@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.alibaba.com/schema/stat"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd http://www.alibaba.com/schema/stat http://www.alibaba.com/schema/stat.xsd">
+	
+
+ 	
+	
+
+	
+	<!-- 加载jdbc.properties文件 -->
+	<context:property-placeholder location="classpath:jdbc.properties"/>
+	<!-- 配置配置数据库信息（替代mybatis的配置文件conf.xml） -->
+	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+			<property name="driverClassName" value="${jdbc.driverClassName}"></property>
+			<property name="jdbcUrl" value="${jdbc.url}"></property>
+			<property name="username" value="${jdbc.username}"></property>
+			<property name="password" value="${jdbc.password}"></property>
+	</bean>
+	
+	
+	<!-- conf.xml :  数据源,mapper.xml -->
+	<!-- 配置MyBatis需要的核心类：SqlSessionFactory -->
+	<!-- 在SpringIoc容器中 创建MyBatis的核心类 SqlSesionFactory -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="configLocation" value="classpath:SqlMapConfig.xml"></property>
+		<!-- 加载mapper.xml路径 -->
+		<property name="mapperLocations" value="classpath:mapper/*.xml"></property>
+		</bean>
+	
+
+	<!-- 将MyBatis的SqlSessionFactory 交给Spring -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+	 	<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+	 	<property name="basePackage" value="mapper"></property>
+	 	<!--上面basePackage所在的property的作用：
+	 	将mapper包中，所有的接口   产生与之对应的 动态代理对象
+	 	（对象名 就是 首字母小写的接口名） ：studentMapper.querystudentBYNO();
+	 	  -->
+	 </bean>
+
+
+</beans>

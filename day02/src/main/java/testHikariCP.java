@@ -25,7 +25,6 @@ public class testHikariCP {
 
     @Test
     public void AA() {
-
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("application.xml");
         UserDao userDao = applicationContext.getBean("userDao", UserDao.class);
         User user = new User();

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mapper代理 -->
+<mapper namespace="Mapper.UserMapper">
+
+    <!-- resultMap -->
+    <!-- id属性：对应数据库的唯一列 -->
+    <!-- result属性：对应数据库的普通列 -->
+
+    <!-- userMap -->
+    <resultMap id="userMap" type="Entity.User">
+
+        <id column="id" property="id"></id>
+
+        <result column="username" property="username"></result>
+        <result column="birthday" property="birthday"></result>
+        <result column="address" property="address"></result>
+        <result column="sex" property="sex"></result>
+
+    </resultMap>
+
+    <!-- 根据id查询用户 -->
+    <select id="findUserById" parameterType="java.lang.Integer" resultMap="userMap">
+
+        SELECT * FROM `user` WHERE `id` = #{id};
+
+    </select>
+
+
+
+</mapper>

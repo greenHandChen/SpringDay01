@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mapper代理 -->
+<mapper namespace="Mapper.OrderMapper">
+
+    <!-- orderMap -->
+    <resultMap id="orderMap" type="Entity.Order">
+
+        <id column="id" property="id"></id>
+
+        <result column="user_id" property="user_id"></result>
+        <result column="number" property="number"></result>
+        <result column="createtime" property="createtime"></result>
+        <result column="note" property="note"></result>
+
+    </resultMap>
+
+    <!-- 根据id查询订单 -->
+    <select id="findOrderById" parameterType="java.lang.Integer" resultMap="orderMap">
+
+        SELECT * FROM `orders` WHERE `id` = #{id};
+
+    </select>
+
+    <!-- ********** 一对一映射 ********** -->
+
+    <!-- （1）. 根据id查询订单及其对应的用户账号 - 使用resultType -->
+    <select id="findOrderExt1" parameterType="Entity.OrderExt" resultType="Entity.OrderExt">
+
+        SELECT
+          o.*, u.`username`, u.`address`
+        FROM
+          `user` u,
+          `orders` o
+        WHERE
+          u.`id` = o.`user_id`
+        <if test="id != null">
+            AND o.`id` = #{id};
+        </if>
+
+    </select>
+
+    <!-- （2）. 根据id查询订单及其对应的用户账号 - 使用resultMap -->
+    <resultMap id="orderAndUserMap" type="Entity.OrderExt">
+
+        <id column="id" property="id"></id>
+
+        <result column="user_id" property="user_id"></result>
+        <result column="number" property="number"></result>
+        <result column="createtime" property="createtime"></result>
+        <result column="note" property="note"></result>
+
+        <association property="user" javaType="Entity.User">
+
+            <id column="user_id" property="id"></id>
+
+            <result column="username" property="username"></result>
+            <result column="address" property="address"></result>
+
+        </association>
+
+    </resultMap>
+
+    <select id="findOrderExt2" resultMap="orderAndUserMap">
+
+        SELECT
+        o.*, u.`username`, u.`address`
+        FROM
+        `user` u,
+        `orders` o
+        WHERE
+        u.`id` = o.`user_id`
+        <if test="id != null">
+            AND o.`id` = #{id};
+        </if>
+
+    </select>
+
+    <!-- ********** 一对一映射 ********** -->
+
+    <!-- ********** 一对多映射 ********** -->
+    <!-- resultMap继承 -->
+    <resultMap id="orderAndOrderDetailMap" type="Entity.OrderExt" extends="orderAndUserMap">
+
+        <collection property="orderDetailList" ofType="Entity.OrderDetail">
+
+            <id column="detail_id" property="id"></id>
+
+            <result column="items_id" property="items_id"></result>
+            <result column="items_num" property="items_num"></result>
+
+        </collection>
+
+    </resultMap>
+
+    <select id="findDrderAndOrderDetail" resultMap="orderAndOrderDetailMap">
+
+         SELECT
+          u.`username`,
+          u.`sex`,
+          o.`id`,
+          o.`user_id`,
+          o.`number`,
+          od.`id` 'detail_id',
+          od.`items_id`,
+          od.`items_num`
+        FROM
+          `user` u,
+          `orders` o,
+          `orderdetail` od
+        WHERE
+          u.`id` = o.`user_id` AND o.`id` = od.`orders_id`;
+
+    </select>
+
+    <!-- ********** 一对多映射 ********** -->
+
+</mapper>

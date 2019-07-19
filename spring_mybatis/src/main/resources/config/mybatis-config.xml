@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <!--配置日志输出文件-->
+    <properties>
+        <property name="dialect" value="mysql" />
+    </properties>
+    <settings>
+        <!--延迟加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <!--二级缓存-->
+        <setting name="cacheEnable" value="true"/>
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+    </settings>
+
+    <!--类型别名-->
+    <typeAliases>
+        <package name="com.zt.smybatis.domain"/>
+    </typeAliases>
+
+    <!--加载配置文件-->
+    <mappers>
+        <!--        <mapper resource="mapper/UserMapper.xml"/>-->
+        <package name="com.zt.smybatis.mapper"/>
+    </mappers>
+
+</configuration>

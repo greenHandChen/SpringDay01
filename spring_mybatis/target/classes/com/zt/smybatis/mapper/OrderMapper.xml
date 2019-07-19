@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zt.smybatis.mapper.OrderMapper" >
+  
+  <select id="findOrderByResultType" parameterType="OrderExt" resultType="OrderExt">
+    SELECT o.id, o.user_id, o.number, o.createtime, o.note, u.username, u.address
+    FROM orders o, user u
+    WHERE o.user_id = u.id
+    <if test="id != null">
+      AND o.id = #{id}
+    </if>
+  </select>
+  
+  <resultMap id="orderAndUserResMap" type="OrderExt2">
+    <id column="id" property="id"/>
+    <result column="username" property="username"/>
+    <result column="address" property="address"/>
+
+    <association property="user" javaType="User">
+      <id column="user_id" property="id"/>
+      <result column="username" property="username"/>
+      <result column="address" property="address"/>
+    </association>
+  </resultMap>
+  <select id="findOrdersByResultMap" parameterType="OrderExt2" resultMap="orderAndUserResMap">
+    SELECT o.id, o.user_id, o.number, o.createtime, o.note, u.username, u.address
+    FROM orders o, user u
+    WHERE o.user_id = u.id
+    <if test="id != null">
+      AND o.id = #{id}
+    </if>
+  </select>
+
+
+  <resultMap id="ordersAndOrderDetailRsMap" type="OrderExt3" extends="orderAndUserResMap">
+    <collection property="orderDetails" ofType="OrderDetail">
+      <id column="detailId" property="id"/>
+      <result column="items_id" property="itemsId"/>
+      <result column="items_num" property="itemsNum"/>
+    </collection>
+  </resultMap>
+  <select id="findOrdersAndOrderDetail" parameterType="OrderExt3" resultMap="ordersAndOrderDetailRsMap">
+    SELECT o.id,
+    o.user_id,
+    o.number,
+    o.createtime,
+    o.note,
+    u.username,
+    u.address,
+    od.id detailId,
+    od.items_id,
+    od.items_num
+    FROM orders o, user u, orderdetail od
+    WHERE o.user_id = u.id
+    AND o.id = od.orders_id
+    <if test="id != null">
+      AND o.id = #{id}
+    </if>
+  </select>
+
+  <select id="findItemsAndOrdersDetail" parameterType="Order" resultMap="itemsAndOrdersRstMap">
+    SELECT od.id odId,
+    i.name,
+    i.price,
+    i.detail,
+    o.id oId,
+    o.user_id,
+    o.number,
+    o.createtime,
+    od.items_num
+    FROM items i, orderdetail od, orders o
+    WHERE od.items_id = i.id
+    AND od.orders_id = o.id
+    <if test="id != null">
+      AND o.id = #{id}
+    </if>
+    ORDER BY od.id
+  </select>
+  <resultMap id="itemsAndOrdersRstMap" type="OrderDetailExt">
+    <id column="odId" property="odId"/>
+    <result column="items_num" property="itemsNum"/>
+    <association property="items" javaType="Item">
+      <result column="name" property="name"/>
+      <result column="price" property="price"/>
+      <result column="detail" property="detail"/>
+    </association>
+    <association property="orders" javaType="Order">
+      <result column="oId" property="id"/>
+      <result column="user_id" property="userId"/>
+      <result column="number" property="number"/>
+      <result column="createtime" property="createtime"/>
+    </association>
+  </resultMap>
+</mapper>

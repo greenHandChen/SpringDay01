@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="test">
+    <!--根据用户ID精确查询用户-->
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.hand.ms.po.User">
+     select  * from User where id =#{id}
+    </select>
+
+</mapper>

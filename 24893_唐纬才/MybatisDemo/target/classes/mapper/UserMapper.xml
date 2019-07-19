@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace命名空间：主要是用于对statement进行分类管理的唯一标识符，
+注意：当我们用mapper代理开发模式时，它有另外一种十分特殊的作用-->
+<mapper namespace="com.hand.Dao.UserMapper" >
+    <!--根据ID查找用户-->
+    <select id="findUserById" parameterType="int" resultType="com.hand.mybatis.User">
+         select * from user where id=#{id};
+    </select>
+    <!--根据name模糊查询用户列表-->
+    <!--${}就像是一个连接符或者是占位符，类似JDBC中的?,如果参数类型是简单类型，那么${}里面的参数名称必须是value-->
+    <!--${}这种写法有sql注入风险，所以要慎用，但是好多地方不得不用，比如在排序之中动态传入列名-->
+    <!--${}会在结果中原样输出不会拼接-->
+    <select id="findUsersByName" parameterType="java.lang.String" resultType="com.hand.mybatis.User">
+        SELECT * FROM USER WHERE NAME LIKE '%${value}%';
+    </select>
+
+    <!--添加用户-->
+    <!--入参是pojo类型时,通过OGNL去User对象的属性值中查找相应的类型-->
+    <!--selectKey:查询主键，在标签内需要输入查询主键的sql-->
+    <!--order：指定查询主键的sql和查询语句的先后顺序-->
+    <!--LAST_INSERT_ID:该函数是mysql的函数。获取到自增主键ID，它必须配合INSERT使用-->
+    <insert id="insertUser" parameterType="com.hand.mybatis.User">
+        <selectKey keyProperty="id" resultType="int" order="AFTER">
+            SELECT LAST_INSERT_ID();
+        </selectKey>
+        INSERT INTO
+        USER(ID,NAME,SEX)
+        VALUES(#{id},#{name},#{sex});
+    </insert>
+
+    <!--自增主键之UUID 对于需要插入ID的进行取Id，只要不是自增主键order均设置为BEFORE-->
+    <insert id="insertUser1" parameterType="com.hand.mybatis.User">
+        <selectKey keyProperty="id" resultType="string" order="BEFORE">
+            SELECT UUID();
+        </selectKey>
+        INSERT INTO
+        USER(ID,NAME,SEX)
+        VALUES(#{id},#{name},#{sex});
+        /*此处的id是显式给出，不是自增生成*/
+    </insert>
+</mapper>

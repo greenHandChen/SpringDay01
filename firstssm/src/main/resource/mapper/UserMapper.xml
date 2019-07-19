@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatics.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssm.dao.IUserDao">
+    <select id="findUserByMoney" parameterType="java.lang.Double" resultType="com.ssm.model.Account">
+            select * from ACCOUNT WHERE money>#{money}
+    </select>
+    <select id="findSellerAndManagerByGoodsName" parameterType="java.lang.String" resultType="com.ssm.model.SellerAndManager">
+            SELECT s1.seller_no,s1.seller_name,s2.seller_no seller_manager_no,s2.seller_name seller_manager_name FROM   hand_sellers s1,hand_sellers s2
+            WHERE  s1.seller_no NOT IN (SELECT r.seller_no
+                            FROM   hand_sales_records r
+                            WHERE  r.goods_no IN (SELECT g.goods_no
+                                                  FROM   hand_goods g
+                                                  WHERE  g.goods_name = #{goodName}))
+            AND    s1.manager_no = s2.seller_no
+    </select>
+    <select id="getOrderExtByOrderId" parameterType="java.lang.Integer" resultType="com.ssm.model.OrdersExt">
+      SELECT o.*,u.username,u.address FROM orders o,USER u WHERE o.user_id = u.id
+        <if test="id !=null">and o.id=#{id}</if>
+    </select>
+    <resultMap id="ordersAndUserRstMap" type="OrdersExt">
+            <id column="id" property="id"/>
+            <result column="user_id" property="user_id"/>
+            <result column="number" property="number"/>
+            <result column="createtime" property="createtime"/>
+            <result column="note" property="note"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+            <association  property="user" javaType="com.ssm.model.User">
+                <id column="user_id" property="id"/>
+                <result column="username" property="username"/>
+                <result column="birthday" property="birthday"/>
+                <result column="address" property="address"/>
+                <result column="sex" property="sex"/>
+            </association>
+    </resultMap>
+    <select id="findOrdersByResultMap"  parameterType="java.lang.Integer" resultMap="ordersAndUserRstMap">
+        SELECT o.*,u.username,u.birthday,u.address,u.sex FROM  orders o,USER u WHERE o.user_id = u.id
+        <if test="id !=null">and o.id=#{id}</if>
+    </select>
+    <resultMap id="ordersAndorderdetails" extends="ordersAndUserRstMap" type="OrdersExt">
+        <collection property="orderdetails" ofType="com.ssm.model.Orderdetail">
+           <id column="detailId" property="id"/>
+           <result column="items_id" property="items_id"/>
+            <result column="items_num" property="items_num"/>
+        </collection>
+    </resultMap>
+    <select id="findOrdersAndOrderDetail"  parameterType="java.lang.Integer" resultMap="ordersAndorderdetails">
+        SELECT
+	o.*,
+	u.*,
+	od.id detailId,
+	od.items_id,
+	od.items_num
+FROM
+	orders o,
+	USER u,
+	orderdetail od
+WHERE
+        o.user_id = u.id
+    </select>
+</mapper>

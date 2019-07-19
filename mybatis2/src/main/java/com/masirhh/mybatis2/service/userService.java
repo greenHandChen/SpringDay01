@@ -2,15 +2,12 @@ package com.masirhh.mybatis2.service;
 
 import com.masirhh.mybatis2.beans.userBean;
 import com.masirhh.mybatis2.dao.userDao;
-import com.masirhh.mybatis2.mapper.userMapper;
 import org.junit.Before;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 
 @Service
 public class userService {

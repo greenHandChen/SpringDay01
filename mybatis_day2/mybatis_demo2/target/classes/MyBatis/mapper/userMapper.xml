@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 使用mapper代理时，namespace的值，必须要和代理的mapper接口全限定名一致 -->
+<mapper namespace="com.mapper.UserMapper">
+    <!-- 为当前namespace中的mapper开启二级缓存 -->
+<!--
+    <cache/>
+-->
+
+    <sql id="userFields">username,birthday,sex,address,manage_id</sql>
+
+    <select id="findUserAndItemsResultMap" resultMap="userAndItemsResultMap">
+        select o.id,o.number,od.id datails_id,od.items_id,i.name,i.price,i.detail,od.items_num,o.user_id,u.username,u.sex
+	from orders o LEFT OUTER JOIN orderdetail od on od.orders_id=o.id
+								LEFT OUTER JOIN user u on o.user_id=u.id
+								LEFT OUTER JOIN items i on od.items_id=i.id;
+    </select>
+
+    <!-- 定义多对多resultMap时，注意层级关系 -->
+    <resultMap id="userAndItemsResultMap" type="user">
+        <!-- 用户user信息 -->
+        <id column="user_id" property="id"></id>
+        <result column="username" property="username"/>
+        <result column="sex" property="sex"/>
+        <!-- 订单Orders信息 一对多 -->
+        <collection property="ordersList" ofType="com.domain.Orders">
+            <id column="id" property="id"/>
+            <result column="number" property="number"/>
+            <!-- 订单明细OrderDetail信息 一对多 -->
+            <collection property="orderDetailList" ofType="com.domain.OrderDetail">
+                <id column="datails_id" property="id"/>
+                <result column="items_num" property="items_num"/>
+                <!-- 商品Items信息 一对一 -->
+                <association property="items" javaType="com.domain.Items">
+                    <id column="items_id" property="id"/>
+                    <result column="name" property="name"/>
+                    <result column="price" property="price"/>
+                    <result column="detail" property="detail"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <select id="findUserById" parameterType="Integer" resultType="user">
+        select id,<include refid="userFields"></include> from user where id=#{value}
+    </select>
+
+    <update id="updateUserById" parameterType="user">
+        update user u set u.address=#{address} where u.id=#{id};
+    </update>
+
+</mapper>

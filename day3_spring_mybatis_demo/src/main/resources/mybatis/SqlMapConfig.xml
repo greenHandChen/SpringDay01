@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <typeAliases>
+        <typeAlias type="com.domain.User" alias="User"/>
+    </typeAliases>
+
+    <!-- 加载映射文件 -->
+    <mappers>
+        <mapper resource="mybatis/mapper/user.xml"/>
+        <mapper resource="mybatis/mapper/order.xml"/>
+    </mappers>
+</configuration>

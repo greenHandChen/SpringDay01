@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 使用mapper代理时，namespace的值，必须要和代理的mapper接口全限定名一致 -->
+<mapper namespace="com.mapper.OrdersMapper">
+
+    <sql id="ordersFields">number,createtime,note,user_id</sql>
+    <!-- 查询订单信息，延迟加载用户信息
+        只有<association>标签和<collection>标签中有延迟加载的功能
+     -->
+    <select id="findOrdersAndUserLazyLoading" resultMap="ordersAndUserLazyLoadingResultMap">
+        select id,<include refid="ordersFields"/> from orders
+    </select>
+    <resultMap id="ordersAndUserLazyLoadingResultMap" type="com.domain.OrdersExt">
+        <!-- 订单信息 -->
+        <id column="id" property="id"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result column="note" property="note"/>
+        <result column="user_id" property="user_id"/>
+        <!-- 用户信息 -->
+        <!-- select:延迟加载的statement(namespace+<select>标签的id),把查询结果封装到property中
+             column:指定statement执行所需要的入参,从前面查询出来的字段中选择。如果有多个则{col1=prop1,col2=prop2}
+        -->
+        <association property="user" select="com.mapper.UserMapper.findUserById" column="user_id"/>
+    </resultMap>
+</mapper>

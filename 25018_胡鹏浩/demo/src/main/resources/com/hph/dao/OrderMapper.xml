@@ -38,13 +38,13 @@ where u.id=o.user_id and o.id=d.orders_id and i.id=d.items_id and x.orders_id=o.
             and o.createtime >= #{createtimeStart}
         </if>
         <if test="createtimeEnd != null">
-            and o.createtime <= #{createtimeEnd}
+            and o.createtime &lt;= #{createtimeEnd}
         </if>
         <if test="priceStart != null">
             and i.price >= #{createtimeEnd}
         </if>
         <if test="priceEnd != null">
-            and i.price <= #{priceEnd}
+            and i.price &lt;= #{priceEnd}
         </if>
     </select>
 

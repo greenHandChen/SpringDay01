@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mapper.OrdersExtMapper">
+
+    <select id="findUserById" parameterType="int" resultType="com.domain.User">
+        select * from user where id = #{value}
+    </select>
+
+    <resultMap id="ordersAndUserResMap" type="com.domain.OrdersExt">
+        <result column="number" property="number"/>
+        <result column="name" property="name"/>
+        <result column="createtime" property="createtime"/>
+        <result column="total_amount" property="total_amount"/>
+        
+        <association property="user" javaType="com.domain.User" select="com.mapper.OrdersExtMapper.findUserById" column="user_id">
+        </association>
+    </resultMap>
+
+    <select id="findOrdersExts" parameterType="com.domain.OrdersExt" resultMap="ordersAndUserResMap">
+        SELECT
+          o.user_id,
+          o.number,
+          i.name,
+          i.price,
+          o.createtime,
+          SUM(i.price) AS 'total_amount'
+        FROM
+          items i,orders o,orderdetail od
+        WHERE
+	      od.orders_id = o.id
+	    AND
+	      i.id = od.items_id
+        <if test="number != null">
+            and o.number= #{number}
+        </if>
+        <if test="name != null">
+            and i.name= #{name}
+        </if>
+        <if test="createtimeStart != null">
+            and o.createtime >= #{createtimeStart}
+        </if>
+
+        <if test="createtimeEnd != null">
+            and o.createtime = #{createtimeEnd}
+        </if>
+        <if test="priceStart != null">
+            and i.price= #{priceStart}
+        </if>
+        <if test="priceEnd != null">
+            and i.price= #{priceEnd}
+        </if>
+	    GROUP BY od.orders_id
+    </select>
+
+</mapper>

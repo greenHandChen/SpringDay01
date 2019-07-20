@@ -3,20 +3,33 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="day04_mybatis.mapper.OrderMapper">
-    
-    <select id="findOrdersExt" parameterType="day04_mybatis.domain.ext.OrdersExt" resultType="day04_mybatis.domain.ext.OrdersExt">
-        SELECT o.id,
-                o.user_id,
-                o.number,
-                o.createtime,
-                o.note,
-                u.username, u.address
-                from orders o,user u
-                where o.user_id = u.id
-                <if test="id != null">
-                    and o.id = #{id}
-                </if>
+<mapper namespace="day04_mybatis.mapper.OrdersExt1Mapper">
+    <select id="findOrdersExt" parameterType="day04_mybatis.domain.ext.OrdersExt" resultMap="ordersAndUserRstMap">
+        SELECT *
+        from orders o
+        where 1 = 1
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+
+    <!--专门为OrdersEx匹配-->
+    <resultMap id="ordersAndUserRstMap" type="day04_mybatis.domain.ext.OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result column="note" property="note"/>
+        
+        <association property="user" select="day04_mybatis.mapper.OrdersExt1Mapper.findUserById" column="user_id"></association>
+
+    </resultMap>
+
+
+
+
+    <select id="findUserById" parameterType="int" resultType="day04_mybatis.domain.User">
+        select * from user where id = #{value}
     </select>
     
 </mapper>

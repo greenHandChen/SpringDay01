@@ -5,6 +5,20 @@
 <configuration>
     <!--引入外部数据库配置文件-->
     <properties resource="config/db.properties"/>
+    <!--配置延迟加载-->
+    <settings>
+        <!--是否开启懒加载；默认false，即不开启懒加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--是否开启积极懒加载，默认true；true表示懒加载对象可以被任何属性进行加载，false表示按需加载-->
+        <setting name="aggressiveLazyLoading" value="true"/>
+        <!-- 打印查询语句 -->
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+    </settings>
+    <!--类型别名-->
+    <typeAliases>
+        <!--批量别名的定义，别名取得是类名，不区分大小写-->
+        <package name="day04_sm.domain"/>
+    </typeAliases>
 
     <!--配置mybatis环境-->
             <!--数据源、事务控制-->

@@ -8,5 +8,5 @@ import java.util.List;
  * Created by wangjie_fourth on 2019/7/19.
  */
 public interface OrdersExt2Mapper {
-    public List<OrdersExt2Mapper> findOrdersExt(OrdersExt2 ordersExt2);
+    public OrdersExt2 findOrdersExt(OrdersExt2 ordersExt2);
 }

@@ -5,6 +5,7 @@ import day04_mybatis.domain.Orders;
 import day04_mybatis.domain.User;
 import lombok.Data;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -12,12 +13,11 @@ import java.util.List;
  */
 @Data
 public class OrdersExt3 extends Orders{
-
-    private String username;
-
-    private String address;
-
+    private Integer id;
+    private Integer userId;
+    private String number;
+    private Date createtime;
+    private String note;
     private User user;
-
     private List<Orderdetail> orderdetails;
 }

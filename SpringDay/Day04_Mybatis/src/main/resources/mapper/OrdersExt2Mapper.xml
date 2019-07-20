@@ -5,33 +5,32 @@
 
 <mapper namespace="day04_mybatis.mapper.OrdersExt2Mapper">
 
-    <resultMap id="ordersAndUserRstMap" type="day04_mybatis.domain.ext.OrdersExt2">
-        <id column="id" property="id"/>
+    <resultMap id="orderAndOrderdetailResMap" type="day04_mybatis.domain.ext.OrdersExt2">
+        <id column="orders_id" property="id"/>
         <result column="user_id" property="userId"/>
         <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
         <result column="note" property="note"/>
 
-        <association property="user" javaType="day04_mybatis.domain.User">
-            <id column="user_id" property="id"/>
-            <result column="username" property="username"/>
-            <result column="address" property="address"/>
-        </association>
+        <collection property="orderdetails" ofType="day04_mybatis.domain.Orderdetail">
+            <id column="id" property="id"/>
+            <result column="orders_id" property="ordersId"/>
+            <result column="items_id" property="itemsId"/>
+            <result column="items_num" property="itemsNum"/>
+        </collection>
     </resultMap>
 
-    <select id="findOrdersExt" parameterType="day04_mybatis.domain.ext.OrdersExt2" resultMap="ordersAndUserRstMap">
-        SELECT o.id,
+    <select id="findOrdersExt" parameterType="day04_mybatis.domain.ext.OrdersExt2" resultMap="orderAndOrderdetailResMap">
+        SELECT
         o.user_id,
         o.number,
         o.createtime,
         o.note,
-        u.username, u.address
-        from orders o,user u
-        where o.user_id = u.id
+        od.id, od.orders_id, od.items_id, od.items_num
+        from orders o,orderdetail od
+        where o.id = od.orders_id
         <if test="id != null">
             and o.id = #{id}
         </if>
     </select>
-    
-
-    
 </mapper>

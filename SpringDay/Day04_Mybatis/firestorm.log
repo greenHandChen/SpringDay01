@@ -11,8 +11,8 @@ DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSour
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1902260856.
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@71623278]
-DEBUG main day04_mybatis.mapper.OrderMapper.findOrdersExt - ==>  Preparing: SELECT o.id, o.user_id, o.number, o.createtime, o.note, u.username, u.address from o.user_id = u.id and o.id = ? 
-DEBUG main day04_mybatis.mapper.OrderMapper.findOrdersExt - ==> Parameters: 5(Integer)
+DEBUG main day04_mybatis.mapper.OrdersExt1Mapper.findOrdersExt - ==>  Preparing: SELECT o.id, o.user_id, o.number, o.createtime, o.note, u.username, u.address from o.user_id = u.id and o.id = ?
+DEBUG main day04_mybatis.mapper.OrdersExt1Mapper.findOrdersExt - ==> Parameters: 5(Integer)
 DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -21,8 +21,8 @@ DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSour
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1902260856.
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@71623278]
-DEBUG main day04_mybatis.mapper.OrderMapper.findOrdersExt - ==>  Preparing: SELECT o.id, o.user_id, o.number, o.createtime, o.note, u.username, u.address from o.user_id = u.id and o.id = ? 
-DEBUG main day04_mybatis.mapper.OrderMapper.findOrdersExt - ==> Parameters: 5(Integer)
+DEBUG main day04_mybatis.mapper.OrdersExt1Mapper.findOrdersExt - ==>  Preparing: SELECT o.id, o.user_id, o.number, o.createtime, o.note, u.username, u.address from o.user_id = u.id and o.id = ?
+DEBUG main day04_mybatis.mapper.OrdersExt1Mapper.findOrdersExt - ==> Parameters: 5(Integer)
 DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
@@ -31,9 +31,9 @@ DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSour
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1902260856.
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@71623278]
-DEBUG main day04_mybatis.mapper.OrderMapper.findOrdersExt - ==>  Preparing: SELECT o.id, o.user_id, o.number, o.createtime, o.note, u.username, u.address from orders o,user u where o.user_id = u.id and o.id = ? 
-DEBUG main day04_mybatis.mapper.OrderMapper.findOrdersExt - ==> Parameters: 5(Integer)
-DEBUG main day04_mybatis.mapper.OrderMapper.findOrdersExt - <==      Total: 1
+DEBUG main day04_mybatis.mapper.OrdersExt1Mapper.findOrdersExt - ==>  Preparing: SELECT o.id, o.user_id, o.number, o.createtime, o.note, u.username, u.address from orders o,user u where o.user_id = u.id and o.id = ?
+DEBUG main day04_mybatis.mapper.OrdersExt1Mapper.findOrdersExt - ==> Parameters: 5(Integer)
+DEBUG main day04_mybatis.mapper.OrdersExt1Mapper.findOrdersExt - <==      Total: 1
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@71623278]
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@71623278]
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1902260856 to pool.
@@ -161,3 +161,187 @@ DEBUG main day04_mybatis.mapper.OrdersExt3Mapper.findOrdersExt - <==      Total:
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@80169cf]
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@80169cf]
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 134310351 to pool.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1330754528.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f51b3e0]
+DEBUG main day04_mybatis.mapper.OrdersExt1Mapper.findOrdersExt - ==>  Preparing: SELECT o.id, o.user_id, o.number, o.createtime, o.note, u.username, u.address, u.birthday, u.sex from orders o,user u where o.user_id = u.id and o.id = ? 
+DEBUG main day04_mybatis.mapper.OrdersExt1Mapper.findOrdersExt - ==> Parameters: 5(Integer)
+DEBUG main day04_mybatis.mapper.OrdersExt1Mapper.findOrdersExt - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f51b3e0]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f51b3e0]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1330754528 to pool.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1330754528.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f51b3e0]
+DEBUG main day04_mybatis.mapper.OrdersExt2Mapper.findOrdersExt - ==>  Preparing: SELECT o.user_id, o.number, o.createtime, o.note, od.id, od.orders_id, od.items_id, od.items_num from orders o,orderdetail od where o.id = od.orders_id and o.id = ? 
+DEBUG main day04_mybatis.mapper.OrdersExt2Mapper.findOrdersExt - ==> Parameters: 3(Integer)
+DEBUG main day04_mybatis.mapper.OrdersExt2Mapper.findOrdersExt - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1330754528.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f51b3e0]
+DEBUG main day04_mybatis.mapper.OrdersExt2Mapper.findOrdersExt - ==>  Preparing: SELECT o.user_id, o.number, o.createtime, o.note, od.id, od.orders_id, od.items_id, od.items_num from orders o,orderdetail od where o.id = od.orders_id and o.id = ? 
+DEBUG main day04_mybatis.mapper.OrdersExt2Mapper.findOrdersExt - ==> Parameters: 3(Integer)
+DEBUG main day04_mybatis.mapper.OrdersExt2Mapper.findOrdersExt - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f51b3e0]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f51b3e0]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1330754528 to pool.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1330754528.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f51b3e0]
+DEBUG main day04_mybatis.mapper.OrdersExt3Mapper.findOrdersExt - ==>  Preparing: SELECT o.id AS order_id, o.user_id, o.number, o.createtime, o.note, u.id AS uid, u.username, u.address, u.birthday, u.sex, od.id AS orderdetail_id, od.orders_id, od.items_id, od.items_num from orders o,user u,orderdetail od where o.user_id = u.id and od.orders_id = o.id and o.id = ? 
+DEBUG main day04_mybatis.mapper.OrdersExt3Mapper.findOrdersExt - ==> Parameters: 3(Integer)
+DEBUG main day04_mybatis.mapper.OrdersExt3Mapper.findOrdersExt - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f51b3e0]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f51b3e0]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1330754528 to pool.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1330754528.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f51b3e0]
+DEBUG main day04_mybatis.mapper.OrdersExt1Mapper.findOrdersExt - ==>  Preparing: SELECT o.id, o.user_id, o.number, o.createtime, o.note, u.username, u.address, u.birthday, u.sex from orders o,user u where o.user_id = u.id and o.id = ? 
+DEBUG main day04_mybatis.mapper.OrdersExt1Mapper.findOrdersExt - ==> Parameters: 5(Integer)
+DEBUG main day04_mybatis.mapper.OrdersExt1Mapper.findOrdersExt - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f51b3e0]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f51b3e0]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1330754528 to pool.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS

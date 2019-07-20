@@ -1,12 +1,12 @@
 package day04_mybatis;
 
+import day04_mybatis.domain.User;
 import day04_mybatis.domain.ext.OrdersExt;
 import day04_mybatis.domain.ext.OrdersExt2;
 import day04_mybatis.domain.ext.OrdersExt3;
-import day04_mybatis.mapper.OrderMapper;
+import day04_mybatis.mapper.OrdersExt1Mapper;
 import day04_mybatis.mapper.OrdersExt2Mapper;
 import day04_mybatis.mapper.OrdersExt3Mapper;
-import lombok.Data;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -30,32 +30,35 @@ public class Day04ApplicationTests {
 	}
 
 	@Test
-	public void contextLoads() {
+	// 一对一
+	public void test01() {
 		OrdersExt ordersExt = new OrdersExt();
 		ordersExt.setId(5);
 
 		SqlSession sqlSession = sqlSessionFactory.openSession();
-		OrderMapper orderMapper = sqlSession.getMapper(OrderMapper.class);
+		OrdersExt1Mapper ordersExt1Mapper = sqlSession.getMapper(OrdersExt1Mapper.class);
 
-		List<OrdersExt> ordersExt1 = orderMapper.findOrdersExt(ordersExt);
-		System.out.println(ordersExt1.get(0).getNumber());
+		OrdersExt ordersExt1 = ordersExt1Mapper.findOrdersExt(ordersExt);
+		System.out.println(ordersExt1.toString());
 		sqlSession.close();
 	}
 
 	@Test
+	// 一对多
 	public void test02(){
 		OrdersExt2 ordersExt2 = new OrdersExt2();
-		ordersExt2.setId(5);
+		ordersExt2.setId(3);
 
 		SqlSession sqlSession = sqlSessionFactory.openSession();
 		OrdersExt2Mapper mapper = sqlSession.getMapper(OrdersExt2Mapper.class);
 
-		List<OrdersExt2Mapper> list = mapper.findOrdersExt(ordersExt2);
-		System.out.println(list);
+		OrdersExt2 ordersExt = mapper.findOrdersExt(ordersExt2);
+		System.out.println(ordersExt);
 		sqlSession.close();
 	}
 
 	@Test
+	// 一对一和一对多同时存在
 	public void test03(){
 		OrdersExt3 ordersExt3 = new OrdersExt3();
 		ordersExt3.setId(3);
@@ -63,10 +66,28 @@ public class Day04ApplicationTests {
 		SqlSession sqlSession = sqlSessionFactory.openSession();
 		OrdersExt3Mapper mapper = sqlSession.getMapper(OrdersExt3Mapper.class);
 
-		List<OrdersExt3> list = mapper.findOrdersExt(ordersExt3);
-		System.out.println(list);
+		OrdersExt3 OrdersExt3 = mapper.findOrdersExt(ordersExt3);
+		System.out.println(OrdersExt3);
 		sqlSession.close();
 
 	}
 
+	@Test
+	// 一对一懒加载
+	public void test04(){
+		OrdersExt ordersExt = new OrdersExt();
+		ordersExt.setId(5);
+
+		SqlSession sqlSession = sqlSessionFactory.openSession();
+		OrdersExt1Mapper ordersExt1Mapper = sqlSession.getMapper(OrdersExt1Mapper.class);
+
+
+		OrdersExt ordersExt1 = ordersExt1Mapper.findOrdersExt(ordersExt);
+
+		ordersExt1.getUserId();
+
+//		ordersExt1.getUser();
+
+		sqlSession.close();
+	}
 }

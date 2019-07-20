@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+    <typeAliases>
+<!--        <typeAlias type="" alias="" />  单个别名-->
+<!--        批量别名，该包下的别名为类目（首字母大小写均可）-->
+        <package name="com.xyh.Entity"/>
+    </typeAliases>
+
+    <mappers>
+<!--        <mapper resource="mapper/UserMapper.xml"/>-->
+
+        <package name="com.xyh.Mapper"/>
+    </mappers>
+</configuration>

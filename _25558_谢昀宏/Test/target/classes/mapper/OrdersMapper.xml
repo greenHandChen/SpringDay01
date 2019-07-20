@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xyh.Mapper.OrdersMapper">
+
+    <resultMap id="OrdersExtsRstMap" type="OrdersExts">
+        <id column="id" property="id"/>
+        <result column="number" property="number"/>
+        <result column="price" property="price"/>
+        <result column="createtime" property="createtime"/>
+        <result column="total_amount" property="total_amount"/>
+
+        <association property="user" column="user_id" javaType="User" select="com.xyh.Mapper.UserMapper.findUserById"/>
+    </resultMap>
+
+    <select id="findOrdersExts" parameterType="com.xyh.Entity.OrdersExts" resultMap="OrdersExtsRstMap">
+        select orders.id `id`,orders.user_id,number,name,price,orders.createtime,
+        round((SELECT sum(items_num*price)
+        from orderdetail o,items i
+        WHERE orders.id=o.orders_id AND i.id=o.items_id),2) total_amount
+        FROM orders LEFT JOIN orderdetail ON orders.id=orderdetail.orders_id left
+        JOIN items ON orderdetail.items_id=items.id
+        <where>
+            <if test="number!=null">
+                and number=#{number}
+            </if>
+            <if test=" name!=null">
+                and name like '%${name}%'
+            </if>
+            <if test="priceStart!=null">
+                and price &gt;#{priceStart}
+            </if>
+            <if test="priceEnd!=null">
+                price &lt;#{priceEnd}
+            </if>
+            <if test="createtimeStart!=null">
+                orders.createtime &gt;#{createtimeStart}
+            </if>
+            <if test="createtimeEnd!=null">
+                orders.createtime &lt;#{createtimeEnd}
+            </if>
+        </where>
+    </select>
+
+</mapper>

@@ -32,7 +32,7 @@
           AND od.orders_id = o.id
           and o.id = #{id}
           and it.`name` like concat('%', concat(#{name}, '%'))
-          and o.createtime BETWEEN #{createtimeStart} and #{createtimeEnd} it.price BETWEEN #{priceStart}
+          and o.createtime BETWEEN #{createtimeStart} and #{createtimeEnd} and it.price BETWEEN #{priceStart}
           and #{priceEnd};
     </select>
 

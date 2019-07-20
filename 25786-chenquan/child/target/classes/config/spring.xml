@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-<!--        <bean id="accountDao" class="club.osai.dao.AccountDaoImpl">-->
+<!--        <bean id="accountDao" class="club.osai.dao.OrderDao">-->
 <!--            <property name="dataSource" ref="dataSource"/>-->
 <!--        </bean>-->
 

@@ -12,6 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -27,7 +28,10 @@ public class OrderDaoTest {
         OrderDao bean = (OrderDao)applicationContext.getBean(OrderDao.class);
 
         OrdersExt ordersExt = new OrdersExt();
-        ordersExt.setCreatetime(new Date());
+        ordersExt.setId(1L);
+        List<OrdersExt> ordersExts = bean.findOrdersExts(ordersExt);
+        System.out.println(ordersExt);
+
 
     }
 }

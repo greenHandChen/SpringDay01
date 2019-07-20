@@ -8,6 +8,7 @@
 
 
         <contest:property-placeholder location="db.properties"/>
+
        <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
               <property name="driverClassName" value="${db.driver}"/>
               <property name="jdbcUrl" value="${db.url}"/>
@@ -17,12 +18,12 @@
 
        <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
               <property name="dataSource" ref="dataSource"/>
-              <property name="configLocation" value="SqlMapConfig2.xml"/>
-              <property name="mapperLocations" value="mapper/**/*.xml"/>
+              <property name="configLocation" value="SqlMapConfig.xml"/>
+              <!--<property name="mapperLocations" value="mapper/**/*.xml"/>-->
        </bean>
 
        <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-              <property name="basePackage" value="com.hand.dao"/>
+              <property name="basePackage" value="com.spring.mapper"/>
               <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
        </bean>
 </beans>

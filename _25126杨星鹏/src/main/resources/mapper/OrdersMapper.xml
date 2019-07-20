@@ -1,0 +1,43 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spring.mapper.OrdersMapper">
+    <select id="findOrdersExts" parameterType="com.spring.domain.OrdersExt" resultMap="ordersExtRstMap">
+        select u.username,u.address,o.number,i.name,price,o.createtime from user u,orders o,orderdetail od,items i
+        where o.user_id =u.userid and od.orders_id =o.id and i.id= od.items_id
+        <if test="number != null">
+            and number = #{number}
+        </if>
+       <!-- <if test="orderDetails.itemsName != null ">
+            and name =#{itemsName}
+        </if>-->
+        <if test="creatimeStart != null">
+            and creatimeStart  &gt; #{creatimeStart}
+        </if>
+        <if test="creatimeEnd != null">
+            and creatimeEnd &lt;#{creatimeEnd}
+        </if>
+        <if test="priceStart != null">
+            and priceStart &gt; #{priceStart}
+        </if>
+        <if test="priceEnd != null">
+            and priceEnd &lt;#{priceEnd}
+        </if>
+
+    </select>
+    <resultMap id="ordersExtRstMap" type="com.spring.domain.OrdersExt">
+        <result property="username" column="username"/>
+        <result property="address" column="address"/>
+        <association property="user" column="userId" javaType="com.spring.domain.User">
+            <id property="id" column="user_id" />
+            <result property="username" column="username"/>
+            <result property="address" column="address"/>
+        </association>
+        <collection property="orderDetails" ofType="com.spring.domain.OrderDetail">
+            <id column="detailId" property="id"/>
+            <result column="name" property="itemsName"/>
+            <result column="items_id" property="itemsId"/>
+            <result column="items_num" property="itemsNum"/>
+        </collection>
+    </resultMap>
+</mapper>

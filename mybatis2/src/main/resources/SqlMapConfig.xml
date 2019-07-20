@@ -7,11 +7,10 @@
     <properties resource="db.properties"/>
     <!--配置mybatis的环境信息，比如数据源以及事务控制，整合spring后则交给spring-->
     <settings>
+        <!--开启懒加载-->
         <setting name="lazyLoadingEnabled" value="true"/>
+        <!--积极懒加载 开启时到调用对象是即查询所有 关闭时只有用到查询的属性是才开始第二次查询-->
         <setting name="aggressiveLazyLoading" value="false"/>
-   <!--     <setting name="defaultExecutorType" value="REUSE" />
-        &lt;!&ndash; 配置控制台输出 &ndash;&gt;
-        <setting name="logImpl" value="STDOUT_LOGGING"/>-->
         <!--开启二级缓存-->
         <setting name="cacheEnabled" value="true"/>
     </settings>

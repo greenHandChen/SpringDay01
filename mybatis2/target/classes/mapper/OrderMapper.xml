@@ -9,4 +9,5 @@
         <result property="userId" column="user_id"/>
         <association property="user" column="user_id" select="com.hand.dao.UserMapper.findUserById"></association>
     </resultMap>
+
 </mapper>

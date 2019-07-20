@@ -17,6 +17,46 @@ public class OrderExt extends Order {
 
     private Double totalAmount;
 
+    private Date createtimeStart;
+
+    private Date createtimeEnd;
+
+    private Double priceStart;
+
+    private Double priceEnd;
+
+    public Date getCreatetimeStart() {
+        return createtimeStart;
+    }
+
+    public void setCreatetimeStart(Date createtimeStart) {
+        this.createtimeStart = createtimeStart;
+    }
+
+    public Date getCreatetimeEnd() {
+        return createtimeEnd;
+    }
+
+    public void setCreatetimeEnd(Date createtimeEnd) {
+        this.createtimeEnd = createtimeEnd;
+    }
+
+    public Double getPriceStart() {
+        return priceStart;
+    }
+
+    public void setPriceStart(Double priceStart) {
+        this.priceStart = priceStart;
+    }
+
+    public Double getPriceEnd() {
+        return priceEnd;
+    }
+
+    public void setPriceEnd(Double priceEnd) {
+        this.priceEnd = priceEnd;
+    }
+
     public String getUsername() {
         return username;
     }

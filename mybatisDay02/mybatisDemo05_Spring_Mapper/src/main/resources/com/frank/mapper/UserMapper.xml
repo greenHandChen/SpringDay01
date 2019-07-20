@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace: 命名空间,用于隔离sql,后期有重要作用 -->
+<mapper namespace="com.frank.mapper.UserMapper">
+
+    <!--查询所有用户-->
+    <select id="findAll" resultType="User">
+        select * from user;
+    </select>
+
+    <!--添加用户-->
+    <insert id="addUser" parameterType="User">
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+   <select id="findUserById" parameterType="Integer" resultType="User">
+       select * from user where id = #{id};
+   </select>
+
+
+
+</mapper>

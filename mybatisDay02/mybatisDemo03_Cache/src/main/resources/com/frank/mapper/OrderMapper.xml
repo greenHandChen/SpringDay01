@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace: 命名空间,用于隔离sql,后期有重要作用 -->
+<mapper namespace="com.frank.mapper.OrderMapper">
+
+    <!--延迟加载-->
+    <select id="findOrderInfoByLazyLoad" parameterType="Order" resultMap="LazyLoadMap">
+        select * from orders where id = #{id};
+    </select>
+
+    <!--一对一关联查询,修改Order-->
+    <resultMap type="Order" id="LazyLoadMap">
+        <!--id标签用于绑定主键-->
+        <id property="id" column="id"/>
+        <!--使用result绑定其它参数-->
+        <result property="userId" column="user_id"/>
+        <result property="number" column="number"/>
+        <result property="createtime" column="createtime"/>
+        <result property="note" column="note"/>
+        <!--associate用于一对一关联
+            property:用于绑定用户属性
+            javaType:绑定返回的属性类型
+        -->
+
+        <association property="user" column="user_id" javaType="User" select="com.frank.mapper.UserMapper.findUserById">
+        </association>
+    </resultMap>
+
+
+
+</mapper>

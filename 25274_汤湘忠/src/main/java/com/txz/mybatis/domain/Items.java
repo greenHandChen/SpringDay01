@@ -1,0 +1,61 @@
+package com.txz.mybatis.domain;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class Items {
+    private Integer id;
+    private String name;
+    private  Float price;
+    private  String detail;
+    private String pic;
+    private Date createtime;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Float getPrice() {
+        return price;
+    }
+
+    public String getDetail() {
+        return detail;
+    }
+
+    public String getPic() {
+        return pic;
+    }
+
+    public Date getCreatetime() {
+        return createtime;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(Float price) {
+        this.price = price;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    public void setPic(String pic) {
+        this.pic = pic;
+    }
+
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
+    }
+}

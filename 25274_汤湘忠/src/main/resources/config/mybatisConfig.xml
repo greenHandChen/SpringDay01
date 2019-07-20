@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--类型别名定义 -->
+    <typeAliases>
+        <package name="com.txz.mybatis.domain"/>
+    </typeAliases>
+    <!--加载映射文件 -->
+    <mappers>
+        <mapper resource="mapper/OrdersMapper.xml"/>
+    </mappers>
+</configuration>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.txz.mybatis.mapper.OrdersMapper">
+
+    <resultMap id="ordersRstMap" type="OrdersExt">
+        <id column="username" property="username"/>
+        <result column="address" property="address"/>
+        <result column="name" property="name"/>
+        <result column="price" property="price"/>
+        <result column="total_amount" property="total_amount"/>
+        <association property="orders" javaType="Orders">
+            <result column="number" property="number"/>
+            <result column="createtime" property="createtime"/>
+        </association>
+    </resultMap>
+
+
+    <select id="findOrdersExts" parameterType="OrdersExt" resultMap="ordersRstMap">
+        select u.username,u.address,o.id,i.`name`,
+i.price,o.createtime,SUM(i.price) total_amount
+from `user` u,items i,orders o,orderdetail od
+WHERE u.id=o.user_id and o.id=od.orders_id and
+i.id=od.items_id
+where o.number='1000010' and i.`name`='笔记本' and o.createtime between
+DATE_FORMAT("2015-02-01","YYYY-MM-DD" and  DATE_FORMAT("2015-02-05","YYYY-MM-DD")) and
+i.price BETWEEN 5000 and 6000
+    </select>
+
+</mapper>

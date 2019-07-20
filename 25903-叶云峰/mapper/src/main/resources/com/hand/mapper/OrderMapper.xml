@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.mapper.OrderMapper">
+    <select id="findOrdersExts" parameterType="com.hand.Ext.OrdersExt"  resultType="com.hand.Ext.OrdersExt">
+        select * from items i,
+        (select o.id,o.user_id,o.number,o.createtime,od.items_id,od.items_num FROM orders o,orderdetail od where o.id=od.orders_id) a
+        where i.id=a.items_id;
+    </select>
+</mapper>

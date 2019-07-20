@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace：命名空间，主要用于statement经行分类管理的唯一标识符-->
+<mapper namespace="com.hand.mapper.UserMapper">
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.hand.pojo.User">
+      select  * from user where id=#{id}
+  </select>
+
+  <select id="findOrderExt" parameterType="com.hand.pojo.OrdersExt" resultType="com.hand.pojo.OrdersExt">
+      select o.id,
+      o.user_id,
+      o.number,
+      o.createtime,
+      o.note,
+      u.username,
+      u.address
+      from orders o,user u
+      where o.user_id=u.id
+      <if test="id != null">
+         and o.id = #{id}
+      </if>
+  </select>
+
+    <select id="findOrderByResultMap" parameterType="com.hand.pojo.OrdersExt" resultMap="findOrderByRsMap">
+        select o.id,
+        o.user_id,
+        o.number,
+        o.createtime,
+        o.note,
+        u.username,
+        u.address
+        from orders o,user u
+        where o.user_id=u.id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+    <resultMap id="findOrderByRsMap" type="com.hand.pojo.OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result column="note" property="note"/>
+        <association property="user" javaType="com.hand.pojo.User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+        </association>
+    </resultMap>
+
+    <select id="findOrdersAndUserAndDetail" parameterType="com.hand.pojo.OrdersExt" resultMap="findOrderAndUserAndDetailByRsMap">
+        select o.id,
+        o.user_id,
+        o.number,
+        o.createtime,
+        o.note,
+        u.username,
+        u.address,
+        d.id detailId,
+        d.items_id,
+        d.items_num
+        from orders o, user u, orderdetail d
+        where o.user_id=u.id and o.id=d.orders_id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+    <resultMap id="findOrderAndUserAndDetailByRsMap" type="com.hand.pojo.OrdersExt" extends="findOrderByRsMap">
+        <collection property="orderDetails" ofType="com.hand.pojo.OrderDetail">
+            <id column="detailId" property="id"/>
+            <result column="items_id" property="items_id"/>
+            <result column="items_num" property="items_num"/>
+        </collection>
+    </resultMap>
+
+    <select id="findOrderInfoBylazyLoad" parameterType="java.lang.Integer" resultMap="lazyLoadRstMap">
+        select * from orders where id = #{id}
+    </select>
+    <resultMap id="lazyLoadRstMap" type="com.hand.pojo.OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result column="note" property="note"/>
+        <association property="user" select="com.hand.mapper.UserMapper.findUserById" column="user_id">
+        </association>
+    </resultMap>
+</mapper>
+
+

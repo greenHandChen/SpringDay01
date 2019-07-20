@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sunt.mapper.OrdersMapper">
+
+    <select id="findOrdersExts" resultMap="ordersAndItemsRstMap">
+        select u.username,u.address,od.orders_id,i.`name`,i.price,i.createtime, SUM(i.price) total_amount
+from orders o ,user u,orderdetail od,items i
+where u.id = o.user_id and o.id = od.orders_id and
+od.items_id = i.id
+    </select>
+    <resultMap id="ordersAndItemsRstMap" type="com.sunt.po.User">
+        <!--用户信息-->
+        <id column="user_id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="address" property="address"/>
+        <association property="user" select="com.sunt.mapper.OrdersMapper" column="user_id"></association>
+        <!--订单信息（一对多）-->
+        <collection property="ordersList"  ofType="com.sunt.po.Orders">
+            <id column="id" property="id"/>
+            <result column="user_id" property="userId"/>
+            <!--订单明细信息-->
+            <collection property="orderDetaillist" ofType="com.sunt.po.OrderDetail">
+                <id column="detailId" property="id"/>
+                <result column="items_id" property="itemsId"/>
+                <!--商品信息一对一-->
+                <association property="items" javaType="com.sunt.po.Items">
+                    <id column="items_id" property="id"/>
+                    <result column="name" property="name"/>
+                    <result column="price" property="price"/>
+                    <result column="createtime" property="createtime"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+</mapper>

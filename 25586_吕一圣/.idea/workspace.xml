@@ -287,6 +287,29 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="demo.result" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="25586_吕一圣" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exam.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exam.test" />
+      <option name="MAIN_CLASS_NAME" value="exam.test.demo" />
+      <option name="METHOD_NAME" value="result" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.demo.result" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>

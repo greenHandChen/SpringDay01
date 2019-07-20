@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="Test1" time="1.05" errors="3" skipped="0">
+<testsuite tests="6" failures="0" name="Test1" time="0.984" errors="3" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
@@ -64,7 +64,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Test1" name="test1" time="0.621">
+  <testcase classname="Test1" name="test1" time="0.579">
     <error message="Error serializing object.  Cause: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt" type="org.apache.ibatis.cache.CacheException">org.apache.ibatis.cache.CacheException: Error serializing object.  Cause: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt
 	at org.apache.ibatis.cache.decorators.SerializedCache.serialize(SerializedCache.java:102)
 	at org.apache.ibatis.cache.decorators.SerializedCache.putObject(SerializedCache.java:56)
@@ -122,113 +122,113 @@ Caused by: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt
 	at org.apache.ibatis.cache.decorators.SerializedCache.serialize(SerializedCache.java:97)
 	... 39 more
 </error>
-    <system-out>[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)Logging initialized using &apos;class org.apache.ibatis.logging.slf4j.Slf4jImpl&apos; adapter.
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.VFS.getClass(VFS.java:111)Class not found: org.jboss.vfs.VFS
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.JBoss6VFS.setInvalid(JBoss6VFS.java:142)JBoss 6 VFS API is not available in this environment.
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.VFS.getClass(VFS.java:111)Class not found: org.jboss.vfs.VirtualFile
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:63)VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:77)Using VFS adapter org.apache.ibatis.io.DefaultVFS
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderDetails.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt2.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt3.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Orders.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: User.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;B
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;V
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;g
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;N
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderDetails matches criteria [is assignable to Object]
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt matches criteria [is assignable to Object]
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt2 matches criteria [is assignable to Object]
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt3 matches criteria [is assignable to Object]
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.Orders matches criteria [is assignable to Object]
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.User matches criteria [is assignable to Object]
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: dao
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: pojo
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Test1Mapper.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Test1Mapper.xml
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#21;&amp;#7;&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#20;&amp;#1;&amp;#0;&amp;#12;findOrderExt&amp;#1;&amp;#0;8(Lcom/hand/lq/pojo/OrderExt;)Lcom/hand/lq/pojo/OrderExt;&amp;#1;&amp;#0;
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.xml
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.xml
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderDetails.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt2.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt3.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Orders.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: User.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;B
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;V
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;g
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;N
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.dao.Test1Mapper matches criteria [is assignable to Object]
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderDetails matches criteria [is assignable to Object]
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt matches criteria [is assignable to Object]
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt2 matches criteria [is assignable to Object]
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt3 matches criteria [is assignable to Object]
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.Orders matches criteria [is assignable to Object]
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.User matches criteria [is assignable to Object]
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)Cache Hit Ratio [com.hand.lq.dao.Test1Mapper]: 0.0
-[2019-07-19 19:16:54 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)Opening JDBC Connection
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)Created connection 306123060.
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@123f1134]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt;  Preparing: SELECT orders.id, orders.user_id, orders.number, orders.createtime, orders.note, user.username, user.address FROM orders,user WHERE orders.user_id = user.id and orders.id=? 
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt; Parameters: 5(Integer)
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)&lt;==      Total: 1
+    <system-out>[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)Logging initialized using &apos;class org.apache.ibatis.logging.slf4j.Slf4jImpl&apos; adapter.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.VFS.getClass(VFS.java:111)Class not found: org.jboss.vfs.VFS
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.JBoss6VFS.setInvalid(JBoss6VFS.java:142)JBoss 6 VFS API is not available in this environment.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.VFS.getClass(VFS.java:111)Class not found: org.jboss.vfs.VirtualFile
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:63)VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.VFS$VFSHolder.createVFS(VFS.java:77)Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;B
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;V
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;g
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;N
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderDetails matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt2 matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt3 matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.Orders matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.User matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: dao
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Test1Mapper.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Test1Mapper.xml
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#21;&amp;#7;&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#20;&amp;#1;&amp;#0;&amp;#12;findOrderExt&amp;#1;&amp;#0;8(Lcom/hand/lq/pojo/OrderExt;)Lcom/hand/lq/pojo/OrderExt;&amp;#1;&amp;#0;
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.xml
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.xml
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;B
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;V
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;g
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;N
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.dao.Test1Mapper matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderDetails matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt2 matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt3 matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.Orders matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.User matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)Cache Hit Ratio [com.hand.lq.dao.Test1Mapper]: 0.0
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)Opening JDBC Connection
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)Created connection 726950788.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2b546384]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt;  Preparing: SELECT orders.id, orders.user_id, orders.number, orders.createtime, orders.note, user.username, user.address FROM orders,user WHERE orders.user_id = user.id and orders.id=? 
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt; Parameters: 5(Integer)
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)&lt;==      Total: 1
 OrderExt{username=&apos;����&apos;, address=&apos;������&apos;, id=5, user_id=10, number=&apos;1000012&apos;, createTime=Thu Feb 12 16:13:23 GMT+08:00 2015, note=&apos;null&apos;}
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123)Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@123f1134]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91)Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@123f1134]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)Returned connection 306123060 to pool.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123)Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2b546384]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91)Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2b546384]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)Returned connection 726950788 to pool.
 </system-out>
   </testcase>
-  <testcase classname="Test1" name="test2" time="0.079">
+  <testcase classname="Test1" name="test2" time="0.07">
     <error message="Error serializing object.  Cause: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt2" type="org.apache.ibatis.cache.CacheException">org.apache.ibatis.cache.CacheException: Error serializing object.  Cause: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt2
 	at org.apache.ibatis.cache.decorators.SerializedCache.serialize(SerializedCache.java:102)
 	at org.apache.ibatis.cache.decorators.SerializedCache.putObject(SerializedCache.java:56)
@@ -286,110 +286,110 @@ Caused by: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt2
 	at org.apache.ibatis.cache.decorators.SerializedCache.serialize(SerializedCache.java:97)
 	... 39 more
 </error>
-    <system-out>[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderDetails.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt2.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt3.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Orders.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: User.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;B
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;V
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;g
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;N
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderDetails matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt2 matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt3 matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.Orders matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.User matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: dao
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Test1Mapper.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Test1Mapper.xml
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#21;&amp;#7;&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#20;&amp;#1;&amp;#0;&amp;#12;findOrderExt&amp;#1;&amp;#0;8(Lcom/hand/lq/pojo/OrderExt;)Lcom/hand/lq/pojo/OrderExt;&amp;#1;&amp;#0;
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.xml
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.xml
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderDetails.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt2.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt3.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Orders.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: User.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;B
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;V
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;g
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;N
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.dao.Test1Mapper matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderDetails matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt2 matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt3 matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.Orders matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.User matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)Cache Hit Ratio [com.hand.lq.dao.Test1Mapper]: 0.0
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)Opening JDBC Connection
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)Created connection 2081191879.
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7c0c77c7]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt;  Preparing: SELECT orders.id, orders.user_id, orders.number, orders.createtime, orders.note, user.username, user.address FROM orders,user WHERE orders.user_id = user.id and orders.id=? 
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt; Parameters: 4(Integer)
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)&lt;==      Total: 1
+    <system-out>[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;B
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;V
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;g
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;N
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderDetails matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt2 matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt3 matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.Orders matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.User matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: dao
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Test1Mapper.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Test1Mapper.xml
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#21;&amp;#7;&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#20;&amp;#1;&amp;#0;&amp;#12;findOrderExt&amp;#1;&amp;#0;8(Lcom/hand/lq/pojo/OrderExt;)Lcom/hand/lq/pojo/OrderExt;&amp;#1;&amp;#0;
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.xml
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.xml
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;B
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;V
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;g
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;N
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.dao.Test1Mapper matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderDetails matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt2 matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt3 matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.Orders matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.User matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)Cache Hit Ratio [com.hand.lq.dao.Test1Mapper]: 0.0
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)Opening JDBC Connection
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)Created connection 1699113578.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@65466a6a]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt;  Preparing: SELECT orders.id, orders.user_id, orders.number, orders.createtime, orders.note, user.username, user.address FROM orders,user WHERE orders.user_id = user.id and orders.id=? 
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt; Parameters: 4(Integer)
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)&lt;==      Total: 1
 OrderExt2{username=&apos;����&apos;, address=&apos;null&apos;, user=User{id=1, username=&apos;����&apos;, birthday=null, sex=null, address=&apos;null&apos;}, id=4, user_id=1, number=&apos;1000011&apos;, createTime=Tue Feb 03 13:22:41 GMT+08:00 2015, note=&apos;null&apos;}
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123)Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7c0c77c7]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91)Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7c0c77c7]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)Returned connection 2081191879 to pool.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123)Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@65466a6a]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91)Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@65466a6a]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)Returned connection 1699113578 to pool.
 </system-out>
   </testcase>
-  <testcase classname="Test1" name="test3" time="0.05"/>
-  <testcase classname="Test1" name="test4" time="0.13">
-    <error message="Error serializing object.  Cause: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt2_$$_jvst55_0" type="org.apache.ibatis.cache.CacheException">org.apache.ibatis.cache.CacheException: Error serializing object.  Cause: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt2_$$_jvst55_0
+  <testcase classname="Test1" name="test3" time="0.052"/>
+  <testcase classname="Test1" name="test4" time="0.107">
+    <error message="Error serializing object.  Cause: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt2_$$_jvst2cf_0" type="org.apache.ibatis.cache.CacheException">org.apache.ibatis.cache.CacheException: Error serializing object.  Cause: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt2_$$_jvst2cf_0
 	at org.apache.ibatis.cache.decorators.SerializedCache.serialize(SerializedCache.java:102)
 	at org.apache.ibatis.cache.decorators.SerializedCache.putObject(SerializedCache.java:56)
 	at org.apache.ibatis.cache.decorators.LoggingCache.putObject(LoggingCache.java:51)
@@ -430,7 +430,7 @@ OrderExt2{username=&apos;����&apos;, address=&apos;null&apos;, user=User
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt2_$$_jvst55_0
+Caused by: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt2_$$_jvst2cf_0
 	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1184)
 	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
 	at java.util.ArrayList.writeObject(ArrayList.java:766)
@@ -446,110 +446,110 @@ Caused by: java.io.NotSerializableException: com.hand.lq.pojo.OrderExt2_$$_jvst5
 	at org.apache.ibatis.cache.decorators.SerializedCache.serialize(SerializedCache.java:97)
 	... 39 more
 </error>
-    <system-out>[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderDetails.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt2.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt3.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Orders.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: User.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;B
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;V
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;g
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;N
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderDetails matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt2 matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt3 matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.Orders matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.User matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: dao
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Test1Mapper.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Test1Mapper.xml
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#21;&amp;#7;&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#20;&amp;#1;&amp;#0;&amp;#12;findOrderExt&amp;#1;&amp;#0;8(Lcom/hand/lq/pojo/OrderExt;)Lcom/hand/lq/pojo/OrderExt;&amp;#1;&amp;#0;
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.xml
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.xml
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderDetails.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt2.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt3.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Orders.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: User.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;B
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;V
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;g
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;N
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.dao.Test1Mapper matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderDetails matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt2 matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt3 matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.Orders matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.User matches criteria [is assignable to Object]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)Cache Hit Ratio [com.hand.lq.dao.Test1Mapper]: 0.0
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)Opening JDBC Connection
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)Created connection 1107024580.
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@41fbdac4]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt;  Preparing: SELECT orders.id, orders.user_id, orders.number, orders.createtime, orders.note FROM orders WHERE orders.id=? 
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt; Parameters: 4(Integer)
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)&lt;==      Total: 1
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)Cache Hit Ratio [com.hand.lq.dao.Test1Mapper]: 0.0
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt;  Preparing: select * from user where id=? 
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt; Parameters: 1(Integer)
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)&lt;==      Total: 1
+    <system-out>[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;B
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;V
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;g
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;N
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderDetails matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt2 matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt3 matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.Orders matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.User matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)PooledDataSource forcefully closed/removed all connections.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: dao
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Test1Mapper.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Test1Mapper.xml
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#21;&amp;#7;&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#20;&amp;#1;&amp;#0;&amp;#12;findOrderExt&amp;#1;&amp;#0;8(Lcom/hand/lq/pojo/OrderExt;)Lcom/hand/lq/pojo/OrderExt;&amp;#1;&amp;#0;
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.xml
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/dao/Test1Mapper.xml
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:113)Listing file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderDetails.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;B
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt2.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;V
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/OrderExt3.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;g
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/Orders.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;L
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)Find JAR URL: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)Not a JAR: file:/D:/SpringDay01/day4/mybatis/target/classes/com/hand/lq/pojo/User.class
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;N
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.dao.Test1Mapper matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderDetails matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt2 matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.OrderExt3 matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.Orders matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:256)Checking to see if class com.hand.lq.pojo.User matches criteria [is assignable to Object]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)Cache Hit Ratio [com.hand.lq.dao.Test1Mapper]: 0.0
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)Opening JDBC Connection
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)Created connection 1637290981.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@619713e5]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt;  Preparing: SELECT orders.id, orders.user_id, orders.number, orders.createtime, orders.note FROM orders WHERE orders.id=? 
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt; Parameters: 4(Integer)
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)&lt;==      Total: 1
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)Cache Hit Ratio [com.hand.lq.dao.Test1Mapper]: 0.0
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt;  Preparing: select * from user where id=? 
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)==&gt; Parameters: 1(Integer)
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)&lt;==      Total: 1
 User{id=1, username=&apos;����&apos;, birthday=null, sex=2, address=&apos;null&apos;}
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123)Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@41fbdac4]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91)Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@41fbdac4]
-[2019-07-19 19:16:55 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)Returned connection 1107024580 to pool.
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:123)Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@619713e5]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91)Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@619713e5]
+[2019-07-20 11:27:11 ����]:DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)Returned connection 1637290981 to pool.
 </system-out>
   </testcase>
-  <testcase classname="Test1" name="test5" time="0.07"/>
-  <testcase classname="Test1" name="test6" time="0.1"/>
+  <testcase classname="Test1" name="test5" time="0.065"/>
+  <testcase classname="Test1" name="test6" time="0.111"/>
 </testsuite>

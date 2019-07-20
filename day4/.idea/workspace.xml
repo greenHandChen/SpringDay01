@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="befa8c24-4eaa-4d1f-8ff5-b4ba87b0648a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../day03/src/com/lq/log/debug.log_2019-07-18.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis/src/com/lq/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/com/lq/log/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis/target/surefire-reports/TEST-Test1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/surefire-reports/TEST-Test1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis/target/surefire-reports/Test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/surefire-reports/Test1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springmybatis/src/com/lq/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/src/com/lq/log/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springmybatis/src/com/lq/log/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/src/com/lq/log/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/target/surefire-reports/TEST-Test02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/target/surefire-reports/TEST-Test02.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/target/surefire-reports/Test02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/target/surefire-reports/Test02.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/target/test-classes/Test02.class" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/target/test-classes/Test02.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../parent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parent/day2child/src/com/lq/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/day2child/src/com/lq/log/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parent/day2child/src/com/lq/log/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/day2child/src/com/lq/log/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parent/day2child/target/classes/TrTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/day2child/target/classes/TrTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,10 +37,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis/src/main/java/com/hand/lq/pojo/User.java">
+        <entry file="file://$PROJECT_DIR$/springmybatis/src/test/java/Test02.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="81">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,43 +49,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis/src/main/java/com/hand/lq/pojo/OrderExt3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/SqlMapConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="62" selection-start-line="8" selection-start-column="7" selection-end-line="9" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis/target/classes/SqlMapConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-291">
-              <caret line="7" column="51" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="51" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/springmybatis/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springmybatis/src/test/java/Test02.java">
+        <entry file="file://$PROJECT_DIR$/mybatis/src/test/java/Test1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="2376">
+              <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -83,20 +65,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="285" column="12" selection-start-line="266" selection-start-column="4" selection-end-line="285" selection-end-column="12" />
+            <state>
+              <caret line="224" column="21" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springmybatis/target/classes/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/springmybatis/src/main/java/com/hand/lq/dao/Test1Mapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="112" column="9" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springmybatis/target/classes/mybatis-config.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/springmybatis/src/main/java/com/hand/lq/dao/Test1Mapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmybatis/src/main/java/com/hand/lq/service/Test1ServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -106,7 +105,16 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springmybatis/target/classes/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-648" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmybatis/src/main/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-486" />
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -124,6 +132,13 @@
       <find>org.junit.jupiter</find>
       <find>test</find>
       <find>junit</find>
+      <find>Hi</find>
+      <find>log4</find>
+      <find>myba</find>
+      <find>log4j</find>
+      <find>slf4j-log4j12</find>
+      <find>slf4j-api</find>
+      <find>spring-context-support</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,9 +148,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/lq/dao/Test1Mapper.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/springmybatis/src/test/java/Test2.java" />
-        <option value="$PROJECT_DIR$/springmybatis/src/test/java/Test02.java" />
         <option value="$PROJECT_DIR$/mybatis/src/main/java/com/hand/lq/pojo/OrderExt3.java" />
         <option value="$PROJECT_DIR$/mybatis/src/main/java/com/hand/lq/pojo/OrderDetails.java" />
         <option value="$PROJECT_DIR$/mybatis/src/main/java/com/hand/lq/pojo/User.java" />
@@ -143,6 +156,8 @@
         <option value="$PROJECT_DIR$/mybatis/src/test/java/Test1.java" />
         <option value="$PROJECT_DIR$/mybatis/src/main/resources/SqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/mybatis/src/main/java/com/hand/lq/dao/Test1Mapper.xml" />
+        <option value="$PROJECT_DIR$/springmybatis/src/test/java/Test02.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -188,8 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,14 +219,46 @@
               <item name="day4" type="b2602c69:ProjectViewProjectNode" />
               <item name="day4" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="day4" type="b2602c69:ProjectViewProjectNode" />
               <item name="day4" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="day4" type="b2602c69:ProjectViewProjectNode" />
@@ -225,6 +270,58 @@
               <item name="day4" type="462c0819:PsiDirectoryNode" />
               <item name="springmybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
+              <item name="springmybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
+              <item name="springmybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
+              <item name="springmybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
+              <item name="springmybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lq" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
+              <item name="springmybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lq" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
+              <item name="springmybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="day4" type="b2602c69:ProjectViewProjectNode" />
@@ -241,23 +338,12 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="day4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day4" type="462c0819:PsiDirectoryNode" />
-              <item name="springmybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="day4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day4" type="462c0819:PsiDirectoryNode" />
-              <item name="springmybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,7 +379,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Test02">
+  <component name="RunManager" selected="JUnit.Test02.test1">
     <configuration name="Test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springmybatis" />
       <option name="PACKAGE_NAME" value="" />
@@ -344,10 +430,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test02" />
-        <item itemvalue="JUnit.Test1.test6" />
-        <item itemvalue="JUnit.Test1.test5" />
         <item itemvalue="JUnit.Test02.test1" />
+        <item itemvalue="JUnit.Test1.test6" />
+        <item itemvalue="JUnit.Test02" />
+        <item itemvalue="JUnit.Test1.test5" />
         <item itemvalue="JUnit.Test2" />
       </list>
     </recent_temporary>
@@ -366,6 +452,8 @@
       <workItem from="1563530386402" duration="3600000" />
       <workItem from="1563534990143" duration="1344000" />
       <workItem from="1563548776000" duration="704000" />
+      <workItem from="1563551161960" duration="173000" />
+      <workItem from="1563582293251" duration="3865000" />
     </task>
     <task id="LOCAL-00001" summary="day4spring-mybatis">
       <created>1563533853266</created>
@@ -374,49 +462,64 @@
       <option name="project" value="LOCAL" />
       <updated>1563533853266</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day4spring-mybatis">
+      <created>1563551198400</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563551198400</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test1_test6 - 2019.07.19 at 18h 43m 22s.xml">
-      <configuration name="Test1.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test1_test6 - 2019.07.19 at 18h 44m 27s.xml">
-      <configuration name="Test1.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test1_test6 - 2019.07.19 at 18h 45m 22s.xml">
-      <configuration name="Test1.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test1_test6 - 2019.07.19 at 18h 48m 10s.xml">
-      <configuration name="Test1.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test1_test6 - 2019.07.19 at 18h 51m 25s.xml">
-      <configuration name="Test1.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test1_test6 - 2019.07.19 at 18h 51m 47s.xml">
-      <configuration name="Test1.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test1_test6 - 2019.07.19 at 18h 52m 34s.xml">
-      <configuration name="Test1.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test1_test6 - 2019.07.19 at 18h 52m 52s.xml">
-      <configuration name="Test1.test6" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Test1_test6 - 2019.07.19 at 19h 16m 58s.xml">
       <configuration name="Test1.test6" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Test02 - 2019.07.19 at 23h 25m 41s.xml">
       <configuration name="Test02" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Test02 - 2019.07.20 at 08h 26m 16s.xml">
+      <configuration name="Test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test02 - 2019.07.20 at 11h 09m 32s.xml">
+      <configuration name="Test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test1_test6 - 2019.07.20 at 11h 10m 11s.xml">
+      <configuration name="Test1.test6" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test02 - 2019.07.20 at 11h 12m 28s.xml">
+      <configuration name="Test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test02 - 2019.07.20 at 11h 16m 08s.xml">
+      <configuration name="Test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test1_test6 - 2019.07.20 at 11h 18m 14s.xml">
+      <configuration name="Test1.test6" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test02_test1 - 2019.07.20 at 11h 22m 32s.xml">
+      <configuration name="Test02.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test1_test6 - 2019.07.20 at 11h 27m 13s.xml">
+      <configuration name="Test1.test6" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7179000" />
+    <option name="totallyTimeSpent" value="11217000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -427,19 +530,19 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.77213115" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.3147541" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3295082" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.5" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295082" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.4409836" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -459,18 +562,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="day4spring-mybatis" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springmybatis/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmybatis/src/main/java/com/hand/lq/dao/Test1Mapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3051">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://D:/Users/lq/.m2/repository/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/requests/ClassRequest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -483,13 +576,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/springmybatis/src/test/java/Test2.java" />
-    <entry file="file://$PROJECT_DIR$/mybatis/src/test/java/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mybatis/src/main/java/com/hand/lq/dao/Test1Mapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -503,9 +589,6 @@
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmybatis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mybatis/src/main/java/com/hand/lq/pojo/OrderDetails.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -541,39 +624,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="285" column="12" selection-start-line="266" selection-start-column="4" selection-end-line="285" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mybatis/target/classes/SqlMapConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
+        <state relative-caret-position="189">
           <caret line="7" column="51" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmybatis/target/classes/mybatis-config.xml">
+    <entry file="file://$PROJECT_DIR$/springmybatis/target/classes/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmybatis/target/classes/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/springmybatis/target/classes/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/springmybatis/target/classes/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/springmybatis/target/classes/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmybatis/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmybatis/src/main/java/com/hand/lq/dao/Test1Mapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="112" column="9" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmybatis/src/main/java/com/hand/lq/dao/Test1Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmybatis/src/main/java/com/hand/lq/service/Test1ServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmybatis/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/springmybatis/src/test/java/Test02.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="81">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="224" column="21" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis/src/test/java/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
         </state>
       </provider>
     </entry>

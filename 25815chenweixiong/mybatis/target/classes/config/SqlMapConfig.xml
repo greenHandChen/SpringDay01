@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+<!--    包别名-->
+    <typeAliases>
+        <package name="domain"/>
+    </typeAliases>
+
+
+<!--    <mappers>-->
+
+<!--&lt;!&ndash;        单文件注册方式&ndash;&gt;-->
+<!--&lt;!&ndash;        <mapper resource="Mapper/UserMapper.xml"/>&ndash;&gt;-->
+<!--        &lt;!&ndash;<mapper resource="xml/UserMapper.xml"></mapper>&ndash;&gt;-->
+<!--&lt;!&ndash;        多文件注册方式&ndash;&gt;-->
+<!--        <package name="daoMapper"/>-->
+<!--&lt;!&ndash;        <mapper resource="daoMapper/UserDao.xml"/>&ndash;&gt;-->
+<!--    </mappers>-->
+
+<!--        <settings>-->
+<!--    &lt;!&ndash;        是否立即开启懒加载 ，默认为fasle&ndash;&gt;-->
+<!--            <setting name="lazyLoadingEnable" value="true"/>-->
+
+<!--            是否立即开启积极懒加载，默认为true，fasle表示按需加载-->
+<!--            <setting name="aggressiveLazyLoading" value="false"/>-->
+<!--        </settings>-->
+
+</configuration>

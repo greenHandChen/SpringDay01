@@ -36,15 +36,11 @@ public class TestSpringMybatis {
     @Test
     public void t1(){
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext("config/applicationContext.xml");
+
         UserMapper mapper = (UserMapper) applicationContext.getBean("userMapper");
-//        SqlSession sqlSession=sqlSessionFactory.openSession();
-//        UserMapper userMapper=sqlSession.getMapper(UserMapper.class);
+
         System.out.println(mapper.findUserById(10));
-//        ApplicationContext applicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
-//
-//        UserDaoImpl userDao=(UserDaoImpl)applicationContext.getBean("userMapper");
-//
-//        System.out.println(userDao.findUserById(1));
+
 
     }
 

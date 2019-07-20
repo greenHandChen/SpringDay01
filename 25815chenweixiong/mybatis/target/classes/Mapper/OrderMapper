@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mapper.OrderMapper">
+
+    <resultMap id="orderRstMap" type="OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <!--        user懒加载-->
+        <association property="user" select="daoMapper.OrdersDao.findUserById" column="user_id"/>
+        <collection  property="orderDetailList" ofType="domain.OrderDetail">
+            <id column="detailId" property="id"/>
+            <result column="itemid" property="items_id"/>
+            <result column="items_num" property="items_num"/>
+        </collection>
+        <collection property="itemsList" ofType="Items">
+            <id column="itemid" property="id"/>
+            <result column="itemName" property="name"/>
+            <result column="price" property="price"/>
+        </collection>
+    </resultMap>
+
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="User" >
+        select * from user where id=#{id}
+    </select>
+
+    <select id="findOrdersExts" resultType="OrdersExt">
+        select
+            u.username,
+            u.address,
+            o.number,
+            i.`name`,,
+            i.price,
+            o.createtime
+        from user u,orders o,orderdetail od,items i
+        where o.user_id=u.id
+        and od.orders_id=o.id
+        and od.items_id =i.id
+        <where>
+            <if test="number ! null and number !=''">
+                    and o.number=#{number}
+            </if>
+            <if test="name ! null and name !=''">
+                and i.name=#{name}
+            </if>
+            <if test="number ! null and number !=''">
+                and o.number=#{number}
+            </if>
+            <if test="number ! null and number !=''">
+                and o.number=#{number}
+            </if>
+            <if test="number ! null and number !=''">
+                and o.number=#{number}
+            </if>
+        </where>
+    </select>
+</mapper>

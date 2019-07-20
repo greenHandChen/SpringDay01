@@ -43,7 +43,12 @@ public class OrdersExt extends Orders {
 
     @Override
     public String toString() {
-        return "OrdersExt{" +
+        return "Orders{" +
+                "id=" + super.getId() +
+                ", number='" + super.getNumber() + '\'' +
+                ", createtime=" + super.getCreatetime() +
+                ", note='" + super.getNote() + '\'' +
+                '}'+"OrdersExt{" +
                 "username='" + username + '\'' +
                 ", address='" + address + '\'' +
                 '}';

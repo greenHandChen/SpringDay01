@@ -8,7 +8,7 @@
         <result column="user_id" jdbcType="VARCHAR" property="user_id"/>
         <result column="number" jdbcType="VARCHAR" property="number"/>
         <result column="note" jdbcType="VARCHAR" property="note"/>
-        <result column="createtime" javaType="TIMESTAMP" property="createtime"/>
+        <result column="createtime" property="createtime"/>
         <result column="username" jdbcType="VARCHAR" property="username"/>
         <result column="address" jdbcType="VARCHAR" property="address"/>
 <!--        <association property="user" javaType="User">-->

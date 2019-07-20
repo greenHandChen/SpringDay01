@@ -2,9 +2,11 @@ package com.hgh.vo;
 
 import com.hgh.pojo.Orders;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class OrderVO extends Orders {
+    SimpleDateFormat simpleDateFormat = new SimpleDateFormat();
     private String username;
     private String address;
 
@@ -116,7 +118,7 @@ public class OrderVO extends Orders {
                 ", address='" + address + '\'' +
                 ", orderNumber=" + orderNumber +
                 ", orderName='" + orderName + '\'' +
-                ", createtime=" + createtime +
+                ", createtime=" + simpleDateFormat.format("YYYY-mm-dd") +
                 ", price=" + price +
                 ", sumNum=" + sumnum +
                 '}';

@@ -2,43 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f037ce6c-ccf7-4f1d-bbdc-63848af9be2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/25249_贺港华.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/java/com/hgh/dao/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/java/com/hgh/pojo/Items.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/java/com/hgh/pojo/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/java/com/hgh/pojo/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/java/com/hgh/pojo/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/java/com/hgh/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/java/com/hgh/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/java/com/hgh/vo/OrderVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/java/com/hgh/vo/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/resources/spring-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/main/resources/sqlmapconfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25249_贺港华/test/src/test/java/com/hgh/test/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springday03/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springday03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springday03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springday03/src/main/java/org/hgh/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/src/main/java/org/hgh/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springday03/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springday03/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springday03/src/main/resources/sqlmapconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/src/main/resources/sqlmapconfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springday03/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springday03/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/target/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springday03/target/classes/sqlmapconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springday03/target/classes/sqlmapconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25249_贺港华/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25249_贺港华/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -418,6 +382,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2246596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

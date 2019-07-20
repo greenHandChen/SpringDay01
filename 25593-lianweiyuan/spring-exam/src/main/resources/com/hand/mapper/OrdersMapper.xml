@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hand.mapper.OrdersMapper">
+
+    <resultMap id="ordersExtMap" type="com.hand.entity.OrderExt">
+        <id column="ord_id" property="id"/>
+        <result column="number" property="number"/>
+        <association property="user" select="com.hand.mapper.UserMapper.findUserById" column="user_Id">
+
+        </association>
+        <collection property="itemsList" ofType="Items">
+            <id column="item_id" property="itemId"/>
+            <result column="name" property="name"/>
+            <result column="price" property="price"/>
+        </collection>
+    </resultMap>
+
+
+
+
+
+
+    <select id="findOrdersExts" parameterType="com.hand.entity.OrderExt" resultMap="ordersExtMap">
+        select u.username,
+                u.address,
+                u.id as user_id,
+                i.id as item_id,
+                i.name,
+                i.price,
+                ord.id as ord_id,
+                ord.number,
+                ord.createtime
+        from   user u,
+               orders ord,
+               items i,
+               orderdetail o
+                   where    ord.user_id = u.id
+                   and    ord.id = o.orders_id
+                   and    o.items_id = i.id
+
+
+
+
+
+    </select>
+</mapper>

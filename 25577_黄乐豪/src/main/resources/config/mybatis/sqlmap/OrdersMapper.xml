@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="huanglehao.study.mapper.OrdersMapper">
+
+    <resultMap id="OrdersExtsRstMap" type="haunglehao.study.ms.po.OrdersExt">
+        <!--订单信息-->
+        <id column="id" property="id"></id>
+        <result column="createtime" property="createtime"></result>
+
+        <!--用户信息-->
+        <association property="user" javaType="haunglehao.study.ms.po.User">
+            <id column="user_id" property="id"></id>
+            <result column="username" property="username"></result>
+            <result column="address" property="address"></result>
+        </association>
+        <!--用户信息-->
+
+        <!--订单明细信息-->
+        <collection property="detailList"  ofType="haunglehao.study.ms.po.Orderdetail">
+            <id column="detailId" property="id"></id>
+            <!--商品信息-->
+            <association property="items" javaType="haunglehao.study.ms.po.Items">
+                <id column="items_id" property="id"></id>
+                <result column="name" property="name"></result>
+                <result column="price" property="price"></result>
+            </association>
+        </collection>
+    </resultMap>
+
+    <select id="findOrdersExts" parameterMap="map" resultMap="OrdersExtsRstMap">
+            SELECT user.username,
+	user.address,
+	orders.id,
+	items.name,
+	items.price,
+	orderdetail.id detailId,
+	orders.createtime,
+	SUM(items.id) total_amount
+	FROM items,orders,orderdetail,USER
+	WHERE user.id=orders.user_id
+	AND orders.id=orderdetail.orders_id
+	AND orderdetail.items_id=items.id
+	<if test="number != null">
+        AND number=#{number}
+    </if>
+     <if test="name != name">
+         AND name=#{name}
+     </if>
+	<if test="orders.cretetime !=null">
+        AND orders.cretetime between #{createtimeStart} and #{createtimeEnd}
+    </if>
+	<if test="items.price">
+        AND items.price between #{priceStart} and #{priceEnd}
+    </if>
+	GROUP BY orders.id
+    </select>
+</mapper>

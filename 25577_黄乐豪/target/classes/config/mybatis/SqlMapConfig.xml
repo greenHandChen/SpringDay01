@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--加载java的配置文件或者申明属性信息-->
+  <!--
+    <typeAliases>
+        <package name="huanglehao.study.ms.po"/>
+    </typeAliases>-->
+    <!-- 加载映射文件 -->
+    <mappers>
+     <!--   <mapper resource="config/mybatis/sqlmap/User.xml"/>-->
+        <mapper resource="config/mybatis/sqlmap/OrdersMapper.xml"></mapper>
+    </mappers>
+</configuration>

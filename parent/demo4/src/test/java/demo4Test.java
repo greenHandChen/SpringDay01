@@ -11,6 +11,7 @@ public class demo4Test {
     public void test(){
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         AccountServiceImpl accountService = applicationContext.getBean("accountServiceImpl",AccountServiceImpl.class);
+//        AccountServiceImpl accountService = (AccountServiceImpl) applicationContext.getBean("accountServiceImpl");
         accountService.transfer("mybatis", "hibernate", BigDecimal.valueOf(100));
     }
 }

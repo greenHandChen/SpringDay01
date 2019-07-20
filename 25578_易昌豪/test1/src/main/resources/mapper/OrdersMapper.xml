@@ -30,10 +30,8 @@
         <result column="address" property="address"></result>
         <collection property="orders" ofType="orders">
             <id column="id" property="id"></id>
-            <result column="user_id" property="user_id"></result>
             <result column="number" property="number"></result>
             <result column="createtime" property="createtime"></result>
-            <result column="note" property="note"></result>
             <collection property="orderDetails" ofType="orderDetail">
                 <id column="detailId" property="id"></id>
                 <result column="items_id" property="itemsId"></result>

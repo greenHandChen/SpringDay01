@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="125dfd5c-9473-49ec-b418-719b5cd05f18" name="Default Changelist" comment="" />
+    <list default="true" id="125dfd5c-9473-49ec-b418-719b5cd05f18" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SpringDay01/META-INF/SpringDay01.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parent/demo4/src/test/java/demo4Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/demo4/src/test/java/demo4Test.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,13 +41,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/annotation/IController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="171">
               <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xmlConfig/TestSpring.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/xmlConfig/HelloSpring.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="e#192#193#0" expanded="true" />
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,7 +100,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -137,13 +167,14 @@
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,7 +191,7 @@
               <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="xmlConfig" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -169,9 +200,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -180,7 +213,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -202,7 +235,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.testAnnotation">
+  <component name="RunManager" selected="Application.TestSpring">
     <configuration name="CollectionBean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="collection.CollectionBean" />
       <module name="SpringDay01" />
@@ -270,11 +303,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestSpring" />
         <item itemvalue="Application.testAnnotation" />
         <item itemvalue="Application.testColletion" />
         <item itemvalue="Application.testInject" />
         <item itemvalue="Application.CollectionBean" />
-        <item itemvalue="Application.TestSpring" />
       </list>
     </recent_temporary>
   </component>
@@ -294,6 +327,11 @@
       <workItem from="1563343400769" duration="5000" />
       <workItem from="1563353434915" duration="22000" />
       <workItem from="1563370833474" duration="11000" />
+      <workItem from="1563379323325" duration="18000" />
+      <workItem from="1563585419933" duration="52000" />
+      <workItem from="1563587123001" duration="17000" />
+      <workItem from="1563587164100" duration="20000" />
+      <workItem from="1563591927901" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1563263452734</created>
@@ -320,7 +358,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24242000" />
+    <option name="totallyTimeSpent" value="24357000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -334,7 +372,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26172465" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -545,26 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xmlConfig/HelloSpring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xmlConfig/TestSpring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/annotation/Person.java" />
     <entry file="file://$PROJECT_DIR$/src/annotation/IService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -634,6 +652,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/annotation/IController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmlConfig/TestSpring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/annotation/SpringContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -641,12 +676,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/annotation/IController.java">
+    <entry file="file://$PROJECT_DIR$/src/xmlConfig/HelloSpring.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="395">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
           </folding>
         </state>
       </provider>

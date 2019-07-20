@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.OrdersMapper">
+    <select id="findOrdersExt" parameterType="OrdersExt" resultMap="OrdersExtRstMap">
+        SELECT
+        u.username,
+        u.address,
+        o.number,
+        o.createtime,
+        i.name,
+        i.price
+        FROM
+        orders o,
+        orderdetail od,
+        items i,
+        user u
+        WHERE
+        o.id = od.orders_Id AND od.items_id = i.id
+        and o.number = #{number},
+        and o.createtime between #{createtimeStart} and #{createtimeEnd}
+        and  i.name = #{name}
+        and  i.price between #{priceStart} and #{priceEnd}
+    </select>
+
+    <resultMap id="OrdersExtRstMap" type="OrdersExt">
+        <id column="userId" property="id"></id>
+        <result column="username" property="username"></result>
+        <result column="address" property="address"></result>
+        <collection property="orders" ofType="orders">
+            <id column="id" property="id"></id>
+            <result column="user_id" property="user_id"></result>
+            <result column="number" property="number"></result>
+            <result column="createtime" property="createtime"></result>
+            <result column="note" property="note"></result>
+            <collection property="orderDetails" ofType="orderDetail">
+                <id column="detailId" property="id"></id>
+                <result column="items_id" property="itemsId"></result>
+                <result column="items_num" property="itemsNum"></result>
+                <association property="items" javaType="items">
+                    <result column="name" property="name"></result>
+                    <result column="price" property="price"></result>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+</mapper>

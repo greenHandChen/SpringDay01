@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.hand.lq.dao.OrderMapper">
+    <select id="findOrdersExts" parameterType="OrdersExt" resultType="OrdersExt">
+            SELECT
+            orders.id as id,
+            orders.createtime,
+            orderdetail.items_id,
+        orders.user_id as user_id,
+            items.name,
+            items.price,
+            a. sumpri
+            FROM
+            orders
+            LEFT JOIN orderdetail ON orderdetail.orders_id = orders.id
+            LEFT JOIN items ON orderdetail.items_id = items.id
+            LEFT JOIN (SELECT
+            orders.id as id,
+            sum(items.price) as sumpri
+            FROM
+            orders
+            LEFT JOIN orderdetail ON orderdetail.orders_id = orders.id
+            LEFT JOIN items ON orderdetail.items_id = items.id
+            group by orders.id
+            ) a on a.id=orders.id
+            <where>
+                <if test="number!=null">
+                    and  orders.id=#{number}
+                </if>
+                <if test="number!=null">
+                    and  items.name=#{name}
+                </if>
+                <if test="createtimeStart!=null and createtimeEnd!=null">
+                    and  orders.createtime between #{createtimeStart}  and
+                    #{createtimeEnd}
+                </if>
+                <if test="priceStart!=null and priceEnd!=null">
+                  and items.price between #{priceStart}  and
+                    #{priceEnd}
+                </if>
+            </where>
+    </select>
+
+    <select id="selectUser" parameterType="java.lang.Integer" resultType="User">
+        select * from user where id=#{id}
+    </select>
+    <resultMap id="LazyMap1" type="OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="createtime" property="createTime"/>
+        <result column="number" property="order_number"/>
+        <result column="note" property="note"/>
+        <association property="user" select="com.hand.lq.dao.OrderMapper.selectUser" column="user_id"/>
+        <collection property="orderDetails"  ofType="orderDetails">
+            <result property="items_id" column="items_id"/>
+            <result property="items_name" column="items_name"/>
+            <result property="price" column="price"/>
+        </collection>
+    </resultMap>
+</mapper>

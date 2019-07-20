@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 使用mybatis代理时，namespace填入接口的全名-->
+<mapper namespace="com.hand.mapper.UserMapper">
+    <sql id="selectAll">
+        select id,username,birthday,sex,address from user
+    </sql>
+
+    <!-- 使用resultMap -->
+    <resultMap id="testUserMap" type="User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="birthday" property="birthday"/>
+        <result column="sex" property="sex"/>
+        <result column="address" property="address"/>
+    </resultMap>
+    <select id="selectUserToMapById" resultMap="testUserMap" parameterType="_int">
+        <include refid="selectAll"/>
+        where id=#{id};
+    </select>
+
+
+    <select id="selectUserByUserSex" parameterType="queryuser" resultType="user">
+        <include refid="selectAll"/>
+        where sex=#{user.sex}
+    </select>
+
+    <select id="selectUserUncheck" parameterType="User" resultType="User">
+        <include refid="selectAll"/>
+        where 1=1
+        <!--<where>
+            <if test="id!=null">
+                and id=#{id}
+            </if>
+            <if test="username!=null and username!=''">
+                and username like concat(concat('%',#{username}),'%')
+            </if>
+        </where>-->
+        <if test="id!=null">
+            and id=#{id}
+        </if>
+        <if test="username!=null and username!=''">
+            <!--and username like concat(concat('%',#{username}),'%')-->
+            and username like '%${username}%'
+        </if>
+    </select>
+
+    <!-- 使用resultMap实现一对多关联查询 -->
+    <resultMap id="userOrders" type="userexit">
+
+        <id column="user_id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="birthday" property="birthday"/>
+        <result column="sex" property="sex"/>
+        <result column="address" property="address"/>
+
+        <collection property="orderlist" ofType="orders">
+            <id column="oid" property="id"/>
+            <result column="user_id" property="user_id"/>
+            <result column="number" property="number"/>
+            <result column="createtime" property="createtime"/>
+            <result column="note" property="note"/>
+        </collection>
+    </resultMap>
+    <select id="selectUserAndOrders" parameterType="_int" resultMap="userOrders">
+        SELECT
+            usr.id AS user_id,
+            usr.username,
+            usr.birthday,
+            usr.sex,
+            usr.address,
+            ord.id AS oid,
+            ord.number,
+            ord.createtime,
+            ord.note
+        FROM
+            USER usr,
+            orders ord
+        WHERE
+            usr.id = #{xxx} and usr.id=ord.user_id
+    </select>
+
+
+</mapper>

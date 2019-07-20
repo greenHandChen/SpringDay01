@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.mapper.OrdersExtMapper">
+    <select id="findOrdersExts" parameterType="java.lang.Integer" resultMap="ordersExtMap">
+        select o.id oid,o.*,od.id odid,od.*,u.id uid,u.*,i.name,i.price,
+        sum(i.price) over(partition by orders_id) as "total_amount"
+        from orders o,orderdetail od,user u,items i
+        where o.id = od.orders_id
+        and o.user_id = u.id
+        and i.id = od.items_num
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+        <if test="name != null">
+            and i.name like '%${name}%'
+        </if>
+        <if test="createtimeStart != null and createtimeEnd !=null">
+            and o.createtime between #{createtimeStart} and #{createtimeEnd}
+        </if>
+        <if test="createtimeStart != null and createtimeEnd == null">
+            and o.createtime > #{createtimeStart}
+        </if>
+        <if test="createtimeStart == null and createtimeEnd != null">
+            and #{createtimeEnd} > o.createtime
+        </if>
+        <if test="priceStart != null and priceEnd != null">
+            and i.price between #{priceStart} and #{priceEnd}
+        </if>
+        <if test="priceStart != null and priceEnd == null">
+            and i.price > #{priceStart}
+        </if>
+        <if test="priceStart == null and priceEnd != null">
+            and #{priceEnd} > i.price
+        </if>
+    </select>
+    <resultMap id="ordersExtMap" type="OrdersExt" autoMapping="true">
+        <id property="id" column="oid"/>
+        <association property="user" javaType="User" autoMapping="true">
+            <id property="id" column="uid" />
+        </association>
+        <collection property="detailList" ofType="OrderDetail" autoMapping="true"/>
+        <collection property="itemsList" ofType="Items" autoMapping="true"/>
+    </resultMap>
+</mapper>

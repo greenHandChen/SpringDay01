@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tlq.dao.OrderMapper">
+    <resultMap id="OrderExt" type="orderExt">
+        <id column="id" property="id"></id>
+        <result column="createtime" property="createtime"></result>
+        <result column="total" property="total"/>
+        <association property="user" javaType="user">
+            <result column="username" property="username"></result>
+            <result column="address" property="address"></result>
+        </association>
+
+
+        <collection property="orderDetailList" ofType="orderDetail">
+            <result column="items_num" property="items_num"/>
+            <collection property="itemList" ofType="item">
+                <result column="name" property="name"></result>
+                <result column="price" property="price"></result>
+            </collection>
+        </collection>
+
+    </resultMap>
+
+    <select id="findOrdersExts" parameterType="ordersExt" resultMap="OrderExt">
+        SELECT
+            u.username,
+            u.address,
+            o.number,
+            it.name,
+            it.price,
+            o.createtime,
+            od.items_id,
+            od.items_num * it.price as total,
+        FROM
+            user u,
+            orders o,
+            orderdetail od,
+            items it
+
+        WHERE
+            o.user_id = u.id
+        AND
+            o.id = od.orders_id
+        AND
+            od.items_id = it.id;
+        <if test='number != null and number != ""'>
+            and o.number = #{number}
+        </if>
+        <if test='name != null'>
+            and it.name = #{name}
+        </if>
+        <if test='createtimeStart != null and createtimeStart != "" and createtimeEnd != null and createtimeEnd != ""'>
+            and o.createtime betwwen #{createtimeStart} and #{createtimeEnd}
+        </if>
+        <if test='priceStart != null adn priceStart != "" and priceEnd != null and priceEnd != ""'>
+            and o.createtime betwwen #{priceStart} and #{priceEnd}
+        </if>
+
+    </select>
+</mapper>

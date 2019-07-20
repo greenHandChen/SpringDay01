@@ -7,9 +7,9 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-        <bean id="accountDao" class="club.osai.dao.OrderDao">
-            <property name="dataSource" ref="dataSource"/>
-        </bean>
+<!--        <bean id="accountDao" class="club.osai.dao.AccountDaoImpl">-->
+<!--            <property name="dataSource" ref="dataSource"/>-->
+<!--        </bean>-->
 
 <!--    <context:property-placeholder location="classpath:config/log4j.properties"/>-->
 

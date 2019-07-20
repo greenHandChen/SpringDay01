@@ -23,7 +23,8 @@ public class OrderDaoTest {
     @Test
     public void findOrdersExts() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("config/spring.xml");
-        OrderDao bean = (OrderDao)applicationContext.getBean("orderDao");
+//        OrderDao bean = (OrderDao)applicationContext.getBean("orderDao");
+        OrderDao bean = (OrderDao)applicationContext.getBean(OrderDao.class);
 
         OrdersExt ordersExt = new OrdersExt();
         ordersExt.setCreatetime(new Date());

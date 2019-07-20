@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test.mapper.OrderMapper">
+
+    <select id="finOrdersExts" parameterType="com.test.pojo.OrdersExt" resultMap="MoretoMoreRstMap">
+        select u.username,u.address,o.number,it.name, it.price,o.createtime,sum(it.price) over(PARTITION BY it.id order by it.id) total_amount
+         from user u,orders o,orderdetail od,items it where u.id = o.user_id and o.id = od.orders_id and od.items_id = it.id
+         and o.number = #{ord_id};
+    </select>
+
+    <!--多对多-->
+    <!--用户信息与订单信息属于  一对多-->
+    <!--订单信息和订单明细属于一对多-->
+    <!--订单明细 和商品详情属于  一对一-->
+    <resultMap id="MoretoMoreRstMap" type="com.test.pojo.OrdersExt">
+        <!--用户信息-->
+        <id column="user_id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="sex" property="sex"/>
+
+        <!--订单信息  一对多-->
+        <collection property="orders" ofType="com.test.pojo.Order">
+            <id column="id" property="id"/>
+            <result column="user_id" property="user_id"/>
+            <result column="number" property="number"/>
+            <!--订单明细在信息 一对多-->
+            <collection property="orderdetailList" ofType="com.test.pojo.Orderdetail">
+                <id column="id" property="id"/>
+                <result column="items_id" property="items_id"/>
+                <result column="items_num" property="items_num"/>
+                <!--商品信息-->
+                <association property="items" javaType="com.test.pojo.Items">
+                    <id column="items_id" property="id"/>
+                    <result column="name" property="name"/>
+                    <result column="price" property="price"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <!--延迟加载-->
+    <resultMap id="lazyLoadingMap" type="com.test.pojo.User">
+        <!--订单信息-->
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="number" property="number"/>
+
+        <!--用户信息   一对一   select 指定关联查询的statement 然后将查询结果
+        封装到 property属性指定的变量中,即放在user中
+        -->
+        <!--如果colum中的值存在多参数的现象时，需要在column中{col1=属性1,col2=属性2}-->
+        <association property="user" select="com.test.mapper.UserMapper.findUserById" column="user_id">
+        </association>
+    </resultMap>
+</mapper>

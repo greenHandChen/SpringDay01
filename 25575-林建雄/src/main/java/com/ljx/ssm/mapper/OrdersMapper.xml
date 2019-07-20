@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ljx.ssm.mapper.OrdersMapper">
+
+    <sql id="whereClause">
+        <if test="orders != null">
+            <if test="orders.number != null and orders.number != ''">
+                AND number = #{orders.number}
+            </if>
+            <if test="orders.createStart != null and orders.createStart != ''">
+                AND orders.createStart = #{orders.createStart}
+            </if>
+        </if>
+    </sql>
+
+    <resultMap type="com.ljx.ssm.po.Orders" id="OrdersExtRstMap">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="number" property="number" />
+
+        <association property="user" javaType="com.ljx.ssm.po.User">
+            <id column="user_id" property="id" />
+            <result column="username" property="username" />
+            <result column="address" property="address" />
+        </association>
+        <!-- 订单明细信息（一对多） -->
+        <collection property="detailList" ofType="com.ljx.ssm.po.Orderdetail">
+            <id column="detailId" property="id" />
+            <result column="items_id" property="itemsId" />
+            <result column="items_num" property="itemsNum" />
+            <!-- 商品信息（一对一） -->
+            <association property="items" javaType="items">
+                <id column="items_id" property="id" />
+                <result column="name" property="name" />
+                <result column="price" property="price" />
+            </association>
+        </collection>
+    </resultMap>
+
+    <!-- 多对多 -->
+    <select id="findOrdersExts" resultMap="OrdersExtRstMap">
+		SELECT
+		orders.`id`,
+		orders.`user_id`,
+		orders.`number`,
+        orders.`createtime`,
+		user.`username`,
+		user.`address`,
+		orderdetail.`items_id`,
+		orderdetail.`items_num`,
+		items.`name`,
+		items.`price`
+		FROM
+		orders,
+		USER,
+		orderdetail,
+		items
+		<where>
+            orders.`user_id` = user.`id`
+            AND orders.`id` =
+            orderdetail.`orders_id`
+            AND orderdetail.`items_id` = items.`id`
+            <include refid="whereClause"></include>
+        </where>
+	</select>
+</mapper>
+

@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b1c7e85-d4c8-46e8-8c72-b80809c604f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/25573-陈深星.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-exam/java-exam.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/OrderExt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-exam/src/main/resources/ApplicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-exam/src/main/resources/SqlMapConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-exam/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-mybatis/spring-mybatis.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestDemo/src/main/resources/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestDemo/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestDemo/src/test/java/ApplicationTest/applicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TestDemo/src/test/java/ApplicationTest/applicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestDemo/target/classes/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestDemo/target/classes/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestDemo/target/classes/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestDemo/target/classes/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestDemo/target/test-classes/ApplicationTest/applicationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TestDemo/target/test-classes/ApplicationTest/applicationTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../study-mybatis-01/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../study-mybatis-01/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../study-mybatis-01/.idea/vcs.xml" beforeDir="false" />
@@ -166,11 +160,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/mapper/OrderMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+            <state relative-caret-position="-35">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
@@ -205,11 +199,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-exam/src/test/java/com/exam/mapper/UserMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="381">
+              <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -256,8 +250,8 @@
         <option value="$PROJECT_DIR$/java-exam/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/OrderExt.java" />
         <option value="$PROJECT_DIR$/java-exam/src/main/java/com/exam/mapper/OrderMapper.java" />
-        <option value="$PROJECT_DIR$/java-exam/src/main/resources/mapper/OrderMapper.xml" />
         <option value="$PROJECT_DIR$/java-exam/src/test/java/com/exam/mapper/UserMapperTest.java" />
+        <option value="$PROJECT_DIR$/java-exam/src/main/resources/mapper/OrderMapper.xml" />
       </list>
     </option>
   </component>
@@ -284,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-498" />
     <option name="y" value="61" />
     <option name="width" value="1346" />
@@ -398,6 +392,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity" />
@@ -474,7 +469,7 @@
       <option name="presentableId" value="Default" />
       <updated>1563606376976</updated>
       <workItem from="1563606382319" duration="2334000" />
-      <workItem from="1563608760271" duration="1723000" />
+      <workItem from="1563608760271" duration="2260000" />
     </task>
     <servers />
   </component>
@@ -496,7 +491,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4057000" />
+    <option name="totallyTimeSpent" value="4594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -598,23 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/mapper/OrderMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="58" lean-forward="true" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -639,20 +617,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/mapper/OrderMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java-exam/src/test/java/com/exam/mapper/UserMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="381">
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/mapper/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="58" lean-forward="true" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/mapper/OrderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-35">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,25 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzh.mapper.OrdersMapper">
+
+    <resultMap id="baseMap" type="com.wzh.domain.Orders">
+        <id column="id" property="id"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result column="note" property="note"/>
+        <association property="user" select="com.wzh.mapper.UserMapper.findUserById" column="user_id"/>
+        <collection property="detailList" ofType="com.wzh.domain.Ordersdetail">
+            <id column="detail_id" property="id"/>
+            <result column="items_num" property="itemsNum"/>
+            <association property="items" select="com.wzh.mapper.ItemsMapper.findItemsById" column="items_id"/>
+        </collection>
+    </resultMap>
+    <select id="findOrdersById" resultMap="baseMap">
+        select o.*,d.id detail_id,d.items_num,d.items_id from orders o ,orderdetail d
+        where o.id = d.orders_id and o.id=#{id}
+    </select>
+    <select id="queryOrdersByUserId" resultType="Integer">
+    select id from orders where user_id =#{user_id};
+    </select>
+
+</mapper>

@@ -1,0 +1,55 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzh.mapper.OrderExtMapper">
+
+    <resultMap id="baseMap" type="com.wzh.domain.OrderExt">
+        <id column="order_id" property="id"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result column="note" property="note"/>
+        <result column="username" property="username"/>
+        <result column="address" property="address"/>
+        <result column="total_amount" property="totalAmount"/>
+        <collection property="detailList" ofType="com.wzh.domain.Ordersdetail">
+            <id column="detail_id" property="id"/>
+            <result column="items_num" property="itemsNum"/>
+            <association property="items" >
+                <id column="items_id" property="id"/>
+                <result column="items_name" property="name"/>
+                <result column="items_price" property="price"/>
+            </association>
+        </collection>
+
+    </resultMap>
+
+    <select id="findOrdersExts" resultMap="baseMap">
+        select u.username, u.address, o.id order_id, od.id detail_id,od.items_num,
+        i.id items_id,i.name items_name,i.price items_price
+        from orders o,user u,orderdetail od,items i
+        <where>
+            u.id = o.user_id
+            and od.orders_id = o.id
+            and od.items_id = i.id
+            <if test="number!=null">
+                and o.id=#{number}
+            </if>
+            <if test="name!=null">
+                and i.name =#{name}
+            </if>
+            <if test="createtimeStart!=null">
+                and o.createtime >#{createtimeStart}
+            </if>
+            <if test="createtimeEnd!=null">
+                and #{createtimeEnd} > o.createtime
+            </if>
+            <if test="priceStart!=null">
+                and i.price> #{priceStart}
+            </if>
+            <if test="priceEnd!=null">
+                and #{priceEnd} > i.price
+            </if>
+        </where>
+        group by order_id,items_id;
+    </select>
+
+</mapper>

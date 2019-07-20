@@ -1,10 +1,13 @@
 package com.hjf.test;
 
 import com.hjf.mapper.UserMapper;
+import com.hjf.pojo.OrdersExt;
 import com.hjf.pojo.User;
 import org.junit.Before;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.util.List;
 
 /**
  * ClassName:Test
@@ -20,10 +23,17 @@ public class Test {
 
 
     @org.junit.Test
-    public void testDemo1(){
+    public void findUserById(){
         UserMapper userMapper=(UserMapper) applicationContext.getBean("userMapper");
         User user=userMapper.findUserById(10);
         System.out.print(user);
+    }
 
+    @org.junit.Test
+    public void findOrdersExts(){
+        UserMapper userMapper=(UserMapper) applicationContext.getBean("userMapper");
+        OrdersExt ww=new OrdersExt();
+        List<OrdersExt> a=userMapper.findOrdersExts(ww);
+        System.out.print(a);
     }
 }

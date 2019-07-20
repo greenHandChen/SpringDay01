@@ -9,6 +9,7 @@
     2.配置数据源
     3.SqlSessionFactory
     -->
+    <context:component-scan base-package="com.hjf"/>
     <context:property-placeholder location="config/db.properties"/>
 
     <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">

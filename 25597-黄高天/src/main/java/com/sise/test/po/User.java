@@ -1,4 +1,4 @@
-package com.itheima.mybatis.po;
+package com.sise.test.po;
 
 import java.util.Date;
 import java.util.List;

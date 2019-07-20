@@ -6,17 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="25597-黄高天" />
         <module name="committest" />
         <module name="mybatisdemo" />
         <module name="Springday02" />
         <module name="SpringTransaction" />
+        <module name="SpringWithMybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="25597-黄高天" target="1.5" />
+      <module name="_25597_黄高天" target="1.5" />
       <module name="committest" target="1.5" />
       <module name="mybatisdemo" target="1.5" />
       <module name="Springday02" target="1.5" />
       <module name="SpringTransaction" target="1.5" />
+      <module name="SpringWithMybatis" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

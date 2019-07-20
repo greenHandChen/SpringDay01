@@ -1,26 +1,13 @@
-package com.itheima.mybatis.po;
+package com.itheima.ms.po;
 
 import java.util.Date;
-import java.util.List;
 
 public class User {
-
     private int id;
     private String username;
     private String sex;
     private Date birthday;
     private String address;
-
-    //订单信息
-    private List<Orders> orders;
-
-    public List<Orders> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(List<Orders> orders) {
-        this.orders = orders;
-    }
 
     public int getId() {
         return id;

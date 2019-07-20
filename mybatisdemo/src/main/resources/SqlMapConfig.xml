@@ -39,6 +39,7 @@
         <mapper resource="User.xml"  />
         <!-- 1 -->
         <mapper resource="mapper/UserMapper.xml"  />
+        <mapper resource="mapper/OrdersMapper.xml"   />
         <!-- 2 -->
         <!--<package name="com.itheima.mybatis.mapper"  />-->
     </mappers>

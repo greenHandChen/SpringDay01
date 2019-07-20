@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sise.test.mapper.OrdersMapper">
+
+    <!-- UserAndItemsRstMap -->
+    <resultMap id="UserAndItemsRstMap" type="com.sise.test.po.User">
+        <!-- 用户信息 -->
+        <id column="user_id"  property="id"   />
+        <result column="username"   property="username"   />
+        <result column="sex"  property="sex"   />
+
+        <!-- 订单信息（一对多） -->
+        <!-- collection:映射一对多关系 -->
+        <collection property="orders" ofType="com.sise.test.po.Orders">
+            <id  column="id" property="id"/>
+            <result column="user_id" property="userId" />
+            <result column="number" property="number"   />
+            <!-- 订单明细信息(一对多) -->
+            <collection property="detailList" ofType="com.sise.test.po.Orderdetail">
+                <id column="detailId"  property="id"   />
+                <result column="items_id" property="itemsId"   />
+                <result column="items_num" property="itemsNum"  />
+                <!-- 商品信息（）一对一 -->
+                <association property="items" javaType="items">
+                    <id column="items_id" property="id" />
+                    <result column="name" property="name"  />
+                    <result column="price" property="price"  />
+                </association>
+            </collection>
+        </collection>
+
+    </resultMap>
+
+    <select id="findOrdersExts" resultMap="UserAndItemsRstMap">
+         SELECT
+            orders.id,
+            orders.user_id,
+            orders.number,
+            `user`.username,
+            `user`.sex,
+            orderdetail.id detailId,
+            orderdetail.items_id,
+            orderdetail.items_num,
+            items.`name`,
+            items.price
+        FROM
+            orders,
+            USER,
+            orderdetail,
+            items
+        WHERE
+            orders.user_id = `user`.id
+        AND orders.id = orderdetail.id
+        AND orderdetail.items_id = items.id
+    </select>
+
+</mapper>

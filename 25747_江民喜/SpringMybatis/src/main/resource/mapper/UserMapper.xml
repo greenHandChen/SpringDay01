@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatics.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssm.dao.IUserDao">
+    <select id="finOrdersExt" parameterType="com.ssm.model.OrdersExt" resultType="">
+         SELECT
+	u.username,
+	u.address,
+	o.id,
+	item.`name`,
+	item.price,
+	DATE_FORMAT( o.createtim,% Y -% M -% D ) AS createtime,
+	sum(item.price) over(partition by o.id group by item.name)
+FROM
+	USER u,
+	orders o,
+	orderdetail od,
+	items item
+WHERE
+	o.id = #{id} and item.name=#{name} and o.createtime between #{createtime} and #{createtimeEND}
+	 and item.price between #{pricestart} and {priceEnd}
+    </select>
+</mapper>

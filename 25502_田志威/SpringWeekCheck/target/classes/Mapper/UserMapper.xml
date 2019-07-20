@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org//dat/mybatis-3-mapper.dtd">
+<!--接口类全定限名与namespace一致-->
+<mapper namespace="Dao.UserMapper">
+
+    <select id="UsingSpringFindUserById" parameterType="String" resultType="Domin.User">
+        select * from user where id = #{id}
+    </select>
+    <select id="findUserById" parameterType="java.lang.String" resultType="User">
+        SELECT * FROM USER WHERE id = #{id}
+    </select>
+
+    <select id="findUserByUsername" parameterType="java.lang.String" resultType="Domin.User">
+        SELECT * FROM USER WHERE username like #{username}
+    </select>
+
+    <insert id="addUser" parameterType="Domin.User">
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <insert id="addUserGetId" parameterType="Domin.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            SElECT LAST_INSERT_ID()
+        </selectKey>
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+    <insert id="addUserGetUUID" parameterType="Domin.User">
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            SElECT UUID()
+        </selectKey>
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <select id="findUserByUser" parameterType="Vo.UserQueryVo" resultType="Domin.User">
+        SELECT * FROM USER u WHERE u.address like '%${user.address}%' and u.sex=#{user.sex}
+    </select>
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="Domin.User">
+        SELECT * FROM USER u WHERE u.username like concat(concat('%',#{username}),'%')
+    </select>
+
+    <select id="testIfAndWhereLabel" parameterType="Domin.User" resultType="Domin.User">
+        select * from user
+        <where>
+                    <if test="id!=null">
+                            and id = #{id}
+                    </if>
+                    <if test="username != null and username!=''">
+                        and username like concat('%',#{username},'%')
+                    </if>
+            </where>
+    </select>
+</mapper>

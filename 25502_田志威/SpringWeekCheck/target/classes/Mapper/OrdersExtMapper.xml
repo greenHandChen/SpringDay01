@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org//dat/mybatis-3-mapper.dtd">
+<!--接口类全定限名与namespace一致-->
+<mapper namespace="Mapper.OrdersExtMapper">
+    <resultMap id="OrdersExtMap" type="OrdersExt">
+        <association property="user" javaType="Domin.User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+        </association>
+        <association property="orders" javaType="Domin.Orders">
+            <id column="id" property="id"/>
+            <result column="number" property="number"/>
+            <result column="createtime" property="createtime"/>
+        </association>
+        <association property="items" javaType="Domin.Items">
+            <id column="id" property="id"/>
+            <result column="price" property="price"/>
+            <result column="name" property="name"/>
+        </association>
+    </resultMap>
+    <select id="findOrdersExts" parameterType="OrdersExt" resultMap="OrdersExtMap">
+        select
+            u.username,
+            u.address,
+            o.number,
+            o.createtime,
+            i.name,
+            i.price
+            from items i,orderdetail od,orders o,user u
+            <where>
+                <if test="number !=null">
+                    and o.number = #{number}
+                    and u.id = o.user_id
+                    and od.orders_id = o.id
+                    and i.id = od.items_id
+                </if>
+                <if test="name !=null">
+                    and i.name = #{name}
+                </if>
+                <if test="createtimeStart!=null and createtimeEnd!=null">
+                    and o.createtime between #{createtimeStart} and #{createtimeEnd}
+                </if>
+                <if test="priceStart!=null and priceEnd!=null">
+                    and i.price between #{priceStart} and #{priceEnd}
+                </if>
+            </where>
+
+    </select>
+</mapper>

@@ -43,7 +43,7 @@ public class TestMybatis {
         //3.获取SqlSession
         SqlSession sqlSession=sqlSessionFactory.openSession();
         //4执行查询 ,第一个参数是命名空间.sql的ID， 第二个参数查询的参数
-        List<User> users=sqlSession.selectList("test.findUserByName","'张%'");
+        List<User> users=sqlSession.selectList("test.findUserByUsername","'张%'");
         System.out.println(users.toString());
         //5.关闭资源
         sqlSession.close();

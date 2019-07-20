@@ -50,11 +50,11 @@ public class Orderdetail {
 
     @Override
     public String toString() {
-        return "订单信息{" +
+        return "订单明细信息{" +
                 "id=" + id +
                 ", order_id=" + order_id +
                 ", items_id=" + items_id +
-                ", items_num=" + items_num +"\n"+
+                ", items_num=" + items_num +"\n"+"\n"+"\n"+
                 ", items=" + items +
                 '}';
     }

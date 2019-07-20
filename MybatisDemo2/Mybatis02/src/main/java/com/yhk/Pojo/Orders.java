@@ -65,12 +65,12 @@ public class Orders {
 
     @Override
     public String toString() {
-        return "订单集合{" +
+        return "订单集合信息{" +
                 "id=" + id +
                 ", user_id=" + user_id +
                 ", number='" + number + '\'' +
                 ", createtime=" + createtime +
-                ", note='" + note + '\'' +"\n"+
+                ", note='" + note + '\'' +"\n"+"\n"+
                 ", detailList=" + detailList +
                 '}';
     }

@@ -20,7 +20,7 @@ public interface OrdersMapper {
     List<OrdersExt> findOrdersAndUserRstMap(OrdersExt ordersExt);
 
     /**
-     *使用Map映射 一对多
+     *使用Map映射 一对多  根据Orders的id查询订单信息，关联查询 订单明细信息及用户信息
      */
     List<Orderdetail> findOrdersAndDetailRetMap(OrdersExt ordersExt);
 

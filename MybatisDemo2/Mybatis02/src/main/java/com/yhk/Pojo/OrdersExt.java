@@ -8,7 +8,7 @@ public class OrdersExt extends Orders {
      * 添加order中没有的属性
      * user.username
      * user.sex
-     * User user
+     * User user 拓展用户信息
      * detailList
      */
     private String username;
@@ -24,15 +24,15 @@ public class OrdersExt extends Orders {
     }
 
 
-//    private List<Orderdetail> detaileList; //一对多
+    private List<Orderdetail> detaileList; //一对多
 
-//    public List<Orderdetail> getDetaileList() {
-//        return detaileList;
-//    }
-//
-//    public void setDetaileList(List<Orderdetail> detaileList) {
-//        this.detaileList = detaileList;
-//    }
+    public List<Orderdetail> getDetaileList() {
+        return detaileList;
+    }
+
+    public void setDetaileList(List<Orderdetail> detaileList) {
+        this.detaileList = detaileList;
+    }
 
     public User getUser() {
         return user;
@@ -47,16 +47,16 @@ public class OrdersExt extends Orders {
     }
 
     public void setUsername(String username) {
-        this.username = user.getUsername();
+        this.username = username;
     }
-
 
     @Override
     public String toString() {
         return "OrdersExt{" +
                 "username='" + username + '\'' +
-                ", address='" + address + '\'' +
-                ", user=" + user +
+                ", address='" + address + '\'' +"\n"+
+                ", user=" + user +"\n"+
+                ", detaileList=" + detaileList +
                 '}';
     }
 }

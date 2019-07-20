@@ -43,16 +43,24 @@
 
 <!--    map 一对多map结果集-->
     <resultMap id="OrdersAndOrderDetailRstMap" type="OrdersExt" extends="OrdersAndUserRstMap">
-
-<!--        订单明细信息 ： 一对多  -->
+<!--        &lt;!&ndash;        订单信息&ndash;&gt;-->
+<!--        <id column="id" property="id"/>-->
+<!--        <result column="user_id" property="user_id"/>-->
+<!--        <result column="number" property="number"/>-->
+<!--        &lt;!&ndash;        用户信息 一对一   &ndash;&gt;-->
+<!--        <association property="user" javaType="com.yhk.Pojo.User">-->
+<!--            <id column="user_id" property="id"/>-->
+<!--            <result column="username" property="username"/>-->
+<!--            <result column="address" property="address"/>-->
+<!--        </association>-->
+    <!--        订单明细信息 ： 一对多  -->
         <collection property="detaileList"  ofType="com.yhk.Pojo.Orderdetail">
             <id column="detailId" property="id"/>
             <result column="items_id" property="items_id"/>
             <result column="items_num" property="items_num"/>
          </collection>
     </resultMap>
-    
-    
+
 <!--    一对多map映射-->
     <select id="findOrdersAndDetailRetMap" resultMap="OrdersAndOrderDetailRstMap">
         select o.id, o.user_id,o.number,o.createtime,o.note,u.username,u.address,od.id detailId, od.items_id, od.items_num
@@ -63,7 +71,7 @@
         </if>
     </select>
 
-<!--    UserAndItemsRstMap-->
+<!--    多对多：UserAndItemsRstMap-->
     <resultMap id="UserAndItemsRstMap" type="User">
 <!--        用户信息-->
         <id column="user_id" property="id"/>
@@ -80,7 +88,7 @@
                 <id column="detailId" property="id"/>
                 <result column="items_id" property="items_id"/>
                 <result column="items_num" property="items_num"/>
-                <!--商品信息-->
+                <!--商品信息  一对一  -->
                 <association property="items" javaType="items">
                     <id column="items_id" property="id"/>
                     <result column="name" property="name"/>

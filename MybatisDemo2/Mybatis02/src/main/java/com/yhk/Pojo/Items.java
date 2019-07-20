@@ -66,7 +66,7 @@ public class Items {
                 ", price=" + price +
                 ", detail='" + detail + '\'' +
                 ", pic='" + pic + '\'' +
-                ", createtime=" + createtime +
+                ", createtime=" + createtime +"\n"+"\n"+
                 '}';
     }
 }

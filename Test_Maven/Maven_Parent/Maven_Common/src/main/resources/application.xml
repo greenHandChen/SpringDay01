@@ -2,11 +2,13 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        					   http://www.springframework.org/schema/beans/spring-beans.xsd
        					   http://www.springframework.org/schema/context
        					   http://www.springframework.org/schema/context/spring-context.xsd
-
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx.xsd
 ">
 
     <context:component-scan base-package="com.yhk.transcation"/>
@@ -53,17 +55,25 @@
         <property name="accountDao" ref="accountDao"></property>
     </bean>
 
+<!--    事务代理工厂-->
     <bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
 <!--        事务管理器-->
         <property name="transactionManager" ref="txManager"/>
 <!--        配置目标类-->
         <property name="target" ref="accountService"/>
+<!--        配置目标接口-->
         <property name="proxyInterfaces" value="com.yhk.transcation.Service.IAccountService"/>
         <property name="transactionAttributes">
             <props>
                 <prop key="transfer">PROPAGATION_REQUIRED,ISOLATION_DEFAULT</prop>
             </props>
         </property>
-
     </bean>
+
+<!--    proxy-target-class默认为jdk代理，设置为true，使用cglib动态代理-->
+    <tx:annotation-driven proxy-target-class="true" transaction-manager="txManager"/>
+
+
+
+
 </beans>

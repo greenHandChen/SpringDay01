@@ -42,17 +42,17 @@
         </property>
     </bean>
 
-    <!-- 配置通知类对象-->
-    <bean id="mybefore" class="SpringTest.MyBeforeAdvice"></bean>
-    <bean id="myafter" class="SpringTest.MyAfterAdvice"></bean>
-    <!--配置切面-->
-    <aop:config>
-    <!--配置切点-->
-        <aop:pointcut id="mypoint" expression="execution(* SpringTest.Demo.demo2())"/>
-        <!--通知-->
-        <aop:advisor advice-ref="mybefore" pointcut-ref="mypoint"></aop:advisor>
-        <aop:advisor advice-ref="myafter" pointcut-ref="mypoint"></aop:advisor>
-    </aop:config>
-<!--    配置demo类-->
-    <bean id="demo" class="SpringTest.Demo"></bean>
+<!--    &lt;!&ndash; 配置通知类对象&ndash;&gt;-->
+<!--    <bean id="mybefore" class="SpringTest.MyBeforeAdvice"></bean>-->
+<!--    <bean id="myafter" class="SpringTest.MyAfterAdvice"></bean>-->
+<!--    &lt;!&ndash;配置切面&ndash;&gt;-->
+<!--    <aop:config>-->
+<!--    &lt;!&ndash;配置切点&ndash;&gt;-->
+<!--        <aop:pointcut id="mypoint" expression="execution(* SpringTest.Demo.demo2())"/>-->
+<!--        &lt;!&ndash;通知&ndash;&gt;-->
+<!--        <aop:advisor advice-ref="mybefore" pointcut-ref="mypoint"></aop:advisor>-->
+<!--        <aop:advisor advice-ref="myafter" pointcut-ref="mypoint"></aop:advisor>-->
+<!--    </aop:config>-->
+<!--&lt;!&ndash;    配置demo类&ndash;&gt;-->
+<!--    <bean id="demo" class="SpringTest.Demo"></bean>-->
 </beans>

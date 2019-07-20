@@ -51,6 +51,7 @@ mybatis会依据这个接口动态创建一个实现类去实现这个接口，
         <result column="name" property="username"/>
         <result column="address" property="address"/>
     </resultMap>
+
     <select id="testResultMap" parameterType="java.lang.Integer" resultMap="userResultMap">
         select id as num , username as name ,address from user where id=#{id}
     </select>

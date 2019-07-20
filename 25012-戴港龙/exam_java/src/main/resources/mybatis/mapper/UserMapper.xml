@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 使用mapper代理时，namespace的值，必须要和代理的mapper接口全限定名一致 -->
+<mapper namespace="com.exam.mapper.UserMapper">
+    <select id="findUserById" parameterType="Integer" resultType="com.exam.domain.User">
+        select * from user where id=#{id}
+    </select>
+</mapper>

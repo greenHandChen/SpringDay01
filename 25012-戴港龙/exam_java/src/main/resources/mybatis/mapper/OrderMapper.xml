@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 使用mapper代理时，namespace的值，必须要和代理的mapper接口全限定名一致 -->
+<mapper namespace="com.exam.mapper.OrderMapper">
+
+    <sql id="ordersFields">number,createtime,note,user_id</sql>
+    <!-- 查询订单信息，延迟加载用户信息
+        只有<association>标签和<collection>标签中有延迟加载的功能
+     -->
+    <select id="findOrdersExts" resultMap="ordersExtsResultMap">
+        select id,<include refid="ordersFields"/> from orders
+        <where></where>
+
+        select u.id,o.number,i.name,i.price,i.createtime from orders o LEFT OUTER JOIN orderdetail od on o.id=od.orders_id
+        LEFT OUTER JOIN items i on od.items_id=i.id
+        LEFT OUTER JOIN user u on u.id=o.user_id;
+        <where>
+            <if test="number!=null and number!=''">
+                and o.number=#{number}
+            </if>
+            <if test="name!=null and name!=''">
+                and i.name=#{name}
+            </if>
+            <if test="createtimeStart!=null">
+                and i.createtime &gt; #{createtimeStart}
+            </if>
+            <if test="createtimeEnd!=null">
+                and i.createtime &lt;#{createtimeEnd}
+            </if>
+            <if test="priceStart!=null">
+                and i.price &gt; #{priceStart}
+            </if>
+            <if test="priceEnd!=null">
+                and i.price &lt;#{priceEnd}
+            </if>
+        </where>
+    </select>
+    <resultMap id="ordersExtsResultMap" type="com.exam.domain.OrdersExt">
+        <!-- 订单信息 -->
+        <id column="id" property="id"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result column="note" property="note"/>
+        <result column="user_id" property="user_id"/>
+        <!-- 用户信息 -->
+        <association property="user" select="com.mapper.UserMapper.findUserById" column="user_id"/>
+        <!-- 商品信息 -->
+        <collection property="itemsList" ofType="com.exam.domain.Items">
+            <result property="name" column="name"/>
+            <result column="price" property="price"/>
+        </collection>
+    </resultMap>
+</mapper>

@@ -12,7 +12,7 @@
      -->
     <!--<bean id="helloSpring" class="com.ceh.spring.a_ioc.HelloSpring" />-->
     <bean id="helloSpring" class="com.ceh.spring.a_ioc.HelloSpring" >
-        <property name="diSpring" ref="diSpring" />
+        <perty name="diSpring" ref="diSpring" />
     </bean>
 
     <bean id="diSpring" class="com.ceh.spring.a_ioc.DISpring" />

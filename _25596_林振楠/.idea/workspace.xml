@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="90a58ef9-8b83-46b8-a361-cd33e83adad8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/springMybatis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMybatis/src/main/java/com/lzn/spring/dao/OrdersExtMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMybatis/src/main/java/com/lzn/spring/entity/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMybatis/src/main/java/com/lzn/spring/entity/OrdersExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMybatis/src/main/resources/com/lzn/spring/dao/OrdersExtMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMybatis/src/main/resources/config/SqlMapConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMybatis/src/main/resources/config/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMybatis/src/main/resources/config/mySpring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMybatis/src/test/java/com/lzn/spring/dao/OrdersExtMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring01/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring01/src/main/resources/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring04/mybatisAdvancedMapping/target/classes/com/lzn/spring/dao/OrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring04/mybatisAdvancedMapping/target/classes/com/lzn/spring/dao/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring04/mybatisAdvancedMapping/target/classes/com/lzn/spring/entity/OrderDetailEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring04/mybatisAdvancedMapping/target/classes/com/lzn/spring/entity/OrdersEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring04/mybatisAdvancedMapping/target/classes/com/lzn/spring/entity/OrdersExt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring04/mybatisAdvancedMapping/target/classes/com/lzn/spring/entity/UserEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring04/springAddMybatis/src/main/java/com/lzn/spring/dao/imp/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring04/springAddMybatis/src/main/java/com/lzn/spring/dao/imp/UserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring04/springAddMybatis/src/main/resources/config/mySpring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring04/springAddMybatis/src/main/resources/config/mySpring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring04/springAddMybatis/src/test/java/com/lzn/spring/dao/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring04/springAddMybatis/src/test/java/com/lzn/spring/dao/UserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring04/springAddMybatis/target/classes/com/lzn/spring/dao/imp/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring04/springAddMybatis/target/classes/com/lzn/spring/dao/imp/UserDaoImp.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/springMybatis/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springMybatis/src/main/java/com/lzn/spring/dao/OrdersExtMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springMybatis/src/test/java/com/lzn/spring/dao/OrdersExtMapperTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/springMybatis/src/main/java/com/lzn/spring/entity/OrdersExt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1215">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+              <folding>
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#575#576#0" expanded="true" />
+                <element signature="e#608#609#0" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
+                <element signature="e#717#718#0" expanded="true" />
+                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#775#776#0" expanded="true" />
+                <element signature="e#815#816#0" expanded="true" />
+                <element signature="e#847#848#0" expanded="true" />
+                <element signature="e#878#879#0" expanded="true" />
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+                <element signature="e#1016#1017#0" expanded="true" />
+                <element signature="e#1049#1050#0" expanded="true" />
+                <element signature="e#1099#1100#0" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
+                <element signature="e#1180#1181#0" expanded="true" />
+                <element signature="e#1214#1215#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+                <element signature="e#1313#1314#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springMybatis/src/main/resources/com/lzn/spring/dao/OrdersExtMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springMybatis/src/main/resources/config/db.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="mybatis-cfg.xml" />
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="mybatis-mapper.xml" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springMybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/springMybatis/src/main/java/com/lzn/spring/entity/Items.java" />
+        <option value="$PROJECT_DIR$/springMybatis/src/main/resources/config/mySpring.xml" />
+        <option value="$PROJECT_DIR$/springMybatis/src/main/resources/config/SqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/springMybatis/src/main/java/com/lzn/spring/dao/OrdersExtMapper.java" />
+        <option value="$PROJECT_DIR$/springMybatis/src/main/java/com/lzn/spring/entity/OrdersExt.java" />
+        <option value="$PROJECT_DIR$/springMybatis/src/test/java/com/lzn/spring/dao/OrdersExtMapperTest.java" />
+        <option value="$PROJECT_DIR$/springMybatis/src/main/resources/com/lzn/spring/dao/OrdersExtMapper.xml" />
+        <option value="$PROJECT_DIR$/springMybatis/src/main/resources/config/db.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.1" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="482" />
+    <option name="y" value="61" />
+    <option name="width" value="876" />
+    <option name="height" value="649" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="_25596_林振楠" type="b2602c69:ProjectViewProjectNode" />
+              <item name="_25596_林振楠" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_25596_林振楠" type="b2602c69:ProjectViewProjectNode" />
+              <item name="_25596_林振楠" type="462c0819:PsiDirectoryNode" />
+              <item name="springMybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_25596_林振楠" type="b2602c69:ProjectViewProjectNode" />
+              <item name="_25596_林振楠" type="462c0819:PsiDirectoryNode" />
+              <item name="springMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_25596_林振楠" type="b2602c69:ProjectViewProjectNode" />
+              <item name="_25596_林振楠" type="462c0819:PsiDirectoryNode" />
+              <item name="springMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_25596_林振楠" type="b2602c69:ProjectViewProjectNode" />
+              <item name="_25596_林振楠" type="462c0819:PsiDirectoryNode" />
+              <item name="springMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_25596_林振楠" type="b2602c69:ProjectViewProjectNode" />
+              <item name="_25596_林振楠" type="462c0819:PsiDirectoryNode" />
+              <item name="springMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_25596_林振楠" type="b2602c69:ProjectViewProjectNode" />
+              <item name="_25596_林振楠" type="462c0819:PsiDirectoryNode" />
+              <item name="springMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_25596_林振楠" type="b2602c69:ProjectViewProjectNode" />
+              <item name="_25596_林振楠" type="462c0819:PsiDirectoryNode" />
+              <item name="springMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_25596_林振楠" type="b2602c69:ProjectViewProjectNode" />
+              <item name="_25596_林振楠" type="462c0819:PsiDirectoryNode" />
+              <item name="springMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springMybatis/src/main/resources/config" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.lzn.spring.dao" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hehe\work\java\greenHand\SpringDay01\_25596_林振楠\springMybatis\src\main\resources\config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="OrdersExtMapperTest.findOrdersExts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springMybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzn.spring.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lzn.spring.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lzn.spring.dao.OrdersExtMapperTest" />
+      <option name="METHOD_NAME" value="findOrdersExts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OrdersExtMapperTest.findOrdersExts" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90a58ef9-8b83-46b8-a361-cd33e83adad8" name="Default Changelist" comment="" />
+      <created>1563606731930</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563606731930</updated>
+      <workItem from="1563606735558" duration="3673000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="OrdersExtMapperTest_findOrdersExts - 2019.07.20 at 16h 05m 00s.xml">
+      <configuration name="OrdersExtMapperTest.findOrdersExts" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrdersExtMapperTest_findOrdersExts - 2019.07.20 at 16h 06m 15s.xml">
+      <configuration name="OrdersExtMapperTest.findOrdersExts" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrdersExtMapperTest_findOrdersExts - 2019.07.20 at 16h 07m 48s.xml">
+      <configuration name="OrdersExtMapperTest.findOrdersExts" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrdersExtMapperTest_findOrdersExts - 2019.07.20 at 16h 08m 20s.xml">
+      <configuration name="OrdersExtMapperTest.findOrdersExts" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrdersExtMapperTest_findOrdersExts - 2019.07.20 at 16h 09m 15s.xml">
+      <configuration name="OrdersExtMapperTest.findOrdersExts" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrdersExtMapperTest_findOrdersExts - 2019.07.20 at 16h 10m 14s.xml">
+      <configuration name="OrdersExtMapperTest.findOrdersExts" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrdersExtMapperTest_findOrdersExts - 2019.07.20 at 16h 12m 11s.xml">
+      <configuration name="OrdersExtMapperTest.findOrdersExts" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrdersExtMapperTest_findOrdersExts - 2019.07.20 at 16h 13m 20s.xml">
+      <configuration name="OrdersExtMapperTest.findOrdersExts" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3673000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="482" y="61" width="876" height="649" extended-state="1" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30392158" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32815534" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3295082" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.9508197" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="161" column="19" selection-start-line="161" selection-start-column="19" selection-end-line="161" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springMybatis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springMybatis/src/main/java/com/lzn/spring/entity/Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="61" column="30" lean-forward="true" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+          <folding>
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springMybatis/src/main/resources/config/SqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springMybatis/src/main/resources/config/mySpring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springMybatis/src/main/resources/com/lzn/spring/dao/OrdersExtMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springMybatis/src/main/resources/config/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springMybatis/src/test/java/com/lzn/spring/dao/OrdersExtMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springMybatis/src/main/java/com/lzn/spring/dao/OrdersExtMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springMybatis/src/main/java/com/lzn/spring/entity/OrdersExt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1215">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1099#1100#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1313#1314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

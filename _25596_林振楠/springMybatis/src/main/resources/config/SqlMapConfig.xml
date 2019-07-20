@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+
+
+    <settings>
+        <!--打印查询语句-->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <!--类型别名-->
+    <typeAliases>
+        <!--批量别名的定义，别名取的是类名，不区分大小写-->
+        <package name="java.lang" />
+        <package name="com.lzn.spring.entity"/>
+    </typeAliases>
+
+
+
+    <mappers>
+        <package name="com.lzn.spring.dao"/>
+    </mappers>
+</configuration>

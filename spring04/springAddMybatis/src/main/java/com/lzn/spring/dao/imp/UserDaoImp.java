@@ -2,11 +2,9 @@ package com.lzn.spring.dao.imp;
 
 import com.lzn.spring.dao.IUserDao;
 import com.lzn.spring.entity.UserEntity;
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
-import org.springframework.stereotype.Repository;
-
+import org.springframework.stereotype.Service;
 
 public class UserDaoImp extends SqlSessionDaoSupport implements IUserDao {
     public UserEntity findUserById(Integer id) {

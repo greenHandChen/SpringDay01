@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzn.spring.dao.OrdersExtMapper">
+
+    <select id="findOrdersExts" parameterType="OrdersExt" resultType="OrdersExt">
+        SELECT
+        u.username
+        , u.address
+        , o.number
+        , i.name
+        , i.price
+        , o.createtime
+        , ROUND(i.price * od.items_num, 2) total_amount
+        from
+        orders o
+        left join
+        orderdetail od
+        on o.id = orders_id
+        left join
+        items i
+        on i.id = od.items_id
+        left join
+        user u
+        on u.id = o.user_id
+        <where>
+            <if test="number != null">
+                and o.number = #{number}
+            </if>
+            <if test="name != null">
+                and i.name = #{name}
+            </if>
+            <if test="createtimeStart != null or createtimeEnd != null">
+                and o.createtime between #{createtimeStart} and #{createtimeEnd}
+            </if>
+            <if test="priceStart != 0 or priceEnd != 0">
+                and i.price between #{priceStart} and #{priceEnd}
+            </if>
+        </where>
+    </select>
+
+</mapper>

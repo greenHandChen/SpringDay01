@@ -19,7 +19,7 @@ public class UserMapperTest {
     }
 
     /**
-     * @Description 整合 spring的mapper类型
+     * @Description Mapper代理类
      * @Author LinZhenNan
      * @Date 2019/7/19
      * @Time 20:32

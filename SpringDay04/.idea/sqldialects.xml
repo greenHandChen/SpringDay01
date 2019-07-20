@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/advanced-mapping/src/main/java/com/hand/am/dao/OrdersDao.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/advanced-mapping/src/main/java/com/hand/am/dao/UserDao.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mybatis-spring/src/main/java/com/hand/mybatis/spring/dao/UserDao.xml" dialect="MySQL" />
+  </component>
+</project>

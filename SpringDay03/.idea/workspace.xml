@@ -2,63 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e4385c-6b20-4508-ac7d-c5ce03e985bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/9a1823e7-e539-4b9e-978f-a0a6a769b6c8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map-profile/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map-profile/src/main/java/com/hand/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map-profile/src/main/java/com/hand/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map-profile/src/main/java/com/hand/test/TestMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map-profile/src/main/java/com/hand/vo/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map-profile/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map-profile/src/main/resources/mappers/UserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map-profile/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-agency/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-agency/src/main/java/com/hand/dao/UserDaoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-agency/src/main/java/com/hand/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-agency/src/main/java/com/hand/test/TestMapperAgency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-agency/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-agency/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-agency/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-agency/target/classes/com/hand/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-agency/target/classes/com/hand/test/TestMapperAgency.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-agency/target/classes/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-agency/target/classes/mappers/userMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-agency/target/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-namespace/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-namespace/src/main/java/com/hand/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-namespace/src/main/java/com/hand/test/TestNamespace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-namespace/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-namespace/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-namespace/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-namespace/target/classes/com/hand/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-namespace/target/classes/com/hand/test/TestNamespace.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-namespace/target/classes/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-namespace/target/classes/mappers/userMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper-namespace/target/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/src/main/java/com/hand/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/src/main/java/com/hand/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/src/main/java/com/hand/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/src/main/java/com/hand/test/TestOriginDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/target/classes/com/hand/dao/UserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/target/classes/com/hand/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/target/classes/com/hand/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/target/classes/com/hand/test/TestOriginDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/target/classes/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/target/classes/mappers/userMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/origin-dao/target/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/dataSources/aede41e3-018e-4957-9445-33b3a87ddd97.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/SpringDay04.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/dao/OrdersDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/dao/OrdersDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/dao/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/pojo/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/pojo/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/pojo/OrdersExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/test/CacheTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/test/MappingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/dao/OrdersDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/dao/OrdersDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/dao/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/pojo/OrderDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/pojo/Orders.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/pojo/OrdersExt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/test/CacheTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/test/MappingTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/java/com/hand/mybatis/spring/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/java/com/hand/mybatis/spring/dao/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/java/com/hand/mybatis/spring/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/java/com/hand/mybatis/spring/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/java/com/hand/mybatis/spring/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/java/com/hand/mybatis/spring/test/DemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay01/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringDay02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -95,12 +93,51 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mapper-agency/src/main/java/com/hand/test/TestMapperAgency.java">
+        <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/test/TestMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            <state relative-caret-position="314">
+              <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/map-profile/src/main/resources/mappers/UserDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/map-profile/src/main/resources/db.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/map-profile/src/main/resources/mybatis-config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,7 +192,6 @@
         <option value="$PROJECT_DIR$/annotation-dao/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/map-profile/src/main/java/com/hand/VO/UserVO.java" />
         <option value="$PROJECT_DIR$/map-profile/src/main/java/com/hand/dao/userMapper.xml" />
-        <option value="$PROJECT_DIR$/mapper-namespace/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/mapper-namespace/src/main/resources/mappers/UserMapper.xml" />
         <option value="$PROJECT_DIR$/map-profile/src/main/java/com/hand/test/Test.java" />
         <option value="$PROJECT_DIR$/map-profile/src/main/java/com/hand/dao/UserMapper" />
@@ -167,9 +203,10 @@
         <option value="$PROJECT_DIR$/mapper-agency/src/main/resources/mappers/UserDaoa.xml" />
         <option value="$PROJECT_DIR$/mapper-agency/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/map-profile/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/map-profile/src/main/resources/mappers/UserDao.xml" />
         <option value="$PROJECT_DIR$/map-profile/src/main/java/com/hand/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/map-profile/src/main/java/com/hand/test/TestMap.java" />
-        <option value="$PROJECT_DIR$/map-profile/src/main/resources/mappers/UserDao.xml" />
+        <option value="$PROJECT_DIR$/mapper-namespace/src/main/resources/mybatis-config.xml" />
       </list>
     </option>
   </component>
@@ -191,8 +228,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,15 +235,63 @@
               <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="map-profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="map-profile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="map-profile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="map-profile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="map-profile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hand" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="map-profile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hand" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -219,7 +302,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -257,8 +340,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestMapperAgency.testMapperAgency">
-    <configuration name="TestMap.testCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestMap.findUserByVO">
+    <configuration name="TestMap.findUserByVO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="map-profile" />
       <extension name="coverage">
         <pattern>
@@ -268,7 +351,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.hand.test" />
       <option name="MAIN_CLASS_NAME" value="com.hand.test.TestMap" />
-      <option name="METHOD_NAME" value="testCount" />
+      <option name="METHOD_NAME" value="findUserByVO" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -340,11 +423,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestMap.findUserByVO" />
         <item itemvalue="JUnit.TestMapperAgency.testMapperAgency" />
         <item itemvalue="JUnit.TestNamespace.findUserByUsername" />
         <item itemvalue="JUnit.TestOriginDao.testDao" />
         <item itemvalue="JUnit.TestMap.testLabel" />
-        <item itemvalue="JUnit.TestMap.testCount" />
       </list>
     </recent_temporary>
   </component>
@@ -362,13 +445,15 @@
       <workItem from="1563411866563" duration="10571000" />
       <workItem from="1563422451119" duration="2000" />
       <workItem from="1563422465892" duration="7328000" />
+      <workItem from="1563436684996" duration="1585000" />
+      <workItem from="1563439109187" duration="498000" />
+      <workItem from="1563439613067" duration="3940000" />
+      <workItem from="1563526784701" duration="1096000" />
+      <workItem from="1563530559840" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestMap_testCount - 2019.07.18 at 15h 02m 43s.xml">
-      <configuration name="TestMap.testCount" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestMap_testLabel - 2019.07.18 at 15h 10m 15s.xml">
       <configuration name="TestMap.testLabel" configurationId="JUnit" />
     </history-entry>
@@ -396,9 +481,12 @@
     <history-entry file="TestMapperAgency_testMapperAgency - 2019.07.18 at 15h 17m 30s.xml">
       <configuration name="TestMapperAgency.testMapperAgency" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestMap_findUserByVO - 2019.07.19 at 17h 00m 41s.xml">
+      <configuration name="TestMap.findUserByVO" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19172000" />
+    <option name="totallyTimeSpent" value="26294000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -412,7 +500,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19742814" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16187595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -422,7 +510,7 @@
       <window_info id="Designer" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32935154" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38054606" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22354949" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993174" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -436,6 +524,7 @@
       <window_info anchor="bottom" id="JRebel Console" order="13" side_tool="true" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.32935154" />
+      <window_info anchor="bottom" id="MyBatis Log" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -451,9 +540,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2178" />
@@ -489,16 +575,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hand/test/TestNamespace.java" />
     <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/java/com/hand/dao/UserDao.java" />
     <entry file="file://$PROJECT_DIR$/origin-dao/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapper-namespace/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/origin-dao/src/main/resources/db.properties">
       <provider selected="true" editor-type-id="text-editor" />
@@ -511,32 +589,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mapper-agency/src/main/java/com/hand/test/TestNamespace.java" />
-    <entry file="file://$PROJECT_DIR$/annotation-dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/annotation-dao/pom.xml" />
     <entry file="file://$PROJECT_DIR$/annotation-dao/src/main/resources/mappers/userMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/annotation-dao/target/classes/com/hand/dao/UserDao.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#647#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map-profile/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/annotation-dao/target/classes/com/hand/dao/UserDao.class" />
     <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/pojo/User.java" />
-    <entry file="file://$PROJECT_DIR$/annotation-dao/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/annotation-dao/src/main/resources/mybatis-config.xml" />
     <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -544,23 +601,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/annotation-dao/src/main/java/com/hand/test/TestAnnotationDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/annotation-dao/src/main/java/com/hand/test/TestAnnotationDao.java" />
     <entry file="file://$PROJECT_DIR$/origin-dao/src/main/java/com/hand/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -588,41 +629,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/map-profile/src/main/resources/mappers/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="3" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/vo/UserVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/map-profile/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mapper-agency/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/origin-dao/src/main/resources/mappers/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -638,16 +651,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/annotation-dao/src/main/java/com/hand/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/annotation-dao/src/main/java/com/hand/dao/UserDao.java" />
     <entry file="file://$PROJECT_DIR$/mapper-agency/src/main/java/com/hand/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -655,22 +659,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/map-profile/target/classes/com/hand/dao/UserDao01.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-129">
-          <folding>
-            <element signature="e#0#280#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map-profile/target/classes/mappers/UserDao01.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/map-profile/target/classes/com/hand/dao/UserDao01.class" />
+    <entry file="file://$PROJECT_DIR$/map-profile/target/classes/mappers/UserDao01.xml" />
     <entry file="file://$PROJECT_DIR$/mapper-agency/src/main/java/com/hand/dao/UserDaoa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -695,40 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/map-profile/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map-profile/src/main/resources/mappers/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/test/TestMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="64" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/origin-dao/src/main/java/com/hand/test/TestOriginDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-84">
@@ -741,15 +697,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/java/com/hand/test/TestNamespace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        <state relative-caret-position="286">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/java/com/hand/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapper-namespace/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mapper-agency/src/main/java/com/hand/test/TestMapperAgency.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        <state relative-caret-position="374">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/vo/UserVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#122#123#0" expanded="true" />
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/test/TestMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-profile/src/main/resources/mappers/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-profile/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-profile/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

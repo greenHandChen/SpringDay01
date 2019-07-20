@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.am.dao.OrdersDao">
+
+    <select id="findOrdersExt" parameterType="com.hand.am.pojo.OrdersExt" resultType="com.hand.am.pojo.OrdersExt">
+        select o.id, o.user_id userId, o.number, o.createtime, o.note, u.username, u.address
+        from orders o,
+        user u
+        where u.id=o.user_id
+        <if test="id!=null">
+            and o.id=#{id}
+        </if>
+    </select>
+    <select id="findOrdersToResultMap" parameterType="com.hand.am.pojo.OrdersExt"
+            resultMap="ordersAndUserResultMap">
+        SELECT
+        orders.id,
+        orders.user_id,
+        orders.number,
+        orders.createtime,
+        orders.note,
+        `user`.username,
+        `user`.birthday,
+        `user`.sex,
+        `user`.address
+        FROM
+        orders
+        INNER JOIN `user` ON orders.user_id = `user`.id
+        <where>
+            <if test="id!=null">
+                and orders.id=#{id}
+            </if>
+        </where>
+    </select>
+    <select id="findOrdersAndOrderDetails" parameterType="com.hand.am.pojo.OrdersExt"
+            resultMap="ordersAndDetailResultMap">
+        SELECT
+        o.id oId,
+        o.user_id,
+        o.number,
+        o.createtime,
+        o.note,
+        od.id,
+        od.items_id,
+        od.items_num,
+        u.username,
+        u.birthday,
+        u.sex,
+        u.address,
+        od.orders_id
+        FROM
+        orders AS o,
+        orderdetail as od,
+        user u
+        <where>
+            od.orders_id = o.id
+            and o.user_id = u.id
+            <if test="id!=null">
+                and o.id=#{id}
+            </if>
+        </where>
+
+    </select>
+    <select id="findOrderByLazyLoad" parameterType="java.lang.Integer" resultMap="lazyLoadResultMap">
+        select *
+        from orders
+        where id = #{id}
+    </select>
+    <resultMap id="ordersAndUserResultMap" type="com.hand.am.pojo.OrdersExt">
+        <id column="oId" property="id"/>
+        <result property="userId" column="user_id"/>
+        <result property="username" column="username"/>
+        <result property="address" column="address"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result property="note" column="note"/>
+        <association property="user" javaType="com.hand.am.pojo.User">
+            <id property="id" column="user_id"/>
+            <result property="username" column="username"/>
+            <result property="address" column="address"/>
+            <result property="birthday" column="birthday"/>
+            <result property="sex" column="sex"/>
+        </association>
+    </resultMap>
+    <resultMap id="ordersAndDetailResultMap" type="com.hand.am.pojo.OrdersExt" extends="ordersAndUserResultMap">
+        <collection property="orderDetailList" ofType="com.hand.am.pojo.OrderDetail">
+            <id property="id" column="id"/>
+            <result property="itemsId" column="items_id"/>
+            <result property="itemsNum" column="items_num"/>
+            <result property="ordersId" column="id"/>
+        </collection>
+    </resultMap>
+    <resultMap id="lazyLoadResultMap" type="com.hand.am.pojo.OrdersExt">
+        <id column="id" property="id"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result property="note" column="note"/>
+        <result property="userId" column="user_id"/>
+        <association property="user" select="com.hand.am.dao.UserDao.findUserById" column="user_id"/>
+    </resultMap>
+</mapper>

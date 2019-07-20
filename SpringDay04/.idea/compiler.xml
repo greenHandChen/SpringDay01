@@ -6,12 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="origin-dao" />
-        <module name="mapper-namespace" />
-        <module name="map-profile" />
-        <module name="mapper-agency" />
+        <module name="advanced-mapping" />
+        <module name="mybatis-spring" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
   </component>
 </project>

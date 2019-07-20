@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.mybatis.spring.dao.UserDao">
+    <cache/>
+    <insert id="addUser" parameterType="com.hand.mybatis.spring.pojo.User">
+        insert into user(username, birthday, sex, address)
+        values (#{username}, #{birthday}, #{sex}, #{address})
+    </insert>
+    <select id="findUserById" parameterType="java.lang.Integer"
+            resultType="com.hand.mybatis.spring.pojo.User" useCache="false">
+        select *
+        from user
+        where id = #{id}
+    </select>
+</mapper>

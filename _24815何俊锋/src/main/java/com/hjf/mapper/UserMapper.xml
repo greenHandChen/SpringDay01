@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "- //mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hjf.mapper.UserMapper">
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.hjf.pojo.User">
+       select * from user where id=#{id}
+    </select>
+    <select id="findOrdersExts" parameterType="java.lang.String" resultType="com.hjf.pojo.OrdersExt">
+         select u.username,u.address,o.number,t.name,t.price,t.createtime
+         from user u,orders o,items i,orderdetail odd
+         <where>
+             u.id=o.user_id
+             and o.id=i.id
+             and od.orders_id=o.id
+             <if test="number!=null">
+                 and number=#{number}
+             </if>
+             <if test="number!=null">
+                 and name=#{name}
+             </if>
+             <if test="createtime!=null">
+                 and createtime=#{creatime}
+             </if>
+             <if test="number!=null">
+                 and price=#{price}
+             </if>
+         </where>
+    </select>
+</mapper>

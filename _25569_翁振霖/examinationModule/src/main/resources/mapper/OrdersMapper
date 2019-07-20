@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.mapper.OrdersMapper">
+
+
+<!--    <resultMap id="Ordersdetail" type="com.hand.entity.OrdersExt">-->
+<!--        <result property="id" column="id"/>-->
+<!--        <result property="createtime" column="createtime"/>-->
+<!--        <association property="user" javaType="com.hand.entity.User">-->
+<!--            <result property="username" column="username"/>-->
+<!--            <result property="address" column="address"/>-->
+<!--        </association>-->
+
+<!--    </resultMap>-->
+    <select id="findOrdersExts" parameterType="com.hand.entity.OrdersExt" resultType="com.hand.entity.OrdersExt">
+        select u.username,u.address,o.id,i.name,i.price,o.createtime,round(o.number*i.price,2) total_amount
+        from orders o,user u,orderdetail od,items i
+        where u.id = o.user_id
+        and o.id = od.orders_id
+        and od.items_id = i.id
+        and o.id = #{id}
+    </select>
+</mapper>

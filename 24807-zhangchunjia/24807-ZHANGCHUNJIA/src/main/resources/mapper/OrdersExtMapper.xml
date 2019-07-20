@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zhang.dao.OrdersExtDao">
+
+    <select id="findOrdersExts" resultMap="orderAndDetailsResultMap" parameterType="com.zhang.entity.OrdersExt">
+        select u.username,u.address,o.id number,i.name,i.price,o.createtime,SUM(i.price) total_amount
+        from orders o,orderdetail od,user u,items i
+        where o.user_id=u.id and od.orders_id=o.id and od.items_id=i.id and
+            ALL(select price from items)>#{priceStart} and ALL(select price from items)>#{priceEnd}
+            and ALL(select createtime from orders)>=#{createtimeStart} and ALL(select createtime from orders)<#{createtimeEnd}
+
+
+    </select>
+
+    <resultMap id="ordersAndUserResultMap" type="com.zhang.entity.OrdersExt">
+        <id column="id" property="order_id"></id>
+        <result column="username" property="username"></result>
+        <result column="address" property="address"></result>
+        <result column="number" property="number"></result>
+        <result column="createtime" property="createtime"></result>
+
+
+        <association property="user" javaType="com.zhang.entity.User">
+            <id column="id" property="user_id"></id>
+            <result column="username" property="username"></result>
+            <result column="address" property="address"></result>
+        </association>
+
+    </resultMap>
+
+    <resultMap id="orderAndDetailsResultMap" extends="ordersAndUserResultMap" type="com.zhang.entity.OrdersExt">
+        <collection property="orderDetails" ofType="com.hand.entity.OrderDetails">
+
+            <id column="detail_id" property="detail_id"></id>
+            <result column="goodname" property="name"></result>
+            <result column="goodprice" property="goodprice"></result>
+            <result column="item_total" property="total"></result>
+        </collection>
+    </resultMap>
+</mapper>

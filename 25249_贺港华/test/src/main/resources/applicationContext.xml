@@ -16,7 +16,7 @@
     <context:property-placeholder location="classpath:jdbc.properties"/>
     <!--    &lt;!&ndash; 注解驱动：配置处理器映射器和适配器 &ndash;&gt;-->
     <mvc:annotation-driven/>
-    <context:component-scan base-package="org.hgh"/>
+    <context:component-scan base-package="com.hgh"/>
     <!--配置数据源-->
     <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
         <!--数据库驱动-->
@@ -84,9 +84,9 @@
 <!--    </bean>-->
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-    <property name="basePackage" value="org.hgh.dao.mapper"/>
-    <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-</bean>
+        <property name="basePackage" value="org.hgh.dao.mapper"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
 
 
 </beans>

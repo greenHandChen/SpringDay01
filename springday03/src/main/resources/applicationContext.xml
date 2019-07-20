@@ -73,10 +73,10 @@
     </tx:advice>
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <!--注入数据源-->
-        <property name="dataSource" ref="dataSource"/>
-        <property name="configLocation" value="classpath:sqlmapconfig.xml"/>
-    </bean>
+    <!--注入数据源-->
+    <property name="dataSource" ref="dataSource"/>
+    <property name="configLocation" value="classpath:sqlmapconfig.xml"/>
+</bean>
 
 <!--    <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">-->
 <!--        <property name="mapperInterface" value="org.hgh.dao.mapper.UserMapper"/>-->
@@ -84,8 +84,9 @@
 <!--    </bean>-->
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="org.hgh.dao.mapper"/>
-        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-    </bean>
+    <property name="basePackage" value="org.hgh.dao.mapper"/>
+    <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+</bean>
+
 
 </beans>

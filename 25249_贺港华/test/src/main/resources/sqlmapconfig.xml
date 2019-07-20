@@ -13,8 +13,8 @@
 
 
     <typeAliases>
-        <package name="org.hgh.pojo" />
-        <package name="org.hgh.vo" />
+        <package name="com.hgh.pojo" />
+        <package name="com.hgh.vo" />
     </typeAliases>
 <!--    <environments default="development">-->
 <!--        <environment id="development">-->
@@ -29,9 +29,6 @@
 <!--    </environments>-->
 
     <mappers>
-        <mapper resource="mapper/User2TrendsMapper.xml"/>
-        <mapper resource="mapper/UserMapper.xml"/>
-        <mapper resource="mapper/User2Mapper.xml"/>
         <mapper resource="mapper/OrderMapper.xml"/>
     </mappers>
     

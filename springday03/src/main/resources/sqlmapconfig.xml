@@ -7,7 +7,9 @@
         <setting name="lazyLoadingEnabled" value="false"/>
         <setting name="aggressiveLazyLoading" value="false"/>
         <setting name="cacheEnabled" value="true"/>
+        <setting name="logImpl" value="LOG4J"/>
     </settings>
+
 
 
     <typeAliases>

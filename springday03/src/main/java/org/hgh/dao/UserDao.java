@@ -5,6 +5,7 @@ import org.hgh.pojo.User;
 
 import java.util.List;
 
+
 public interface UserDao {
 
     void setSqlSessionFactory(SqlSessionFactory sqlSessionFactory);

@@ -1,0 +1,27 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<configuration-->
+<!--        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--        xsi:noNamespaceSchemaLocation="http://www.padual.com/java/logback.xsd"-->
+<!--        debug="false" scan="true" scanPeriod="30 second">-->
+
+<!--    &lt;!&ndash; 控制台打印 &ndash;&gt;-->
+<!--    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">-->
+<!--        <encoder charset="utf-8">-->
+<!--            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger{36} - %m%n-->
+<!--            </pattern>-->
+<!--        </encoder>-->
+<!--    </appender>-->
+
+
+<!--    &lt;!&ndash; SQL相关日志输出&ndash;&gt;-->
+<!--    &lt;!&ndash;<logger name="org.apache.ibatis" level="INFO" additivity="false" />&ndash;&gt;-->
+<!--    &lt;!&ndash;<logger name="org.mybatis.spring" level="INFO" additivity="false" />&ndash;&gt;-->
+<!--    <logger name="com.github.**.persistent.dao" level="DEBUG"  additivity="false">-->
+<!--        <appender-ref ref="STDOUT" />-->
+<!--    </logger>-->
+
+<!--    &lt;!&ndash; Logger 根目录 &ndash;&gt;-->
+<!--    &lt;!&ndash;<root level="DEBUG">&ndash;&gt;-->
+<!--    &lt;!&ndash;<appender-ref ref="STDOUT" />&ndash;&gt;-->
+<!--    &lt;!&ndash;</root>&ndash;&gt;-->
+<!--</configuration>-->

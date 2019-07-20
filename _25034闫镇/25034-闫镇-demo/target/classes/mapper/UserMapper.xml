@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.mapper.UserMapper">
+    <!--根据用户ID查询用户信息-->
+    <select id="findUserById" parameterType="int" resultType="User">
+        select * from user where id=#{id}
+    </select>
+
+    <select id="findOrdersExts" parameterType="OrdersExt" resultMap="lazyLoadRstMap">
+        select
+        u.username,
+        u.address,
+        o.number,
+        i.name,
+        i.price,
+        o.createtime,
+        a.total_amount
+        from user u,
+        items i,
+        orderdetail d,
+        orders o,
+        (select sum(sums) as total_amount,orders_id from(select d.orders_id,i.price*d.items_num AS sums from items i,orderdetail d where i.id=d.items_id )a
+        GROUP BY a.orders_id)a
+        where u.id=o.user_id and
+        o.id=d.orders_id and
+        i.id=d.items_id and
+        a.orders_id=o.id
+        and u.username=#{username}
+        and i.name=#{name}
+        and o.createtime between (#{createtimeStart} and #{createtimeEnd})
+        and i.price between  (#{priceStart} and #{priceEnd})
+    </select>
+    <resultMap id="lazyLoadRstMap" type="OrdersExt">
+        <!-- 订单配置信息映射 -->
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="note" property="note"/>
+        <association property="user" select="mapper.UserMapper.findUserById" column="user_id"/>
+    </resultMap>
+</mapper>

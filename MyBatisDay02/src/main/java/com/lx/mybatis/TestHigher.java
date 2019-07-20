@@ -43,7 +43,7 @@ public class TestHigher {
         OrdersMapper mapper = sqlSession.getMapper(OrdersMapper.class);
 
         List<OrdersExt> list = mapper.findOrdersByResultMap();
-        System.out.println(list.get(1).getUser());
+        System.out.println(list.get(1).toString());
         sqlSession.close();
     }
 

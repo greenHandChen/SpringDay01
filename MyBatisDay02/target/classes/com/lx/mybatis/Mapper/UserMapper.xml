@@ -16,8 +16,9 @@
     parameterType：输入参数的类型（输入类型为基本类型时，参数名可以任意）
     resultType：输出参数的类型
     #{}：占位符，相当于？占位符
+    useCache：默认是true，使用二级缓存；false表示禁用二级缓存，及每次查询都去数据库中查询。
     -->
-    <select id="findUserById" parameterType="java.lang.Integer" resultType="User">
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="User" useCache="false">
         select * from USER  where id=#{id}
     </select>
 

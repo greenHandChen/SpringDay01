@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org/DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <!--是否开启懒加载，mybatis默认为false，false表示立即加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--是否开启积极懒加载，默认为true，true表示懒加载对象可能被任何属性进行加载，false表示按需加载-->
+        <setting name="aggressiveLazyLoading" value="true"/>
+
+    </settings>
+    
+    <typeAliases>
+        <package name="com.lx.mybatis.domain"/>
+    </typeAliases>
+
+    <!--dao开发方式-->
+    <!--<mappers>
+        <mapper resource="config/mapper/UserMapper.xml"/>
+    </mappers>-->
+</configuration>

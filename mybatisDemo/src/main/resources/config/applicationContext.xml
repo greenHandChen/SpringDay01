@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
+
+<!--    1.引入数据库文件-->
+<!--    2.配置数据源-->
+<!--    3.SqlSessionFactory交给spring管理
+-->
+<!--    1  引入数据库文件 -->
+    <context:property-placeholder location="classpath:config/jdbc.properties"/>
+
+<!--    2 .配置数据源-->
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+<!--    3 SqlSessionFactory交给spring管理-->
+
+       <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+
+        <!--        注入数据源-->
+        <property name="dataSource" ref="dataSource"/>
+        <!--        引入mybatis的全局配置文件-->
+        <property name="configLocation" value="config/SqlMapConfig.xml" />
+
+    </bean>
+
+
+<!--   原始 配置SqlsessionSupprt dao方式注入-->
+
+<!--    <bean id="useDao" class="daoMapper.UserDaoImpl">-->
+<!--        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>-->
+<!--    </bean>-->
+
+<!--    代理方法 配置
+            1.单个配置-->
+<!--    <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">-->
+<!--&lt;!&ndash;        配置代理类接口&ndash;&gt;-->
+<!--        <property name="mapperInterface" value="daoMapper.UserMapper"/>-->
+<!--&lt;!&ndash;        注入sqlsessionfactory&ndash;&gt;-->
+<!--        <property name="sqlSessionFactory" value="sqlSessionFactory"/>-->
+<!--    </bean>-->
+
+<!--    批量配置-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    <!--        需要配置的mapper接口的扫描路径-->
+        <property name="basePackage" value="daoMapper"/>
+
+        <!--   注入sqlSessionFactory，如果只是注入一个的话，可以不需要指定sqlSessionFactory-->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+
+
+</beans>

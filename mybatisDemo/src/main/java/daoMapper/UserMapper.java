@@ -1,9 +1,10 @@
-package Mapper;
+package daoMapper;
 
 import domain.User;
 import domain.UserQueryVO;
 
 import java.util.List;
+
 
 public interface UserMapper {
     List<User> findUserByUser(UserQueryVO userQueryVO);
@@ -13,5 +14,7 @@ public interface UserMapper {
     User findUserNameAndAddressById(Integer id);
     User testResultMap(Integer id);
     List<User> testActiveSql(User user);
+
+    User findUserById(Integer id);
 
 }

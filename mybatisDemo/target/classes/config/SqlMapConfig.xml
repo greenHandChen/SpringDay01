@@ -5,28 +5,41 @@
 
 <configuration>
     <properties resource="config/jdbc.properties"></properties>
-<!--    <typeAliases>-->
-<!--        <package name="mybatis.enity"/>-->
-<!--        <package name="mybatis.vo"/>-->
-<!--    </typeAliases>-->
-    <environments default="development">
-        <environment id="development">
-            <transactionManager type="JDBC"></transactionManager>
-            <dataSource type="POOLED">
-                <property name="driver" value="${jdbc.driverClassName}"/>
-                <property name="url" value="${jdbc.url}"/>
-                <property name="username" value="${jdbc.username}"/>
-                <property name="password" value="${jdbc.password}"/>
-            </dataSource>
-        </environment>
-    </environments>
 
-    <mappers>
-<!--        单文件注册方式-->
-<!--        <mapper resource="mapper/UserMapper.xml"/>-->
-        <!--<mapper resource="xml/UserMapper.xml"></mapper>-->
-        <!--多文件注册方式-->
-        <package name="Mapper/UserMapper.xml"/>
-    </mappers>
+<!--    包别名-->
+    <typeAliases>
+        <package name="domain"/>
+    </typeAliases>
+
+<!--    <environments default="development">-->
+<!--        <environment id="development">-->
+<!--            <transactionManager type="JDBC"></transactionManager>-->
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="${jdbc.driverClassName}"/>-->
+<!--                <property name="url" value="${jdbc.url}"/>-->
+<!--                <property name="username" value="${jdbc.username}"/>-->
+<!--                <property name="password" value="${jdbc.password}"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+
+
+<!--    <mappers>-->
+
+<!--&lt;!&ndash;        单文件注册方式&ndash;&gt;-->
+<!--&lt;!&ndash;        <mapper resource="Mapper/UserMapper.xml"/>&ndash;&gt;-->
+<!--        &lt;!&ndash;<mapper resource="xml/UserMapper.xml"></mapper>&ndash;&gt;-->
+<!--&lt;!&ndash;        多文件注册方式&ndash;&gt;-->
+<!--        <package name="daoMapper"/>-->
+<!--&lt;!&ndash;        <mapper resource="daoMapper/UserDao.xml"/>&ndash;&gt;-->
+<!--    </mappers>-->
+
+<!--        <settings>-->
+<!--    &lt;!&ndash;        是否立即开启懒加载 ，默认为fasle&ndash;&gt;-->
+<!--            <setting name="lazyLoadingEnable" value="true"/>-->
+
+    <!--        是否立即开启积极懒加载，默认为true，fasle表示按需加载-->
+<!--            <setting name="aggressiveLazyLoading" value="false"/>-->
+<!--        </settings>-->
 
 </configuration>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="daoMapper.OrdersDao">
+
+    <resultMap id="orderAndUserResultMap" type="OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="note" property="note"/>
+        <result column="number" property="number"/>
+<!--        user属性-->
+        <association property="user" javaType="User">
+<!--            id写关联的类的-->
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+        </association>
+    </resultMap>
+
+    <resultMap id="ordersAndOrdersDetails" type="OrdersExt" extends="orderAndUserResultMap">
+        <collection  property="orderDetailList" ofType="domain.OrderDetail">
+            <id column="detailId" property="id"/>
+            <result column="itemid" property="items_id"/>
+            <result column="items_num" property="items_num"/>
+        </collection>
+        <collection property="itemsList" ofType="Items">
+            <id column="itemid" property="id"/>
+            <result column="itemName" property="name"/>
+            <result column="price" property="price"/>
+        </collection>
+    </resultMap>
+
+<!--    懒加载-->
+    <resultMap id="lazyLoadRstMap" type="OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="note" property="note"/>
+        <result column="number" property="number"/>
+        <!--     user属性  懒加载-->
+        <association property="user" select="daoMapper.OrdersDao.findUserById" column="user_id"/>
+
+    </resultMap>
+
+<!--    //    通过实体查找order-->
+    <select id="findOrdersByOrderExt" resultMap="ordersAndOrdersDetails">
+        select
+            o.id,
+            o.user_id,
+            o.number,
+            o.note,
+            o.createtime,
+            u.username,
+            u.address
+        from orders o,user u
+        where o.user_id=u.id
+        <if test="id != null">
+            and o.id=#{id}
+        </if>
+    </select>
+
+
+<!--    通过查找，使用resuleMap结果返回 练习使用 一对一   -->
+    <select id="findOrdersByResultMap" resultMap="orderAndUserResultMap">
+        select
+        o.id,
+        o.user_id,
+        o.number,
+        o.note,
+        o.createtime,
+        u.username,
+        u.address
+        from orders o,user u
+        where o.user_id=u.id
+        <if test="id != null">
+            and o.id=#{id}
+        </if>
+    </select>
+
+<!--    通过实体实现一对多的查询-->
+    <select id="findOrdersAndOrdersDetail" resultMap="ordersAndOrdersDetails">
+        select
+            o.id,
+            o.user_id,
+            o.number,
+            o.note,
+            o.createtime,
+            u.username,
+            u.address,
+            od.id detailId,
+            od.items_id,
+            od.items_num
+        from orders o,user u,orderdetail od
+        where o.user_id=u.id
+        and o.id=od.orders_id
+        <if test="id != null">
+            and o.id=#{id}
+        </if>
+    </select>
+
+<!--    查询订单的订单明细和用户信息-->
+    <select id="listOrders" resultMap="ordersAndOrdersDetails">
+        select
+            o.id,
+            o.user_id,
+            o.number,
+            o.note,
+            o.createtime,
+            u.username,
+            u.address,
+            od.id detailId,
+            od.items_num,
+            i.id as itemId,
+            i.`name` as itemName,
+            i.price
+        from orders o,user u,orderdetail od,items i
+        where o.user_id=u.id
+        and od.items_id=i.id
+        and o.id=od.orders_id
+        <if test="id != null">
+            and o.id=#{id}
+        </if>
+    </select>
+
+<!--    延迟接口的开发-->
+    <select id="findOrdersInfoByLazyLoad" parameterType="java.lang.Integer" resultMap="lazyLoadRstMap">
+            select * from orders where id=#{id}
+    </select>
+
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="domain.User">
+        select * from user where id=#{id}
+    </select>
+</mapper>

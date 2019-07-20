@@ -1,6 +1,6 @@
-import Mapper.UserMapper;
+
+import daoMapper.UserMapper;
 import domain.UserQueryVO;
-import dao.UserDaoImpl;
 import domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -11,7 +11,6 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.HashMap;
 import java.util.List;
 
 public class TestUserDao {
@@ -23,13 +22,13 @@ public class TestUserDao {
         sqlSessionFactory=new SqlSessionFactoryBuilder().build(inputStream);
     }
 
-    @Test
-    public void testDao(){
-        UserDaoImpl userDao=new UserDaoImpl();
-        userDao.setSqlSessionFactory(sqlSessionFactory);
-        System.out.println(userDao.findUserById(28));
-        System.out.println(userDao.findUserByUsername("汉"));
-    }
+//    @Test
+//    public void testDao(){
+//        UserDaoImpl userDao=new UserDaoImpl();
+//        userDao.setSqlSessionFactory(sqlSessionFactory);
+//        System.out.println(userDao.findUserById(28));
+//        System.out.println(userDao.findUserByUsername("汉"));
+//    }
     @Test
     public void testA(){
         SqlSession sqlSession=sqlSessionFactory.openSession();

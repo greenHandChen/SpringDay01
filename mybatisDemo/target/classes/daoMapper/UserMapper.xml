@@ -3,16 +3,23 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="Mapper.UserMapper">
-    <select id="findUserByUser" parameterType="domain.UserQueryVO" resultType="domain.User">
+<mapper namespace="daoMapper.UserMapper">
+
+    <resultMap id="userReasultMap" type="domain.User">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"></result>
+        <result property="address" column="address"></result>
+    </resultMap>
+
+    <select id="findUserByUser" parameterType="domain.UserQueryVO" resultType="User">
         select * from user u where u.address like '%${user.address}%' and u.sex=#{user.sex}
     </select>
 
-    <select id="findByUserUserName" parameterType="java.lang.String" resultType="domain.User">
+    <select id="findByUserUserName" parameterType="java.lang.String" resultType="User">
         select  * from user where username like '${value}%'
     </select>
 
-    <insert id="addUser" parameterType="domain.User">
+    <insert id="addUser" parameterType="User">
         insert into user
           (username,birthday,sex,address)
           values (#{username},#{birthday},#{address},#{sex})
@@ -23,21 +30,17 @@
         select count(*) from user u where u.sex = #{sex}
     </select>
 
-    <select id="findUserNameAndAddressById" parameterType="int" resultType="domain.User">
+    <select id="findUserNameAndAddressById" parameterType="int" resultType="User">
         select u.username , u.address from user u where u.id = #{id}
     </select>
 
-    <resultMap id="userReasultMap" type="domain.User">
-        <id property="id" column="id"></id>
-        <result property="username" column="username"></result>
-        <result property="address" column="address"></result>
-    </resultMap>
+
 
     <select id="testResultMap" parameterType="int" resultMap="userReasultMap">
         select id , username , address from user where id = #{id}
     </select>
 
-    <select id="testActiveSql" parameterType="domain.User" resultType="domain.User">
+    <select id="testActiveSql" parameterType="domain.User" resultType="User">
         select * from user
         <where>
             <if test="id != null">
@@ -47,6 +50,10 @@
                 and username like concat('%',#{username},'%')
             </if>
         </where>
+    </select>
+
+    <select id="findUserById" resultType="User">
+        select * from user where id=#{id}
     </select>
 
 </mapper>

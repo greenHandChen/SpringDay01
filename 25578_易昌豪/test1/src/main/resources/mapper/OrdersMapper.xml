@@ -28,6 +28,7 @@
         <id column="userId" property="id"></id>
         <result column="username" property="username"></result>
         <result column="address" property="address"></result>
+        <association property="user" select="findUserId" column="user_id"></association>
         <collection property="orders" ofType="orders">
             <id column="id" property="id"></id>
             <result column="number" property="number"></result>

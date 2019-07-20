@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="exam.mapper">
+    <select id="findOrdersExts" parameterType="OrdersExt" resultMap="OrdersExtMap">
+
+        with result_info as
+        select u.username,
+               u.address,
+               o.number
+               i.name,
+               i.price,
+               o.createtime
+               truncate(sum(od.items_num * i.price),2) as total
+        from ((orderdetail od left join orders o on od.orders_id = o.id)
+              left join items i on od.items_id = i.id)
+              left join user u on o.user_id = u.id
+        group by o.id,u.username,u.address,o.number,i.name,i.price,o.createtime,total with rollup
+
+    </select>
+    <resultMap id="OrdersExtMap" type="OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <association property="id" javaType="User">
+            <id column="id" property="id"></id>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+        </association>
+    </resultMap>
+</mapper>

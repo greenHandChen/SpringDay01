@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ll.ms.mapper.OrderMapper">
+
+    <resultMap id="findOrderAndDetailRstMap" type="com.ll.ms.po.OrderExt">
+        <!--   用户信息     -->
+<!--        <id column="user_id" property="id"/>-->
+        <id column="username" property="username" />
+        <result column="address" property="address"/>
+        <!--   订单信息     -->
+        <collection property="ordersList" ofType="com.ll.ms.po.Order">
+<!--            <id property="id" column="id"/>-->
+<!--            <result property="user_id" column="userId"/>-->
+            <result property="number" column="number"/>
+            <!--   订单明细信息     -->
+            <collection property="detailsList" ofType="com.ll.ms.po.OrderDetail">
+                <id column="id" property="id"/>
+                <result column="items_id" property="itemsId"/>
+                <result column="items_num" property="itemsNum"/>
+                <!--   商品信息(一对一)    -->
+                <association property="items" javaType="com.ll.ms.po.Item">
+                    <id column="items_id" property="id" />
+                    <result column="price" property="price" />
+                    <result column="createtime" property="date" />
+                    <result column="items_name" property="name" />
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+    <select id="findOrdersExts" parameterType="com.ll.ms.po.OrderExt"
+            resultMap="findOrderAndDetailRstMap">
+        select u.username username
+               ,u.address address
+               ,o.number number
+               ,i.name name
+               ,i.price price
+               ,o.createtime createtime
+--                ,count(price)
+        from orders o,user u,orderdetail od,items i
+        where o.user_id = u.id
+        and o.id = od.oders_id
+        and od.items_id=i.id
+
+    </select>
+
+</mapper>

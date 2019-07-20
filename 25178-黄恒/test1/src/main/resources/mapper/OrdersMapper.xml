@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hand.dao.OrdersMapper">
+
+    <resultMap id="OrdersAndUserResultMap" type="com.hand.entity.OrdersExt">
+        <!--订单信息-->
+        <id column="id" property="id"/>
+        <result column="number" property="number"/>
+        <!--用户信息-->
+        <association property="user" javaType="com.hand.entity.User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="sex" property="sex"/>
+        </association>
+    </resultMap>
+
+    <resultMap id="OrderAndDetailResultMap" type="com.hand.entity.OrdersExt" extends="OrdersAndUserResultMap">
+        <collection property="detailList" ofType="com.hand.entity.OrderDetail">
+            <id column="orderId" property="id"/>
+            <result column="items_num" property="itemsNum"/>
+            <result column="orders_id" property="ordersId"/>
+        </collection>
+    </resultMap>
+
+    <resultMap id="userAndOrdersMap" type="com.hand.entity.User">
+        <id column="user_id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="sex" property="sex"/>
+        <collection property="orders" ofType="com.hand.entity.Orders">
+            <id column="id" property="id"/>
+            <result column="user_id" property="userId"/>
+            <result column="number" property="number"/>
+            <collection property="detailList" ofType="com.hand.entity.OrderDetail">
+                <id column="detailId" property="id"/>
+                <result column="items_id" property="itemsId"/>
+                <result column="items_num" property="itemsNum"/>
+                <association property="items" javaType="com.hand.entity.Items">
+                    <id column="items_id" property="id"/>
+                    <result column="name" property="name"/>
+                    <result column="price" property="price"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <select id="findOrdersExts" resultMap="userAndOrdersMap">
+        SELECT
+            user.username,
+            user.address,
+            orders.number,
+            items.name,
+            items.price,
+            orders.createtime
+        FROM
+            orders,
+            user,
+            orderdetail,
+            items
+        WHERE
+            orders.user_id = user.id
+        AND orders.id = orderdetail.orders_id
+        AND orderdetail.items_id = items.id
+        <where>
+            <if test="ordersNumber!=null">
+                ANd orders.number = #{number}
+            </if>
+            <if test="itemsName!=null">
+                ANd items.name = #{itemsName}
+            </if>
+            <if test="createtimeStart!=null">
+                ANd orders.createtime between  #{createtimeStart} and #{createtimeEnd}
+            </if>
+        </where>
+    </select>
+
+</mapper>

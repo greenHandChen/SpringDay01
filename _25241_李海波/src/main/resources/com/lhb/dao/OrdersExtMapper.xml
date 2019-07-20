@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.lhb.dao.OrderMapper">
+<mapper namespace="com.hgh.dao.mapper.OrderMapper">
 
     <resultMap id="orderVOList" type="Orders">
         <result property="id" column="id"/>
@@ -24,9 +24,6 @@
             <result column="items_num" property="itemsNum"/>
         </collection>
     </resultMap>
-    <resultMap id="findOrdersExts" type="" extends="OrderOfItsDetails">
-
-    </resultMap>
 
     <select id="findOrderInfoByLazyLoad" resultMap="lazyLoadRstMap" parameterType="_integer">
         select * from orders where id = #{id}
@@ -37,26 +34,39 @@
         <result column="number" property="number"/>
         <result column="note" property="note"/>
 
-        <association property="user" select="com.lhb.dao.OrderMapper.findUserById" column="user_id"/>
+        <association property="user" select="org.hgh.dao.mapper.OrderMapper.findUserById" column="user_id"/>
     </resultMap>
     <select id="findUserById" parameterType = "java.lang.Integer" resultType="User">
         select * from user where id = #{id}
     </select>
 
-    <select id="findOrderVOById" resultMap="OrderOfItsDetails" parameterType="_integer">
-        select * from Orders o,User u,Orderdetail od where o.user_id = u.id and o.id = od.orders_id and o.id = #{value}
-    </select>
-
-    <select id="findOrderList" resultMap="orderVOList" >
-        select o.*,u.username,u.address from Orders o,User u where o.user_id = u.id
-    </select>
-
-    <select id="findOrderDetials" resultMap="OrderOfItsDetails">
-        select o.*,u.username,u.address from Orders o,User u where o.user_id = u.id
-    </select>
-
-    <select id="findOrdersExts" resultMap="findOrdersExts">
-
+    <select id="findOrderVOs" resultMap="lazyLoadRstMap" parameterType="OrderVO">
+        select
+        u.username username,
+        u.address address,
+        o.id orderNumber,
+        i.name orderName,
+        i.price,
+        o.createtime createTime,
+        i.price * od.items_num sumnum
+        from items i,orders o,orderdetail od,user u
+        where o.user_id = u.id
+        and od.orders_id = o.id
+        <if test="orderNumber != null and orderNumber != ''">
+            and o.id = #{orderNumber}
+        </if>
+        <if test="orderName != null and orderName != ''">
+            and i.name = #{orderName}
+        </if>
+        <if test="price != null and price != ''">
+            and i.price = #{price}
+        </if>
+        <if test="(createtimeStart != null and createtimeStart != '')and (createtimeStop != null and createtimeStop != '')">
+            and o.createtime between createtimeStart and createtimeStop
+        </if>
+        <if test="(priceStart != null and priceStart != '')and (priceStop != null and priceStop != '')">
+            and i.price between priceStart and priceStop
+        </if>
     </select>
 
 </mapper>

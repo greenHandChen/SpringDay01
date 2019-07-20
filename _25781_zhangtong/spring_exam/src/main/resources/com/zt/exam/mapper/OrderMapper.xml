@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zt.exam.mapper.OrderMapper" >
+
+    <select id="findOrdersExts" parameterType="OrdersExt" resultType="OrdersExt">
+        SELECT u.username,
+        u.address,
+        o.number,
+        i.name,
+        i.price,
+        o.createtime,
+        ROUND((i.price * od.items_num), 2) AS total_amount
+        FROM orders o, orderdetail od, items i, user u
+        WHERE od.orders_id = o.id
+        AND od.items_id = i.id
+        AND o.user_id = u.id
+        <if test="number != null">
+            AND o.number = #{number}
+        </if>
+        <if test="name != null">
+            AND o.number = #{name}
+        </if>
+        <if test="createtimeStart != null">
+            AND o.createtime > #{createtimeStart}
+        </if>
+        <if test="createtimeEnd != null">
+            AND o.createtime between  0 AND #{createtimeEnd}
+        </if>
+        <if test="priceStart != null">
+            AND i.price > #{priceStart}
+        </if>
+        <if test="priceEnd != null">
+            AND i.price between  0 AND #{priceEnd}
+        </if>
+
+    </select>
+
+
+</mapper>

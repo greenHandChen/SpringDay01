@@ -14,5 +14,19 @@
         select* from user where  id =#{id};
     </select>
 
+    <select id="countUsers" resultType="int">
+     select count(*) from user;
+    </select>
 
+    <insert id="insertUser">
+    insert into user(id,username,sex,birthday,address) values (#{id},#{username},#{sex},#{birthday},#{address})
+    </insert>
+
+    <update id="updateUser">
+    update user set id=#{id},username=#{username},sex=#{sex},birthday=#{birthday},address=#{address}
+     where id = #{id}
+    </update>
+    <delete id="deleteUser">
+        delete from user where id=#{id}
+    </delete>
 </mapper>

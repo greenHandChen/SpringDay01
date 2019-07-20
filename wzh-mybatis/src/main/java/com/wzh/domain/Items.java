@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class Items {
     private int id;
-    private  String name;
-    private  float price;
+    private String name;
+    private float price;
     private String detail;
     private String pic;
     private Date createtime;

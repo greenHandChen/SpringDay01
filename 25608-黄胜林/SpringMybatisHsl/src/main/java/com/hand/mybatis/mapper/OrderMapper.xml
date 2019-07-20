@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace：命名空间，用于隔离sql -->
+<mapper namespace="com.hand.mybatis.mapper.OrderMapper">
+
+
+    <select id="findOrdersExts" parameterType="QueryVo" resultMap="orders">
+        SELECT
+        `user`.username,
+        `user`.address,
+         items.`name`,
+         items.price,
+         orders.number,
+         orders.createtime
+FROM
+        orders
+        INNER JOIN `user` ON orders.user_id = `user`.id
+        INNER JOIN orderdetail ON orderdetail.orders_id = orders.id
+        INNER JOIN items ON orderdetail.items_id = items.id
+        <where>
+            <if test="OrdersExt.number != null and sex !=''" >
+                sex = #{OrdersExt.number}
+            </if>
+            <if test="Items.name != null and username != ''" >
+                And  username = #{Items.name}
+            </if>
+            <if test="OrdersExt.createtime != null and username != ''" >
+                And   #{OrdersExt.createtime} > createtime
+            </if>
+            <if test="OrdersExt.createtime != null and username != ''" >
+                And  createtime > #{OrdersExt.createtime}
+            </if>
+            <if test="Items.price != null and username != ''" >
+                And   #{Items.createtime} > price
+            </if>
+            <if test="Items.price != null and username != ''" >
+                And  price > #{Items.createtime}
+            </if>
+        </where>
+
+    </select>
+
+
+    <resultMap id="orders" type="Order">
+        <!--        手动映射 column数据库的字段   property  为pojo 的属性  相同的字段不需要写可以自动映射-->
+        <result column="user_id" property="userId"></result>
+    </resultMap>
+
+    <select id="selectOrderList" resultMap="orders">
+    select *  from orders
+</select>
+    <!-- resultMap最终还是要将结果映射到pojo上，type就是指定映射到哪一个pojo -->
+    <!-- id：设置ResultMap的id -->
+    <resultMap id="orders1" type="Order">
+        <result column="id" property="id"></result>
+        <result column="user_id" property="userId"></result>
+        <result column="number" property="number"></result>
+        <result column="createtime" property="createtime"></result>
+        <association property="user" javaType="User">
+            <!-- 定义主键 ,非常重要。如果是多个字段,则定义多个id -->
+            <!-- property：主键在pojo中的属性名 -->
+            <!-- column：主键在数据库中的列名 -->
+            <id column="id" property="id"></id>
+            <!-- 定义普通属性 -->
+            <result column="username" property="username"></result>
+            <collection property=""></collection>
+        </association>
+
+    </resultMap>
+
+
+</mapper>

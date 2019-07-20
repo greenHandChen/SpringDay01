@@ -8,7 +8,8 @@
         insert into user(username, birthday, sex, address)
         values (#{username}, #{birthday}, #{sex}, #{address})
     </insert>
-    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.hand.am.pojo.User">
+    <select id="findUserById" parameterType="java.lang.Integer"
+            resultType="com.hand.am.pojo.User" useCache="false">
         select *
         from user
         where id = #{id}

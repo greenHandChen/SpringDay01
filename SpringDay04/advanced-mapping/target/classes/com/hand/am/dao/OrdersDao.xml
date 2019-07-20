@@ -16,7 +16,7 @@
     <select id="findOrdersToResultMap" parameterType="com.hand.am.pojo.OrdersExt"
             resultMap="ordersAndUserResultMap">
         SELECT
-        orders.id,
+        orders.id oId,
         orders.user_id,
         orders.number,
         orders.createtime,

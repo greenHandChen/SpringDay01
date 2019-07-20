@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.dao.OrdersDao">
+
+    <select id="findOrderExts" resultMap="OrderResultMap" parameterType="com.hand.pojo.OrdersExt">
+        SELECT
+        `user`.username,
+        `user`.address,
+        orders.number,
+        items.`name`,
+        items.price,
+        orders.createtime,
+        Sum(items.price) AS total_amount
+        FROM
+        `user`
+        INNER JOIN orders ON orders.user_id = `user`.id
+        INNER JOIN orderdetail ON orderdetail.orders_id = orders.id
+        INNER JOIN items ON orderdetail.items_id = items.id
+
+        <where>
+            <if test="number!=null">
+                and orders.number=#{number}
+            </if>
+
+            <if test="name!=null">
+                and items.`name`=#{name}
+            </if>
+            <if test="createTime_start!=null">
+                <if test="createTime_end!=null">
+                    and orders.createtime
+                    between #{createTime_start} and #{createTime_end}
+                </if>
+            </if>
+            <if test="priceStart!=null">
+                <if test="priceEnd!=null">
+                    and items.price
+                    between #{priceStart} and #{priceEnd}
+                </if>
+            </if>
+        </where>
+        GROUP BY
+        orders.id,
+        `user`.username,
+        `user`.address,
+        orders.number,
+        orders.createtime,
+        items.`name`,
+        items.price
+
+
+    </select>
+
+    <resultMap id="OrderResultMap" type="com.hand.pojo.OrdersExt">
+        <result property="username" column="username"/>
+        <result property="address" column="address"/>
+        <result property="number" column="number"/>
+        <result property="number" column="name"/>
+        <result property="price" column="price"/>
+        <result property="createTime" column="createtime"/>
+        <result property="total_amount" column="total_amount"/>
+
+    </resultMap>
+</mapper>

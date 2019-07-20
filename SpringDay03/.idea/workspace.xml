@@ -2,61 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e4385c-6b20-4508-ac7d-c5ce03e985bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/smartfox_info.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/dataSources/aede41e3-018e-4957-9445-33b3a87ddd97.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/SpringDay04.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/dao/OrdersDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/dao/OrdersDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/dao/UserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/pojo/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/pojo/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/pojo/OrdersExt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/test/CacheTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/test/MappingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/dao/OrdersDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/dao/OrdersDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/dao/UserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/dao/UserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/pojo/OrderDetail.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/pojo/Orders.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/pojo/OrdersExt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/test/CacheTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/test/MappingTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/java/com/hand/mybatis/spring/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/java/com/hand/mybatis/spring/dao/UserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/java/com/hand/mybatis/spring/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/java/com/hand/mybatis/spring/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/java/com/hand/mybatis/spring/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/java/com/hand/mybatis/spring/test/DemoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDay04/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringDay01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay01/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay02/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDay04/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringDay02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/src/main/java/com/hand/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/src/main/java/com/hand/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/target/classes/com/hand/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/target/classes/com/hand/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/target/classes/com/hand/test/TestJDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/target/classes/com/hand/test/TestJDBC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay02/SpringDay02_jdbc/target/classes/log4j.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/dao/OrdersDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/dao/OrdersDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/test/MappingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/src/main/java/com/hand/am/test/MappingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/dao/OrdersDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/dao/OrdersDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay04/advanced-mapping/target/classes/com/hand/am/dao/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay04/mybatis-spring/target/classes/applicationContext.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -94,14 +57,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/test/TestMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+            <state relative-caret-position="533">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/java/com/hand/test/TestNamespace.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/origin-dao/src/main/java/com/hand/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/origin-dao/src/main/java/com/hand/dao/impl/UserDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/resources/mappers/UserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -136,7 +141,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
+            <state relative-caret-position="220">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -238,25 +243,25 @@
             <path>
               <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
-              <item name="map-profile" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper-namespace" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
-              <item name="map-profile" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper-namespace" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
-              <item name="map-profile" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper-namespace" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
-              <item name="map-profile" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper-namespace" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -264,7 +269,7 @@
             <path>
               <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
-              <item name="map-profile" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper-namespace" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -273,19 +278,92 @@
             <path>
               <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
-              <item name="map-profile" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper-namespace" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hand" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper-namespace" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper-namespace" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="origin-dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="origin-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="origin-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="origin-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="origin-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hand" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="origin-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hand" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDay03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDay03" type="462c0819:PsiDirectoryNode" />
+              <item name="origin-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hand" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -450,6 +528,8 @@
       <workItem from="1563439613067" duration="3940000" />
       <workItem from="1563526784701" duration="1096000" />
       <workItem from="1563530559840" duration="3000" />
+      <workItem from="1563590607552" duration="49000" />
+      <workItem from="1563593057590" duration="40000" />
     </task>
     <servers />
   </component>
@@ -486,7 +566,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26294000" />
+    <option name="totallyTimeSpent" value="26383000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -500,7 +580,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16187595" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16641453" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -575,8 +655,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hand/test/TestNamespace.java" />
     <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/java/com/hand/dao/UserDao.java" />
     <entry file="file://$PROJECT_DIR$/origin-dao/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/origin-dao/src/main/resources/db.properties">
       <provider selected="true" editor-type-id="text-editor" />
@@ -602,40 +682,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/annotation-dao/src/main/java/com/hand/test/TestAnnotationDao.java" />
-    <entry file="file://$PROJECT_DIR$/origin-dao/src/main/java/com/hand/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/origin-dao/src/main/java/com/hand/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/resources/mappers/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/map-profile/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mapper-agency/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/origin-dao/src/main/resources/mappers/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -695,13 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/java/com/hand/test/TestNamespace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/java/com/hand/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -710,12 +756,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mapper-namespace/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/resources/db.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -755,22 +801,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/test/TestMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/map-profile/src/main/resources/mappers/UserDao.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -793,10 +829,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/resources/mappers/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="220">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-profile/src/main/java/com/hand/test/TestMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapper-namespace/src/main/java/com/hand/test/TestNamespace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/origin-dao/src/main/java/com/hand/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/origin-dao/src/main/java/com/hand/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

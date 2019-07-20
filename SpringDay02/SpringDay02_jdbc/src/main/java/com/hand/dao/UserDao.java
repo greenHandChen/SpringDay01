@@ -1,15 +1,32 @@
 package com.hand.dao;
 
 import com.hand.pojo.User;
+import com.zaxxer.hikari.HikariDataSource;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 import org.springframework.stereotype.Repository;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 @Repository("userDao")
-public class UserDao extends JdbcDaoSupport  {
+public class UserDao extends JdbcDaoSupport {
+    private HikariDataSource hikariDataSource;
+
+    /**
+     * 初始化方法，在创建bean的时候注入dataSource
+     */
+    @PostConstruct
+    public void init() {
+        setDataSource(hikariDataSource);
+    }
+
+    @Autowired
+    public void setHikariDataSource(HikariDataSource hikariDataSource) {
+        this.hikariDataSource = hikariDataSource;
+    }
 
     public List<User> findAll() {
         String sql = "SELECT\n" +
@@ -19,27 +36,29 @@ public class UserDao extends JdbcDaoSupport  {
                 "FROM\n" +
                 "`user`\n";
         RowMapper<User> rowMapper = new BeanPropertyRowMapper<>(User.class);
-        return getJdbcTemplate().query(sql, rowMapper);
+        return getJdbcTemplate() != null ? getJdbcTemplate().query(sql, rowMapper) : null;
     }
 
 
-    public int insert(User user) {
+    public Integer insert(User user) {
         String sql = "insert into user values(?,?,?)";
-        return getJdbcTemplate().update(sql, user.getId(), user.getUsername(), user.getPassword());
+        return getJdbcTemplate() != null ? getJdbcTemplate()
+                .update(sql, user.getId(), user.getUsername(), user.getPassword()) : null;
     }
 
 
-    public int update(User originUser, User updateUser) {
+    public Integer update(User originUser, User updateUser) {
         String sql = "update user set username=?,password=? where username=? and password=?";
 
-        return getJdbcTemplate()
-                .update(sql, updateUser.getUsername(), updateUser.getPassword(), originUser.getUsername(), originUser.getPassword());
+        return getJdbcTemplate() != null ? getJdbcTemplate()
+                .update(sql, updateUser.getUsername(), updateUser.getPassword(),
+                        originUser.getUsername(), originUser.getPassword()) : null;
     }
 
 
-    public int delete(User user) {
+    public Integer delete(User user) {
         String sql = "delete from user where username=? and password=?";
-        return getJdbcTemplate()
-                .update(sql, user.getUsername(), user.getPassword());
+        return getJdbcTemplate() != null ? getJdbcTemplate()
+                .update(sql, user.getUsername(), user.getPassword()) : null;
     }
 }

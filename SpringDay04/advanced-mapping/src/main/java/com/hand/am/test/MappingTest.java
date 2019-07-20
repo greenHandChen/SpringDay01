@@ -42,7 +42,7 @@ public class MappingTest {
      * 一对一
      */
     @Test
-    public void findOrdersToResultMap(){
+    public void findOrdersToResultMap() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         OrdersDao ordersDao = sqlSession.getMapper(OrdersDao.class);
         OrdersExt ordersExt = new OrdersExt();
@@ -55,7 +55,7 @@ public class MappingTest {
      * 一对多
      */
     @Test
-    public void findOrdersAndOrderDetails(){
+    public void findOrdersAndOrderDetails() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         OrdersDao ordersDao = sqlSession.getMapper(OrdersDao.class);
         OrdersExt ordersExt = new OrdersExt();
@@ -65,11 +65,13 @@ public class MappingTest {
     }
 
     @Test
-    public void findOrderByLazyLoad(){
+    public void findOrderByLazyLoad() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         OrdersDao ordersDao = sqlSession.getMapper(OrdersDao.class);
         List<OrdersExt> ordersExtList = ordersDao.findOrderByLazyLoad(3);
         ordersExtList.forEach(System.out::println);
         sqlSession.close();
+        double s = 0.0;
+        int i = (int) s + 1;
     }
 }

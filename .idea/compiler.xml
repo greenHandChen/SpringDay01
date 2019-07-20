@@ -9,12 +9,15 @@
         <module name="transtationdemo" />
         <module name="SpringAndMybatis" />
         <module name="MybatisDay01" />
+        <module name="_25034闫镇demo" />
         <module name="zyTEST1" />
         <module name="SpringDay02" />
         <module name="SpringMybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="_25034闫镇" target="1.5" />
+      <module name="_25034闫镇demo" target="1.5" />
       <module name="MybatisDay01" target="1.5" />
       <module name="MybatisDay02" target="1.5" />
       <module name="SpringAndMybatis" target="1.5" />

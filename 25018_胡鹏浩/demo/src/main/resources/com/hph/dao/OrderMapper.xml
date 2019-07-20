@@ -2,18 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.hph.dao.OrderMapper">
 
-    <resultMap id="orderAndUserRstMap" type="OrderExt">
-        <id column="id" property="id"></id>
-        <result column="user_id" property="userId"></result>
-        <result column="number" property="number"></result>
-        <result column="note" property="note"></result>
-        <association property="user" javaType="com.hph.User">
-            <id column="user_id" property="id"></id>
-            <result column="username" property="username"></result>
-            <result column="address" property="address"></result>
-        </association>
-    </resultMap>
-
     <resultMap id="queryCust" type="OrderExt">
         <result column="username" property="username"></result>
         <result column="address" property="address"></result>
@@ -23,7 +11,7 @@
         <result column="total_amount" property="totalAmount"></result>
     </resultMap>
     
-    <select id="findOrderExt" parameterType="OrderExt" resultMap="">
+    <select id="findOrderExt" parameterType="OrderExt" resultMap="queryCust">
         select u.username,u.address,o.number,i.name,i.price,o.createtime,x.total_amount
 from user u,items i,orderdetail d,orders o,(select sum(zongjia) as total_amount,orders_id from
     (select d.orders_id,i.price*d.items_num AS zongjia from items i,orderdetail d where i.id=d.items_id )a GROUP BY a.orders_id)x
@@ -47,60 +35,6 @@ where u.id=o.user_id and o.id=d.orders_id and i.id=d.items_id and x.orders_id=o.
             and i.price &lt;= #{priceEnd}
         </if>
     </select>
-
-    <resultMap id="orderAndOrderDetailRstMap" type="OrderExt" extends="orderAndUserRstMap">
-
-        <collection property="orderDetails" ofType="com.hph.OrderDetail">
-            <id column="detailId" property="id"></id>
-            <result column="items_id" property="itemsId"></result>
-            <result column="items_num" property="itemsNum"></result>
-        </collection>
-    </resultMap>
-    
-    <select id="findOrderAndOrderDetail" parameterType="OrderExt" resultMap="orderAndOrderDetailRstMap">
-        select o.id, o.user_id, o.number, o.createtime, o.note,
-        u.username, u.address,
-        od.id detailId,
-        od.items_id,
-        od.items_num
-        from orders o, user u, orderdetail od
-        where o.user_id = u.id and o.id = od.orders_id
-        <if test="id != null">
-            and o.id = #{id}
-        </if>
-    </select>
-
-    <select id="findOrderExt" parameterType="OrderExt" resultType="OrderExt">
-        select o.id, o.user_id, o.number, o.createtime, o.note,
-        u.username, u.address
-        from orders o, user u
-        where o.user_id = u.id
-        <if test="id != null">
-            and o.id = #{id}
-        </if>
-    </select>
-
-    <select id="findOrdersByRstMap" parameterType="OrderExt" resultMap="orderAndUserRstMap">
-        select o.id, o.user_id, o.number, o.createtime, o.note,
-        u.id, u.username, u.address
-        from orders o, user u
-        where o.user_id = u.id
-        <if test="id != null">
-            and o.id = #{id}
-        </if>
-    </select>
-    
-    <select id="findOrderInfoByLazyLoad" parameterType="java.lang.Integer" resultMap="lazyLoadRstMap">
-        select * from orders where id = #{id}
-    </select>
-
-    <resultMap id="lazyLoadRstMap" type="OrderExt">
-        <id column="id" property="id"></id>
-        <result column="user_id" property="userId"></result>
-        <result column="number" property="number"></result>
-        <result column="note" property="note"></result>
-        <association property="user" select="com.hph.dao.UserMapper.findUserById" column="user_id"></association>
-    </resultMap>
 
 
 

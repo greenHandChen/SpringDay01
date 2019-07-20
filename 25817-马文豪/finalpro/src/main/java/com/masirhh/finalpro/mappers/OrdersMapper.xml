@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.masirhh.finalpro.mappers.OrdersMapper">
+<!--4.查询结果包含用户名(username)、
+用户地址(address)、
+订单编号(number)、
+商品名称(name)、
+商品价格(price)、
+订单的创建时间(createtime，日期格式如:2018-01-01)、
+订单行对应的订单下的订单总价(total_amount，结果保留两位小数)-->
+
+    <!--   查询条件包含订单编号(number)、
+商品名称(name)、
+订单创建时间起(createtimeStart)、
+订单创建时间止(createtimeEnd)、
+商品价格起(priceStart)、
+商品价格止(priceEnd) -->
+
+<!--   SELECT
+orders.id,
+orders.createtime,
+orderdetail.items_id,
+orders.user_id as user_id,
+items.`name`,
+items.price,
+a. sumpri
+FROM
+orders
+LEFT JOIN orderdetail ON orderdetail.orders_id = orders.id
+LEFT JOIN items ON orderdetail.items_id = items.id
+LEFT JOIN (SELECT
+orders.id as id,
+sum(items.price) as sumpri
+FROM
+orders
+LEFT JOIN orderdetail ON orderdetail.orders_id = orders.id
+LEFT JOIN items ON orderdetail.items_id = items.id
+group by orders.id
+) a on a.id=orders.id -->
+
+    <resultMap id="OrdersExts" type="com.masirhh.finalpro.beans.OrdersExt">
+
+    </resultMap>
+
+    <select id="findOrdersExts" parameterType="com.masirhh.finalpro.beans.OrdersExt" resultMap="OrdersExts">
+    select u.username,u.adress,o.number,i.name,i.price,o.createtime,total_amout
+    from users u,orders o,orderdetail od,items i
+    <where>
+        <if test="number != null" >
+            and o.number = #{number}
+        </if>
+        <if test="name != null">
+            and i.name =#{name}
+        </if>
+        <if test="createtime != null">
+            and createtime between createtimeStart and createtimeEnd
+        </if>
+        <if test="price !=null ">
+            and price between priceStart and priceEnd
+        </if>
+        <if test="">
+
+        </if>
+    </where>
+    </select>
+
+
+</mapper>

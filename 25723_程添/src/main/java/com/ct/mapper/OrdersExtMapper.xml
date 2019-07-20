@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ct.mapper.OrdersExtMapper">
+    <select id="findOrdersExts" parameterType="OrdersExt" resultType="OrdersExt">
+        select u.username, u.address, o.number, i.name, i.price, o.createtime, od.items_num*i.price as total_amount
+        from orders o
+        left outer join orderdetail od
+        on o.id = od.orders_id
+        inner join items i
+        on i.id = od.items_id
+        inner join user u
+        on o.user_id = u.id
+        <where>
+            <if test="number != null">
+                number = #{number}
+            </if>
+            <if test="name != null">
+                and name = #{name}
+            </if>
+            <if test="createtime != null and createtimeStart !=null and createtimeEnd != null">
+                and o.createtime between #{createtimeStart} and #{createtimeEnd}
+            </if>
+            <if test="price != null and priceStart != null and priceEnd != null">
+                and price between #{priceStart} and #{priceEnd}
+            </if>
+        </where>;
+    </select>
+</mapper>

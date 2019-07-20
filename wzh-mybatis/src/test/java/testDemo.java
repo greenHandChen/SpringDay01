@@ -19,7 +19,7 @@ public class testDemo {
     public void demo1() {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserMapper userMapper = applicationContext.getBean(UserMapper.class);
-//        User user = new User(2, "无双", '男', new Date(), "广州");
+//        User user = new User(2, "惊鸿", '男', new Date(), "广州");
 //        int i = userMapper.updateUser(user);
         int t = userMapper.deleteUser(2);
         System.out.println(t);

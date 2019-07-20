@@ -6,13 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="wzh-mybatis" />
+        <module name="demo" />
         <module name="wzh-jdbc" />
         <module name="wzh-transaction" />
-        <module name="demo" />
+        <module name="wzh-mybatis" />
+        <module name="25590-伍智华" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="25590-伍智华" target="1.5" />
       <module name="demo" target="1.5" />
       <module name="wzh-jdbc" target="1.5" />
       <module name="wzh-mybatis" target="1.5" />

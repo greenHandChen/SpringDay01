@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <typeAliases>
+        <!--别名包-->
+        <package name="com.mybatis.pojo"/>
+    </typeAliases>
+
+<mappers>
+    <mapper resource="mapper/OrdersMppaer.xml"/>
+</mappers>
+
+</configuration>

@@ -6,7 +6,7 @@
     <settings>
         <!--驼峰映射-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
-        <!--延迟加载s-->
+        <!--延迟加载-->
         <setting name="lazyLoadingEnabled" value="true"/>
         <!-- 设置全部加载还是按需加载 -->
         <setting name="aggressiveLazyLoading" value="false"/>

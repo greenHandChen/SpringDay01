@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis.dao.OrdersExtDao">
+    <select id="findOrdersExts" resultMap="orderExtRstMap">
+        select u.username,u.address,o.number,i.name,i.price,o.createtime,x.total_amount
+        from user u,items i,orderdetail d,orders o,(select sum(zongjia) as total_amount,orders_id from
+            (select d.orders_id,i.price*d.items_num AS zongjia from items i,orderdetail d where i.id=d.items_id )a GROUP BY a.orders_id)x
+        where u.id=o.user_id and o.id=d.orders_id and i.id=d.items_id and x.orders_id=o.id
+        and u.username=#{username} and i.name=#{name} and o.createtime between (#{createtimeStart} and #{createtimeEnd})
+        and i.price between  (#{priceStart} and #{priceEnd})
+    </select>
+
+    <resultMap id="orderExtRstMap" type="OrdersExt">
+        <association property="orderDetails" javaType="com.mybatis.pojo.OrderDetail">
+            <id column="detailId" property="id"/>
+            <result column="items_id" property="itemsId"/>
+            <result column="items_num" property="itemsNum"/>
+        </association>
+        <association property="user" javaType="com.mybatis.pojo.User">
+            <id column="id" property="id"/>
+            <result column="price" property="price"/>
+            <result column="address" property="address"/>
+        </association>
+        <association property="items" javaType="com.mybatis.pojo.Items">
+            <result column="name" property="name"/>
+            <result column="price" property="price"/>
+        </association>
+        <association property="orde" javaType="com.mybatis.pojo.Orders">
+            <result column="number" property="number"/>
+            <result column="createtime" property="createtiem"/>
+        </association>
+    </resultMap>
+
+
+
+    <!--延迟加载-->
+    <select id="findOrderInfoByLazyLoad" resultMap="lazyLoadRstMap">
+        select * from orders where id=#{id}
+    </select>
+    <resultMap id="lazyLoadRstMap" type="OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="note" property="note"/>
+        <association property="user" select="com.mybatis.dao.UserDao.findUserById" column="user_id"/>
+    </resultMap>
+
+
+</mapper>

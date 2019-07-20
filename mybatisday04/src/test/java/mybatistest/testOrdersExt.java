@@ -57,5 +57,6 @@ public class testOrdersExt {
         List<OrdersExt> ordersExt1 = mapper.findOrderInfoByLazyLoad(5);
         System.out.println(ordersExt1.get(0).getUser());
         sqlSession.close();
+
     }
 }

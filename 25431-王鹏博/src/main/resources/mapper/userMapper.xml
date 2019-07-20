@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+接口名 -->
+
+<mapper namespace="com.wpb.dao.UserDao">
+
+    <!-- 多对多：查询用户购买商品的详细信息 -->
+    <resultMap type="user" id="orderext">
+        <!-- 用户信息 -->
+        <id column="user_id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="address" property="address"/>
+
+        <collection property="ordersLists" ofType="orders">
+            <id column="id" property="id"/>
+            <result column="user_id" property="userId"/>
+            <result column="number" property="number"/>
+            <result column="createtime" property="createtime"/>
+
+            <collection property="orderdetailList" ofType="orderdetail">
+                <id column="detailId" property="id"/>
+                <result column="items_id" property="itemsId"/>
+                <result column="items_num" property="itemsNum"/>
+
+                <association property="items" javaType="items">
+                    <id column="items_id" property="id"/>
+                    <result column="name" property="name"/>
+                    <result column="price" property="price"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <resultMap id="userOrder" type="user">
+        <!-- 用户信息 -->
+        <id column="user_id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="sex" property="sex"/>
+        <collection property="orderList" ofType="orders">
+            <id column="id" property="id"/>
+            <result column="user_id" property="userId"/>
+            <result column="number" property="number"/>
+        </collection>
+    </resultMap>
+    <select id ="findOrderExts"  resultType="orderext">
+        select u.username,u.address,o.number,i.name,i.price,o.createtime
+        from user u  right join orders o on u.id=o.user_id
+        left  join orderdetail od on o.id=od.orders_id
+        left join items i on od.items_id=i.id
+
+    </select>
+
+</mapper>

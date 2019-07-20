@@ -55,20 +55,20 @@
     </bean>
 
     <!-- Service代理对象 -->
-    <bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
-        <!--事务管理器-->
+    <!--<bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        &lt;!&ndash;事务管理器&ndash;&gt;
         <property name="transactionManager" ref="txManager"/>
-        <!--配置目标类-->
+        &lt;!&ndash;配置目标类&ndash;&gt;
         <property name="target" ref="accountService"/>
-        <!--目标类的接口-->
+        &lt;!&ndash;目标类的接口&ndash;&gt;
         <property name="proxyInterfaces" value="com.com.hand.service.IAccountService"/>
         <property name="transactionAttributes">
             <props>
-                <!--配置方法-->
+                &lt;!&ndash;配置方法&ndash;&gt;
                 <prop key="transfer2">PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-ArithmeticException</prop>
                 <prop key="transfer3">PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-ArithmeticException</prop>
             </props>
         </property>
-    </bean>
+    </bean>-->
 
 </beans>

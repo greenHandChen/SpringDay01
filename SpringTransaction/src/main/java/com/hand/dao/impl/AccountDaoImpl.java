@@ -4,6 +4,7 @@ import com.hand.dao.IAccountDao;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
 public class AccountDaoImpl extends JdbcDaoSupport implements IAccountDao {
+
     public int inAccount(String username, double amount) {
         String sql = "update account set money=money+? where username=?";
         int flag = this.getJdbcTemplate().update(sql, amount, username);

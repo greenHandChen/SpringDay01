@@ -19,12 +19,6 @@
     <!-- 2自动扫描IOC组件,bean注解扫描-->
     <context:component-scan base-package="com.hand"/>
 
-    <!-- 3aspectj支持自动代理实现AOP功能 -->
-    <aop:aspectj-autoproxy proxy-target-class="true"/>
-
-    <!--4 事务注解驱动-->
-    <tx:annotation-driven transaction-manager="transactionManager"/>
-
     <!-- 5配置数据库连接池-->
     <bean name="dataSource" class="com.zaxxer.hikari.HikariDataSource">
         <property name="driverClassName" value="${jdbc.driver}"/>
@@ -51,9 +45,16 @@
         <property name="basePackage" value="com.hand.mapper"/>
     </bean>
 
+    <!-- ====================事务管理==================== -->
     <!-- 8注册事务管理器-->
     <bean name="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
+
+    <!-- 3aspectj支持自动代理实现AOP功能 -->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+    <!--4 事务注解驱动-->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
 
 </beans>

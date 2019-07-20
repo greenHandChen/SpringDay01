@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
+import javax.annotation.Resource;
+
 /**
  * Author: Chen Quan
  * GitHub: https://github.com/chenquan
@@ -16,9 +18,8 @@ import org.springframework.stereotype.Controller;
 @Controller("annotationController")
 public class AnnotationController {
 
-    private final AnnotationService annotationService;
+    private final   AnnotationService annotationService;
 
-    @Autowired
     public AnnotationController(@Qualifier("annotationService") AnnotationService annotationService) {
         this.annotationService = annotationService;
     }

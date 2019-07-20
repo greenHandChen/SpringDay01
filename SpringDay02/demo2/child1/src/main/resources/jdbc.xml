@@ -5,6 +5,7 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
+
     <bean id="accountDao" class="club.osai.dao.AccountDaoImpl">
         <property name="dataSource" ref="dataSource"/>
     </bean>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="club.osai.dao.OrderDao">
+
+    <cache/>
+    <select id="findOrdersExts" parameterType="OrdersExt" resultMap="ordersAndUserResultMap">
+        SELECT u.*,
+               o.id,
+               it.name,
+               it.price,
+               o.createtime,
+               totall.num num
+        FROM USER u,
+             orders o
+
+                 left JOIN (
+                 SELECT od.orders_id,
+                        od.items_id,
+                        sum(it.price * od.items_num) num
+                 FROM orderdetail od,
+                      items it
+                 WHERE od.items_id = it.id
+                 GROUP BY od.orders_id,
+                          od.items_id
+             ) totall ON o.id = totall.orders_id,
+
+             orderdetail od,
+             items it
+        WHERE u.id = o.user_id
+          AND it.id = od.items_id
+          AND od.orders_id = o.id
+          and o.id = #{id}
+          and it.`name` like concat('%', concat(#{name}, '%'))
+          and o.createtime BETWEEN #{createtimeStart} and #{createtimeEnd} it.price BETWEEN #{priceStart}
+          and #{priceEnd};
+    </select>
+
+
+    <resultMap id="ordersAndUserResultMap" type="ordersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="note" property="note"/>
+        <result column="name" property="name"/>
+
+        <result column="createtime" property="createtime"/>
+
+        <result column="num" property="total_amount"/>
+        <association property="user" javaType="user">
+            <id column="id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+        </association>
+
+    </resultMap>
+
+
+</mapper>

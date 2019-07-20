@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb222ce4-1013-4ecc-8b66-58bb36f20c0d" name="Default Changelist" comment="" />
+    <list default="true" id="cb222ce4-1013-4ecc-8b66-58bb36f20c0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../demo/demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/src/main/java/club/osai/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/src/main/java/club/osai/dao/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/src/main/java/club/osai/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/src/main/resources/config/mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/src/main/resources/config/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringDay02/demo2/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringDay02/demo2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/src/main/java/resources/jdbc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/src/main/resources/jdbc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/src/main/resources/jdbc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/target/classes/club/osai/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/target/classes/club/osai/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/target/classes/club/osai/dao/AccountDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/target/classes/club/osai/dao/AccountDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/target/classes/club/osai/service/AccountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/target/classes/club/osai/service/AccountServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/target/classes/jdbc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/target/test-classes/club/osai/AccountServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child1/target/test-classes/club/osai/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/child2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/child2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/src/main/java/club/osai/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/src/main/java/club/osai/service/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/target/classes/META-INF/child2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/target/classes/club/osai/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/target/classes/club/osai/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/target/classes/club/osai/dao/AccountDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/target/classes/club/osai/dao/AccountDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/target/classes/club/osai/service/AccountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/target/classes/club/osai/service/AccountServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/target/classes/jdbc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/resources/config/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/target/test-classes/club/osai/AccountServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/child2/target/test-classes/club/osai/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringDay02/demo2/parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/parent/src/main/java/club/osai/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringDay02/demo2/parent/src/test/java/club/osai/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/club/osai/mapper/UserMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -47,10 +87,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="116" column="19" selection-start-line="13" selection-end-line="116" selection-end-column="19" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/beans.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+            <state relative-caret-position="171">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="25" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -60,18 +110,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
               <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/club/osai/po/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -93,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+            <state relative-caret-position="330">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -163,20 +201,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-95" />
-    <option name="y" value="15" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="x" value="46" />
+    <option name="y" value="102" />
+    <option name="width" value="1133" />
+    <option name="height" value="727" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -396,7 +425,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563508354966</updated>
-      <workItem from="1563508356300" duration="3780000" />
+      <workItem from="1563508356300" duration="4990000" />
     </task>
     <task id="LOCAL-00001" summary="spring mybatis 整合">
       <created>1563518872051</created>
@@ -405,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563518872051</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="spring mybatis 整合">
+      <created>1563519278696</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563519278696</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -441,18 +477,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3780000" />
+    <option name="totallyTimeSpent" value="4990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24357034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24357034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
@@ -463,7 +498,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39261746" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.05033557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -489,14 +524,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="spring mybatis 整合" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="89" column="42" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/club/osai/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-855">
@@ -524,13 +551,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/club/osai/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -555,13 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/club/osai/mapper/UserMapperImpl.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -583,6 +596,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="116" column="19" selection-start-line="13" selection-end-line="116" selection-end-column="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="25" selection-end-column="11" />
         </state>
       </provider>
     </entry>

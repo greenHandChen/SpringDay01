@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:db.properties"/>
+
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="driverClassName" value="${db.driverClassName}"/>
+        <property name="jdbcUrl" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="mybatisConfig.xml"/>
+        <!--加入这段代码可以扫描mapper包，mybatis全局文件不需要再配置下面这样的mappers,
+             <mappers>
+                <mapper resource="mapper/UserMapper.xml"></mapper>
+             </mappers>
+        -->
+        <!--<property name="mapperLocations">
+            <list>
+                <value>classpath:com/hand/dao/*.xml</value>
+            </list>
+        </property>-->
+    </bean>
+
+
+    <!--自动扫描mapper,其bean对象的id默认为接口名,首字母小写-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- 这里不使用sqlSessionFactory -->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        <!-- 指定扫描的路径 -->
+        <property name="basePackage" value="com.hand.dao"/>
+    </bean>
+
+</beans>

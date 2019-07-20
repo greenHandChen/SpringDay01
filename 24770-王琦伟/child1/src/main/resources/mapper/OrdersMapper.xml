@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.dao.OrdersMapper">
+
+    <resultMap id="ordersExtResultMap" type="com.hand.vo.OrdersExt">
+        <id column="id" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <association property="user" select="com.hand.dao.UserMapper.findUserByid" column="user_id"/>
+        <collection property="ordersItems" ofType="com.hand.vo.OrdersItemVo">
+            <result column="name" property="name"/>
+            <result column="price" property="price"/>
+        </collection>
+    </resultMap>
+
+    <select id="findOrdersExts" parameterType="com.hand.vo.OrdersExt" resultMap="ordersExtResultMap">
+       SELECT
+    orders.id,
+    orders.createtime,
+    items.`name`,
+    items.price,
+    orders.user_id
+    from orders left join orderdetail on orders.id = orderdetail.orders_id
+    left join items on orderdetail.items_id = items.id
+    where 1 = 1
+    <if test="orders.name != null">
+        and items.`name` = orders.name
+    </if>
+    <if test="orders.id != null">
+        and orders.id = orders.id
+    </if>
+    <if test="orders.createtimeStart != null">
+       and orders.createtime > orders.createtimeStart
+    </if>
+    <if test="orders.createtimeEnd != null">
+        and orders.createtime < orders.createtimeEnd
+    </if>
+   </select>
+
+</mapper>

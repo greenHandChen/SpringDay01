@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9b1c7e85-d4c8-46e8-8c72-b80809c604f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/25573-陈深星.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-exam/java-exam.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/OrderExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-exam/src/main/resources/ApplicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-exam/src/main/resources/SqlMapConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-exam/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-mybatis/spring-mybatis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestDemo/src/main/resources/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestDemo/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestDemo/src/test/java/ApplicationTest/applicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TestDemo/src/test/java/ApplicationTest/applicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/src/main/java/com/hand/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/src/main/java/com/hand/Dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/src/main/java/com/hand/Dao/UserDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/src/main/java/com/hand/Entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/src/main/java/com/hand/Mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/src/main/resources/SqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/src/test/java/com/hand/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/study-mybatis-01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/target/classes/META-INF/study-mybatis-01.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/target/classes/SqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/target/classes/com/hand/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/target/classes/com/hand/Dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/target/classes/com/hand/Dao/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/target/classes/com/hand/Entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/target/classes/com/hand/Mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/target/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/target/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-01/target/test-classes/com/hand/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-mybatis-02/study-mybatis-02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../study-mybatis-02/study-mybatis-02.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/spring-jdbc.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/src/main/java/com/hand/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/src/main/java/com/hand/Entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/src/main/java/com/hand/Repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/src/main/java/com/hand/Repository/UserRepositoryIm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/src/main/java/com/hand/Repository/UserRepositoryImJdbcDaoSupport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/target/classes/META-INF/spring-jdbc.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/target/classes/com/hand/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/target/classes/com/hand/Entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/target/classes/com/hand/Repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/target/classes/com/hand/Repository/UserRepositoryIm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/target/classes/com/hand/Repository/UserRepositoryImJdbcDaoSupport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-jdbc/target/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/spring-transaction.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/src/main/java/TransferCase/Dao/AccountDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/src/main/java/TransferCase/Dao/AccountDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/src/main/java/TransferCase/Service/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/src/main/java/TransferCase/Service/AccountServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/src/main/java/TransferCase/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/target/classes/TransferCase/Dao/AccountDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/target/classes/TransferCase/Dao/AccountDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/target/classes/TransferCase/Service/AccountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/target/classes/TransferCase/Service/AccountServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/target/classes/TransferCase/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/spring-transaction/target/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-02/study-spring-02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-jdbc/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-jdbc/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-jdbc/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-jdbc/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-jdbc/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-jdbc/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-jdbc/src/main/java/com/hand/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-jdbc/src/test/java/com/hand/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring-jdbc/study-spring-jdbc.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/spring/Application/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/spring/Entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/springMVC/Application/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/springMVC/Controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/springMVC/Entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/springMVC/Repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/springMVC/Repository/UserRepositoryIm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/springMVC/Service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/java/springMVC/Service/UserServiceIm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/resources/spring-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/src/main/resources/spring-mvc-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/META-INF/study-spring.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/spring-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/spring-mvc-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/spring/Application/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/spring/Entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/springMVC/Application/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/springMVC/Controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/springMVC/Entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/springMVC/Repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/springMVC/Repository/UserRepositoryIm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/springMVC/Service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study-spring/target/classes/springMVC/Service/UserServiceIm.class" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/java-exam/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/mapper/UserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/ApplicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/db.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/SqlMapConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/mapper/OrderMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="509">
+              <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/OrderDetail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="896">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/mapper/OrderMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="58" lean-forward="true" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/mapper/UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java-exam/src/test/java/com/exam/mapper/UserMapperTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-exam/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="143" column="19" selection-start-line="143" selection-start-column="19" selection-end-line="143" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/Order.java" />
+        <option value="$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/User.java" />
+        <option value="$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/OrderDetail.java" />
+        <option value="$PROJECT_DIR$/java-exam/src/main/resources/mapper/UserMapper" />
+        <option value="$PROJECT_DIR$/java-exam/src/main/resources/SqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/java-exam/src/main/java/com/exam/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/java-exam/src/main/java/com/exam/application/application.java" />
+        <option value="$PROJECT_DIR$/java-project-sample-01/pom.xml" />
+        <option value="$PROJECT_DIR$/java-exam/src/main/resources/ApplicationContext.xml" />
+        <option value="$PROJECT_DIR$/java-exam/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/java-exam/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/OrderExt.java" />
+        <option value="$PROJECT_DIR$/java-exam/src/main/java/com/exam/mapper/OrderMapper.java" />
+        <option value="$PROJECT_DIR$/java-exam/src/main/resources/mapper/OrderMapper.xml" />
+        <option value="$PROJECT_DIR$/java-exam/src/test/java/com/exam/mapper/UserMapperTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven\repository" />
+        <option name="mavenHome" value="D:/software/apache-maven-3.6.1/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\software\apache-maven-3.6.1\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/java-exam/java-exam.iml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-498" />
+    <option name="y" value="61" />
+    <option name="width" value="1346" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="25573-陈深星" type="b2602c69:ProjectViewProjectNode" />
+              <item name="25573-陈深星" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="25573-陈深星" type="b2602c69:ProjectViewProjectNode" />
+              <item name="25573-陈深星" type="462c0819:PsiDirectoryNode" />
+              <item name="java-exam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="25573-陈深星" type="b2602c69:ProjectViewProjectNode" />
+              <item name="25573-陈深星" type="462c0819:PsiDirectoryNode" />
+              <item name="java-exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="25573-陈深星" type="b2602c69:ProjectViewProjectNode" />
+              <item name="25573-陈深星" type="462c0819:PsiDirectoryNode" />
+              <item name="java-exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="25573-陈深星" type="b2602c69:ProjectViewProjectNode" />
+              <item name="25573-陈深星" type="462c0819:PsiDirectoryNode" />
+              <item name="java-exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="25573-陈深星" type="b2602c69:ProjectViewProjectNode" />
+              <item name="25573-陈深星" type="462c0819:PsiDirectoryNode" />
+              <item name="java-exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="25573-陈深星" type="b2602c69:ProjectViewProjectNode" />
+              <item name="25573-陈深星" type="462c0819:PsiDirectoryNode" />
+              <item name="java-exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="25573-陈深星" type="b2602c69:ProjectViewProjectNode" />
+              <item name="25573-陈深星" type="462c0819:PsiDirectoryNode" />
+              <item name="java-exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="25573-陈深星" type="b2602c69:ProjectViewProjectNode" />
+              <item name="25573-陈深星" type="462c0819:PsiDirectoryNode" />
+              <item name="java-exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="25573-陈深星" type="b2602c69:ProjectViewProjectNode" />
+              <item name="25573-陈深星" type="462c0819:PsiDirectoryNode" />
+              <item name="java-exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="25573-陈深星" type="b2602c69:ProjectViewProjectNode" />
+              <item name="25573-陈深星" type="462c0819:PsiDirectoryNode" />
+              <item name="java-exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="25573-陈深星" type="b2602c69:ProjectViewProjectNode" />
+              <item name="25573-陈深星" type="462c0819:PsiDirectoryNode" />
+              <item name="java-exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.exam.entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\25573-陈深星\java-exam\src\main\java\com\exam\entity" />
+      <recent name="D:\IdeaProjects\25573-陈深星\java-exam\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.UserMapperTest.testFindUserById">
+    <configuration name="application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.exam.application.application" />
+      <module name="java-exam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exam.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.testFindUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-exam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exam.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exam.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.exam.mapper.UserMapperTest" />
+      <option name="METHOD_NAME" value="testFindUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserMapperTest.testFindUserById" />
+        <item itemvalue="Application.application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b1c7e85-d4c8-46e8-8c72-b80809c604f8" name="Default Changelist" comment="" />
+      <created>1563606376976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563606376976</updated>
+      <workItem from="1563606382319" duration="2334000" />
+      <workItem from="1563608760271" duration="1723000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="UserMapperTest_testFindUserById - 2019.07.20 at 15h 37m 43s.xml">
+      <configuration name="UserMapperTest.testFindUserById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testFindUserById - 2019.07.20 at 15h 41m 23s.xml">
+      <configuration name="UserMapperTest.testFindUserById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testFindUserById - 2019.07.20 at 15h 48m 52s.xml">
+      <configuration name="UserMapperTest.testFindUserById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testFindUserById - 2019.07.20 at 15h 51m 32s.xml">
+      <configuration name="UserMapperTest.testFindUserById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testFindUserById - 2019.07.20 at 15h 57m 11s.xml">
+      <configuration name="UserMapperTest.testFindUserById" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4057000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35325265" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.82295084" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3295082" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1280">
+          <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/mapper/UserMapper" />
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/application/application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-project-sample-01/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="143" column="19" selection-start-line="143" selection-start-column="19" selection-end-line="143" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2039">
+          <caret line="144" column="19" selection-start-line="144" selection-start-column="19" selection-end-line="144" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/OrderDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/entity/OrderExt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/mapper/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="58" lean-forward="true" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/java/com/exam/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/ApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/SqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/main/resources/mapper/OrderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-exam/src/test/java/com/exam/mapper/UserMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

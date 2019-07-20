@@ -1,0 +1,60 @@
+<!-- 文件头 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                             http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/context
+                            http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+    <!-- 加载外部配置文件 -->
+    <context:property-placeholder location="classpath:db.properties"/>
+
+    <!-- 数据源 -->
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+
+        <property name="driverClassName" value="${db.driver}"/>
+
+        <property name="jdbcUrl" value="${db.url}"/>
+
+        <property name="username" value="${db.username}"/>
+
+        <property name="password" value="${db.password}"/>
+
+    </bean>
+
+    <!-- SqlSessionFactory -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+
+        <property name="dataSource" ref="dataSource"></property>
+
+        <!-- 设置全局配置文件（mybatis配置文件） -->
+        <property name="configLocation" value="SqlMapConfig.xml"></property>
+
+    </bean>
+
+
+    <!-- 其他bean的配置 -->
+    <!-- UserDao -->
+    <bean id="userDao" class="Dao.UserDaoImpl"></bean>
+
+    <!-- 配置userMapper代理类 -->
+    <!-- 单个 -->
+<!--    <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">-->
+
+<!--        <property name="mapperInterface" value="Mapper.UserMapper"></property>-->
+
+<!--        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>-->
+
+<!--    </bean>-->
+
+    <!-- 多个 默认bean的id为首字母小写的类名 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+
+        <property name="basePackage" value="Mapper"></property>
+
+<!--        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>-->
+
+    </bean>
+
+</beans>

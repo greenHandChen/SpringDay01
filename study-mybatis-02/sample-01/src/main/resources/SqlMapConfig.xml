@@ -12,36 +12,22 @@
     <!-- 加载外部文件 -->
     <properties resource="db.properties"></properties>
 
-    <!-- 数据源 -->
+    <!-- 数据库连接 -->
     <environments default="development">
-
         <environment id="development">
-
             <transactionManager type="JDBC"/>
-
             <dataSource type="POOLED">
-
                 <property name="driver" value="${db.driver}"/>
-
                 <property name="url" value="${db.url}"/>
-
                 <property name="username" value="${db.username}"/>
-
                 <property name="password" value="${db.password}"/>
-
             </dataSource>
-
         </environment>
-
     </environments>
 
     <!-- 加载映射文件 -->
     <mappers>
-
         <mapper resource="mapper/UserMapper.xml"/>
-
-        <mapper resource="mapper/OrderMapper.xml"/>
-
     </mappers>
 
 </configuration>

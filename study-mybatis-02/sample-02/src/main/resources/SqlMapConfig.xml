@@ -12,7 +12,7 @@
     <!-- 加载外部文件 -->
     <properties resource="db.properties"></properties>
 
-    <!-- 数据源 -->
+    <!-- 数据库连接 -->
     <environments default="development">
 
         <environment id="development">
@@ -39,8 +39,6 @@
     <mappers>
 
         <mapper resource="mapper/UserMapper.xml"/>
-
-        <mapper resource="mapper/OrderMapper.xml"/>
 
     </mappers>
 

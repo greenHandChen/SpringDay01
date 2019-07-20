@@ -113,7 +113,10 @@
           `orders` o,
           `orderdetail` od
         WHERE
-          u.`id` = o.`user_id` AND o.`id` = od.`orders_id`;
+          u.`id` = o.`user_id` AND o.`id` = od.`orders_id`
+        <if test="number != null">
+            AND o.`number` = #{id}
+        </if>
 
     </select>
 

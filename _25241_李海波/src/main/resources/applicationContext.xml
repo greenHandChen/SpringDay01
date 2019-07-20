@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+    <!--读取db.properties-->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <!--    &lt;!&ndash; 注解驱动：配置处理器映射器和适配器 &ndash;&gt;-->
+    <mvc:annotation-driven/>
+    <context:component-scan base-package="com.lhb"/>
+    <!--配置数据源-->
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <!--数据库驱动-->
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <!--连接数据库的url-->
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <!--连接数据库的用户名-->
+        <property name="username" value="${jdbc.username}"/>
+        <!--连接数据库的密码-->
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+<!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">-->
+<!--        &lt;!&ndash;数据库驱动&ndash;&gt;-->
+<!--        <property name="driverClassName" value="${jdbc.driver}"/>-->
+<!--        &lt;!&ndash;连接数据库的url&ndash;&gt;-->
+<!--        <property name="url" value="${jdbc.url}"/>-->
+<!--        &lt;!&ndash;连接数据库的用户名&ndash;&gt;-->
+<!--        <property name="username" value="${jdbc.username}"/>-->
+<!--        &lt;!&ndash;连接数据库的密码&ndash;&gt;-->
+<!--        <property name="password" value="${jdbc.password}"/>-->
+<!--    </bean>-->
+<!--    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--    </bean>-->
+
+    <!-- 事务管理器，依赖于数据源-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <bean id="txTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+        <property name="transactionManager" ref="transactionManager"/>
+    </bean>
+    <!-- 注解创建事务驱动 -->
+    <tx:annotation-driven proxy-target-class="true" transaction-manager="transactionManager"/>
+
+    <!--通知-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!--传播行为-->
+            <tx:method name="save*" propagation="REQUIRED"/>
+            <tx:method name="insert*" propagation="REQUIRED"/>
+            <tx:method name="add*" propagation="REQUIRED"/>
+            <tx:method name="create*" propagation="REQUIRED"/>
+            <tx:method name="delete*" propagation="REQUIRED"/>
+            <tx:method name="update*" propagation="REQUIRED"/>
+            <tx:method name="find*" propagation="SUPPORTS" read-only="true"/>
+            <tx:method name="select*" propagation="SUPPORTS" read-only="true"/>
+            <tx:method name="get*" propagation="SUPPORTS" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+    <!--注入数据源-->
+    <property name="dataSource" ref="dataSource"/>
+    <property name="configLocation" value="classpath:sqlmapconfig.xml"/>
+</bean>
+
+<!--    <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">-->
+<!--        <property name="mapperInterface" value="com.lhb.dao.mapper.UserMapper"/>-->
+<!--        <property name="sqlSessionFactory" value="sqlSessionFactory"/>-->
+<!--    </bean>-->
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    <property name="basePackage" value="com.lhb.dao.mapper"/>
+    <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+</bean>
+
+
+</beans>

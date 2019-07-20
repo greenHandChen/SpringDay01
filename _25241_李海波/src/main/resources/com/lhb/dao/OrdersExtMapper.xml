@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lhb.dao.OrderMapper">
+
+    <resultMap id="orderVOList" type="Orders">
+        <result property="id" column="id"/>
+        <result property="number" column="number"/>
+        <result property="createtime" column="createtime"/>
+        <result property="note" column="note"/>
+
+        <association property="user" javaType="User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+        </association>
+    </resultMap>
+
+    <resultMap id="OrderOfItsDetails" type="OrderVO" extends="orderVOList">
+        <collection property="orderDetail" ofType="OrderDetail">
+            <id column="id" property="id"/>
+            <result column="items_id" property="itemsId"/>
+            <result column="items_num" property="itemsNum"/>
+        </collection>
+    </resultMap>
+    <resultMap id="findOrdersExts" type="" extends="OrderOfItsDetails">
+
+    </resultMap>
+
+    <select id="findOrderInfoByLazyLoad" resultMap="lazyLoadRstMap" parameterType="_integer">
+        select * from orders where id = #{id}
+    </select>
+    <resultMap id="lazyLoadRstMap" type="OrderVO">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="note" property="note"/>
+
+        <association property="user" select="com.lhb.dao.OrderMapper.findUserById" column="user_id"/>
+    </resultMap>
+    <select id="findUserById" parameterType = "java.lang.Integer" resultType="User">
+        select * from user where id = #{id}
+    </select>
+
+    <select id="findOrderVOById" resultMap="OrderOfItsDetails" parameterType="_integer">
+        select * from Orders o,User u,Orderdetail od where o.user_id = u.id and o.id = od.orders_id and o.id = #{value}
+    </select>
+
+    <select id="findOrderList" resultMap="orderVOList" >
+        select o.*,u.username,u.address from Orders o,User u where o.user_id = u.id
+    </select>
+
+    <select id="findOrderDetials" resultMap="OrderOfItsDetails">
+        select o.*,u.username,u.address from Orders o,User u where o.user_id = u.id
+    </select>
+
+    <select id="findOrdersExts" resultMap="findOrdersExts">
+
+    </select>
+
+</mapper>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+ <context:component-scan base-package="zbh.hand"/>
+ <context:property-placeholder location="jdbc.properties"/>
+ <!--数据源-->
+ <bean id="datasource" class="com.alibaba.druid.pool.DruidDataSource">
+  <property name="driverClassName"  value="${jdbc.driver}"/>
+  <property name="username" value="${jdbc.username}"/>
+  <property name="url" value="${jdbc.url}"/>
+  <property name="password" value="${jdbc.password}"/>
+
+ </bean>
+
+ <bean id="sqlSessionFactory" class="com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean">
+  <property name="dataSource" ref="datasource"/>
+  <property name="typeAliasesPackage" value="zbh.hand.pojo"/>
+  <property name="mapperLocations" value="classpath:mappers/*.xml"/>
+  <property name="configLocation" value="classpath:mybatis-config.xml"/>
+  <property name="globalConfig" ref="globalConfig"/>
+ </bean>
+ <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+  <property name="basePackage" value="zbh.hand.mappers"/>
+ </bean>
+ <bean id="dbConfig" class="com.baomidou.mybatisplus.core.config.GlobalConfig.DbConfig">
+  <property name="idType" value="AUTO"/>
+ </bean>
+ <bean id="globalConfig" class="com.baomidou.mybatisplus.core.config.GlobalConfig">
+       <property name="dbConfig" ref="dbConfig"/>
+ </bean>
+</beans>

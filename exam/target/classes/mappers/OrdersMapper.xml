@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zbh.hand.mappers.OrdersMapper">
+    <cache/>
+    <insert id="addOrder" parameterType="Orders">
+        insert into orders values (#{id},#{userId},#{number},#{createtime},#{note})
+    </insert>
+    <select id="selectOrderAndUser" resultMap="orderAndUserMap" parameterType="int">
+        select o.id,o.user_id,o.number,o.createtime,
+        o.note,uu.username,uu.address
+        from orders o,user uu
+        where uu.id=o.user_id and o.id=#{id}
+    </select>
+    <select id="selectOrderAndUserAndDetails" resultMap="orderAndUserAndDetailMap" parameterType="int">
+        select o.id,o.user_id,o.number,o.createtime,
+        o.note,uu.username,uu.address,od.id did,od.items_id,od.items_num
+        from orders o,user uu,orderdetail od
+        where uu.id=o.user_id and o.id=#{id} and od.orders_id=o.id
+    </select>
+    <resultMap id="orderAndUserMap" type="orderExt">
+        <id property="id" column="id"/>
+        <result property="userId" column="user_id"/>
+        <result property="number" column="number"/>
+        <result property="createtime" column="createtime"/>
+        <result column="note" property="note"/>
+        <result column="username" property="username"/>
+        <result property="address"  column="address"/>
+        <association property="user" javaType="User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result property="address"  column="address"/>
+        </association>
+
+    </resultMap>
+    <select id="selectOrderInfoByLazyload" parameterType="int" resultMap="orderAndUserMapLazyLoading">
+        select * from orders where id=#{id}
+    </select>
+    <resultMap id="orderAndUserMapLazyLoading" type="orderExt">
+        <id property="id" column="id"/>
+        <result property="userId" column="user_id"/>
+        <result property="number" column="number"/>
+        <result property="createtime" column="createtime"/>
+        <result column="note" property="note"/>
+        <association property="user" select="zbh.hand.mappers.UserMapper.selectById" column="user_id"/>
+    </resultMap>
+
+    <resultMap id="orderAndUserAndDetailMap" type="orderExt" extends="orderAndUserMap">
+        <collection property="orderDetails" ofType="orderDetail">
+            <id column="did" property="id"/>
+            <result column="items_num" property="itemsNum"/>
+            <result column="items_id" property="itemsId"/>
+        </collection>
+    </resultMap>
+</mapper>

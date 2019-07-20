@@ -8,6 +8,8 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -74,5 +76,16 @@ public class TestMyabtisDao {
         user.setUsername("小");
         System.out.println(mapper.testIfAndWhereLabel(user));
         sqlSession.close();
+    }
+    //测试Spring整合Mybatis Dao接口开发方式
+    @Test
+    public void test(){
+
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("config/applicationContext");
+
+        UserDaoImpl userDao = applicationContext.getBean("userDao",UserDaoImpl.class);
+
+        System.out.println(userDao.UsingSpringFindUserById("10"));
+
     }
 }

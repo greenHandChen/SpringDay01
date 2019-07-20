@@ -4,7 +4,11 @@
 <configuration>
 <!--    引入外部依赖-->
     <properties resource="config/db.properties"/>
-
+<!--    开启懒加载-->
+    <settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
 <!--    配置mybatis的环境信息，比如数据源以及事务控制，整合spring后交给spring管理-->
 
     <environments default="development">
@@ -21,5 +25,7 @@
     </environments>
     <mappers>
             <mapper resource = "mapper/UserMapper.xml"/>
+            <mapper resource = "mapper/OrdersMapper.xml"/>
     </mappers>
+
 </configuration>

@@ -4,8 +4,11 @@
                 "http://mybatis.org//dat/mybatis-3-mapper.dtd">
 <!--接口类全定限名与namespace一致-->
 <mapper namespace="Dao.UserMapper">
-    
-    <select id="findUserById" parameterType="java.lang.String" resultType="Domin.User">
+
+    <select id="UsingSpringFindUserById" parameterType="String" resultType="Domin.User">
+        select * from user where id = #{id}
+    </select>
+    <select id="findUserById" parameterType="java.lang.String" resultType="User">
         SELECT * FROM USER WHERE id = #{id}
     </select>
 

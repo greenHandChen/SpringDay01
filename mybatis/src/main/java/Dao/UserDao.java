@@ -12,4 +12,7 @@ public interface UserDao {
     List<User> findUserByUsername(String username);
 
     int addUser(User user);
+
+    //spring和mybatis整合的接口
+    User UsingSpringFindUserById(String id);
 }

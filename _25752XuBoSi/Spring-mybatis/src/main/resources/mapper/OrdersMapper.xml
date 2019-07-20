@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.OrdersMapper">
+    <select id="findOrdersExt" parameterType="OrdersExt" resultType="OrdersExt">
+        select
+        o.id,
+        o.user_id,
+        o.createtime,
+        o.note,
+        u.username,u.address
+        from orders o,user u
+        where o.user_id=u.id
+        <if test="id != null">
+            and o.id=#{id}
+        </if>
+    </select>
+
+    <select id="findOrdersByResultMap" parameterType="OrdersExt" resultMap="ordersAndUserRstMap">
+        select
+        o.id,
+        o.user_id,
+        o.createtime,
+        o.note,
+        u.username,u.address
+        from orders o,user u
+        where o.user_id=u.id
+        <if test="id != null">
+            and o.id=#{id}
+        </if>
+    </select>
+
+    <resultMap id="ordersAndUserRstMap" type="OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="number" property="number"/>
+        <result column="note" property="note"/>
+        <association property="user" javaType="User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+        </association>
+    </resultMap>
+
+    <resultMap id="ordersAndOrderDetailRstMap" type="OrdersExt" extends="ordersAndUserRstMap">
+        <collection property="orderDetails" ofType="OrderDetail">
+            <id column="id" property="id"/>
+            <result column="items_id" property="items_id"/>
+            <result column="items_num" property="items_num"/>
+        </collection>
+    </resultMap>
+
+    <select id="findOrdersAndOrderDetail" parameterType="OrdersExt" resultMap="ordersAndOrderDetailRstMap">
+        select  o.id,
+        o.user_id,
+        o.number,
+        o.createtime,
+        o.note,
+        u.username,
+        u.address,
+        od.id,
+        od.items_id,
+        od.items_num
+        from orders o,user u, orderdetail od
+        where o.user_id=u.id and o.id=od.orders_id
+        <if test="id != null">
+            and o.id=#{id}
+        </if>
+    </select>
+
+    <select id="findOrderInfoByLazyLoad" parameterType="java.lang.Integer" resultMap="lazyLoadRstMap">
+        select * from orders where id+#{id}
+    </select>
+
+    <resultMap id="lazyLoadRstMap" type="OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="number" property="number"/>
+        <result column="note" property="note"/>
+        <association property="user" select="mapper.UserMapper.findUserById" column="user_id"/>
+    </resultMap>
+
+    <select id="findOrdersExts" parameterType="OrdersExt" resultMap="FOERstMap">
+        select
+       o.number,
+       i.name,
+       i.price,
+        u.username,u.address,
+        o.createtime,sum(price) as sum_price
+        from orders o,user u,items i,orderdetail od
+        where o.user_id=u.id and od.items_id=i.id and
+        od.orders_id=o.id
+        <if test="name !=null">
+            and i.name=#{user.name}
+        </if>
+        <if test="number !=null">
+            and o.number=#{number}
+        </if>
+        <if test="price !=null">
+            and i.price between #{priceStart} and #{priceEnd}
+        </if>
+        <if test="createtime !=null">
+            and i.price between #{createtimeStart} and #{createtimeEnd}
+        </if>
+    </select>
+    
+    <resultMap id="FOERstMap" type="FOERstMap">
+        <result column="numeber" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result column="sum_price" property="sum_price"/>
+        <association property="user" select="mapper.UserMapper.findUserById" column="user_id">
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+        </association>
+        <association property="items" javaType="Items">
+            <result column="name" property="name"/>
+            <result column="price" property="price"/>
+        </association>
+
+    </resultMap>
+
+
+
+</mapper>

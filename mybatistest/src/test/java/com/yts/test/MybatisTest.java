@@ -1,7 +1,7 @@
 package com.yts.test;
 
 import com.yts.beans.User;
-import com.yts.dao.UserDao;
+import com.yts.beans.OrdersExt;
 import com.yts.dao.UserDaoImpl;
 import com.yts.mapper.UserMapper;
 import org.apache.ibatis.io.Resources;
@@ -102,6 +102,27 @@ public class MybatisTest {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         System.out.println(mapper.findUserById(34));
+        sqlSession.close();
+    }
+
+    @Test
+    public void testExt(){
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        OrdersExt ext = new OrdersExt();
+        ext.setId(5);
+        OrdersExt ordersExt = mapper.findOrdersExt(ext);
+        System.out.println(ordersExt);
+        sqlSession.close();
+    }
+
+    @Test
+    public void testResmap(){
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        OrdersExt ext = new OrdersExt();
+        OrdersExt ordersExt = mapper.findOrdersExt(ext);
+        System.out.println(ordersExt);
         sqlSession.close();
     }
 }

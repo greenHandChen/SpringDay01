@@ -15,9 +15,6 @@ public class User {
 
     private String address;
 
-    private List<Orders> ordersList;
-
-
     public int getId() {
         return id;
     }
@@ -56,14 +53,6 @@ public class User {
 
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    public List<Orders> getOrdersList() {
-        return ordersList;
-    }
-
-    public void setOrdersList(List<Orders> ordersList) {
-        this.ordersList = ordersList;
     }
 
     @Override

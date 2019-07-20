@@ -6,10 +6,15 @@
 <configuration>
     <properties resource="config/db.properties"/>
 
+
     <settings>
         <!-- 打印查询语句 -->
         <setting name="logImpl" value="LOG4J" />
     </settings>
+
+    <typeAliases>
+        <package name="com.yts.beans"/>
+    </typeAliases>
 
     <environments default="development">
         <environment id="development">

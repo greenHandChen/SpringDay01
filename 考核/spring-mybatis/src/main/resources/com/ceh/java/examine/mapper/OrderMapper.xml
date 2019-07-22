@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ceh.java.examine.mapper.OrderMapper">
+
+    <!--  延迟加载 -->
+    <select id="findOrdersExts" parameterType="OrdersExt" resultMap="lazyLoadRstMap">
+        SELECT
+            os.user_id,
+            os.number,
+            it.name,
+            it.price,
+            DATE_FORMAT(os.createtime, '%Y-%m-%d') createtime,
+            round((
+                    SELECT
+                        sum(it1.price)
+                    FROM
+                        orderdetail ot1,
+                        items it1
+                    WHERE
+                        os.id = ot1.orders_id
+                    AND ot1.items_id = it1.id
+                ),2) total_amount
+            FROM
+            orders os
+            LEFT JOIN orderdetail ot ON ot.orders_id = os.id,
+            items it
+            WHERE
+            ot.items_id = it.id
+            <if test="number != null and number != '' ">
+                AND os.number = #{number}
+            </if>
+            <if test="name != null and name != '' ">
+                AND it.name like concat('%',concat(#{name},'%'))
+            </if>
+            <if test="createtimeStart != null">
+                AND DATE_FORMAT(os.createtime, '%Y-%m-%d') &gt;= DATE_FORMAT(#{createtimeStart}, '%Y-%m-%d')
+            </if>
+            <if test="createtimeEnd != null">
+                AND DATE_FORMAT(os.createtime, '%Y-%m-%d') &lt;= DATE_FORMAT(#{createtimeEnd}, '%Y-%m-%d')
+            </if>
+            <if test="priceStart != null">
+                AND it.price &gt;= #{priceStart}
+            </if>
+            <if test="priceEnd != null">
+                AND it.price &lt;= #{priceEnd}
+            </if>
+    </select>
+
+    <resultMap id="lazyLoadRstMap" type="OrdersExt">
+        <result column="number" property="number"/>
+        <result column="name" property="name"/>
+        <result column="price" property="price"/>
+        <result column="total_amount" property="totalAmount"/>
+        <result column="createtime" property="createtime"/>
+
+        <association column="user_id" property="user" select="com.ceh.java.examine.mapper.UserMapper.findUserById" />
+    </resultMap>
+</mapper>

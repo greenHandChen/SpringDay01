@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+	namespace：命名空间，主要是用于对statement进行分类管理的唯一标识符
+    注意:当我们去使用mapper代理开发模式时,它有另外十分特殊的作用
+ -->
+<mapper namespace="com.ceh.mybatis.mapper.UserMapper">
+
+    <!-- 根据用户ID查询用户信息 -->
+    <!-- 1.查询使用的是select标签,每一个标签代表着MappedStatement -->
+    <!-- 2.id是MappedStatment的标识符 -->
+    <!-- 3.parameterType就是输入参数的类型(输入类型为基本类型时,参数名可以任意) -->
+    <!-- 4.resultType就是返回结果集也就是输出参数的类型 -->
+    <!-- 5.#{}占位符相当于之前我们的?占位符-->
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="User">
+		SELECT * FROM USER WHERE id =#{id}
+	</select>
+
+    <!-- 根据用户名模糊查询
+        ${}:表示sql的连接符
+        ${value}:其中的value是参数的名称,如果参数是简单类型,那么参数名就必须是value这种形式
+        注意:它与#{}占位符不同,${}这种SQL连接符拼接的是sql片段,而#{}占位符拼接的是字符串,所以${}有SQL注入的风险
+     -->
+    <select id="findUserByUsername" parameterType="java.lang.String" resultType="com.ceh.mybatis.domain.User">
+        select * from user where username like ${value}
+    </select>
+
+    <!-- 添加用户(通过OGNL的JAR包来遍历USER类的属性来完成对应的赋值)
+    -->
+    <insert id="addUser" parameterType="com.ceh.mybatis.domain.User">
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!-- 添加用户返回主键MYSQL版本 -->
+    <!--
+        selectKey:用于查询主键,标签体里写查询主键的SQL,主键查询SQL根据数据库的不同,写法也是不同
+        keyProperty:指的是我们需要映射的字段名称
+        resultType:输出参数类型
+        order:ORDER是用来指定查询主键的SQL以及插入的SQL的相对顺序,这里相对顺序指的是针对INSERT语句的先后
+        LAST_INSERT_ID:必须配合Insert语句进行搭配使用
+    -->
+    <insert id="addUserGetId" parameterType="com.ceh.mybatis.domain.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO USER (username,birthday,sex,address) VALUES(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!-- 添加用户返回UUID -->
+    <!--
+        selectKey:用于查询主键,标签体里写查询主键的SQL,主键查询SQL根据数据库的不同,写法也是不同
+        keyProperty:指的是我们需要映射的字段名称
+        resultType:输出参数类型
+        order:ORDER是用来指定查询主键的SQL以及插入的SQL的相对顺序,这里相对顺序指的是针对INSERT语句的先后
+        LAST_INSERT_ID:必须配合Insert语句进行搭配使用
+    -->
+    <insert id="addUserGetUUID" parameterType="com.ceh.mybatis.domain.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+            SELECT UUID()
+        </selectKey>
+        INSERT INTO USER (id,username,birthday,sex,address) VALUES(#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!-- 添加用户返回自增主键ORACLE版本
+        selectKey:用于查询主键,标签体写查询主键的SQL，主键SQL根据数据库以及规则不同而不同,
+        keyProperty:指的是主键映射的字段名称
+        resultType:输出参数类型
+        order:ORDER是用来指定查询主键的SQL以及插入的SQL的相对顺序,这里相对顺序指的是针对INSERT语句的先后
+     -->
+    <insert id="addUserGetID2" parameterType="com.ceh.mybatis.domain.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="BEFORE">
+            SELECT USER_S.nextval from dual
+        </selectKey>
+        INSERT INTO USER (id,username,birthday,sex,address) VALUES(#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!-- 综合查询,地址模糊查询，性别精确查询 -->
+    <select id="findUserByUser" parameterType="UserQueryVO" resultType="User">
+		SELECT * FROM USER u where u.address like '%${user.address}%' and u.sex = #{user.sex}
+	</select>
+
+    <!-- mapper查询 -->
+    <select id="findUserByMap" parameterType="java.util.Map" resultType="User">
+		SELECT * FROM USER u where u.username like concat(concat('%',#{username}),'%')
+	</select>
+
+    <!-- 查询用户总数 -->
+    <select id="countUser" resultType="java.lang.Integer">
+		SELECT count(*) FROM USER
+	</select>
+
+    <!-- 通过ID获取用户名以及地址 -->
+    <select id="findUserNameAndAddressById" parameterType="java.lang.Integer" resultType="User">
+		SELECT username,address from user u where u.id = #{id}
+	</select>
+
+    <!-- 通过ID获取用户名以及地址 -->
+    <select id="testResultMap" parameterType="java.lang.Integer" resultMap="userResultMap">
+		SELECT id as num,username name,address from user u where u.id = #{id}
+	</select>
+
+    <!-- 映射配置
+        1.resultMap的id属性:标识resultMap的唯一
+        2.id标签:标识主键列
+        3.result:标识普通列
+        4.column属性:查询出来的列名(可以是别名)
+        5.property属性:User类的属性名
+     -->
+    <resultMap id="userResultMap" type="User">
+        <id column="num" property="id"/>
+        <result column="name" property="username"/>
+        <result column="address" property="address"/>
+    </resultMap>
+
+    <!-- 通过ID获取用户名以及地址 -->
+    <select id="testIfAndWhereLabel" parameterType="User" resultType="User">
+		select * from user
+		<where>
+            <if test="id != null">
+                id = #{id}
+            </if>
+            <if test="username != null and username != ''">
+                username like concat(concat('%',#{username}),'%')
+            </if>
+        </where>
+	</select>
+</mapper>

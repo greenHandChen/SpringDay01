@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- id属性：这个bean在容器里的唯一标识符
+         class属性：类的全限定名
+     -->
+    <bean id="collectionBean" class="com.ceh.spring.e_inject.collection.CollectionBean">
+        <property name="list">
+            <list>
+                <value>老王</value>
+                <value>老李</value>
+                <value>小陈</value>
+            </list>
+        </property>
+
+        <property name="array">
+            <list>
+                <value>老王A</value>
+                <value>老李A</value>
+                <value>小陈A</value>
+            </list>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>北京</value>
+                <value>上海</value>
+                <value>天津</value>
+                <value>南京</value>
+            </set>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="篮球" value="姚明"/>
+                <entry key="足球" value="出线"/>
+                <entry key="乒乓球" value="骄傲"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>

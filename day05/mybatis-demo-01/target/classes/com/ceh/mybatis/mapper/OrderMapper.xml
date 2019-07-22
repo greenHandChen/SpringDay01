@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+	namespace：命名空间，主要是用于对statement进行分类管理的唯一标识符
+    注意:当我们去使用mapper代理开发模式时,它有另外十分特殊的作用
+ -->
+<mapper namespace="com.ceh.mybatis.mapper.OrderMapper">
+
+    <!-- 根据订单ID查询订单以及用户信息 -->
+    <select id="findOrdersExt" parameterType="OrdersExt" resultType="OrdersExt">
+        select o.id,
+        o.user_id,
+        o.number,
+        o.createtime,
+        o.note,
+        u.username,u.address
+        from orders o,user u
+        where o.user_id = u.id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+
+
+    <!-- 根据订单ID查询订单以及用户信息基于resultMap -->
+    <select id="findOrdersByResultMap" parameterType="OrdersExt" resultMap="ordersAndUserRstMap">
+        select o.id,
+        o.user_id,
+        o.number,
+        o.createtime,
+        o.note,
+        u.username,u.address
+        from orders o,user u
+        where o.user_id = u.id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+
+    <resultMap id="ordersAndUserRstMap" type="OrdersExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="note" property="note"/>
+        <!-- association: 一对一映射关联标签
+             1.property属性:关联的属性名
+             2.javaType属性:属性对应的类型
+             3.id标签在关联查询时建议写上，可以提升查询性能
+            -->
+        <association property="user" javaType="com.ceh.mybatis.domain.User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+        </association>
+    </resultMap>
+
+    <!-- 根据订单ID查询订单，订单的明细以及用户信息 -->
+    <select id="findOrdersAndOrderDetail" parameterType="OrdersExt" resultMap="ordersAndOrderDetailRstMap">
+        select o.id,
+        o.user_id,
+        o.number,
+        o.createtime,
+        o.note,
+        u.username,
+        u.address,
+        od.id detailId,
+        od.items_id,
+        od.items_num
+        from orders o,user u,orderdetail od
+        where o.user_id = u.id
+        and o.id = od.orders_id
+        <if test="id != null">
+            and o.id = #{id}
+        </if>
+    </select>
+
+    <!-- extends属性:通过extends属性来继承其他的resultMap,要注意的是这两个resultMap的type类型需要一致 -->
+    <resultMap id="ordersAndOrderDetailRstMap" type="OrdersExt" extends="ordersAndUserRstMap">
+        <!-- 订单明细信息 一对多 -->
+        <!-- collection:映射一对多的关系
+             property属性:一对多关联时的属性名
+             ofType属性:关联的类型
+        -->
+        <collection property="orderDetails" ofType="com.ceh.mybatis.domain.OrderDetail">
+            <id column="detailId" property="id"/>
+            <result column="items_id" property="itemsId"/>
+            <result column="items_num" property="itemsNum"/>
+        </collection>
+    </resultMap>
+    
+    
+    <!--  延迟加载 -->
+    <select id="findOrderInfoByLazyLoad" parameterType="java.lang.Integer" resultMap="lazyLoadRstMap">
+        select * from orders where  id = #{id}
+    </select>
+
+    <resultMap id="lazyLoadRstMap" type="OrdersExt">
+        <!-- 订单配置信息映射 -->
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="note" property="note"/>
+        <!-- 一对一用户信息映射
+             association标签:具有懒加载的功能
+             select属性:通过select指定用户查询的statement,其值是statement的id
+             property属性:关联查询的属性映射
+             column属性:指定查询结果的列,并且把该列的值作为传入参数,传入对应的statement中
+        -->
+        <association property="user" select="com.ceh.mybatis.mapper.UserMapper.findUserById" column="user_id"/>
+    </resultMap>
+</mapper>

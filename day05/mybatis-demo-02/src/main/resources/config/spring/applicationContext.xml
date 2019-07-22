@@ -1,0 +1,53 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd 
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+    <!--
+      1.引入数据库配置文件
+      2.配置数据源
+      3.SqlSessionFactory
+    -->
+    <!-- 引入数据库配置文件 -->
+    <context:property-placeholder location="classpath:db.properties"/>
+
+    <!-- 配置数据源 -->
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="driverClassName" value="${db.driverClassName}"/>
+        <property name="jdbcUrl" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>
+
+    <!-- 配置sqlSessionFactory -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 注入数据源 -->
+        <property name="dataSource" ref="dataSource"/>
+        <!-- 设置全局配置文件 -->
+        <property name="configLocation" value="config/mybatis/SqlMapConfig.xml"/>
+    </bean>
+
+    <!-- 配置userDao 注入sqlSessionFactory -->
+    <bean id="userDao" class="com.ceh.mybatis.dao.UserDaoImpl">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
+    <!-- 单个配置 -->
+    <!--<bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        &lt;!&ndash; 配置代理类接口 &ndash;&gt;
+        <property name="mapperInterface" value="com.ceh.mybatis.mapper.UserMapper"/>
+        &lt;!&ndash; 注入sqlSessionFactory &ndash;&gt;
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>-->
+
+    <!-- 批量配置Mapper代理类，生成的代理类的bean的id默认是接口名首字母小写 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- 需要配置mapper接口的扫描路径 -->
+        <property name="basePackage" value="com.ceh.mybatis.mapper"/>
+        <!-- 注入sqlSessionFactory(如果我们只配置了一个sqlSessionFactory时,可以不用指定sqlSessionFactory) -->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+</beans>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- id属性：这个bean在容器里的唯一标识符
+         class属性：类的全限定名
+     -->
+    <bean id="person" class="com.ceh.spring.e_inject.setter.Person">
+        <property name="name" value="安徽"/>
+        <property name="age" value="18"/>
+        <property name="address" value="A3W202"/>
+    </bean>
+
+</beans>

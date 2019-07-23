@@ -86,8 +86,24 @@ public class Day04ApplicationTests {
 
 		ordersExt1.getUserId();
 
-//		ordersExt1.getUser();
+		ordersExt1.getUser();
 
 		sqlSession.close();
+	}
+
+	@Test
+	// 一对一和一对多同时存在
+	public void test05(){
+		OrdersExt3 ordersExt3 = new OrdersExt3();
+		ordersExt3.setId(3);
+
+		SqlSession sqlSession = sqlSessionFactory.openSession();
+		OrdersExt3Mapper mapper = sqlSession.getMapper(OrdersExt3Mapper.class);
+
+		OrdersExt3 OrdersExt3 = mapper.findOrdersExt(ordersExt3);
+
+		System.out.println(OrdersExt3);
+		sqlSession.close();
+
 	}
 }

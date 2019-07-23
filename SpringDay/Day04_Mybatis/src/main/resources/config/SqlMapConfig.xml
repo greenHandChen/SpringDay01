@@ -10,7 +10,7 @@
         <!--是否开启懒加载；默认false，即不开启懒加载-->
         <setting name="lazyLoadingEnabled" value="true"/>
         <!--是否开启积极懒加载，默认true；true表示懒加载对象可以被任何属性进行加载，false表示按需加载-->
-        <setting name="aggressiveLazyLoading" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
         <!-- 打印查询语句 -->
         <setting name="logImpl" value="STDOUT_LOGGING" />
     </settings>

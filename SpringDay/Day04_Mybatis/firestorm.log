@@ -345,3 +345,27 @@ DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in 
 DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
 DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
 DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS

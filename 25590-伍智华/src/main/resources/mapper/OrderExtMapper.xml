@@ -9,11 +9,11 @@
         <result column="note" property="note"/>
         <result column="username" property="username"/>
         <result column="address" property="address"/>
-        <result column="total_amount" property="totalAmount"/>
         <collection property="detailList" ofType="com.wzh.domain.Ordersdetail">
             <id column="detail_id" property="id"/>
             <result column="items_num" property="itemsNum"/>
-            <association property="items" >
+            <result column="total_amount" property="totalAmount"/>
+            <association property="items" javaType="com.wzh.domain.Items">
                 <id column="items_id" property="id"/>
                 <result column="items_name" property="name"/>
                 <result column="items_price" property="price"/>
@@ -23,8 +23,12 @@
     </resultMap>
 
     <select id="findOrdersExts" resultMap="baseMap">
-        select u.username, u.address, o.id order_id, od.id detail_id,od.items_num,
-        i.id items_id,i.name items_name,i.price items_price
+        select
+        u.username, u.address,
+        o.id order_id,
+        od.id detail_id,od.items_num,
+        i.id items_id,i.name items_name,i.price items_price,
+        SUM(od.items_num*i.price) total_amount
         from orders o,user u,orderdetail od,items i
         <where>
             u.id = o.user_id
@@ -49,7 +53,7 @@
                 and #{priceEnd} > i.price
             </if>
         </where>
-        group by order_id,items_id;
+        group by order_id,items_id
     </select>
 
 </mapper>

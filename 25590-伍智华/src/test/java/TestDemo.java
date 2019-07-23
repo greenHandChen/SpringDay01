@@ -17,7 +17,9 @@ public class TestDemo {
         HashMap<String, Object> map = new HashMap();
         map.put("number",3);
         List<OrderExt> ordersExts = mapper.findOrdersExts(map);
-
+        for (OrderExt ordersExt : ordersExts) {
+            System.out.println(ordersExt);
+        }
 
     }
 

@@ -7,18 +7,30 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
-        <module name="wzh-jdbc" />
+        <module name="spring-boot-starter-hello" />
         <module name="wzh-transaction" />
-        <module name="wzh-mybatis" />
         <module name="25590-伍智华" />
+        <module name="wzh-jdbc" />
+        <module name="wzh-mybatis" />
+        <module name="25590-伍智华-springboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="25590-伍智华" target="1.5" />
+      <module name="25590-伍智华-springboot" target="1.5" />
+      <module name="_25590伍智华springboot" target="1.5" />
       <module name="demo" target="1.5" />
+      <module name="spring-boot-demo" target="1.8" />
+      <module name="spring-boot-starter-hello" target="1.5" />
       <module name="wzh-jdbc" target="1.5" />
       <module name="wzh-mybatis" target="1.5" />
       <module name="wzh-transaction" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-demo" options="-parameters" />
+      <module name="spring-boot-starter-hello" options="" />
+    </option>
   </component>
 </project>

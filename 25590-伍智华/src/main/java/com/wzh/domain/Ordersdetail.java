@@ -5,7 +5,7 @@ public class Ordersdetail {
     private Orders orders;
     private Items items;
     private int itemsNum;
-
+    private double totalAmount;
     public Ordersdetail() {
 
     }
@@ -49,6 +49,14 @@ public class Ordersdetail {
         this.itemsNum = itemsNum;
     }
 
+    public double getTotalAmount() {
+        return totalAmount;
+    }
+
+    public void setTotalAmount(double totalAmount) {
+        this.totalAmount = totalAmount;
+    }
+
     @Override
     public String toString() {
         return "Ordersdetail{" +
@@ -56,6 +64,7 @@ public class Ordersdetail {
                 ", orders=" + orders +
                 ", items=" + items +
                 ", itemsNum=" + itemsNum +
+                ", totalAmount=" + totalAmount +
                 '}';
     }
 }

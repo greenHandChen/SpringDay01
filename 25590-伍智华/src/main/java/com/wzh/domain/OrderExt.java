@@ -3,7 +3,7 @@ package com.wzh.domain;
 public class OrderExt extends Orders {
     private String username;
     private String address;
-    private double totalAmount;
+
 
     public String getUsername() {
         return username;
@@ -21,20 +21,16 @@ public class OrderExt extends Orders {
         this.address = address;
     }
 
-    public double getTotalAmount() {
-        return totalAmount;
-    }
 
-    public void setTotalAmount(double totalAmount) {
-        this.totalAmount = totalAmount;
-    }
+
+
 
     @Override
     public String toString() {
         return "OrderExt{" +
                 "username='" + username + '\'' +
                 ", address='" + address + '\'' +
-                ", totalAmount=" + totalAmount +
+
                 ", detailList=" + detailList +
                 '}';
     }

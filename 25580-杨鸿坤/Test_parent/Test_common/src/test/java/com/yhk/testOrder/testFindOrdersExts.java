@@ -20,9 +20,8 @@ public class testFindOrdersExts {
     public void testFindUserById(){
         OrdersMapper ordersMapper = ac.getBean("ordersMapper", OrdersMapper.class);
         OrdersExt ordersExt = ac.getBean("ordersExt", OrdersExt.class);
-        ordersExt.setNumber("1000010");
-//        ordersExt.setName("汉德产品");
-
+//        ordersExt.setNumber("1000010");
+        ordersExt.setName("汉得产品");
         System.out.println(ordersMapper.findOrdersExts(ordersExt));
     }
 }

@@ -57,7 +57,7 @@ public class Orderdetail {
                 "id=" + id +
                 ", order_id=" + order_id +
                 ", items_id=" + items_id +
-                ", items_num=" + items_num +"\n"+"\n"+
+                ", items_num=" + items_num +"\n"+
                 ", items=" + items +
                 '}';
     }

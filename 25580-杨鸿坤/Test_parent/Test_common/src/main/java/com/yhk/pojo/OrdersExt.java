@@ -66,9 +66,7 @@ public class OrdersExt extends Orders {
 
     @Override
     public String toString() {
-        return "OrdersExt{" +
-                "username='" + username + '\'' +
-                ", address='" + address + '\'' +
+        return "OrdersExt订单信息{" +super.toString()+
                 ", user=" + user +
                 ", name='" + name + '\'' +
                 ", detaileList=" + detaileList +

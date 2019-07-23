@@ -35,6 +35,10 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.cxw</groupId>
+            <artifactId>spring-boot-starter-hello</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

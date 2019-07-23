@@ -56,7 +56,7 @@
         <result property="username" column="username"/>
         <result property="address" column="address"/>
         <result property="number" column="number"/>
-        <result property="number" column="name"/>
+        <result property="name" column="name"/>
         <result property="price" column="price"/>
         <result property="createTime" column="createtime"/>
         <result property="total_amount" column="total_amount"/>

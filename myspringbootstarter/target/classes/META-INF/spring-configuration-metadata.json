@@ -1,0 +1,29 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.lx.helloworld.PersonProperties",
+      "name": "spring.person",
+      "type": "com.lx.helloworld.PersonProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.lx.helloworld.PersonProperties",
+      "defaultValue": 0,
+      "name": "spring.person.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.lx.helloworld.PersonProperties",
+      "name": "spring.person.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lx.helloworld.PersonProperties",
+      "defaultValue": "M",
+      "name": "spring.person.sex",
+      "type": "java.lang.String"
+    }
+  ]
+}

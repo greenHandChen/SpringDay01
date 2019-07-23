@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.hand.mapper.OrdersExtMapper">
+
+    <select id="findOrdersExts" parameterType="OrdersExt" resultMap="newMap">
+        select u.username,u.address,o.number,i.name,i.price,o.createtime,t.total_amount
+        from user u ,orders o, items i ,orderdetail od,
+        (select oo.number,sum(odod.items_num*ii.price) total_amount from orders oo,orderdetail odod,items ii
+        where oo.id = odod.orders_id and odod.items_id = ii.id
+        group by oo.number) t
+        where u.id = o.user_id and o.id = od.orders_id and od.items_id = i.id and t.number = o.number
+        <if test="number != null">
+            and o.number = #{number}
+        </if>
+        <if test="itemsName != null">
+            and i.name = #{itemsName}
+        </if>
+    </select>
+
+    <resultMap id="newMap" type="com.lx.hand.domain.OrdersExt">
+<!--        <id column="id" property="id"/>-->
+        <result column="username" property="username"/>
+        <result column="address" property="address"/>
+        <result column="number" property="number"/>
+        <result column="name" property="itemsName"/>
+        <result column="price" property="itemsPrice"/>
+        <result column="createtime" property="createtime" jdbcType="VARCHAR"/>
+        <result column="total_amount" property="totalAmount"/>
+    </resultMap>
+
+</mapper>

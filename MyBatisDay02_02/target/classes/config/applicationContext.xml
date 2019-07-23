@@ -24,6 +24,7 @@
         <property name="configLocation" value="config/mybatis/SqlMapConfig.xml"/>
     </bean>
 
+    <!--dao开发方式-->
     <bean id="userDao" class="com.lx.mybatis.dao.UserDaoImpl">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>

@@ -1,12 +1,14 @@
 package com.lx.hand.domain;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class Orders {
     private Integer id;
     private Integer userId;
     private Integer number;
-    private Date createtime;
+    private String createtime;
     private String note;
 
     public Integer getId() {
@@ -33,11 +35,11 @@ public class Orders {
         this.number = number;
     }
 
-    public Date getCreatetime() {
+    public String getCreatetime() {
         return createtime;
     }
 
-    public void setCreatetime(Date createtime) {
+    public void setCreatetime(String createtime) {
         this.createtime = createtime;
     }
 

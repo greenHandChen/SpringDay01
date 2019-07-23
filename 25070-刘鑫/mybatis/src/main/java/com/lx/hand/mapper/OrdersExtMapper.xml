@@ -2,11 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper>
+<mapper namespace="com.lx.hand.mapper.OrdersExtMapper">
 
-    <cache/>
-
-    <select id="findOrdersExts" parameterType="OrdersExt" resultType="OrdersExt">
+    <select id="findOrdersExts" parameterType="OrdersExt" resultMap="newMap">
         select u.username,u.address,o.number,i.name,i.price,o.createtime,t.total_amount
         from user u ,orders o, items i ,orderdetail od,
         (select oo.number,sum(odod.items_num*ii.price) total_amount from orders oo,orderdetail odod,items ii
@@ -20,4 +18,82 @@
             and i.name = #{itemsName}
         </if>
     </select>
+
+    <resultMap id="newMap" type="com.lx.hand.domain.OrdersExt">
+<!--        <id column="id" property="id"/>-->
+        <result column="username" property="username"/>
+        <result column="address" property="address"/>
+        <result column="number" property="number"/>
+        <result column="name" property="itemsName"/>
+        <result column="price" property="itemsPrice"/>
+        <result column="createtime" property="createtime" jdbcType="VARCHAR"/>
+        <result column="total_amount" property="totalAmount"/>
+    </resultMap>
+
+
+    <!--多对多查询-->
+    <!--查询用户及购买的商品信息，使用resultMap-->
+    <select id="findUserAndItemsResultMap" resultMap="UserAndItemsResultMap">
+        SELECT
+	o.*,
+	u.username,
+	u.sex,
+	u.address,
+	od.id AS orderdetail_id,
+	od.items_id,
+	od.items_num,
+	od.orders_id,
+	i.NAME AS items_name,
+	i.detail AS items_detail,
+	i.price AS items_price
+FROM
+	orders o,
+	USER u,
+	orderdetail od,
+	items i
+WHERE
+	o.user_id = u.id
+	AND od.orders_id = o.id
+	AND od.items_id = i.id
+    </select>
+
+    <resultMap id="UserAndItemsResultMap" type="com.lx.hand.Entity.UserMany">
+        <!--用户信息-->
+        <id column="user_id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="sex" property="sex"/>
+        <result column="address" property="address"/>
+
+        <!--订单信息
+        一个用户对应多个订单，使用collection映射
+        -->
+        <collection property="ordersList" ofType="com.lx.hand.Entity.OrdersMany">
+            <id column="id" property="id"/>
+            <result column="user_id" property="userId"/>
+            <result column="number" property="number"/>
+            <result column="createtime" property="createtime"/>
+            <result column="note" property="note"/>
+
+            <!--订单明细
+            一个订单包括多个明细
+            -->
+            <collection property="orderDetails" ofType="com.lx.hand.Entity.OrderDetilMany">
+                <id column="orderdetail_id" property="id"/>
+                <result column="items_id" property="itemsId"/>
+                <result column="items_num" property="itemsNum"/>
+                <result column="orders_id" property="ordersId"/>
+
+                <!--商品信息
+                一个订单明细对应一个商品
+                -->
+                <association property="items" javaType="com.lx.hand.Entity.Items">
+                    <id column="items_id" property="id"/>
+                    <result column="items_name" property="name"/>
+                    <result column="items_detail" property="detail"/>
+                    <result column="items_price" property="price"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+
 </mapper>

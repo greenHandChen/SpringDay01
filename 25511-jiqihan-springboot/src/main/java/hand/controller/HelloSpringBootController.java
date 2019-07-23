@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloSpringBootController {
     @Autowired
     private HelloSpringBoot helloSpringBoot;
-    @GetMapping("/")
+    @GetMapping("/helloSpringBoot")
     public String helloSpringBoot(){
         return helloSpringBoot.sayHello();
     }

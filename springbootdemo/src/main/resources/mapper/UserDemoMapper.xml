@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--<mapper namespace="test">-->
+<mapper namespace="com.springbootdemo.mapper.UserDemoMapper">
+
+
+    <resultMap id="BaseResultMap" type="com.springbootdemo.dto.UserDemo">
+        <id column="USERID" property="userId"/>
+        <result column="USERNAME" property="userName"/>
+        <result column="USERSEX" property="userSex"/>
+    </resultMap>
+    <!--根据id查询-->
+    <select id="queryUserDemo" resultMap="BaseResultMap">
+        select * from user_demo
+    </select>
+</mapper>

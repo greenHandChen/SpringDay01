@@ -29,6 +29,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--添加本地自定义的starter依赖-->
         <dependency>
             <groupId>com.hand</groupId>
             <artifactId>my-hello-starter</artifactId>

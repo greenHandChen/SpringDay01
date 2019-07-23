@@ -5,4 +5,4 @@
     <select id="findUserById" parameterType="java.lang.Integer" resultType="userBean">
         select * from user where id=#{id}
     </select>
-</mapper>
+        </mapper>

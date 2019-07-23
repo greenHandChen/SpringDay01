@@ -53,10 +53,10 @@ public class UserMapperTest {
 
         User user = new User();
 
-        user.setUsername("David");
+        user.setUsername("Frank");
         user.setSex("1");
         user.setBirthday(new Date());
-        user.setAddress("ChengDu");
+        user.setAddress("DeYang");
         mapper.insertUser(user);
 
         System.out.println(user.getId());
@@ -150,7 +150,7 @@ public class UserMapperTest {
         //由Mybatis通过sqlsession来创建Mapper对象
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
-        User user = mapper.findUserRstMap(1);
+        User user = mapper.findUserRstMap(41);
 
         System.out.println(user);
 

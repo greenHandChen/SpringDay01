@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1344c0f1-8129-4749-ba3a-41ae4ffae37e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../MyBatis_Spring_day04/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyBatis_Spring_day04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis_Spring_day04/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring4_Demo-day-01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring4_Demo-day-01/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myBatis-spring-day04/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myBatis-spring-day04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../myBatis-spring-day04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-day-03-mybatis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-day-03-mybatis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-day-03-mybatis/src/main/java/com/ll/mybatis/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-day-03-mybatis/src/main/java/com/ll/mybatis/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-day-03-mybatis/src/main/java/com/ll/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-day-03-mybatis/src/main/java/com/ll/mybatis/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-day-03-mybatis/src/main/java/com/ll/mybatis/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-day-03-mybatis/src/main/java/com/ll/mybatis/test/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-day-03-mybatis/src/main/java/com/ll/mybatis/test/UserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-day-03-mybatis/src/main/resources/config/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-day-03-mybatis/src/main/resources/config/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-day-03-mybatis/target/classes/com/ll/mybatis/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-day-03-mybatis/target/classes/com/ll/mybatis/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-day-03-mybatis/target/classes/com/ll/mybatis/test/UserMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-day-03-mybatis/target/classes/com/ll/mybatis/test/UserMapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-day-03-mybatis/target/classes/config/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-day-03-mybatis/target/classes/config/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/mapper/OrdersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/mapper/OrdersMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ll/mybatis/test/OrdersMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ll/mybatis/test/OrdersMapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/mapper/OrdersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/mapper/OrdersMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springTxDay02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springTxDay02/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,11 +47,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config/SqlMapConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            <state relative-caret-position="893">
+              <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/mapper/OrdersMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/mapper/OrdersMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="83" column="56" selection-start-line="80" selection-end-line="103" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/test/UserMapperTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="22" selection-start-line="22" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/test/UserDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/test/OrdersMapperTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1235">
+              <caret line="77" column="51" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/po/OrderExt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -63,6 +140,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>OrdersAndUserAndDetailRstMap</find>
+      <find>findUserAndItemsRstMap</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -93,12 +171,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ll/mybatis/po/Orders.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ll/mybatis/po/Ordersdetail.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ll/mybatis/mapper/OrdersMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/mapper/OrdersMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ll/mybatis/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ll/mybatis/po/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ll/mybatis/test/OrdersMapperTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config/SqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ll/mybatis/test/OrdersMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/mapper/OrdersMapper.xml" />
       </list>
     </option>
   </component>
@@ -120,8 +198,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="676" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="457" />
+    <option name="y" value="65" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -131,6 +210,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,6 +269,17 @@
               <item name="spring-day-04-mybatis2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ll" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-day-04-mybatis2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-day-04-mybatis2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -202,39 +294,41 @@
               <item name="spring-day-04-mybatis2" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-day-04-mybatis2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringDay01/spring4_Demo-day-01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../_24863_刘亮" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IDEAWorkSpace\spring-day-04-mybatis2\src\main\resources" />
-      <recent name="D:\IDEAWorkSpace\spring-day-03-mybatis\src\main\resources\config" />
-      <recent name="D:\IDEAWorkSpace\spring-day-03-mybatis\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ll.mybatis.mapper" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IDEAWorkSpace\spring-day-04-mybatis2\src\main\resources\config\mapper" />
       <recent name="D:\IDEAWorkSpace\spring-day-04-mybatis2\src\main\java\com\ll\mybatis\mapper" />
       <recent name="D:\IDEAWorkSpace\spring-day-03-mybatis\src\main\resources\config" />
       <recent name="D:\IDEAWorkSpace\spring-day-03-mybatis\src\main\java\com\ll\mybatis\mapper" />
       <recent name="D:\IDEAWorkSpace\spring-day-03-mybatis\src\main\resources\mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ll.mybatis.mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEAWorkSpace\spring-day-04-mybatis2\src\main\resources" />
+      <recent name="D:\IDEAWorkSpace\spring-day-03-mybatis\src\main\resources\config" />
+      <recent name="D:\IDEAWorkSpace\spring-day-03-mybatis\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -249,7 +343,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrdersMapperTest.testTwoLevelCache">
+  <component name="RunManager" selected="JUnit.OrdersMapperTest.testFindUserAndItemsRst">
+    <configuration name="OrdersMapperTest.testFindOrdersAndUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-day-03-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.mybatis.test.OrdersMapperTest" />
+      <option name="METHOD_NAME" value="testFindOrdersAndUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrdersMapperTest.testFindOrdersAndUserAndDetailsRst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-day-03-mybatis" />
       <extension name="coverage">
@@ -266,6 +376,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrdersMapperTest.testFindOrdersAndUserRst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-day-03-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.mybatis.test.OrdersMapperTest" />
+      <option name="METHOD_NAME" value="testFindOrdersAndUserRst" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrdersMapperTest.testFindUserAndItemsRst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-day-03-mybatis" />
       <extension name="coverage">
@@ -277,38 +403,6 @@
       <option name="PACKAGE_NAME" value="com.ll.mybatis.test" />
       <option name="MAIN_CLASS_NAME" value="com.ll.mybatis.test.OrdersMapperTest" />
       <option name="METHOD_NAME" value="testFindUserAndItemsRst" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrdersMapperTest.testLazyLoading" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-day-03-mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ll.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ll.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ll.mybatis.test.OrdersMapperTest" />
-      <option name="METHOD_NAME" value="testLazyLoading" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrdersMapperTest.testOneLevelCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-day-03-mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ll.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ll.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ll.mybatis.test.OrdersMapperTest" />
-      <option name="METHOD_NAME" value="testOneLevelCache" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -332,11 +426,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrdersMapperTest.testTwoLevelCache" />
-        <item itemvalue="JUnit.OrdersMapperTest.testOneLevelCache" />
-        <item itemvalue="JUnit.OrdersMapperTest.testLazyLoading" />
         <item itemvalue="JUnit.OrdersMapperTest.testFindUserAndItemsRst" />
         <item itemvalue="JUnit.OrdersMapperTest.testFindOrdersAndUserAndDetailsRst" />
+        <item itemvalue="JUnit.OrdersMapperTest.testFindOrdersAndUserRst" />
+        <item itemvalue="JUnit.OrdersMapperTest.testFindOrdersAndUser" />
+        <item itemvalue="JUnit.OrdersMapperTest.testTwoLevelCache" />
       </list>
     </recent_temporary>
   </component>
@@ -354,49 +448,52 @@
       <workItem from="1563495714827" duration="758000" />
       <workItem from="1563501449232" duration="1632000" />
       <workItem from="1563503109802" duration="14128000" />
-      <workItem from="1563545088571" duration="1296000" />
+      <workItem from="1563545088571" duration="1347000" />
+      <workItem from="1563546939839" duration="81000" />
+      <workItem from="1563591294543" duration="2813000" />
+      <workItem from="1563609518456" duration="1116000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OrdersMapperTest_testLazyLoading - 2019.07.19 at 14h 28m 49s.xml">
-      <configuration name="OrdersMapperTest.testLazyLoading" configurationId="JUnit" />
+    <history-entry file="OrdersMapperTest_testFindOrdersAndUser - 2019.07.20 at 10h 56m 42s.xml">
+      <configuration name="OrdersMapperTest.testFindOrdersAndUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrdersMapperTest_testOneLevelCache - 2019.07.19 at 14h 41m 15s.xml">
-      <configuration name="OrdersMapperTest.testOneLevelCache" configurationId="JUnit" />
+    <history-entry file="OrdersMapperTest_testFindOrdersAndUser - 2019.07.20 at 11h 01m 27s.xml">
+      <configuration name="OrdersMapperTest.testFindOrdersAndUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrdersMapperTest_testOneLevelCache - 2019.07.19 at 14h 51m 19s.xml">
-      <configuration name="OrdersMapperTest.testOneLevelCache" configurationId="JUnit" />
+    <history-entry file="OrdersMapperTest_testFindOrdersAndUserRst - 2019.07.20 at 11h 02m 29s.xml">
+      <configuration name="OrdersMapperTest.testFindOrdersAndUserRst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrdersMapperTest_testTwoLevelCache - 2019.07.19 at 15h 01m 06s.xml">
-      <configuration name="OrdersMapperTest.testTwoLevelCache" configurationId="JUnit" />
+    <history-entry file="OrdersMapperTest_testFindOrdersAndUserRst - 2019.07.20 at 11h 04m 26s.xml">
+      <configuration name="OrdersMapperTest.testFindOrdersAndUserRst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrdersMapperTest_testTwoLevelCache - 2019.07.19 at 15h 02m 27s.xml">
-      <configuration name="OrdersMapperTest.testTwoLevelCache" configurationId="JUnit" />
+    <history-entry file="OrdersMapperTest_testFindOrdersAndUserRst - 2019.07.20 at 11h 05m 02s.xml">
+      <configuration name="OrdersMapperTest.testFindOrdersAndUserRst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrdersMapperTest_testTwoLevelCache - 2019.07.19 at 15h 03m 17s.xml">
-      <configuration name="OrdersMapperTest.testTwoLevelCache" configurationId="JUnit" />
+    <history-entry file="OrdersMapperTest_testFindOrdersAndUserRst - 2019.07.20 at 11h 05m 40s.xml">
+      <configuration name="OrdersMapperTest.testFindOrdersAndUserRst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrdersMapperTest_testTwoLevelCache - 2019.07.19 at 15h 04m 38s.xml">
-      <configuration name="OrdersMapperTest.testTwoLevelCache" configurationId="JUnit" />
+    <history-entry file="OrdersMapperTest_testFindOrdersAndUserRst - 2019.07.20 at 11h 06m 02s.xml">
+      <configuration name="OrdersMapperTest.testFindOrdersAndUserRst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrdersMapperTest_testTwoLevelCache - 2019.07.19 at 15h 08m 32s.xml">
-      <configuration name="OrdersMapperTest.testTwoLevelCache" configurationId="JUnit" />
+    <history-entry file="OrdersMapperTest_testFindOrdersAndUserAndDetailsRst - 2019.07.20 at 11h 16m 09s.xml">
+      <configuration name="OrdersMapperTest.testFindOrdersAndUserAndDetailsRst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrdersMapperTest_testTwoLevelCache - 2019.07.19 at 15h 11m 11s.xml">
-      <configuration name="OrdersMapperTest.testTwoLevelCache" configurationId="JUnit" />
+    <history-entry file="OrdersMapperTest_testFindUserAndItemsRst - 2019.07.20 at 11h 22m 38s.xml">
+      <configuration name="OrdersMapperTest.testFindUserAndItemsRst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrdersMapperTest_testTwoLevelCache - 2019.07.19 at 15h 13m 21s.xml">
-      <configuration name="OrdersMapperTest.testTwoLevelCache" configurationId="JUnit" />
+    <history-entry file="OrdersMapperTest_testFindUserAndItemsRst - 2019.07.20 at 11h 23m 58s.xml">
+      <configuration name="OrdersMapperTest.testFindUserAndItemsRst" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40437000" />
+    <option name="totallyTimeSpent" value="44498000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="457" y="65" width="697" height="735" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20801815" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.4678179" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -405,15 +502,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.049833886" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.57119477" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36557376" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.09836066" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2913257" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2913257" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32405892" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -493,16 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/test/UserDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-414">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/mapper/OrdersMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
@@ -521,31 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/test/UserMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/po/OrderExt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="44" />
-          <folding>
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#155#156#0" expanded="true" />
-            <element signature="e#186#187#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -577,27 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/mapper/OrdersMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/po/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -612,26 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/mapper/OrdersMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="157" column="28" lean-forward="true" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/po/Ordersdetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/po/Items.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -639,10 +660,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/test/OrdersMapperTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/po/Ordersdetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/po/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -651,8 +679,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/SqlMapConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        <state relative-caret-position="893">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/mapper/OrdersMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/test/OrdersMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="77" column="51" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -660,6 +705,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/po/OrderExt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/mapper/OrdersMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="83" column="56" selection-start-line="80" selection-end-line="103" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/test/UserMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="22" selection-start-line="22" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ll/mybatis/test/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

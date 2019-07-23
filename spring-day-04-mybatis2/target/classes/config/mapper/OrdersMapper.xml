@@ -22,8 +22,9 @@
         <!--    订单信息    -->
         <id column="id" property="id" />
         <result column="user_id" property="userId" />
-        <result column="number" property="number" />
-
+        <result column="number" property="sex" />
+<!--        <result column="username" property="username"/>-->
+<!--        <result column="sex" property="sex"/>-->
         <!--    用户信息（一对一）    -->
         <!--    association 一对一关联映射  -->
         <!--    property: 关联信息查询的结果要映射的扩展类中的对象属性名称 -->
@@ -33,9 +34,7 @@
             <result column="username" property="username"/>
             <result column="sex" property="sex"/>
         </association>
-
     </resultMap>
-
     <!--  一对一映射之resulutMap -->
     <select id="findOrdersAndUserRstMap" resultMap="OrdersAndUserRstMap">
         select orders.id
@@ -62,7 +61,6 @@
             <result column="items_num" property="itemsNum"/>
         </collection>
     </resultMap>
-    
     <!--  一对多映射  -->
     <select id="findOrdersAndUserAndDetailsRstMap" resultMap="OrdersAndUserAndDetailRstMap">
         select orders.id
@@ -78,6 +76,7 @@
     where orders.user_id = user.id
     and orders.id = orderdetail.orders_id
     </select>
+
 
     <resultMap id="findUserAndItemsRstMap" type="com.ll.mybatis.po.User">
         <!--   用户信息     -->
@@ -103,8 +102,6 @@
             </collection>
         </collection>
     </resultMap>
-
-
     <select id="findUserAndItemsRst" resultMap="findUserAndItemsRstMap">
         select orders.id
 	,orders.user_id

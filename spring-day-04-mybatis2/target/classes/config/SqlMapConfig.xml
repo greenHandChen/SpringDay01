@@ -52,4 +52,14 @@
         <!--    批量加载映射文件    -->
 <!--        <package name="com.ll.mybatis.mapper"/>-->
     </mappers>
+
+
+
+
+        <!--
+          Mybatis本身是一个持久层框架而不是专门的缓存框架，所以他对缓存的实现不够好，
+          不能支持分布式缓存。
+          ehcache是一个分布式缓存框架
+
+          -->
 </configuration>

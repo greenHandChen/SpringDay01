@@ -7,7 +7,7 @@
 
     <select id="findUserById" parameterType="int"
             resultType="User">
-        select * from user where id = #{id}
+        select * from user where id = #{id}+1
     </select>
 
     <insert id="insertUser" parameterType="User">
@@ -79,8 +79,5 @@
     <select id="findUserRstMap" parameterType="int" resultMap="userRstMap">
         select id id_, username username_, sex sex_ from user where id = #{id};
     </select>
-
-
-
 
 </mapper>

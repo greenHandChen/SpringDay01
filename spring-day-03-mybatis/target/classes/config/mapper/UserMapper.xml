@@ -7,7 +7,7 @@
 
     <select id="findUserById" parameterType="int"
             resultType="User">
-        select * from user where id = #{id}
+        select * from user where id = #{id}+1
     </select>
 
     <insert id="insertUser" parameterType="User">

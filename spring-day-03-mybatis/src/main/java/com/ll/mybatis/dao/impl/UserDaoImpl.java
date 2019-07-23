@@ -22,7 +22,7 @@ public class UserDaoImpl implements UserDao {
 
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        User user = sqlSession.selectOne("test.findUserById", id);
+        User user = sqlSession.selectOne("UserMapper.findUserById", id);
         //关闭资源
         sqlSession.close();
         return user;
@@ -33,7 +33,7 @@ public class UserDaoImpl implements UserDao {
         //创建Sqlsession
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        List<User> users = sqlSession.selectList("test.findUserByName", name);
+        List<User> users = sqlSession.selectList("UserMapper.findUserByName", name);
 
         sqlSession.close();
         return users;
@@ -46,7 +46,7 @@ public class UserDaoImpl implements UserDao {
         //调用sqlSession的增删改查方法
         //第一个参数，表示statement的唯一标识
         //第二个参数，表示传入参数类型
-        sqlSession.insert("test.insertUser", user);
+        sqlSession.insert("UserMapper.insertUser", user);
         System.out.println(user.getId());
 
         //提交事务

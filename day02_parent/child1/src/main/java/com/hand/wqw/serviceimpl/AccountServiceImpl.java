@@ -9,11 +9,11 @@ import org.springframework.transaction.support.TransactionTemplate;
 
 @Service
 public class AccountServiceImpl implements IAccountService {
-
     @Autowired
     private AccountDao accountDao;
     @Autowired
     private TransactionTemplate transactionTemplate;
+
 
     /**
      * Spring编程式事务管理

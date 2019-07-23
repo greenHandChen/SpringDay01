@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface OrdersMapper {
 
-    List<OrdersExt> findOrdersExts(@Param("orders") OrdersExt ordersExt);
+    List<OrdersExt> findOrdersExts(@Param("o") OrdersExt ordersExt);
 }

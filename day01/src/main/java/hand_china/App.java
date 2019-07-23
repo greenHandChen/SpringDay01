@@ -29,7 +29,7 @@ public class App
         System.out.println("属性注入："+helloSpring1.getInfo());
 
         HelloSpring hs = applicationContext.getBean("helloSpring", HelloSpring.class);
-        System.out.println("HelloSpring是多例模式："+(helloSpring==hs));
+        System.out.println("HelloSpring是多例模式：helloSpring与hs相同吗？"+(helloSpring==hs));
     }
 
 

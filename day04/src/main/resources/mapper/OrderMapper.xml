@@ -22,13 +22,13 @@
     </resultMap>
 
     <resultMap id="lazyLoadResultMap" type="com.hand.wqw.vo.OrderExt">
-        <id property="id" column="id" javaType="integer"/>
-        <result property="userId" column="user_id" javaType="integer"/>
-        <result property="number" column="number" javaType="string"/>
-        <result property="createtime" column="createtime" javaType="java.sql.Timestamp"/>
-        <result property="note" column="note" javaType="string"/>
-        <association property="user" select="com.hand.wqw.dao.UserDao.selectUserById" column="user_id"/>
-    </resultMap>
+    <id property="id" column="id" javaType="integer"/>
+    <result property="userId" column="user_id" javaType="integer"/>
+    <result property="number" column="number" javaType="string"/>
+    <result property="createtime" column="createtime" javaType="java.sql.Timestamp"/>
+    <result property="note" column="note" javaType="string"/>
+    <association property="user" select="com.hand.wqw.dao.UserDao.selectUserById" column="user_id"/>
+</resultMap>
 
     <select id="findOrderExtsLazyLoad" parameterType="int" resultMap="lazyLoadResultMap">
         select * from orders where id = #{id}

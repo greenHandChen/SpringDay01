@@ -16,7 +16,6 @@
         <property name="username" value="${db.username}"></property>
         <property name="password" value="${db.password}"></property>
     </bean>
-
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <property name="dataSource" ref="dataSource"></property>
     </bean>
@@ -24,6 +23,7 @@
     <bean id="userDaoSupport" class="com.hand.wqw.dao.UserDaoSupport">
         <property name="jdbcTemplate" ref="jdbcTemplate"></property>
     </bean>
+
 
 
     <context:component-scan base-package="com.hand.wqw.dao"></context:component-scan>

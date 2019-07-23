@@ -6,7 +6,16 @@ public class OrdersItemVo {
 
     private String name;
     private BigDecimal price;
+    private Double num;
 
+
+    public Double getNum() {
+        return num;
+    }
+
+    public void setNum(Double num) {
+        this.num = num;
+    }
 
     public String getName() {
         return name;
@@ -29,6 +38,7 @@ public class OrdersItemVo {
         return "OrdersItemVo{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
+                ", num=" + num +
                 '}';
     }
 }

@@ -4,7 +4,7 @@
 
 <configuration>
     <!--环境配置，连接的数据库，这里使用的是MySQL-->
-    <properties resource="log4j.properties"/>
+<!--    <properties resource="log4j.properties"/>-->
 
 
     <settings>

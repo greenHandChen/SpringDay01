@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="club.osai.dao.OrderDao">
+
+    <cache/>
+    <select id="findOrderExtById" parameterType="OrderExt" resultType="OrderExt">
+        select o.id,o.user_id,o.number,o.createtime,o.note,u.username,u.address from orders o,user u
+        where o.user_id = u.id
+
+        <if test="id != null">
+            and o.id=#{id}
+        </if>
+
+
+    </select>
+
+
+    <resultMap id="ordersAndUserResultMap" type="orderExt">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="note" property="note"/>
+
+        <association property="user" javaType="user">
+            <id column="id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+
+        </association>
+    </resultMap>
+
+    <select id="findOrdersAndUserResultMap" parameterType="orderExt" resultMap="ordersAndUserResultMap">
+        select o.id,o.user_id, o.note,u.* from user u ,orders o where u.id = o.user_id
+        <if test="id!=null">
+            and o.id = #{id};
+        </if>
+    </select>
+
+    <resultMap id="ordersAndOrderDetailResultMap" type="orderExt" extends="ordersAndUserResultMap">
+        <collection property="details" ofType="OrderDetail">
+            <id column="id" property="id"/>
+            <result column="orders_id" property="ordersId"/>
+            <result column="items_id" property="itemsId"/>
+            <result column="items_num" property="itemsNum"/>
+        </collection>
+    </resultMap>
+
+
+    <select id="findOrdersAndOrderDetail" parameterType="orderExt" resultMap="ordersAndOrderDetailResultMap">
+        select o.id,o.user_id, o.note,u.*,od.* from user u ,orders o ,orderdetail od
+        where u.id = o.user_id
+        and od.orders_id = o.id
+        <if test="id!=null">
+            and o.id = #{id};
+        </if>
+    </select>
+    <select id="findUserId" parameterType="long" resultType="user">
+        select  * from user where id=#{id};
+    </select>
+
+    <!--   子查询
+    -->
+    <resultMap id="lazyLoadMap" type="orderExt">
+
+        <!--        订单配置映射
+        -->
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="note" property="note"/>
+        <result column="number" property="number"/>
+        <!--
+
+        -->
+        <association property="user" select="club.osai.dao.OrderDao.findUserId" column="user_id"/>
+    </resultMap>
+    <select id="findOrderByIdLazyLoad" parameterType="long" resultMap="lazyLoadMap">
+        select * from  orders   where id=#{id};
+
+    </select>
+</mapper>

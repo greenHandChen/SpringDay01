@@ -118,7 +118,7 @@ public class OrderVO extends Orders {
                 ", address='" + address + '\'' +
                 ", orderNumber=" + orderNumber +
                 ", orderName='" + orderName + '\'' +
-                ", createtime=" + simpleDateFormat.format("YYYY-mm-dd") +
+                ", createtime=" + createtime +
                 ", price=" + price +
                 ", sumNum=" + sumnum +
                 '}';

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf146eb7-6758-48a6-8fd1-6dcff7418a75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/com/hgh/vo/OrderVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/com/hgh/vo/OrderVO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/src/main/java/com/hgh/vo/OrderVO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="677">
+              <caret line="117" column="44" lean-forward="true" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#299#300#0" expanded="true" />
@@ -118,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/src/test/java/com/hgh/test/Test1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="300">
+              <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -211,10 +211,10 @@
         <option value="$PROJECT_DIR$/test/src/main/java/com/hgh/service/OrderService.java" />
         <option value="$PROJECT_DIR$/test/src/main/resources/sqlmapconfig.xml" />
         <option value="$PROJECT_DIR$/test/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/test/src/main/java/com/hgh/vo/OrderVO.java" />
         <option value="$PROJECT_DIR$/test/src/main/resources/mapper/OrderMapper.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0057ba14-3d80-4873-8c7e-e94b86a4344f/console.sql" />
         <option value="$PROJECT_DIR$/test/src/test/java/com/hgh/test/Test1.java" />
+        <option value="$PROJECT_DIR$/test/src/main/java/com/hgh/vo/OrderVO.java" />
       </list>
     </option>
   </component>
@@ -503,7 +503,7 @@
       <option name="presentableId" value="Default" />
       <updated>1563606437582</updated>
       <workItem from="1563606440316" duration="506000" />
-      <workItem from="1563607155672" duration="3472000" />
+      <workItem from="1563607155672" duration="3745000" />
     </task>
     <task id="LOCAL-00001" summary="kaoshizuoye">
       <created>1563610389524</created>
@@ -519,16 +519,17 @@
       <option name="project" value="LOCAL" />
       <updated>1563610433173</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="kaoshizuoye">
+      <created>1563610816141</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563610816141</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test1_test01 - 2019.07.20 at 15h 22m 51s.xml">
-      <configuration name="Test1.test01" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test1_test01 - 2019.07.20 at 16h 03m 14s.xml">
-      <configuration name="Test1.test01" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Test1_test01 - 2019.07.20 at 16h 05m 29s.xml">
       <configuration name="Test1.test01" configurationId="JUnit" />
     </history-entry>
@@ -553,13 +554,18 @@
     <history-entry file="Test1_test02 - 2019.07.20 at 16h 16m 50s.xml">
       <configuration name="Test1.test02" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Test1_test01 - 2019.07.20 at 16h 18m 52s.xml">
+      <configuration name="Test1.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test1_test01 - 2019.07.20 at 16h 20m 41s.xml">
+      <configuration name="Test1.test01" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3978000" />
+    <option name="totallyTimeSpent" value="4251000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2246596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -572,7 +578,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.447541" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.447541" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -761,10 +767,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/main/resources/~D[JNE`JHMTWF%`8O%SU2JT.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/test/java/com/hgh/test/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/src/main/java/com/hgh/vo/OrderVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="677">
+          <caret line="117" column="44" lean-forward="true" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#299#300#0" expanded="true" />
@@ -807,16 +826,6 @@
             <element signature="e#1796#1797#0" expanded="true" />
             <element signature="e#1841#1842#0" expanded="true" />
             <element signature="e#1877#1878#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/src/test/java/com/hgh/test/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -6,19 +6,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lizijie" />
-        <module name="transaction" />
-        <module name="mybatisday03" />
         <module name="mybatisday04" />
+        <module name="mybatisday03" />
+        <module name="spring-boot-starter-hello" />
+        <module name="springboot25033lizijie" />
+        <module name="transaction" />
+        <module name="lizijie" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="25033李子杰springboot" target="1.8" />
       <module name="lizijie" target="1.7" />
       <module name="mybatisday03" target="1.5" />
       <module name="mybatisday04" target="1.5" />
+      <module name="spring-boot-starter-hello" target="1.8" />
+      <module name="springboot25033lizijie" target="1.8" />
       <module name="springday01" target="1.5" />
       <module name="springday02" target="1.5" />
       <module name="transaction" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="25033李子杰springboot" options="-parameters" />
+      <module name="spring-boot-starter-hello" options="-parameters" />
+      <module name="springboot25033lizijie" options="-parameters" />
+    </option>
   </component>
 </project>

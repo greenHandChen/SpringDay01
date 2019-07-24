@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="125dfd5c-9473-49ec-b418-719b5cd05f18" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SpringDay01/META-INF/SpringDay01.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parent/demo4/src/test/java/demo4Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/demo4/src/test/java/demo4Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/first/demo/controller/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/java/domain/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/java/domain/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/java/domain/OrdersExt.java" beforeDir="false" afterPath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/java/domain/OrdersExt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/java/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/java/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/resources/config/mybatis/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/resources/config/mybatis/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/resources/mapper/OrdersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/resources/mapper/OrdersMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25578_易昌豪/test1/src/test/java/exTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../25578_易昌豪/test1/src/test/java/exTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xmlConfig/HelloSpring.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="395">
@@ -77,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/annotation/SpringContext.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
@@ -174,7 +176,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,12 +192,13 @@
               <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlConfig" type="462c0819:PsiDirectoryNode" />
+              <item name="collection" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,6 +334,7 @@
       <workItem from="1563587123001" duration="17000" />
       <workItem from="1563587164100" duration="20000" />
       <workItem from="1563591927901" duration="8000" />
+      <workItem from="1563879330523" duration="72000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1563263452734</created>
@@ -358,7 +361,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24357000" />
+    <option name="totallyTimeSpent" value="24429000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -371,8 +374,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28668684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -394,7 +398,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.32980332" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -451,6 +455,10 @@
     <MESSAGE value="init project" />
     <MESSAGE value="over project" />
     <option name="LAST_COMMIT_MESSAGE" value="over project" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/libraries/Spring_4_3_18_RELEASE.xml">
@@ -527,13 +535,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/collection/Beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -669,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/annotation/SpringContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/xmlConfig/HelloSpring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -686,6 +680,20 @@
             <element signature="e#270#271#0" expanded="true" />
             <element signature="e#315#316#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collection/Beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/annotation/SpringContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
         </state>
       </provider>
     </entry>

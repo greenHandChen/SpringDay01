@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84e149dd-c604-4e32-a6f9-6903b69e4e76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mybatis2/src/main/java/entity/Items.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis2/src/main/java/entity/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis2/src/main/java/entity/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis2/src/main/java/entity/OrdersExt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis2/src/main/java/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis2/src/main/java/mapper/OrdersMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis2/src/main/resources/config/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis2/src/main/resources/config/mybatis/SqlMapConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis2/src/main/resources/mapper/OrdersMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis2/src/test/java/OrdersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyBatis/src/main/java/Mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis/src/main/java/Mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyBatis/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyBatis/src/test/java/hand/mapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis/src/test/java/hand/mapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringDay01/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/first/demo/controller/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/java/domain/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/java/domain/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/java/domain/OrdersExt.java" beforeDir="false" afterPath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/java/domain/OrdersExt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/java/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/java/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/resources/config/mybatis/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/resources/config/mybatis/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/resources/mapper/OrdersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25578_易昌豪/test1/src/main/resources/mapper/OrdersMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25578_易昌豪/test1/src/test/java/exTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../25578_易昌豪/test1/src/test/java/exTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringDay01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDay01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringDay01/out/production/SpringDay01/META-INF/SpringDay01.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4/src/test/java/demo4Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo4/src/test/java/demo4Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,16 +38,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1653">
-              <caret line="87" column="21" selection-start-line="77" selection-start-column="7" selection-end-line="87" selection-end-column="21" />
+            <state relative-caret-position="523">
+              <caret line="77" column="20" selection-start-line="77" selection-start-column="7" selection-end-line="87" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo4/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -81,6 +72,12 @@
         <option value="$PROJECT_DIR$/demo4/src/test/java/demo4Test.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
@@ -130,8 +127,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,6 +189,8 @@
       <workItem from="1563549471358" duration="4000" />
       <workItem from="1563549516836" duration="11000" />
       <workItem from="1563549538548" duration="9000" />
+      <workItem from="1563879401461" duration="11000" />
+      <workItem from="1563879966178" duration="24000" />
     </task>
     <servers />
   </component>
@@ -201,12 +200,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1852000" />
+    <option name="totallyTimeSpent" value="1887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2987897" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30786687" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -230,7 +230,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32980332" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -259,12 +259,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1653">
-          <caret line="87" column="21" selection-start-line="77" selection-start-column="7" selection-end-line="87" selection-end-column="21" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/demo4/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/demo4/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -273,8 +269,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo4/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="7" selection-end-line="87" selection-end-column="21" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

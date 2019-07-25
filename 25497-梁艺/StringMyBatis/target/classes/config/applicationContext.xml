@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+    <!--1引入数据库配置文件-->
+    <context:property-placeholder location="config/jdbc.properties"/>
+
+    <!-- 5配置数据库连接池-->
+    <bean name="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!--6会话工厂bean-->
+    <bean name="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" scope="singleton">
+        <!--数据源-->
+        <property name="dataSource" ref="dataSource"/>
+        <!--sql映射文件-->
+        <property name="mapperLocations" value="com/hand/mapper/*Mapper.xml"/>
+        <!--别名-->
+        <property name="typeAliasesPackage" value="com.hand.entity"/>
+    </bean>
+
+    <!--7自动扫描对象关系映射-->
+    <!--<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        &lt;!&ndash;指定会话工厂，如果当前上下文中只定义了一个则该属性可省去 &ndash;&gt;
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        &lt;!&ndash; 指定要自动扫描接口的基础包，实现接口 &ndash;&gt;
+        <property name="basePackage" value="com.hand.mapper"/>
+    </bean>-->
+
+    <bean id="ordersMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="com.hand.mapper.OrdersMapper"/>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
+    <bean id="orderService" class="com.hand.service.impl.OrdersServiceImpl">
+        <property name="ordersMapper" ref="ordersMapper"/>
+    </bean>
+
+</beans>

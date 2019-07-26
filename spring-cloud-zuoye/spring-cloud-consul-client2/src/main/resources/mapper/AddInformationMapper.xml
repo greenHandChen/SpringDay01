@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.eurekafeign.mapper.AddInformationMapper">
+<select id="findUserOtherInfo" parameterType="Orders" resultType="com.example.eurekafeign.bean.Orders">
+    select * from orders
+    <where>
+        <if test="id!=null and id!=0">
+            and id=#{id}
+        </if>
+        <if test="createtime!=null ">
+            and createtime between #{createtime} and now()
+        </if>
+        <if test="userId!=null ">
+            and user_id=#{userId}
+        </if>
+        <if test="number!=null ">
+            and number=#{number}
+        </if>
+
+    </where>
+
+</select>
+
+<insert id="insertOtherInfo" parameterType="Orders" >
+    insert into orders
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+        <if test="userId!=null and userId!=0">
+            user_id,
+        </if>
+        <if test="number!=null ">
+            number,
+        </if>
+        <if test="createtime!=null ">
+            createtime,
+        </if>
+    </trim>
+        <trim prefix="values(" suffix=")" suffixOverrides=",">
+            <if test="userId!=null and userId!=0">
+                #{userId},
+            </if>
+            <if test="number!=null ">
+                #{number},
+            </if>
+            <if test="createtime!=null ">
+                #{createtime}
+            </if>
+        </trim>
+</insert>
+
+    <delete id="deleteOtherInfo" parameterType="Orders" >
+        delete from orders
+        <where>
+            <if test="id!=null and id!=0">
+                and id=#{id}
+            </if>
+            <if test="createtime!=null ">
+                and createtime between #{createtime} and now()
+            </if>
+            <if test="userId!=null ">
+                and user_id=#{userId}
+            </if>
+
+        </where>
+    </delete>
+
+    <update id="updateOtherInfo" parameterType="Orders" >
+        update orders
+        <set>
+            <trim suffixOverrides=",">
+                <if test="id!=null and id!=0">
+                    id=#{id},
+                </if>
+
+                <if test="number!=null ">
+                    number=#{number},
+                </if>
+                <if test="createtime!=null ">
+                    createtime=#{createtime},
+                </if>
+            </trim>
+        </set>
+        <where>
+            <if test="userId!=null ">
+                user_id=#{userId}
+            </if>
+
+        </where>
+    </update>
+<cache/>
+</mapper>

@@ -1,0 +1,3 @@
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.example.springcloudconsulclient.bean

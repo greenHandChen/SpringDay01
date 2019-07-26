@@ -9,6 +9,6 @@ public interface FeignService {
     @GetMapping("/area/select/{id}")
     Country select(@PathVariable("id")Integer id);
     @PostMapping("/area/insert")
-    String insert(Country country);
+    String insert(@RequestBody Country country);
 
 }

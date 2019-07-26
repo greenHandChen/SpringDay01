@@ -1,0 +1,17 @@
+server:
+  port: 8081
+mybatis:
+  mapper-locations: mapper/*.xml
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis
+    username: root
+    password:
+  application:
+    name: user-service

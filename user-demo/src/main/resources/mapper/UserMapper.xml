@@ -1,0 +1,29 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wzh.mapper.UserMapper">
+    <resultMap id="baseMap" type="com.wzh.pojo.User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="sex" property="sex"/>
+        <result column="birthday" property="birthday"/>
+        <result column="address" property="address"/>
+    </resultMap>
+
+    <select id="findUserById" resultMap="baseMap">
+        select* from user where  id =#{id};
+    </select>
+
+
+    <insert id="insertUser">
+    insert into user(id,username,sex,birthday,address) values (#{id},#{username},#{sex},#{birthday},#{address})
+    </insert>
+
+    <update id="updateUser">
+    update user set id=#{id},username=#{username},sex=#{sex},birthday=#{birthday},address=#{address}
+     where id = #{id}
+    </update>
+    <delete id="deleteUser">
+        delete from user where id=#{id}
+    </delete>
+</mapper>

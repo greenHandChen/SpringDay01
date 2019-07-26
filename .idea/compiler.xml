@@ -8,11 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
         <module name="spring-boot-starter-hello" />
+        <module name="wzh-eureka" />
         <module name="wzh-transaction" />
         <module name="25590-伍智华" />
+        <module name="userInfo-demo" />
+        <module name="user-demo" />
         <module name="wzh-jdbc" />
         <module name="wzh-mybatis" />
         <module name="25590-伍智华-springboot" />
+        <module name="wzh-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,17 +24,29 @@
       <module name="25590-伍智华-springboot" target="1.5" />
       <module name="_25590伍智华springboot" target="1.5" />
       <module name="demo" target="1.5" />
+      <module name="order-demo" target="1.8" />
       <module name="spring-boot-demo" target="1.8" />
       <module name="spring-boot-starter-hello" target="1.5" />
+      <module name="springcloud-user" target="1.8" />
+      <module name="user-demo" target="1.8" />
+      <module name="userInfo-demo" target="1.8" />
+      <module name="wzh-eureka" target="1.8" />
       <module name="wzh-jdbc" target="1.5" />
       <module name="wzh-mybatis" target="1.5" />
       <module name="wzh-transaction" target="1.5" />
+      <module name="wzh-zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="order-demo" options="-parameters" />
       <module name="spring-boot-demo" options="-parameters" />
       <module name="spring-boot-starter-hello" options="" />
+      <module name="springcloud-user" options="-parameters" />
+      <module name="user-demo" options="-parameters" />
+      <module name="userInfo-demo" options="-parameters" />
+      <module name="wzh-eureka" options="-parameters" />
+      <module name="wzh-zuul" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+</head>
+<body>
+<div style="margin: auto;width: 800px;">
+    <div>添加用户</div>
+    <form action="/user/addUser" method="post">
+        <div>用户名：</div>
+        <div><input name="name" type="text"></div>
+        <div>生日：</div>
+        <div><input name="birthday" type="text" placeholder="格式形如：2019-07-20"></div>
+        <div>性别：<label><input name="gender" value="1" type="radio">男</label>
+            <label><input name="gender" value="2" type="radio">女</label></div>
+        <div><input type="submit" value="添加"></div>
+    </form>
+</div>
+</body>
+</html>

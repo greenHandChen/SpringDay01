@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hand.mike.provider.mapper.UserMapper">
+
+    <!--添加用户-->
+    <insert id="addUser" parameterType="User">
+        insert into user_info (id,username,password) values (#{id},#{username},#{password})
+    </insert>
+
+    <!--删除用户-->
+    <delete id="deleteUserById" parameterType="integer">
+        delete from user_info where id = #{id}
+    </delete>
+
+    <!--获取用户-->
+    <select id="findUserById" parameterType="integer" resultType="User">
+        select * from user_info where id = #{id}
+    </select>
+
+    <!--更新用户-->
+    <update id="updateUserById" parameterType="User">
+        update user_info
+        <set>
+            <if test="username != null">
+                username = #{username}
+            </if>
+            <if test="password != null">
+                password = #{password}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--获取所有用户-->
+    <select id="getAllUser" resultType="User">
+        select * from user_info
+    </select>
+</mapper>

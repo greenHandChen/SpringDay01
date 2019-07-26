@@ -1,0 +1,45 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: provider
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/test
+    username: admin
+    password: admin
+#    schema:
+#      - classpath:db/schema1.sql
+#      - classpath:db/schema2.sql
+#    data:
+#      - classpath:db/data1.sql
+#      - classpath:db/data2.sql
+    type: com.zaxxer.hikari.HikariDataSource
+  h2:
+    console:
+      enabled: true #是否展示控制台
+      path: /h2-console #控制台路径
+      settings:
+        web-allow-others: true #允许远程访问
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@localhost:9001/eureka
+  instance:
+    instance-id: provider8001
+    prefer-ip-address: true
+
+info:
+  app.name: provider
+
+mybatis:
+  mapper-locations: classpath:config/mapper/*.xml
+  type-aliases-package: com.hand.mike.provider.domain
+

@@ -1,0 +1,23 @@
+server:
+  port: 9001
+
+eureka:
+  instance:
+    hostname: eurekaserver
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    eviction-interval-timer-in-ms: 3000 #清理间隔(毫秒)
+
+spring:
+  application:
+    name: eureka-server
+  security:
+    basic:
+      enabled: true #开启认证
+    user:
+      name: admin
+      password: admin

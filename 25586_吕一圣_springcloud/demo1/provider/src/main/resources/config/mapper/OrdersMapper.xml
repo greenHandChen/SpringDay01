@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hand.mike.provider.mapper.OrdersMapper">
+
+    <!--添加订单-->
+    <insert id="addOrder" parameterType="Orders">
+        insert into orders (id,user_id,createtime) values (#{id},#{user_id},#{createtime})
+    </insert>
+
+    <!--删除订单-->
+    <delete id="deleteOrderById" parameterType="integer">
+        delete from orders where id = #{id}
+    </delete>
+
+    <!--获取订单-->
+    <select id="getOrderById" parameterType="integer" resultType="Orders">
+        select * from orders where id = #{id}
+    </select>
+
+    <!--更新用户-->
+    <update id="updateOrder" parameterType="Orders">
+        update orders
+        <set>
+            <if test="user_id != null">
+                user_id = #{user_id}
+            </if>
+            <if test="createtime != null">
+                createtime = #{createtime}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--获取所有用户-->
+    <select id="getAllOrders" resultType="Orders">
+        select * from orders
+    </select>
+
+</mapper>

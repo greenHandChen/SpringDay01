@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: orders
+  zipkin:
+    base-url: http://139.9.68.157:9411 #zipkin服务器地址
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1 # 设置抽样采集为100%，默认为0.1，即10%
+
+server:
+  port: 8002
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@localhost:9001/eureka
+  instance:
+    instance-id: orders8002
+    prefer-ip-address: true
+
+info:
+  app.name: orders

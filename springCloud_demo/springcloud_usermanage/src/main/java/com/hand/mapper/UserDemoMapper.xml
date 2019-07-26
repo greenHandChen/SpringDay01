@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace：命名空间，主要用于statement经行分类管理的唯一标识符-->
+<mapper namespace="com.hand.mapper.UserDemoMapper">
+    <select id="queryUserDemos" resultType="com.hand.pojo.UserDemo">
+          select  * from  user_demo
+    </select>
+    <select id="addUserDemos" parameterType="com.hand.pojo.UserDemo" resultType="com.hand.pojo.UserDemo">
+        insert  into user_demo (userId,userName,userSex) values (#{userId},#{userName},#{sex},#{userSex})
+    </select>
+</mapper>
+   
+

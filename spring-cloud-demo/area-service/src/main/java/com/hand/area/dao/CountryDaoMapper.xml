@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.area.dao.CountryDao">
+    <resultMap id="Base" type="country">
+        <id column="country_id" property="countryId"/>
+        <result column="country_name" property="countryName"/>
+
+    </resultMap>
+    <select id="selectById" parameterType="Country" resultMap="Base">
+    select * from country where  country_id=#{countryId}
+    </select>
+</mapper>

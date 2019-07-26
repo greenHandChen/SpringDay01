@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<context id="context1">
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+			<property name="suppressDate" value="false" />
+		</commentGenerator>
+		<jdbcConnection
+				connectionURL="jdbc:mysql://127.0.0.1:3306/cloud?serverTimezone=GMT%2B8&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false"
+				driverClass="com.mysql.jdbc.Driver" password="1234"
+				userId="root" >
+			<property name="nullCatalogMeansCurrent" value="true"/>
+		</jdbcConnection>
+		<javaModelGenerator targetPackage="com.hand.user.entity"
+							targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="com.hand.user.dao"
+						 targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		<javaClientGenerator targetPackage="com.hand.user.dao"
+							 targetProject="src/main/java" type="XMLMAPPER" >
+			<property name="enableSubPackages" value="true"/>
+		</javaClientGenerator>
+		<table  tableName="country"  enableCountByExample="false" enableUpdateByExample="false"
+				enableDeleteByExample="false" enableSelectByExample="false"
+				selectByExampleQueryId="false">
+		</table>
+<!--		<table  tableName="user"  enableCountByExample="false" enableUpdateByExample="false"-->
+<!--				enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--				selectByExampleQueryId="false">-->
+<!--		</table>-->
+<!--		<table  tableName="exampaper"  enableCountByExample="false" enableUpdateByExample="false"-->
+<!--				enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--				selectByExampleQueryId="false">-->
+<!--		</table>-->
+<!--		<table  tableName="exampaper_info"  enableCountByExample="false" enableUpdateByExample="false"-->
+<!--				enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--				selectByExampleQueryId="false">-->
+<!--		</table>-->
+<!--		<table  tableName="question"  enableCountByExample="false" enableUpdateByExample="false"-->
+<!--				enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--				selectByExampleQueryId="false">-->
+<!--		</table>-->
+<!--		<table  tableName="score"  enableCountByExample="false" enableUpdateByExample="false"-->
+<!--				enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--				selectByExampleQueryId="false">-->
+<!--		</table>-->
+<!--		<table  tableName="student"  enableCountByExample="false" enableUpdateByExample="false"-->
+<!--				enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--				selectByExampleQueryId="false">-->
+<!--		</table>-->
+
+	</context>
+</generatorConfiguration>

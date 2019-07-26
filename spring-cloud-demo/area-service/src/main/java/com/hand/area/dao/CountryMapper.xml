@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hand.area.dao.CountryMapper" >
+  <resultMap id="BaseResultMap" type="com.hand.area.entity.Country" >
+    <id column="country_id" property="countryId" jdbcType="INTEGER" />
+    <result column="country_name" property="countryName" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    country_id, country_name
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from country
+    where country_id = #{countryId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from country
+    where country_id = #{countryId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.hand.area.entity.Country" >
+    insert into country (country_id, country_name)
+    values (#{countryId,jdbcType=INTEGER}, #{countryName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.hand.area.entity.Country" >
+    insert into country
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="countryId != null" >
+        country_id,
+      </if>
+      <if test="countryName != null" >
+        country_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="countryId != null" >
+        #{countryId,jdbcType=INTEGER},
+      </if>
+      <if test="countryName != null" >
+        #{countryName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hand.area.entity.Country" >
+    update country
+    <set >
+      <if test="countryName != null" >
+        country_name = #{countryName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where country_id = #{countryId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hand.area.entity.Country" >
+    update country
+    set country_name = #{countryName,jdbcType=VARCHAR}
+    where country_id = #{countryId,jdbcType=INTEGER}
+  </update>
+</mapper>

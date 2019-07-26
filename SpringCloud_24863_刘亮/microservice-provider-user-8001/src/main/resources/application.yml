@@ -1,0 +1,37 @@
+server:
+  port: 8001
+#mybatis
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml  #mybatis配置文件所在路径
+  type-aliases-package: com.ll.com.ll.springcloud.entities   #所有Entity别名
+  mapper-locations: classpath:mybatis/mapper/**/*.xml    #mapper映射文件
+
+spring:
+  application:
+    name: microservicecloud-user
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource    #当前数据源操作类型
+    driver-class-name: com.mysql.jdbc.Driver      #mysql驱动包
+    url: jdbc:mysql://localhost:3306/cloudDB01    #数据库名称
+    username: root
+    password: liucanlie.123
+    dbcp2:
+      min-idle: 5       #数据库连接池的最小维持连接数
+      initial-size: 5   #初始化连接数
+      max-total: 5    #最大连接数
+      max-wait-millis: 200    #等待连接获取的最大超时时间
+
+#客户端注册进eureka服务列表
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    instance-id: microservice-provier-user-8001    #别名
+    prefer-ip-address: true   #显示IP地址
+
+info:
+  app.name: ll-microservicecloud
+  company.name: www.baidu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

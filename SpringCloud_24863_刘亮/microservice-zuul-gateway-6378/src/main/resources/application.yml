@@ -1,0 +1,30 @@
+server:
+  port: 6378
+
+spring:
+  application:
+    name: microservicecloud-zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: microservice-zuul-6378
+    prefer-ip-address: true
+
+info:
+  app.name: ll-microcloud
+  company.name: www.liucanlie.com
+  build.artifactId: $project.artifactId$
+  build.version: $peoject.version$
+
+zuul:
+  routes:
+   mydept.serviceId: microservicecloud-user
+   mydept.path: /myuser/**
+  ignored-services: microservicecloud-user
+  prefix: /ll
+#  ignored-services: "*"  忽略掉所有的微服务名
+
+

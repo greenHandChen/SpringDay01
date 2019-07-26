@@ -1,0 +1,19 @@
+server:
+  port: 80
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: microservice-consumer-dept80   #别名
+    prefer-ip-address: true   #显示IP地址
+
+spring:
+  application:
+    name: dept-consumer
+
+feign:
+  hystrix:
+    enabled: true

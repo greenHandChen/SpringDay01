@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="userinfoext" />
+        <module name="server2" />
+        <module name="server1" />
+        <module name="userinfo" />
+        <module name="cloudzuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client" target="1.8" />
+      <module name="cloudzuul" target="1.8" />
+      <module name="feiginclient" target="1.8" />
+      <module name="feigndemo" target="1.8" />
+      <module name="server1" target="1.8" />
+      <module name="server2" target="1.8" />
+      <module name="user" target="1.8" />
+      <module name="userext" target="1.8" />
+      <module name="userinfo" target="1.8" />
+      <module name="userinfoext" target="1.8" />
+      <module name="usermana" target="1.8" />
+      <module name="zuulclient" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client" options="-parameters" />
+      <module name="cloudzuul" options="-parameters" />
+      <module name="feiginclient" options="-parameters" />
+      <module name="feigndemo" options="-parameters" />
+      <module name="server1" options="-parameters" />
+      <module name="server2" options="-parameters" />
+      <module name="user" options="-parameters" />
+      <module name="userext" options="-parameters" />
+      <module name="userinfo" options="-parameters" />
+      <module name="userinfoext" options="-parameters" />
+      <module name="usermana" options="-parameters" />
+      <module name="zuulclient" options="-parameters" />
+    </option>
+  </component>
+</project>

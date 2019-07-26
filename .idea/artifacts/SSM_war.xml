@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SSM:war">
+    <output-path>$PROJECT_DIR$/SSM/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>SSM</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ChatRobot.war">
+      <element id="artifact" artifact-name="SSM:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: zuul
+server:
+  port: 8080
+zuul:
+  routes:
+    demo:
+      path: /service/**
+      serviceId: service
+      #stripPrefix: false
+    demo2:
+      path: /service2/**
+      serviceId: service2
+      #stripPrefix: false

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/springcloud" />
     <file type="web" url="file://$PROJECT_DIR$/springday02/lizijie" />
   </component>
   <component name="JavaScriptSettings">
@@ -15,6 +16,11 @@
         <option value="$PROJECT_DIR$/mybatisday04/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-starter-hello/pom.xml" />
         <option value="$PROJECT_DIR$/springboot25033lizijie/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud/service/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud/service2/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud/zuul/pom.xml" />
       </list>
     </option>
   </component>

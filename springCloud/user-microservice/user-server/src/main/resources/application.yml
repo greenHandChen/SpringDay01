@@ -1,0 +1,37 @@
+server:
+  port: 8081
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: user-microservice
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: test
+  #数据库配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+  jpa:
+    show-sql: true
+  http:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+    #open-in-view: true
+#      rabbitmq:
+#        host: 192.168.99.100
+#        port: 5672
+#        username: guest
+#        password: guest

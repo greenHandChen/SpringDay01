@@ -1,0 +1,37 @@
+
+server:
+  port: 6001
+
+#服务的名称
+spring:
+  application:
+    name: zuul-gateway
+
+#指定注册中心地址
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
+
+#自定义路由映射
+zuul:
+  routes:
+    user-microservice: /apigateway/user/**
+    extension-microservice: /apigateway/extension/**
+  #统一入口为上面的配置，其他入口忽略
+  ignored-patterns: /*-microservice/**
+  #忽略整个服务，对外提供接口
+  ignored-services: user-microservice
+
+
+#查看路由
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

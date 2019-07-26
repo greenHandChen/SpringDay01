@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zt.eureka_producer_ext.mapper.OrdersMapper" >
+
+    <select id="selectOrdersByName" parameterType="java.lang.String" resultType="Orders">
+        SELECT o.id, o.number, o.createtime, o.note
+        FROM user u, orders o
+        WHERE u.id = o.user_id
+        AND u.username = #{username}
+    </select>
+
+    <select id="selectOrdersById" parameterType="Int" resultType="Orders">
+        SELECT *
+        FROM orders o
+        <where>
+            <if test='id != null || id != " "'>
+                AND o.id = #{id}
+            </if>
+        </where>
+    </select>
+
+</mapper>

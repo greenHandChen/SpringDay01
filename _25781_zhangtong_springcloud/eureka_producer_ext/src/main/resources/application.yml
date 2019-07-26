@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: eureka-producer-ext
+  datasource:
+    url: jdbc:mysql://localhost:3306/nova?autoReconnect=true&allowMultiQueries=true&useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+  client:
+    serviceUrl:
+     defaultZone: http://localhost:9000/eureka/
+
+server:
+  port: 8991
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.zt.eureka_producer_ext.dto

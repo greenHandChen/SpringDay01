@@ -1,0 +1,28 @@
+zuul:
+  routes:
+    area-service:
+      path: /area/**
+      serviceId: area-service
+    user-service:
+      path: /user/**
+      serviceId: user-service
+      stripPrefix: false
+spring:
+  application:
+    name: gateway-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
+ribbon:
+  ConnectTimeout: 1000
+  ReadTimeout: 10000

@@ -1,0 +1,21 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: user-more8002
+  datasource:
+    username: root
+    password: admin
+    url: jdbc:mysql://localhost:3306/exam?serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8761:8761/eureka/
+  instance:
+    instance-id: user-more8002
+mybatis-plus:
+  mapper-locations: mybatis/mappers/*.xml
+  configuration:
+    map-underscore-to-camel-case: true

@@ -1,0 +1,8 @@
+{
+  "timestamp": 1564127408841,
+  "status": 400,
+  "error": "Bad Request",
+  "exception": "org.springframework.http.converter.HttpMessageNotReadableException",
+  "message": "JSON parse error: Unexpected character ('i' (code 105)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('i' (code 105)): was expecting double-quote to start field name\n at [Source: java.io.PushbackInputStream@303043fc; line: 1, column: 4]",
+  "path": "/user"
+}

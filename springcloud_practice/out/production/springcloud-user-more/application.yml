@@ -1,0 +1,11 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: user-more8002
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8761:8761/eureka/
+  instance:
+    instance-id: user-more8002

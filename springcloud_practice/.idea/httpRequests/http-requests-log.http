@@ -1,0 +1,224 @@
+POST http://localhost:8002/userMore
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "id": 3,   "uid": 10,   "moreInfo": "fwe53333335--user10" }
+
+###
+
+GET http://localhost:8002/userMore/1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "id": 1,   "uid": 10,   "moreInfo": "fwe5555555--user10" }
+
+<> 2019-07-26T064131.200.json
+
+###
+
+PUT http://localhost:8002/userMore
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "id": 1,   "uid": 10,   "moreInfo": "fwe5555555--user10" }
+
+###
+
+POST http://localhost:8002/userMore
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "id": 1,   "uid": 10,   "moreInfo": "fwenjfvnwslvnj--user10" }
+
+###
+
+POST http://localhost:8002/userMore
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "id": 2,   "uid": 10,   "moreInfo": "fwenjfvnwslvnj--user10" }
+
+<> 2019-07-26T045605.500.json
+
+###
+
+GET http://localhost:8002/userMore/2
+Accept: */*
+Cache-Control: no-cache
+
+{   "id": 7,   "username": "haha77",   "birthday": null,   "sex": 2,   "address": null }
+
+<> 2019-07-26T045526.200.json
+
+###
+
+DELETE http://localhost:8002/userMore/1
+Accept: */*
+Cache-Control: no-cache
+
+{   "id": 7,   "username": "haha77",   "birthday": null,   "sex": 2,   "address": null }
+
+###
+
+DELETE http://localhost:8002/userMore/1
+Accept: */*
+Cache-Control: no-cache
+
+{   "id": 7,   "username": "haha77",   "birthday": null,   "sex": 2,   "address": null }
+
+<> 2019-07-26T044516.404.json
+
+###
+
+GET http://eureka8761:8002/userMore/1
+Accept: */*
+Cache-Control: no-cache
+
+{   "id": 7,   "username": "haha77",   "birthday": null,   "sex": 2,   "address": null }
+
+<> 2019-07-26T044446.404.json
+
+###
+
+GET http://localhost:8002/userMore/1
+Accept: */*
+Cache-Control: no-cache
+
+{   "id": 7,   "username": "haha77",   "birthday": null,   "sex": 2,   "address": null }
+
+<> 2019-07-26T044045.404.json
+
+###
+
+GET http://localhost:8002/userMore/1
+Accept: */*
+Cache-Control: no-cache
+
+{   "id": 7,   "username": "haha77",   "birthday": null,   "sex": 2,   "address": null }
+
+<> 2019-07-26T044001.404.json
+
+###
+
+GET http://localhost:8002/userMore/1
+Accept: */*
+Cache-Control: no-cache
+
+{   "id": 7,   "username": "haha77",   "birthday": null,   "sex": 2,   "address": null }
+
+<> 2019-07-26T043732.404.json
+
+###
+
+GET http://localhost:8001/userMore/1
+Accept: */*
+Cache-Control: no-cache
+
+{   "id": 7,   "username": "haha77",   "birthday": null,   "sex": 2,   "address": null }
+
+###
+
+DELETE http://localhost:8001/user/7
+Accept: */*
+Cache-Control: no-cache
+
+{   "id": 7,   "username": "haha77",   "birthday": null,   "sex": 2,   "address": null }
+
+###
+
+PUT http://localhost:8001/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "id": 7,   "username": "haha77",   "birthday": null,   "sex": 2,   "address": null }
+
+###
+
+PUT http://localhost:8001/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "id": 7,   "username": "haha77",   "birthday": null,   "sex": 2,   "address": null }
+
+<> 2019-07-26T035559.500.json
+
+###
+
+PUT http://localhost:8001/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "id": 7,   "username": "haha77",   "birthday": null,   "sex": 2,   "address": null }
+
+<> 2019-07-26T035332.500.json
+
+###
+
+POST http://localhost:8001/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "id": 7,   "username": "haha7",   "birthday": null,   "sex": 2,   "address": null }
+
+###
+
+GET http://localhost:8001/user/1
+Accept: */*
+Cache-Control: no-cache
+
+{ id: 7, username: "haha3", birthday: null, sex: 2, address: null }
+
+<> 2019-07-26T035203.200.json
+
+###
+
+POST http://localhost:8001/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ id: 7, username: "haha3", birthday: null, sex: 2, address: null }
+
+<> 2019-07-26T035008.400.json
+
+###
+
+POST http://localhost:8001/user
+Accept: application/json
+Cache-Control: no-cache
+
+{ id: 7, username: "haha3", birthday: null, sex: 2, address: null }
+
+<> 2019-07-26T034610.415.json
+
+###
+
+POST http://localhost:8001/user
+Accept: */*
+Cache-Control: no-cache
+
+{ id: 7, username: "haha3", birthday: null, sex: 2, address: null }
+
+<> 2019-07-26T034454.415.json
+
+###
+
+POST http://localhost:8001/user
+Accept: */*
+Cache-Control: no-cache
+
+{ id: 7, username: "haha3", birthday: null, sex: 2, address: null }
+
+<> 2019-07-26T024916.500.json
+
+###
+

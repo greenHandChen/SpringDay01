@@ -1,0 +1,8 @@
+{
+  "timestamp": 1564131365951,
+  "status": 500,
+  "error": "Internal Server Error",
+  "exception": "org.springframework.dao.DuplicateKeyException",
+  "message": "\r\n### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'PRIMARY'\r\n### The error may involve zbh.hand.springcloudusermore.dao.UserMoreMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_more   ( id,  `uid`,  more_info )  VALUES   ( ?,  ?,  ? )\r\n### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'PRIMARY'\n; SQL []; Duplicate entry '2' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'PRIMARY'",
+  "path": "/userMore"
+}

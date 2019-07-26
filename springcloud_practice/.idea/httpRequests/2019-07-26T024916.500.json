@@ -1,0 +1,8 @@
+{
+  "timestamp": 1564123756537,
+  "status": 500,
+  "error": "Internal Server Error",
+  "exception": "org.mybatis.spring.MyBatisSystemException",
+  "message": "nested exception is org.apache.ibatis.reflection.ReflectionException: Could not set property 'id' of 'class entity.User' with value '1154644838927892482' Cause: java.lang.IllegalArgumentException: argument type mismatch",
+  "path": "/user"
+}

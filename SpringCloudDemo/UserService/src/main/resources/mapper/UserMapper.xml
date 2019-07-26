@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.user.userservice.mapper.UserMapper">
+    <select id="findUserByName" parameterType="String" resultType="com.user.userservice.pojo.User">
+        SELECT * FROM user WHERE name = #{name} and is_del = 0
+    </select>
+        <!-- 逻辑删除   -->
+    <select id="deleteUserInfoByName" parameterType="String" resultType="String">
+           update user set is_del = 1 where name = #{name}
+    </select>
+            <!-- 执行删除操作之前，查看该信息是否已经做逻辑删除处理   -->
+    <select id="findUserIsDel" parameterType="String" resultType="int">
+        select is_del from user where name = #{name}
+    </select>
+    <select id="insertUserInfo" parameterType="com.user.userservice.pojo.User">
+        insert ignore into user(name,sex,age,address,is_del) values(#{name},#{sex},#{age},#{address},0)
+         where #{name} != (select name from user where name=#{name})
+    </select>
+</mapper>

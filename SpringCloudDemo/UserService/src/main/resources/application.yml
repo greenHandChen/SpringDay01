@@ -1,0 +1,24 @@
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1000/eureka/
+server:
+  port: 1001
+
+spring:
+  application:
+    name: service-userclient
+# datasource
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springcloud?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    username: root
+    password: 123456
+
+# mybatis
+mybatis:
+  type-aliases-package: com.user.userservice.pojo
+  mapper-locations: classpath:mapper/*.xml
+
+

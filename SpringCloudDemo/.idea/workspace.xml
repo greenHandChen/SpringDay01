@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dfbbe28b-8ad4-4852-a42c-25c92ef95942" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/eurekaserver/target/" />
+    <ignored path="$PROJECT_DIR$/serverzuul/target/" />
+    <ignored path="$PROJECT_DIR$/UserInfoQueryAndUpdate/target/" />
+    <ignored path="$PROJECT_DIR$/userservice/target/" />
+    <ignored path="$PROJECT_DIR$/FeignCustomer/target/" />
+    <ignored path="$PROJECT_DIR$/Zuul/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserService/src/main/resources/mapper/UserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="16" column="68" lean-forward="true" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserService/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Zuul/src/main/java/com/cloud/zuul/ZuulApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Zuul/src/main/java/com/cloud/zuul/util/MyFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/controller/CustomerUserServiceController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserService/src/main/java/com/user/userservice/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/interfaceforfeign/ICustomerUserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="17" column="45" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/HystrixForFeign/CustomerUserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>8080</find>
+      <find>4000</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/eurekaserver/src/main/java/com/eureka/eurekaserver/EurekaserverApplication.java" />
+        <option value="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/serverzuul/src/main/java/com/zuul/serverzuul/ServerzuulApplication.java" />
+        <option value="$PROJECT_DIR$/serverzuul/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ServiceZuul/src/main/java/com/zuul/serverzuul/util/MyFilyer.java" />
+        <option value="$PROJECT_DIR$/ServiceZuul/src/main/java/com/zuul/serverzuul/pojo/User.java" />
+        <option value="$PROJECT_DIR$/UserInfoQueryAndUpdate/src/main/java/com/user/userinfoqueryandupdate/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/UserInfoQueryAndUpdate/src/main/resources/config/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/UserInfoQueryAndUpdate/src/main/resources/application-prod.properties" />
+        <option value="$PROJECT_DIR$/UserInfoQueryAndUpdate/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/userservice/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/userservice/src/main/java/com/user/userservice/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/userservice/src/main/java/com/user/userservice/pojo/User.java" />
+        <option value="$PROJECT_DIR$/userservice/src/main/java/com/user/userservice/UserController.java" />
+        <option value="$PROJECT_DIR$/userservice/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/userservice/src/main/java/com/user/userservice/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/userservice/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/userservice/src/main/java/com/user/userservice/UserserviceApplication.java" />
+        <option value="$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/FeigncustomerApplication.java" />
+        <option value="$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/contriller/CustomerUserServiceController.java" />
+        <option value="$PROJECT_DIR$/ServiceZuul/src/main/java/com/zuul/serverzuul/util/MyFilter.java" />
+        <option value="$PROJECT_DIR$/ServiceZuul/src/main/java/com/zuul/serverzuul/ServerzuulApplication.java" />
+        <option value="$PROJECT_DIR$/UserService/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ServiceZuul/pom.xml" />
+        <option value="$PROJECT_DIR$/EurekaServer/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ServiceZuul/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/Zuul/src/main/java/com/cloud/zuul/ZuulApplication.java" />
+        <option value="$PROJECT_DIR$/FeignCustomer/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/UserService/src/main/java/com/user/userservice/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/HystrixForFeign/CustomerUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/UserService/src/main/java/com/user/userservice/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/UserService/src/main/java/com/user/userservice/pojo/User.java" />
+        <option value="$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/pojo/User.java" />
+        <option value="$PROJECT_DIR$/UserService/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/Zuul/src/main/java/com/cloud/zuul/util/MyFilter.java" />
+        <option value="$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/controller/CustomerUserServiceController.java" />
+        <option value="$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/interfaceforfeign/ICustomerUserService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="FeignCustomer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="FeignCustomer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="FeignCustomer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="FeignCustomer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="FeignCustomer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="FeignCustomer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="FeignCustomer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="feigncustomer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="FeignCustomer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="feigncustomer" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="FeignCustomer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="feigncustomer" type="462c0819:PsiDirectoryNode" />
+              <item name="HystrixForFeign" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="FeignCustomer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="feigncustomer" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaceforfeign" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="FeignCustomer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="UserService" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="UserService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="UserService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="UserService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="UserService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="UserService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="UserService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="userservice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="UserService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="userservice" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="UserService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="zuul" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Zuul/src/main/java/com/cloud/zuul" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.5038241" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.user.userinfoqueryandupdate" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cloud.feigncustomer.pojo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEA\SpringCloudDemo\Zuul\src\main\java\com\cloud\zuul" />
+      <recent name="E:\IDEA\SpringCloudDemo\Zuul\src\main\resources" />
+      <recent name="E:\IDEA\SpringCloudDemo\UserInfoQueryAndUpdate\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.25965998" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.FeigncustomerApplication">
+    <configuration name="EurekaserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="EurekaServer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eureka.eurekaserver.EurekaserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeigncustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="FeignCustomer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.feigncustomer.FeigncustomerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="UserService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.user.userservice.UserserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Zuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.zuul.ZuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.EurekaserverApplication" />
+      <item itemvalue="Spring Boot.FeigncustomerApplication" />
+      <item itemvalue="Spring Boot.UserserviceApplication" />
+      <item itemvalue="Spring Boot.ZuulApplication" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfbbe28b-8ad4-4852-a42c-25c92ef95942" name="Default Changelist" comment="" />
+      <created>1564110895188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564110895188</updated>
+      <workItem from="1564110897974" duration="10645000" />
+      <workItem from="1564129154273" duration="11267000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21912000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info id="Designer" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.25340393" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.3207856" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.23404256" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32980332" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info id="Designer" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.25340393" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.3207856" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.23404256" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32980332" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/EurekaServer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserInfoQueryAndUpdate/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/UserInfoQueryAndUpdate/src/main/resources/application-dev.properties" />
+    <entry file="file://$PROJECT_DIR$/UserInfoQueryAndUpdate/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/UserInfoQueryAndUpdate/src/main/java/com/user/userinfoqueryandupdate/pojo/MyUser.java" />
+    <entry file="file://$PROJECT_DIR$/UserInfoQueryAndUpdate/src/main/resources/application-prod.properties" />
+    <entry file="file://$PROJECT_DIR$/UserInfoQueryAndUpdate/src/main/resources/mapper/UserMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/UserInfoQueryAndUpdate/src/main/java/com/user/userinfoqueryandupdate/mapper/UserMapper.java" />
+    <entry file="file://$PROJECT_DIR$/UserInfoQueryAndUpdate/src/main/java/com/user/userinfoqueryandupdate/UserinfoqueryandupdateApplication.java" />
+    <entry file="file://$PROJECT_DIR$/UserService/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-672" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeignCustomer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/interface/CustomerUserService.kt" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar!/com/netflix/zuul/ZuulFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServiceZuul/src/main/java/com/zuul/serverzuul/util/MyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EurekaServer/src/main/java/com/eureka/eurekaserver/EurekaserverApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServiceZuul/src/main/java/com/zuul/serverzuul/ServerzuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EurekaServer/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServiceZuul/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServiceZuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/FeigncustomerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeignCustomer/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserService/src/main/java/com/user/userservice/UserserviceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserService/src/main/java/com/user/userservice/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserService/src/main/java/com/user/userservice/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="68" column="5" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserService/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="68" lean-forward="true" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserService/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zuul/src/main/java/com/cloud/zuul/ZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zuul/src/main/java/com/cloud/zuul/util/MyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserService/src/main/java/com/user/userservice/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/controller/CustomerUserServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/HystrixForFeign/CustomerUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeignCustomer/src/main/java/com/cloud/feigncustomer/interfaceforfeign/ICustomerUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|Zuul</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5038241" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

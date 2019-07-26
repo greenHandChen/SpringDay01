@@ -1,0 +1,18 @@
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1000/eureka/
+server:
+  port: 4000
+spring:
+  application:
+    name: service-zuul
+#zuul:
+#  routes:
+#    api-a:
+#      path: /api-a/**
+#      serviceId: service-userclient
+#    api-b:
+#      path: /api-b/**
+#      serviceId:  feign-customer

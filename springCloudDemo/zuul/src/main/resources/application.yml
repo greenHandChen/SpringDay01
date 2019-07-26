@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: zuul
+server:
+  port: 8080
+
+zuul:
+  routes:
+    hello1:
+      path: /service1/**
+      serviceId: service
+      stripPrefix: false
+    hello2:
+      path: /service2/**
+      serviceId: service2
+      stripPrefix: false
+
+#hystrix:
+#  commad:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 10000
+#
+#
+#ribbon:
+#  ConnectTimeout: 1000
+#  ReadTimeout: 10000

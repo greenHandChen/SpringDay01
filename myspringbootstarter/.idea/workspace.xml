@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b380d077-7d4c-47c4-a11f-4ac1966b46aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../25070-刘鑫/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25070-刘鑫/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25070-刘鑫/mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25070-刘鑫/mybatis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25070-刘鑫/mybatis/src/main/java/com/lx/hand/TestFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../25070-刘鑫/mybatis/src/main/java/com/lx/hand/TestFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25070-刘鑫/mybatis/src/main/java/com/lx/hand/domain/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/../25070-刘鑫/mybatis/src/main/java/com/lx/hand/domain/Orders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25070-刘鑫/mybatis/src/main/java/com/lx/hand/mapper/OrdersExtMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25070-刘鑫/mybatis/src/main/java/com/lx/hand/mapper/OrdersExtMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25070-刘鑫/mybatis/src/main/resources/config/mybatis/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25070-刘鑫/mybatis/src/main/resources/config/mybatis/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25070-刘鑫/mybatis/target/classes/com/lx/hand/TestFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../25070-刘鑫/mybatis/target/classes/com/lx/hand/TestFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25070-刘鑫/mybatis/target/classes/com/lx/hand/domain/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/../25070-刘鑫/mybatis/target/classes/com/lx/hand/domain/Orders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25070-刘鑫/mybatis/target/classes/config/mybatis/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25070-刘鑫/mybatis/target/classes/config/mybatis/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyBatisDay02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatisDay02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyBatisDay02_02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatisDay02_02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyBatisDay02_02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatisDay02_02/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyBatisDay02_02/target/classes/config/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatisDay02_02/target/classes/config/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringSum/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringSum/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonServiceAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonServiceAutoConfiguration.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,11 +18,11 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="352">
               <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
@@ -43,45 +31,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
+            <state relative-caret-position="286">
               <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding>
-                <element signature="e#335#336#0" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-              <folding>
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+              <folding>
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonServiceAutoConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state relative-caret-position="161">
+              <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.factories">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="111" selection-start-column="111" selection-end-column="111" />
+              <caret column="111" lean-forward="true" selection-start-column="111" selection-end-column="111" />
             </state>
           </provider>
         </entry>
@@ -115,9 +91,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonProperties.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonServiceAutoConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" />
         <option value="$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonServiceAutoConfiguration.java" />
       </list>
     </option>
   </component>
@@ -129,11 +105,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="134" />
-    <option name="y" value="41" />
-    <option name="width" value="1042" />
-    <option name="height" value="703" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="401" />
+    <option name="y" value="23" />
+    <option name="width" value="1122" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -141,7 +117,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,17 +169,34 @@
               <item name="lx" type="462c0819:PsiDirectoryNode" />
               <item name="helloworld" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="myspringbootstarter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myspringbootstarter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myspringbootstarter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myspringbootstarter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../25070-刘鑫-springboot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ideaworkspace/feigndemo1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -234,29 +226,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563887839385</updated>
-      <workItem from="1563887843634" duration="1450000" />
+      <workItem from="1563887843634" duration="2158000" />
+      <workItem from="1563928244922" duration="1464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1450000" />
+    <option name="totallyTimeSpent" value="3622000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="134" y="41" width="1042" height="703" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33706722" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25416037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.8330404" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -264,15 +252,21 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.8330404" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,37 +275,28 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="352">
           <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state relative-caret-position="286">
           <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonServiceAutoConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="286">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -319,19 +304,16 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.factories">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="111" selection-start-column="111" selection-end-column="111" />
+          <caret column="111" lean-forward="true" selection-start-column="111" selection-end-column="111" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/helloworld/PersonServiceAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="161">
+          <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
           <folding>
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.user.dao.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.hand.user.domain.User">
+        <id property="userId" column="user_id"/>
+        <result property="username" column="username"/>
+        <result property="sex" column="sex"/>
+        <result property="email" column="email"/>
+        <result property="countryId" column="country_id"/>
+    </resultMap>
+
+
+    <select id="findAll" resultMap="BaseResultMap">
+       select * from `user`
+   </select>
+
+    <select id="findById" parameterType="int" resultMap="BaseResultMap">
+       select * from `user` where user_id = #{id}
+   </select>
+
+    <insert id="save" parameterType="com.hand.user.domain.User">
+        insert into `user`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="username != null">
+                username,
+            </if>
+            <if test="sex != null">
+                sex,
+            </if>
+            <if test="email != null">
+                email,
+            </if>
+            <if test="countryId != null">
+                country_id,
+            </if>
+        </trim>
+         values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="username != null">
+                #{username},
+            </if>
+            <if test="sex != null">
+                #{sex},
+            </if>
+            <if test="email != null">
+                #{email},
+            </if>
+            <if test="countryId != null">
+                #{countryId},
+            </if>
+        </trim>
+    </insert>
+
+    <delete id="deleteById" parameterType="int">
+        delete from `user` where user_id = #{id}
+    </delete>
+
+    <update id="updateById">
+        update `user`
+        <set>
+            <if test="username != null">
+                username=#{username},
+            </if>
+            <if test="sex != null">
+                sex=#{sex},
+            </if>
+            <if test="email != null">
+                email=#{email},
+            </if>
+        </set>
+        where user_id = #{userId}
+    </update>
+
+</mapper>

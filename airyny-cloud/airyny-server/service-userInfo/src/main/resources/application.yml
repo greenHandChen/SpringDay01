@@ -1,0 +1,28 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8181/eureka/
+server:
+  port: 8765
+  tomcat:
+    max-threads: 50
+spring:
+  application:
+    name: service-userInfo
+  datasource:
+    url: jdbc:mysql://localhost:3306/jdbc_test?characterEncoding=utf-8
+    password: root
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: mapper/*.xml
+#feign:
+#   hystrix:
+#     enabled: true
+#hystrix:
+#   command:
+#     default:
+#       execution:
+#        isolation:
+#         thread:
+#          timeoutInMilliseconds: 4000

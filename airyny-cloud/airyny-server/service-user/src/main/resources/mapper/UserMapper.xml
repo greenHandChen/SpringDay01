@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
+注意：使用mapper代理方法开发，namespace有特殊重要的作用
+-->
+<mapper namespace="com.airyny.service.user.mapper.UserMapper">
+
+    <sql id="Condition_Where_Clause">
+        <!--自动生成[2019-01-25 10:48:33]-->
+        <where>
+            <if test="condition.id != null">
+                and id = #{condition.id,jdbcType=INTEGER}
+            </if>
+            <if test="condition.username != null">
+                and username = #{condition.username,jdbcType=VARCHAR}
+            </if>
+            <if test="condition.address != null">
+                and address like concat("%", #{condition.address,jdbcType=VARCHAR},"%")
+            </if>
+        </where>
+    </sql>
+    <sql id="Base_Column_List">
+        <!--自动生成[2019-01-25 10:48:33]-->
+        id, house_id, facility_id
+    </sql>
+    <select id="selectAll" resultType="com.airyny.service.user.model.User">
+        SELECT* FROM USER
+    </select>
+
+    <select id="findUserById" parameterType="java.lang.Integer" resultType="com.airyny.service.user.model.User">
+        SELECT* FROM USER WHERE id = #{id}
+    </select>
+
+    <select id="findUserByUserName" parameterType="java.lang.String" resultType="com.airyny.service.user.model.User">
+        SELECT* FROM USER WHERE username like ${value}
+    </select>
+
+
+    <delete id="delUserById" parameterType="java.lang.Integer" >
+        delete from user
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <update id="updateByPrimaryKey" parameterType="com.airyny.service.user.model.User">
+        <!--自动生成[2019-01-25 10:48:33]-->
+        update USER
+        set address = #{address,jdbcType=INTEGER},
+        username = #{username,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <insert id="insertSelective" parameterType="com.airyny.service.user.model.User">
+        <!--自动生成[2019-01-25 10:48:33]-->
+        insert into USER
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+
+            <if test="address != null">
+                address,
+            </if>
+            <if test="username != null">
+                username,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="address != null">
+                #{address,jdbcType=INTEGER},
+            </if>
+            <if test="username != null">
+                #{username,jdbcType=VARCHAR},
+            </if>
+
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.airyny.service.user.model.User">
+        <!--自动生成[2019-01-25 10:48:33]-->
+        update user
+        <set>
+            <if test="address != null">
+                address = #{address,jdbcType=INTEGER},
+            </if>
+            <if test="username != null">
+                username = #{username,jdbcType=VARCHAR},
+            </if>
+        </set>
+
+
+
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+
+
+</mapper>

@@ -7,32 +7,49 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="25606_向永烨_springboot" />
+        <module name="config-client" />
+        <module name="config-server" />
+        <module name="eureka-server" />
         <module name="jdbc-demo" />
         <module name="mybatis-demo" />
+        <module name="service-user" />
+        <module name="service-userInfo" />
+        <module name="spring-cloud-demo" />
         <module name="spring_boot_starter_hello" />
         <module name="transaction-template" />
         <module name="transcation-server" />
         <module name="yonye-mybatis" />
+        <module name="zuul-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="25606-向永烨" target="1.5" />
       <module name="25606_向永烨_springboot" target="1.8" />
       <module name="_25606_向永烨" target="1.5" />
+      <module name="airyny-cloud" target="1.8" />
+      <module name="airyny-server" target="1.8" />
       <module name="boot-start" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-common" target="1.8" />
+      <module name="config-server" target="1.8" />
       <module name="demo" target="1.5" />
+      <module name="eureka-server" target="1.8" />
       <module name="hello-start" target="1.8" />
       <module name="hello-test" target="1.8" />
       <module name="jdbc-demo" target="1.7" />
       <module name="mybatis-demo" target="1.5" />
       <module name="mybatis-spring" target="1.5" />
+      <module name="service-user" target="1.8" />
+      <module name="service-userInfo" target="1.8" />
       <module name="spring-boot-demo" target="1.8" />
+      <module name="spring-cloud-demo" target="1.8" />
       <module name="spring-demo" target="1.7" />
       <module name="spring_boot_starter_hello" target="1.7" />
       <module name="transaction-template" target="8" />
       <module name="transcation-server" target="1.7" />
       <module name="transcationtest" target="1.7" />
       <module name="yonye-mybatis" target="1.5" />
+      <module name="zuul-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

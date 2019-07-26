@@ -1,0 +1,25 @@
+server:
+  port: 8083
+
+
+spring:
+  application:
+    name: user-service # 应用名称，会在Eureka中显示
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/java_web?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka,http://127.0.0.1:10087/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+mybatis:
+  type-aliases-package: com.txz.user.pojo

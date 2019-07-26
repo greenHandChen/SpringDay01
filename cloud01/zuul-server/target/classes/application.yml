@@ -1,0 +1,22 @@
+server:
+  port: 10010
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+zuul:
+  routes:
+    user-service:
+      path: /user/**
+      serviceId: user-service
+      strip-prefix: false
+    ignored-service:
+      - consumer-service
+spring:
+  application:
+    name: zull
+
+    # url: http://127.0.0.1:8083
+#    path: /user-service/**
+#    serviceId: user-service
+

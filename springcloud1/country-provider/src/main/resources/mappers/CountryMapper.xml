@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.masirhh.countryprovider.mappers.CountryMapper">
+
+
+
+    <select id="findAll" resultType="com.masirhh.countryprovider.beans.Country">
+        select * from `country`
+    </select>
+
+    <select id="findCountryById" resultType="com.masirhh.countryprovider.beans.Country">
+        <if test="#{id}!=null">
+            select * from country where id =#{id}
+        </if>
+    </select>
+
+    <insert id="addCountry" parameterType="com.masirhh.countryprovider.beans.Country">
+        insert into country(countryname) values (#{countryname})
+    </insert>
+
+    <update id="updateCountry" parameterType="com.masirhh.countryprovider.beans.Country">
+        <if test="#{countryname!=null}">
+            update country set countryname=#{countryname} where id=#{id}
+        </if>
+    </update>
+
+    <delete id="deleteCountry" parameterType="java.lang.Integer">
+        delete from country where id=#{id}
+    </delete>
+
+</mapper>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.masirhh.userprovider.mappers.UserMapper">
+
+    <select id="findUserById" resultType="com.masirhh.userprovider.beans.User" parameterType="java.lang.Integer">
+        select * from `user` where id = #{id}
+    </select>
+
+    <select id="findAll" resultType="com.masirhh.userprovider.beans.User">
+        select * from `user`
+    </select>
+
+    <insert id="addUser" parameterType="com.masirhh.userprovider.beans.User">
+        insert into `user`(username,countryid) values (#{username},#{countryid})
+    </insert>
+
+    <update id="updateUser" parameterType="com.masirhh.userprovider.beans.User">
+        update `user` set
+        <if test="#{username}!=null">
+            username = #{username},
+        </if>
+        <if test="#{countryid}!=null">
+            countryid=#{countryid}
+        </if>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="java.lang.Integer">
+        delete from `user` where id=#{id}
+    </delete>
+
+
+</mapper>

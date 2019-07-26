@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.user.mapper.UserMapper">
+
+    <select id="getUser" parameterType="int" resultType="user">
+        SELECT id,username,birthday,sex,address from user where id = #{id}
+    </select>
+
+    <insert id="insertUser" parameterType="user">
+        INSERT into user(username,birthday,sex,address) values(#{userName},#{birthday},#{sex},#{address})
+    </insert>
+
+    <update id="updateUser" parameterType="user">
+        Update user
+        set
+          username=#{userName},
+          birthday=#{birthday},
+          sex=#{sex},
+          address=#{address}
+        where
+          id = #{id}
+    </update>
+
+    <delete id="deleteUserById" parameterType="int">
+        DELETE from USER where id=#{id}
+    </delete>
+
+</mapper>

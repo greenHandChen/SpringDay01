@@ -1,0 +1,40 @@
+server:
+  port: 9000
+# 配置eureka服务端地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    prefer-ip-address: true #使用ip进行注册
+zuul:
+  routes:
+    hand-info: /info/**
+    hand-user: /user/**
+  #   这里配置不让自动配置的服务，即不想对外提供接口只供服务间调用的,这是一个集合所以参数前有一个-
+  ignored-services:
+    - hand-eureka
+spring:
+  application:
+    name: hand-zuul
+ribbon:
+  ConnectTimeout: 2000 # ribbon链接超时时长
+  ReadTimeout: 4000   # ribbon读取超时时长
+  MaxAutoRetries: 0 # 当前服务重试次数
+  MaxAutoRetriesNextServer: 0 # 切换服务重试次数
+#ribbon是用来获取服务地址的，hystrix是用来控制在向服务发送请求后的响应的
+#  下面是hystrix的配置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+      circuitBreaker:
+        #        熔断阈值的大小，默认为20
+        requestVolumeThreshold: 20
+        #        过多长时间，熔断器再次检测是否开启，默认为5000，即5s钟
+        sleepWindowInMilliseconds: 5000
+        #        错误率，默认50%
+        errorThresholdPercentage: 50

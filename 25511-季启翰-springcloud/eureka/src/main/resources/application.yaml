@@ -1,0 +1,15 @@
+server:
+  port: 10086
+eureka:
+  # eureka是服务注册中心，同时作为集群的时候也是一个服务生产者，所以需要配置把自己注册到哪一个eureka中心区被管理，这里注册到自己身上
+  #  当配置集群时，则让他们相互注册，使用同样的id（spring.application.name）即可
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:${server.port}/eureka
+    #      只用一个注册中心，所以就不让它再注册到别的eureka上面了
+    register-with-eureka: false
+    fetch-registry: false
+spring:
+  application:
+    #    注册到在注册中心时的名字
+    name: hand-euraka

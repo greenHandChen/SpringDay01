@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: gateway
+
+server:
+  port: 9527
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: gateway
+    prefer-ip-address: true
+
+#  http://zuul.com:9527/ticketservice/get
+
+zuul:
+  routes:
+    myticket.serviceId: microservice-account
+    myticket.path: /hand/**
+  ignored-services: microservice-account
+#  prefix: /hand

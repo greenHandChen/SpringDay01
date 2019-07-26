@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xyh.demo.Mapper.AddressMapper">
+    <resultMap id="AddressRstMap" type="com.xyh.demo.Entity.Address">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId" />
+        <result column="province" property="province" />
+        <result column="city" property="city" />
+        <result column="region" property="region" />
+        <result column="street" property="street" />
+    </resultMap>
+
+    <select id="findAll" resultMap="AddressRstMap">
+        select * from address
+    </select>
+
+    <select id="findById" parameterType="Integer" resultMap="AddressRstMap">
+        select * from address where id=#{id}
+    </select>
+
+    <select id="findByUserId" parameterType="Integer" resultMap="AddressRstMap">
+        select * from address where user_id=#{userId}
+    </select>
+
+    <insert id="create" parameterType="com.xyh.demo.Entity.Address">
+        <selectKey keyProperty="id" resultType="Integer" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert address(id,user_id,province,city,region,street)
+            values(#{id},#{userId},#{province},#{city},#{region},#{street})
+    </insert>
+
+    <update id="update" parameterType="com.xyh.demo.Entity.Address">
+        update address set province=#{province},city=#{city},region=#{region},street=#{street}
+            where id=#{id}
+    </update>
+
+    <delete id="delete" parameterType="Integer">
+        delete from address where id=#{id}
+    </delete>
+</mapper>

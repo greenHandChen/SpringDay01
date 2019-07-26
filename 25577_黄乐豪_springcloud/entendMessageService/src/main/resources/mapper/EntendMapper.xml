@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="huanglehao.study.entendmessageservice.mapper.EntendMapper">
+
+    <select id="selectEntendList" resultType="huanglehao.study.pojomodul.entity.Entend">
+        SELECT * FROM entend
+    </select>
+
+    <insert id="addEntend" parameterType="huanglehao.study.pojomodul.entity.Entend">
+        insert into entend(user_id,message) values (#{userId},#{message});
+    </insert>
+
+    <update id="updateEntend" parameterType="huanglehao.study.pojomodul.entity.Entend">
+        update entend e set e.message=#{message} ,e.user_id=#{userId} where e.id=#{id}
+    </update>
+
+    <delete id="deleteById" parameterType="int">
+        delete from  entend where  id=#{id}
+    </delete>
+
+    <!--<insert id="insertUser" parameterType="huanglehao.study.po.User">
+        <selectKey keyProperty="id" resultType="int" order="AFTER">
+            select LAST_INSERT_ID();
+        </selectKey>
+        insert into user(username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address});
+    </insert>
+
+    &lt;!&ndash;定义sql片段&ndash;&gt;
+    <sql id="whereCulomn">
+        <if test="user != null">
+            <if test="user.username != null and user.username != ''">
+                username like '%${user.username}%'
+            </if>
+            <if test="user.sex != null and user.sex != ''">
+                and sex = #{user.sex}
+            </if>
+        </if>
+        <if test="idList != null">
+            and id in (1,2,10)
+            /*collection 表示pojo中集合属性名称*/
+            <foreach collection="idList" item="id" open="and id in (" close=")" separator=",">
+                #{id}
+            </foreach>
+        </if>
+    </sql>
+    &lt;!&ndash;综合查询用户列表&ndash;&gt;
+    <select id="findUserList" parameterType="huanglehao.study.po.UserQueryVo" resultType="huanglehao.study.po.User">
+        select * from user
+         where
+        <include refid="whereCulomn"></include>
+
+    </select>
+
+    &lt;!&ndash;综合查询用户总数&ndash;&gt;
+    <select id="findUserCount" parameterType="huanglehao.study.po.UserQueryVo" resultType="int">
+         select count(*) from user
+          where
+          <include refid="whereCulomn"></include>
+
+    </select>
+
+    &lt;!&ndash;使用resultMap&ndash;&gt;
+    <resultMap id="userResultMap" type="huanglehao.study.po.User">
+        <id column="id_" property="id"></id>
+        <result column="username_" property="username"></result>
+        <result column="sex_" property="sex"></result>
+    </resultMap>
+    <select id="findUserResultMap" parameterType="int" resultMap="userResultMap">
+        select id id_,username username_,sex sex_ from user where id =#{id}
+    </select>
+-->
+</mapper>

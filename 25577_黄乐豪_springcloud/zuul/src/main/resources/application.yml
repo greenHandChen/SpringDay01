@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: zuul
+server:
+  port: 8080
+zuul:
+  routes:
+    userManager:
+      path: /userManager/**
+      serviceId: userManagerService
+      stripPrefix: false
+    extendMessage:
+      path: /entendMessage/**
+      serviceId: entendManagerService
+      stripPrefix: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone=http://localhost:8761/eureka/:

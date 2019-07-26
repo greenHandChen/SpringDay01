@@ -18,7 +18,7 @@ import java.util.List;
  * @Description:
  */
 @RestController
-@RequestMapping("/user/other")
+@RequestMapping("/other")
 public class OtherController {
     @Autowired
     OtherService otherService;

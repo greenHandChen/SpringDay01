@@ -20,7 +20,7 @@ import java.util.List;
  * @Description:
  */
 @RestController
-@RequestMapping("/other")
+@RequestMapping("/user/other")
 public class OtherController {
 
     @Autowired
@@ -31,10 +31,10 @@ public class OtherController {
         return otherService.get(id);
     }
 
-//    @PostMapping
-//    public ResponseStatus add(@RequestBody Other other) {
-//        return otherService.add(other);
-//    }
+    @PostMapping
+    public ResponseStatus add(@RequestBody Other other) {
+        return otherService.add(other);
+    }
 
     @DeleteMapping("/{id}")
     public ResponseStatus delete(@PathVariable("id") Long id) {

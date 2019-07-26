@@ -30,7 +30,7 @@ public class UserController {
     @Autowired
     private IUserService userService;
 
-    @RequestMapping(value = "/user", method = RequestMethod.GET)
+    @GetMapping("/user")
     public String queryUsers(@RequestParam(name = "username", required = false, defaultValue = "invoker") String username) throws JsonProcessingException {
         /**
          * @description: 根据用户名模糊查询用户
@@ -43,7 +43,7 @@ public class UserController {
         return objectMapper.writeValueAsString(users);
     }
 
-    @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
+    @GetMapping("/user/{id}")
     public String getUser(@PathVariable String id) throws JsonProcessingException {
         /**
          * @description: 根据用户id精确查找用户

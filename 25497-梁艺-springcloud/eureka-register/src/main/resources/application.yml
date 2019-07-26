@@ -1,0 +1,19 @@
+#注册端口
+server:
+  port: 1000
+
+#服务名称
+spring:
+  application:
+    name: eureka-register
+
+#地址生命与禁用注册自身
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    eureka-serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/
+

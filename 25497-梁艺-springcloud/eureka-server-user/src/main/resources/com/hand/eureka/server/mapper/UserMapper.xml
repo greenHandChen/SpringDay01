@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.eureka.server.mapper.UserMapper">
+    <sql id="getAll">
+        select id,`name`,birthday,gender from `user`
+    </sql>
+
+    <select id="getAllList" resultType="user">
+        <include refid="getAll"/>
+    </select>
+
+    <select id="getById" parameterType="_int" resultType="user">
+        <include refid="getAll"/>
+        where id=#{xxx}
+    </select>
+
+    <insert id="insert" parameterType="user">
+        insert into `user`(`name`,birthday,gender) values (#{name},#{birthday},#{gender})
+    </insert>
+
+    <delete id="deleteById" parameterType="_int">
+        delete from `user` where id=#{xxx}
+    </delete>
+
+    <update id="update" parameterType="user">
+        update `user` set `name`=#{name},birthday=#{birthday},gender=#{gender} where id=#{id}
+    </update>
+</mapper>

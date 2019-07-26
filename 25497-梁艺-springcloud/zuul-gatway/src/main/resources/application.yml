@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: zuul-gatway
+server:
+  port: 8080
+
+#注册路由
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1000/eureka/
+
+#配置路由路径
+zuul:
+  routes:
+    api-feign:
+      #路由路径
+      path: /user/**
+      #服务提供者ID
+      serviceId: user-client
+    api-ribbon:
+      path: /house/**
+      serviceId: house-client

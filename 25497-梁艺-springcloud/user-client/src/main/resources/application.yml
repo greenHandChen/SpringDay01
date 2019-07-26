@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: user-client
+  main:
+    allow-bean-definition-overriding: true
+  #thymeleaf≈‰÷√
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+server:
+  port: 1003
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1000/eureka
+
+#ø™∆Ùhystrix
+feign:
+  hystrix:
+    enabled: true

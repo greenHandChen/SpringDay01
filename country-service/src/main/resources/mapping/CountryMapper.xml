@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ct.country.mapper.CountryMapper">
+    <insert id="add" parameterType="string">
+        insert into country(country_name) values (#{countryName})
+    </insert>
+
+    <delete id="delete" parameterType="long">
+        delete from country where country_id = #{countryId}
+    </delete>
+
+    <select id="query" parameterType="country" resultMap="countryMap">
+        select * from country
+        <where>
+            <if test="countryId != null">
+                country_id = #{countryId}
+            </if>
+            <if test="countryName != null">
+                and country_name = #{countryName}
+            </if>
+        </where>
+    </select>
+
+    <resultMap id="countryMap" type="country">
+        <id property="countryId" column="country_id"/>
+        <result property="countryName" column="country_name"/>
+    </resultMap>
+
+    <update id="update" parameterType="country">
+        update country set country_name = #{countryName}
+        where country_id = #{countryId}
+    </update>
+</mapper>

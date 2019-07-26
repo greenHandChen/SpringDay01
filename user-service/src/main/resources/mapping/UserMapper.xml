@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ct.user.mapper.UserMapper">
+    <insert id="add" parameterType="user">
+        insert into user(username, sex, email, country_id)
+        values (#{username}, #{sex}, #{email}, #{countryId})
+    </insert>
+
+    <delete id="delete" parameterType="long">
+        delete from user where id = #{id}
+    </delete>
+
+    <select id="query" parameterType="user" resultType="user">
+        select * from user
+        <where>
+            <if test="id != null">
+                id = #{id}
+            </if>
+            <if test="username != null">
+                and username = #{username}
+            </if>
+            <if test="sex != null">
+                and sex = #{sex}
+            </if>
+            <if test="email != null">
+                and email = #{email}
+            </if>
+            <if test="countryId != null">
+                and country_id = #{countryId}
+            </if>
+        </where>
+    </select>
+
+    <update id="update" parameterType="user">
+        update user set
+        username = #{username},
+        sex = #{sex},
+        email = #{email},
+        country_id = #{countryId}
+        where id = #{id}
+    </update>
+</mapper>

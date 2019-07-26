@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:h2:file:./other
+    driver-class-name: org.h2.Driver
+    password: 13882
+    username: h2
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update

@@ -1,0 +1,11 @@
+server:
+  port: 80
+zuul:
+  routes:
+    user-service:
+      path: /**
+
+ribbon:
+    eager-load:
+      enabled: true
+

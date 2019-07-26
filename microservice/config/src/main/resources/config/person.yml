@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    database: postgresql
+    properties:
+      hibernate:
+        temp.use_jdbc_metadata_defaults: false
+  datasource:
+    url: jdbc:postgresql://192.168.188.141:5432/postgres
+    platform: postgres
+    username: postgres
+    password: 13882
+    driver-class-name: org.postgresql.Driver

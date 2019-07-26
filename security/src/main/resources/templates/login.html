@@ -1,0 +1,38 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<link>
+<meta charset="UTF-8"/>
+<title>登录页面</title>
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!--<link rel="stylesheet" th:href="@{css/bootstrap.min.css}"/>-->
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Spring Security演示</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a th:href="@{/}"> 首页 </a></li>
+
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+
+    <div>
+
+        <h2>使用账号密码登录</h2>
+        <form name="form" th:action="@{/login}" action="/login" method="POST"> <!-- 3 -->
+
+            <input type="submit" id="login" value="Login" class="btn btn-primary"/>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

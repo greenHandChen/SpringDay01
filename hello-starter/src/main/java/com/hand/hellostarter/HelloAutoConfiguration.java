@@ -16,9 +16,8 @@ public class HelloAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean(HelloSpringBoot.class)
-    public HelloSpringBoot helloService() {
-        HelloSpringBoot helloSpringBoot = new HelloSpringBoot();
-        return helloSpringBoot;
+    public HelloSpringBoot helloSpringBoot() {
+        return new HelloSpringBoot();
     }
 
 }

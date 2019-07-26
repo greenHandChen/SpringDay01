@@ -1,0 +1,22 @@
+server:
+  port: 8201
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springcloud?useSSL=false
+    username: root
+    password: zxc123456
+eureka:
+  instance:
+    instance-id: user-service:${server.port}
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+mybatis:
+  mapper-locations: mappers/**/*.xml
+feign:
+  hystrix:
+    enabled: true

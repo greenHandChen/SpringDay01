@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.service.user.dao.UserDao">
+    <insert id="add" parameterType="com.hand.service.user.pojo.User">
+        insert into user(username, email, sex, country_id)
+        VALUES (#{username},
+                #{email},
+                #{sex},
+                #{countryId})
+    </insert>
+    <update id="update" parameterType="com.hand.service.user.pojo.User">
+        update user
+        <set>
+            <if test="username!=null">
+                username=#{username},
+            </if>
+            <if test="email!=null">
+                email=#{email},
+            </if>
+            <if test="sex!=null">
+                sex=#{sex},
+            </if>
+            <if test="countryId!=null">
+                country_id=#{countryId}
+            </if>
+        </set>
+        <where>
+            id=#{id}
+        </where>
+
+    </update>
+    <delete id="delete" parameterType="java.lang.Integer">
+        delete
+        from user
+        where id = #{id}
+    </delete>
+    <select id="findAll" resultMap="userResultMap">
+        select *
+        from user
+    </select>
+    <select id="findById" parameterType="java.lang.Integer" resultMap="userResultMap">
+        select *
+        from user
+        where id = #{id}
+    </select>
+    <resultMap id="userResultMap" type="com.hand.service.user.pojo.User">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="email" column="email"/>
+        <result property="sex" column="sex"/>
+        <result property="countryId" column="country_id"/>
+    </resultMap>
+</mapper>

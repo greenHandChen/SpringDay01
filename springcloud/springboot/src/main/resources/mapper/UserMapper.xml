@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "- //mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hjf.mapper.UserMapper">
+    <select id="queryUser" resultType="com.hjf.pojo.User">
+       select * from user
+    </select>
+
+    <delete id="deleteUser"  parameterType="java.lang.Integer">
+       delete from user where id = #{id}
+    </delete>
+
+    <insert id="addUser" parameterType="com.hjf.pojo.User">
+        INSERT INTO User (id, username,birthday,sex,address) VALUES (#{id}, #{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <update id="updateUser" parameterType="com.hjf.pojo.User">
+        update user
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="username!=null">
+            username=#{username}
+            </if>
+            <if test="birthday!=null">
+                birthday=#{birthday}
+            </if>
+            <if test="sex!=null">
+                sex=#{sex}
+            </if>
+            <if test="address!=null">
+                address=#{address}
+            </if>
+        </trim>
+             where id=#{id}
+    </update>
+</mapper>

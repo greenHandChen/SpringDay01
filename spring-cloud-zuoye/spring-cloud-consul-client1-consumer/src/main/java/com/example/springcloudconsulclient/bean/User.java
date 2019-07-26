@@ -4,6 +4,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 public class User  implements Serializable {
         private String username;
@@ -12,6 +13,15 @@ public class User  implements Serializable {
         private Date birthday;
         private char sex;
         private String address;
+        private List<Orders> orders;
+
+    public List<Orders> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Orders> orders) {
+        this.orders = orders;
+    }
 
     @Override
     public String toString() {

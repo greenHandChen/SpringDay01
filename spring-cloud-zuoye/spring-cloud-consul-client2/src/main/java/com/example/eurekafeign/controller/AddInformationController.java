@@ -3,10 +3,7 @@ package com.example.eurekafeign.controller;
 import com.example.eurekafeign.bean.Orders;
 import com.example.eurekafeign.mapper.AddInformationMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,7 +14,7 @@ public class AddInformationController {
     private AddInformationMapper addInformationMapper;
 
     @PostMapping("/queryother")
-    public List<Orders> findUserOtherInfo(Orders orders){
+    public List<Orders> findUserOtherInfo(@RequestBody Orders orders){
 
         return addInformationMapper.findUserOtherInfo(orders);
     }

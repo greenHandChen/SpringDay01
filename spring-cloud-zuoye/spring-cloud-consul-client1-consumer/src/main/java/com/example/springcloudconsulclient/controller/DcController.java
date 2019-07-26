@@ -1,7 +1,9 @@
 package com.example.springcloudconsulclient.controller;
 
+import com.example.springcloudconsulclient.bean.Orders;
 import com.example.springcloudconsulclient.bean.User;
 import com.example.springcloudconsulclient.mapper.UserMapper;
+import com.example.springcloudconsulclient.service.FeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.stereotype.Service;
@@ -17,12 +19,23 @@ import java.util.List;
 public class DcController {
     @Autowired
     DiscoveryClient discoveryClient;
+    @Autowired
+    private FeignService feignService;
 
     @Autowired
     private UserMapper userMapper;
     @GetMapping(value = "/query")
     public List<User> findUserById(@RequestParam Integer id){
         List<User> userById = userMapper.findUserById(id);
+        Orders order=new Orders();
+        for (User user: userById
+             ) {
+            order.setUserId(user.getId());
+            System.out.println("----"+order.getUserId());
+            List<Orders> orders = feignService.findUserOtherInfo(order);
+            user.setOrders(orders);
+        }
+
         return userById;
     }
 

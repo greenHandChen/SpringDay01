@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="32213933-135a-4c5f-a928-4bd42c55002d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../syTest/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../24816-孙运/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../24816-孙运/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../24816-孙运/src/main/java/com/sy/mapper/OrderExtMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../24816-孙运/src/main/java/com/sy/mapper/OrderExtMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../24816-孙运/src/main/resources/mapper/OrdersExtMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../24816-孙运/src/test/java/TestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../24816-孙运/src/test/java/TestMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../24816-孙运/target/classes/com/sy/mapper/OrderExtMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../24816-孙运/target/classes/com/sy/mapper/OrderExtMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../24816-孙运/target/classes/mapper/OrdersExtMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../24816-孙运/target/test-classes/TestMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../24816-孙运/target/test-classes/TestMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBCTEST/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBCTEST/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ParentDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ParentDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ParentDemo/Child1/src/main/java/com/hand/dao/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ParentDemo/Child1/src/main/java/com/hand/dao/AccountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ParentDemo/Child1/src/main/java/com/hand/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ParentDemo/Child1/src/main/java/com/hand/service/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ParentDemo/Child1/src/main/resources/Transaction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ParentDemo/Child1/src/main/resources/Transaction.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ParentDemo/Child1/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ParentDemo/Child1/src/test/java/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ParentDemo/Child1/target/classes/Transaction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ParentDemo/Child1/target/classes/Transaction.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ParentDemo/Child1/target/classes/com/hand/dao/AccountDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ParentDemo/Child1/target/classes/com/hand/dao/AccountDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ParentDemo/Child1/target/classes/com/hand/service/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ParentDemo/Child1/target/classes/com/hand/service/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ParentDemo/Child1/target/test-classes/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ParentDemo/Child1/target/test-classes/Tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatisDay1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDay1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatisDay2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDay2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatisDay2/src/main/java/com/sy/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDay2/src/main/java/com/sy/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatisDay2/src/main/java/com/sy/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDay2/src/main/java/com/sy/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatisDay2/src/main/resources/config/SpringBeanConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDay2/src/main/resources/config/SpringBeanConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatisDay2/src/main/resources/config/SpringMybatisConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDay2/src/main/resources/config/SpringMybatisConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatisDay2/src/test/java/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDay2/src/test/java/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatisDay2/target/classes/com/sy/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDay2/target/classes/com/sy/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatisDay2/target/classes/com/sy/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDay2/target/classes/com/sy/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatisDay2/target/classes/config/SpringBeanConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDay2/target/classes/config/SpringBeanConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatisDay2/target/classes/config/SpringMybatisConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDay2/target/classes/config/SpringMybatisConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatisDay2/target/test-classes/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDay2/target/test-classes/UserDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootdemo/src/main/java/com/example/springbootdemo/SpringbootdemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootdemo/src/main/java/com/example/springbootdemo/SpringbootdemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../syTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../syTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../syTest/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../syTest/demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../syTest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../syTest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../syTest/src/main/java/CeShiModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../syTest/src/main/java/CeShiModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../syTest/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../syTest/src/main/resources/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../syTest/target/classes/CeShiModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../syTest/target/classes/CeShiModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../syTest/target/classes/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../syTest/target/classes/bean.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -8,13 +62,35 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/spring-cloud-zuoye.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-485" />
     <option name="y" value="21" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -24,6 +100,83 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32213933-135a-4c5f-a928-4bd42c55002d" name="Default Changelist" comment="" />
+      <created>1564139936589</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564139936589</updated>
+      <workItem from="1564139939252" duration="751000" />
+    </task>
+    <task id="LOCAL-00001" summary="spring-cloud作业加整合consul">
+      <created>1564140040891</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564140040891</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="751000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="spring-cloud作业加整合consul" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring-cloud作业加整合consul" />
   </component>
   <component name="masterDetails">
     <states>

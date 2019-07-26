@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.servicetest.Mapper.UserMapper">
+
+    <select id="findDeftById" parameterType="int" resultType="Dept">
+        select * from dept where userId=#{id};
+    </select>
+    <delete id="deleteUDsById" parameterType="int">
+        delete from dept where userId=#{id}
+    </delete>
+    <insert id="addDept" parameterType="Dept">
+        insert into dept values (#{userId},#{deptId},#{deptName});
+    </insert>
+    <update id="updateById" parameterType="Dept">
+        update dept set deptId=#{deptId},deptName=#{deptName} where userId=#{id};
+    </update>
+</mapper>

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: zuul
+server:
+  port: 8080
+zuul:
+  routes:
+    service:
+      path: /user/**
+      serviceId: provider
+      stripPrefix: false
+    provider:
+      path: /feign/**
+      serviceId: service
+      stripPrefix: false
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 10000
+ribbon:
+  ConnectTimeout: 1000
+  ReadTimeout: 10000

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka
+server:
+  port: 8761
+eureka:
+  server:
+    enable-self-preservation: true #自我保护模式 默认开启
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka

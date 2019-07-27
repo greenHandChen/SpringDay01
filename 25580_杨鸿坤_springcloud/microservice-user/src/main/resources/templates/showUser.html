@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table broder="1" style="width:500px">
+        <tr>
+            <th>ID</th>
+            <th>用户名</th>
+            <th>密码</th>
+            <th>更新</th>
+            <th>删除</th>
+        </tr>
+        <tr th:each="user:${user}">
+            <td th:text="${user.id}"></td>
+            <td th:text="${user.username}"></td>
+            <td th:text="${user.password}"></td>
+            <td>
+                <a th:href="@{/findUser(id=${user.id})}">更新用户</a>
+            </td>
+            <td>
+                <a th:href="@{/delUser(id=${user.id})}">删除用户</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

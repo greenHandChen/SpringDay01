@@ -1,0 +1,7 @@
+#注册中心应用名称
+spring:
+  application:
+    name: eureka-server
+  #使用的配置文件名
+  profiles:
+    active: server1

@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="24ff585f-f637-4e4c-aec5-9ed83f5bea1d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/yhk/eurekaserver/EurekaServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-server1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-server2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-api-gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-api-gateway/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-api-gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-api-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-api-gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-api-gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-api-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-api-gateway/src/main/java/com/yhk/microserviceapigateway/MicroserviceApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-api-gateway/src/main/resources/application-api-gateway1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/MicroserviceSsoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/controller/SsoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/feign/UserFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/src/main/resources/application-sso1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/src/main/resources/application-sso2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/src/main/resources/templates/null.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/src/main/resources/templates/ok.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-sso/src/test/java/com/yhk/microservicesso/MicroserviceSsoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/MicroserviceUserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/main/resources/application-user1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/main/resources/application-user2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/main/resources/com/yhk/microserviceuser/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/main/resources/templates/input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/main/resources/templates/showUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/main/resources/templates/upUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-user/src/test/java/com/yhk/microserviceuser/MicroserviceUserApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisDemo2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisDemo2/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/eureka-server/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-user/target/" />
+    <ignored path="$PROJECT_DIR$/service-user/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-sso/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-api-gateway/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-user/src/main/resources/com/yhk/microserviceuser/mapper/UserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/mapper/UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="23" column="15" lean-forward="true" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-user/src/main/resources/templates/showUser.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/eureka-server/src/main/java/com/yhk/eurekaserver/EurekaServerApplication.java" />
+        <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application1.properties" />
+        <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application2.properties" />
+        <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application1.yml" />
+        <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application2.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/service-user/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application-server1.yml" />
+        <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application-server2.yml" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/resources/com/yhk/microservice/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/MicroserviceUserApplication.java" />
+        <option value="$PROJECT_DIR$/microservice-sso/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/microservice-sso/src/main/resources/application-sso2.yml" />
+        <option value="$PROJECT_DIR$/microservice-sso/src/main/resources/application-sso1.yml" />
+        <option value="$PROJECT_DIR$/microservice-sso/src/main/resources/templates/ok.html" />
+        <option value="$PROJECT_DIR$/microservice-sso/src/main/resources/templates/null.html" />
+        <option value="$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/fegin/UserFeign.java" />
+        <option value="$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/service/SsoService.java" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/pojo/User.java" />
+        <option value="$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/pojo/User.java" />
+        <option value="$PROJECT_DIR$/microservice-sso/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/MicroserviceSsoApplication.java" />
+        <option value="$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/feign/UserFeign.java" />
+        <option value="$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/controller/SsoController.java" />
+        <option value="$PROJECT_DIR$/microservice-api-gateway/src/main/java/com/yhk/microserviceapigateway/filter/ZuulFilter.java" />
+        <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/microservice-api-gateway/src/main/java/com/yhk/microserviceapigateway/MicroserviceApiGatewayApplication.java" />
+        <option value="$PROJECT_DIR$/microservice-api-gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/microservice-api-gateway/src/main/resources/application-api-gateway1.yml" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/resources/templates/input.html" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/resources/application-user1.yml" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/resources/application-user2.yml" />
+        <option value="$PROJECT_DIR$/microservice-user/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/resources/templates/showUser.html" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/resources/templates/upUser.html" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/resources/com/yhk/microserviceuser/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/service/UserService.java" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/controller/UserController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="eureka-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-cloud-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1378" />
+    <option name="height" value="743" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="25580_杨鸿坤_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="25580_杨鸿坤_springcloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="directory" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/microservice-user/src/main/resources/templates" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yhk.microserviceuser.mapper" />
+      <recent name="com.yhk.microserviceuser.pojo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\test\SpringDay01\25580_杨鸿坤_springcloud\microservice-user\src\main\resources\templates" />
+      <recent name="D:\IDEA_SpringCloud\spring-cloud-demo\microservice-api-gateway\src\main\resources" />
+      <recent name="D:\IDEA_SpringCloud\spring-cloud-demo\microservice-sso\src\main\resources" />
+      <recent name="D:\IDEA_SpringCloud\spring-cloud-demo\microservice-user\src\main\resources" />
+      <recent name="D:\IDEA_SpringCloud\spring-cloud-demo\microservice-user\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.user1">
+    <configuration name="server1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yhk.eurekaserver.EurekaServerApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=server1" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="server2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yhk.eurekaserver.EurekaServerApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=server2" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sso1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-sso" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yhk.microservicesso.MicroserviceSsoApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=sso1" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="user1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yhk.microserviceuser.MicroserviceUserApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=user1" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="user2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yhk.microserviceuser.MicroserviceUserApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=user2" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="zuul1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yhk.microserviceapigateway.MicroserviceApiGatewayApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=api-gateway1" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.server1" />
+      <item itemvalue="Spring Boot.server2" />
+      <item itemvalue="Spring Boot.user1" />
+      <item itemvalue="Spring Boot.user2" />
+      <item itemvalue="Spring Boot.sso1" />
+      <item itemvalue="Spring Boot.zuul1" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\YoungKey\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24ff585f-f637-4e4c-aec5-9ed83f5bea1d" name="Default Changelist" comment="" />
+      <created>1564104839460</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564104839460</updated>
+      <workItem from="1564104841429" duration="19832000" />
+      <workItem from="1564131912493" duration="20883000" />
+      <workItem from="1564187565554" duration="14000" />
+      <workItem from="1564187876053" duration="2260000" />
+      <workItem from="1564190328147" duration="10197000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="53186000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="2" width="1378" height="743" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Web" order="0" side_tool="true" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.25493172" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="0" />
+      <window_info anchor="bottom" id="Spring" order="1" />
+      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50075644" side_tool="true" weight="0.5217391" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3295082" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49924356" weight="0.47126436" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="right" id="Bean Validation" order="0" />
+      <window_info anchor="right" id="Palette" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.13277693" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/eureka-server/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/controller/DemoController.java" />
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/java/com/yhk/eurekaserver/EurekaServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator-autoconfigure/2.1.6.RELEASE/spring-boot-actuator-autoconfigure-2.1.6.RELEASE.jar!/org/springframework/boot/actuate/autoconfigure/metrics/jdbc/DataSourcePoolMetricsAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-user/src/main/java/com/yhk/serviceuser/ServiceUserApplication.java" />
+    <entry file="file://$PROJECT_DIR$/service-user/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application-server1.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application-server2.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-user/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-sso/src/main/resources/templates/ok.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-sso/src/main/resources/templates/null.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/client/RestTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="179" column="17" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/service/SsoService.java" />
+    <entry file="file://$PROJECT_DIR$/microservice-sso/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="770" selection-start-line="770" selection-end-line="770" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/MicroserviceSsoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/feign/UserFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-api-gateway/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/microservice-api-gateway/src/main/java/com/yhk/microserviceapigateway/filter/ZuulFilter.java" />
+    <entry file="file://$PROJECT_DIR$/microservice-sso/src/main/resources/application-sso2.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-sso/src/main/resources/application-sso1.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="7" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-sso/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-sso/src/main/java/com/yhk/microservicesso/controller/SsoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-506">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-api-gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-api-gateway/src/main/java/com/yhk/microserviceapigateway/MicroserviceApiGatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/mvnw">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-api-gateway/mvnw">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-api-gateway/src/main/resources/application-api-gateway1.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/MicroserviceUserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/resources/application-user1.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/resources/application-user2.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="74" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/resources/templates/input.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/resources/templates/upUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/resources/com/yhk/microserviceuser/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/resources/templates/showUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/java/com/yhk/microserviceuser/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="23" column="15" lean-forward="true" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

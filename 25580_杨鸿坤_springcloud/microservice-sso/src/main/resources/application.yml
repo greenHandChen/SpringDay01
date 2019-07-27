@@ -1,0 +1,5 @@
+server:
+  port: ${port}
+spring:
+  application:
+    name: microseservice-sso

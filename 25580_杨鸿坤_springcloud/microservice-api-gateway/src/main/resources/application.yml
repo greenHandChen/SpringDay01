@@ -1,0 +1,8 @@
+server:
+  port: ${port}
+spring:
+  application:
+    name: microservice-api-gateway
+  profiles:
+    active: api-gateway1
+

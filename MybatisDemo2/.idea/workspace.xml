@@ -2,21 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3257fe6-37d3-4e2f-9466-ca245a7ae46d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../25580-杨鸿坤/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../25580-杨鸿坤/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25580-杨鸿坤/.idea/libraries/Maven__log4j_log4j_1_2_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25580-杨鸿坤/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25580-杨鸿坤/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25580-杨鸿坤/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25580-杨鸿坤/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/Test_common/Test_common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/Test_common/Test_common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/Test_common/src/main/java/com/yhk/pojo/Orderdetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/Test_common/src/main/java/com/yhk/pojo/Orderdetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/Test_common/src/main/java/com/yhk/pojo/OrdersExt.java" beforeDir="false" afterPath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/Test_common/src/main/java/com/yhk/pojo/OrdersExt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/Test_common/src/main/resources/mapper/OrdersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/Test_common/src/main/resources/mapper/OrdersMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/Test_common/src/test/java/com/yhk/testOrder/testFindOrdersExts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/Test_common/src/test/java/com/yhk/testOrder/testFindOrdersExts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/Test_parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/Test_parent.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../25580-杨鸿坤/Test_parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,11 +22,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mybatis02/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="43" selection-end-column="21" />
+            <state relative-caret-position="1053">
+              <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="43" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Mybatis02/src/main/resources/mapper/UserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -107,11 +101,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1378" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -120,52 +114,18 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
+      <pane id="PackagesPane">
         <subPane>
           <expand>
             <path>
-              <item name="MybatisDemo2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mybatis02" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MybatisDemo2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mybatis02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MybatisDemo2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mybatis02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MybatisDemo2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mybatis02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MybatisDemo2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mybatis02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MybatisDemo2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mybatis02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="MybatisDemo2" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Mybatis02" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,6 +287,9 @@
       <workItem from="1563779396555" duration="1912000" />
       <workItem from="1563782502941" duration="37000" />
       <workItem from="1563862705829" duration="7547000" />
+      <workItem from="1563928511985" duration="435000" />
+      <workItem from="1563929349432" duration="774000" />
+      <workItem from="1564103609282" duration="574000" />
     </task>
     <task id="LOCAL-00001" summary="25580_杨鸿坤_Mybatis02">
       <created>1563539450911</created>
@@ -371,7 +334,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63709000" />
+    <option name="totallyTimeSpent" value="65492000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -383,7 +346,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -391,7 +354,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" weight="0.32980332" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.4979757" visible="true" weight="0.3570348" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.4979757" visible="true" weight="0.37367624" />
       <window_info id="Structure" order="6" sideWeight="0.5020243" side_tool="true" weight="0.24886535" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -737,13 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mybatis02/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mybatis02/src/main/resources/config/db.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -753,8 +709,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Mybatis02/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="43" selection-end-column="21" />
+        <state relative-caret-position="1053">
+          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mybatis02/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

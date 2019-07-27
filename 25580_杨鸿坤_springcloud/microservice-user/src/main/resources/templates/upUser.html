@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form th:action="@{/upUser}" method="post" >
+        <input type="hidden" name="id" th:field="${user.id}"/>
+    姓名：<input type="text" name="username" th:field="${user.username}"/><br>
+    密码：<input type="text" name="password" th:field="${user.password}"/><br>
+    <input type="submit" value="提交"/><br>
+</form>
+</body>
+</html>

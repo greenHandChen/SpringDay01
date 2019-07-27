@@ -1,0 +1,8 @@
+server:
+  port: 6868
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://server1:8761/eureka/,http://server2:8762/eureka/

@@ -1,0 +1,13 @@
+server:
+  port: 6677
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://server1:8761/eureka/,http://server2:8762/eureka/
+zuul:
+  routes:
+    sso-service:
+      path: /sso/**
+      serviceId: microseservice-sso

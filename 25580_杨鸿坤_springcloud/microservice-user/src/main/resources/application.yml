@@ -1,0 +1,14 @@
+server:
+  port: ${port}
+spring:
+  application:
+    name: microseservice-user
+  datasource:
+    username: root
+    password:
+    url: jdbc:mysql://localhost:3306/java_web?characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+mybatis:
+  type-aliases-package: com.yhk.microserviceuser.pojo
+  mapper-locations: classpath:com/yhk/microserviceuser/mapper/*Mapper.xml

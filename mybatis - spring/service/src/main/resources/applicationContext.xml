@@ -9,7 +9,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd">
-<context:component-scan base-package="com.hand"/>
+    <context:component-scan base-package="com.hand"/>
     <context:property-placeholder location="classpath:db.properties"/>
     <!-- 配置hikari数据源  -->
     <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
@@ -27,12 +27,12 @@
 
 <!-- <mybatis:scan base-package="com.hand.mapper"/>-->
 
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"/>
-    </bean>
+<!--    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--    </bean>-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.hand.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
-    <tx:annotation-driven transaction-manager="transactionManager"/>
+<!--    <tx:annotation-driven transaction-manager="transactionManager"/>-->
 </beans>

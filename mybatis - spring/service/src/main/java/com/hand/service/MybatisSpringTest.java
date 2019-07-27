@@ -30,6 +30,7 @@ public class MybatisSpringTest {
     *@Date 2019/7/19
     *@Time 19:58
     */
+
     private static ApplicationContext applicationContext;
       static {
         applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -55,8 +56,8 @@ public class MybatisSpringTest {
     /**
     *@Description 复杂查询测试方法
     *@Author yunfeng.ye
-    *@Date 2019/7/19
-    *@Time 19:59
+     *@Date 2019/7/19
+     *@Time 19:59
     */
     @Test
     public void testMapper(){

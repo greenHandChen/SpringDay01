@@ -7,9 +7,13 @@ import java.util.Date;
 //        商品名称(name)、商品价格(price)、订单的创建时间(createtime，日期格式如:2018-01-01)、订单行对应的订单下的订单总价
 //        (total_amount，结果保留两位小数)
 public class OrdersExt {
+    //用户名
+    private String username;
+    //用户地址
+    private String address;
     //订单编号
     private String number;
-//    商品名称
+    //    商品名称
     private String name;
     //    订单创建时间起
     private Date createtimeStart;
@@ -28,7 +32,9 @@ public class OrdersExt {
     @Override
     public String toString() {
         return "OrdersExt{" +
-                "number='" + number + '\'' +
+                "username='" + username + '\'' +
+                ", address='" + address + '\'' +
+                ", number='" + number + '\'' +
                 ", name='" + name + '\'' +
                 ", createtimeStart=" + createtimeStart +
                 ", createtimeEnd=" + createtimeEnd +
@@ -38,6 +44,36 @@ public class OrdersExt {
                 ", createtime=" + createtime +
                 ", total_amount=" + total_amount +
                 '}';
+    }
+
+    public OrdersExt(String username, String address, String number, String name, Date createtimeStart, Date createtimeEnd, Float priceStart, Float priceEnd, Float price, Date createtime, Float total_amount) {
+        this.username = username;
+        this.address = address;
+        this.number = number;
+        this.name = name;
+        this.createtimeStart = createtimeStart;
+        this.createtimeEnd = createtimeEnd;
+        this.priceStart = priceStart;
+        this.priceEnd = priceEnd;
+        this.price = price;
+        this.createtime = createtime;
+        this.total_amount = total_amount;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getNumber() {
@@ -112,20 +148,11 @@ public class OrdersExt {
         this.total_amount = total_amount;
     }
 
-    public OrdersExt(String number, String name, Date createtimeStart, Date createtimeEnd, Float priceStart, Float priceEnd, Float price, Date createtime, Float total_amount) {
-        this.number = number;
-        this.name = name;
-        this.createtimeStart = createtimeStart;
-        this.createtimeEnd = createtimeEnd;
-        this.priceStart = priceStart;
-        this.priceEnd = priceEnd;
-        this.price = price;
-        this.createtime = createtime;
-        this.total_amount = total_amount;
-    }
-
     public OrdersExt() {
     }
+
+
+
 
 
 

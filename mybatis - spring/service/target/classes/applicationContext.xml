@@ -27,12 +27,12 @@
 
 <!-- <mybatis:scan base-package="com.hand.mapper"/>-->
 
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"/>
-    </bean>
+<!--    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--    </bean>-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.hand.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
-    <tx:annotation-driven transaction-manager="transactionManager"/>
+<!--    <tx:annotation-driven transaction-manager="transactionManager"/>-->
 </beans>

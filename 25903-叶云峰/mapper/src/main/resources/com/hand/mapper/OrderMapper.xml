@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hand.mapper.OrderMapper">
-    <select id="findOrdersExts" parameterType="com.hand.Ext.OrdersExt"  resultType="com.hand.Ext.OrdersExt">
-        select * from items i,
-        (select o.id,o.user_id,o.number,o.createtime,od.items_id,od.items_num FROM orders o,orderdetail od where o.id=od.orders_id) a
-        where i.id=a.items_id;
+    <resultMap id="OrderExt" type="ordersExt">
+        <id column="id" property="id"></id>
+        <result column="createtime" property="createtime"></result>
+        <result column="total" property="total"/>
+
+
+
+
+
+    </resultMap>
+
+    <select id="findOrdersExts" parameterType="ordersExt" resultMap="OrderExt">
+        SELECT
+        u.username,
+        u.address,
+        o.number,
+        it.name,
+        it.price,
+        o.createtime,
+        od.items_id,
+        od.items_num * it.price as total
+        FROM
+        user u,
+        orders o,
+        orderdetail od,
+        items it
+
+        WHERE
+        o.user_id = u.id
+        AND
+        o.id = od.orders_id
+        AND
+        od.items_id = it.id;
+        <if test='number != null and number != ""'>
+            and o.number = #{number}
+        </if>
+        <if test='name != null'>
+            and it.name = #{name}
+        </if>
+        <if test='createtimeStart != null and createtimeStart != "" and createtimeEnd != null and createtimeEnd != ""'>
+            and o.createtime betwwen #{createtimeStart} and #{createtimeEnd}
+        </if>
+        <if test='priceStart != null and priceStart != "" and priceEnd != null and priceEnd != ""'>
+            and o.createtime betwwen #{priceStart} and #{priceEnd}
+        </if>
+
     </select>
 </mapper>

@@ -1,10 +1,11 @@
 package com.hand.text;
 
 import com.hand.entity.OrderExt;
-import com.hand.entity.User;
 import com.hand.mapper.OrdersMapper;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.List;
 
@@ -23,14 +24,11 @@ public class OrdersExtTest {
     @Test
     public void test() {
 
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        OrdersMapper ordersMapper = (OrdersMapper) applicationContext.getBean("ordersMapper");
         OrderExt orderExt = new OrderExt();
-        orderExt.setId(3);
-        User user = new User();
-        user.setId(1);
-        orderExt.setUser(user);
-
-
-        List<OrderExt> orderExtList =  ordersMapper.findOrdersExts(orderExt);
-
+        List<OrderExt> orderExtList = ordersMapper.findOrdersExts(orderExt);
+        System.out.println(orderExtList);
     }
+
 }

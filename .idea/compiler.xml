@@ -6,18 +6,50 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="handjava02" />
+        <module name="springboot-helloworld" />
+        <module name="spring-boot-starter-helloworld" />
+        <module name="springmybatis" />
+        <module name="springexam" />
         <module name="handjava05" />
         <module name="handjava04" />
         <module name="handjava03" />
+        <module name="handentity" />
+        <module name="handjava02" />
+        <module name="25593-lianweiyuan-springboot" />
+        <module name="handservice" />
+        <module name="handrepo" />
+        <module name="handweb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="25593-lianweiyuan" target="1.5" />
+      <module name="25593-lianweiyuan-springboot" target="1.8" />
+      <module name="handentity" target="1.8" />
       <module name="handjava02" target="1.5" />
       <module name="handjava03" target="6" />
       <module name="handjava04" target="1.5" />
       <module name="handjava05" target="1.5" />
       <module name="handjavatx03" target="8" />
+      <module name="handrepo" target="1.8" />
+      <module name="handservice" target="1.8" />
+      <module name="handweb" target="1.8" />
+      <module name="spring-boot-starter-helloworld" target="1.8" />
+      <module name="springboot-helloworld" target="1.8" />
+      <module name="springboot-integration" target="1.8" />
+      <module name="springexam" target="1.5" />
+      <module name="springmybatis" target="6" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="25593-lianweiyuan-springboot" options="-parameters" />
+      <module name="handentity" options="-parameters" />
+      <module name="handrepo" options="-parameters" />
+      <module name="handservice" options="-parameters" />
+      <module name="handweb" options="-parameters" />
+      <module name="spring-boot-starter-helloworld" options="-parameters" />
+      <module name="springboot-helloworld" options="-parameters" />
+      <module name="springboot-integration" options="-parameters" />
+    </option>
   </component>
 </project>

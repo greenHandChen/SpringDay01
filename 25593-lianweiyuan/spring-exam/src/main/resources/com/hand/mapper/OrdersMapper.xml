@@ -40,6 +40,7 @@
                    where    ord.user_id = u.id
                    and    ord.id = o.orders_id
                    and    o.items_id = i.id
+
     </select>
 
     <!-- select u.username,

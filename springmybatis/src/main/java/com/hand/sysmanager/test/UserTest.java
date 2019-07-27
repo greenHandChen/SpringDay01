@@ -1,7 +1,7 @@
 package com.hand.sysmanager.test;
 
-import com.hand.sysmanager.dao.IUserDao;
 import com.hand.sysmanager.entity.User;
+import com.hand.sysmanager.service.impl.UserServiceImpl;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -18,14 +18,11 @@ public class UserTest {
 
 
 
-
     @Test
-    public  void  testFindUserById()
-    {
-        ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-        IUserDao userDao = (IUserDao) ac.getBean("userDaoImpl");
-        User user = userDao.findUserById(10L);
-        System.out.println(user);
-
+    public void test() {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserServiceImpl userService = (UserServiceImpl) applicationContext.getBean("userServiceImpl");
+        User user = userService.findUserById(10L);
+        System.out.println(user.getUsername());
     }
 }

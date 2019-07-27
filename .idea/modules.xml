@@ -2,11 +2,37 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-manager-user/.mvn/.mvn.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-manager-user/.mvn/.mvn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-user-detail-feign/.mvn/.mvn1.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-user-detail-feign/.mvn/.mvn1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-user-detail/.mvn/.mvn2.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-user-detail/.mvn/.mvn2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-discovery-eureka/.mvn/.mvn3.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-discovery-eureka/.mvn/.mvn3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-gateway-zuul/.mvn/.mvn4.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-gateway-zuul/.mvn/.mvn4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/25593-lianweiyuan/25593-lianweiyuan.iml" filepath="$PROJECT_DIR$/25593-lianweiyuan/25593-lianweiyuan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/25593-lianweiyuan-springboot/25593-lianweiyuan-springboot.iml" filepath="$PROJECT_DIR$/25593-lianweiyuan-springboot/25593-lianweiyuan-springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringDay01.iml" filepath="$PROJECT_DIR$/.idea/SpringDay01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-integration/hand-entity/handentity.iml" filepath="$PROJECT_DIR$/springboot-integration/hand-entity/handentity.iml" />
       <module fileurl="file://$PROJECT_DIR$/handjava02/handjava02.iml" filepath="$PROJECT_DIR$/handjava02/handjava02.iml" />
       <module fileurl="file://$PROJECT_DIR$/handjava03/handjava03.iml" filepath="$PROJECT_DIR$/handjava03/handjava03.iml" />
       <module fileurl="file://$PROJECT_DIR$/handjava04/handjava04.iml" filepath="$PROJECT_DIR$/handjava04/handjava04.iml" />
       <module fileurl="file://$PROJECT_DIR$/handjava05/handjava05.iml" filepath="$PROJECT_DIR$/handjava05/handjava05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-integration/hand-repo/handrepo.iml" filepath="$PROJECT_DIR$/springboot-integration/hand-repo/handrepo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-integration/hand-service/handservice.iml" filepath="$PROJECT_DIR$/springboot-integration/hand-service/handservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-integration/hand-web/handweb.iml" filepath="$PROJECT_DIR$/springboot-integration/hand-web/handweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-user-detail-feign/src/main/main.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-user-detail-feign/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-user-detail/src/main/main1.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-user-detail/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-discovery-eureka/src/main/main2.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-discovery-eureka/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-gateway-zuul/src/main/main3.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-gateway-zuul/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-manager-user/src/main/main4.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-manager-user/src/main/main4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-helloworld/spring-boot-starter-helloworld.iml" filepath="$PROJECT_DIR$/spring-boot-starter-helloworld/spring-boot-starter-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-helloworld/springboot-helloworld.iml" filepath="$PROJECT_DIR$/springboot-helloworld/springboot-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-integration/springboot-integration.iml" filepath="$PROJECT_DIR$/springboot-integration/springboot-integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/25593-lianweiyuan/spring-exam/springexam.iml" filepath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/springexam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmybatis/springmybatis.iml" filepath="$PROJECT_DIR$/springmybatis/springmybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-user-detail/src/test/test.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-user-detail/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-discovery-eureka/src/test/test1.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-discovery-eureka/src/test/test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-user-detail-feign/src/test/test2.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-user-detail-feign/src/test/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-gateway-zuul/src/test/test3.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-gateway-zuul/src/test/test3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spring-cloud-exercise/hand-manager-user/src/test/test4.iml" filepath="$PROJECT_DIR$/../../spring-cloud-exercise/hand-manager-user/src/test/test4.iml" />
     </modules>
   </component>
 </project>

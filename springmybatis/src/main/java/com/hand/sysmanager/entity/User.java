@@ -3,27 +3,37 @@ package com.hand.sysmanager.entity;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * @author lwy
- * @version V1.0
- * @program: SpringDay01
- * @Description: TODO
- * @date 2019/7/18 15:08
- */
 public class User implements Serializable {
+    private Integer id;
 
-    private Long userId;
+    /**
+     * 用户名称
+     */
     private String username;
-    private Date date;
+
+    /**
+     * 生日
+     */
+    private Date birthday;
+
+    /**
+     * 性别
+     */
     private String sex;
+
+    /**
+     * 地址
+     */
     private String address;
 
-    public Long getUserId() {
-        return userId;
+    private static final long serialVersionUID = 1L;
+
+    public Integer getId() {
+        return id;
     }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getUsername() {
@@ -34,12 +44,12 @@ public class User implements Serializable {
         this.username = username;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getBirthday() {
+        return birthday;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 
     public String getSex() {
@@ -60,12 +70,16 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "User{" +
-                "userId=" + userId +
-                ", username='" + username + '\'' +
-                ", date=" + date +
-                ", sex='" + sex + '\'' +
-                ", address='" + address + '\'' +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(" [");
+        sb.append("Hash = ").append(hashCode());
+        sb.append(", id=").append(id);
+        sb.append(", username=").append(username);
+        sb.append(", birthday=").append(birthday);
+        sb.append(", sex=").append(sex);
+        sb.append(", address=").append(address);
+        sb.append("]");
+        return sb.toString();
     }
 }

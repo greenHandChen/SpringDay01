@@ -41,9 +41,21 @@
                    and    ord.id = o.orders_id
                    and    o.items_id = i.id
 
-
-
-
-
     </select>
+
+    <!-- select u.username,
+				u.address,
+				i.NAME,
+				i.price,
+				ord.number,
+				ord.createtime,
+				(i.price * o.items_num) total_num
+from user u,
+		 orders ord,
+		 items i,
+		 orderdetail o
+where ord.user_id = u.id
+AND		ord.id = o.orders_id
+AND		o.items_id = i.id;
+		 -->
 </mapper>

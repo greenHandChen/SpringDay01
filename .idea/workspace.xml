@@ -1,9 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9303c66c-5e49-4f1f-9b88-9d19c04f1fe3" name="Default Changelist" comment="">
+    <list default="true" id="9303c66c-5e49-4f1f-9b88-9d19c04f1fe3" name="Default Changelist" comment="spring cloud 练习">
+      <change afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1b2e5add-ecdd-450f-b8cd-82dee6a439ca.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_10_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_23_2_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-starter-sample/target/classes/META-INF/25593-lianweiyuan-springboot.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-starter-sample/target/test-classes/META-INF/25593-lianweiyuan-springboot.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/SpringbootHelloworldApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/dao/UserProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-helloworld/src/test/java/com/hand/springboothelloworld/SpringbootHelloworldApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-entity/handentity.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-entity/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-entity/src/main/java/com/hand/integration/common/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-entity/src/main/java/com/hand/integration/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-entity/target/classes/com/hand/integration/common/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-entity/target/classes/com/hand/integration/user/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-entity/target/hand-entity-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-entity/target/hand-entity-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-entity/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-entity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-entity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-repo/handrepo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-repo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-repo/src/main/java/com/hand/integration/user/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-repo/target/classes/com/hand/integration/user/IUserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-service/handservice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-service/src/main/java/com/hand/integration/user/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-service/src/main/java/com/hand/integration/user/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-service/target/classes/com/hand/integration/user/IUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-service/target/classes/com/hand/integration/user/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-web/handweb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-web/src/main/java/com/hand/integration/HandWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-web/src/main/java/com/hand/integration/hello/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-web/src/main/java/com/hand/integration/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-web/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-web/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-web/target/classes/com/hand/integration/HandWebApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-web/target/classes/com/hand/integration/hello/HelloController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/hand-web/target/classes/com/hand/integration/user/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-integration/springboot-integration.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/sysmanager/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/sysmanager/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springmybatis/src/main/resources/com/hand/sysmanager/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springmybatis/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springmybatis/target/classes/META-INF/springmybatis.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springmybatis/target/classes/com/hand/sysmanager/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springmybatis/target/classes/com/hand/sysmanager/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springmybatis/target/classes/com/hand/sysmanager/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springmybatis/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/java/com/hand/mapper/OrdersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/java/com/hand/mapper/OrdersMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/com/hand/mapper/OrdersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/com/hand/mapper/OrdersMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/test/java/com/hand/text/OrdersExtTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/test/java/com/hand/text/OrdersExtTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/target/classes/com/hand/mapper/OrdersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/target/classes/com/hand/mapper/OrdersMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/target/test-classes/com/hand/text/OrdersExtTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/target/test-classes/com/hand/text/OrdersExtTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/IUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handjava04/target/classes/com/hand/sysmanager/dao/IUserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handjava05/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/handjava05/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handjava05/target/classes/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/handjava05/target/classes/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-starter-helloworld/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-starter-helloworld/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/springmybatis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/springmybatis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/sysmanager/dao/IUserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/sysmanager/dao/impl/UserDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/sysmanager/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/sysmanager/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/sysmanager/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/sysmanager/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/sysmanager/test/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/sysmanager/test/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/src/main/resources/SqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/src/main/resources/mappers/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/src/test/java/com/hand/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/src/test/java/com/hand/test/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/src/test/java/com/hand/test/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/src/test/java/com/hand/test/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/target/classes/SqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/target/classes/com/hand/sysmanager/dao/IUserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/target/classes/com/hand/sysmanager/dao/impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/target/classes/com/hand/sysmanager/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/target/classes/com/hand/sysmanager/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/target/classes/com/hand/sysmanager/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/target/classes/com/hand/sysmanager/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/target/classes/com/hand/sysmanager/test/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/target/classes/com/hand/sysmanager/test/UserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/target/classes/mappers/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmybatis/target/test-classes/com/hand/test/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/springmybatis/target/test-classes/com/hand/test/UserTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/handjava02/target/" />
@@ -11,6 +193,17 @@
     <ignored path="$PROJECT_DIR$/handjava03/hand-java-tx03/target/" />
     <ignored path="$PROJECT_DIR$/handjava04/target/" />
     <ignored path="$PROJECT_DIR$/handjava05/target/" />
+    <ignored path="$PROJECT_DIR$/springmybatis/target/" />
+    <ignored path="$PROJECT_DIR$/25593-lianweiyuan/target/" />
+    <ignored path="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-helloworld/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-integration/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-integration/hand-web/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-integration/hand-service/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-integration/hand-repo/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-integration/hand-entity/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-starter-helloworld/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-starter-sample/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +227,29 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spring_exam@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spring_exam@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spring_exam@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mybatis_study: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spring_exam@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spring_exam: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
@@ -42,108 +257,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handjava05/src/main/resources/mappers/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handjava05/src/main/resources/SqlMapConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-761">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/IUserDao.java">
+        <entry file="file://$PROJECT_DIR$/spring-boot-starter-helloworld/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-              <folding>
-                <element signature="docComment;method#findUserById#0;class#IUserDao#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="32">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/Items.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-              <folding>
-                <element signature="e#410#411#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#481#482#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/OrderDetail.java">
+        <entry file="file://$PROJECT_DIR$/spring-boot-starter-helloworld/src/main/java/com/hand/springbootstarterhelloworld/service/HelloService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/dao/IUserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;method#findOrdersExt#0;class#IUserDao#0" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handjava05/src/test/java/com/hand/test/UserTest.java">
+        <entry file="file://$PROJECT_DIR$/spring-boot-starter-helloworld/src/main/java/com/hand/springbootstarterhelloworld/SpringBootStarterHelloworldApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="131" selection-start-line="131" selection-end-line="132" />
+            <state relative-caret-position="260">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handjava05/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2853">
-              <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handjava04/src/test/java/com/hand/test/UserTest.java">
+        <entry file="file://$PROJECT_DIR$/spring-boot-starter-helloworld/src/main/java/com/hand/springbootstarterhelloworld/configuration/HelloWorldAutoConfigration.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
-              <caret line="42" column="5" selection-start-line="25" selection-start-column="3" selection-end-line="42" selection-end-column="5" />
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-starter-helloworld/target/classes/META-INF/spring.factories">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="78" selection-start-column="78" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/25593-lianweiyuan-springboot/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/25593-lianweiyuan-springboot/src/main/java/com/hand/springbootstartersample/SpringBootStarterSampleApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/25593-lianweiyuan-springboot/src/main/java/com/hand/springbootstartersample/controller/HelloController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-integration/hand-repo/src/main/java/com/hand/integration/user/IUserRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,6 +365,8 @@
     <findStrings>
       <find>acountServiceImpl</find>
       <find>findUserById</find>
+      <find>aop</find>
+      <find>mysql</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,57 +376,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/handjava02/src/main/java/com/hand/spring/com/hand/spring/hello/SayHelloPerson.java" />
-        <option value="$PROJECT_DIR$/handjava02/src/main/java/com/hand/spring/hello/SayHelloPerson.java" />
-        <option value="$PROJECT_DIR$/handjava02/src/main/java/com/hand/spring/service/IAnotationService.java" />
-        <option value="$PROJECT_DIR$/handjava02/src/main/java/com/hand/spring/bean/IAnnotationRepository.java" />
-        <option value="$PROJECT_DIR$/handjava02/src/main/java/com/hand/spring/bean/impl/AnnotationRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/handjava02/src/main/resources/beans.xml" />
-        <option value="$PROJECT_DIR$/handjava02/src/main/java/com/hand/spring/service/impl/AnnotationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/handjava02/src/main/java/com/hand/spring/controller/AnotationController.java" />
-        <option value="$PROJECT_DIR$/handjava02/src/main/java/com/hand/spring/hello/DISpring.java" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/java/com/hand/sysmanager/spring/jdbc/TestApi.java" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/java/com/hand/sysmanager/spring/jdbc/TestHikari.java" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/java/com/hand/sysmanager/spring/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/java/com/hand/sysmanager/spring/bean/SysUser.java" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/java/com/hand/sysmanager/spring/dao/UserDaoSupport.java" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/java/com/hand/sysmanager/spring/jdbc/JdbcSupportTest.java" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/java/com/hand/sysmanager/spring/bean/Account.java" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/java/com/hand/sysmanager/spring/dao/IAcountDao.java" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/java/com/hand/sysmanager/spring/service/IAccountService.java" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/java/com/hand/sysmanager/spring/dao/impl/AcountDaoImpl.java" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/java/com/hand/sysmanager/spring/test/TrascationTest.java" />
-        <option value="$PROJECT_DIR$/handjava03/pom.xml" />
-        <option value="$PROJECT_DIR$/handjava03/target/classes/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/handjava03/src/main/java/com/hand/sysmanager/spring/service/impl/AcountServiceImpl.java" />
-        <option value="$PROJECT_DIR$/handjava04/pom.xml" />
-        <option value="$PROJECT_DIR$/handjava04/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/entity/OrderDetail.java" />
-        <option value="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/entity/Items.java" />
-        <option value="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/entity/Orders.java" />
-        <option value="$PROJECT_DIR$/handjava04/target/classes/mappers/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/entity/User.java" />
-        <option value="$PROJECT_DIR$/handjava04/src/test/java/com/hand/test/MybatisDaoTest.java" />
-        <option value="$PROJECT_DIR$/handjava04/src/main/resources/SqlMapConfig.xml" />
-        <option value="$PROJECT_DIR$/handjava04/target/classes/SqlMapConfig.xml" />
-        <option value="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/entity/UserQueryVO.java" />
-        <option value="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/impl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/handjava04/src/test/java/com/hand/test/UserTest.java" />
-        <option value="$PROJECT_DIR$/handjava04/src/main/resources/mappers/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/handjava05/pom.xml" />
-        <option value="$PROJECT_DIR$/handjava05/src/main/java/entity/UserQueryVO.java" />
-        <option value="$PROJECT_DIR$/handjava05/src/main/java/sysmanager/entity/UserQueryVO.java" />
-        <option value="$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/Items.java" />
-        <option value="$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/OrdersExt.java" />
-        <option value="$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/Orders.java" />
-        <option value="$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/dao/IUserDao.java" />
-        <option value="$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/User.java" />
-        <option value="$PROJECT_DIR$/handjava05/src/test/java/com/hand/test/UserTest.java" />
-        <option value="$PROJECT_DIR$/handjava05/src/main/resources/SqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/sysmanager/test/UserTest.java" />
+        <option value="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/sysmanager/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/springmybatis/src/main/java/com/hand/sysmanager/entity/User.java" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/pom.xml" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/java/com/hand/emtity/OrderExt.java" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/java/com/hand/entity/Orders.java" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/java/com/hand/entity/OrderDetail.java" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/java/com/hand/entity/Items.java" />
         <option value="$PROJECT_DIR$/handjava05/src/main/resources/mappers/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/IUserDao.java" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/com/hand/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/java/com/hand/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/java/com/hand/entity/OrderExt.java" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/java/com/hand/mapper/OrdersMapper.java" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/test/java/com/hand/text/OrdersExtTest.java" />
+        <option value="$PROJECT_DIR$/springmybatis/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/com/hand/mapper/OrdersMapper.xml" />
+        <option value="$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/HelloWorld.java" />
+        <option value="$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/entity/User.java" />
+        <option value="$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/SpringbootHelloworldApplication.java" />
+        <option value="$PROJECT_DIR$/springboot-helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-helloworld/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/dao/UserProvider.java" />
+        <option value="$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/springboot-helloworld/src/test/java/com/hand/springboothelloworld/SpringbootHelloworldApplicationTests.java" />
+        <option value="$PROJECT_DIR$/springboot-integration/hand-entity/src/main/java/com/hand/integration/common/R.java" />
+        <option value="$PROJECT_DIR$/springboot-integration/hand-entity/src/main/java/com/hand/integration/user/testCode.java" />
+        <option value="$PROJECT_DIR$/springboot-integration/hand-repo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-integration/hand-service/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-integration/hand-service/src/main/java/com/hand/integration/user/IUserService.java" />
+        <option value="$PROJECT_DIR$/springboot-integration/hand-service/src/main/java/com/hand/integration/user/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/springboot-integration/hand-web/src/main/java/com/hand/integration/user/UserController.java" />
+        <option value="$PROJECT_DIR$/springboot-integration/hand-repo/src/main/java/com/hand/integration/user/IUserRepository.java" />
+        <option value="$PROJECT_DIR$/springboot-integration/hand-entity/src/main/java/com/hand/integration/user/User.java" />
+        <option value="$PROJECT_DIR$/springboot-integration/hand-web/src/main/java/com/hand/integration/HandWebApplication.java" />
+        <option value="$PROJECT_DIR$/springboot-integration/hand-web/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/springboot-integration/hand-web/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-integration/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-integration/hand-entity/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-helloworld/src/main/java/com/hand/springbootstarterhelloworld/configration/HelloWorldAutoConfigration.java" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-helloworld/src/main/java/com/hand/springbootstarterhelloworld/configuration/HelloWorldAutoConfigration.java" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-helloworld/target/classes/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-helloworld/src/main/java/com/hand/springbootstarterhelloworld/service/HelloService.java" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/hand/springbootstartersample/SpringBootStarterSampleApplication.java" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/hand/springbootstartersample/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/25593-lianweiyuan-springboot/src/main/java/com/hand/springbootstartersample/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-helloworld/pom.xml" />
       </list>
     </option>
   </component>
@@ -244,30 +448,19 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="hand-java03" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spring-boot-starter-helloworld" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="hand-java03" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spring-boot-starter-helloworld" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="hand-java03" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="hand-java03" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -280,6 +473,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -288,66 +482,25 @@
               <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava04" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava04" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava04" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava04" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava04" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sysmanager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="handjava04" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sysmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8.0_211" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/handjava05/src/main/resources/mappers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring-cloud-exercise" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -357,10 +510,10 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MTCustomThemeConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -371,10 +524,17 @@
       <recent name="D:\JAVA\Code\HAND_JAVA_02\SpringDay01\handjava03\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JAVA\Code\HAND_JAVA_02\SpringDay01\25593-lianweiyuan-springboot\src\main\resources" />
+      <recent name="D:\JAVA\Code\HAND_JAVA_02\SpringDay01\springmybatis\src\main\resources\com\hand\sysmanager\mapper" />
       <recent name="D:\JAVA\Code\HAND_JAVA_02\SpringDay01\handjava03\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -386,94 +546,126 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.testTwiceCache">
-    <configuration name="UserTest.testFindOrderInfoByLazyLoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="handjava05" />
+  <component name="RunManager" selected="Spring Boot.SpringBootStarterSampleApplication">
+    <configuration name="OrdersExtTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springexam" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hand.test.*" />
+          <option name="PATTERN" value="com.hand.text.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hand.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hand.test.UserTest" />
-      <option name="METHOD_NAME" value="testFindOrderInfoByLazyLoad" />
+      <option name="PACKAGE_NAME" value="com.hand.text" />
+      <option name="MAIN_CLASS_NAME" value="com.hand.text.OrdersExtTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.testFindOrdersAndOrderDetail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="handjava05" />
+    <configuration name="SpringbootHelloworldApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hand.test.*" />
+          <option name="PATTERN" value="com.hand.springboothelloworld.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hand.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hand.test.UserTest" />
-      <option name="METHOD_NAME" value="testFindOrdersAndOrderDetail" />
+      <option name="PACKAGE_NAME" value="com.hand.springboothelloworld" />
+      <option name="MAIN_CLASS_NAME" value="com.hand.springboothelloworld.SpringbootHelloworldApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.testFindUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="handjava05" />
+    <configuration name="UserTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springmybatis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hand.test.*" />
+          <option name="PATTERN" value="com.hand.sysmanager.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hand.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hand.test.UserTest" />
+      <option name="PACKAGE_NAME" value="com.hand.sysmanager.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hand.sysmanager.test.UserTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.testFindUserById (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springmybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hand.sysmanager.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hand.sysmanager.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hand.sysmanager.test.UserTest" />
       <option name="METHOD_NAME" value="testFindUserById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.testOneCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="handjava05" />
+    <configuration name="HandWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="handweb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hand.test.*" />
+          <option name="PATTERN" value="com.hand.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hand.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hand.test.UserTest" />
-      <option name="METHOD_NAME" value="testOneCache" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hand.integration.HandWebApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.testTwiceCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="handjava05" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hand.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hand.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hand.test.UserTest" />
-      <option name="METHOD_NAME" value="testTwiceCache" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="SpringBootStarterHelloworldApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-starter-helloworld" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hand.springbootstarterhelloworld.SpringBootStarterHelloworldApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringBootStarterSampleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="25593-lianweiyuan-springboot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hand.springbootstartersample.SpringBootStarterSampleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootHelloworldApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-helloworld" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hand.springboothelloworld.SpringbootHelloworldApplication" />
+      <option name="HIDE_BANNER" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.OrdersExtTest.test" />
+      <item itemvalue="JUnit.UserTest.test" />
+      <item itemvalue="JUnit.UserTest.testFindUserById (2)" />
+      <item itemvalue="JUnit.SpringbootHelloworldApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.SpringbootHelloworldApplication" />
+      <item itemvalue="Spring Boot.SpringBootStarterHelloworldApplication" />
+      <item itemvalue="Spring Boot.SpringBootStarterSampleApplication" />
+      <item itemvalue="Spring Boot.HandWebApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest.testTwiceCache" />
-        <item itemvalue="JUnit.UserTest.testOneCache" />
-        <item itemvalue="JUnit.UserTest.testFindOrderInfoByLazyLoad" />
-        <item itemvalue="JUnit.UserTest.testFindUserById" />
-        <item itemvalue="JUnit.UserTest.testFindOrdersAndOrderDetail" />
+        <item itemvalue="Spring Boot.HandWebApplication" />
+        <item itemvalue="JUnit.SpringbootHelloworldApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.OrdersExtTest.test" />
+        <item itemvalue="JUnit.UserTest.test" />
+        <item itemvalue="JUnit.UserTest.testFindUserById (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -504,7 +696,24 @@
       <workItem from="1563500943380" duration="373000" />
       <workItem from="1563501490197" duration="6487000" />
       <workItem from="1563516548372" duration="1539000" />
-      <workItem from="1563518183973" duration="3756000" />
+      <workItem from="1563518183973" duration="15944000" />
+      <workItem from="1563539139974" duration="324000" />
+      <workItem from="1563584137116" duration="2274000" />
+      <workItem from="1563598551466" duration="590000" />
+      <workItem from="1563602480197" duration="5539000" />
+      <workItem from="1563609367442" duration="1593000" />
+      <workItem from="1563612579066" duration="1086000" />
+      <workItem from="1563630968198" duration="1902000" />
+      <workItem from="1563756038781" duration="5536000" />
+      <workItem from="1563776228479" duration="15828000" />
+      <workItem from="1563844826905" duration="1291000" />
+      <workItem from="1563863994519" duration="5723000" />
+      <workItem from="1563890327586" duration="1210000" />
+      <workItem from="1563927812710" duration="597000" />
+      <workItem from="1563948415107" duration="1796000" />
+      <workItem from="1564017109776" duration="625000" />
+      <workItem from="1564036373479" duration="1441000" />
+      <workItem from="1564197459365" duration="2301000" />
     </task>
     <task id="LOCAL-00001" summary="25593_练伟渊">
       <created>1563276122127</created>
@@ -541,43 +750,78 @@
       <option name="project" value="LOCAL" />
       <updated>1563521515304</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="mybatis_day01">
+      <created>1563521986592</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563521986592</updated>
+    </task>
+    <task id="LOCAL-00007" summary="mybatis+Spring">
+      <created>1563533943317</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1563533943317</updated>
+    </task>
+    <task id="LOCAL-00008" summary="java基础考试">
+      <created>1563610609153</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1563610609154</updated>
+    </task>
+    <task id="LOCAL-00009" summary="java基础考试">
+      <created>1563610857345</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1563610857345</updated>
+    </task>
+    <task id="LOCAL-00010" summary="SpringBoot作业">
+      <created>1563883953482</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1563883953482</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_testFindUserById - 2019.07.19 at 14h 57m 27s.xml">
-      <configuration name="UserTest.testFindUserById" configurationId="JUnit" />
+    <history-entry file="SpringbootHelloworldApplicationTests_contextLoads - 2019.07.22 at 14h 57m 52s.xml">
+      <configuration name="SpringbootHelloworldApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testFindUserById - 2019.07.19 at 14h 58m 23s.xml">
-      <configuration name="UserTest.testFindUserById" configurationId="JUnit" />
+    <history-entry file="SpringbootHelloworldApplicationTests_contextLoads - 2019.07.22 at 15h 01m 05s.xml">
+      <configuration name="SpringbootHelloworldApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testFindOrderInfoByLazyLoad - 2019.07.19 at 15h 03m 39s.xml">
-      <configuration name="UserTest.testFindOrderInfoByLazyLoad" configurationId="JUnit" />
+    <history-entry file="SpringbootHelloworldApplicationTests_contextLoads - 2019.07.22 at 15h 33m 27s.xml">
+      <configuration name="SpringbootHelloworldApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testOneCache - 2019.07.19 at 15h 12m 59s.xml">
-      <configuration name="UserTest.testOneCache" configurationId="JUnit" />
+    <history-entry file="SpringbootHelloworldApplicationTests_contextLoads - 2019.07.22 at 15h 57m 51s.xml">
+      <configuration name="SpringbootHelloworldApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testTwiceCache - 2019.07.19 at 15h 21m 02s.xml">
-      <configuration name="UserTest.testTwiceCache" configurationId="JUnit" />
+    <history-entry file="SpringbootHelloworldApplicationTests_contextLoads - 2019.07.22 at 15h 58m 24s.xml">
+      <configuration name="SpringbootHelloworldApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testTwiceCache - 2019.07.19 at 15h 21m 37s.xml">
-      <configuration name="UserTest.testTwiceCache" configurationId="JUnit" />
+    <history-entry file="SpringbootHelloworldApplicationTests_contextLoads - 2019.07.22 at 15h 59m 02s.xml">
+      <configuration name="SpringbootHelloworldApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testTwiceCache - 2019.07.19 at 15h 22m 50s.xml">
-      <configuration name="UserTest.testTwiceCache" configurationId="JUnit" />
+    <history-entry file="SpringbootHelloworldApplicationTests_contextLoads - 2019.07.22 at 16h 31m 47s.xml">
+      <configuration name="SpringbootHelloworldApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testTwiceCache - 2019.07.19 at 15h 24m 35s.xml">
-      <configuration name="UserTest.testTwiceCache" configurationId="JUnit" />
+    <history-entry file="SpringbootHelloworldApplicationTests_contextLoads - 2019.07.22 at 16h 33m 15s.xml">
+      <configuration name="SpringbootHelloworldApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testTwiceCache - 2019.07.19 at 15h 25m 23s.xml">
-      <configuration name="UserTest.testTwiceCache" configurationId="JUnit" />
+    <history-entry file="SpringbootHelloworldApplicationTests_contextLoads - 2019.07.22 at 16h 45m 46s.xml">
+      <configuration name="SpringbootHelloworldApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testTwiceCache - 2019.07.19 at 15h 26m 22s.xml">
-      <configuration name="UserTest.testTwiceCache" configurationId="JUnit" />
+    <history-entry file="SpringbootHelloworldApplicationTests_contextLoads - 2019.07.22 at 16h 46m 02s.xml">
+      <configuration name="SpringbootHelloworldApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62072000" />
+    <option name="totallyTimeSpent" value="123916000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -590,18 +834,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17170954" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39863843" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.30729166" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4891697" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3068592" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42238268" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.49097472" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -613,32 +857,75 @@
       <window_info anchor="bottom" id="Run with VisualVM" order="11" />
       <window_info anchor="bottom" id="Problems" order="12" weight="0.32851985" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" visible="true" weight="0.32490975" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="15" />
       <window_info anchor="bottom" id="Tail" order="16" />
       <window_info anchor="bottom" id="Spring" order="17" />
       <window_info anchor="bottom" id="Messages" order="18" weight="0.31588447" />
-      <window_info anchor="right" id="Mybatis datasource" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" order="19" weight="0.32851985" />
+      <window_info anchor="bottom" id="Java Enterprise" order="20" />
+      <window_info anchor="bottom" id="Run Dashboard" order="21" weight="0.34476534" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.12405446" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3987441" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Mybatis datasource" order="9" side_tool="true" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32980332" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="25593_练伟渊" />
     <MESSAGE value="spring 事务学习" />
-    <MESSAGE value="mybatis_day01" />
     <MESSAGE value="mybatis_day02" />
-    <option name="LAST_COMMIT_MESSAGE" value="mybatis_day02" />
+    <MESSAGE value="mybatis_day01" />
+    <MESSAGE value="mybatis+Spring" />
+    <MESSAGE value="java基础考试" />
+    <MESSAGE value="SpringBoot作业" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringBoot作业" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -658,320 +945,496 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/session/Configuration.class">
+    <entry file="file://$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/test/java/com/hand/text/OrdersExtTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="257" selection-start-line="257" selection-end-line="257" />
-          <folding>
-            <element signature="e#11540#11541#0" expanded="true" />
-            <element signature="e#11586#11587#0" expanded="true" />
-            <element signature="e#12040#12041#0" expanded="true" />
-            <element signature="e#18089#18090#0" expanded="true" />
-            <element signature="e#18130#18131#0" expanded="true" />
-            <element signature="e#25464#25465#0" expanded="true" />
-            <element signature="e#25520#25521#0" expanded="true" />
-            <element signature="e#26644#26645#0" expanded="true" />
-            <element signature="e#26705#26706#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/scripting/xmltags/StaticTextSqlNode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/scripting/xmltags/MixedSqlNode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/scripting/xmltags/DynamicContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#1427#1428#0" expanded="true" />
-            <element signature="e#3218#3219#0" expanded="true" />
-            <element signature="e#3288#3289#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/scripting/xmltags/TrimSqlNode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="e#3335#3336#0" expanded="true" />
-            <element signature="e#3592#3593#0" expanded="true" />
-            <element signature="e#3642#3643#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/scripting/xmltags/IfSqlNode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/scripting/xmltags/ExpressionEvaluator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/scripting/xmltags/OgnlClassResolver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/ognl/DefaultClassResolver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/ognl/DefaultTypeConverter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/scripting/xmltags/OgnlCache.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/ognl/Ognl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/ognl/Token.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/ognl/OgnlParserTokenManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42640">
-          <caret line="1648" selection-start-line="1648" selection-end-line="1648" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/ognl/JavaCharStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6734">
-          <caret line="270" selection-start-line="270" selection-end-line="270" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/ognl/JJTOgnlParserState.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/ognl/OgnlContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3146">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/ognl/DefaultMemberAccess.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#516#517#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/ognl/OgnlParser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="172" selection-start-line="172" selection-end-line="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/entity/User.java" />
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/entity/Items.java" />
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/entity/Orders.java" />
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/entity/OrderDetail.java" />
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/entity/UserQueryVO.java" />
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/sysmanager/dao/impl/UserDaoImpl.java" />
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/sysmanager/entity/User.java" />
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/sysmanager/entity/Items.java" />
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/sysmanager/dao/IUserDao.java" />
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/sysmanager/entity/Orders.java" />
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/sysmanager/entity/OrderDetail.java" />
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/sysmanager/entity/UserQueryVO.java" />
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/UserQueryVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="9" selection-start-line="9" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="15" selection-start-line="15" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/OrdersExt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/Orders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="18" selection-start-line="18" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/OrderDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/entity/OrderDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava04/src/main/resources/mappers/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava04/src/test/java/com/hand/test/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="42" column="5" selection-start-line="25" selection-start-column="3" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/dao/IUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#findOrdersExt#0;class#IUserDao#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-761">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="416">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/java/com/hand/sysmanager/entity/Items.java">
+    <entry file="file://$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1144">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/handjava05/src/main/resources/SqlMapConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="312">
           <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava05/src/main/resources/mappers/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handjava05/src/test/java/com/hand/test/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="131" selection-start-line="131" selection-end-line="132" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/handjava05/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2853">
-          <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+        <state relative-caret-position="156">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handjava04/src/main/java/com/hand/sysmanager/dao/IUserDao.java">
+    <entry file="file://$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/com/hand/mapper/OrdersMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/HelloWorld.java" />
+    <entry file="file://$PROJECT_DIR$/handjava03/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2522">
+          <caret line="97" column="27" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25593-lianweiyuan/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4186">
+          <caret line="161" column="20" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25593-lianweiyuan/spring-exam/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmybatis/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="51" selection-start-line="1" selection-end-line="16" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/Assertions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmybatis/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmybatis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="122" column="6" selection-start-line="122" selection-start-column="6" selection-end-line="126" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmybatis/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="23" column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-helloworld/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/dao/UserProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-293">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#UserMapper#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-helloworld/src/test/java/com/hand/springboothelloworld/SpringbootHelloworldApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#399#423#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#367#391#1" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-web/src/main/java/com/hand/integration/hello.java" />
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-web/src/main/java/com/hand/integration/hello/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-helloworld/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="2" column="100" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-service/src/main/java/com/hand/integration/user/impl.java" />
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-entity/src/main/java/com/hand/integration/common/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+            <element signature="e#1264#1265#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+            <element signature="e#1320#1321#0" expanded="true" />
+            <element signature="e#1358#1359#0" expanded="true" />
+            <element signature="e#1388#1389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-entity/src/main/java/com/hand/integration/user/testCode.java" />
+    <entry file="jar://$PROJECT_DIR$/../../../repository/org/springframework/data/spring-data-jpa/2.1.9.RELEASE/spring-data-jpa-2.1.9.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-repo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-service/src/main/java/com/hand/integration/user/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-service/src/main/java/com/hand/integration/user/IUserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
-          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-web/src/main/java/com/hand/integration/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding>
-            <element signature="docComment;method#findUserById#0;class#IUserDao#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-web/src/main/java/com/hand/integration/HandWebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../repository/org/springframework/boot/spring-boot-autoconfigure/2.1.6.RELEASE/spring-boot-autoconfigure-2.1.6.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1508">
+          <caret line="100" selection-start-line="100" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-entity/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-web/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-entity/src/main/java/com/hand/integration/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#922#923#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-helloworld/src/main/java/com/hand/springboothelloworld/SpringbootHelloworldApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="81" column="3" selection-start-line="81" selection-start-column="3" selection-end-line="81" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.hand:25593-lianweiyuan:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.hand:25593-lianweiyuan:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">com.hand:25593-lianweiyuan:1.0-SNAPSHOT</node>
+            <node x="" y="">org.apache.tomcat:tomcat-servlet-api:jar:7.0.64</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.0.RELEASE/org.springframework:spring-beans:jar:4.0.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.0.RELEASE/org.springframework:spring-context:jar:4.0.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.0.RELEASE/org.springframework:spring-context:jar:4.0.0.RELEASE/org.springframework:spring-aop:jar:4.0.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.0.RELEASE/org.springframework:spring-core:jar:4.0.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.0.RELEASE/org.springframework:spring-expression:jar:4.0.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.0.RELEASE/org.springframework:spring-web:jar:4.0.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-oxm:jar:4.0.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:4.0.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-tx:jar:4.0.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-tx:jar:4.0.0.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="" y="">org.springframework:spring-test:jar:4.0.0.RELEASE</node>
+            <node x="" y="">org.aspectj:aspectjweaver:jar:1.7.3</node>
+            <node x="" y="">org.mybatis:mybatis-spring:jar:1.3.0</node>
+            <node x="" y="">org.mybatis:mybatis:jar:3.4.1</node>
+            <node x="" y="">org.aspectj:aspectjrt:jar:1.6.11</node>
+            <node x="" y="">org.codehaus.jackson:jackson-mapper-asl:jar:1.9.12</node>
+            <node x="" y="">org.codehaus.jackson:jackson-mapper-asl:jar:1.9.12/org.codehaus.jackson:jackson-core-asl:jar:1.9.12</node>
+            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.4</node>
+            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.4/commons-pool:commons-pool:jar:1.5.4</node>
+            <node x="" y="">ch.qos.logback:logback-classic:jar:1.1.2</node>
+            <node x="" y="">ch.qos.logback:logback-classic:jar:1.1.2/org.slf4j:slf4j-api:jar:1.7.6</node>
+            <node x="" y="">ch.qos.logback:logback-core:jar:1.1.2</node>
+            <node x="" y="">mysql:mysql-connector-java:jar:5.1.6</node>
+            <node x="" y="">com.google.guava:guava:jar:20.0</node>
+            <node x="" y="">org.apache.commons:commons-lang3:jar:3.5</node>
+            <node x="" y="">commons-collections:commons-collections:jar:3.2.1</node>
+            <node x="" y="">com.zaxxer:HikariCP:jar:1.3.8</node>
+            <node x="" y="">com.zaxxer:HikariCP:jar:1.3.8/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">com.zaxxer:HikariCP:jar:1.3.8/org.javassist:javassist:jar:3.18.1-GA</node>
+            <node x="" y="">junit:junit:jar:4.12</node>
+            <node x="" y="">joda-time:joda-time:jar:2.3</node>
+            <node x="" y="">org.hashids:hashids:jar:1.0.1</node>
+            <node x="" y="">commons-net:commons-net:jar:3.1</node>
+            <node x="" y="">commons-fileupload:commons-fileupload:jar:1.2.2</node>
+            <node x="" y="">commons-io:commons-io:jar:2.0.1</node>
+            <node x="" y="">com.github.pagehelper:pagehelper:jar:4.1.0</node>
+            <node x="" y="">com.github.miemiedev:mybatis-paginator:jar:1.2.17</node>
+            <node x="" y="">com.github.miemiedev:mybatis-paginator:jar:1.2.17/org.mybatis:mybatis:jar:3.1.0</node>
+            <node x="" y="">com.github.miemiedev:mybatis-paginator:jar:1.2.17/org.slf4j:slf4j-api:jar:1.7.2</node>
+            <node x="" y="">com.github.jsqlparser:jsqlparser:jar:0.9.4</node>
+            <node x="" y="">commons-codec:commons-codec:jar:1.10</node>
+            <node x="" y="">commons-configuration:commons-configuration:jar:1.10</node>
+            <node x="" y="">commons-lang:commons-lang:jar:2.6</node>
+            <node x="" y="">commons-logging:commons-logging:jar:1.1.1</node>
+            <node x="" y="">com.google.zxing:core:jar:2.1</node>
+            <node x="" y="">com.google.code.gson:gson:jar:2.3.1</node>
+            <node x="" y="">org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="" y="">redis.clients:jedis:jar:2.9.0</node>
+            <node x="" y="">redis.clients:jedis:jar:2.9.0/org.apache.commons:commons-pool2:jar:2.4.2</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7935174069627845" x="383.0" y="288.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-starter-helloworld/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-starter-helloworld/src/main/java/com/hand/springbootstarterhelloworld/service/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#271#272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-starter-helloworld/src/main/java/com/hand/springbootstarterhelloworld/SpringBootStarterHelloworldApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-starter-helloworld/src/main/java/com/hand/springbootstarterhelloworld/configuration/HelloWorldAutoConfigration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-starter-helloworld/target/classes/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="78" selection-start-column="78" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25593-lianweiyuan-springboot/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25593-lianweiyuan-springboot/src/main/java/com/hand/springbootstartersample/SpringBootStarterSampleApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25593-lianweiyuan-springboot/src/main/java/com/hand/springbootstartersample/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-integration/hand-repo/src/main/java/com/hand/integration/user/IUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1039,11 +1502,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>SpringDay01</last-edited>
+          <last-edited>test4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

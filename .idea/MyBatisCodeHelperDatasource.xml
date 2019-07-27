@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="addSerializeUid" value="true" />
+        <option name="javaMapperPackage" value="com.hand.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/java" />
+        <option name="javaModelPackage" value="com.hand.entity" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="springexam" />
+        <option name="modelAddToString" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="springexam">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.hand.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/java" />
+                  <option name="javaModelPacakge" value="com.hand.entity" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/java" />
+                  <option name="xmlPackage" value="com.hand.mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+            <entry key="springmybatis">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.hand.sysmanager.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/springmybatis/src/main/java" />
+                  <option name="javaModelPacakge" value="com.hand.sysmanager.entity" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/springmybatis/src/main/java" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/springmybatis/src/main/java" />
+                  <option name="javaServicePackage" value="com.hand.sysmanager.service" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/springmybatis/src/main/java" />
+                  <option name="xmlPackage" value="com.hand.sysmanager.mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/springmybatis/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="mybatis_study:user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="User" />
+                  <option name="moduleName" value="springmybatis" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="spring_exam:orders">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Orders" />
+                  <option name="moduleName" value="springexam" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="spring_exam:user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="User" />
+                  <option name="moduleName" value="springexam" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="xmlMapperPackage" value="com.hand.mapper" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/25593-lianweiyuan/spring-exam/src/main/resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

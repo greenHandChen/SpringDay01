@@ -28,8 +28,9 @@ public class UserController {
         return userService.deleteById(id);
     }
 
-    @RequestMapping(value = "/insertUser", method = RequestMethod.GET)
-    public int insert(User user){
+    @RequestMapping(value = "/insertUser", method = RequestMethod.POST)
+    public int insert(@RequestBody User user){
+        System.out.println("server-controller:"+user);
         return userService.insert(user);
     }
 }

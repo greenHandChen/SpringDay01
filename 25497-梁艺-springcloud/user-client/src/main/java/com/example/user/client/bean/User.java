@@ -46,7 +46,7 @@ public class User {
     }
 
     public String getBirthday() {
-        return simpleDateFormat.format(birthday);
+        return simpleDateFormat.format(birthday == null ? new Date() : birthday);
     }
 
     public void setBirthday(Date birthday) {

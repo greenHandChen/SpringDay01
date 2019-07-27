@@ -1,0 +1,31 @@
+#tomcat
+server:
+  port: 8883
+  tomcat:
+    uri-encoding: utf-8
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8881/eureka/
+
+spring:
+  application:
+    name: user-server
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+
+logging:
+  level:
+    com.example.userserver.mapper: debug
+
+# MyBatis
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.example.userserver.po
+  configuration:
+    map-underscore-to-camel-case: true
+

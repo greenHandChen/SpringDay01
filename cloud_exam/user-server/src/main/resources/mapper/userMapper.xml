@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.userserver.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="User">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="pwd" jdbcType="VARCHAR" property="pwd"/>
+        <result column="loginName" jdbcType="VARCHAR" property="loginName"/>
+        <result column="firstName" jdbcType="VARCHAR" property="firstName"/>
+        <result column="lastName" jdbcType="VARCHAR" property="lastName"/>
+        <result column="sex" property="sex" jdbcType="INTEGER"/>
+        <result column="hobby" property="hobby" jdbcType="VARCHAR"/>
+        <result column="tel" property="tel" jdbcType="VARCHAR"/>
+        <result column="email" property="email" jdbcType="VARCHAR"/>
+        <result column="createTime" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="dr" property="dr" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!-- 根据主键查询用户 -->
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="INTEGER">
+        select * from t_user where id = #{id} and dr = 0
+    </select>
+
+    <update id="updateByPrimaryKeySelective" parameterType="User">
+        update t_user
+        <set>
+            <if test="id != null and id !=''">
+                and id = #{id}
+            </if>
+            <if test="pwd != null and pwd !=''">
+                and pwd = #{pwd}
+            </if>
+            <if test="loginName != null and loginName !=''">
+                and loginName = #{loginName}
+            </if>
+            <if test="firstName != null and firstName !=''">
+                and firstName = #{firstName}
+            </if>
+            <if test="lastName != null and lastName !=''">
+                and lastName = #{lastName}
+            </if>
+            <if test="sex != null and sex !=''">
+                and sex = #{sex}
+            </if>
+            <if test="hobby != null and hobby !=''">
+                and hobby like concat('%',#{hobby},'%')
+            </if>
+            <if test="tel != null and tel !=''">
+                and tel = #{tel}
+            </if>
+            <if test="email != null and email !=''">
+                and email = #{email}
+            </if>
+            <if test="createTime != null and createTime !=''">
+                and createTime = #{createTime}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <select id="selectByUser" resultMap="BaseResultMap" parameterType="User">
+        select * from t_user
+        <where>
+            <if test="id != null and id !=''">
+                and id = #{id}
+            </if>
+            <if test="pwd != null and pwd !=''">
+                and pwd = #{pwd}
+            </if>
+            <if test="loginName != null and loginName !=''">
+                and loginName = #{loginName}
+            </if>
+            <if test="firstName != null and firstName !=''">
+                and firstName = #{firstName}
+            </if>
+            <if test="lastName != null and lastName !=''">
+                and lastName = #{lastName}
+            </if>
+            <if test="sex != null and sex !=''">
+                and sex = #{sex}
+            </if>
+            <if test="hobby != null and hobby !=''">
+                and hobby like concat('%',#{hobby},'%')
+            </if>
+            <if test="tel != null and tel !=''">
+                and tel = #{tel}
+            </if>
+            <if test="email != null and email !=''">
+                and email = #{email}
+            </if>
+            <if test="createTime != null and createTime !=''">
+                and createTime = #{createTime}
+            </if>
+            and dr = 0
+        </where>
+    </select>
+
+    <delete id="deleteByPrimaryKeys" parameterType="int">
+        delete from t_user
+        WHERE id IN
+        <foreach collection="array" item="id" index="index" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <!-- 添加用户 -->
+    <insert id="insertSelective" parameterType="User">
+
+        insert into t_user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="pwd != null">
+                pwd,
+            </if>
+            <if test="loginName != null">
+                loginName,
+            </if>
+            <if test="firstName != null">
+                firstName,
+            </if>
+            <if test="lastName != null">
+                lastName,
+            </if>
+            <if test="sex != null">
+                sex,
+            </if>
+            <if test="hobby != null">
+                hobby,
+            </if>
+            <if test="tel != null">
+                tel,
+            </if>
+            <if test="email != null">
+                email,
+            </if>
+            <if test="createTime != null">
+                createTime,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="pwd != null">
+                #{pwd,jdbcType=VARCHAR},
+            </if>
+            <if test="loginName != null">
+                #{loginName,jdbcType=VARCHAR},
+            </if>
+            <if test="firstName != null">
+                #{firstName,jdbcType=VARCHAR},
+            </if>
+            <if test="lastName != null">
+                #{lastName,jdbcType=VARCHAR},
+            </if>
+            <if test="sex != null">
+                #{sex,jdbcType=INTEGER},
+            </if>
+            <if test="hobby != null">
+                #{hobby,jdbcType=VARCHAR},
+            </if>
+            <if test="tel != null">
+                #{tel,jdbcType=VARCHAR},
+            </if>
+            <if test="email != null">
+                #{email,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},,
+            </if>
+        </trim>
+    </insert>
+
+</mapper>

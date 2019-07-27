@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.ext_server.mapper.ExtMapper">
+
+    <insert id="insert" parameterType="Ext">
+        insert into t_ext
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="post != null">
+                post,
+            </if>
+            <if test="decr != null">
+                decr,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="post != null">
+                #{post,jdbcType=VARCHAR},
+            </if>
+            <if test="decr != null">
+                #{decr,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <delete id="del" parameterType="int">
+        delete from t_ext
+        WHERE id IN
+        <foreach collection="array" item="id" index="index" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="select" parameterType="Ext" resultMap="Ext">
+        select * from t_ext
+        <where>
+            <if test="id != null and id !=''">
+                and id = #{id}
+            </if>
+            <if test="post != null and id !=''">
+                and post = #{post}
+            </if>
+            <if test="decr != null and id !=''">
+                and decr = #{decr}
+            </if>
+        </where>
+    </select>
+
+    <update id="update" parameterType="Ext">
+        update t_user
+        <set>
+            <if test="post != null and post !=''">
+                and post = #{post}
+            </if>
+            <if test="decr null and decr !=''">
+                and decr = #{decr}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+</mapper>

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: zuul
+server:
+  port: 8080
+zuul:
+  routes:
+    service2:
+      path: /findOneDetail
+      serviceId: service2
+      stripPrefix: false
+    service:
+      path: /findDetail
+      serviceId: service
+      stripPrefix: false
+

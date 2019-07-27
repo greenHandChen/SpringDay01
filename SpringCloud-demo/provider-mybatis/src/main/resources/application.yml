@@ -1,0 +1,23 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: provider-mybatis
+  datasource:
+    url: jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&verifyServerCertificate=false&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+#    type: com.alibaba.druid.pool.DruidDataSource
+
+eureka:
+  instance:
+    prefer-ip-address: true #注册服务的时候用IP
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+mybatis:
+  #  配置文件位置
+  config-location: classpath:mybatis-config.xml
+  #  sql映射文件位置
+  mapper-locations: classpath:mapper/*.xml

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace：命名空间，用于隔离sql，还有一个很重要的作用，后面会讲 -->
+<mapper namespace="com.hand.provider.mapper.UserMapper">
+
+    <select id="findUserById" parameterType="Integer" resultType="com.hand.provider.pojo.User">
+
+        select * from user where id = #{v}
+
+    </select>
+
+    <select id="addUser" parameterType="User">
+
+        INSERT i
+
+    </select>
+
+</mapper>

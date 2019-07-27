@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: consumer-user
+server:
+  port: 8801
+eureka:
+  instance:
+    prefer-ip-address: true #注册服务的时候用IP
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+feign:
+  hystrix:
+    enabled: true

@@ -1,0 +1,33 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: provider-zuul
+eureka:
+  instance:
+    prefer-ip-address: true #注册服务的时候用IP
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    user-route:
+        serviceId: consumer-user
+        path: /user/**
+  #多个用"*" ignored-services: "*"
+  ignored-services: consumer-user
+  #公共前缀
+  prefix: /springcloudzuul
+
+#zuul:
+#  prefix: /hand
+#  ignored-services: "*"
+#  routes:
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000

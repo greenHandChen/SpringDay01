@@ -41,11 +41,11 @@ public interface IUserDao {
     Long addUser(User user);
     
     /**
-     * @Description: 
+     * @Description:
      * @Param: [user]
      * @return: java.lang.Long
      * @Author: LWY
-     * @Date: 2019/7/19 15:39 
+     * @Date: 2019/7/19 15:49
      */
     Long addUserGetId(User user);
 

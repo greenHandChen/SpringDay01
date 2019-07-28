@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common-api" />
+        <module name="zuul" />
+        <module name="cumstomer-user-feign9001" />
+        <module name="provider-user8001" />
+        <module name="SpringCloud" />
+        <module name="eureka-server-7001" />
+        <module name="zuul9527" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common-api" options="-parameters" />
+      <module name="cumstomer-user-feign9001" options="-parameters" />
+      <module name="eureka-server-7001" options="-parameters" />
+      <module name="provider-user8001" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+      <module name="zuul9527" options="-parameters" />
+    </option>
+  </component>
+</project>
